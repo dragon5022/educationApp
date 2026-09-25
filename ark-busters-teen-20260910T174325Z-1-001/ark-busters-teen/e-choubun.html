@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>長文の戦場 | ARK数学バスターズ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Russo+One&family=Dela+Gothic+One&family=Orbitron:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1F3864;
+    --navy-deep:#0F1B33;
+    --gold:#BF9000;
+    --gold-bright:#FFC83D;
+    --red:#E63946;
+    --red-deep:#8B1A24;
+    --green:#06A878;
+    --bg:#FFFAEB;
+    --bg-2:#FFF4D6;
+    --text:#1F3864;
+    --light-blue:#DEEBF7;
+    --paper:#FFFDF5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;overflow:hidden;}
+  body{
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    background:radial-gradient(ellipse at top,var(--bg-2) 0%,var(--bg) 70%);
+    color:var(--text);
+    user-select:none;
+    -webkit-user-select:none;
+    position:relative;
+  }
+  body::before{
+    content:'';
+    position:fixed;inset:0;
+    background-image:
+      radial-gradient(circle at 20% 30%,rgba(191,144,0,0.07) 1px,transparent 2px),
+      radial-gradient(circle at 70% 60%,rgba(31,56,100,0.05) 1px,transparent 2px),
+      radial-gradient(circle at 40% 80%,rgba(191,144,0,0.06) 1px,transparent 2px);
+    background-size:80px 80px, 100px 100px, 60px 60px;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .game-wrap{
+    position:relative;z-index:1;
+    height:100vh;
+    display:flex;flex-direction:column;
+    max-width:520px;
+    margin:0 auto;
+    padding:env(safe-area-inset-top,12px) 16px env(safe-area-inset-bottom,16px);
+  }
+
+  .back-btn{
+    position:absolute;
+    top:env(safe-area-inset-top,12px);
+    left:14px;
+    z-index:20;
+    background:var(--paper);
+    border:2px solid var(--navy);
+    color:var(--navy-deep);
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    font-size:12px;
+    font-weight:800;
+    padding:6px 12px;
+    border-radius:18px;
+    box-shadow:0 3px 0 var(--navy);
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+  }
+  .back-btn:active{
+    transform:translateY(2px);
+    box-shadow:0 1px 0 var(--navy);
+  }
+
+  .hud{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:8px 0;
+    gap:8px;
+    flex-shrink:0;
+    margin-top:30px;
+  }
+  .hud-box{
+    background:var(--paper);
+    border:2px solid var(--navy);
+    border-radius:12px;
+    padding:6px 12px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .hud-label{
+    font-size:9px;
+    letter-spacing:0.15em;
+    color:var(--gold);
+    font-weight:800;
+  }
+  .hud-value{
+    font-family:'Russo One',sans-serif;
+    font-size:22px;
+    line-height:1;
+    color:var(--navy-deep);
+  }
+  .hud-center{display:flex;gap:4px;justify-content:center;}
+  .heart{
+    width:24px;height:24px;
+    display:inline-flex;align-items:center;justify-content:center;
+    font-size:20px;
+    transition:transform 0.3s, opacity 0.3s, filter 0.3s;
+  }
+  .heart.lost{opacity:0.2;filter:grayscale(1);transform:scale(0.85);}
+
+  .stage{
+    flex-shrink:0;
+    height:280px;
+    position:relative;
+    margin-bottom:6px;
+    z-index:5;
+  }
+
+  /* ゼロディウスの数式エネルギー弾（紫に光る） */
+  .balloon{
+    width:200px;height:230px;
+    background:
+      radial-gradient(circle at 30% 26%,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 18%),
+      radial-gradient(circle at 50% 45%,#f0e0ff 0%,#c79bff 22%,#a855f7 50%,#7c3aed 74%,#4c1d95 100%);
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:50%;
+    margin-left:-100px;
+    box-shadow:
+      inset -12px -18px 30px rgba(40,0,80,0.45),
+      inset 10px 12px 26px rgba(255,255,255,0.45),
+      0 0 30px rgba(168,85,247,0.75),
+      0 0 60px rgba(124,58,237,0.55);
+    transform-origin:50% 92%;
+    animation:bobble 2.5s ease-in-out infinite;
+    z-index:1;
+  }
+  .balloon::after{
+    content:'';
+    position:absolute;
+    inset:-16px;
+    border-radius:50%;
+    background:conic-gradient(from 0deg,
+      rgba(168,85,247,0) 0deg,
+      rgba(216,180,255,0.6) 55deg,
+      rgba(168,85,247,0) 140deg,
+      rgba(124,58,237,0.55) 220deg,
+      rgba(216,180,255,0) 320deg);
+    filter:blur(7px);
+    z-index:-1;
+    animation:auraSpin 3s linear infinite;
+    pointer-events:none;
+  }
+  .balloon::before{
+    content:'∞';
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Russo One',sans-serif;
+    font-size:84px;
+    color:rgba(255,255,255,0.9);
+    text-shadow:
+      0 0 16px rgba(216,180,255,0.95),
+      0 0 34px rgba(168,85,247,0.85);
+    animation:coreGlow 1.1s ease-in-out infinite;
+    pointer-events:none;
+  }
+  @keyframes auraSpin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+  @keyframes coreGlow{0%,100%{opacity:0.7;transform:scale(0.96);}50%{opacity:1;transform:scale(1.06);}}
+  @keyframes bobble{
+    0%,100%{
+      transform:translateY(0) rotate(-2deg) scale(var(--scale,1));
+      box-shadow:inset -12px -18px 30px rgba(40,0,80,0.45),inset 10px 12px 26px rgba(255,255,255,0.45),0 0 26px rgba(168,85,247,0.7),0 0 50px rgba(124,58,237,0.5);
+    }
+    50%{
+      transform:translateY(-6px) rotate(2deg) scale(var(--scale,1));
+      box-shadow:inset -12px -18px 30px rgba(40,0,80,0.45),inset 10px 12px 26px rgba(255,255,255,0.45),0 0 40px rgba(192,132,252,0.95),0 0 80px rgba(168,85,247,0.7);
+    }
+  }
+  .balloon.danger{
+    animation:bobble 0.3s ease-in-out infinite;
+    filter:saturate(1.5) brightness(1.12) drop-shadow(0 0 14px rgba(236,72,153,0.9));
+  }
+  .balloon.exploded{ animation:explode 0.6s forwards; }
+  @keyframes explode{
+    0%{transform:scale(var(--scale,1.5));opacity:1;filter:brightness(1);}
+    25%{transform:scale(2.3);opacity:0.95;filter:brightness(2) saturate(1.6) drop-shadow(0 0 40px rgba(192,132,252,1));}
+    100%{transform:scale(0.1);opacity:0;filter:brightness(2.5);}
+  }
+
+  .burst{
+    position:absolute;
+    top:50%;left:50%;
+    width:1px;height:1px;
+    z-index:5;
+    pointer-events:none;
+  }
+  .burst.show .piece{
+    animation:pieceFly 0.7s ease-out forwards;
+  }
+  .burst.show::after{
+    content:'';position:absolute;top:0;left:0;width:40px;height:40px;margin:-20px 0 0 -20px;
+    border:4px solid rgba(216,180,255,0.95);border-radius:50%;transform:scale(0);
+    box-shadow:0 0 22px rgba(168,85,247,0.9);animation:shockwave 0.7s ease-out forwards;
+  }
+  @keyframes shockwave{0%{transform:scale(0);opacity:1;}100%{transform:scale(6);opacity:0;}}
+  .piece{
+    position:absolute;
+    top:0;left:0;
+    width:14px;height:14px;
+    background:#a855f7;
+    border-radius:50%;
+    transform:translate(-50%,-50%) scale(0);
+    box-shadow:0 0 10px rgba(168,85,247,0.9);
+  }
+  .piece.p1{ --tx:-100px; --ty:-80px; }
+  .piece.p2{ --tx:90px; --ty:-90px; }
+  .piece.p3{ --tx:-110px; --ty:30px; }
+  .piece.p4{ --tx:100px; --ty:40px; }
+  .piece.p5{ --tx:-40px; --ty:-130px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p6{ --tx:50px; --ty:-120px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p7{ --tx:-130px; --ty:-20px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p8{ --tx:120px; --ty:-30px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  @keyframes pieceFly{
+    0%{transform:translate(-50%,-50%) scale(0);opacity:1;}
+    30%{transform:translate(calc(-50% + var(--tx) * 0.5),calc(-50% + var(--ty) * 0.5)) scale(1.2);opacity:1;}
+    100%{transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty) + 60px)) scale(0.3);opacity:0;}
+  }
+
+  /* 棒人間画像 */
+  .stickman{
+    position:absolute;
+    bottom:5px;
+    left:50%;
+    margin-left:-83px;
+    width:165px;
+    height:200px;
+    z-index:30;
+    transform-origin:bottom center;
+  }
+  .stickman .char{
+    display:none;
+    width:100%;height:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    pointer-events:none;
+    filter:drop-shadow(0 4px 6px rgba(31,56,100,0.18));
+  }
+  .stickman.normal .char-normal{display:block;}
+  .stickman.danger .char-danger{display:block;}
+  .stickman.happy .char-happy{display:block;}
+  .stickman.shocked .char-shocked{display:block;}
+
+  .stickman.normal{ animation:smRock 2.5s ease-in-out infinite; }
+  @keyframes smRock{
+    0%,100%{transform:rotate(-1.5deg);}
+    50%{transform:rotate(1.5deg);}
+  }
+  .stickman.danger{ animation:smShake 0.1s ease-in-out infinite; }
+  @keyframes smShake{
+    0%,100%{transform:translateX(0) rotate(0);}
+    25%{transform:translateX(-3px) rotate(-2deg);}
+    75%{transform:translateX(3px) rotate(2deg);}
+  }
+  .stickman.happy{ animation:smJump 0.8s ease-out; }
+  @keyframes smJump{
+    0%{transform:translateY(0) rotate(0);}
+    30%{transform:translateY(-35px) rotate(-5deg);}
+    60%{transform:translateY(-35px) rotate(5deg);}
+    100%{transform:translateY(0) rotate(0);}
+  }
+  .stickman.shocked{ animation:smBlast 0.8s ease-out forwards; }
+  @keyframes smBlast{
+    0%{transform:translate(0,0) rotate(0) scale(1);}
+    15%{transform:translate(0,-10px) scale(1.1);}
+    100%{transform:translate(35px,-15px) rotate(28deg) scale(0.9);}
+  }
+
+  .boom-text{
+    position:absolute;
+    top:40%;left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    font-family:'Bungee',sans-serif;
+    font-size:62px;
+    color:#d8b4fe;
+    text-shadow:
+      0 0 22px rgba(192,132,252,1),
+      0 0 44px rgba(168,85,247,0.9),
+      4px 4px 0 #7c3aed,
+      8px 8px 0 var(--navy);
+    pointer-events:none;
+    z-index:10;
+  }
+  .boom-text.show{ animation:boomPop 0.7s ease-out forwards; }
+  @keyframes boomPop{
+    0%{transform:translate(-50%,-50%) scale(0) rotate(-25deg);}
+    40%{transform:translate(-50%,-50%) scale(1.4) rotate(12deg);}
+    70%{transform:translate(-50%,-50%) scale(1.1) rotate(-3deg);opacity:1;}
+    100%{transform:translate(-50%,-50%) scale(1) rotate(0);opacity:0;}
+  }
+
+  .question-area{
+    flex-shrink:0;
+    background:var(--paper);
+    border:3px solid var(--navy);
+    border-radius:18px;
+    padding:18px 16px;
+    margin-bottom:14px;
+    text-align:center;
+    box-shadow:0 5px 0 var(--navy), 0 10px 20px rgba(31,56,100,0.15);
+    position:relative;
+  }
+  .question-area::before{
+    content:'問題';
+    position:absolute;top:-10px;left:14px;
+    background:var(--gold-bright);
+    color:var(--navy-deep);
+    padding:2px 10px;
+    border-radius:10px;
+    border:2px solid var(--navy);
+    font-size:11px;
+    letter-spacing:0.15em;
+    font-weight:800;
+  }
+  .question{
+    font-family:'Russo One','M PLUS Rounded 1c',sans-serif;
+    font-size:50px;
+    line-height:1.1;
+    color:var(--navy-deep);
+    margin-top:4px;
+    letter-spacing:0.02em;
+  }
+  .question sup{
+    font-size:0.55em;
+    vertical-align:super;
+    color:var(--red);
+    margin-left:2px;
+  }
+  .question .negbase{color:var(--red);}
+
+  .choices{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    min-height:0;
+  }
+  .choice{
+    background:linear-gradient(180deg,#fff,var(--light-blue));
+    border:3px solid var(--navy);
+    border-radius:16px;
+    color:var(--navy-deep);
+    font-family:'Russo One',sans-serif;
+    font-size:28px;
+    cursor:pointer;
+    transition:transform 0.1s, background 0.2s;
+    box-shadow:0 5px 0 var(--navy);
+    position:relative;
+  }
+  .choice:active{
+    transform:translateY(3px);
+    box-shadow:0 2px 0 var(--navy);
+  }
+  .choice.correct{
+    background:linear-gradient(180deg,#A8E6CF,var(--green));
+    color:#fff;
+    animation:correctPulse 0.4s;
+  }
+  .choice.wrong{
+    background:linear-gradient(180deg,#FFB3B3,var(--red));
+    color:#fff;
+    animation:wrongShake 0.4s;
+  }
+  @keyframes correctPulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+  }
+  @keyframes wrongShake{
+    0%,100%{transform:translateX(0);}
+    25%{transform:translateX(-8px);}
+    75%{transform:translateX(8px);}
+  }
+  .choice:disabled{cursor:not-allowed;}
+
+  .combo{
+    position:absolute;
+    top:-10px;right:14px;
+    transform:scale(0);
+    background:var(--gold-bright);
+    color:var(--navy-deep);
+    font-family:'Russo One',sans-serif;
+    padding:4px 12px;
+    border-radius:20px;
+    border:2px solid var(--navy);
+    font-size:13px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .combo.show{ animation:comboPop 0.8s ease-out; }
+  @keyframes comboPop{
+    0%{transform:scale(0) rotate(-15deg);}
+    30%{transform:scale(1.3) rotate(8deg);}
+    60%{transform:scale(1) rotate(0);opacity:1;}
+    100%{transform:scale(1) rotate(0);opacity:0;}
+  }
+
+  .overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(255,250,235,0.96),rgba(255,244,214,0.96));
+    backdrop-filter:blur(8px);
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    padding:24px;
+    z-index:50;
+    text-align:center;
+  }
+  .overlay.hidden{display:none;}
+
+  .overlay .ark-tag{
+    font-size:10px;
+    letter-spacing:0.3em;
+    color:var(--gold);
+    margin-bottom:8px;
+    font-weight:800;
+  }
+  .overlay .ark-tag a{
+    color:var(--gold);
+    text-decoration:none;
+  }
+
+  .title-stage{
+    position:relative;
+    width:240px;
+    height:230px;
+    margin:8px auto 4px;
+  }
+  .title-balloon{
+    width:170px;
+    height:195px;
+    background:
+      radial-gradient(circle at 30% 26%,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 18%),
+      radial-gradient(circle at 50% 45%,#f0e0ff 0%,#c79bff 22%,#a855f7 50%,#7c3aed 74%,#4c1d95 100%);
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-85px;
+    box-shadow:
+      inset -10px -16px 26px rgba(40,0,80,0.45),
+      inset 8px 10px 22px rgba(255,255,255,0.45),
+      0 0 28px rgba(168,85,247,0.75),
+      0 0 56px rgba(124,58,237,0.55);
+    transform-origin:50% 92%;
+    animation:titlePulse 1.5s ease-in-out infinite;
+    z-index:1;
+  }
+  .title-balloon::after{
+    content:'';
+    position:absolute;
+    inset:-14px;
+    border-radius:50%;
+    background:conic-gradient(from 0deg,rgba(168,85,247,0) 0deg,rgba(216,180,255,0.6) 55deg,rgba(168,85,247,0) 140deg,rgba(124,58,237,0.55) 220deg,rgba(216,180,255,0) 320deg);
+    filter:blur(7px);
+    z-index:-1;
+    animation:auraSpin 3s linear infinite;
+    pointer-events:none;
+  }
+  .title-balloon::before{
+    content:'';
+    position:absolute;
+    top:16%;left:20%;
+    width:30%;height:32%;
+    background:radial-gradient(ellipse,rgba(255,255,255,0.6),rgba(255,255,255,0) 70%);
+    border-radius:50%;
+    pointer-events:none;
+  }
+  @keyframes titlePulse{
+    0%,100%{transform:translateY(0) rotate(-3deg) scale(1);}
+    50%{transform:translateY(-8px) rotate(3deg) scale(1.05);}
+  }
+  .balloon-label{
+    position:absolute;
+    top:38%;left:50%;
+    transform:translate(-50%,-50%);
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    font-size:42px;
+    font-weight:900;
+    color:#fff;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+    z-index:2;
+    pointer-events:none;
+  }
+
+  .title-stickman{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-65px;
+    width:130px;
+    height:160px;
+    z-index:3;
+  }
+  .title-stickman img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    filter:drop-shadow(0 4px 6px rgba(31,56,100,0.18));
+    animation:fighterBounce 1s ease-in-out infinite;
+  }
+  @keyframes fighterBounce{
+    0%,100%{transform:translateY(0) rotate(-2deg);}
+    50%{transform:translateY(-6px) rotate(2deg);}
+  }
+
+  .game-title{
+    font-family:'Bungee',sans-serif;
+    font-size:46px;
+    line-height:1;
+    color:var(--red);
+    text-shadow:
+      4px 4px 0 var(--gold-bright),
+      8px 8px 0 var(--navy);
+    margin-top:8px;
+    letter-spacing:0.02em;
+    transform:rotate(-2deg);
+  }
+  .game-title-sub{
+    font-size:13px;
+    color:var(--navy-deep);
+    margin:8px 0 16px;
+    letter-spacing:0.15em;
+    font-weight:800;
+  }
+  .game-title-sub strong{
+    color:var(--red);
+    font-size:18px;
+  }
+
+  .start-btn{
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    color:var(--navy-deep);
+    border:3px solid var(--navy);
+    font-family:'Russo One',sans-serif;
+    font-size:24px;
+    padding:14px 50px;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 6px 0 var(--navy), 0 10px 25px rgba(191,144,0,0.4);
+    transition:transform 0.1s, box-shadow 0.1s;
+    letter-spacing:0.08em;
+    font-weight:800;
+    animation:startPulse 1.2s ease-in-out infinite;
+  }
+  .start-btn:active{
+    transform:translateY(3px);
+    box-shadow:0 3px 0 var(--navy), 0 6px 15px rgba(191,144,0,0.4);
+  }
+  @keyframes startPulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+  }
+
+  .countdown{
+    position:absolute;
+    inset:0;
+    background:rgba(255,250,235,0.92);
+    backdrop-filter:blur(10px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    pointer-events:none;
+  }
+  .countdown.hidden{display:none;}
+  .countdown-num{
+    font-family:'Orbitron','Bungee',sans-serif;font-weight:700;
+    font-size:160px;
+    color:var(--red);
+    text-shadow:
+      6px 6px 0 var(--gold-bright),
+      12px 12px 0 var(--navy);
+    animation:countPop 0.5s ease-out;
+  }
+  @keyframes countPop{
+    0%{transform:scale(0) rotate(-25deg);opacity:0;}
+    50%{transform:scale(1.3) rotate(8deg);opacity:1;}
+    100%{transform:scale(1) rotate(0);opacity:1;}
+  }
+
+  .result-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin:20px 0 28px;
+    width:100%;max-width:280px;
+  }
+  .stat{
+    background:var(--paper);
+    border:2px solid var(--navy);
+    border-radius:12px;
+    padding:12px 8px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .stat-label{font-size:10px;color:var(--gold);letter-spacing:0.15em;font-weight:800;}
+  .stat-value{font-family:'Russo One',sans-serif;font-size:26px;margin-top:4px;color:var(--navy-deep);}
+
+  .rank{
+    font-family:'Bungee',sans-serif;
+    font-size:80px;
+    color:var(--gold);
+    text-shadow:4px 4px 0 var(--navy);
+    margin:0;
+  }
+  .rank-comment{
+    color:var(--navy-deep);
+    font-size:16px;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  .result-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:6px;
+  }
+  .menu-btn{
+    background:var(--paper);
+    color:var(--navy-deep);
+    border:3px solid var(--navy);
+    font-family:'Russo One',sans-serif;
+    font-size:16px;
+    padding:12px 24px;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 5px 0 var(--navy);
+    letter-spacing:0.05em;
+    font-weight:800;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .menu-btn:active{
+    transform:translateY(2px);
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .result-buttons .start-btn{
+    animation:none;
+    font-size:16px;
+    padding:12px 24px;
+  }
+
+  .ark-footer{
+    position:absolute;
+    bottom:8px;left:0;right:0;
+    text-align:center;
+    font-size:9px;
+    letter-spacing:0.3em;
+    color:var(--gold);
+    z-index:5;
+    font-weight:700;
+  }
+
+  @media (max-height:680px){
+    .stage{height:230px;}
+    .balloon{width:170px;height:195px;margin-left:-85px;}
+    .stickman{width:140px;height:170px;margin-left:-70px;}
+    .question{font-size:42px;}
+    .choice{font-size:24px;}
+    .title-stage{width:200px;height:200px;}
+    .title-balloon{width:140px;height:160px;margin-left:-70px;}
+    .balloon-label{font-size:34px;}
+    .title-stickman{width:110px;height:135px;margin-left:-55px;}
+    .game-title{font-size:38px;}
+    .countdown-num{font-size:120px;}
+  }
+  .explain-box{
+    position:fixed;left:50%;bottom:0;transform:translate(-50%,110%);
+    width:100%;max-width:520px;background:var(--paper);
+    border:3px solid var(--navy);border-bottom:none;border-radius:20px 20px 0 0;
+    padding:16px 18px calc(18px + env(safe-area-inset-bottom,0));
+    box-shadow:0 -6px 24px rgba(31,56,100,0.25);z-index:60;
+    transition:transform 0.35s cubic-bezier(.2,.8,.2,1);
+  }
+  .explain-box.show{transform:translate(-50%,0);}
+  .explain-head{font-family:'Bungee',sans-serif;font-size:13px;color:var(--gold);letter-spacing:0.2em;margin-bottom:6px;}
+  .explain-ans{font-size:20px;font-weight:900;color:var(--navy-deep);margin-bottom:8px;}
+  .explain-ans b{color:var(--red);font-size:26px;}
+  .explain-body{font-size:15px;line-height:1.65;color:var(--navy-deep);font-weight:700;}
+  .explain-body sup{font-size:0.7em;vertical-align:super;}
+  .explain-next{margin-top:14px;width:100%;font-family:'Russo One',sans-serif;font-size:18px;color:var(--navy-deep);
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:3px solid var(--navy);border-radius:30px;
+    padding:12px 0;box-shadow:0 4px 0 var(--navy);cursor:pointer;letter-spacing:0.1em;font-weight:800;}
+  .explain-next:active{transform:translateY(2px);box-shadow:0 2px 0 var(--navy);}
+  /* === 濃紺テーマ統一 (ARK) === */
+  body{background:linear-gradient(180deg,#1a2742 0%,#0d1626 100%)!important;background-attachment:fixed!important;}
+  .overlay{background:linear-gradient(180deg,rgba(26,39,66,0.97),rgba(13,22,38,0.97))!important;backdrop-filter:blur(6px);}
+  .countdown{background:rgba(13,22,38,0.94)!important;}
+  .game-title-sub{color:#F3E9CE!important;font-family:'Dela Gothic One','M PLUS Rounded 1c',sans-serif!important;letter-spacing:0.05em;font-weight:400;}
+  .game-title-sub strong{color:#FF6B5A!important;}
+  .rank-comment{color:#F3E9CE!important;}
+  .back-btn{background:rgba(255,255,255,0.08)!important;color:#F3E9CE!important;border-color:rgba(255,200,61,0.6)!important;box-shadow:0 3px 0 rgba(0,0,0,0.4)!important;}
+  /* キャラを濃紺でも見えるように後ろに光 */
+  .stickman{position:absolute;}
+  .stickman::before,.title-stickman::before{content:'';position:absolute;left:50%;top:52%;width:150%;height:130%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(216,180,255,0.30),rgba(216,180,255,0) 70%);z-index:-1;pointer-events:none;}
+  /* スタート画面の背景に敵(攻撃ポーズ) */
+  #start-overlay .boss-bg{display:none;position:absolute;top:1%;left:50%;transform:translateX(-50%);width:110%;max-width:560px;height:auto;opacity:0.72;z-index:0;pointer-events:none;filter:drop-shadow(0 0 28px rgba(124,58,237,0.75));}
+  #start-overlay > *{position:relative;z-index:2;}
+  /* === タイトル全画面イラスト モード === */
+  #start-overlay.artmode{padding:6px!important;justify-content:center!important;}
+  #start-overlay.artmode > *{display:none!important;}
+  #start-overlay.artmode .title-art{display:block!important;}
+  .title-art{display:none;position:relative;width:100%;max-width:440px;margin:auto;}
+  .title-art-img{width:100%;display:block;border-radius:10px;}
+  .art-orb{position:absolute;left:50%;top:31.5%;transform:translate(-50%,-50%);width:24%;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffffff 0%,#e9d5ff 18%,#c79bff 40%,#a855f7 66%,#7c3aed 100%);box-shadow:0 0 26px rgba(192,132,252,0.95),0 0 60px rgba(124,58,237,0.7);display:flex;align-items:center;justify-content:center;animation:artPulse 1.6s ease-in-out infinite;}
+  .art-orb span{font-family:'Russo One',sans-serif;font-size:clamp(26px,6.5vw,46px);color:#fff;text-shadow:0 0 12px rgba(216,180,255,0.95),0 0 22px rgba(168,85,247,0.85);}
+  @keyframes artPulse{0%,100%{transform:translate(-50%,-50%) scale(1);}50%{transform:translate(-50%,-50%) scale(1.06);}}
+  .art-start{position:absolute;left:50%;top:84%;transform:translate(-50%,-50%);width:52%;height:7%;background:transparent;border:none;cursor:pointer;color:#3a2600;font-family:'Russo One',sans-serif;font-size:clamp(16px,4.5vw,24px);font-weight:800;letter-spacing:0.25em;text-shadow:0 1px 0 rgba(255,255,255,0.45);}
+  .art-start:active{transform:translate(-50%,-50%) scale(0.97);}
+  /* 結果画面のランクを濃紺でもくっきり見えるように */
+  #end-overlay .rank{color:#FFC83D!important;text-shadow:3px 3px 0 #4c1d95,0 0 24px rgba(255,200,61,0.6)!important;}
+  #end-overlay .ark-tag{color:#FFC83D!important;}
+  #end-overlay .stat-label{color:#BF9000!important;}
+  #result-illust{width:170px!important;height:170px!important;}
+  /* STARTボタンをはっきり見えるように */
+  #start-overlay.artmode .art-start{color:#fff!important;font-size:clamp(20px,5.5vw,30px)!important;font-weight:800!important;letter-spacing:0.3em!important;text-shadow:0 0 6px rgba(0,0,0,0.95),0 0 16px rgba(124,58,237,0.9),0 2px 4px rgba(0,0,0,1)!important;animation:artBtnPulse 1.3s ease-in-out infinite!important;}
+  @keyframes artBtnPulse{0%,100%{transform:translate(-50%,-50%) scale(1);}50%{transform:translate(-50%,-50%) scale(1.08);}}
+  #result-illust{width:240px!important;height:240px!important;margin:4px auto 10px!important;}
+  /* 結果画面：大きく＆余白を活かす＆イラストを紺になじませる */
+  #end-overlay{justify-content:center!important;padding:16px!important;}
+  #end-overlay .ark-tag{margin-bottom:2px!important;}
+  #result-illust{width:auto!important;height:auto!important;max-width:min(84vw,340px)!important;max-height:46vh!important;margin:0 auto 4px!important;display:block;filter:none!important;-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 46%,#000 58%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 46%,#000 58%,rgba(0,0,0,0) 100%);}
+  #end-overlay .rank{font-size:clamp(72px,22vw,112px)!important;margin:0!important;line-height:0.85!important;}
+  #end-overlay .rank-comment{margin:6px 0 16px!important;font-size:18px!important;}
+  #end-overlay .result-stats{margin:0 0 18px!important;}
+  /* スタート画面：エネルギー弾とSTARTの位置微調整 */
+  #start-overlay .art-orb{top:35.5%!important;}
+  #start-overlay .art-start{top:85.5%!important;height:8%!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+  .bgm-btn{position:fixed;top:10px;right:10px;z-index:300;background:rgba(0,0,0,0.45);color:#fff;border:2px solid var(--gold-bright,#FFC83D);border-radius:50%;width:42px;height:42px;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.4);}
+  .bgm-btn:active{transform:scale(0.92);}
+  #start-overlay .art-start{top:84%!important;height:auto!important;padding:2px 0!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+  .level-btns{display:flex;flex-direction:column;gap:14px;margin:20px 0;width:100%;max-width:320px;}
+  .level-btn{font-family:'Orbitron','Russo One',sans-serif;font-size:26px;font-weight:700;color:var(--navy-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:3px solid var(--navy);border-radius:18px;padding:16px;box-shadow:0 5px 0 var(--navy),0 8px 20px rgba(0,0,0,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;letter-spacing:0.05em;}
+  .level-btn span{font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;font-weight:700;background:var(--navy-deep);color:#fff;border-radius:12px;padding:3px 10px;}
+  .level-btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--navy);}
+  .question{font-size:20px!important;line-height:1.5!important;letter-spacing:0!important;padding:0 6px;white-space:pre-line;}
+  .question sup{display:none;}
+  .choice{font-size:14px!important;line-height:1.3!important;padding:8px 10px!important;word-break:break-word;}
+  /* キャラを固定（ぐらぐら停止） */
+  .stickman.normal{animation:none!important;}
+  .stickman.danger{animation:none!important;}
+</style>
+</head>
+<body>
+<audio id="bgm" loop></audio><button id="bgm-btn" class="bgm-btn" onclick="toggleBGM()" aria-label="music">&#128266;</button>
+
+<div class="game-wrap">
+  <a href="ark-top.html" class="back-btn">← メニュー</a>
+
+  <div class="hud">
+    <div class="hud-box">
+      <div class="hud-label">SCORE</div>
+      <div class="hud-value" id="score">0</div>
+    </div>
+    <div class="hud-center" id="lives">
+      <div class="heart">❤️</div>
+      <div class="heart">❤️</div>
+      <div class="heart">❤️</div>
+    </div>
+    <div class="hud-box" style="text-align:right;">
+      <div class="hud-label">問題</div>
+      <div class="hud-value"><span id="q-num">0</span>/<span id="q-total">15</span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="boom-text" id="boom">BOOM!</div>
+    <div class="balloon" id="balloon" style="--scale:1;"></div>
+
+    <div class="burst" id="burst">
+      <div class="piece p1"></div>
+      <div class="piece p2"></div>
+      <div class="piece p3"></div>
+      <div class="piece p4"></div>
+      <div class="piece p5"></div>
+      <div class="piece p6"></div>
+      <div class="piece p7"></div>
+      <div class="piece p8"></div>
+    </div>
+
+    <div class="stickman normal" id="stickman">
+      <img class="char char-normal" src="" alt="">
+      <img class="char char-danger" src="" alt="">
+      <img class="char char-happy" src="" alt="">
+      <img class="char char-shocked" src="" alt="">
+    </div>
+  </div>
+
+  <div class="question-area">
+    <div class="question" id="question">長</div>
+    <div class="combo" id="combo">COMBO ×2!</div>
+  </div>
+
+  <div class="choices" id="choices">
+    <button class="choice"></button>
+    <button class="choice"></button>
+    <button class="choice"></button>
+    <button class="choice"></button>
+  </div>
+</div>
+
+<div class="explain-box" id="explain">
+  <div class="explain-head">かいせつ</div>
+  <div class="explain-ans" id="explain-ans"></div>
+  <div class="explain-body" id="explain-body"></div>
+  <button class="explain-next" onclick="nextQuestion()">つぎへ &#9654;</button>
+</div>
+
+<div class="overlay" id="start-overlay"><div class="title-art" id="title-art"><img class="title-art-img" alt=""><div class="art-orb"><span>&#8734;</span></div><button class="art-start" onclick="startGame()">START</button></div><img class="boss-bg" alt="">
+  <div class="ark-tag">
+    <a href="ark-top.html">← ARK 数学バスターズ</a>
+  </div>
+
+  <div class="title-stage">
+    <div class="title-balloon">
+      <div class="balloon-label">長</div>
+    </div>
+    <div class="title-stickman">
+      <img class="kazue-title" src="" alt="ファイティングポーズの棒人間">
+    </div>
+  </div>
+
+  <h1 class="game-title">長文の戦場</h1>
+  <p class="game-title-sub"><strong>敵の攻撃を止めろ！</strong></p>
+  <button class="start-btn" onclick="startGame()">START</button>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<div class="countdown hidden" id="countdown">
+  <div class="countdown-num" id="countdown-num">3</div>
+</div>
+
+<div class="overlay hidden" id="level-overlay">
+  <div class="ark-tag">レベルを選べ</div>
+  <div class="level-btns" id="level-btns"></div>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<div class="overlay hidden" id="end-overlay">
+  <div class="ark-tag">RESULT</div>
+  <img id="result-illust" src="" alt="" onerror="this.style.display='none';" style="width:150px;height:150px;object-fit:contain;margin:2px auto 8px;display:none;filter:drop-shadow(0 6px 14px rgba(31,56,100,0.25));">
+  <div class="rank" id="rank">A</div>
+  <div class="rank-comment" id="rank-comment">よくできました！</div>
+  <div class="result-stats">
+    <div class="stat">
+      <div class="stat-label">SCORE</div>
+      <div class="stat-value" id="final-score">0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">MAX COMBO</div>
+      <div class="stat-value" id="max-combo">0</div>
+    </div>
+  </div>
+  <div class="result-buttons">
+    <a href="ark-top.html" class="menu-btn">メニュー</a>
+    <button class="start-btn" onclick="startGame()">もう一度</button>
+  </div>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<script>
+function __img(L){var r=[];for(var i=0;i<L.length;i++){r.push('illust/'+L[i]);r.push(L[i]);}return r;}
+function __mus(L){var r=[];for(var i=0;i<L.length;i++){r.push('music/'+L[i]);r.push(L[i]);}return r;}
+/* ===== 効果音（Web Audio API） ===== */
+let audioCtx = null;
+function initAudio(){
+  if(audioCtx) return;
+  try{
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }catch(e){ audioCtx = null; }
+}
+
+function playTick(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'square';
+  osc.frequency.setValueAtTime(1800, t);
+  osc.frequency.exponentialRampToValueAtTime(800, t + 0.04);
+  gain.gain.setValueAtTime(0.15, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.05);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.06);
+}
+
+function playPop(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const bufferSize = audioCtx.sampleRate * 0.3;
+  const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for(let i = 0; i < bufferSize; i++){
+    data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i/bufferSize, 2);
+  }
+  const noise = audioCtx.createBufferSource();
+  noise.buffer = buffer;
+  const noiseGain = audioCtx.createGain();
+  noiseGain.gain.setValueAtTime(0.5, t);
+  noiseGain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+  noise.connect(noiseGain).connect(audioCtx.destination);
+  noise.start(t);
+
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(180, t);
+  osc.frequency.exponentialRampToValueAtTime(40, t + 0.25);
+  gain.gain.setValueAtTime(0.6, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.3);
+}
+
+function playCorrect(){
+  if(window.__sndCorrect&&window.__sndCorrect._ok){__playFile(window.__sndCorrect);return;}
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const notes = [523.25, 659.25, 783.99];
+  notes.forEach((freq, i) => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.value = freq;
+    const start = t + i * 0.07;
+    gain.gain.setValueAtTime(0, start);
+    gain.gain.linearRampToValueAtTime(0.2, start + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.2);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start(start);
+    osc.stop(start + 0.25);
+  });
+}
+
+function playWrong(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sawtooth';
+  osc.frequency.setValueAtTime(280, t);
+  osc.frequency.exponentialRampToValueAtTime(90, t + 0.35);
+  gain.gain.setValueAtTime(0.25, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.4);
+}
+
+function playBeep(freq){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.25, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.15);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.2);
+}
+
+function playBoom(){
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const bs=Math.floor(audioCtx.sampleRate*0.6);
+  const buf=audioCtx.createBuffer(1,bs,audioCtx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bs;i++){ d[i]=(Math.random()*2-1)*Math.pow(1-i/bs,1.4); }
+  const n=audioCtx.createBufferSource(); n.buffer=buf;
+  const ng=audioCtx.createGain(); ng.gain.setValueAtTime(0.85,t); ng.gain.exponentialRampToValueAtTime(0.001,t+0.5);
+  n.connect(ng).connect(audioCtx.destination); n.start(t);
+  const o=audioCtx.createOscillator(); const g=audioCtx.createGain();
+  o.type='sine'; o.frequency.setValueAtTime(150,t); o.frequency.exponentialRampToValueAtTime(28,t+0.5);
+  g.gain.setValueAtTime(0.9,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.55);
+  o.connect(g).connect(audioCtx.destination); o.start(t); o.stop(t+0.6);
+}
+function playVictory(){
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const seq=[[523.25,0],[659.25,0.12],[783.99,0.24],[1046.5,0.36]];
+  seq.forEach(function(p){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='square'; o.frequency.value=p[0]; const s=t+p[1]; g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(0.2,s+0.02); g.gain.exponentialRampToValueAtTime(0.001,s+0.5); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+0.55); });
+  [523.25,659.25,783.99,1046.5].forEach(function(f){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='triangle'; o.frequency.value=f; const s=t+0.52; g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(0.16,s+0.03); g.gain.exponentialRampToValueAtTime(0.001,s+1.1); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+1.15); });
+}
+function playLose(){
+  if(window.__sndOver&&window.__sndOver._ok){__playFile(window.__sndOver);return;}
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const seq=[[392,0],[349.23,0.18],[293.66,0.36],[233.08,0.54]];
+  seq.forEach(function(p){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='sawtooth'; o.frequency.value=p[0]; const s=t+p[1]; g.gain.setValueAtTime(0.0001,s); g.gain.linearRampToValueAtTime(0.2,s+0.02); g.gain.exponentialRampToValueAtTime(0.001,s+0.45); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+0.5); });
+}
+var PROBLEMS_BY_LEVEL = {"Lv1": [{"q": "Tom has a cat. The cat is on his book. \"Look! My cat is on my book!\" Tom is happy. The cat is happy, too.\n\nWhere is the cat?", "a": "On the book.", "choices": ["On the book.", "On the bed.", "On the chair.", "On the box."], "e": "トムはネコをかっている。ネコが本の上にいる。「見て！ネコが本の上にいる！」トムはうれしい。ネコもうれしい。"}, {"q": "A dog can run. A dog can jump. But this dog can dance! The dog dances and dances. We all clap. What a funny dog!\n\nWhat can this dog do?", "a": "Dance.", "choices": ["Dance.", "Cook.", "Read.", "Sing."], "e": "イヌは走れる。イヌはとべる。でもこのイヌはおどれる！イヌはおどっておどる。みんなでてをたたく。なんておもしろいイヌ！"}, {"q": "Ben puts on his hat. The hat is too big. The hat goes down. Ben can not see! \"Where am I?\" Ben says. Mom laughs.\n\nWhy can't Ben see?", "a": "The hat is too big.", "choices": ["The hat is too big.", "It is dark.", "He is sleepy.", "His eyes hurt."], "e": "ベンはぼうしをかぶる。ぼうしが大きすぎる。ぼうしが下がる。ベンは見えない！「ぼく、どこ？」とベンが言う。ママがわらう。"}, {"q": "It is lunch time. Sam wants cake. He opens his box. No cake! Just one green bean. Sam looks sad. Then his dog eats the bean. Now they both laugh.\n\nWhat is in Sam's box?", "a": "One green bean.", "choices": ["One green bean.", "A big cake.", "Two apples.", "Some milk."], "e": "おひるの時間。サムはケーキがほしい。はこをあける。ケーキがない！みどりのまめが一つだけ。サムはかなしそう。それからイヌがまめを食べる。二人ともわらう。"}, {"q": "The baby has a spoon. The baby eats. One, two, three! Food is on his face. Food is on his hair. Food is everywhere! But the baby is so happy.\n\nWhere is the food?", "a": "Everywhere.", "choices": ["Everywhere.", "In the box.", "On the plate.", "In the bag."], "e": "あかちゃんがスプーンをもつ。あかちゃんが食べる。1、2、3！食べものがかおにつく。かみにつく。どこにでもある！でもあかちゃんはとてもうれしい。"}, {"q": "It is night. The room is dark. Yuki hears a sound. Tap, tap, tap. What is it? She looks. It is just the rain. Yuki smiles and goes to bed.\n\nWhat is the sound?", "a": "The rain.", "choices": ["The rain.", "A cat.", "A ghost.", "Her mom."], "e": "夜だ。へやがくらい。ユキは音を聞く。トン、トン、トン。なに？見る。ただの雨だ。ユキはわらってねる。"}, {"q": "Ben sees a big box. The box moves! Ben is scared. The box moves again. Ben opens it. It is his cat! \"Oh, it is you!\" Ben is happy now.\n\nWhat is in the box?", "a": "His cat.", "choices": ["His cat.", "A ghost.", "A dog.", "A toy."], "e": "ベンは大きなはこを見る。はこがうごく！ベンはこわい。はこがまたうごく。ベンがあける。ネコだ！「なんだ、きみか！」ベンは今うれしい。"}, {"q": "The house is dark. Mika walks. She sees two eyes! The eyes are big. The eyes shine. Mika runs! But it is her cat. \"Meow,\" says the cat.\n\nWhat has the two shining eyes?", "a": "Her cat.", "choices": ["Her cat.", "A monster.", "A dog.", "A bird."], "e": "いえがくらい。ミカがあるく。目が二つ見える！目が大きい。目が光る。ミカは走る！でもそれはネコ。「ニャー」とネコが言う。"}, {"q": "Tom is in bed. He hears feet. Step, step, step. Someone is here! Tom hides. The door opens. It is Dad. \"Time for bed!\" Dad says. Tom laughs.\n\nWho comes into the room?", "a": "Dad.", "choices": ["Dad.", "A ghost.", "His friend.", "A cat."], "e": "トムはベッドにいる。足音が聞こえる。トン、トン、トン。だれかいる！トムはかくれる。ドアがあく。パパだ。「ねる時間だよ！」とパパが言う。トムはわらう。"}, {"q": "The moon is big. Sara looks out. She sees a white thing. It moves. It is so white! Is it a ghost? No! It is just a cat on the wall.\n\nWhat is the white thing?", "a": "A cat.", "choices": ["A cat.", "A ghost.", "Snow.", "A flag."], "e": "つきが大きい。サラが外を見る。白いものが見える。うごく。とても白い！おばけ？ちがう！へいの上のネコだ。"}, {"q": "Aya likes a boy. The boy gives her a flower. The flower is red. Aya is happy. She gives him a flower, too. Now they are friends.\n\nWhat does the boy give Aya?", "a": "A flower.", "choices": ["A flower.", "A book.", "A cat.", "A cake."], "e": "アヤは男の子がすき。男の子が花をくれる。花はあかい。アヤはうれしい。アヤも花をあげる。二人はともだちになる。"}, {"q": "It rains. Mina has no umbrella. A boy comes. \"Let's share!\" he says. They walk together. They are happy. The rain is nice today.\n\nWhat do they share?", "a": "An umbrella.", "choices": ["An umbrella.", "A book.", "A cake.", "A bag."], "e": "雨がふる。ミナはかさがない。男の子が来る。「いっしょに入ろう！」と言う。二人であるく。うれしい。今日は雨がいい。"}, {"q": "Sora gives Hana a blue ribbon. \"It is like the sky,\" he says. Hana likes it. She puts it on. She looks at the sky and smiles.\n\nWhat color is the ribbon?", "a": "Blue.", "choices": ["Blue.", "Red.", "Green.", "Pink."], "e": "ソラがハナにあおいリボンをあげる。「そらみたいだね」と言う。ハナはきにいる。つける。そらを見てわらう。"}, {"q": "Ken sits next to Mai. He is shy. He can not talk. So he draws a cat. He gives it to Mai. Mai smiles big. Now they talk every day.\n\nWhat does Ken draw?", "a": "A cat.", "choices": ["A cat.", "A dog.", "A car.", "A house."], "e": "ケンはマイのとなりにすわる。はずかしい。話せない。だからネコをかく。マイにあげる。マイは大きくわらう。二人はまいにち話す。"}, {"q": "Tomo waits for Saki. He waits and waits. Then Saki comes. She has two ice creams. \"One for you!\" she says. They eat together. Yum!\n\nWhat does Saki bring?", "a": "Two ice creams.", "choices": ["Two ice creams.", "Two books.", "Two flowers.", "Two hats."], "e": "トモはサキをまつ。まってまつ。サキが来る。アイスを二つもっている。「一つはあなたに！」と言う。いっしょに食べる。おいしい！"}, {"q": "A boy finds money. It is not his. He looks for the owner. He finds her. He gives it back. \"Thank you!\" she says. The boy feels good.\n\nWhat does the boy do with the money?", "a": "He gives it back.", "choices": ["He gives it back.", "He keeps it.", "He buys toys.", "He hides it."], "e": "男の子がお金を見つける。じぶんのじゃない。もちぬしをさがす。見つける。かえす。「ありがとう！」と言われる。男の子はいいきもち。"}, {"q": "A dog waits at the door. He waits all day. His friend comes home. The dog runs to him. They are so happy. A dog is a good friend.\n\nWhat does the dog do all day?", "a": "He waits.", "choices": ["He waits.", "He sleeps.", "He eats.", "He runs away."], "e": "イヌがドアでまつ。一日じゅうまつ。ともだちが帰る。イヌがかけよる。とてもうれしい。イヌはいいともだち。"}, {"q": "Mika has no money. So she makes a card. She writes, \"I love you, Mom.\" Mom reads it. Mom cries. \"This is the best gift,\" Mom says.\n\nWhat does Mika make?", "a": "A card.", "choices": ["A card.", "A cake.", "A hat.", "A toy."], "e": "ミカはお金がない。だからカードをつくる。「ママ、だいすき」とかく。ママが読む。ママがなく。「いちばんのプレゼント」とママが言う。"}, {"q": "A baby cries. A little girl has ice cream. She gives it to the baby. The baby smiles. The girl has no ice cream now. But she is happy.\n\nWhat does the girl give the baby?", "a": "Her ice cream.", "choices": ["Her ice cream.", "A toy.", "A book.", "A hat."], "e": "あかちゃんがなく。小さな女の子がアイスをもつ。あかちゃんにあげる。あかちゃんがわらう。女の子はアイスがない。でもうれしい。"}, {"q": "It is cold. A man sees a small cat. The cat is cold. The man gives it food. He gives it a warm box. The cat is happy. The man is happy, too.\n\nWhat does the man give the cat?", "a": "Food and a warm box.", "choices": ["Food and a warm box.", "A toy.", "A ball.", "A hat."], "e": "さむい。男の人が小さなネコを見る。ネコはさむい。男の人が食べものをあげる。あたたかいはこもあげる。ネコはうれしい。男の人もうれしい。"}], "Lv2": [{"q": "Tom has a cat. The cat likes to sleep on Tom's homework. Every morning, Tom says, \"My cat ate my homework!\" His teacher just smiles. She has a cat, too.\n\nWhy does Tom's teacher smile?", "a": "She also has a cat.", "choices": ["She also has a cat.", "She is angry.", "She hates cats.", "She lost her homework."], "e": "トムはネコを飼っている。そのネコはトムの宿題の上で寝るのが好きだ。毎朝トムは「ネコが宿題を食べた！」と言う。先生はただ笑う。先生もネコを飼っているのだ。"}, {"q": "Ken wanted to be tall. Every night he ate a lot of vegetables. One day his little brother said, \"Ken, you are not taller. You are just rounder!\" Ken stopped eating so much.\n\nWhat happened to Ken?", "a": "He became rounder, not taller.", "choices": ["He became rounder, not taller.", "He became taller.", "He became thinner.", "He stopped eating vegetables forever."], "e": "ケンは背が高くなりたかった。毎晩たくさん野菜を食べた。ある日、弟が言った。「ケン、背は高くなってないよ。ただ丸くなっただけ！」ケンは食べ過ぎるのをやめた。"}, {"q": "A dog walked into a shop. It looked at the toys. It picked up a small ball and put it on the table. The shopkeeper was surprised. Then the dog's owner came in and paid for it.\n\nWhat did the dog choose?", "a": "A small ball.", "choices": ["A small ball.", "A big bone.", "A toy car.", "Some food."], "e": "一匹の犬が店に入ってきた。おもちゃを見て、小さなボールをくわえてテーブルに置いた。店員は驚いた。それから犬の飼い主が入ってきて、お金を払った。"}, {"q": "Mary cooked dinner for her family. The soup looked strange and green. Everyone was afraid to try it. Her dad ate it first and said, \"It's delicious!\" Then he quietly drank a lot of water.\n\nWhat did Mary's dad do after eating?", "a": "He quietly drank a lot of water.", "choices": ["He quietly drank a lot of water.", "He cooked again.", "He left the house.", "He ate more soup."], "e": "メアリーは家族に夕食を作った。スープは変な緑色をしていた。みんな食べるのをこわがった。父が最初に食べて「おいしい！」と言った。それからこっそり水をたくさん飲んだ。"}, {"q": "Sam was very sleepy in class. He closed his eyes for just one minute. When he opened them, the room was empty and dark. He had slept until evening! No one woke him up.\n\nWhy was the room empty?", "a": "Sam slept until evening.", "choices": ["Sam slept until evening.", "Sam went home early.", "The class moved to another room.", "It was a holiday."], "e": "サムは授業中とても眠かった。ほんの1分だけ目を閉じた。目を開けると、部屋は空っぽで暗かった。夕方まで寝てしまったのだ！誰も起こしてくれなかった。"}, {"q": "It was midnight. Yuki heard a soft knock on her window. She lived on the third floor. Slowly, she pulled back the curtain. There was nothing there. But on the glass, she saw the print of a small wet hand.\n\nWhat did Yuki find on the window?", "a": "A small wet handprint.", "choices": ["A small wet handprint.", "A bird.", "A letter.", "Her own face."], "e": "真夜中だった。ユキは窓を軽くたたく音を聞いた。彼女は3階に住んでいた。ゆっくりカーテンを開けた。そこには何もなかった。でもガラスには、小さな濡れた手の跡があった。"}, {"q": "Ben found an old doll in the attic. He put it on a chair and went to sleep. In the morning, the doll was on his bed, next to his pillow. He never touched it again.\n\nWhere was the doll in the morning?", "a": "On his bed, next to his pillow.", "choices": ["On his bed, next to his pillow.", "On the chair.", "In the attic.", "On the floor."], "e": "ベンは屋根裏で古い人形を見つけた。椅子に置いて寝た。朝、人形は彼のベッドの上、枕のそばにあった。彼は二度とそれに触れなかった。"}, {"q": "Every night at three, the old clock in the hall rang four times. But the clock was broken. It had no hands and no battery. The family stopped going downstairs at night.\n\nWhy is the clock strange?", "a": "It rings even though it is broken.", "choices": ["It rings even though it is broken.", "It is too loud.", "It is very old.", "It shows the wrong time."], "e": "毎晩3時に、廊下の古い時計が4回鳴った。でもその時計は壊れていた。針もなく電池もなかった。家族は夜に下へ行くのをやめた。"}, {"q": "Mika took a photo of her empty room. When she looked at the picture, she saw a face in the mirror behind her. But she was alone in the house. She deleted the photo at once.\n\nWhat did Mika see in the photo?", "a": "A face in the mirror.", "choices": ["A face in the mirror.", "A cat.", "Her friend.", "A shadow on the floor."], "e": "ミカは誰もいない自分の部屋の写真を撮った。写真を見ると、後ろの鏡に顔が映っていた。でも家には彼女ひとりだった。彼女はすぐに写真を消した。"}, {"q": "A boy walked home in the dark. He heard footsteps behind him. He walked faster. The footsteps walked faster, too. He stopped. The footsteps stopped. He was too afraid to look back.\n\nWhat happened when the boy stopped?", "a": "The footsteps also stopped.", "choices": ["The footsteps also stopped.", "The footsteps ran away.", "He saw a dog.", "The footsteps got louder."], "e": "少年は暗闇の中を歩いて帰った。後ろから足音が聞こえた。彼は速く歩いた。足音も速くなった。彼は止まった。足音も止まった。こわくて振り返れなかった。"}, {"q": "Aya sat next to a quiet boy on the bus every day. They never spoke. One morning, he gave her a small paper flower. She kept it in her bag. The next day, she gave him one, too.\n\nWhat did the boy give Aya?", "a": "A small paper flower.", "choices": ["A small paper flower.", "A book.", "His phone number.", "A candy."], "e": "アヤは毎日バスで静かな男の子の隣に座った。二人は話さなかった。ある朝、彼は彼女に小さな紙の花をくれた。彼女はそれをかばんに入れておいた。翌日、彼女も彼に一つあげた。"}, {"q": "Ryo liked a girl in his class. He was too shy to talk to her. So he drew a picture of her smile and left it on her desk. He did not write his name. But she knew it was him.\n\nWhy did Ryo leave a picture?", "a": "He was too shy to talk to her.", "choices": ["He was too shy to talk to her.", "He wanted to win a prize.", "His teacher told him to.", "He needed money."], "e": "リョウはクラスの女の子が好きだった。恥ずかしくて話しかけられなかった。だから彼女の笑顔の絵を描いて、机に置いた。名前は書かなかった。でも彼女は彼だと分かった。"}, {"q": "It started to rain. Mina had no umbrella. A boy she liked ran to her and held his umbrella over her head. \"Let's share,\" he said. They walked home slowly, even though the rain soon stopped.\n\nWhy did they walk slowly?", "a": "They wanted to stay together longer.", "choices": ["They wanted to stay together longer.", "They were tired.", "The road was wet.", "They were lost."], "e": "雨が降り始めた。ミナは傘を持っていなかった。好きな男の子が走ってきて、彼女の頭の上に傘をさしかけた。「一緒に入ろう」と彼は言った。雨はすぐにやんだのに、二人はゆっくり歩いて帰った。"}, {"q": "Sora and Hana were good friends. On her birthday, Sora gave Hana a blue ribbon. \"It's the color of the sky,\" he said. \"So you can think of me when you look up.\" Hana wore it every day after that.\n\nWhy did Sora choose a blue ribbon?", "a": "So Hana would think of him when looking at the sky.", "choices": ["So Hana would think of him when looking at the sky.", "Blue was on sale.", "It was Hana's old ribbon.", "The teacher chose it."], "e": "ソラとハナは仲のよい友達だった。誕生日に、ソラはハナに青いリボンをあげた。「空の色だよ」と彼は言った。「見上げたとき、僕のことを思い出せるように。」それからハナは毎日それをつけた。"}, {"q": "Every day after school, Tomo waited at the gate for Saki. One day Saki was sick and did not come. Tomo waited for two hours in the cold. The next day, Saki cried and said, \"Don't wait so long again.\"\n\nWhy did Saki cry?", "a": "Tomo waited so long in the cold for her.", "choices": ["Tomo waited so long in the cold for her.", "She lost her bag.", "She failed a test.", "Tomo was angry."], "e": "放課後、トモは毎日門でサキを待った。ある日サキは病気で来なかった。トモは寒い中2時間待った。翌日、サキは泣いて言った。「もうそんなに長く待たないで。」"}, {"q": "A poor boy found a wallet full of money. He looked for the owner for two hours. Finally, he gave it back. The owner was so happy that she gave him a small reward and a big smile.\n\nWhat did the boy do with the wallet?", "a": "He gave it back to the owner.", "choices": ["He gave it back to the owner.", "He kept the money.", "He threw it away.", "He bought toys."], "e": "貧しい少年がお金でいっぱいの財布を見つけた。2時間、持ち主を探した。ついに返した。持ち主はとても喜び、彼に小さなお礼と大きな笑顔をくれた。"}, {"q": "An old dog waited at the station every day. His owner had died, but the dog did not know. People in the town took care of him. They all loved the faithful dog who never stopped waiting.\n\nWhy did the dog wait at the station?", "a": "He was waiting for his owner.", "choices": ["He was waiting for his owner.", "He wanted food.", "He was lost.", "He liked trains."], "e": "年老いた犬が毎日駅で待っていた。飼い主は亡くなっていたが、犬はそれを知らなかった。町の人々が犬の世話をした。みんな、待つことをやめない忠実な犬を愛した。"}, {"q": "Mika had no money for her mother's birthday. So she made a card by hand and wrote, \"Thank you for everything.\" Her mother cried and said it was the best present she had ever received.\n\nWhy did the mother cry?", "a": "She was moved by the handmade card.", "choices": ["She was moved by the handmade card.", "She was sad.", "She lost her present.", "She was sick."], "e": "ミカは母の誕生日にあげるお金がなかった。だから手作りのカードを作り、「いつもありがとう」と書いた。母は泣いて、今までもらった中で一番のプレゼントだと言った。"}, {"q": "A small girl gave her ice cream to a crying baby. Her own ice cream fell on the ground a moment later. She did not cry. \"The baby's smile is sweeter than ice cream,\" she said.\n\nWhy didn't the girl cry?", "a": "The baby's smile made her happy.", "choices": ["The baby's smile made her happy.", "She had more ice cream.", "She did not like ice cream.", "Her mother helped her."], "e": "小さな女の子が、泣いている赤ちゃんに自分のアイスをあげた。その直後、彼女のアイスは地面に落ちた。彼女は泣かなかった。「赤ちゃんの笑顔の方がアイスより甘いもん」と言った。"}, {"q": "Every winter, a man left warm food outside for the street cats. He was not rich, but he shared what he had. One cold morning, the cats came to his door and sat with him, keeping him warm too.\n\nWhat did the cats do one cold morning?", "a": "They sat with the man and kept him warm.", "choices": ["They sat with the man and kept him warm.", "They ran away.", "They brought him food.", "They woke him up."], "e": "毎年冬、ある男が野良猫のために温かい食べ物を外に置いた。彼は裕福ではなかったが、持っているものを分け合った。ある寒い朝、猫たちが彼のドアに来て一緒に座り、彼も温めてくれた。"}], "Lv3": [{"q": "Mr. Brown was proud of his new smart speaker. \"Turn off the lights,\" he said, and the lights went off. His grandmother watched quietly. Later, she walked to the wall, pushed the switch, and said, \"My speaker is faster than yours.\" Everyone laughed because she was right.\n\nWhy did everyone laugh?", "a": "The grandmother's switch was faster than the speaker.", "choices": ["The grandmother's switch was faster than the speaker.", "The speaker was broken.", "Mr. Brown fell down.", "The lights never turned off."], "e": "ブラウンさんは新しいスマートスピーカーを自慢していた。「ライトを消して」と言うと、明かりが消えた。祖母は静かに見ていた。後で彼女は壁まで歩き、スイッチを押して言った。「私のスピーカーの方が速いわ。」彼女が正しかったので、みんな笑った。"}, {"q": "Lisa decided to surprise her friends by baking a cake. She followed the recipe carefully, but she used salt instead of sugar. When her friends tried it, their faces changed completely. Lisa took one bite and shouted, \"Who made this terrible cake?\" Then she remembered that she did.\n\nWhy did the cake taste bad?", "a": "Lisa used salt instead of sugar.", "choices": ["Lisa used salt instead of sugar.", "Lisa burned the cake.", "The oven was broken.", "Lisa forgot the eggs."], "e": "リサは友達を驚かせようとケーキを焼くことにした。レシピを丁寧に守ったが、砂糖の代わりに塩を使った。友達が食べると、顔つきがすっかり変わった。リサも一口食べて叫んだ。「誰がこんなひどいケーキ作ったの？」そして、自分だったと思い出した。"}, {"q": "During the test, Jack's stomach made a very loud noise. The whole class went quiet and looked at him. Jack pointed at the boy next to him and frowned. But the boy next to him was eating a sandwich and just smiled. Everyone knew the truth.\n\nWhat did Jack try to do?", "a": "Blame the boy next to him.", "choices": ["Blame the boy next to him.", "Share his lunch.", "Leave the classroom.", "Finish the test first."], "e": "テスト中、ジャックのお腹がとても大きな音を立てた。クラス全体が静かになり、彼を見た。ジャックは隣の男の子を指さして、しかめ面をした。でも隣の子はサンドイッチを食べていて、ただ笑っていた。みんな本当のことを知っていた。"}, {"q": "Emma's parents told her not to feed the dog from the table. So Emma was very careful. She never gave food to the dog from the table. Instead, she dropped it on the floor first, then the dog ate it. \"I followed the rule,\" she said with a big smile.\n\nHow did Emma follow the rule?", "a": "She dropped food on the floor instead of giving it from the table.", "choices": ["She dropped food on the floor instead of giving it from the table.", "She stopped feeding the dog.", "She fed the dog outside.", "She asked her parents first."], "e": "エマの両親は、テーブルから犬に食べ物をあげないように言った。だからエマはとても気をつけた。テーブルから犬に食べ物を与えることは決してしなかった。代わりに、まず床に落として、それを犬が食べた。「ルールは守ったよ」と彼女は満面の笑みで言った。"}, {"q": "A man bought a parrot that could say only one sentence: \"Who is there?\" One night, someone knocked on his door. The parrot shouted, \"Who is there?\" The visitor answered, but no one opened the door. He waited for an hour, knocking and answering the bird again and again.\n\nWhy did the visitor wait so long?", "a": "He thought a person was asking who he was.", "choices": ["He thought a person was asking who he was.", "The man was sleeping.", "The door was locked.", "The parrot opened the door."], "e": "ある男がたった一文だけ言えるオウムを買った。「誰だ？」だ。ある夜、誰かがドアをノックした。オウムが「誰だ？」と叫んだ。客は答えたが、誰もドアを開けなかった。彼は1時間待ち、鳥に何度も答え続けた。"}, {"q": "Sara moved into a new apartment. On the first night, she found a note under the door. It said, \"Welcome. Please don't use the bathroom after midnight.\" She laughed and forgot about it. But at 1 a.m., when she turned on the bathroom light, she finally understood why someone had warned her.\n\nWhat did the note tell Sara not to do?", "a": "Use the bathroom after midnight.", "choices": ["Use the bathroom after midnight.", "Open the windows.", "Talk to the neighbors.", "Turn on the lights."], "e": "サラは新しいアパートに引っ越した。最初の夜、ドアの下にメモを見つけた。「ようこそ。真夜中以降はお風呂を使わないで」と書いてあった。彼女は笑って忘れた。でも午前1時、バスルームの電気をつけたとき、なぜ誰かが警告したのか、ついに理解した。"}, {"q": "The teacher counted the students before the trip. \"One, two, three... thirty-one.\" But only thirty students had come that day. She counted again. Thirty-one. She looked at each face carefully. Every face smiled back at her. One of them smiled a little too widely.\n\nWhat was strange about the count?", "a": "There was one more student than expected.", "choices": ["There was one more student than expected.", "One student was missing.", "The students were too quiet.", "The teacher forgot the number."], "e": "先生は遠足の前に生徒を数えた。「1、2、3…31人。」でもその日来ていたのは30人だけだった。もう一度数えた。31人。一人ひとりの顔をよく見た。どの顔も彼女に笑い返した。そのうちの一つが、少し大きすぎる笑みを浮かべていた。"}, {"q": "Kenji liked to play a game alone. He would ask a question out loud and wait for an answer in the silence. For weeks, nothing happened. Then one rainy night, after he asked, \"Is anyone there?\", a quiet voice answered, \"I have been waiting for you to ask again.\"\n\nWhat happened on the rainy night?", "a": "A voice answered his question.", "choices": ["A voice answered his question.", "The game stopped working.", "His friend came over.", "The lights went out."], "e": "ケンジはひとりで遊ぶゲームが好きだった。声に出して質問をして、静けさの中で答えを待つのだ。何週間も何も起きなかった。そしてある雨の夜、「誰かいる？」と尋ねた後、静かな声が答えた。「君がまた聞いてくれるのを、ずっと待っていたよ。」"}, {"q": "My grandmother's house had thirteen rooms. As a child, I played in all of them except one. The door of that room was always locked. \"It keeps something safe inside,\" Grandmother said. After she died, we opened it. The room was empty, but the lock was on the inside of the door.\n\nWhy was the empty room frightening?", "a": "The lock was on the inside of the door.", "choices": ["The lock was on the inside of the door.", "It was full of dolls.", "It had no windows.", "The walls were black."], "e": "祖母の家には13の部屋があった。子どもの頃、私は一つを除いて全部の部屋で遊んだ。その部屋のドアはいつも鍵がかかっていた。「中の何かを守っているのよ」と祖母は言った。祖母が亡くなった後、私たちはその部屋を開けた。部屋は空っぽだったが、鍵はドアの内側についていた。"}, {"q": "During the storm, the power went out. Lily lit a single candle and sat alone. To feel less afraid, she whispered, \"It's okay, I'm not scared.\" From the dark corner of the room, a soft voice repeated her exact words: \"It's okay, I'm not scared.\" The voice was not hers.\n\nWhat was frightening in the dark room?", "a": "A voice repeated her words.", "choices": ["A voice repeated her words.", "The candle went out.", "The storm broke the window.", "Someone knocked on the door."], "e": "嵐の間、停電した。リリーはろうそくを一本つけて、ひとりで座った。こわさを減らそうと、彼女は「大丈夫、こわくない」とささやいた。部屋の暗い隅から、柔らかい声が彼女とまったく同じ言葉をくり返した。「大丈夫、こわくない。」その声は彼女のものではなかった。"}, {"q": "Yuna and Kai promised to watch the fireworks together every summer. After high school, Kai moved to a city far away. The first summer apart, Yuna went to the festival alone, feeling sad. Then her phone rang. It was a video call from Kai, showing the same fireworks in his new city. \"We are still watching together,\" he said softly.\n\nHow did Kai keep their promise?", "a": "He showed Yuna the same fireworks on a video call.", "choices": ["He showed Yuna the same fireworks on a video call.", "He came back to the festival.", "He sent her a photo.", "He bought new fireworks."], "e": "ユナとカイは毎年夏、一緒に花火を見ると約束した。高校卒業後、カイは遠い街へ引っ越した。離れて初めての夏、ユナは寂しい気持ちで一人お祭りに行った。すると電話が鳴った。カイからのビデオ通話で、彼の新しい街の同じ花火が映っていた。「僕たちはまだ一緒に見てるよ」と彼は優しく言った。"}, {"q": "Haru lent his favorite book to Nao. Inside, he had secretly underlined the words \"I like you\" on different pages. He hoped she would notice. A week later, Nao returned the book. She had underlined the words \"me too\" in the same way. Neither of them said anything out loud, but both were smiling.\n\nWhat did Nao do with the book?", "a": "She underlined the words 'me too'.", "choices": ["She underlined the words 'me too'.", "She lost the book.", "She wrote a long letter.", "She kept it forever."], "e": "ハルはお気に入りの本をナオに貸した。中で、彼はこっそりいろんなページの「君が好き」という言葉に下線を引いていた。気づいてほしかった。一週間後、ナオは本を返した。彼女は同じやり方で「私も」という言葉に下線を引いていた。二人とも声には出さなかったが、どちらもほほえんでいた。"}, {"q": "Emi was new and could not speak the language well. During lunch, she always sat alone. One boy, Ken, started leaving small notes on her desk with one easy word and its picture each day. \"Apple.\" \"Smile.\" \"Friend.\" By winter, Emi could speak much better, and the first full sentence she said to Ken was, \"Thank you for everything.\"\n\nHow did Ken help Emi?", "a": "He left notes to teach her words.", "choices": ["He left notes to teach her words.", "He did her homework.", "He spoke her language.", "He gave her money."], "e": "エミは転校生で、言葉がうまく話せなかった。昼食のとき、いつも一人で座っていた。ケンという男の子が、毎日机に簡単な単語一つとその絵を描いた小さなメモを置き始めた。「りんご」「笑顔」「友達」。冬までに、エミはずっと上手に話せるようになり、ケンに言った最初の完全な文は「いろいろありがとう」だった。"}, {"q": "Mai always ran in the same park in the morning. She often saw a boy running the other way. They never spoke, but they always nodded and smiled. One rainy day, he was not there, and Mai realized how much she looked forward to that small moment. The next morning, she brought two umbrellas, just in case.\n\nWhy did Mai bring two umbrellas?", "a": "She hoped to share one with the boy.", "choices": ["She hoped to share one with the boy.", "It was very cold.", "She lost one before.", "Her friend asked for one."], "e": "マイは毎朝同じ公園で走っていた。よく反対方向に走る男の子を見かけた。話したことはなかったが、いつもうなずいてほほえみ合った。ある雨の日、彼はいなくて、マイはその小さな瞬間をどれだけ楽しみにしていたか気づいた。翌朝、彼女は念のため傘を二本持ってきた。"}, {"q": "Taku was going to move away in spring. He wanted to tell Rin how he felt, but he was afraid. On the last day of school, he finally gave her a letter and ran away, too nervous to see her face. The letter said, \"I will come back in five years. Please wait for me if you can.\" Rin read it and quietly promised that she would.\n\nWhat did Taku ask Rin in the letter?", "a": "To wait five years for him.", "choices": ["To wait five years for him.", "To move with him.", "To forget him.", "To write back soon."], "e": "タクは春に引っ越す予定だった。リンに気持ちを伝えたかったが、こわかった。学校最後の日、ついに手紙を渡して走り去った。彼女の顔を見るのが怖すぎたのだ。手紙にはこう書いてあった。「5年後に戻ってくる。もしできるなら、待っていてほしい。」リンはそれを読み、静かに待つと心に誓った。"}, {"q": "Every day, an old man planted trees on an empty hill, even though he was already eighty. People asked why he worked so hard for trees he would never see grow tall. He smiled and answered, \"I will not sit in their shade, but children I will never meet will. That is enough for me.\" Years later, the hill became a beautiful forest.\n\nWhy did the old man plant trees?", "a": "So future children could enjoy the shade.", "choices": ["So future children could enjoy the shade.", "To sell the wood.", "To become famous.", "To make money quickly."], "e": "毎日、年老いた男が空き地の丘に木を植えていた。彼はもう80歳だった。人々は、自分が大きく育つのを決して見られない木のために、なぜそんなに頑張るのか尋ねた。彼はほほえんで答えた。「私はその木陰に座ることはない。でも、会うことのない子どもたちが座るだろう。それで十分だ。」何年も後、その丘は美しい森になった。"}, {"q": "Maya practiced the piano for years but always lost in competitions. She felt like giving up. Then a blind boy in the audience asked to touch her hands after a concert. \"Your music helped me see colors,\" he said. \"Please never stop.\" Maya never won first prize, but she kept playing for the rest of her life, knowing her music truly mattered.\n\nWhy did Maya keep playing the piano?", "a": "A blind boy told her that her music mattered.", "choices": ["A blind boy told her that her music mattered.", "She finally won first prize.", "Her parents forced her.", "She wanted to be famous."], "e": "マヤは何年もピアノを練習したが、コンクールではいつも負けた。あきらめたい気持ちだった。すると、コンサートの後、客席の目の見えない少年が彼女の手に触れたいと頼んだ。「あなたの音楽で、僕は色が見えたんだ」と彼は言った。「どうかやめないで。」マヤは一度も一位にならなかったが、自分の音楽が本当に意味を持つと知り、生涯ずっと弾き続けた。"}, {"q": "After the earthquake, a young boy stood in a long line for food. When he finally reached the front, he was given one rice ball. Instead of eating it, he walked over and placed it in the box for people who had even less than he did. A reporter watched, deeply moved, and quietly added his own food to the box too.\n\nWhat did the boy do with his rice ball?", "a": "He gave it to people who had less.", "choices": ["He gave it to people who had less.", "He ate it quickly.", "He sold it.", "He saved it for later."], "e": "地震の後、幼い少年が食べ物をもらう長い列に並んでいた。やっと先頭に着くと、おにぎりを一つもらった。彼はそれを食べる代わりに、歩いて行って、自分よりもっと持たない人々のための箱に入れた。記者がそれを見て深く心を動かされ、静かに自分の食べ物も箱に加えた。"}, {"q": "A teacher noticed that one student never ate lunch. Quietly, without telling anyone, she began making an extra lunch box every morning and leaving it on his desk. She never asked for thanks. Twenty years later, that student, now a successful doctor, returned to the school and gave the teacher a lunch box, saying, \"Now it is my turn to take care of you.\"\n\nWhy did the doctor give the teacher a lunch box?", "a": "To return the kindness she had shown him.", "choices": ["To return the kindness she had shown him.", "To sell her food.", "To teach her cooking.", "To say goodbye."], "e": "先生は、一人の生徒が決して昼食を食べないことに気づいた。誰にも言わず、彼女は毎朝もう一つ弁当を作り、彼の机に置き始めた。お礼を求めることはなかった。20年後、今は立派な医者になったその生徒が学校に戻り、先生に弁当を渡して言った。「今度は僕があなたの世話をする番です。」"}, {"q": "A runner was leading the race when the boy behind him fell and got hurt. Instead of winning, he stopped, helped the boy up, and walked with him to the finish line together. They came in last, but the whole crowd stood up and cheered louder than they had for the winner. Some things are bigger than winning.\n\nWhy did the crowd cheer so loudly?", "a": "The runner helped the hurt boy instead of winning.", "choices": ["The runner helped the hurt boy instead of winning.", "The runner broke a record.", "The race was very fast.", "The boy won the race."], "e": "あるランナーがレースで先頭を走っていたとき、後ろの少年が転んでけがをした。彼は勝つ代わりに立ち止まり、少年を助け起こし、一緒にゴールまで歩いた。二人は最下位だったが、観衆全員が立ち上がり、優勝者のときより大きな声で声援を送った。勝つことより大きなものがある。"}], "Lv4": [{"q": "Daniel always said he was the best cook in his family. One weekend, his parents went away, so he promised to make a special dinner for his little sister. He spent three hours in the kitchen, making strange sounds and big clouds of smoke. Finally, he proudly carried out two plates. His sister looked at the black, burned food and said nothing. Then she quietly took out her phone and ordered pizza. When the pizza arrived, Daniel ate more than anyone. \"Cooking makes me hungry,\" he explained, and his sister laughed so hard that she almost fell off her chair.\n\nWhat did Daniel's sister do about the dinner?", "a": "She ordered pizza instead of eating his food.", "choices": ["She ordered pizza instead of eating his food.", "She cooked her own dinner.", "She ate all the burned food.", "She called their parents."], "e": "ダニエルはいつも、自分が家族で一番料理がうまいと言っていた。ある週末、両親が出かけたので、彼は妹に特別な夕食を作ると約束した。3時間キッチンにこもり、変な音と大きな煙の雲を立てた。ついに彼は得意げに2皿を運んできた。妹は黒こげの料理を見て、何も言わなかった。それからこっそりスマホを取り出してピザを注文した。ピザが届くと、ダニエルは誰より多く食べた。「料理するとお腹がすくんだ」と彼は説明し、妹は椅子から落ちそうになるほど笑った。"}, {"q": "Grandpa decided to learn how to use the Internet. His grandson taught him slowly and carefully. After a week, Grandpa felt like an expert. One day, the family received a strange email saying they had won a million dollars. Everyone was excited except Grandpa. \"It's a trick,\" he said calmly. \"Nobody gives money for free.\" The family was surprised that the oldest person understood the danger best. Later, Grandpa smiled and said, \"I may be old, but I am not easy to fool. Life taught me that lesson long ago.\"\n\nWhy was the family surprised?", "a": "The oldest person understood the danger best.", "choices": ["The oldest person understood the danger best.", "Grandpa won real money.", "The email was true.", "Grandpa could not use the Internet."], "e": "おじいちゃんはインターネットの使い方を学ぶことにした。孫がゆっくり丁寧に教えた。1週間後、おじいちゃんは達人になった気分だった。ある日、家族は「100万ドル当選」という変なメールを受け取った。おじいちゃん以外みんな興奮した。「これは詐欺だ」と彼は落ち着いて言った。「タダで金をくれる者などいない。」一番年上の人が危険を一番よく理解していたので、家族は驚いた。後でおじいちゃんは笑って言った。「年はとっても、簡単にはだまされんよ。人生がずっと前にその教訓を教えてくれたんだ。」"}, {"q": "Nina hated cleaning her messy room. One day her mother said, \"If you clean your room, I will give you a surprise.\" Nina worked hard all afternoon. She threw away old papers, organized her books, and even washed the windows. When she finished, the room looked perfect. Excited, she ran to her mother and asked about the surprise. Her mother smiled and said, \"The surprise is how nice your clean room feels.\" Nina was a little angry at first, but that night, lying in her tidy room, she had to admit her mother was right.\n\nWhat was the 'surprise' her mother meant?", "a": "The good feeling of having a clean room.", "choices": ["The good feeling of having a clean room.", "A new video game.", "Money for cleaning.", "A trip to the zoo."], "e": "ニーナは散らかった部屋を片付けるのが大嫌いだった。ある日母が言った。「部屋を片付けたら、サプライズをあげる。」ニーナは午後ずっと頑張った。古い紙を捨て、本を整理し、窓まで洗った。終わると部屋は完璧に見えた。わくわくして母のところへ走り、サプライズについて尋ねた。母はほほえんで言った。「サプライズは、きれいな部屋がどれだけ気持ちいいか、ということよ。」ニーナは最初少し怒ったが、その夜、片付いた部屋で横になり、母が正しかったと認めざるを得なかった。"}, {"q": "At the zoo, a little boy stood in front of the monkey cage for a long time. He copied everything the monkey did. When the monkey jumped, the boy jumped. When the monkey scratched its head, the boy scratched his head. A crowd gathered to watch this funny game. Suddenly, the monkey sat down and pointed at the boy, as if saying, \"Now you are the strange animal.\" Everyone laughed, and the boy's face turned red. He learned that copying others can sometimes make you the joke.\n\nWhat did the monkey do at the end?", "a": "It pointed at the boy as if he were the strange one.", "choices": ["It pointed at the boy as if he were the strange one.", "It ran away.", "It copied the boy.", "It went to sleep."], "e": "動物園で、小さな男の子がサルのおりの前に長い間立っていた。彼はサルのすることを全部まねした。サルが跳ねれば男の子も跳ね、サルが頭をかけば男の子も頭をかいた。この面白い遊びを見ようと人だかりができた。突然、サルは座って男の子を指さした。まるで「今度は君が変な動物だ」と言うように。みんな笑い、男の子の顔は赤くなった。彼は、人のまねは時に自分を笑いものにすると学んだ。"}, {"q": "Mr. Sato was famous for falling asleep anywhere. He slept on trains, in meetings, and once even while standing in line. His friends made a funny plan. While he was sleeping on a park bench, they quietly placed a small sign next to him that said, \"Do not wake. World champion of sleeping.\" When Mr. Sato woke up, many people were taking photos of him. He read the sign, laughed loudly, and said, \"Well, at least I'm the best at something!\" From that day, he was proud of his special talent.\n\nHow did Mr. Sato react to the sign?", "a": "He laughed and felt proud of his talent.", "choices": ["He laughed and felt proud of his talent.", "He got very angry.", "He ran away from the park.", "He took the sign home."], "e": "佐藤さんはどこでも寝てしまうことで有名だった。電車でも、会議でも、一度は立って並んでいる時にさえ寝た。友達は面白い計画を立てた。彼が公園のベンチで寝ている間、そっと隣に小さな札を置いた。「起こすな。睡眠の世界チャンピオン」と書いてあった。佐藤さんが目を覚ますと、大勢が彼の写真を撮っていた。札を読んで大声で笑い、「まあ、少なくとも何かで一番だ！」と言った。その日から、彼は自分の特別な才能を誇りに思った。"}, {"q": "Every summer, my family stayed at a small house by the sea. There was an old rule written on the kitchen wall: \"When the tide is high, do not answer the door.\" As a child, I thought it was just a silly game. But one stormy night, when the water was high and dark, someone knocked gently. My little brother, too young to read, walked toward the door. I grabbed his hand just in time. Through the window, I saw wet footprints leading away, though no one was there. We never broke that rule again, and we never asked who had written it.\n\nWhy did the writer grab his brother's hand?", "a": "To stop him from answering the door during high tide.", "choices": ["To stop him from answering the door during high tide.", "To take him to bed.", "To pull him from the water.", "To show him the footprints."], "e": "毎年夏、私の家族は海辺の小さな家に泊まった。台所の壁に古い決まりが書いてあった。「満潮のときはドアを開けるな。」子どもの頃、私はただのくだらない遊びだと思っていた。でもある嵐の夜、水位が高く暗いとき、誰かがそっとノックした。まだ字が読めない弟がドアへ歩いていった。私はぎりぎりで手をつかんだ。窓越しに、誰もいないのに濡れた足跡が遠ざかっていくのが見えた。私たちは二度とその決まりを破らなかったし、誰が書いたのかも尋ねなかった。"}, {"q": "The new student never spoke. She sat at the back of the class and stared at the empty seat beside her. Our teacher said the seat had belonged to a girl who had moved away years ago. One day, I asked the new student why she always looked at that chair. She finally smiled and whispered, \"Because my friend is sitting there, and she says you can see her too, if you look long enough.\" I did not look. I changed schools the next month.\n\nWhy did the writer change schools?", "a": "The new student's words frightened him.", "choices": ["The new student's words frightened him.", "The school was too far.", "He failed his tests.", "The teacher was unkind."], "e": "その転校生は決して話さなかった。彼女はクラスの後ろに座り、隣の空いた席をじっと見つめていた。先生は、その席は何年も前に引っ越した女の子のものだったと言った。ある日、私は転校生になぜいつもその椅子を見るのか尋ねた。彼女はついにほほえんでささやいた。「だって私の友達がそこに座っているの。十分長く見れば、あなたにも見えるって言ってるわ。」私は見なかった。翌月、転校した。"}, {"q": "My phone started sending messages to my mother that I never wrote. They were short and kind: \"Good night,\" \"I love you,\" \"Be careful tomorrow.\" My mother thought I was being sweet, so I said nothing. But the strange part came later. After I lost my phone in the river during the trip, the messages did not stop. My mother still receives one every night, always at the same time, always in my words. She finds it comforting. I find it impossible.\n\nWhy does the writer find the messages 'impossible'?", "a": "They keep coming after the phone was lost in the river.", "choices": ["They keep coming after the phone was lost in the river.", "They are written in another language.", "His mother never reads them.", "He sends them himself."], "e": "私のスマホが、私が書いてもいないメッセージを母に送り始めた。短くて優しい内容だった。「おやすみ」「愛してる」「明日気をつけて」。母は私が優しくしていると思ったので、私は何も言わなかった。でも奇妙なのはその後だ。旅行中に川でスマホをなくした後も、メッセージは止まらなかった。母は今も毎晩、いつも同じ時刻に、いつも私の言葉で一通受け取る。母はそれを心地よく思っている。私には、あり得ないことだ。"}, {"q": "The hotel had no room number 4, because in Japan the number four can mean death. I thought this was just an old custom. On my last night, I could not sleep, so I walked down the long, quiet hallway. Between room 3 and room 5, where nothing should be, I saw a door marked with a faded number 4. Cold air came from under it, and I heard someone slowly counting. I walked back to my room quickly and waited for morning, never telling anyone what I had seen.\n\nWhat did the writer see between rooms 3 and 5?", "a": "A door marked with the number 4.", "choices": ["A door marked with the number 4.", "An open window.", "Another guest.", "A broken light."], "e": "そのホテルには4号室がなかった。日本では「4」が「死」を意味することがあるからだ。私はこれをただの古い習慣だと思っていた。最後の夜、眠れなかったので、長く静かな廊下を歩いた。3号室と5号室の間、何もないはずの場所に、色あせた「4」と記されたドアを見た。その下から冷たい空気が流れ、誰かがゆっくり数を数えるのが聞こえた。私は急いで部屋に戻り、朝を待った。見たものを誰にも話さずに。"}, {"q": "My little sister often talked to someone she called \"the lady in the garden.\" Our parents thought it was just an imaginary friend, common for young children. We had no garden, only a small yard of stones. One evening, my sister drew a picture of the lady and gave it to me. The woman in the drawing wore old-fashioned clothes and stood beside a tree full of white flowers. The next week, while digging in the yard, my father found the roots of a tree that had died there a hundred years ago.\n\nWhat did the father discover in the yard?", "a": "The roots of a tree that died a century ago.", "choices": ["The roots of a tree that died a century ago.", "A box of old letters.", "A garden of white flowers.", "A hidden room."], "e": "妹はよく「庭の女の人」と呼ぶ誰かに話しかけていた。両親は、幼い子によくある空想の友達だと思っていた。我が家には庭はなく、石だらけの小さな庭先があるだけだった。ある夕方、妹はその女の人の絵を描いて私にくれた。絵の女性は古風な服を着て、白い花でいっぱいの木のそばに立っていた。翌週、庭先を掘っていた父は、百年前にそこで枯れた木の根を見つけた。"}, {"q": "When they were children, Sho and Yui planted a small tree together in the schoolyard and promised to meet under it as adults. Years passed, and life took them to different cities. Sho almost forgot the promise. But on the day of their school reunion, something made him walk to the old tree, now tall and full of leaves. Yui was already there, looking up at the branches. \"I come here every year,\" she said quietly. \"I always hoped that one year, you would remember too.\" Sho realized that some promises, even quiet ones, are never truly broken.\n\nWhy did Yui visit the tree every year?", "a": "She hoped Sho would remember their promise.", "choices": ["She hoped Sho would remember their promise.", "She liked the shade.", "She lived nearby.", "She studied the tree."], "e": "子どもの頃、ショウとユイは校庭に小さな木を一緒に植え、大人になったらその下で会おうと約束した。年月が過ぎ、人生は二人を別々の街へ連れて行った。ショウは約束をほとんど忘れていた。でも同窓会の日、何かに導かれて、今は高く葉の茂ったあの木へ歩いた。ユイはすでにそこにいて、枝を見上げていた。「毎年ここに来るの」と彼女は静かに言った。「いつかあなたも思い出してくれるって、ずっと願ってた。」ショウは、静かな約束でさえ、決して本当には消えないのだと気づいた。"}, {"q": "Nana worked at a small bakery near the station. A tired businessman came in every evening and always bought the last melon bread. They rarely spoke more than a few words. One day, Nana noticed he looked very sad, so she added a small cookie shaped like a smile to his bag without saying anything. The next evening, he returned and finally spoke: \"That cookie was the first time I smiled in months. May I know your name?\" Sometimes the smallest kindness opens the biggest door.\n\nWhat did Nana add to the man's bag?", "a": "A cookie shaped like a smile.", "choices": ["A cookie shaped like a smile.", "An extra melon bread.", "A letter.", "A free coffee."], "e": "ナナは駅の近くの小さなパン屋で働いていた。疲れた会社員が毎晩来て、いつも最後のメロンパンを買った。二人はほとんど言葉を交わさなかった。ある日、ナナは彼がとても悲しそうなのに気づき、何も言わずに笑顔の形のクッキーを袋に一つ加えた。翌晩、彼は戻ってきて、ついに口を開いた。「あのクッキーで、何ヶ月ぶりかに笑えました。お名前を伺っても?」時に、ほんの小さな親切が、一番大きな扉を開ける。"}, {"q": "In the library, Aoi always found helpful notes inside the books she borrowed for her exams. Someone had written tips in the margins, like \"Don't give up\" and \"You can do this.\" The notes guided her through a hard year, and she passed her exams. Wanting to thank this stranger, she left her own note in the last book: \"Who are you?\" A week later, the reply came in the same handwriting: \"Just someone who sat behind you and admired how hard you tried.\"\n\nWho had been writing the notes?", "a": "Someone who sat behind Aoi and admired her effort.", "choices": ["Someone who sat behind Aoi and admired her effort.", "Her teacher.", "The librarian.", "Her sister."], "e": "図書館で、アオイは試験のために借りた本の中に、いつも役立つメモを見つけた。誰かが余白に「あきらめないで」「君ならできる」といった助言を書いていた。そのメモは厳しい一年を通して彼女を導き、彼女は試験に合格した。この見知らぬ人に感謝したくて、彼女は最後の本に自分のメモを残した。「あなたは誰?」一週間後、同じ筆跡で返事が来た。「君の後ろに座って、君が必死に頑張る姿に感心していた、ただの一人だよ。」"}, {"q": "Kenta and Yuki dated for three years before he had to study abroad. They agreed to write one real paper letter each month, instead of using their phones. At first it felt slow and old-fashioned, but soon they loved it. Each letter carried more feeling than a hundred quick messages. When Kenta finally came home two years later, Yuki was waiting at the airport, holding every single letter he had sent, tied with a blue ribbon.\n\nWhat was Yuki holding at the airport?", "a": "Every letter Kenta had sent, tied with a ribbon.", "choices": ["Every letter Kenta had sent, tied with a ribbon.", "A new phone.", "A welcome sign.", "A bunch of flowers."], "e": "ケンタとユキは、彼が留学する前に3年間付き合っていた。二人はスマホを使う代わりに、毎月一通ずつ本物の紙の手紙を書くと約束した。最初は遅くて古風に感じたが、すぐに大好きになった。一通一通が、百の素早いメッセージより多くの気持ちを運んだ。2年後、ケンタがついに帰国したとき、ユキは空港で待っていた。彼が送ったすべての手紙を、青いリボンで束ねて抱えて。"}, {"q": "An old man visited the same coffee shop every morning and always ordered two cups. He drank one and left the other untouched across the table. The young waitress was curious but never asked. After he stopped coming one winter, she found a note he had left for her: \"For sixty years, I shared morning coffee with my wife here. After she passed, I kept ordering two, so she would never feel alone. Thank you for never moving her cup.\" The waitress cried, and from then on, she always set two cups at that table.\n\nWhy did the old man order two cups?", "a": "To feel that his late wife was still with him.", "choices": ["To feel that his late wife was still with him.", "He was very thirsty.", "He met a friend there.", "He liked cold coffee."], "e": "老人は毎朝同じ喫茶店を訪れ、いつもコーヒーを2杯注文した。1杯を飲み、もう1杯はテーブルの向かいに手をつけずに置いた。若いウェイトレスは気になったが、決して尋ねなかった。ある冬、彼が来なくなった後、彼女は彼が残したメモを見つけた。「60年間、私はここで妻と朝のコーヒーを分かち合った。妻が亡くなった後も2杯頼み続けた。妻が決して寂しく感じないように。彼女のカップを動かさずにいてくれて、ありがとう。」ウェイトレスは泣き、それからずっと、そのテーブルにいつも2つのカップを置いた。"}, {"q": "For thirty years, a quiet old woman cleaned the train station every night after the last train left. Few people ever noticed her or said thank you. When she finally retired, the station looked the same as always, and she expected no goodbye. But on her last night, hundreds of people who had taken those trains over the years were waiting on the platform with flowers and letters. \"We saw you,\" they said. \"We always saw you.\" She had thought her work was invisible, but kindness, even silent kindness, is never truly unseen.\n\nWhat surprised the old woman on her last night?", "a": "Hundreds of people came to thank her.", "choices": ["Hundreds of people came to thank her.", "The station was dirty.", "She missed the last train.", "She lost her job suddenly."], "e": "30年間、物静かな老婦人が、終電が出た後に毎晩駅を掃除していた。彼女に気づいたり、ありがとうと言ったりする人はほとんどいなかった。ついに引退するとき、駅はいつもと変わらず見え、彼女は別れの言葉も期待していなかった。でも最後の夜、長年その電車に乗ってきた何百人もの人々が、花や手紙を持ってホームで待っていた。「私たちは見ていました」と彼らは言った。「ずっと見ていました。」彼女は自分の仕事が誰の目にも入らないと思っていたが、親切は、静かな親切でさえ、決して本当に見られていないわけではない。"}, {"q": "A famous violinist lost the use of his right hand in an accident and could no longer play. Everyone thought his career was over. Instead, he spent the next ten years teaching poor children who could never afford lessons. One of those children grew up to become a world-class musician. At her first great concert, she walked onto the stage, pointed to her old teacher in the front row, and said, \"He cannot play anymore, but his music lives in everything I do.\"\n\nHow did the violinist's music continue?", "a": "Through the students he taught.", "choices": ["Through the students he taught.", "He learned to play again.", "He wrote new songs.", "He built a music school alone."], "e": "有名なバイオリニストが事故で右手の自由を失い、もう演奏できなくなった。誰もが彼のキャリアは終わったと思った。代わりに、彼はその後10年を、レッスンを受ける余裕のない貧しい子どもたちに教えて過ごした。その子どもの一人が成長して世界的な音楽家になった。彼女の初めての大きなコンサートで、彼女は舞台に歩み出て、最前列の昔の先生を指さして言った。「先生はもう演奏できません。でも先生の音楽は、私のするすべての中に生きています。」"}, {"q": "A little girl with a serious illness spent most of her days in a hospital bed by the window. To cheer her up, she began drawing pictures and taping them to the glass so people outside could see. Soon, strangers walking past started leaving drawings and kind messages on the other side of the window. A silent friendship grew between the sick girl and a whole town she had never met. On the day she finally went home, healthy again, hundreds of drawings covered her window like a wall of love.\n\nHow did the town become friends with the girl?", "a": "They exchanged drawings through her window.", "choices": ["They exchanged drawings through her window.", "They visited her room daily.", "They sent her letters by mail.", "They called her every night."], "e": "重い病気の小さな女の子が、ほとんどの日々を窓際の病院のベッドで過ごしていた。元気を出すために、彼女は絵を描いてガラスに貼り、外の人々に見えるようにし始めた。やがて、通りかかる見知らぬ人々が、窓の反対側に絵や優しいメッセージを残し始めた。病気の女の子と、会ったこともない町全体との間に、静かな友情が育った。ついに元気になって家に帰る日、何百もの絵が、愛の壁のように彼女の窓を覆っていた。"}, {"q": "During the war, a soldier carried a small, worn photograph of his family everywhere he went. It gave him the strength to survive each hard day. Years after the war ended, he returned to his hometown, which had changed so much that he barely recognized it. He showed the old photo to a young woman selling flowers. She stared at it, then began to cry. \"This is my grandmother,\" she said softly. \"She told me a kind soldier once promised to come back. We never stopped hoping you would.\"\n\nWhy did the young woman cry?", "a": "The soldier in the photo had promised to return to her family.", "choices": ["The soldier in the photo had promised to return to her family.", "She lost her flowers.", "She did not know the man.", "The photo was damaged."], "e": "戦争中、一人の兵士はどこへ行くにも、家族の小さくすり切れた写真を持ち歩いた。それが、つらい日々を生き延びる力をくれた。戦争が終わって何年も後、彼は故郷に戻ったが、あまりに変わっていて、ほとんど見分けがつかなかった。彼は花を売る若い女性に古い写真を見せた。彼女はそれをじっと見つめ、泣き始めた。「これは私の祖母です」と彼女は静かに言った。「祖母は、優しい兵士がいつか戻ると約束したと話していました。私たちは、あなたが戻ることをずっと願い続けていました。」"}, {"q": "An old fisherman found a young whale trapped in a net near the shore. For hours, he worked alone in the cold water, slowly cutting the ropes until the whale was free. The huge animal did not swim away at once. Instead, it stayed near his boat for a moment, looking at him with one large eye, as if to say thank you. Every year after that, on the same day, a whale appeared in the same bay. The fisherman believed it was the same one, returning to remember a moment of kindness between two very different lives.\n\nWhy did the fisherman think the whale returned each year?", "a": "To remember the kindness he had shown it.", "choices": ["To remember the kindness he had shown it.", "To find more food.", "To bring him gifts.", "To escape other whales."], "e": "年老いた漁師が、岸の近くで網にかかった若いクジラを見つけた。何時間も、彼は冷たい水の中で一人で働き、ロープをゆっくり切って、ついにクジラを自由にした。その巨大な動物はすぐには泳ぎ去らなかった。代わりに、少しの間彼の船のそばにとどまり、一つの大きな目で彼を見た。まるでありがとうと言うように。それから毎年、同じ日に、同じ入り江にクジラが現れた。漁師は、それが同じクジラで、二つのまったく異なる命の間の親切の瞬間を覚えていて戻ってくるのだと信じていた。"}]};
+var ACTIVE_PROBLEMS=[];
+const TIME_LIMIT = 5000;
+var TOTAL_Q = 15;
+let state = {};
+let timerId = null;
+let startTime = 0;
+let tickedAt = 0;
+
+function resetState(){
+  state = {
+    score: 0, lives: 3, qIndex: 0,
+    combo: 0, maxCombo: 0,
+    queue: shuffle([...ACTIVE_PROBLEMS]).slice(0, TOTAL_Q),
+    locked: false,
+  };
+}
+
+function shuffle(arr){
+  for(let i=arr.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+const $ = (id)=>document.getElementById(id);
+
+function setStickman(s){
+  $('stickman').className = 'stickman ' + s;
+}
+
+function render(){
+  $('score').textContent = state.score;
+  $('q-num').textContent = state.qIndex + 1;
+  $('q-total').textContent = TOTAL_Q;
+  document.querySelectorAll('#lives .heart').forEach((h,i)=>{
+    h.classList.toggle('lost', i >= state.lives);
+  });
+}
+
+function loadQuestion(){
+  if(state.qIndex >= TOTAL_Q || state.lives <= 0){
+    endGame();
+    return;
+  }
+  const p = state.queue[state.qIndex];
+  $('question').innerHTML = p.q;
+  const choices = shuffle([...p.choices]);
+  document.querySelectorAll('#choices .choice').forEach((b,i)=>{
+    b.textContent = choices[i];
+    b.disabled = false;
+    b.className = 'choice';
+    b.onclick = ()=>answer(choices[i], b);
+  });
+  state.locked = false;
+  setStickman('normal');
+  const balloon = $('balloon');
+  balloon.classList.remove('exploded','danger');
+  balloon.style.setProperty('--scale', 1);
+  $('burst').classList.remove('show');
+  tickedAt = 0;
+  render();
+  startTimer();
+}
+
+function startTimer(){
+  cancelAnimationFrame(timerId);
+  const balloon = $('balloon');
+  startTime = performance.now();
+  function tick(now){
+    if(state.locked) return;
+    const elapsed = now - startTime;
+    const remaining = (TIME_LIMIT - elapsed) / 1000;
+    const ratio = Math.min(elapsed / TIME_LIMIT, 1);
+    balloon.style.setProperty('--scale', 1 + ratio * 0.6);
+
+    if(remaining <= 3 && remaining > 0){
+      const wholeRemaining = Math.ceil(remaining);
+      if(wholeRemaining !== tickedAt && wholeRemaining <= 3){
+        playTick();
+        tickedAt = wholeRemaining;
+      }
+    }
+
+    if(ratio > 0.65){ balloon.classList.add('danger'); }
+    if(remaining <= 3 && remaining > 0){ setStickman('danger'); }
+    else if(remaining > 3){ setStickman('normal'); }
+    if(ratio >= 1){
+      timeout();
+      return;
+    }
+    timerId = requestAnimationFrame(tick);
+  }
+  timerId = requestAnimationFrame(tick);
+}
+
+function stopTimer(){ cancelAnimationFrame(timerId); }
+
+function answer(val, btn){
+  if(state.locked) return;
+  state.locked = true;
+  stopTimer();
+  const p = state.queue[state.qIndex];
+
+  if(val === p.a){
+    btn.classList.add('correct');
+    playCorrect();
+    state.combo++;
+    state.maxCombo = Math.max(state.maxCombo, state.combo);
+    const elapsed = performance.now() - startTime;
+    const timeBonus = Math.max(0, Math.floor((TIME_LIMIT - elapsed) / 50));
+    const comboBonus = state.combo >= 3 ? state.combo * 10 : 0;
+    state.score += 100 + timeBonus + comboBonus;
+    if(state.combo >= 3) showCombo(state.combo);
+    setStickman('happy');
+  } else {
+    btn.classList.add('wrong');
+    playWrong();
+    document.querySelectorAll('#choices .choice').forEach(b=>{
+      if(b.textContent === String(p.a)) b.classList.add('correct');
+    });
+    state.combo = 0;
+    state.lives--;
+    explodeBalloon();
+    setStickman('shocked');
+  }
+  document.querySelectorAll('#choices .choice').forEach(b=>b.disabled=true);
+  render();
+  if(val === p.a){ setTimeout(nextQuestion, 1400); } else { showExplain(p); }
+}
+
+function timeout(){
+  if(state.locked) return;
+  state.locked = true;
+  const p = state.queue[state.qIndex];
+  document.querySelectorAll('#choices .choice').forEach(b=>{
+    if(b.textContent === String(p.a)) b.classList.add('correct');
+    b.disabled = true;
+  });
+  state.combo = 0;
+  state.lives--;
+  explodeBalloon();
+  setStickman('shocked');
+  render();
+  showExplain(p);
+}
+
+function explodeBalloon(){
+  const balloon = $('balloon');
+  balloon.classList.remove('danger');
+  balloon.classList.add('exploded');
+  playBoom();
+
+  const burst = $('burst');
+  burst.classList.remove('show');
+  void burst.offsetWidth;
+  burst.classList.add('show');
+
+  const boom = $('boom');
+  boom.classList.remove('show');
+  void boom.offsetWidth;
+  boom.classList.add('show');
+
+  document.body.animate(
+    [
+      {transform:'translate(0,0)'},
+      {transform:'translate(-8px,6px)'},
+      {transform:'translate(8px,-6px)'},
+      {transform:'translate(-5px,3px)'},
+      {transform:'translate(0,0)'},
+    ],
+    {duration:400}
+  );
+}
+
+function showCombo(n){
+  const el = $('combo');
+  el.textContent = `COMBO ×${n}!`;
+  el.classList.remove('show');
+  void el.offsetWidth;
+  el.classList.add('show');
+}
+
+function runCountdown(callback){
+  const overlay = $('countdown');
+  const numEl = $('countdown-num');
+  overlay.classList.remove('hidden');
+  const sequence = ['3', '2', '1', 'GO!'];
+  let i = 0;
+  function next(){
+    if(i >= sequence.length){
+      overlay.classList.add('hidden');
+      callback();
+      return;
+    }
+    numEl.textContent = sequence[i];
+    numEl.style.animation = 'none';
+    void numEl.offsetWidth;
+    numEl.style.animation = '';
+    if(sequence[i] === 'GO!'){
+      playBeep(1200);
+    } else {
+      playBeep(800);
+    }
+    i++;
+    setTimeout(next, 500);
+  }
+  next();
+}
+
+function startGame(){
+  initAudio(); __playFile(window.__sndStart); startBGM();
+  $('start-overlay').classList.add('hidden');
+  $('end-overlay').classList.add('hidden');
+  showLevelSelect();
+}
+
+function explainFor(p){ return p.e || '正解をかくにんしよう！'; }
+function showExplain(p){
+  document.getElementById('explain-ans').innerHTML = '正解は <b>'+p.a+'</b>';
+  document.getElementById('explain-body').innerHTML = explainFor(p);
+  document.getElementById('explain').classList.add('show');
+}
+function nextQuestion(){
+  document.getElementById('explain').classList.remove('show');
+  state.qIndex++; loadQuestion();
+}
+function _explain(p){
+  var q=p.q, si=q.indexOf('<sup>');
+  if(si<0) return '右上の小さい数字の回数だけ、同じ数をかけ算するよ。';
+  var ei=q.indexOf('</sup>');
+  var exp=parseInt(q.substring(si+5,ei),10);
+  var base=q.substring(0,si).replace(/<[^>]+>/g,'').replace(/&minus;/g,'−').trim();
+  var paren=base.indexOf('(')>=0;
+  var core=base.replace(/[()]/g,'');
+  var neg=core.indexOf('−')===0;
+  var num=core.replace('−','');
+  function rep(s,n){var a=[];for(var i=0;i<n;i++)a.push(s);return a.join('×');}
+  if(paren) return base+' を '+exp+'回かけ算：'+rep(base,exp)+' = '+p.a+'<br>マイナス×マイナスは ＋ になるよ。';
+  if(neg) return '−'+num+'<sup>'+exp+'</sup> は −('+rep(num,exp)+') = '+p.a+'<br>2乗するのは数字だけ。マイナスは最後につくよ。';
+  return num+'<sup>'+exp+'</sup> = '+rep(num,exp)+' = '+p.a+' だよ。';
+}
+function endGame(){
+  stopTimer();
+  (state.lives>0?playVictory:playLose)();
+  $('final-score').textContent = state.score;
+  $('max-combo').textContent = state.maxCombo;
+  let rank, comment;
+  if(state.score >= 1800){ rank='S'; comment='天才かも！'; }
+  else if(state.score >= 1400){ rank='A'; comment='よくできました！'; }
+  else if(state.score >= 900){ rank='B'; comment='その調子！'; }
+  else if(state.score >= 500){ rank='C'; comment='もう一度チャレンジ！'; }
+  else { rank='D'; comment='まだまだ伸びる！'; }
+  $('rank').textContent = rank;
+  $('rank-comment').textContent = comment;
+  (function(){
+    var won = state.lives > 0;
+    var im = document.getElementById('result-illust');
+    if(!im) return;
+    var list = won ? ['win.png','win.png.png','win.PNG','win.jpg'] : ['lose2.png','lose2.png.png','lose.png','lose.png.png'];
+    list=__img(list);
+    var i=0;
+    (function tryNext(){
+      if(i>=list.length){ im.style.display='none'; return; }
+      var p=new Image();
+      p.onload=function(){ im.src=list[i]; im.alt=won?'勝ち':'負け'; im.style.display='block'; };
+      p.onerror=function(){ i++; tryNext(); };
+      p.src=list[i];
+    })();
+  })();
+  $('end-overlay').classList.remove('hidden');
+}
+function setSmart(el,list){ if(!el) return; list=__img(list); var i=0; (function n(){ if(i>=list.length){return;} var p=new Image(); p.onload=function(){ el.src=list[i]; }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })(); }
+var KN=['uta-normal.png','uta-normal.png.png','uta-normal.PNG','uta-normal.jpg','kazue-normal.png','kazue-normal.png.png'];
+var KA=['uta-asette.png','uta-asette.png.png','uta-asette.PNG','uta-asette.jpg','kazue-asette.png','kazue-asette.png.png'];
+var KD=['uta-dame.png','uta-dame.png.png','uta-dame.PNG','uta-dame.jpg','kazue-dame.png','kazue-dame.png.png'];
+setSmart(document.querySelector('.char-normal'),KN);
+setSmart(document.querySelector('.char-happy'),KN);
+setSmart(document.querySelector('.char-danger'),KA);
+setSmart(document.querySelector('.char-shocked'),KD);
+setSmart(document.querySelector('.kazue-title'),KN);
+function setBoss(el,list){ if(!el) return; list=__img(list); var i=0; (function n(){ if(i>=list.length){ el.style.display='none'; return; } var p=new Image(); p.onload=function(){ el.src=list[i]; el.style.display='block'; }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })(); }
+var BOSS=['e-boss.png','e-boss.png.png','boss-choubun.png','enemy-eigo.png','enemy-eigo.png.png'];
+setBoss(document.querySelector('.boss-bg'),BOSS);
+(function(){
+  var so=document.getElementById('start-overlay'); var ta=document.getElementById('title-art');
+  if(!so||!ta) return; var img=ta.querySelector('.title-art-img');
+  var list=['e-choubun.png','e-choubun.png.png','title-choubun.png','title-choubun.png.png','長文の戦場.png'];
+  list=__img(list);var i=0;(function n(){ if(i>=list.length) return; var p=new Image(); p.onload=function(){ img.src=list[i]; so.classList.add('artmode'); }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })();
+})();
+var BGMS=__mus(['bgm.mp3','bgm.ogg','bgm.m4a','bgm.wav','ignition.mp3','ignition.ogg','IGNITION.mp3']);
+var __bgmA=document.getElementById('bgm'),__bgmI=0,__bgmOn=true;
+function __setBgm(){if(__bgmA&&__bgmI<BGMS.length){__bgmA.src=BGMS[__bgmI];}}
+if(__bgmA){__bgmA.loop=true;__bgmA.volume=0.4;__bgmA.addEventListener('error',function(){__bgmI++;if(__bgmI<BGMS.length)__setBgm();});__setBgm();}
+function startBGM(){if(__bgmOn&&__bgmA){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});}}
+function toggleBGM(){__bgmOn=!__bgmOn;var b=document.getElementById('bgm-btn');if(!__bgmA)return;if(__bgmOn){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});if(b)b.innerHTML='&#128266;';}else{__bgmA.pause();if(b)b.innerHTML='&#128263;';}}
+function __mkSnd(names){names=__mus(names);var a=new Audio();var i=0;function sn(){if(i<names.length)a.src=names[i];}a.addEventListener('error',function(){i++;if(i<names.length)sn();});a.addEventListener('canplaythrough',function(){a._ok=true;});a.preload='auto';sn();return a;}
+function __playFile(a){if(a&&a._ok){try{a.currentTime=0;var p=a.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}}
+window.__sndStart=__mkSnd(['start.mp3','start.ogg','start.m4a','start.wav','soundlogo.mp3','soundlogo.ogg']);
+window.__sndCorrect=__mkSnd(['correct.mp3','correct.ogg','correct.m4a','correct.wav']);
+window.__sndOver=__mkSnd(['gameover.mp3','gameover.ogg','gameover.m4a','gameover.wav','tirori.mp3']);
+function showLevelSelect(){
+  var box=document.getElementById('level-btns'); box.innerHTML='';
+  ['Lv1','Lv2','Lv3','Lv4'].forEach(function(lv){
+    var arr=PROBLEMS_BY_LEVEL[lv];
+    if(arr&&arr.length){
+      var b=document.createElement('button'); b.className='level-btn';
+      b.innerHTML=lv+'<span>'+arr.length+'問</span>';
+      b.onclick=function(){ chooseLevel(lv); };
+      box.appendChild(b);
+    }
+  });
+  document.getElementById('level-overlay').classList.remove('hidden');
+}
+function chooseLevel(lv){
+  ACTIVE_PROBLEMS=PROBLEMS_BY_LEVEL[lv]||[];
+  TOTAL_Q=Math.min(15, ACTIVE_PROBLEMS.length)||1;
+  document.getElementById('level-overlay').classList.add('hidden');
+  resetState();
+  runCountdown(function(){ loadQuestion(); });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ARK バスターズ | ARK総合学院</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Dela+Gothic+One&family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Russo+One&family=Orbitron:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1F3864;--navy-deep:#0F1B33;--gold:#BF9000;--gold-bright:#FFC83D;--red:#E63946;--red-deep:#8B1A24;--green:#06A878;--bg-top:#1a2742;--bg-bottom:#0d1626;--text:#EDE4CC;--light-blue:#DEEBF7;--paper:#FFFDF5;--gray:#9CA3AF;--purple:#7c3aed;--cream-soft:#F3E9CE;}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{min-height:100%;}
+  body{font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 100%);background-attachment:fixed;color:var(--text);user-select:none;-webkit-user-select:none;position:relative;min-height:100vh;overflow-x:hidden;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,200,61,0.06) 1px,transparent 2px),radial-gradient(circle at 70% 60%,rgba(216,180,255,0.05) 1px,transparent 2px),radial-gradient(circle at 40% 80%,rgba(255,200,61,0.05) 1px,transparent 2px);background-size:80px 80px,100px 100px,60px 60px;pointer-events:none;z-index:0;}
+  .wrap{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:env(safe-area-inset-top,14px) 16px env(safe-area-inset-bottom,24px);min-height:100vh;display:flex;flex-direction:column;}
+  .hero{position:relative;border:3px solid rgba(255,200,61,0.55);border-radius:22px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,0.3),0 10px 30px rgba(0,0,0,0.45);margin:6px 0 8px;background:linear-gradient(160deg,#101a33,#1F3864);}
+  .hero img{display:block;width:100%;height:auto;}
+  .hero-fallback{display:none;aspect-ratio:16/9;width:100%;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff;text-align:center;padding:24px;background:linear-gradient(160deg,#101a33,#1F3864 60%,#3a2a66);}
+  .hero-fallback .hf-title{font-family:'Bungee',sans-serif;font-size:34px;color:var(--gold-bright);letter-spacing:0.04em;text-shadow:3px 3px 0 var(--navy-deep);}
+  .hero-fallback .hf-sub{font-size:12px;letter-spacing:0.1em;color:#cdd8ee;}
+  .brand{text-align:center;margin:12px 0 16px;}
+  .brand-title{font-family:'Bungee',sans-serif;font-size:30px;color:var(--gold-bright);letter-spacing:0.03em;line-height:1;text-shadow:2px 2px 0 var(--red-deep),0 0 18px rgba(255,200,61,0.55);margin-bottom:6px;}
+  .brand-title .teen{color:var(--red);}
+  .brand-presents{font-family:'Bungee',sans-serif;font-size:11px;color:var(--gold-bright);letter-spacing:0.35em;opacity:0.85;}
+  .brand-name{font-size:17px;font-weight:900;color:var(--cream-soft);letter-spacing:0.14em;margin-top:3px;}
+  .tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:18px;}
+  .tab{font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:15px;letter-spacing:0.02em;color:var(--cream-soft);background:rgba(255,255,255,0.06);border:2px solid rgba(255,200,61,0.5);border-radius:12px;padding:10px 0 8px;box-shadow:0 3px 0 rgba(0,0,0,0.35);cursor:pointer;text-align:center;line-height:1.1;transition:transform 0.1s,box-shadow 0.1s;}
+  .tab .tab-en{display:block;font-family:'Bungee',sans-serif;font-size:7px;color:var(--gold-bright);letter-spacing:0.08em;margin-top:3px;opacity:0.8;}
+  .tab:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,0.35);}
+  .tab.active{color:#fff;background:linear-gradient(180deg,var(--red),var(--red-deep));border-color:var(--gold-bright);box-shadow:0 3px 0 var(--red-deep),0 0 16px rgba(230,57,70,0.5);}
+  .tab.active .tab-en{color:var(--gold-bright);opacity:1;}
+  .panel{display:none;}
+  .panel.active{display:block;animation:fadeIn 0.25s ease;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+  /* 敵紹介ヘッダー */
+  .enemy-intro{display:flex;gap:14px;align-items:center;background:rgba(124,58,237,0.12);border:2px solid rgba(168,85,247,0.45);border-radius:18px;padding:14px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,0.35);}
+  .ei-img{width:42%;max-width:155px;flex-shrink:0;position:relative;}
+  .ei-img img{width:100%;height:auto;display:block;border-radius:10px;filter:drop-shadow(0 4px 12px rgba(124,58,237,0.6));animation:floatY 2.8s ease-in-out infinite;}
+  .ei-fallback{display:none;width:100%;aspect-ratio:3/4;border-radius:12px;align-items:center;justify-content:center;font-family:'Russo One',sans-serif;font-size:44px;color:#fff;background:radial-gradient(circle at 40% 35%,#c79bff,#7c3aed 70%,#4c1d95);}
+  @keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+  .ei-text{flex:1;min-width:0;}
+  .ei-name{font-family:'Dela Gothic One','M PLUS Rounded 1c',sans-serif;font-size:20px;color:#fff;line-height:1.25;text-shadow:0 0 10px rgba(168,85,247,0.75);}
+  .ei-en{font-family:'Bungee',sans-serif;font-size:9px;color:var(--gold-bright);letter-spacing:0.16em;margin-top:4px;}
+  .ei-desc{font-size:12px;color:var(--cream-soft);line-height:1.7;margin-top:10px;opacity:0.92;}
+  .section-title{text-align:center;font-size:15px;font-weight:900;color:var(--cream-soft);letter-spacing:0.15em;margin:4px 0 14px;}
+  .section-title::before,.section-title::after{content:'';display:inline-block;width:30px;height:2px;background:var(--gold-bright);vertical-align:middle;margin:0 10px;opacity:0.8;}
+  .cards{display:flex;flex-direction:column;gap:14px;margin-bottom:18px;}
+  .card{background:var(--paper);border:3px solid var(--navy);border-radius:18px;padding:16px;box-shadow:0 5px 0 var(--navy),0 8px 22px rgba(0,0,0,0.4);display:flex;align-items:center;gap:14px;cursor:pointer;transition:transform 0.15s,box-shadow 0.15s;text-decoration:none;color:inherit;position:relative;}
+  .card.available:active{transform:translateY(3px);box-shadow:0 2px 0 var(--navy),0 4px 10px rgba(0,0,0,0.4);}
+  .card-balloon{width:54px;height:62px;flex-shrink:0;border-radius:50% 50% 50% 50% / 52% 52% 48% 48%;position:relative;box-shadow:inset -5px -8px 12px rgba(0,0,0,0.2),inset 4px 5px 10px rgba(255,255,255,0.4),0 4px 10px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Russo One',sans-serif;font-size:20px;font-weight:bold;text-shadow:1px 1px 2px rgba(0,0,0,0.3);}
+  .card-balloon::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid currentColor;filter:brightness(0.7);}
+  .card-balloon.red{background:radial-gradient(circle at 32% 30%,#ff97b1 0%,#ff6b8a 25%,var(--red) 65%,var(--red-deep) 100%);color:var(--red-deep);}
+  .card-balloon.blue{background:radial-gradient(circle at 32% 30%,#9CC9F2 0%,#5D9BD1 30%,#1F4E8C 70%,#0F2A4D 100%);color:#0F2A4D;}
+  .card-balloon.green{background:radial-gradient(circle at 32% 30%,#7FE3C4 0%,#3CC79E 30%,#069F70 70%,#04654A 100%);color:#04654A;}
+  .card-balloon.purple{background:radial-gradient(circle at 32% 30%,#C9A3E8 0%,#A06FCC 30%,#6B3FA0 70%,#3F1F66 100%);color:#3F1F66;}
+  .card-balloon.orange{background:radial-gradient(circle at 32% 30%,#FFCC8A 0%,#FF9F40 30%,#E5751A 70%,#8B4400 100%);color:#8B4400;}
+  .card-balloon span{position:relative;z-index:1;}
+  .card-info{flex:1;}
+  .card-title{font-size:18px;font-weight:900;color:var(--navy-deep);letter-spacing:0.05em;line-height:1.2;}
+  .card-sub{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:0.1em;margin-top:3px;}
+  .card-action{flex-shrink:0;font-family:'Russo One',sans-serif;font-size:13px;color:#fff;background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:2px solid var(--navy);padding:8px 14px;border-radius:20px;box-shadow:0 3px 0 var(--navy);letter-spacing:0.1em;white-space:nowrap;}
+  .card-grade{display:inline-block;font-size:10px;font-weight:800;color:var(--navy);background:var(--light-blue);border:1.5px solid var(--navy);border-radius:10px;padding:1px 7px;margin-left:7px;vertical-align:middle;letter-spacing:0.04em;}
+  .badge-new{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:linear-gradient(180deg,var(--red),var(--red-deep));border:1.5px solid var(--red-deep);border-radius:8px;padding:1px 6px;margin-left:6px;vertical-align:middle;letter-spacing:0.06em;}
+  .cat-group{border:2px dashed rgba(255,200,61,0.6);border-radius:18px;padding:12px 12px 14px;background:rgba(255,200,61,0.06);display:flex;flex-direction:column;gap:12px;}
+  .cat-header{text-align:center;font-size:15px;font-weight:900;color:var(--cream-soft);letter-spacing:0.12em;}
+  .cat-header span{display:block;font-family:'Bungee',sans-serif;font-size:10px;color:var(--gold-bright);letter-spacing:0.22em;margin-top:3px;}
+  .coming{text-align:center;padding:26px 16px;border:2px dashed rgba(255,255,255,0.22);border-radius:18px;background:rgba(255,255,255,0.04);}
+  .coming .c-badge{display:inline-block;font-family:'Bungee',sans-serif;font-size:13px;color:#fff;background:linear-gradient(180deg,var(--purple),#4c1d95);border:2px solid var(--gold-bright);border-radius:20px;padding:7px 18px;letter-spacing:0.1em;}
+  .coming .c-msg{font-size:13px;color:rgba(237,228,204,0.78);margin-top:12px;line-height:1.8;}
+  .footer{margin-top:auto;padding-top:20px;text-align:center;font-size:10px;letter-spacing:0.3em;color:var(--gold-bright);font-weight:700;opacity:0.7;}
+  .bgm-btn{position:fixed;top:10px;right:10px;z-index:300;background:rgba(0,0,0,0.45);color:#fff;border:2px solid var(--gold-bright,#FFC83D);border-radius:50%;width:42px;height:42px;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.4);}
+  .bgm-btn:active{transform:scale(0.92);}
+  .ei-title{font-size:12px;color:var(--gold-bright);font-weight:800;margin-top:5px;letter-spacing:0.03em;}
+  .ei-quote{font-size:12px;color:var(--cream-soft);margin-top:8px;line-height:1.6;font-style:italic;opacity:0.95;border-left:2px solid rgba(255,200,61,0.55);padding-left:8px;}
+  .ei-desc{font-size:12px;color:var(--cream-soft);line-height:1.7;margin-top:10px;opacity:0.92;}
+</style>
+</head>
+<body>
+<audio id="bgm" loop></audio><button id="bgm-btn" class="bgm-btn" onclick="toggleBGM()" aria-label="music">&#128266;</button>
+<div class="wrap">
+  <div class="hero">
+    <img id="hero-img" alt="ARK BUSTERS TEEN">
+    <div class="hero-fallback" id="hero-fallback"><div class="hf-title">ARK BUSTERS</div><div class="hf-sub">トップ画像 top.png をこのフォルダに入れてください</div></div>
+  </div>
+  <div class="brand"><div class="brand-title">ARK BUSTERS <span class="teen">TEEN</span></div><div class="brand-presents">ARK SOGO GAKUIN PRESENTS</div><div class="brand-name">アーク総合学院 バスターズ</div></div>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('math',this)">数学<span class="tab-en">MATH</span></button>
+    <button class="tab" onclick="showTab('english',this)">英語<span class="tab-en">ENG</span></button>
+    <button class="tab" onclick="showTab('japanese',this)">国語<span class="tab-en">JP</span></button>
+    <button class="tab" onclick="showTab('science',this)">理科<span class="tab-en">SCI</span></button>
+    <button class="tab" onclick="showTab('society',this)">社会<span class="tab-en">SOC</span></button>
+  </div>
+
+  <div class="panel active" id="panel-math">
+    <div class="enemy-intro">
+      <div class="ei-img"><img class="enemy-img" data-sub="math" alt="数学の敵"><div class="ei-fallback">&#8734;</div></div>
+      <div class="ei-text"><div class="ei-name">ゼロディウス</div><div class="ei-en">LORD INFINITY ZERODIUS</div><div class="ei-title">無限を支配する数学卿</div><div class="ei-quote">「その答え、我が無限に届くか。」</div></div>
+    </div>
+    <div class="section-title">テーマを選べ</div>
+    <div class="cards">
+      <a href="sign-buster.html" class="card available"><div class="card-balloon blue"><span>±</span></div><div class="card-info"><div class="card-title">正負の数バスター<span class="card-grade">中1</span></div><div class="card-sub">SIGN BUSTER</div></div><div class="card-action">PLAY</div></a>
+      <div class="cat-group"><div class="cat-header">方程式バスター<span>EQUATION BUSTERS</span></div>
+        <a href="ijou-buster.html" class="card available"><div class="card-balloon purple"><span>x=</span></div><div class="card-info"><div class="card-title">移項バスター<span class="badge-new">NEW</span><span class="card-grade">中1</span></div><div class="card-sub">TRANSPOSE BUSTER</div></div><div class="card-action">PLAY</div></a>
+        <a href="keisuu-buster.html" class="card available"><div class="card-balloon orange"><span>ax</span></div><div class="card-info"><div class="card-title">係数バスター<span class="badge-new">NEW</span><span class="card-grade">中1</span></div><div class="card-sub">COEFFICIENT BUSTER</div></div><div class="card-action">PLAY</div></a>
+      </div>
+      <a href="index-buster.html" class="card available"><div class="card-balloon red"><span>2³</span></div><div class="card-info"><div class="card-title">指数バスター<span class="card-grade">中1〜中3</span></div><div class="card-sub">INDEX BUSTER</div></div><div class="card-action">PLAY</div></a>
+      <a href="root-buster.html" class="card available"><div class="card-balloon green"><span>√</span></div><div class="card-info"><div class="card-title">ルートバスター<span class="card-grade">中3</span></div><div class="card-sub">ROOT BUSTER</div></div><div class="card-action">PLAY</div></a>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-english">
+    <div class="enemy-intro">
+      <div class="ei-img"><img class="enemy-img" data-sub="eigo" alt="英語の敵"><div class="ei-fallback">&#8734;</div></div>
+      <div class="ei-text"><div class="ei-name">アルファ</div><div class="ei-en">GENERAL ALPHA</div><div class="ei-title">英語軍を率いる総司令官</div><div class="ei-quote">「戦場で、迷いは敗北だ。」</div></div>
+    </div>
+    <div class="coming"><div class="c-badge">COMING SOON</div><div class="c-msg">英語バスターズは準備中です。<br>もうしばらくお待ちください！</div></div>
+  </div>
+
+  <div class="panel" id="panel-japanese">
+    <div class="enemy-intro">
+      <div class="ei-img"><img class="enemy-img" data-sub="kokugo" alt="国語の敵"><div class="ei-fallback">&#8734;</div></div>
+      <div class="ei-text"><div class="ei-name">かぐや</div><div class="ei-en">QUEEN KAGUYA</div><div class="ei-title">言葉を支配する女王</div><div class="ei-quote">「美しき言の葉に、ひざまずきなさい。」</div></div>
+    </div>
+    <div class="section-title">テーマを選べ</div><div class="cards"><a href="kanji-buster.html" class="card available"><div class="card-balloon red"><span>漢</span></div><div class="card-info"><div class="card-title">漢字の闇<span class="badge-new">NEW</span></div><div class="card-sub">KANJI</div></div><div class="card-action">PLAY</div></a><a href="kotoba-buster.html" class="card available"><div class="card-balloon blue"><span>語</span></div><div class="card-info"><div class="card-title">言葉の蔵<span class="badge-new">NEW</span></div><div class="card-sub">KOTOBA</div></div><div class="card-action">PLAY</div></a><a href="bunpou-buster.html" class="card available"><div class="card-balloon green"><span>文</span></div><div class="card-info"><div class="card-title">文法の塔<span class="badge-new">NEW</span></div><div class="card-sub">BUNPOU</div></div><div class="card-action">PLAY</div></a><a href="koten-buster.html" class="card available"><div class="card-balloon orange"><span>古</span></div><div class="card-info"><div class="card-title">古典迷宮<span class="badge-new">NEW</span></div><div class="card-sub">KOTEN</div></div><div class="card-action">PLAY</div></a></div>
+  </div>
+
+  <div class="panel" id="panel-science">
+    <div class="enemy-intro">
+      <div class="ei-img"><img class="enemy-img" data-sub="rika" alt="理科の敵"><div class="ei-fallback">&#8734;</div></div>
+      <div class="ei-text"><div class="ei-name">モーガン</div><div class="ei-en">DOCTOR MORGAN</div><div class="ei-title">実験と理科を操る魔術博士</div><div class="ei-quote">「さあ、君たちの限界を観察しよう。」</div></div>
+    </div>
+    <div class="section-title">テーマを選べ</div><div class="cards"><a href="genso-buster.html" class="card available"><div class="card-balloon red"><span>元</span></div><div class="card-info"><div class="card-title">元素の実験室<span class="badge-new">NEW</span></div><div class="card-sub">CHEMISTRY</div></div><div class="card-action">PLAY</div></a><div class="card available" style="opacity:0.55;cursor:default;"><div class="card-balloon purple"><span>生</span></div><div class="card-info"><div class="card-title">生命の培養槽</div><div class="card-sub">BIOLOGY</div></div><div class="card-action" style="background:#7c7c7c;border-color:#555;box-shadow:0 3px 0 #555;">準備中</div></div><div class="card available" style="opacity:0.55;cursor:default;"><div class="card-balloon purple"><span>地</span></div><div class="card-info"><div class="card-title">大地の記憶庫</div><div class="card-sub">EARTH</div></div><div class="card-action" style="background:#7c7c7c;border-color:#555;box-shadow:0 3px 0 #555;">準備中</div></div><div class="card available" style="opacity:0.55;cursor:default;"><div class="card-balloon purple"><span>力</span></div><div class="card-info"><div class="card-title">力学の歯車塔</div><div class="card-sub">PHYSICS</div></div><div class="card-action" style="background:#7c7c7c;border-color:#555;box-shadow:0 3px 0 #555;">準備中</div></div></div>
+  </div>
+
+  <div class="panel" id="panel-society">
+    <div class="enemy-intro">
+      <div class="ei-img"><img class="enemy-img" data-sub="shakai" alt="社会の敵"><div class="ei-fallback">&#8734;</div></div>
+      <div class="ei-text"><div class="ei-name">クロノス</div><div class="ei-en">KING CHRONOS</div><div class="ei-title">時代と社会を支配する王</div><div class="ei-quote">「我が玉座に届く知恵を示せ。」</div></div>
+    </div>
+    <div class="coming"><div class="c-badge">COMING SOON</div><div class="c-msg">社会バスターズは準備中です。<br>もうしばらくお待ちください！</div></div>
+  </div>
+
+  <div class="footer">ARK SOGO GAKUIN</div>
+</div>
+<script>
+function __img(L){var r=[];for(var i=0;i<L.length;i++){r.push('illust/'+L[i]);r.push(L[i]);}return r;}
+function __mus(L){var r=[];for(var i=0;i<L.length;i++){r.push('music/'+L[i]);r.push(L[i]);}return r;}
+function showTab(name, btn){
+  var tabs=document.querySelectorAll('.tab'); for(var i=0;i<tabs.length;i++) tabs[i].classList.remove('active');
+  btn.classList.add('active');
+  var ps=document.querySelectorAll('.panel'); for(var j=0;j<ps.length;j++) ps[j].classList.remove('active');
+  document.getElementById('panel-'+name).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function loadImg(img, fallback, list){
+  list=__img(list);
+  var i=0;
+  function fail(){ img.style.display='none'; if(fallback) fallback.style.display='flex'; }
+  function next(){
+    if(i>=list.length){ fail(); return; }
+    var probe=new Image();
+    probe.onload=function(){ img.src=list[i]; img.style.display='block'; if(fallback) fallback.style.display='none'; };
+    probe.onerror=function(){ i++; next(); };
+    probe.src=encodeURI(list[i]);
+  }
+  next();
+}
+var TOP_NAMES=['top.png','top.png.png','top.PNG','top','top.jpg','Busters teen top.png','Busters teen top.png.png'];
+loadImg(document.getElementById('hero-img'), document.getElementById('hero-fallback'), TOP_NAMES);
+function vary(b){ return ['enemy-'+b+'.png','enemy-'+b+'.png.png','enemy-'+b+'.PNG','enemy-'+b+'.jpg',b+'.png',b+'.png.png']; }
+var ENEMY={ math:['enemy.png','enemy.png.png','boss-math.png','boss-math.png.png','math enemy1.png','math enemy1.png.png'], eigo:vary('eigo'), kokugo:vary('kokugo'), rika:vary('rika'), shakai:vary('shakai') };
+var enemies=document.querySelectorAll('.enemy-img');
+for(var k=0;k<enemies.length;k++){ var sub=enemies[k].getAttribute('data-sub'); loadImg(enemies[k], enemies[k].parentElement.querySelector('.ei-fallback'), ENEMY[sub]||[]); }
+var BGMS=__mus(['bgm.mp3','bgm.ogg','bgm.m4a','bgm.wav','ignition.mp3','ignition.ogg','IGNITION.mp3']);
+var __bgmA=document.getElementById('bgm'),__bgmI=0,__bgmOn=true;
+function __setBgm(){if(__bgmA&&__bgmI<BGMS.length){__bgmA.src=BGMS[__bgmI];}}
+if(__bgmA){__bgmA.loop=true;__bgmA.volume=0.4;__bgmA.addEventListener('error',function(){__bgmI++;if(__bgmI<BGMS.length)__setBgm();});__setBgm();}
+function startBGM(){if(__bgmOn&&__bgmA){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});}}
+function toggleBGM(){__bgmOn=!__bgmOn;var b=document.getElementById('bgm-btn');if(!__bgmA)return;if(__bgmOn){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});if(b)b.innerHTML='&#128266;';}else{__bgmA.pause();if(b)b.innerHTML='&#128263;';}}
+</script>
+<script>document.addEventListener('click',function _o(){startBGM();document.removeEventListener('click',_o);});</script>
+</body>
+</html>

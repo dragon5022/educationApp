@@ -1,0 +1,48 @@
+# Flutter / Dart
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/**/captures/
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+**/*.jks
+**/*.keystore
+
+# iOS / macOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Misc
+**/*.log
+**/coverage/
+**/doc/api/
+**/migrated_*/.env
+.env
+.env.*
+
+# Large local caches / temp export debug
+**/tools/_*.txt
+**/tools/__pycache__/

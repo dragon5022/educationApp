@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ARK バスターズ KIDS | アーク総合学院</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Mochiy+Pop+One&family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky-top:#9fe0ff;--sky-bottom:#d9c7ff;
+    --cream:#FFFDF5;--ink:#2b2350;
+    --purple:#8b5cf6;--purple-deep:#5b21b6;
+    --yellow:#ffb300;--yellow-deep:#c77800;
+    --blue:#23b5e8;--blue-deep:#0a6ea3;
+    --orange:#ff8a3d;--orange-deep:#d35a0e;
+    --pink:#ff7eb6;--gold:#ffcf3d;
+    --shadow:rgba(60,40,120,0.25);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{min-height:100%;}
+  body{
+    font-family:'M PLUS Rounded 1c',sans-serif;
+    background:radial-gradient(ellipse 130% 90% at 50% -8%,#6a47c0 0%,#4a2aa0 26%,#2e1c72 54%,#1a1147 80%,#120c33 100%);
+    background-attachment:fixed;color:var(--ink);
+    user-select:none;-webkit-user-select:none;position:relative;min-height:100vh;overflow-x:hidden;
+  }
+  /* ふわふわ雲＆キラキラ背景 */
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:
+      radial-gradient(circle at 20% 30%,rgba(255,255,255,.95) 1.6px,transparent 2.6px),
+      radial-gradient(circle at 75% 20%,rgba(255,233,168,.95) 1.6px,transparent 2.6px),
+      radial-gradient(circle at 50% 62%,rgba(205,232,255,.9) 1.1px,transparent 2.1px),
+      radial-gradient(circle at 85% 75%,rgba(255,209,240,.9) 1.6px,transparent 2.6px),
+      radial-gradient(circle at 15% 80%,rgba(255,255,255,.9) 1.1px,transparent 2.1px),
+      radial-gradient(circle at 60% 8%,rgba(255,255,255,.8) 1.1px,transparent 2px);
+    background-size:130px 130px,170px 170px,90px 90px,150px 150px,110px 110px,70px 70px;
+    animation:twinkle 2.6s ease-in-out infinite alternate;}
+  @keyframes twinkle{from{opacity:.5}to{opacity:1}}
+  .wrap{position:relative;z-index:1;max-width:520px;margin:0 auto;
+    padding:env(safe-area-inset-top,14px) 16px calc(env(safe-area-inset-bottom,28px) + 76px);
+    min-height:100vh;display:flex;flex-direction:column;}
+
+  /* ヒーロー */
+  .hero{position:relative;border:none;border-radius:20px;overflow:hidden;
+    box-shadow:0 8px 0 var(--shadow),0 12px 28px rgba(0,0,0,0.22);margin:6px 0 6px;
+    background:linear-gradient(160deg,#ffe9a8,#ffc4e3 55%,#bdb6ff);}
+  .hero img{display:block;width:100%;height:auto;}
+  .hero-fallback{display:none;aspect-ratio:2/1;width:100%;flex-direction:column;
+    align-items:center;justify-content:center;gap:6px;text-align:center;padding:24px;
+    background:linear-gradient(160deg,#ffe9a8,#ffc4e3 55%,#bdb6ff);}
+  .hf-title{font-family:'Bungee',sans-serif;font-size:34px;color:#fff;letter-spacing:0.04em;
+    text-shadow:2px 2px 0 var(--purple),4px 4px 0 rgba(0,0,0,0.15);}
+  .hf-sub{font-size:12px;font-weight:800;color:var(--purple-deep);letter-spacing:0.06em;}
+
+  /* ブランド */
+  .brand{text-align:center;margin:8px 0 4px;}
+  .brand-title{font-family:'Bungee',sans-serif;font-size:34px;line-height:1;color:#fff;
+    letter-spacing:0.02em;text-shadow:2px 2px 0 var(--purple),3px 3px 0 var(--blue-deep),0 0 16px rgba(255,255,255,0.6);}
+  .brand-title .kids{color:var(--gold);text-shadow:2px 2px 0 var(--yellow-deep),3px 3px 0 #fff;}
+  .brand-name{font-size:15px;font-weight:900;color:var(--cream);letter-spacing:0.12em;margin-top:5px;}
+  .lead{display:flex;align-items:center;justify-content:center;gap:8px;margin:6px 0 10px;
+    font-family:'Mochiy Pop One',sans-serif;font-size:17px;color:var(--ink);
+    background:#fff;border:3px solid var(--gold);border-radius:18px;padding:11px 14px;
+    box-shadow:0 5px 0 var(--shadow);text-align:center;line-height:1.4;}
+  .lead .star{color:var(--yellow);font-size:20px;}
+
+  .section-title{text-align:center;font-family:'Mochiy Pop One',sans-serif;font-size:17px;
+    color:#FFFDF5;letter-spacing:0.08em;margin:16px 0 12px;}
+  .section-title::before,.section-title::after{content:'\2726';color:var(--yellow);margin:0 10px;font-size:15px;}
+
+  /* カード */
+  .cards{display:flex;flex-direction:column;gap:18px;}
+  .card{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+    background:var(--cream);border:4px solid #fff;border-radius:24px;padding:14px 16px;cursor:pointer;
+    box-shadow:0 7px 0 var(--shadow),0 10px 24px rgba(0,0,0,0.18);
+    transition:transform 0.12s,box-shadow 0.12s;position:relative;overflow:hidden;}
+  .card::before{content:'';position:absolute;inset:0;opacity:0.16;z-index:0;}
+  .card.purple{border-color:var(--purple);}
+  .card.purple::before{background:radial-gradient(circle at 18% 30%,var(--purple),transparent 60%);}
+  .card.yellow{border-color:var(--yellow);}
+  .card.yellow::before{background:radial-gradient(circle at 18% 30%,var(--yellow),transparent 60%);}
+  .card.blue{border-color:var(--blue);}
+  .card.blue::before{background:radial-gradient(circle at 18% 30%,var(--blue),transparent 60%);}
+  .card.orange{border-color:var(--orange);}
+  .card.orange::before{background:radial-gradient(circle at 18% 30%,var(--orange),transparent 60%);}
+  .card:active{transform:translateY(4px);box-shadow:0 3px 0 var(--shadow),0 5px 12px rgba(0,0,0,0.2);}
+  /* 準備中カード（押せない） */
+  .card.soon{cursor:default;}
+  .card.soon:active{transform:none;box-shadow:0 7px 0 var(--shadow),0 10px 24px rgba(0,0,0,0.18);}
+  .card.soon .mon img,.card.soon .info{filter:grayscale(0.15);}
+  .ribbon{position:absolute;top:10px;right:-34px;z-index:2;transform:rotate(38deg);
+    background:var(--orange-deep);color:#fff;font-family:'Mochiy Pop One',sans-serif;font-size:11px;
+    letter-spacing:0.08em;padding:4px 36px;box-shadow:0 2px 6px rgba(0,0,0,0.25);}
+
+  .mon{width:88px;height:88px;flex-shrink:0;position:relative;z-index:1;}
+  .mon img{width:100%;height:100%;object-fit:contain;display:block;
+    filter:drop-shadow(0 4px 8px rgba(0,0,0,0.35));animation:floatY 3s ease-in-out infinite;}
+  .mon-fallback{display:none;width:100%;height:100%;border-radius:50%;
+    align-items:center;justify-content:center;font-size:40px;}
+  .card.purple .mon-fallback{display:flex;background:radial-gradient(circle at 38% 32%,#c4a5ff,var(--purple-deep));}
+  .card.yellow .mon-fallback{background:radial-gradient(circle at 38% 32%,#ffe08a,var(--yellow-deep));}
+  .card.blue .mon-fallback{background:radial-gradient(circle at 38% 32%,#9ee2ff,var(--blue-deep));}
+  @keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+
+  .info{flex:1;min-width:0;position:relative;z-index:1;}
+  .info .mon-name{font-family:'Mochiy Pop One',sans-serif;font-size:12px;letter-spacing:0.05em;
+    display:inline-block;color:#fff;border-radius:10px;padding:2px 9px;margin-bottom:5px;}
+  .card.purple .mon-name{background:var(--purple);}
+  .card.yellow .mon-name{background:var(--yellow-deep);}
+  .card.blue .mon-name{background:var(--blue-deep);}
+  .info .title{font-family:'Mochiy Pop One',sans-serif;font-size:20px;line-height:1.2;color:var(--ink);}
+  .info .sub{font-size:12px;font-weight:800;color:#7a7390;margin-top:4px;letter-spacing:0.04em;}
+  .info .sub .en{font-family:'Fredoka',sans-serif;}
+
+  .play{flex-shrink:0;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
+    font-family:'Mochiy Pop One',sans-serif;font-size:14px;color:#fff;
+    border-radius:18px;padding:10px 14px;letter-spacing:0.04em;white-space:nowrap;}
+  .card.purple .play{background:linear-gradient(180deg,#a78bfa,var(--purple-deep));box-shadow:0 4px 0 var(--purple-deep);}
+  .card.yellow .play{background:linear-gradient(180deg,#ffc94d,var(--yellow-deep));box-shadow:0 4px 0 var(--yellow-deep);}
+  .card.blue .play{background:linear-gradient(180deg,#5cd0f7,var(--blue-deep));box-shadow:0 4px 0 var(--blue-deep);}
+  .play .arrow{font-size:18px;line-height:1;}
+
+  /* ガイドキャラ */
+  .guide{margin-top:24px;background:#fff;border:3px solid var(--pink);border-radius:22px;
+    padding:14px 16px;box-shadow:0 6px 0 var(--shadow);display:flex;align-items:flex-end;gap:10px;}
+  .guide-imgs{display:flex;flex-shrink:0;}
+  .guide-imgs .g{width:62px;height:80px;}
+  .guide-imgs .g img{width:100%;height:100%;object-fit:contain;display:block;}
+  .guide-imgs .g.k{margin-right:-14px;}
+  .guide-bubble{flex:1;background:#fff5fb;border:2px dashed var(--pink);border-radius:16px;
+    padding:10px 12px;font-size:13.5px;font-weight:800;color:var(--ink);line-height:1.7;position:relative;}
+  .guide-names{font-family:'Mochiy Pop One',sans-serif;font-size:11px;color:var(--pink);margin-bottom:3px;}
+
+  .footer{margin-top:auto;padding-top:24px;text-align:center;font-family:'Bungee',sans-serif;
+    font-size:11px;letter-spacing:0.28em;color:#fff;opacity:0.85;
+    text-shadow:1px 1px 0 var(--purple);}
+
+  .bgm-btn{position:fixed;top:10px;right:10px;z-index:300;background:#fff;color:var(--purple-deep);
+    border:3px solid var(--gold);border-radius:50%;width:46px;height:46px;font-size:20px;line-height:1;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 0 var(--shadow);}
+  .bgm-btn:active{transform:scale(0.92);}
+  #deco{position:fixed;inset:0;z-index:0;pointer-events:none;}
+  #deco span{position:absolute;font-family:'Fredoka',sans-serif;font-weight:900;text-shadow:0 2px 4px rgba(0,0,0,.35);animation:decofloat 4s ease-in-out infinite alternate;}
+  #deco span:nth-child(odd){animation-duration:5s;}
+  @keyframes decofloat{from{transform:translateY(0);}to{transform:translateY(-8px);}}
+  .cards{display:flex;flex-direction:column;gap:14px;}
+  .wcard{display:block;text-decoration:none;border-radius:16px;transition:transform .12s;filter:drop-shadow(0 6px 12px rgba(0,0,0,.4));}
+  .wcard:active{transform:scale(.97);}
+  .wcard img{width:100%;display:block;border-radius:14px;}
+
+  body::before{background-image:radial-gradient(circle at 12% 18%,rgba(255,255,255,.9) 1.4px,transparent 2px),radial-gradient(circle at 38% 8%,rgba(255,233,168,.85) 1.3px,transparent 2px),radial-gradient(circle at 62% 22%,rgba(205,232,255,.85) 1.2px,transparent 2px),radial-gradient(circle at 88% 12%,rgba(255,255,255,.8) 1.3px,transparent 2px),radial-gradient(circle at 22% 45%,rgba(255,209,240,.8) 1.2px,transparent 2px),radial-gradient(circle at 50% 55%,rgba(255,255,255,.8) 1.1px,transparent 2px),radial-gradient(circle at 78% 48%,rgba(255,233,168,.8) 1.3px,transparent 2px),radial-gradient(circle at 10% 72%,rgba(205,232,255,.8) 1.2px,transparent 2px),radial-gradient(circle at 40% 82%,rgba(255,255,255,.85) 1.3px,transparent 2px),radial-gradient(circle at 68% 78%,rgba(255,209,240,.8) 1.2px,transparent 2px),radial-gradient(circle at 92% 88%,rgba(255,255,255,.8) 1.2px,transparent 2px),radial-gradient(circle at 28% 95%,rgba(255,233,168,.75) 1.1px,transparent 2px);background-size:150px 150px,190px 190px,130px 130px,210px 210px,170px 170px,110px 110px,160px 160px,200px 200px,140px 140px,180px 180px,120px 120px,230px 230px;animation:twinkle 2.6s ease-in-out infinite alternate;}
+
+/* === たてよみ漫画（ストーリー） === */
+#storyOverlay,#storyOverlay2{position:fixed;inset:0;z-index:99999;display:none;overflow-y:auto;-webkit-overflow-scrolling:touch;text-align:center;font-family:'Mochiy Pop One','M PLUS Rounded 1c',sans-serif;
+ background:radial-gradient(circle at 18% 12%,rgba(255,255,255,.85) 1.3px,transparent 2px),radial-gradient(circle at 82% 22%,rgba(255,233,168,.8) 1.3px,transparent 2px),radial-gradient(circle at 60% 55%,rgba(205,232,255,.75) 1.1px,transparent 2px),radial-gradient(circle at 30% 78%,rgba(255,209,240,.75) 1.3px,transparent 2px),radial-gradient(ellipse 130% 90% at 50% -8%,#6a47c0,#4a2aa0 26%,#2e1c72 54%,#1a1147 80%,#120c33 100%);
+ background-size:140px 140px,180px 180px,120px 120px,160px 160px,auto;background-repeat:repeat,repeat,repeat,repeat,no-repeat;background-attachment:fixed;}
+#storyOverlay.show,#storyOverlay2.show{display:block;}
+.story-skip{position:fixed;top:12px;right:12px;z-index:100001;background:rgba(255,255,255,.92);color:#5b21b6;border:2px solid #ffcf3d;border-radius:16px;padding:8px 14px;font-weight:800;font-size:14px;font-family:'M PLUS Rounded 1c',sans-serif;cursor:pointer;box-shadow:0 3px 0 rgba(60,40,120,.4);}
+.spanel{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:46px 20px;}
+.spanel .pnum{color:#ffd96b;font-size:13px;font-weight:700;margin-bottom:12px;font-family:'M PLUS Rounded 1c',sans-serif;letter-spacing:.1em;}
+.spanel .stext{color:#fff;font-size:21px;line-height:1.85;font-weight:400;text-shadow:0 2px 7px rgba(0,0,0,.55);max-width:430px;}
+.spanel .stext .hi{color:#ffd96b;}
+.spanel img.schar{width:66%;max-width:300px;height:auto;margin:4px auto 16px;filter:drop-shadow(0 8px 20px rgba(120,40,200,.55));}
+.smons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:6px auto 16px;max-width:430px;}
+.smons img{width:42%;max-width:160px;height:auto;filter:drop-shadow(0 6px 14px rgba(120,40,200,.5));}
+.scroll-hint{color:#cdb6ff;font-size:13px;margin-top:20px;font-family:'M PLUS Rounded 1c',sans-serif;animation:sbob 1.6s ease-in-out infinite;}
+@keyframes sbob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+.story-start{margin:14px auto 44px;background:linear-gradient(180deg,#ffe9a8,#f1b53a);color:#6b3b00;border:3px solid #fff;border-radius:22px;padding:16px 36px;font-size:22px;font-weight:400;font-family:'Mochiy Pop One',sans-serif;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.3);}
+.story-start:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.3);}
+#story-btn{position:fixed;top:12px;left:12px;z-index:9000;background:rgba(255,255,255,.88);color:#5b21b6;border:2px solid #ffcf3d;border-radius:16px;padding:7px 12px;font-weight:800;font-size:13px;font-family:'M PLUS Rounded 1c',sans-serif;cursor:pointer;box-shadow:0 3px 0 rgba(60,40,120,.4);}
+#story2-btn{position:fixed;top:50px;left:12px;z-index:9000;background:linear-gradient(180deg,#ffe9a8,#f1b53a);color:#6b3b00;border:2px solid #fff;border-radius:16px;padding:7px 12px;font-weight:800;font-size:13px;font-family:'M PLUS Rounded 1c',sans-serif;cursor:pointer;box-shadow:0 3px 0 rgba(0,0,0,.3);display:none;}
+#story2-btn.locked{background:rgba(255,255,255,.5);color:#5b4b7a;border-color:rgba(255,255,255,.7);box-shadow:0 3px 0 rgba(60,40,120,.3);}
+
+/* === 下バー（図鑑・プロフィール・設定） === */
+#arkNav{position:fixed;left:0;right:0;bottom:0;z-index:9500;display:none;justify-content:space-around;align-items:center;background:rgba(20,12,45,.92);border-top:3px solid #ffcf3d;padding:6px 4px;}
+#arkNav button{background:none;border:none;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;padding:4px 16px;}
+#arkNav .ni{font-size:0;}
+#arkNav .ni img{width:76px;height:76px;object-fit:contain;display:block;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4));}
+#arkNav .nl{font-size:13px;font-weight:800;letter-spacing:.04em;color:#ffd54a;font-family:'M PLUS Rounded 1c',sans-serif;}
+#arkNav button:active{transform:scale(.9);}
+#arkPanel{position:fixed;inset:0;z-index:9800;display:none;align-items:center;justify-content:center;background:rgba(20,12,45,.6);padding:18px;}
+#arkPanel.show{display:flex;}
+.ark-sheet{position:relative;width:100%;max-width:420px;max-height:82vh;overflow:auto;background:#fff;border:4px solid #ffcf3d;border-radius:22px;padding:22px 18px;box-shadow:0 12px 40px rgba(0,0,0,.5);font-family:'M PLUS Rounded 1c',sans-serif;}
+.ark-sheet h2{font-size:20px;color:#5b21b6;text-align:center;margin:0 0 14px;}
+.ark-x{position:absolute;top:10px;right:12px;background:#eee;border:none;border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer;color:#5b21b6;}
+.ark-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.ark-card{background:#f5f1ff;border:3px solid #d9cffb;border-radius:16px;padding:10px;text-align:center;}
+.ark-card.got{border-color:#ffb300;background:#fff8e6;}
+.ark-card img{width:100%;height:96px;object-fit:contain;}
+.ark-card.lock{filter:grayscale(1);opacity:.55;}
+.ark-cname{font-weight:900;color:#5b21b6;margin-top:6px;font-size:14px;}
+.ark-hint{text-align:center;color:#7a7390;font-size:12px;margin-top:16px;line-height:1.7;}
+.ark-row{display:flex;justify-content:space-between;align-items:center;padding:11px 4px;border-bottom:1px dashed #ddd;color:#444;font-weight:700;font-size:14px;}
+.ark-btn,.ark-toggle{background:#8b5cf6;color:#fff;border:none;border-radius:12px;padding:8px 14px;font-weight:800;cursor:pointer;font-family:inherit;margin:8px auto;display:block;}
+.ark-toggle{min-width:60px;margin:0;}
+</style>
+</head>
+<body>
+<div id="deco" aria-hidden="true"><span style="left:9.9%;top:6.9%;color:#ffd54a;font-size:22px;">✧</span><span style="left:24.6%;top:8.5%;color:#ffd54a;font-size:14px;">✧</span><span style="left:36.8%;top:4.8%;color:#fff;font-size:18px;">★</span><span style="left:53.3%;top:3.0%;color:#9be06a;font-size:16px;">✧</span><span style="left:72.2%;top:8.3%;color:#5cd0f7;font-size:22px;">✦</span><span style="left:95.4%;top:2.1%;color:#fff7b0;font-size:14px;">✧</span><span style="left:3.7%;top:18.8%;color:#9be06a;font-size:22px;">★</span><span style="left:21.4%;top:18.9%;color:#ffb066;font-size:16px;">★</span><span style="left:47.5%;top:15.3%;color:#9be06a;font-size:14px;">✧</span><span style="left:63.9%;top:16.5%;color:#ffb066;font-size:12px;">✦</span><span style="left:73.2%;top:12.3%;color:#ffb066;font-size:12px;">★</span><span style="left:89.5%;top:17.5%;color:#ffd54a;font-size:18px;">✧</span><span style="left:10.6%;top:23.7%;color:#c9a3ff;font-size:22px;">✦</span><span style="left:22.5%;top:26.6%;color:#fff7b0;font-size:16px;">★</span><span style="left:44.3%;top:21.5%;color:#c9a3ff;font-size:22px;">★</span><span style="left:57.1%;top:25.4%;color:#c9a3ff;font-size:16px;">✦</span><span style="left:76.0%;top:21.1%;color:#5cd0f7;font-size:18px;">★</span><span style="left:97.4%;top:22.6%;color:#fff7b0;font-size:16px;">★</span><span style="left:8.5%;top:38.1%;color:#fff7b0;font-size:12px;">✦</span><span style="left:26.1%;top:37.2%;color:#ffb066;font-size:12px;">✦</span><span style="left:40.8%;top:38.8%;color:#c9a3ff;font-size:18px;">★</span><span style="left:59.7%;top:38.3%;color:#ffb066;font-size:20px;">✦</span><span style="left:75.6%;top:33.5%;color:#ffb066;font-size:14px;">✦</span><span style="left:95.5%;top:36.0%;color:#ffb066;font-size:16px;">✧</span><span style="left:4.0%;top:41.4%;color:#fff;font-size:12px;">✧</span><span style="left:21.7%;top:45.8%;color:#fff7b0;font-size:20px;">✦</span><span style="left:40.7%;top:41.4%;color:#ffd54a;font-size:22px;">✧</span><span style="left:58.3%;top:47.7%;color:#5cd0f7;font-size:20px;">★</span><span style="left:80.0%;top:44.3%;color:#fff;font-size:16px;">★</span><span style="left:87.2%;top:47.8%;color:#5cd0f7;font-size:16px;">✦</span><span style="left:13.7%;top:56.0%;color:#fff7b0;font-size:16px;">★</span><span style="left:27.4%;top:53.5%;color:#ffb066;font-size:16px;">✦</span><span style="left:40.4%;top:52.2%;color:#5cd0f7;font-size:20px;">✦</span><span style="left:63.9%;top:57.9%;color:#ff7eb6;font-size:16px;">★</span><span style="left:72.1%;top:57.3%;color:#c9a3ff;font-size:12px;">✧</span><span style="left:95.3%;top:57.2%;color:#ffd54a;font-size:22px;">✧</span><span style="left:5.9%;top:65.5%;color:#ffb066;font-size:22px;">✧</span><span style="left:24.8%;top:67.2%;color:#ffb066;font-size:16px;">✧</span><span style="left:43.6%;top:65.6%;color:#fff7b0;font-size:18px;">★</span><span style="left:61.8%;top:63.6%;color:#fff7b0;font-size:16px;">✦</span><span style="left:79.0%;top:66.2%;color:#c9a3ff;font-size:16px;">✦</span><span style="left:93.5%;top:66.9%;color:#c9a3ff;font-size:22px;">✦</span><span style="left:4.2%;top:77.9%;color:#c9a3ff;font-size:16px;">✦</span><span style="left:25.2%;top:75.2%;color:#9be06a;font-size:22px;">★</span><span style="left:39.9%;top:77.8%;color:#ff7eb6;font-size:20px;">✦</span><span style="left:60.5%;top:74.3%;color:#fff;font-size:16px;">✧</span><span style="left:76.6%;top:77.2%;color:#ffb066;font-size:20px;">✧</span><span style="left:97.9%;top:72.6%;color:#fff7b0;font-size:18px;">✧</span><span style="left:10.2%;top:82.8%;color:#5cd0f7;font-size:20px;">✧</span><span style="left:27.8%;top:88.9%;color:#5cd0f7;font-size:12px;">★</span><span style="left:46.6%;top:81.9%;color:#fff7b0;font-size:14px;">★</span><span style="left:58.9%;top:84.3%;color:#fff;font-size:20px;">✦</span><span style="left:76.4%;top:85.7%;color:#c9a3ff;font-size:12px;">★</span><span style="left:89.8%;top:88.6%;color:#ff7eb6;font-size:20px;">✦</span><span style="left:12.5%;top:94.0%;color:#ffb066;font-size:12px;">★</span><span style="left:22.4%;top:95.1%;color:#ffb066;font-size:16px;">✧</span><span style="left:45.7%;top:94.4%;color:#c9a3ff;font-size:16px;">✧</span><span style="left:53.8%;top:95.8%;color:#fff7b0;font-size:14px;">✧</span><span style="left:80.9%;top:95.9%;color:#ffd54a;font-size:16px;">✦</span><span style="left:86.7%;top:95.5%;color:#5cd0f7;font-size:16px;">✧</span></div>
+<audio id="bgm" loop></audio>
+<button id="bgm-btn" class="bgm-btn" onclick="toggleBGM()" aria-label="music">&#128266;</button>
+
+<div class="wrap">
+  <div class="hero">
+    <img id="hero-img" alt="ARK BUSTERS KIDS">
+    <div class="hero-fallback" id="hero-fallback">
+      <div class="hf-title">ARK BUSTERS</div>
+      <div class="hf-sub">KIDS</div>
+    </div>
+  </div>
+
+  <div class="brand">
+    <div class="brand-title">ARK BUSTERS <span class="kids">KIDS</span></div>
+    <div class="brand-name">アーク総合学院</div>
+  </div>
+
+  <div class="lead"><span class="star">&#9733;</span>たたかうモンスターを<br>えらんでね<span class="star">&#9733;</span></div>
+
+  <div class="cards">
+    <a href="ボキャブラリー_無料版/vocabulary-busters_無料版.html" class="wcard"><img src="app illust/top images/card-vocab.png" alt="ボキャブラリーバスター"></a>
+    <a href="リスニングアプリ_無料版200問/listening-buster_無料版.html" class="wcard"><img src="app illust/top images/card-listening.png" alt="リスニングバスター"></a>
+    <a href="トークバスター_無料版/talk-buster_無料版.html" class="wcard"><img src="app illust/top images/card-talk.png" alt="トークバスター"></a>
+    <a href="センテンスバスター_無料版/english-busters_無料版.html" class="wcard"><img src="app illust/top images/card-sentense.png" alt="センテンスバスター"></a>
+  </div>
+
+  <div class="footer">ARK SOGO GAKUIN</div>
+</div>
+
+
+<button id="story-btn" onclick="openStory()" aria-label="おはなしをみる">📖 おはなし</button>
+<div id="storyOverlay" aria-hidden="true">
+  <button class="story-skip" onclick="closeStory()">スキップ ▶</button>
+
+  <div class="spanel">
+    <div class="pnum">1 / 5</div>
+    <img class="schar" src="app illust/story/s1.png" alt="" onerror="this.style.display='none'">
+    <div class="stext"><span class="hi">奏（かなで）</span>と <span class="hi">詩（うた）</span>は、<br>なかよし きょうだい。<br><br>いつもは げんき いっぱいなのに、<br>テストの 日は いつもしょんぼり。<br><br>「やれば できるよ！」<br><br>お父さんも お母さんも<br>はげまして くれるけれど、<br><br>奏は <span class="hi">リスニング</span>が<br>詩は <span class="hi">ぶんぽう</span>が、だいの にがて。<br><br>「どうせ ぼくたち、できないもん……」<br><br>おちこむ ふたりを 見て、<br>お父さんと お母さんも かおを くもらせた。</div>
+    <div class="scroll-hint">▼ したに スクロールしてね</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">2 / 5</div>
+    <img class="schar" src="app illust/story/s2.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">親子は、まちで ちょっぴり話題の じゅく<br><span class="hi">「ARK（アーク）」</span>の とびらを ひらいた。<br><br>むかえて くれたのは、<br>にっこり わらう <span class="hi">かずえ先生</span>。<br><br>「だいじょうぶ。<br>ここなら きっと かわれるよ」</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">3 / 5</div>
+    <img class="schar" src="app illust/story/s3.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">ふしぎと、 かずえ先生の ことばに<br>むねが あつく なる。<br><br>――そのとき。<br><br>つくえの 上の<br><span class="hi">英語の本</span>が、ピカッと ひかる。<br><br>ドドドドッ！！<br><br>本の 中から、4体の<br><span class="hi">おそろしい モンスター</span>が とびだしてきた！<br><br>「うわあああ！？」<br><br>おもわず さけぶ 奏と 詩。<br>けれど……あら ふしぎ。<br>おとなには 見えないみたい。</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">4 / 5</div>
+    <img class="schar" src="app illust/story/s4.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">かずえ先生は、お父さんと お母さんに<br><span class="hi">バスターズブック</span> を わたした。<br><br>とたんに、モンスターの すがたが<br>見えたのか、おどろく ふたり。<br><br>「あ、あれは なんなの？」<br><br>奏が たずねると、<br>かずえ先生は かおを くもらせた。<br><br>「あの子たちは、<br>もとは <span class="hi">心の きれいな ようせい</span> だったの。<br>でも、みんなの『英語、きらい』って きもちを<br>すいこみすぎて、 たましいが けがれて<br>ぼうそうして しまったの」<br><br>かずえ先生は、 <span class="hi">バスターズペン</span> を<br>子どもたちに さしだして言う。<br><br>「おねがい。 どうか みんなで、<br><span class="hi">あの子たちを 助けて あげて？</span>」</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">5 / 5</div>
+    <img class="schar" src="app illust/story/s5.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">顔を 見あわせる 奏と 詩。<br>まだ ゆうきは 出ない。<br>だって 英語は にがてで、<br>やっても どうせ できないと 思って いるから。<br>でも――<br>「<span class="hi">かぞく みんなが、いっしょなら。</span>」<br>お父さんと お母さんが、こくりと うなずく。<br>「「「「<span class="hi">へんしーーん！！</span>」」」」 ピカーッ！！<br>親子そろって、<span class="hi">バスターズの せいふく</span>に へんしん！<br>「いくぞ、詩！」「うん、おにいちゃん！」<br>やるき まんまん。家族みんなで、モンスターに むかって いく！<br><br>さあ、キミも いっしょに <span class="hi">冒険を はじめよう！</span></div>
+    <button class="story-start" onclick="closeStory()">ぼうけんスタート！</button>
+  </div>
+</div>
+
+<button id="story2-btn" onclick="story2Click()">🔒 つづきの おはなし</button>
+<div id="storyOverlay2" aria-hidden="true">
+  <button class="story-skip" onclick="closeStory2()">とじる ✕</button>
+
+  <div class="spanel">
+    <div class="pnum">つづきの おはなし ・ なかまの ひみつ</div>
+    <img class="schar" src="app illust/story/s6.png" alt="" onerror="this.onerror=null;this.src='app illust/all friend.png'">
+    <div class="stext">じつは モンスターたちは、<br>ほんとうの <span class="hi">ボス</span>に あやつられて いただけ だった。<br>たたかって、<span class="hi">のろいを といて</span> あげると――<br>モンスターは にっこり。<br>みんな、たいせつな <span class="hi">なかま</span>に なった！</div>
+    <div class="scroll-hint">▼ したに スクロールしてね</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">中学生編</div>
+    <img class="schar" src="app illust/story/s7.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">月日は ながれ、奏と 詩は <span class="hi">中学生</span>に なった。<br>すると、なかまたちが きゅうに さけんだ――<br>「気を つけて！ ぼくたちを あやつって いた、<br><span class="hi">ほんとうの ボス</span>が……<br>また、おそってくる!!」</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">2</div>
+    <img class="schar" src="app illust/story/teen-bosses.png" alt="" onerror="this.style.display='none'">
+    <div class="stext">あらわれたのは、<span class="hi">5教科の 大きな ボス</span>たち。<br>せかいじゅうを 「べんきょう、できない…」で<br>うめつくそうと たくらんでいる。<br>その ねらいは――なんと、この <span class="hi">地球（ちきゅう）</span>！</div>
+  </div>
+
+  <div class="spanel">
+    <div class="pnum">3</div>
+    <div class="stext">大きく なった <span class="hi">親子バスターズ</span>の、<br>あたらしい たたかいが、いま はじまる。<br>その なも――<span class="hi">ARK BUSTERS TEEN（アーク バスターズ ティーン）</span>！<br><span style="font-size:16px;color:#cdb6ff;">（つづく）</span></div>
+    <button class="story-start" onclick="closeStory2()">とじる</button>
+  </div>
+</div>
+
+<div id="arkNav"><button id="navCol"><span class="ni"><img src="app illust/top images/collection.png" alt=""></span><span class="nl">コレクション</span></button><button id="navPro"><span class="ni"><img src="app illust/top images/profile.png" alt=""></span><span class="nl">プロフィール</span></button><button id="navSet"><span class="ni"><img src="app illust/top images/setting.png" alt=""></span><span class="nl">せってい</span></button></div>
+<div id="arkPanel"><div class="ark-sheet"><button class="ark-x" id="arkX">✕</button><div id="arkPanelBody"></div></div></div>
+
+<script>
+/* 画像ローダー：ファイル名のゆれ（スペース・拡張子）に強く対応 */
+function loadImg(img, fallback, list){
+  var i=0;
+  function fail(){ img.style.display='none'; if(fallback) fallback.style.display='flex'; }
+  function next(){
+    if(i>=list.length){ fail(); return; }
+    var probe=new Image();
+    probe.onload=function(){ img.src=encodeURI(list[i]); img.style.display='block'; if(fallback) fallback.style.display='none'; };
+    probe.onerror=function(){ i++; next(); };
+    probe.src=encodeURI(list[i]);
+  }
+  next();
+}
+/* ヒーロー画像（候補を順番に試す） */
+var TOPS=['app illust/top images/kidtop1.png','app illust/top images/kidtop2.png','app illust/top images/kidtop3.png','app illust/top images/kidtop4.png','app illust/kidtop.png'];
+var HERO=[TOPS[Math.floor(Math.random()*TOPS.length)],'app illust/top images/kidtop1.png','top.png'];
+loadImg(document.getElementById('hero-img'), document.getElementById('hero-fallback'), HERO);
+
+/* モンスター画像 */
+var MON={
+  gramon:['app illust/グラ敵.png','app illust/gramon ene.png'],
+  vocamon:['app illust/ボキャ敵.png','app illust/vocaimages/vocamon ene.png'],
+  lismon:['app illust/リス敵.png','app illust/lismon ene.png'],
+  talkmon:['app illust/トーク敵.png','e-talk.png']
+};
+var mons=document.querySelectorAll('.mon-img');
+for(var k=0;k<mons.length;k++){
+  var key=mons[k].getAttribute('data-mon');
+  loadImg(mons[k], mons[k].parentElement.querySelector('.mon-fallback'), MON[key]||[]);
+}
+/* ガイドキャラ */
+loadImg(document.getElementById('g-kanade'), null, ['app illust/top images/kanade kids.png','kanade kids.png']);
+loadImg(document.getElementById('g-uta'), null, ['app illust/top images/uta kids.png','uta kids.png']);
+
+/* BGM */
+var BGMS=['bgm-top.mp3','bgm.mp3','bgm.ogg','bgm.m4a'];
+var __bgmA=document.getElementById('bgm'),__bgmI=0,__bgmOn=true;
+function __setBgm(){if(__bgmA&&__bgmI<BGMS.length){__bgmA.src=BGMS[__bgmI];}}
+if(__bgmA){__bgmA.loop=true;__bgmA.volume=0.4;__bgmA.addEventListener('error',function(){__bgmI++;if(__bgmI<BGMS.length)__setBgm();});__setBgm();}
+function startBGM(){if(__bgmOn&&__bgmA){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});}}
+function toggleBGM(){__bgmOn=!__bgmOn;var b=document.getElementById('bgm-btn');if(!__bgmA)return;
+  if(__bgmOn){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});if(b)b.innerHTML='&#128266;';}
+  else{__bgmA.pause();if(b)b.innerHTML='&#128263;';}}
+document.addEventListener('click',function _o(){startBGM();document.removeEventListener('click',_o);});
+
+/* === ストーリー（たてよみ漫画）制御 === */
+function openStory(){var o=document.getElementById('storyOverlay');if(o){o.scrollTop=0;o.classList.add('show');o.setAttribute('aria-hidden','false');}}
+function closeStory(){var o=document.getElementById('storyOverlay');if(o){o.classList.remove('show');o.scrollTop=0;o.setAttribute('aria-hidden','true');}try{localStorage.setItem('ark_story_seen','1');}catch(e){}}
+(function(){var seen='0';try{seen=localStorage.getItem('ark_story_seen')||'0';}catch(e){}if(seen!=='1'){openStory();}})();
+
+/* === 後半ストーリー解禁（図鑑カード合計の半分で解禁）=== */
+function arkCardCount(){var ks=['vocamon','lismon','gramon','talkmon'],n=0;ks.forEach(function(k){try{var a=JSON.parse(localStorage.getItem('ark_cards_'+k)||'[]');n+=(a&&a.length)||0;}catch(e){}});return n;}
+var STORY2_TOTAL=120, STORY2_NEED=60; /* 4体x30枚の半分 */
+function story2Unlocked(){return arkCardCount()>=STORY2_NEED;}
+function openStory2(){var o=document.getElementById('storyOverlay2');if(o){o.scrollTop=0;o.classList.add('show');o.setAttribute('aria-hidden','false');}try{localStorage.setItem('ark_story2_seen','1');}catch(e){}}
+function closeStory2(){var o=document.getElementById('storyOverlay2');if(o){o.classList.remove('show');o.scrollTop=0;o.setAttribute('aria-hidden','true');}}
+function refreshStory2Btn(){var b=document.getElementById('story2-btn');if(!b)return;var n=arkCardCount();if(n>=STORY2_NEED){b.textContent='▶ つづきの おはなし';b.classList.remove('locked');}else{b.textContent='🔒 つづき（あと'+(STORY2_NEED-n)+'まい）';b.classList.add('locked');}b.style.display='block';}
+function story2Click(){if(story2Unlocked()){openStory2();}else{alert('図鑑を はんぶん（'+STORY2_NEED+'まい）あつめると、つづきの おはなしが ひらくよ！\nいまは あと '+(STORY2_NEED-arkCardCount())+' まい！');}}
+(function(){refreshStory2Btn();
+  var introEl=document.getElementById('storyOverlay');
+  var introShowing=introEl&&introEl.classList.contains('show');
+  var seen='0';try{seen=localStorage.getItem('ark_story2_seen')||'0';}catch(e){}
+  if(story2Unlocked()&&seen!=='1'&&!introShowing){openStory2();}
+})();
+
+/* === ARK 図鑑・プロフィール・設定（総合TOP・全ゲーム合算）=== */
+var MONS=[
+ {key:'vocamon',name:'ボキャモン',img:'app illust/vocaimages/vocamon-friend.png',poseBase:'app illust/vocaimages/vocamon-pose'},
+ {key:'lismon', name:'リスモン', img:'app illust/lisimages/lismon-friend.png', poseBase:'app illust/lisimages/lismon-pose'},
+ {key:'gramon', name:'グラモン', img:'app illust/graimages/gramon fri.png',   poseBase:'app illust/graimages/gramon-pose'},
+ {key:'talkmon',name:'トークモン',img:'app illust/talkimages/トーク友.png',    poseBase:'app illust/talkimages/talkmon-pose'}
+];
+function arkGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function arkSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function arkFriends(){try{return JSON.parse(arkGet('ark_friends')||'[]');}catch(e){return [];}}
+function getS(key){return parseInt(arkGet('ark_s_'+key)||'0',10);}
+function arkClose(){document.getElementById('arkPanel').classList.remove('show');}
+function addPose(g,src,label){var c=document.createElement('div');c.className='ark-card got';var im=document.createElement('img');im.src=encodeURI(src);im.onerror=function(){this.style.visibility='hidden';};var lb=document.createElement('div');lb.className='ark-cname';lb.textContent=label;c.appendChild(im);c.appendChild(lb);g.appendChild(c);}
+function navOpen(which){var body=document.getElementById('arkPanelBody');var fr=arkFriends();var html='';
+ if(which==='collection'){html='<h2>ずかん  Collection</h2><div class="ark-grid" id="arkGrid"></div><p class="ark-hint">モンスターを たおすと なかまに なって ここに あつまるよ！</p>';}
+ else if(which==='profile'){var nm=arkGet('ark_name')||'なまえ みせってい';var tc=0;MONS.forEach(function(m){try{tc+=(JSON.parse(arkGet('ark_cards_'+m.key)||'[]')||[]).length;}catch(e){}});html='<h2>マイページ  Profile</h2><div class="ark-row"><span>なまえ</span><b id="arkName">'+nm+'</b></div><button class="ark-btn" id="btnName">なまえを かえる</button><div class="ark-row"><span>なかま</span><b>'+fr.length+' / '+MONS.length+'</b></div><div class="ark-row"><span>あつめた ポーズ</span><b>'+tc+'</b></div>';}
+ else{var se=arkGet('ark_se')!=='0';var vo=arkGet('ark_voice')!=='0';html='<h2>せってい  Settings</h2><div class="ark-row"><span>こうかおん</span><button class="ark-toggle" id="tgSe">'+(se?'ON':'OFF')+'</button></div><div class="ark-row"><span>えいごの こえ</span><button class="ark-toggle" id="tgVo">'+(vo?'ON':'OFF')+'</button></div>';}
+ body.innerHTML=html;document.getElementById('arkPanel').classList.add('show');
+ if(which==='collection'){var g=document.getElementById('arkGrid');MONS.forEach(function(m){var got=fr.indexOf(m.key)>=0;var c=document.createElement('div');c.className='ark-card '+(got?'got':'lock');var im=document.createElement('img');if(got){im.src=encodeURI(m.img);}else{im.style.visibility='hidden';}im.onerror=function(){im.style.visibility='hidden';};var nm=document.createElement('div');nm.className='ark-cname';nm.textContent=got?m.name:'？？？';c.appendChild(im);c.appendChild(nm);if(got){c.style.cursor='pointer';(function(k){c.onclick=function(){openMonster(k);};})(m.key);}g.appendChild(c);});}
+ if(which==='profile'){var bn=document.getElementById('btnName');if(bn)bn.onclick=function(){var n=prompt('なまえを いれてね');if(n){arkSet('ark_name',n.slice(0,12));navOpen('profile');}};}
+ if(which==='settings'){var a=document.getElementById('tgSe');if(a)a.onclick=function(){var c=arkGet('ark_se');arkSet('ark_se',c==='0'?'1':'0');navOpen('settings');};var b=document.getElementById('tgVo');if(b)b.onclick=function(){var c=arkGet('ark_voice');arkSet('ark_voice',c==='0'?'1':'0');navOpen('settings');};}
+}
+function openMonster(key){var m=null;for(var i=0;i<MONS.length;i++){if(MONS[i].key===key)m=MONS[i];}if(!m)return;var body=document.getElementById('arkPanelBody');var s=getS(key),unlocked=Math.floor(s/10),next=10-(s%10);var h='<button class="ark-btn" id="bkCol" style="margin:0 0 10px;padding:6px 12px;">← ずかんへ</button><h2>'+m.name+'</h2><div class="ark-row"><span>S ランク</span><b>'+s+' かい</b></div><div class="ark-row"><span>つぎのポーズまで</span><b>あと '+next+' かい S</b></div><p class="ark-hint" style="margin:10px 0 6px;">かいほうされた ポーズ：'+Math.min(unlocked,5)+' こ（むりょうばんは 5まいまで）</p><div class="ark-grid" id="poseGrid"></div>';body.innerHTML=h;var g=document.getElementById('poseGrid');addPose(g,m.img,'きほん');for(var n=1;n<=unlocked&&n<=5;n++){addPose(g,m.poseBase+n+'.png','ポーズ'+n);}if(unlocked===0){var p=document.createElement('p');p.className='ark-hint';p.textContent='Sランクを 10かい とると あたらしい ポーズが でるよ！';body.appendChild(p);}var bk=document.getElementById('bkCol');if(bk)bk.onclick=function(){navOpen('collection');};}
+(function(){var x=document.getElementById('arkX');if(x)x.onclick=arkClose;var nc=document.getElementById('navCol');if(nc)nc.onclick=function(){navOpen('collection');};var np=document.getElementById('navPro');if(np)np.onclick=function(){navOpen('profile');};var ns=document.getElementById('navSet');if(ns)ns.onclick=function(){navOpen('settings');};var nav=document.getElementById('arkNav');if(nav)nav.style.display='flex';})();
+</script>
+</body>
+</html>

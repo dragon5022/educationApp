@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>生命の培養槽 | ARK数学バスターズ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=M+PLUS+Rounded+1c:wght@400;700;800;900&family=Russo+One&family=Dela+Gothic+One&family=Orbitron:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1F3864;
+    --navy-deep:#0F1B33;
+    --gold:#BF9000;
+    --gold-bright:#FFC83D;
+    --red:#E63946;
+    --red-deep:#8B1A24;
+    --green:#06A878;
+    --bg:#FFFAEB;
+    --bg-2:#FFF4D6;
+    --text:#1F3864;
+    --light-blue:#DEEBF7;
+    --paper:#FFFDF5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;overflow:hidden;}
+  body{
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    background:radial-gradient(ellipse at top,var(--bg-2) 0%,var(--bg) 70%);
+    color:var(--text);
+    user-select:none;
+    -webkit-user-select:none;
+    position:relative;
+  }
+  body::before{
+    content:'';
+    position:fixed;inset:0;
+    background-image:
+      radial-gradient(circle at 20% 30%,rgba(191,144,0,0.07) 1px,transparent 2px),
+      radial-gradient(circle at 70% 60%,rgba(31,56,100,0.05) 1px,transparent 2px),
+      radial-gradient(circle at 40% 80%,rgba(191,144,0,0.06) 1px,transparent 2px);
+    background-size:80px 80px, 100px 100px, 60px 60px;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .game-wrap{
+    position:relative;z-index:1;
+    height:100vh;
+    display:flex;flex-direction:column;
+    max-width:520px;
+    margin:0 auto;
+    padding:env(safe-area-inset-top,12px) 16px env(safe-area-inset-bottom,16px);
+  }
+
+  .back-btn{
+    position:absolute;
+    top:env(safe-area-inset-top,12px);
+    left:14px;
+    z-index:20;
+    background:var(--paper);
+    border:2px solid var(--navy);
+    color:var(--navy-deep);
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    font-size:12px;
+    font-weight:800;
+    padding:6px 12px;
+    border-radius:18px;
+    box-shadow:0 3px 0 var(--navy);
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+  }
+  .back-btn:active{
+    transform:translateY(2px);
+    box-shadow:0 1px 0 var(--navy);
+  }
+
+  .hud{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:8px 0;
+    gap:8px;
+    flex-shrink:0;
+    margin-top:30px;
+  }
+  .hud-box{
+    background:var(--paper);
+    border:2px solid var(--navy);
+    border-radius:12px;
+    padding:6px 12px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .hud-label{
+    font-size:9px;
+    letter-spacing:0.15em;
+    color:var(--gold);
+    font-weight:800;
+  }
+  .hud-value{
+    font-family:'Russo One',sans-serif;
+    font-size:22px;
+    line-height:1;
+    color:var(--navy-deep);
+  }
+  .hud-center{display:flex;gap:4px;justify-content:center;}
+  .heart{
+    width:24px;height:24px;
+    display:inline-flex;align-items:center;justify-content:center;
+    font-size:20px;
+    transition:transform 0.3s, opacity 0.3s, filter 0.3s;
+  }
+  .heart.lost{opacity:0.2;filter:grayscale(1);transform:scale(0.85);}
+
+  .stage{
+    flex-shrink:0;
+    height:280px;
+    position:relative;
+    margin-bottom:6px;
+    z-index:5;
+  }
+
+  /* ゼロディウスの数式エネルギー弾（紫に光る） */
+  .balloon{
+    width:200px;height:230px;
+    background:
+      radial-gradient(circle at 30% 26%,rgba(255,255,255,0.85) 0%,rgba(255,255,255,0) 18%),
+      radial-gradient(circle at 50% 45%,#f0e0ff 0%,#c79bff 22%,#a855f7 50%,#7c3aed 74%,#4c1d95 100%);
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:50%;
+    margin-left:-100px;
+    box-shadow:
+      inset -12px -18px 30px rgba(40,0,80,0.45),
+      inset 10px 12px 26px rgba(255,255,255,0.45),
+      0 0 30px rgba(168,85,247,0.75),
+      0 0 60px rgba(124,58,237,0.55);
+    transform-origin:50% 92%;
+    animation:bobble 2.5s ease-in-out infinite;
+    z-index:1;
+  }
+  .balloon::after{
+    content:'';
+    position:absolute;
+    inset:-16px;
+    border-radius:50%;
+    background:conic-gradient(from 0deg,
+      rgba(168,85,247,0) 0deg,
+      rgba(216,180,255,0.6) 55deg,
+      rgba(168,85,247,0) 140deg,
+      rgba(124,58,237,0.55) 220deg,
+      rgba(216,180,255,0) 320deg);
+    filter:blur(7px);
+    z-index:-1;
+    animation:auraSpin 3s linear infinite;
+    pointer-events:none;
+  }
+  .balloon::before{
+    content:'∞';
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Russo One',sans-serif;
+    font-size:84px;
+    color:rgba(255,255,255,0.9);
+    text-shadow:
+      0 0 16px rgba(216,180,255,0.95),
+      0 0 34px rgba(168,85,247,0.85);
+    animation:coreGlow 1.1s ease-in-out infinite;
+    pointer-events:none;
+  }
+  @keyframes auraSpin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+  @keyframes coreGlow{0%,100%{opacity:0.7;transform:scale(0.96);}50%{opacity:1;transform:scale(1.06);}}
+  @keyframes bobble{
+    0%,100%{
+      transform:translateY(0) rotate(-2deg) scale(var(--scale,1));
+      box-shadow:inset -12px -18px 30px rgba(40,0,80,0.45),inset 10px 12px 26px rgba(255,255,255,0.45),0 0 26px rgba(168,85,247,0.7),0 0 50px rgba(124,58,237,0.5);
+    }
+    50%{
+      transform:translateY(-6px) rotate(2deg) scale(var(--scale,1));
+      box-shadow:inset -12px -18px 30px rgba(40,0,80,0.45),inset 10px 12px 26px rgba(255,255,255,0.45),0 0 40px rgba(192,132,252,0.95),0 0 80px rgba(168,85,247,0.7);
+    }
+  }
+  .balloon.danger{
+    animation:bobble 0.3s ease-in-out infinite;
+    filter:saturate(1.5) brightness(1.12) drop-shadow(0 0 14px rgba(236,72,153,0.9));
+  }
+  .balloon.exploded{ animation:explode 0.6s forwards; }
+  @keyframes explode{
+    0%{transform:scale(var(--scale,1.5));opacity:1;filter:brightness(1);}
+    25%{transform:scale(2.3);opacity:0.95;filter:brightness(2) saturate(1.6) drop-shadow(0 0 40px rgba(192,132,252,1));}
+    100%{transform:scale(0.1);opacity:0;filter:brightness(2.5);}
+  }
+
+  .burst{
+    position:absolute;
+    top:50%;left:50%;
+    width:1px;height:1px;
+    z-index:5;
+    pointer-events:none;
+  }
+  .burst.show .piece{
+    animation:pieceFly 0.7s ease-out forwards;
+  }
+  .burst.show::after{
+    content:'';position:absolute;top:0;left:0;width:40px;height:40px;margin:-20px 0 0 -20px;
+    border:4px solid rgba(216,180,255,0.95);border-radius:50%;transform:scale(0);
+    box-shadow:0 0 22px rgba(168,85,247,0.9);animation:shockwave 0.7s ease-out forwards;
+  }
+  @keyframes shockwave{0%{transform:scale(0);opacity:1;}100%{transform:scale(6);opacity:0;}}
+  .piece{
+    position:absolute;
+    top:0;left:0;
+    width:14px;height:14px;
+    background:#a855f7;
+    border-radius:50%;
+    transform:translate(-50%,-50%) scale(0);
+    box-shadow:0 0 10px rgba(168,85,247,0.9);
+  }
+  .piece.p1{ --tx:-100px; --ty:-80px; }
+  .piece.p2{ --tx:90px; --ty:-90px; }
+  .piece.p3{ --tx:-110px; --ty:30px; }
+  .piece.p4{ --tx:100px; --ty:40px; }
+  .piece.p5{ --tx:-40px; --ty:-130px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p6{ --tx:50px; --ty:-120px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p7{ --tx:-130px; --ty:-20px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  .piece.p8{ --tx:120px; --ty:-30px; background:#e9d5ff; box-shadow:0 0 12px rgba(216,180,255,1); }
+  @keyframes pieceFly{
+    0%{transform:translate(-50%,-50%) scale(0);opacity:1;}
+    30%{transform:translate(calc(-50% + var(--tx) * 0.5),calc(-50% + var(--ty) * 0.5)) scale(1.2);opacity:1;}
+    100%{transform:translate(calc(-50% + var(--tx)),calc(-50% + var(--ty) + 60px)) scale(0.3);opacity:0;}
+  }
+
+  /* 棒人間画像 */
+  .stickman{
+    position:absolute;
+    bottom:5px;
+    left:50%;
+    margin-left:-83px;
+    width:165px;
+    height:200px;
+    z-index:30;
+    transform-origin:bottom center;
+  }
+  .stickman .char{
+    display:none;
+    width:100%;height:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    pointer-events:none;
+    filter:drop-shadow(0 4px 6px rgba(31,56,100,0.18));
+  }
+  .stickman.normal .char-normal{display:block;}
+  .stickman.danger .char-danger{display:block;}
+  .stickman.happy .char-happy{display:block;}
+  .stickman.shocked .char-shocked{display:block;}
+
+  .stickman.normal{ animation:smRock 2.5s ease-in-out infinite; }
+  @keyframes smRock{
+    0%,100%{transform:rotate(-1.5deg);}
+    50%{transform:rotate(1.5deg);}
+  }
+  .stickman.danger{ animation:smShake 0.1s ease-in-out infinite; }
+  @keyframes smShake{
+    0%,100%{transform:translateX(0) rotate(0);}
+    25%{transform:translateX(-3px) rotate(-2deg);}
+    75%{transform:translateX(3px) rotate(2deg);}
+  }
+  .stickman.happy{ animation:smJump 0.8s ease-out; }
+  @keyframes smJump{
+    0%{transform:translateY(0) rotate(0);}
+    30%{transform:translateY(-35px) rotate(-5deg);}
+    60%{transform:translateY(-35px) rotate(5deg);}
+    100%{transform:translateY(0) rotate(0);}
+  }
+  .stickman.shocked{ animation:smBlast 0.8s ease-out forwards; }
+  @keyframes smBlast{
+    0%{transform:translate(0,0) rotate(0) scale(1);}
+    15%{transform:translate(0,-10px) scale(1.1);}
+    100%{transform:translate(35px,-15px) rotate(28deg) scale(0.9);}
+  }
+
+  .boom-text{
+    position:absolute;
+    top:40%;left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    font-family:'Bungee',sans-serif;
+    font-size:62px;
+    color:#d8b4fe;
+    text-shadow:
+      0 0 22px rgba(192,132,252,1),
+      0 0 44px rgba(168,85,247,0.9),
+      4px 4px 0 #7c3aed,
+      8px 8px 0 var(--navy);
+    pointer-events:none;
+    z-index:10;
+  }
+  .boom-text.show{ animation:boomPop 0.7s ease-out forwards; }
+  @keyframes boomPop{
+    0%{transform:translate(-50%,-50%) scale(0) rotate(-25deg);}
+    40%{transform:translate(-50%,-50%) scale(1.4) rotate(12deg);}
+    70%{transform:translate(-50%,-50%) scale(1.1) rotate(-3deg);opacity:1;}
+    100%{transform:translate(-50%,-50%) scale(1) rotate(0);opacity:0;}
+  }
+
+  .question-area{
+    flex-shrink:0;
+    background:var(--paper);
+    border:3px solid var(--navy);
+    border-radius:18px;
+    padding:18px 16px;
+    margin-bottom:14px;
+    text-align:center;
+    box-shadow:0 5px 0 var(--navy), 0 10px 20px rgba(31,56,100,0.15);
+    position:relative;
+  }
+  .question-area::before{
+    content:'問題';
+    position:absolute;top:-10px;left:14px;
+    background:var(--gold-bright);
+    color:var(--navy-deep);
+    padding:2px 10px;
+    border-radius:10px;
+    border:2px solid var(--navy);
+    font-size:11px;
+    letter-spacing:0.15em;
+    font-weight:800;
+  }
+  .question{
+    font-family:'Russo One','M PLUS Rounded 1c',sans-serif;
+    font-size:50px;
+    line-height:1.1;
+    color:var(--navy-deep);
+    margin-top:4px;
+    letter-spacing:0.02em;
+  }
+  .question sup{
+    font-size:0.55em;
+    vertical-align:super;
+    color:var(--red);
+    margin-left:2px;
+  }
+  .question .negbase{color:var(--red);}
+
+  .choices{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    min-height:0;
+  }
+  .choice{
+    background:linear-gradient(180deg,#fff,var(--light-blue));
+    border:3px solid var(--navy);
+    border-radius:16px;
+    color:var(--navy-deep);
+    font-family:'Russo One',sans-serif;
+    font-size:28px;
+    cursor:pointer;
+    transition:transform 0.1s, background 0.2s;
+    box-shadow:0 5px 0 var(--navy);
+    position:relative;
+  }
+  .choice:active{
+    transform:translateY(3px);
+    box-shadow:0 2px 0 var(--navy);
+  }
+  .choice.correct{
+    background:linear-gradient(180deg,#A8E6CF,var(--green));
+    color:#fff;
+    animation:correctPulse 0.4s;
+  }
+  .choice.wrong{
+    background:linear-gradient(180deg,#FFB3B3,var(--red));
+    color:#fff;
+    animation:wrongShake 0.4s;
+  }
+  @keyframes correctPulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+  }
+  @keyframes wrongShake{
+    0%,100%{transform:translateX(0);}
+    25%{transform:translateX(-8px);}
+    75%{transform:translateX(8px);}
+  }
+  .choice:disabled{cursor:not-allowed;}
+
+  .combo{
+    position:absolute;
+    top:-10px;right:14px;
+    transform:scale(0);
+    background:var(--gold-bright);
+    color:var(--navy-deep);
+    font-family:'Russo One',sans-serif;
+    padding:4px 12px;
+    border-radius:20px;
+    border:2px solid var(--navy);
+    font-size:13px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .combo.show{ animation:comboPop 0.8s ease-out; }
+  @keyframes comboPop{
+    0%{transform:scale(0) rotate(-15deg);}
+    30%{transform:scale(1.3) rotate(8deg);}
+    60%{transform:scale(1) rotate(0);opacity:1;}
+    100%{transform:scale(1) rotate(0);opacity:0;}
+  }
+
+  .overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(255,250,235,0.96),rgba(255,244,214,0.96));
+    backdrop-filter:blur(8px);
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    padding:24px;
+    z-index:50;
+    text-align:center;
+  }
+  .overlay.hidden{display:none;}
+
+  .overlay .ark-tag{
+    font-size:10px;
+    letter-spacing:0.3em;
+    color:var(--gold);
+    margin-bottom:8px;
+    font-weight:800;
+  }
+  .overlay .ark-tag a{
+    color:var(--gold);
+    text-decoration:none;
+  }
+
+  .title-stage{
+    position:relative;
+    width:240px;
+    height:230px;
+    margin:8px auto 4px;
+  }
+  .title-balloon{
+    width:170px;
+    height:195px;
+    background:
+      radial-gradient(circle at 30% 26%,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 18%),
+      radial-gradient(circle at 50% 45%,#f0e0ff 0%,#c79bff 22%,#a855f7 50%,#7c3aed 74%,#4c1d95 100%);
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-85px;
+    box-shadow:
+      inset -10px -16px 26px rgba(40,0,80,0.45),
+      inset 8px 10px 22px rgba(255,255,255,0.45),
+      0 0 28px rgba(168,85,247,0.75),
+      0 0 56px rgba(124,58,237,0.55);
+    transform-origin:50% 92%;
+    animation:titlePulse 1.5s ease-in-out infinite;
+    z-index:1;
+  }
+  .title-balloon::after{
+    content:'';
+    position:absolute;
+    inset:-14px;
+    border-radius:50%;
+    background:conic-gradient(from 0deg,rgba(168,85,247,0) 0deg,rgba(216,180,255,0.6) 55deg,rgba(168,85,247,0) 140deg,rgba(124,58,237,0.55) 220deg,rgba(216,180,255,0) 320deg);
+    filter:blur(7px);
+    z-index:-1;
+    animation:auraSpin 3s linear infinite;
+    pointer-events:none;
+  }
+  .title-balloon::before{
+    content:'';
+    position:absolute;
+    top:16%;left:20%;
+    width:30%;height:32%;
+    background:radial-gradient(ellipse,rgba(255,255,255,0.6),rgba(255,255,255,0) 70%);
+    border-radius:50%;
+    pointer-events:none;
+  }
+  @keyframes titlePulse{
+    0%,100%{transform:translateY(0) rotate(-3deg) scale(1);}
+    50%{transform:translateY(-8px) rotate(3deg) scale(1.05);}
+  }
+  .balloon-label{
+    position:absolute;
+    top:38%;left:50%;
+    transform:translate(-50%,-50%);
+    font-family:'Zen Kaku Gothic New','M PLUS Rounded 1c',sans-serif;
+    font-size:42px;
+    font-weight:900;
+    color:#fff;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+    z-index:2;
+    pointer-events:none;
+  }
+
+  .title-stickman{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-65px;
+    width:130px;
+    height:160px;
+    z-index:3;
+  }
+  .title-stickman img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    filter:drop-shadow(0 4px 6px rgba(31,56,100,0.18));
+    animation:fighterBounce 1s ease-in-out infinite;
+  }
+  @keyframes fighterBounce{
+    0%,100%{transform:translateY(0) rotate(-2deg);}
+    50%{transform:translateY(-6px) rotate(2deg);}
+  }
+
+  .game-title{
+    font-family:'Bungee',sans-serif;
+    font-size:46px;
+    line-height:1;
+    color:var(--red);
+    text-shadow:
+      4px 4px 0 var(--gold-bright),
+      8px 8px 0 var(--navy);
+    margin-top:8px;
+    letter-spacing:0.02em;
+    transform:rotate(-2deg);
+  }
+  .game-title-sub{
+    font-size:13px;
+    color:var(--navy-deep);
+    margin:8px 0 16px;
+    letter-spacing:0.15em;
+    font-weight:800;
+  }
+  .game-title-sub strong{
+    color:var(--red);
+    font-size:18px;
+  }
+
+  .start-btn{
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    color:var(--navy-deep);
+    border:3px solid var(--navy);
+    font-family:'Russo One',sans-serif;
+    font-size:24px;
+    padding:14px 50px;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 6px 0 var(--navy), 0 10px 25px rgba(191,144,0,0.4);
+    transition:transform 0.1s, box-shadow 0.1s;
+    letter-spacing:0.08em;
+    font-weight:800;
+    animation:startPulse 1.2s ease-in-out infinite;
+  }
+  .start-btn:active{
+    transform:translateY(3px);
+    box-shadow:0 3px 0 var(--navy), 0 6px 15px rgba(191,144,0,0.4);
+  }
+  @keyframes startPulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+  }
+
+  .countdown{
+    position:absolute;
+    inset:0;
+    background:rgba(255,250,235,0.92);
+    backdrop-filter:blur(10px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100;
+    pointer-events:none;
+  }
+  .countdown.hidden{display:none;}
+  .countdown-num{
+    font-family:'Orbitron','Bungee',sans-serif;font-weight:700;
+    font-size:160px;
+    color:var(--red);
+    text-shadow:
+      6px 6px 0 var(--gold-bright),
+      12px 12px 0 var(--navy);
+    animation:countPop 0.5s ease-out;
+  }
+  @keyframes countPop{
+    0%{transform:scale(0) rotate(-25deg);opacity:0;}
+    50%{transform:scale(1.3) rotate(8deg);opacity:1;}
+    100%{transform:scale(1) rotate(0);opacity:1;}
+  }
+
+  .result-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin:20px 0 28px;
+    width:100%;max-width:280px;
+  }
+  .stat{
+    background:var(--paper);
+    border:2px solid var(--navy);
+    border-radius:12px;
+    padding:12px 8px;
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .stat-label{font-size:10px;color:var(--gold);letter-spacing:0.15em;font-weight:800;}
+  .stat-value{font-family:'Russo One',sans-serif;font-size:26px;margin-top:4px;color:var(--navy-deep);}
+
+  .rank{
+    font-family:'Bungee',sans-serif;
+    font-size:80px;
+    color:var(--gold);
+    text-shadow:4px 4px 0 var(--navy);
+    margin:0;
+  }
+  .rank-comment{
+    color:var(--navy-deep);
+    font-size:16px;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  .result-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:6px;
+  }
+  .menu-btn{
+    background:var(--paper);
+    color:var(--navy-deep);
+    border:3px solid var(--navy);
+    font-family:'Russo One',sans-serif;
+    font-size:16px;
+    padding:12px 24px;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 5px 0 var(--navy);
+    letter-spacing:0.05em;
+    font-weight:800;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .menu-btn:active{
+    transform:translateY(2px);
+    box-shadow:0 3px 0 var(--navy);
+  }
+  .result-buttons .start-btn{
+    animation:none;
+    font-size:16px;
+    padding:12px 24px;
+  }
+
+  .ark-footer{
+    position:absolute;
+    bottom:8px;left:0;right:0;
+    text-align:center;
+    font-size:9px;
+    letter-spacing:0.3em;
+    color:var(--gold);
+    z-index:5;
+    font-weight:700;
+  }
+
+  @media (max-height:680px){
+    .stage{height:230px;}
+    .balloon{width:170px;height:195px;margin-left:-85px;}
+    .stickman{width:140px;height:170px;margin-left:-70px;}
+    .question{font-size:42px;}
+    .choice{font-size:24px;}
+    .title-stage{width:200px;height:200px;}
+    .title-balloon{width:140px;height:160px;margin-left:-70px;}
+    .balloon-label{font-size:34px;}
+    .title-stickman{width:110px;height:135px;margin-left:-55px;}
+    .game-title{font-size:38px;}
+    .countdown-num{font-size:120px;}
+  }
+  .explain-box{
+    position:fixed;left:50%;bottom:0;transform:translate(-50%,110%);
+    width:100%;max-width:520px;background:var(--paper);
+    border:3px solid var(--navy);border-bottom:none;border-radius:20px 20px 0 0;
+    padding:16px 18px calc(18px + env(safe-area-inset-bottom,0));
+    box-shadow:0 -6px 24px rgba(31,56,100,0.25);z-index:60;
+    transition:transform 0.35s cubic-bezier(.2,.8,.2,1);
+  }
+  .explain-box.show{transform:translate(-50%,0);}
+  .explain-head{font-family:'Bungee',sans-serif;font-size:13px;color:var(--gold);letter-spacing:0.2em;margin-bottom:6px;}
+  .explain-ans{font-size:20px;font-weight:900;color:var(--navy-deep);margin-bottom:8px;}
+  .explain-ans b{color:var(--red);font-size:26px;}
+  .explain-body{font-size:15px;line-height:1.65;color:var(--navy-deep);font-weight:700;}
+  .explain-body sup{font-size:0.7em;vertical-align:super;}
+  .explain-next{margin-top:14px;width:100%;font-family:'Russo One',sans-serif;font-size:18px;color:var(--navy-deep);
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:3px solid var(--navy);border-radius:30px;
+    padding:12px 0;box-shadow:0 4px 0 var(--navy);cursor:pointer;letter-spacing:0.1em;font-weight:800;}
+  .explain-next:active{transform:translateY(2px);box-shadow:0 2px 0 var(--navy);}
+  /* === 濃紺テーマ統一 (ARK) === */
+  body{background:linear-gradient(180deg,#1a2742 0%,#0d1626 100%)!important;background-attachment:fixed!important;}
+  .overlay{background:linear-gradient(180deg,rgba(26,39,66,0.97),rgba(13,22,38,0.97))!important;backdrop-filter:blur(6px);}
+  .countdown{background:rgba(13,22,38,0.94)!important;}
+  .game-title-sub{color:#F3E9CE!important;font-family:'Dela Gothic One','M PLUS Rounded 1c',sans-serif!important;letter-spacing:0.05em;font-weight:400;}
+  .game-title-sub strong{color:#FF6B5A!important;}
+  .rank-comment{color:#F3E9CE!important;}
+  .back-btn{background:rgba(255,255,255,0.08)!important;color:#F3E9CE!important;border-color:rgba(255,200,61,0.6)!important;box-shadow:0 3px 0 rgba(0,0,0,0.4)!important;}
+  /* キャラを濃紺でも見えるように後ろに光 */
+  .stickman{position:absolute;}
+  .stickman::before,.title-stickman::before{content:'';position:absolute;left:50%;top:52%;width:150%;height:130%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(216,180,255,0.30),rgba(216,180,255,0) 70%);z-index:-1;pointer-events:none;}
+  /* スタート画面の背景に敵(攻撃ポーズ) */
+  #start-overlay .boss-bg{display:none;position:absolute;top:1%;left:50%;transform:translateX(-50%);width:110%;max-width:560px;height:auto;opacity:0.72;z-index:0;pointer-events:none;filter:drop-shadow(0 0 28px rgba(124,58,237,0.75));}
+  #start-overlay > *{position:relative;z-index:2;}
+  /* === タイトル全画面イラスト モード === */
+  #start-overlay.artmode{padding:6px!important;justify-content:center!important;}
+  #start-overlay.artmode > *{display:none!important;}
+  #start-overlay.artmode .title-art{display:block!important;}
+  .title-art{display:none;position:relative;width:100%;max-width:440px;margin:auto;}
+  .title-art-img{width:100%;display:block;border-radius:10px;}
+  .art-orb{position:absolute;left:50%;top:31.5%;transform:translate(-50%,-50%);width:24%;aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffffff 0%,#e9d5ff 18%,#c79bff 40%,#a855f7 66%,#7c3aed 100%);box-shadow:0 0 26px rgba(192,132,252,0.95),0 0 60px rgba(124,58,237,0.7);display:flex;align-items:center;justify-content:center;animation:artPulse 1.6s ease-in-out infinite;}
+  .art-orb span{font-family:'Russo One',sans-serif;font-size:clamp(26px,6.5vw,46px);color:#fff;text-shadow:0 0 12px rgba(216,180,255,0.95),0 0 22px rgba(168,85,247,0.85);}
+  @keyframes artPulse{0%,100%{transform:translate(-50%,-50%) scale(1);}50%{transform:translate(-50%,-50%) scale(1.06);}}
+  .art-start{position:absolute;left:50%;top:84%;transform:translate(-50%,-50%);width:52%;height:7%;background:transparent;border:none;cursor:pointer;color:#3a2600;font-family:'Russo One',sans-serif;font-size:clamp(16px,4.5vw,24px);font-weight:800;letter-spacing:0.25em;text-shadow:0 1px 0 rgba(255,255,255,0.45);}
+  .art-start:active{transform:translate(-50%,-50%) scale(0.97);}
+  /* 結果画面のランクを濃紺でもくっきり見えるように */
+  #end-overlay .rank{color:#FFC83D!important;text-shadow:3px 3px 0 #4c1d95,0 0 24px rgba(255,200,61,0.6)!important;}
+  #end-overlay .ark-tag{color:#FFC83D!important;}
+  #end-overlay .stat-label{color:#BF9000!important;}
+  #result-illust{width:170px!important;height:170px!important;}
+  /* STARTボタンをはっきり見えるように */
+  #start-overlay.artmode .art-start{color:#fff!important;font-size:clamp(20px,5.5vw,30px)!important;font-weight:800!important;letter-spacing:0.3em!important;text-shadow:0 0 6px rgba(0,0,0,0.95),0 0 16px rgba(124,58,237,0.9),0 2px 4px rgba(0,0,0,1)!important;animation:artBtnPulse 1.3s ease-in-out infinite!important;}
+  @keyframes artBtnPulse{0%,100%{transform:translate(-50%,-50%) scale(1);}50%{transform:translate(-50%,-50%) scale(1.08);}}
+  #result-illust{width:240px!important;height:240px!important;margin:4px auto 10px!important;}
+  /* 結果画面：大きく＆余白を活かす＆イラストを紺になじませる */
+  #end-overlay{justify-content:center!important;padding:16px!important;}
+  #end-overlay .ark-tag{margin-bottom:2px!important;}
+  #result-illust{width:auto!important;height:auto!important;max-width:min(84vw,340px)!important;max-height:46vh!important;margin:0 auto 4px!important;display:block;filter:none!important;-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 46%,#000 58%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 46%,#000 58%,rgba(0,0,0,0) 100%);}
+  #end-overlay .rank{font-size:clamp(72px,22vw,112px)!important;margin:0!important;line-height:0.85!important;}
+  #end-overlay .rank-comment{margin:6px 0 16px!important;font-size:18px!important;}
+  #end-overlay .result-stats{margin:0 0 18px!important;}
+  /* スタート画面：エネルギー弾とSTARTの位置微調整 */
+  #start-overlay .art-orb{top:35.5%!important;}
+  #start-overlay .art-start{top:85.5%!important;height:8%!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+  .bgm-btn{position:fixed;top:10px;right:10px;z-index:300;background:rgba(0,0,0,0.45);color:#fff;border:2px solid var(--gold-bright,#FFC83D);border-radius:50%;width:42px;height:42px;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.4);}
+  .bgm-btn:active{transform:scale(0.92);}
+  #start-overlay .art-start{top:84%!important;height:auto!important;padding:2px 0!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+  .level-btns{display:flex;flex-direction:column;gap:14px;margin:20px 0;width:100%;max-width:320px;}
+  .level-btn{font-family:'Orbitron','Russo One',sans-serif;font-size:26px;font-weight:700;color:var(--navy-deep);background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:3px solid var(--navy);border-radius:18px;padding:16px;box-shadow:0 5px 0 var(--navy),0 8px 20px rgba(0,0,0,0.4);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;letter-spacing:0.05em;}
+  .level-btn span{font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;font-weight:700;background:var(--navy-deep);color:#fff;border-radius:12px;padding:3px 10px;}
+  .level-btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--navy);}
+  .question{font-size:20px!important;line-height:1.5!important;letter-spacing:0!important;padding:0 6px;white-space:pre-line;}
+  .question sup{display:none;}
+  .choice{font-size:14px!important;line-height:1.3!important;padding:8px 10px!important;word-break:break-word;}
+  /* キャラを固定（ぐらぐら停止） */
+  .stickman.normal{animation:none!important;}
+  .stickman.danger{animation:none!important;}
+</style>
+</head>
+<body>
+<audio id="bgm" loop></audio><button id="bgm-btn" class="bgm-btn" onclick="toggleBGM()" aria-label="music">&#128266;</button>
+
+<div class="game-wrap">
+  <a href="ark-top.html" class="back-btn">← メニュー</a>
+
+  <div class="hud">
+    <div class="hud-box">
+      <div class="hud-label">SCORE</div>
+      <div class="hud-value" id="score">0</div>
+    </div>
+    <div class="hud-center" id="lives">
+      <div class="heart">❤️</div>
+      <div class="heart">❤️</div>
+      <div class="heart">❤️</div>
+    </div>
+    <div class="hud-box" style="text-align:right;">
+      <div class="hud-label">問題</div>
+      <div class="hud-value"><span id="q-num">0</span>/<span id="q-total">15</span></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="boom-text" id="boom">BOOM!</div>
+    <div class="balloon" id="balloon" style="--scale:1;"></div>
+
+    <div class="burst" id="burst">
+      <div class="piece p1"></div>
+      <div class="piece p2"></div>
+      <div class="piece p3"></div>
+      <div class="piece p4"></div>
+      <div class="piece p5"></div>
+      <div class="piece p6"></div>
+      <div class="piece p7"></div>
+      <div class="piece p8"></div>
+    </div>
+
+    <div class="stickman normal" id="stickman">
+      <img class="char char-normal" src="" alt="">
+      <img class="char char-danger" src="" alt="">
+      <img class="char char-happy" src="" alt="">
+      <img class="char char-shocked" src="" alt="">
+    </div>
+  </div>
+
+  <div class="question-area">
+    <div class="question" id="question">生</div>
+    <div class="combo" id="combo">COMBO ×2!</div>
+  </div>
+
+  <div class="choices" id="choices">
+    <button class="choice"></button>
+    <button class="choice"></button>
+    <button class="choice"></button>
+    <button class="choice"></button>
+  </div>
+</div>
+
+<div class="explain-box" id="explain">
+  <div class="explain-head">かいせつ</div>
+  <div class="explain-ans" id="explain-ans"></div>
+  <div class="explain-body" id="explain-body"></div>
+  <button class="explain-next" onclick="nextQuestion()">つぎへ &#9654;</button>
+</div>
+
+<div class="overlay" id="start-overlay"><div class="title-art" id="title-art"><img class="title-art-img" alt=""><div class="art-orb"><span>&#8734;</span></div><button class="art-start" onclick="startGame()">START</button></div><img class="boss-bg" alt="">
+  <div class="ark-tag">
+    <a href="ark-top.html">← ARK 数学バスターズ</a>
+  </div>
+
+  <div class="title-stage">
+    <div class="title-balloon">
+      <div class="balloon-label">生</div>
+    </div>
+    <div class="title-stickman">
+      <img class="kazue-title" src="" alt="ファイティングポーズの棒人間">
+    </div>
+  </div>
+
+  <h1 class="game-title">生命の培養槽</h1>
+  <p class="game-title-sub"><strong>敵の攻撃を止めろ！</strong></p>
+  <button class="start-btn" onclick="startGame()">START</button>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<div class="countdown hidden" id="countdown">
+  <div class="countdown-num" id="countdown-num">3</div>
+</div>
+
+<div class="overlay hidden" id="level-overlay">
+  <div class="ark-tag">レベルを選べ</div>
+  <div class="level-btns" id="level-btns"></div>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<div class="overlay hidden" id="end-overlay">
+  <div class="ark-tag">RESULT</div>
+  <img id="result-illust" src="" alt="" onerror="this.style.display='none';" style="width:150px;height:150px;object-fit:contain;margin:2px auto 8px;display:none;filter:drop-shadow(0 6px 14px rgba(31,56,100,0.25));">
+  <div class="rank" id="rank">A</div>
+  <div class="rank-comment" id="rank-comment">よくできました！</div>
+  <div class="result-stats">
+    <div class="stat">
+      <div class="stat-label">SCORE</div>
+      <div class="stat-value" id="final-score">0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">MAX COMBO</div>
+      <div class="stat-value" id="max-combo">0</div>
+    </div>
+  </div>
+  <div class="result-buttons">
+    <a href="ark-top.html" class="menu-btn">メニュー</a>
+    <button class="start-btn" onclick="startGame()">もう一度</button>
+  </div>
+  <div class="ark-footer">ARK SOGO GAKUIN</div>
+</div>
+
+<script>
+function __img(L){var r=[];for(var i=0;i<L.length;i++){r.push('illust/'+L[i]);r.push(L[i]);}return r;}
+function __mus(L){var r=[];for(var i=0;i<L.length;i++){r.push('music/'+L[i]);r.push(L[i]);}return r;}
+/* ===== 効果音（Web Audio API） ===== */
+let audioCtx = null;
+function initAudio(){
+  if(audioCtx) return;
+  try{
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }catch(e){ audioCtx = null; }
+}
+
+function playTick(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'square';
+  osc.frequency.setValueAtTime(1800, t);
+  osc.frequency.exponentialRampToValueAtTime(800, t + 0.04);
+  gain.gain.setValueAtTime(0.15, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.05);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.06);
+}
+
+function playPop(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const bufferSize = audioCtx.sampleRate * 0.3;
+  const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for(let i = 0; i < bufferSize; i++){
+    data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i/bufferSize, 2);
+  }
+  const noise = audioCtx.createBufferSource();
+  noise.buffer = buffer;
+  const noiseGain = audioCtx.createGain();
+  noiseGain.gain.setValueAtTime(0.5, t);
+  noiseGain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+  noise.connect(noiseGain).connect(audioCtx.destination);
+  noise.start(t);
+
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(180, t);
+  osc.frequency.exponentialRampToValueAtTime(40, t + 0.25);
+  gain.gain.setValueAtTime(0.6, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.3);
+}
+
+function playCorrect(){
+  if(window.__sndCorrect&&window.__sndCorrect._ok){__playFile(window.__sndCorrect);return;}
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const notes = [523.25, 659.25, 783.99];
+  notes.forEach((freq, i) => {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'triangle';
+    osc.frequency.value = freq;
+    const start = t + i * 0.07;
+    gain.gain.setValueAtTime(0, start);
+    gain.gain.linearRampToValueAtTime(0.2, start + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.001, start + 0.2);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start(start);
+    osc.stop(start + 0.25);
+  });
+}
+
+function playWrong(){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sawtooth';
+  osc.frequency.setValueAtTime(280, t);
+  osc.frequency.exponentialRampToValueAtTime(90, t + 0.35);
+  gain.gain.setValueAtTime(0.25, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.4);
+}
+
+function playBeep(freq){
+  if(!audioCtx) return;
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.25, t);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.15);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(t);
+  osc.stop(t + 0.2);
+}
+
+function playBoom(){
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const bs=Math.floor(audioCtx.sampleRate*0.6);
+  const buf=audioCtx.createBuffer(1,bs,audioCtx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bs;i++){ d[i]=(Math.random()*2-1)*Math.pow(1-i/bs,1.4); }
+  const n=audioCtx.createBufferSource(); n.buffer=buf;
+  const ng=audioCtx.createGain(); ng.gain.setValueAtTime(0.85,t); ng.gain.exponentialRampToValueAtTime(0.001,t+0.5);
+  n.connect(ng).connect(audioCtx.destination); n.start(t);
+  const o=audioCtx.createOscillator(); const g=audioCtx.createGain();
+  o.type='sine'; o.frequency.setValueAtTime(150,t); o.frequency.exponentialRampToValueAtTime(28,t+0.5);
+  g.gain.setValueAtTime(0.9,t); g.gain.exponentialRampToValueAtTime(0.001,t+0.55);
+  o.connect(g).connect(audioCtx.destination); o.start(t); o.stop(t+0.6);
+}
+function playVictory(){
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const seq=[[523.25,0],[659.25,0.12],[783.99,0.24],[1046.5,0.36]];
+  seq.forEach(function(p){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='square'; o.frequency.value=p[0]; const s=t+p[1]; g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(0.2,s+0.02); g.gain.exponentialRampToValueAtTime(0.001,s+0.5); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+0.55); });
+  [523.25,659.25,783.99,1046.5].forEach(function(f){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='triangle'; o.frequency.value=f; const s=t+0.52; g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(0.16,s+0.03); g.gain.exponentialRampToValueAtTime(0.001,s+1.1); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+1.15); });
+}
+function playLose(){
+  if(window.__sndOver&&window.__sndOver._ok){__playFile(window.__sndOver);return;}
+  if(!audioCtx) return;
+  const t=audioCtx.currentTime;
+  const seq=[[392,0],[349.23,0.18],[293.66,0.36],[233.08,0.54]];
+  seq.forEach(function(p){ const o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='sawtooth'; o.frequency.value=p[0]; const s=t+p[1]; g.gain.setValueAtTime(0.0001,s); g.gain.linearRampToValueAtTime(0.2,s+0.02); g.gain.exponentialRampToValueAtTime(0.001,s+0.45); o.connect(g).connect(audioCtx.destination); o.start(s); o.stop(s+0.5); });
+}
+var PROBLEMS_BY_LEVEL = {"Lv1": [{"q": "植物の細胞だけにあり、動物細胞にないものは？", "a": "細胞壁", "choices": ["細胞壁", "核", "細胞膜", "ミトコンドリア"], "e": "細胞壁・葉緑体・液胞は植物特有。"}, {"q": "細胞の中で緑色をして光合成を行う部分は？", "a": "葉緑体", "choices": ["葉緑体", "核", "液胞", "細胞質"], "e": "葉緑体で光合成を行う。"}, {"q": "細胞の中心にあり、染色液でよく染まる部分は？", "a": "核", "choices": ["核", "液胞", "細胞壁", "葉緑体"], "e": "核は酢酸カーミンなどで赤く染まる。"}, {"q": "植物が光を受けて養分を作るはたらきは？", "a": "光合成", "choices": ["光合成", "呼吸", "蒸散", "消化"], "e": "光合成で養分（デンプン）を作る。"}, {"q": "光合成に必要な気体は？", "a": "二酸化炭素", "choices": ["二酸化炭素", "酸素", "窒素", "水素"], "e": "CO2と水と光で養分を作る。"}, {"q": "光合成で出される気体は？", "a": "酸素", "choices": ["酸素", "二酸化炭素", "窒素", "水素"], "e": "酸素が放出される。"}, {"q": "植物も動物も、酸素を取り入れ二酸化炭素を出すはたらきは？", "a": "呼吸", "choices": ["呼吸", "光合成", "蒸散", "発芽"], "e": "呼吸は昼も夜も行う。"}, {"q": "花を咲かせ種子をつくる植物を何という？", "a": "種子植物", "choices": ["種子植物", "シダ植物", "コケ植物", "藻類"], "e": "種子で増える植物。"}, {"q": "背骨をもつ動物を何という？", "a": "脊椎動物", "choices": ["脊椎動物", "無脊椎動物", "節足動物", "軟体動物"], "e": "背骨あり＝脊椎動物。"}, {"q": "背骨をもたない動物を何という？", "a": "無脊椎動物", "choices": ["無脊椎動物", "脊椎動物", "哺乳類", "は虫類"], "e": "背骨なし＝無脊椎動物。"}, {"q": "親が子に乳を与えて育てるなかまは？", "a": "哺乳類", "choices": ["哺乳類", "は虫類", "鳥類", "両生類"], "e": "哺乳類は胎生で乳で育てる。"}, {"q": "食物を体に吸収できる形に変えるはたらきは？", "a": "消化", "choices": ["消化", "呼吸", "排出", "循環"], "e": "消化で養分を吸収できる形に。"}], "Lv2": [{"q": "細胞の外側を包む うすい膜は？", "a": "細胞膜", "choices": ["細胞膜", "細胞壁", "核膜", "葉緑体"], "e": "細胞膜は内外を仕切る。"}, {"q": "成長した植物細胞で大きく発達する、袋状の部分は？", "a": "液胞", "choices": ["液胞", "核", "葉緑体", "細胞壁"], "e": "液胞は不要物や水を蓄える。"}, {"q": "1個の細胞だけでできた生物を何という？", "a": "単細胞生物", "choices": ["単細胞生物", "多細胞生物", "原核生物", "脊椎動物"], "e": "ゾウリムシ・アメーバなど。"}, {"q": "多くの細胞からできている生物を何という？", "a": "多細胞生物", "choices": ["多細胞生物", "単細胞生物", "無脊椎動物", "原生生物"], "e": "ヒト・植物など。"}, {"q": "形やはたらきが同じ細胞が集まったものを何という？", "a": "組織", "choices": ["組織", "器官", "個体", "系"], "e": "同じ細胞の集まり＝組織。"}, {"q": "細胞が分かれて数を増やすことを何という？", "a": "細胞分裂", "choices": ["細胞分裂", "受精", "発生", "成長"], "e": "細胞分裂で数が増える。"}, {"q": "光合成でつくられる養分は？", "a": "デンプン", "choices": ["デンプン", "タンパク質", "脂肪", "ブドウ糖だけ"], "e": "デンプンができ、ヨウ素液で確認。"}, {"q": "デンプンがあるか調べる薬品は？", "a": "ヨウ素液", "choices": ["ヨウ素液", "BTB液", "石灰水", "ベネジクト液"], "e": "ヨウ素液で青紫色に変化。"}, {"q": "葉から水が水蒸気として出ていくことを何という？", "a": "蒸散", "choices": ["蒸散", "呼吸", "光合成", "吸収"], "e": "蒸散は主に気孔から起こる。"}, {"q": "葉の表面にあり、気体の出入りや蒸散を行う小さな穴は？", "a": "気孔", "choices": ["気孔", "師管", "道管", "葉緑体"], "e": "気孔は孔辺細胞で囲まれる。"}, {"q": "根から吸い上げた水や養分が通る管は？", "a": "道管", "choices": ["道管", "師管", "維管束", "気孔"], "e": "水・養分の通り道は道管。"}, {"q": "葉でできた養分が通る管は？", "a": "師管", "choices": ["師管", "道管", "気孔", "根毛"], "e": "養分の通り道は師管。"}, {"q": "道管と師管が集まった束を何という？", "a": "維管束", "choices": ["維管束", "気孔", "葉脈", "根毛"], "e": "維管束＝道管＋師管。"}, {"q": "根の先端近くにあり、水を吸収しやすくする細い毛は？", "a": "根毛", "choices": ["根毛", "師管", "道管", "気孔"], "e": "根毛で吸収の表面積を増やす。"}, {"q": "葉の表面に見える、維管束が通った筋を何という？", "a": "葉脈", "choices": ["葉脈", "気孔", "師管", "根毛"], "e": "葉脈は葉の維管束。"}, {"q": "子葉が2枚の植物を何という？", "a": "双子葉類", "choices": ["双子葉類", "単子葉類", "裸子植物", "シダ植物"], "e": "双子葉類は子葉2枚。"}, {"q": "子葉が1枚の植物を何という？", "a": "単子葉類", "choices": ["単子葉類", "双子葉類", "コケ植物", "裸子植物"], "e": "単子葉類は子葉1枚。"}, {"q": "胚珠が子房に包まれている種子植物は？", "a": "被子植物", "choices": ["被子植物", "裸子植物", "シダ植物", "コケ植物"], "e": "胚珠が子房に包まれる＝被子植物。"}, {"q": "胚珠がむき出しの種子植物は？", "a": "裸子植物", "choices": ["裸子植物", "被子植物", "コケ植物", "シダ植物"], "e": "マツ・イチョウなど。"}, {"q": "花粉がめしべの柱頭につくことを何という？", "a": "受粉", "choices": ["受粉", "受精", "発芽", "結実"], "e": "受粉のあと受精が起こる。"}, {"q": "受粉後、子房は何になる？", "a": "果実", "choices": ["果実", "種子", "胚珠", "花弁"], "e": "子房→果実、胚珠→種子。"}, {"q": "受粉後、胚珠は何になる？", "a": "種子", "choices": ["種子", "果実", "花弁", "子房"], "e": "胚珠→種子になる。"}, {"q": "種子を作らず胞子でふえる植物の例は？", "a": "シダ植物", "choices": ["シダ植物", "被子植物", "裸子植物", "種子植物"], "e": "シダ・コケは胞子でふえる。"}, {"q": "花のつくりで、外側から順に正しいのは？", "a": "がく→花弁→おしべ→めしべ", "choices": ["がく→花弁→おしべ→めしべ", "めしべ→おしべ→花弁→がく", "花弁→がく→めしべ→おしべ", "おしべ→めしべ→がく→花弁"], "e": "外側からがく・花弁・おしべ・めしべ。"}, {"q": "子は水中・親は陸上で生活するなかまは？", "a": "両生類", "choices": ["両生類", "は虫類", "魚類", "哺乳類"], "e": "カエルなど両生類。"}, {"q": "体がうろこでおおわれ、陸上に卵を産むなかまは？", "a": "は虫類", "choices": ["は虫類", "両生類", "魚類", "鳥類"], "e": "ヘビ・トカゲなど。"}, {"q": "羽毛をもち、かたいからの卵を産むなかまは？", "a": "鳥類", "choices": ["鳥類", "哺乳類", "は虫類", "両生類"], "e": "鳥類は羽毛・卵生。"}, {"q": "えら呼吸をし、ひれで泳ぐなかまは？", "a": "魚類", "choices": ["魚類", "両生類", "は虫類", "哺乳類"], "e": "魚類はえら呼吸。"}, {"q": "母体内である程度育ってから生まれる生まれ方は？", "a": "胎生", "choices": ["胎生", "卵生", "変態", "脱皮"], "e": "胎生は哺乳類。"}, {"q": "卵で生まれる生まれ方を何という？", "a": "卵生", "choices": ["卵生", "胎生", "変態", "発生"], "e": "卵生は魚・両生・は虫・鳥類。"}, {"q": "他の動物を食べる動物を何という？", "a": "肉食動物", "choices": ["肉食動物", "草食動物", "雑食動物", "分解者"], "e": "肉食動物は犬歯が発達。"}, {"q": "植物を食べる動物を何という？", "a": "草食動物", "choices": ["草食動物", "肉食動物", "雑食動物", "生産者"], "e": "草食動物は臼歯が発達。"}, {"q": "背骨がなく、体が殻でおおわれ節のあるあしをもつなかまは？", "a": "節足動物", "choices": ["節足動物", "軟体動物", "脊椎動物", "環形動物"], "e": "昆虫・甲殻類など。"}, {"q": "イカ・タコ・貝のように内臓が外とう膜に包まれたなかまは？", "a": "軟体動物", "choices": ["軟体動物", "節足動物", "脊椎動物", "刺胞動物"], "e": "軟体動物は外とう膜をもつ。"}, {"q": "節足動物の体をおおうかたい殻を何という？", "a": "外骨格", "choices": ["外骨格", "内骨格", "背骨", "甲羅だけ"], "e": "外骨格で体を支え保護。"}, {"q": "成長の途中で姿を大きく変えることを何という？", "a": "変態", "choices": ["変態", "脱皮", "受精", "発生"], "e": "カエルや昆虫の変態。"}, {"q": "食物の通り道（口→肛門）をまとめて何という？", "a": "消化管", "choices": ["消化管", "血管", "気管", "リンパ管"], "e": "口・食道・胃・腸・肛門。"}, {"q": "だ液にふくまれ、デンプンを分解する消化酵素は？", "a": "アミラーゼ", "choices": ["アミラーゼ", "ペプシン", "リパーゼ", "トリプシン"], "e": "だ液のアミラーゼがデンプンを分解。"}, {"q": "胃液にふくまれ、タンパク質を分解する酵素は？", "a": "ペプシン", "choices": ["ペプシン", "アミラーゼ", "リパーゼ", "マルターゼ"], "e": "胃のペプシン。"}, {"q": "養分を吸収する、小腸の内側のひだにある突起は？", "a": "柔毛", "choices": ["柔毛", "気孔", "じん臓", "肺胞"], "e": "柔毛で吸収面積を増やす。"}, {"q": "肺で酸素と二酸化炭素を交換する小さな袋は？", "a": "肺胞", "choices": ["肺胞", "柔毛", "じん臓", "気孔"], "e": "肺胞でガス交換。"}, {"q": "酸素を運ぶ、赤血球にふくまれる赤い物質は？", "a": "ヘモグロビン", "choices": ["ヘモグロビン", "血しょう", "血小板", "白血球"], "e": "ヘモグロビンが酸素を運ぶ。"}, {"q": "血液の成分で、酸素を運ぶ細胞は？", "a": "赤血球", "choices": ["赤血球", "白血球", "血小板", "血しょう"], "e": "赤血球が酸素運搬。"}, {"q": "体内に入った細菌などを分解するはたらきをもつ血液成分は？", "a": "白血球", "choices": ["白血球", "赤血球", "血小板", "血しょう"], "e": "白血球は免疫に関わる。"}, {"q": "出血を止めるはたらきをもつ血液成分は？", "a": "血小板", "choices": ["血小板", "赤血球", "白血球", "血しょう"], "e": "血小板は血を固める。"}, {"q": "養分や不要物を運ぶ、血液の液体成分は？", "a": "血しょう", "choices": ["血しょう", "赤血球", "血小板", "ヘモグロビン"], "e": "血しょうが溶けた物質を運ぶ。"}, {"q": "全身に血液を送り出すポンプの役目の器官は？", "a": "心臓", "choices": ["心臓", "肺", "じん臓", "肝臓"], "e": "心臓が血液を循環させる。"}, {"q": "血液中の不要物をこしとり、尿をつくる器官は？", "a": "じん臓", "choices": ["じん臓", "肝臓", "肺", "心臓"], "e": "じん臓で尿をつくる。"}, {"q": "尿を一時的にためる器官は？", "a": "ぼうこう", "choices": ["ぼうこう", "じん臓", "肝臓", "小腸"], "e": "ぼうこうに尿をためる。"}, {"q": "目・耳・鼻など刺激を受け取る器官を何という？", "a": "感覚器官", "choices": ["感覚器官", "運動器官", "消化器官", "循環器官"], "e": "感覚器官で刺激を受け取る。"}, {"q": "光の刺激を受け取る感覚器官は？", "a": "目", "choices": ["目", "耳", "鼻", "舌"], "e": "目は光を受け取る。"}, {"q": "音の刺激を受け取る感覚器官は？", "a": "耳", "choices": ["耳", "目", "舌", "皮膚"], "e": "耳は音を受け取る。"}, {"q": "判断や命令を行う、脳やせきずいをまとめて何という？", "a": "中枢神経", "choices": ["中枢神経", "末しょう神経", "感覚神経", "運動神経"], "e": "脳・せきずい＝中枢神経。"}, {"q": "生物の特徴（形質）を伝えるもとになるものは？", "a": "遺伝子", "choices": ["遺伝子", "細胞膜", "葉緑体", "酵素"], "e": "遺伝子が形質を伝える。"}, {"q": "受精によって子をつくるふえ方を何という？", "a": "有性生殖", "choices": ["有性生殖", "無性生殖", "分裂", "出芽"], "e": "受精あり＝有性生殖。"}, {"q": "受精をせずにふえるふえ方を何という？", "a": "無性生殖", "choices": ["無性生殖", "有性生殖", "受精", "変態"], "e": "受精なし＝無性生殖。"}, {"q": "光合成で養分を作り出す生物を何という？", "a": "生産者", "choices": ["生産者", "消費者", "分解者", "捕食者"], "e": "植物などが生産者。"}, {"q": "他の生物を食べて養分を得る生物を何という？", "a": "消費者", "choices": ["消費者", "生産者", "分解者", "生産物"], "e": "動物などが消費者。"}, {"q": "死がいやふんを分解する菌類・細菌類を何という？", "a": "分解者", "choices": ["分解者", "生産者", "消費者", "捕食者"], "e": "分解者が物質を循環させる。"}, {"q": "「食べる・食べられる」のつながりを何という？", "a": "食物連鎖", "choices": ["食物連鎖", "食物網だけ", "生態系", "循環"], "e": "一本のつながりが食物連鎖。"}], "Lv3": [{"q": "いくつかの組織が集まって特定のはたらきをするものは？", "a": "器官", "choices": ["器官", "組織", "細胞", "個体"], "e": "葉・胃などは器官。"}, {"q": "気孔を開け閉めする三日月形の細胞は？", "a": "孔辺細胞", "choices": ["孔辺細胞", "表皮細胞", "師管", "道管"], "e": "孔辺細胞が気孔を調節。"}, {"q": "光合成は植物の細胞のどこで行われる？", "a": "葉緑体", "choices": ["葉緑体", "核", "液胞", "ミトコンドリア"], "e": "葉緑体で行われる。"}, {"q": "ホウセンカなど双子葉類の茎で維管束はどう並ぶ？", "a": "輪のように並ぶ", "choices": ["輪のように並ぶ", "ばらばらに散らばる", "中央に1本", "ない"], "e": "双子葉類は輪状。"}, {"q": "トウモロコシなど単子葉類の維管束のようすは？", "a": "散らばっている", "choices": ["散らばっている", "輪状に並ぶ", "1本だけ", "ない"], "e": "単子葉類は散在。"}, {"q": "平行脈・ひげ根の特徴をもつのは？", "a": "単子葉類", "choices": ["単子葉類", "双子葉類", "裸子植物", "シダ植物"], "e": "単子葉類＝平行脈・ひげ根。"}, {"q": "コケ植物に根・茎・葉の区別は？", "a": "ない", "choices": ["ない", "ある", "茎だけある", "葉だけある"], "e": "コケには維管束も区別もない。"}, {"q": "マツの花に花弁やがくは？", "a": "ない", "choices": ["ない", "ある", "花弁だけある", "がくだけある"], "e": "裸子植物は花弁・がくがない。"}, {"q": "肉食動物の目のつき方の特徴は？", "a": "前向きで立体的に見える", "choices": ["前向きで立体的に見える", "横向きで広く見える", "上向き", "後ろ向き"], "e": "前向きで獲物との距離をつかむ。"}, {"q": "草食動物の目のつき方の特徴は？", "a": "横向きで広い範囲を見る", "choices": ["横向きで広い範囲を見る", "前向きで立体的", "上向き", "真下向き"], "e": "横向きで敵を早く見つける。"}, {"q": "昆虫類のからだは何部に分かれる？", "a": "頭・胸・腹の3部", "choices": ["頭・胸・腹の3部", "頭・胴の2部", "頭・胸の2部", "4部"], "e": "昆虫は頭胸腹の3部、あし6本。"}, {"q": "昆虫のあしは何本？", "a": "6本", "choices": ["6本", "8本", "4本", "10本"], "e": "昆虫は6本（クモは8本）。"}, {"q": "エビ・カニのなかまを何類という？", "a": "甲殻類", "choices": ["甲殻類", "昆虫類", "クモ類", "多足類"], "e": "甲殻類は節足動物の一部。"}, {"q": "ブドウ糖やアミノ酸が吸収されて入る管は？", "a": "毛細血管", "choices": ["毛細血管", "リンパ管", "気管", "師管"], "e": "ブドウ糖・アミノ酸は毛細血管へ。"}, {"q": "脂肪が分解され吸収されたあと入る管は？", "a": "リンパ管", "choices": ["リンパ管", "毛細血管", "道管", "気管"], "e": "脂肪酸などはリンパ管へ。"}, {"q": "心臓から送り出される血液が流れる血管は？", "a": "動脈", "choices": ["動脈", "静脈", "毛細血管", "リンパ管"], "e": "心臓→出る血管が動脈。"}, {"q": "心臓へ戻る血液が流れる血管は？", "a": "静脈", "choices": ["静脈", "動脈", "毛細血管", "気管"], "e": "心臓へ戻る血管が静脈。"}, {"q": "酸素を多くふくむ血液を何という？", "a": "動脈血", "choices": ["動脈血", "静脈血", "リンパ液", "血small"], "e": "酸素が多い＝動脈血。"}, {"q": "アンモニアを害の少ない尿素に変える器官は？", "a": "肝臓", "choices": ["肝臓", "じん臓", "ぼうこう", "すい臓"], "e": "肝臓でアンモニア→尿素。"}, {"q": "感覚器官からの信号を中枢へ伝える神経は？", "a": "感覚神経", "choices": ["感覚神経", "運動神経", "中枢神経", "交感神経"], "e": "感覚神経が刺激を伝える。"}, {"q": "中枢からの命令を筋肉へ伝える神経は？", "a": "運動神経", "choices": ["運動神経", "感覚神経", "中枢神経", "副交感神経"], "e": "運動神経が命令を伝える。"}, {"q": "熱いものに触れて思わず手を引く、無意識の反応は？", "a": "反射", "choices": ["反射", "随意運動", "条件反射学習", "記憶"], "e": "反射はせきずいが命令。"}, {"q": "遺伝子の本体である物質は？", "a": "DNA", "choices": ["DNA", "タンパク質", "デンプン", "脂質"], "e": "遺伝子の本体はDNA。"}, {"q": "親と同じ形質が子に現れること全般を何という？", "a": "遺伝", "choices": ["遺伝", "変態", "進化", "適応"], "e": "形質が伝わる＝遺伝。"}, {"q": "受精卵が細胞分裂をくり返し成体になる過程は？", "a": "発生", "choices": ["発生", "受粉", "蒸散", "遺伝"], "e": "受精卵→発生→個体。"}, {"q": "生殖細胞をつくるときの特別な細胞分裂は？", "a": "減数分裂", "choices": ["減数分裂", "体細胞分裂", "出芽", "分裂"], "e": "染色体が半分になる減数分裂。"}, {"q": "カビやキノコのなかまをまとめて何という？", "a": "菌類", "choices": ["菌類", "細菌類", "藻類", "原生動物"], "e": "カビ・キノコは菌類。"}, {"q": "乳酸菌や大腸菌のような単細胞の小さな生物を何という？", "a": "細菌類", "choices": ["細菌類", "菌類", "藻類", "ウイルス"], "e": "細菌類は分解者。"}]};
+var ACTIVE_PROBLEMS=[];
+const TIME_LIMIT = 5000;
+var TOTAL_Q = 15;
+let state = {};
+let timerId = null;
+let startTime = 0;
+let tickedAt = 0;
+
+function resetState(){
+  state = {
+    score: 0, lives: 3, qIndex: 0,
+    combo: 0, maxCombo: 0,
+    queue: shuffle([...ACTIVE_PROBLEMS]).slice(0, TOTAL_Q),
+    locked: false,
+  };
+}
+
+function shuffle(arr){
+  for(let i=arr.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+const $ = (id)=>document.getElementById(id);
+
+function setStickman(s){
+  $('stickman').className = 'stickman ' + s;
+}
+
+function render(){
+  $('score').textContent = state.score;
+  $('q-num').textContent = state.qIndex + 1;
+  $('q-total').textContent = TOTAL_Q;
+  document.querySelectorAll('#lives .heart').forEach((h,i)=>{
+    h.classList.toggle('lost', i >= state.lives);
+  });
+}
+
+function loadQuestion(){
+  if(state.qIndex >= TOTAL_Q || state.lives <= 0){
+    endGame();
+    return;
+  }
+  const p = state.queue[state.qIndex];
+  $('question').innerHTML = p.q;
+  const choices = shuffle([...p.choices]);
+  document.querySelectorAll('#choices .choice').forEach((b,i)=>{
+    b.textContent = choices[i];
+    b.disabled = false;
+    b.className = 'choice';
+    b.onclick = ()=>answer(choices[i], b);
+  });
+  state.locked = false;
+  setStickman('normal');
+  const balloon = $('balloon');
+  balloon.classList.remove('exploded','danger');
+  balloon.style.setProperty('--scale', 1);
+  $('burst').classList.remove('show');
+  tickedAt = 0;
+  render();
+  startTimer();
+}
+
+function startTimer(){
+  cancelAnimationFrame(timerId);
+  const balloon = $('balloon');
+  startTime = performance.now();
+  function tick(now){
+    if(state.locked) return;
+    const elapsed = now - startTime;
+    const remaining = (TIME_LIMIT - elapsed) / 1000;
+    const ratio = Math.min(elapsed / TIME_LIMIT, 1);
+    balloon.style.setProperty('--scale', 1 + ratio * 0.6);
+
+    if(remaining <= 3 && remaining > 0){
+      const wholeRemaining = Math.ceil(remaining);
+      if(wholeRemaining !== tickedAt && wholeRemaining <= 3){
+        playTick();
+        tickedAt = wholeRemaining;
+      }
+    }
+
+    if(ratio > 0.65){ balloon.classList.add('danger'); }
+    if(remaining <= 3 && remaining > 0){ setStickman('danger'); }
+    else if(remaining > 3){ setStickman('normal'); }
+    if(ratio >= 1){
+      timeout();
+      return;
+    }
+    timerId = requestAnimationFrame(tick);
+  }
+  timerId = requestAnimationFrame(tick);
+}
+
+function stopTimer(){ cancelAnimationFrame(timerId); }
+
+function answer(val, btn){
+  if(state.locked) return;
+  state.locked = true;
+  stopTimer();
+  const p = state.queue[state.qIndex];
+
+  if(val === p.a){
+    btn.classList.add('correct');
+    playCorrect();
+    state.combo++;
+    state.maxCombo = Math.max(state.maxCombo, state.combo);
+    const elapsed = performance.now() - startTime;
+    const timeBonus = Math.max(0, Math.floor((TIME_LIMIT - elapsed) / 50));
+    const comboBonus = state.combo >= 3 ? state.combo * 10 : 0;
+    state.score += 100 + timeBonus + comboBonus;
+    if(state.combo >= 3) showCombo(state.combo);
+    setStickman('happy');
+  } else {
+    btn.classList.add('wrong');
+    playWrong();
+    document.querySelectorAll('#choices .choice').forEach(b=>{
+      if(b.textContent === String(p.a)) b.classList.add('correct');
+    });
+    state.combo = 0;
+    state.lives--;
+    explodeBalloon();
+    setStickman('shocked');
+  }
+  document.querySelectorAll('#choices .choice').forEach(b=>b.disabled=true);
+  render();
+  if(val === p.a){ setTimeout(nextQuestion, 1400); } else { showExplain(p); }
+}
+
+function timeout(){
+  if(state.locked) return;
+  state.locked = true;
+  const p = state.queue[state.qIndex];
+  document.querySelectorAll('#choices .choice').forEach(b=>{
+    if(b.textContent === String(p.a)) b.classList.add('correct');
+    b.disabled = true;
+  });
+  state.combo = 0;
+  state.lives--;
+  explodeBalloon();
+  setStickman('shocked');
+  render();
+  showExplain(p);
+}
+
+function explodeBalloon(){
+  const balloon = $('balloon');
+  balloon.classList.remove('danger');
+  balloon.classList.add('exploded');
+  playBoom();
+
+  const burst = $('burst');
+  burst.classList.remove('show');
+  void burst.offsetWidth;
+  burst.classList.add('show');
+
+  const boom = $('boom');
+  boom.classList.remove('show');
+  void boom.offsetWidth;
+  boom.classList.add('show');
+
+  document.body.animate(
+    [
+      {transform:'translate(0,0)'},
+      {transform:'translate(-8px,6px)'},
+      {transform:'translate(8px,-6px)'},
+      {transform:'translate(-5px,3px)'},
+      {transform:'translate(0,0)'},
+    ],
+    {duration:400}
+  );
+}
+
+function showCombo(n){
+  const el = $('combo');
+  el.textContent = `COMBO ×${n}!`;
+  el.classList.remove('show');
+  void el.offsetWidth;
+  el.classList.add('show');
+}
+
+function runCountdown(callback){
+  const overlay = $('countdown');
+  const numEl = $('countdown-num');
+  overlay.classList.remove('hidden');
+  const sequence = ['3', '2', '1', 'GO!'];
+  let i = 0;
+  function next(){
+    if(i >= sequence.length){
+      overlay.classList.add('hidden');
+      callback();
+      return;
+    }
+    numEl.textContent = sequence[i];
+    numEl.style.animation = 'none';
+    void numEl.offsetWidth;
+    numEl.style.animation = '';
+    if(sequence[i] === 'GO!'){
+      playBeep(1200);
+    } else {
+      playBeep(800);
+    }
+    i++;
+    setTimeout(next, 500);
+  }
+  next();
+}
+
+function startGame(){
+  initAudio(); __playFile(window.__sndStart); startBGM();
+  $('start-overlay').classList.add('hidden');
+  $('end-overlay').classList.add('hidden');
+  showLevelSelect();
+}
+
+function explainFor(p){ return p.e || '正解をかくにんしよう！'; }
+function showExplain(p){
+  document.getElementById('explain-ans').innerHTML = '正解は <b>'+p.a+'</b>';
+  document.getElementById('explain-body').innerHTML = explainFor(p);
+  document.getElementById('explain').classList.add('show');
+}
+function nextQuestion(){
+  document.getElementById('explain').classList.remove('show');
+  state.qIndex++; loadQuestion();
+}
+function _explain(p){
+  var q=p.q, si=q.indexOf('<sup>');
+  if(si<0) return '右上の小さい数字の回数だけ、同じ数をかけ算するよ。';
+  var ei=q.indexOf('</sup>');
+  var exp=parseInt(q.substring(si+5,ei),10);
+  var base=q.substring(0,si).replace(/<[^>]+>/g,'').replace(/&minus;/g,'−').trim();
+  var paren=base.indexOf('(')>=0;
+  var core=base.replace(/[()]/g,'');
+  var neg=core.indexOf('−')===0;
+  var num=core.replace('−','');
+  function rep(s,n){var a=[];for(var i=0;i<n;i++)a.push(s);return a.join('×');}
+  if(paren) return base+' を '+exp+'回かけ算：'+rep(base,exp)+' = '+p.a+'<br>マイナス×マイナスは ＋ になるよ。';
+  if(neg) return '−'+num+'<sup>'+exp+'</sup> は −('+rep(num,exp)+') = '+p.a+'<br>2乗するのは数字だけ。マイナスは最後につくよ。';
+  return num+'<sup>'+exp+'</sup> = '+rep(num,exp)+' = '+p.a+' だよ。';
+}
+function endGame(){
+  stopTimer();
+  (state.lives>0?playVictory:playLose)();
+  $('final-score').textContent = state.score;
+  $('max-combo').textContent = state.maxCombo;
+  let rank, comment;
+  if(state.score >= 1800){ rank='S'; comment='天才かも！'; }
+  else if(state.score >= 1400){ rank='A'; comment='よくできました！'; }
+  else if(state.score >= 900){ rank='B'; comment='その調子！'; }
+  else if(state.score >= 500){ rank='C'; comment='もう一度チャレンジ！'; }
+  else { rank='D'; comment='まだまだ伸びる！'; }
+  $('rank').textContent = rank;
+  $('rank-comment').textContent = comment;
+  (function(){
+    var won = state.lives > 0;
+    var im = document.getElementById('result-illust');
+    if(!im) return;
+    var list = won ? ['win.png','win.png.png','win.PNG','win.jpg'] : ['lose.png','lose.png.png','lose.PNG','lose.jpg'];
+    list=__img(list);
+    var i=0;
+    (function tryNext(){
+      if(i>=list.length){ im.style.display='none'; return; }
+      var p=new Image();
+      p.onload=function(){ im.src=list[i]; im.alt=won?'勝ち':'負け'; im.style.display='block'; };
+      p.onerror=function(){ i++; tryNext(); };
+      p.src=list[i];
+    })();
+  })();
+  $('end-overlay').classList.remove('hidden');
+}
+function setSmart(el,list){ if(!el) return; list=__img(list); var i=0; (function n(){ if(i>=list.length){return;} var p=new Image(); p.onload=function(){ el.src=list[i]; }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })(); }
+var KN=['kanade-normal.png','kanade-normal.png.png','kanade-normal.PNG','kanade-normal.jpg','kazue-normal.png','kazue-normal.png.png'];
+var KA=['kanade-asette.png','kanade-asette.png.png','kanade-asette.PNG','kanade-asette.jpg','kazue-asette.png','kazue-asette.png.png'];
+var KD=['kanade-dame.png','kanade-dame.png.png','kanade-dame.PNG','kanade-dame.jpg','kazue-dame.png','kazue-dame.png.png'];
+setSmart(document.querySelector('.char-normal'),KN);
+setSmart(document.querySelector('.char-happy'),KN);
+setSmart(document.querySelector('.char-danger'),KA);
+setSmart(document.querySelector('.char-shocked'),KD);
+setSmart(document.querySelector('.kazue-title'),KN);
+function setBoss(el,list){ if(!el) return; list=__img(list); var i=0; (function n(){ if(i>=list.length){ el.style.display='none'; return; } var p=new Image(); p.onload=function(){ el.src=list[i]; el.style.display='block'; }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })(); }
+var BOSS=['r-boss.png','r-boss.png.png','boss-inochi.png','enemy-rika.png','enemy-rika.png.png'];
+setBoss(document.querySelector('.boss-bg'),BOSS);
+(function(){
+  var so=document.getElementById('start-overlay'); var ta=document.getElementById('title-art');
+  if(!so||!ta) return; var img=ta.querySelector('.title-art-img');
+  var list=['r-inochi.png','r-inochi.png.png','title-inochi.png','title-inochi.png.png','生命の培養槽.png'];
+  list=__img(list);var i=0;(function n(){ if(i>=list.length) return; var p=new Image(); p.onload=function(){ img.src=list[i]; so.classList.add('artmode'); }; p.onerror=function(){ i++; n(); }; p.src=list[i]; })();
+})();
+var BGMS=__mus(['bgm.mp3','bgm.ogg','bgm.m4a','bgm.wav','ignition.mp3','ignition.ogg','IGNITION.mp3']);
+var __bgmA=document.getElementById('bgm'),__bgmI=0,__bgmOn=true;
+function __setBgm(){if(__bgmA&&__bgmI<BGMS.length){__bgmA.src=BGMS[__bgmI];}}
+if(__bgmA){__bgmA.loop=true;__bgmA.volume=0.4;__bgmA.addEventListener('error',function(){__bgmI++;if(__bgmI<BGMS.length)__setBgm();});__setBgm();}
+function startBGM(){if(__bgmOn&&__bgmA){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});}}
+function toggleBGM(){__bgmOn=!__bgmOn;var b=document.getElementById('bgm-btn');if(!__bgmA)return;if(__bgmOn){var p=__bgmA.play();if(p&&p.catch)p.catch(function(){});if(b)b.innerHTML='&#128266;';}else{__bgmA.pause();if(b)b.innerHTML='&#128263;';}}
+function __mkSnd(names){names=__mus(names);var a=new Audio();var i=0;function sn(){if(i<names.length)a.src=names[i];}a.addEventListener('error',function(){i++;if(i<names.length)sn();});a.addEventListener('canplaythrough',function(){a._ok=true;});a.preload='auto';sn();return a;}
+function __playFile(a){if(a&&a._ok){try{a.currentTime=0;var p=a.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}}
+window.__sndStart=__mkSnd(['start.mp3','start.ogg','start.m4a','start.wav','soundlogo.mp3','soundlogo.ogg']);
+window.__sndCorrect=__mkSnd(['correct.mp3','correct.ogg','correct.m4a','correct.wav']);
+window.__sndOver=__mkSnd(['gameover.mp3','gameover.ogg','gameover.m4a','gameover.wav','tirori.mp3']);
+function showLevelSelect(){
+  var box=document.getElementById('level-btns'); box.innerHTML='';
+  ['Lv1','Lv2','Lv3','Lv4'].forEach(function(lv){
+    var arr=PROBLEMS_BY_LEVEL[lv];
+    if(arr&&arr.length){
+      var b=document.createElement('button'); b.className='level-btn';
+      b.innerHTML=lv+'<span>'+arr.length+'問</span>';
+      b.onclick=function(){ chooseLevel(lv); };
+      box.appendChild(b);
+    }
+  });
+  document.getElementById('level-overlay').classList.remove('hidden');
+}
+function chooseLevel(lv){
+  ACTIVE_PROBLEMS=PROBLEMS_BY_LEVEL[lv]||[];
+  TOTAL_Q=Math.min(15, ACTIVE_PROBLEMS.length)||1;
+  document.getElementById('level-overlay').classList.add('hidden');
+  resetState();
+  runCountdown(function(){ loadQuestion(); });
+}
+</script>
+
+</body>
+</html>
