@@ -33,10 +33,11 @@ class AppColors {
 
   /// Matches: radial-gradient(ellipse 130% 90% at 50% -8%, ...)
   static const RadialGradient background = RadialGradient(
-    center: Alignment(0.0, -1.16), // ~50% -8%
-    radius: 1.6,
+    center: Alignment(0.0, -1.16), // 50% -8%
+    radius: 1.3, // × shortest side (width in portrait) = 130% width
     colors: [bg0, bg1, bg2, bg3, bg4],
     stops: [0.0, 0.26, 0.54, 0.80, 1.0],
+    transform: _CssEllipse(),
   );
 
   /// Soft pastel behind hero (web .hero fallback)
@@ -46,4 +47,22 @@ class AppColors {
     colors: [Color(0xFFFFE9A8), Color(0xFFFFC4E3), Color(0xFFBDB6FF)],
     stops: [0.0, 0.55, 1.0],
   );
+}
+
+/// Squashes Flutter's circular [RadialGradient] into the CSS ellipse
+/// `130% 90%`: horizontal radius 1.3×width, vertical radius 0.9×height.
+class _CssEllipse extends GradientTransform {
+  const _CssEllipse();
+
+  @override
+  Matrix4 transform(Rect bounds, {TextDirection? textDirection}) {
+    final cx = bounds.left + bounds.width * 0.5;
+    final cy = bounds.top - bounds.height * 0.08;
+    final rx = 1.3 * bounds.shortestSide;
+    final sy = (0.9 * bounds.height) / rx;
+    return Matrix4.identity()
+      ..translateByDouble(cx, cy, 0, 1)
+      ..scaleByDouble(1, sy, 1, 1)
+      ..translateByDouble(-cx, -cy, 0, 1);
+  }
 }

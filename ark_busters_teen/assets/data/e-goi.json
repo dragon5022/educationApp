@@ -1,0 +1,596 @@
+{
+ "version": 1,
+ "id": "e-goi",
+ "subject": "english",
+ "title": "語彙の兵器庫",
+ "label": "語",
+ "timeLimitMs": 5000,
+ "maxQuestions": 15,
+ "images": {
+  "art": "e-goi",
+  "boss": "e-boss",
+  "chara": "uta",
+  "win": "win",
+  "lose": "lose2"
+ },
+ "levels": {
+  "Lv1": [
+   {
+    "q": "「彼の犬」を表すのは？ ( ) dog",
+    "a": "his",
+    "choices": [
+     "his",
+     "him",
+     "他",
+     "he"
+    ],
+    "e": "「彼の〜」は所有格 his。"
+   },
+   {
+    "q": "「私の本」を表すのは？ ( ) book",
+    "a": "my",
+    "choices": [
+     "I",
+     "mine",
+     "me",
+     "my"
+    ],
+    "e": "「私の〜」は所有格 my。"
+   },
+   {
+    "q": "「彼女のかばん」を表すのは？ ( ) bag",
+    "a": "her",
+    "choices": [
+     "hers",
+     "she",
+     "him",
+     "her"
+    ],
+    "e": "「彼女の〜」は所有格 her。"
+   },
+   {
+    "q": "「私たちの学校」を表すのは？ ( ) school",
+    "a": "our",
+    "choices": [
+     "us",
+     "our",
+     "we",
+     "ours"
+    ],
+    "e": "「私たちの〜」は our。"
+   },
+   {
+    "q": "「月曜日に」は？ ( ) Monday",
+    "a": "on",
+    "choices": [
+     "at",
+     "in",
+     "on",
+     "to"
+    ],
+    "e": "曜日→on。"
+   },
+   {
+    "q": "「7時に」は？ ( ) seven",
+    "a": "at",
+    "choices": [
+     "to",
+     "in",
+     "on",
+     "at"
+    ],
+    "e": "時刻→at。"
+   },
+   {
+    "q": "「夏に」は？ ( ) summer",
+    "a": "in",
+    "choices": [
+     "to",
+     "in",
+     "at",
+     "on"
+    ],
+    "e": "季節→in。"
+   },
+   {
+    "q": "go の過去形は？",
+    "a": "went",
+    "choices": [
+     "going",
+     "gone",
+     "went",
+     "goed"
+    ],
+    "e": "go-went-gone（不規則）。"
+   },
+   {
+    "q": "come の過去形は？",
+    "a": "came",
+    "choices": [
+     "comed",
+     "came",
+     "come",
+     "coming"
+    ],
+    "e": "come-came-come。"
+   },
+   {
+    "q": "see の過去形は？",
+    "a": "saw",
+    "choices": [
+     "seen",
+     "seeing",
+     "saw",
+     "seed"
+    ],
+    "e": "see-saw-seen。"
+   },
+   {
+    "q": "eat の過去形は？",
+    "a": "ate",
+    "choices": [
+     "ate",
+     "eaten",
+     "eated",
+     "eating"
+    ],
+    "e": "eat-ate-eaten。"
+   },
+   {
+    "q": "take の過去形は？",
+    "a": "took",
+    "choices": [
+     "took",
+     "taking",
+     "taken",
+     "taked"
+    ],
+    "e": "take-took-taken。"
+   },
+   {
+    "q": "run のing形は？",
+    "a": "running",
+    "choices": [
+     "runned",
+     "runing",
+     "running",
+     "ran"
+    ],
+    "e": "語尾を重ねてrunning。"
+   },
+   {
+    "q": "swim のing形は？",
+    "a": "swimming",
+    "choices": [
+     "swimming",
+     "swum",
+     "swam",
+     "swiming"
+    ],
+    "e": "mを重ねてswimming。"
+   },
+   {
+    "q": "make のing形は？",
+    "a": "making",
+    "choices": [
+     "makeing",
+     "made",
+     "making",
+     "maked"
+    ],
+    "e": "eをとってmaking。"
+   },
+   {
+    "q": "write のing形は？",
+    "a": "writing",
+    "choices": [
+     "writeing",
+     "wrote",
+     "written",
+     "writing"
+    ],
+    "e": "eをとってwriting。"
+   },
+   {
+    "q": "study の三単現は？",
+    "a": "studies",
+    "choices": [
+     "studyes",
+     "studys",
+     "studied",
+     "studies"
+    ],
+    "e": "y→iesでstudies。"
+   },
+   {
+    "q": "go の三単現は？",
+    "a": "goes",
+    "choices": [
+     "goes",
+     "goees",
+     "going",
+     "gos"
+    ],
+    "e": "go→goes。"
+   },
+   {
+    "q": "have の三単現は？",
+    "a": "has",
+    "choices": [
+     "haves",
+     "having",
+     "have",
+     "has"
+    ],
+    "e": "have→has（不規則）。"
+   },
+   {
+    "q": "watch の三単現は？",
+    "a": "watches",
+    "choices": [
+     "watchs",
+     "watches",
+     "watch",
+     "watched"
+    ],
+    "e": "ch→＋esでwatches。"
+   },
+   {
+    "q": "book の複数形は？",
+    "a": "books",
+    "choices": [
+     "books'",
+     "bookes",
+     "book",
+     "books"
+    ],
+    "e": "規則：＋s。"
+   },
+   {
+    "q": "box の複数形は？",
+    "a": "boxes",
+    "choices": [
+     "boxies",
+     "boxes",
+     "boxs",
+     "box"
+    ],
+    "e": "x→＋esでboxes。"
+   },
+   {
+    "q": "city の複数形は？",
+    "a": "cities",
+    "choices": [
+     "citys",
+     "cities",
+     "cityies",
+     "cityes"
+    ],
+    "e": "子音＋y→iesでcities。"
+   }
+  ],
+  "Lv2": [
+   {
+    "q": "I know ( ).「私は彼を知っている」",
+    "a": "him",
+    "choices": [
+     "his",
+     "him",
+     "he",
+     "himself"
+    ],
+    "e": "動詞の後ろは目的格 him。"
+   },
+   {
+    "q": "She likes ( ).「彼女は私が好き」",
+    "a": "me",
+    "choices": [
+     "me",
+     "my",
+     "mine",
+     "I"
+    ],
+    "e": "動詞の後ろは目的格 me。"
+   },
+   {
+    "q": "This book is ( ).「これは私のもの」",
+    "a": "mine",
+    "choices": [
+     "my",
+     "me",
+     "mine",
+     "I"
+    ],
+    "e": "「私のもの」は所有代名詞 mine。"
+   },
+   {
+    "q": "That bag is ( ).「あれは彼女のもの」",
+    "a": "hers",
+    "choices": [
+     "she",
+     "her",
+     "hers",
+     "hers'"
+    ],
+    "e": "「彼女のもの」は hers。"
+   },
+   {
+    "q": "Look at ( ).「彼らを見て」",
+    "a": "them",
+    "choices": [
+     "they",
+     "them",
+     "theirs",
+     "their"
+    ],
+    "e": "目的格 them。"
+   },
+   {
+    "q": "( ) is my friend.「彼は私の友達」",
+    "a": "He",
+    "choices": [
+     "Himself",
+     "He",
+     "Him",
+     "His"
+    ],
+    "e": "主語は主格 He。"
+   },
+   {
+    "q": "「〜の前に」は？",
+    "a": "before",
+    "choices": [
+     "after",
+     "under",
+     "over",
+     "before"
+    ],
+    "e": "before＝前に。"
+   },
+   {
+    "q": "look ( ) 〜「〜を探す」",
+    "a": "for",
+    "choices": [
+     "up",
+     "after",
+     "at",
+     "for"
+    ],
+    "e": "look for＝探す。"
+   },
+   {
+    "q": "look ( ) 〜「〜を見る」",
+    "a": "at",
+    "choices": [
+     "up",
+     "after",
+     "at",
+     "for"
+    ],
+    "e": "look at＝見る。"
+   },
+   {
+    "q": "get ( )「起きる」",
+    "a": "up",
+    "choices": [
+     "off",
+     "up",
+     "in",
+     "on"
+    ],
+    "e": "get up＝起きる。"
+   },
+   {
+    "q": "「〜のおかげで」 thanks ( )",
+    "a": "to",
+    "choices": [
+     "for",
+     "at",
+     "to",
+     "of"
+    ],
+    "e": "thanks to＝おかげで。"
+   },
+   {
+    "q": "be interested ( ) 〜「興味がある」",
+    "a": "in",
+    "choices": [
+     "to",
+     "in",
+     "on",
+     "at"
+    ],
+    "e": "be interested in。"
+   },
+   {
+    "q": "listen ( ) music「音楽を聞く」",
+    "a": "to",
+    "choices": [
+     "to",
+     "for",
+     "at",
+     "on"
+    ],
+    "e": "listen to＝聞く。"
+   },
+   {
+    "q": "run の過去形は？",
+    "a": "ran",
+    "choices": [
+     "ran",
+     "running",
+     "run",
+     "runned"
+    ],
+    "e": "run-ran-run。"
+   },
+   {
+    "q": "write の過去分詞は？",
+    "a": "written",
+    "choices": [
+     "written",
+     "wrote",
+     "writing",
+     "writed"
+    ],
+    "e": "write-wrote-written。"
+   },
+   {
+    "q": "speak の過去分詞は？",
+    "a": "spoken",
+    "choices": [
+     "speaked",
+     "speaking",
+     "spoken",
+     "spoke"
+    ],
+    "e": "speak-spoke-spoken。"
+   },
+   {
+    "q": "give の過去分詞は？",
+    "a": "given",
+    "choices": [
+     "giving",
+     "given",
+     "gave",
+     "gived"
+    ],
+    "e": "give-gave-given。"
+   },
+   {
+    "q": "take の過去分詞は？",
+    "a": "taken",
+    "choices": [
+     "taken",
+     "taking",
+     "taked",
+     "took"
+    ],
+    "e": "take-took-taken。"
+   },
+   {
+    "q": "sit のing形は？",
+    "a": "sitting",
+    "choices": [
+     "sitting",
+     "sit",
+     "sat",
+     "siting"
+    ],
+    "e": "tを重ねてsitting。"
+   },
+   {
+    "q": "buy の過去形は？",
+    "a": "bought",
+    "choices": [
+     "buying",
+     "bought",
+     "buys",
+     "buyed"
+    ],
+    "e": "buy-bought-bought。"
+   },
+   {
+    "q": "child の複数形は？",
+    "a": "children",
+    "choices": [
+     "childrens",
+     "childes",
+     "childs",
+     "children"
+    ],
+    "e": "不規則：child-children。"
+   },
+   {
+    "q": "man の複数形は？",
+    "a": "men",
+    "choices": [
+     "mans",
+     "mens",
+     "men",
+     "manes"
+    ],
+    "e": "不規則：man-men。"
+   },
+   {
+    "q": "woman の複数形は？",
+    "a": "women",
+    "choices": [
+     "womans",
+     "women",
+     "womens",
+     "womanes"
+    ],
+    "e": "不規則：woman-women。"
+   },
+   {
+    "q": "foot の複数形は？",
+    "a": "feet",
+    "choices": [
+     "feet",
+     "feets",
+     "footes",
+     "foots"
+    ],
+    "e": "不規則：foot-feet。"
+   },
+   {
+    "q": "tooth の複数形は？",
+    "a": "teeth",
+    "choices": [
+     "tooths",
+     "teeth",
+     "teeths",
+     "tooth"
+    ],
+    "e": "不規則：tooth-teeth。"
+   },
+   {
+    "q": "sheep の複数形は？",
+    "a": "sheep",
+    "choices": [
+     "sheepes",
+     "sheep",
+     "shoop",
+     "sheeps"
+    ],
+    "e": "単複同形：sheep-sheep。"
+   },
+   {
+    "q": "leaf の複数形は？",
+    "a": "leaves",
+    "choices": [
+     "leafes",
+     "leafs",
+     "leaves",
+     "leave"
+    ],
+    "e": "f→vesでleaves。"
+   }
+  ],
+  "Lv3": [
+   {
+    "q": "He hurt ( ).「彼は自分を傷つけた」",
+    "a": "himself",
+    "choices": [
+     "him",
+     "his",
+     "he",
+     "himself"
+    ],
+    "e": "主語と同じ→再帰代名詞 himself。"
+   },
+   {
+    "q": "( ) car is new.「あなたの車」",
+    "a": "Your",
+    "choices": [
+     "Yourself",
+     "Your",
+     "Yours",
+     "You"
+    ],
+    "e": "所有格 Your。"
+   }
+  ]
+ }
+}

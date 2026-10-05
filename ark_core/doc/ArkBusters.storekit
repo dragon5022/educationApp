@@ -1,0 +1,54 @@
+{
+  "identifier" : "6F1C2A10-ARK0-4B00-9000-000000000001",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1200",
+      "familyShareable" : true,
+      "internalID" : "6740000001",
+      "localizations" : [
+        {
+          "description" : "すべてのステージ・問題が遊べるようになります（買い切り）",
+          "displayName" : "ぜんぶ あそべる パック",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "com.ark.kids.full_unlock",
+      "referenceName" : "KIDS Full Unlock",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1200",
+      "familyShareable" : true,
+      "internalID" : "6740000002",
+      "localizations" : [
+        {
+          "description" : "すべての問題が使えるようになります（買い切り）",
+          "displayName" : "フルアクセス",
+          "locale" : "ja"
+        }
+      ],
+      "productID" : "com.ark.teen.full_unlock",
+      "referenceName" : "TEEN Full Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "ja_JP",
+    "_storefront" : "JPN",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Content pack updates (settings) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Talk Buster: speaking practice with speech recognition -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <application
         android:label="ark_busters_kids"
         android:name="${applicationName}"
@@ -40,6 +44,13 @@
         <intent>
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- speech_to_text / flutter_tts on Android 11+ -->
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
         </intent>
     </queries>
 </manifest>

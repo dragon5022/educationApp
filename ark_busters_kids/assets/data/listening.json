@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "qn": 10,
   "winRatio": 0.6,
   "timeByLevel": {
@@ -981,246 +981,6 @@
     },
     "g4": {
       "levels": {
-        "1": [
-          {
-            "id": "g4_1_0",
-            "t": "text",
-            "en": "I play tennis after school.",
-            "ja": "放課後テニスをします。",
-            "tip": "tennis＝テニス",
-            "ans": "tennis",
-            "opts": [
-              "soccer",
-              "basketball"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_0.mp3"
-          },
-          {
-            "id": "g4_1_1",
-            "t": "text",
-            "en": "She goes to school by bus.",
-            "ja": "彼女はバスで学校へ行きます。",
-            "tip": "by bus＝バスで",
-            "ans": "by bus",
-            "opts": [
-              "by train",
-              "by bike"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_1.mp3"
-          },
-          {
-            "id": "g4_1_2",
-            "t": "text",
-            "en": "I get up at seven.",
-            "ja": "7時に起きます。",
-            "tip": "seven＝7",
-            "ans": "seven",
-            "opts": [
-              "eleven",
-              "nine"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_2.mp3"
-          },
-          {
-            "id": "g4_1_3",
-            "t": "text",
-            "en": "My brother likes math.",
-            "ja": "兄[弟]は数学が好き。",
-            "tip": "math＝数学",
-            "ans": "math",
-            "opts": [
-              "music",
-              "science"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_3.mp3"
-          },
-          {
-            "id": "g4_1_4",
-            "t": "text",
-            "en": "We have lunch at noon.",
-            "ja": "正午に昼食をとります。",
-            "tip": "lunch＝昼食",
-            "ans": "lunch",
-            "opts": [
-              "breakfast",
-              "dinner"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_4.mp3"
-          },
-          {
-            "id": "g4_1_5",
-            "t": "text",
-            "en": "My uncle is a doctor.",
-            "ja": "おじは医者です。",
-            "tip": "doctor＝医者",
-            "ans": "doctor",
-            "opts": [
-              "teacher",
-              "driver"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_5.mp3"
-          },
-          {
-            "id": "g4_1_6",
-            "t": "text",
-            "en": "I want some water.",
-            "ja": "水がほしいです。",
-            "tip": "water＝水",
-            "ans": "water",
-            "opts": [
-              "juice",
-              "milk"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_6.mp3"
-          },
-          {
-            "id": "g4_1_7",
-            "t": "text",
-            "en": "Let's meet on Monday.",
-            "ja": "月曜日に会いましょう。",
-            "tip": "Monday＝月曜日",
-            "ans": "Monday",
-            "opts": [
-              "Sunday",
-              "Friday"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_7.mp3"
-          },
-          {
-            "id": "g4_1_8",
-            "t": "text",
-            "en": "The book is on the desk.",
-            "ja": "本は机の上にあります。",
-            "tip": "on the desk＝机の上",
-            "ans": "on the desk",
-            "opts": [
-              "under the bed",
-              "by the door"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_8.mp3"
-          },
-          {
-            "id": "g4_1_9",
-            "t": "text",
-            "en": "She has two dogs.",
-            "ja": "犬を2匹飼っています。",
-            "tip": "two＝2",
-            "ans": "two",
-            "opts": [
-              "three",
-              "ten"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_9.mp3"
-          },
-          {
-            "id": "g4_1_10",
-            "t": "text",
-            "en": "It is rainy today.",
-            "ja": "今日は雨です。",
-            "tip": "rainy＝雨の",
-            "ans": "rainy",
-            "opts": [
-              "sunny",
-              "cloudy"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_10.mp3"
-          },
-          {
-            "id": "g4_1_11",
-            "t": "text",
-            "en": "My birthday is in May.",
-            "ja": "誕生日は5月です。",
-            "tip": "May＝5月",
-            "ans": "May",
-            "opts": [
-              "March",
-              "July"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_11.mp3"
-          },
-          {
-            "id": "g4_1_12",
-            "t": "text",
-            "en": "I usually walk to school.",
-            "ja": "たいてい歩いて学校へ行きます。",
-            "tip": "walk＝歩く。",
-            "ans": "walk",
-            "opts": [
-              "run",
-              "swim"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_12.mp3"
-          },
-          {
-            "id": "g4_1_13",
-            "t": "text",
-            "en": "She likes music very much.",
-            "ja": "彼女は音楽が大好きです。",
-            "tip": "music＝音楽。",
-            "ans": "music",
-            "opts": [
-              "math",
-              "art"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_13.mp3"
-          },
-          {
-            "id": "g4_1_14",
-            "t": "text",
-            "en": "We play in the park on Sunday.",
-            "ja": "日曜は公園で遊びます。",
-            "tip": "in the park＝公園で。",
-            "ans": "in the park",
-            "opts": [
-              "at home",
-              "at school"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_14.mp3"
-          },
-          {
-            "id": "g4_1_15",
-            "t": "text",
-            "en": "It is hot in summer.",
-            "ja": "夏は暑いです。",
-            "tip": "hot＝暑い、summer＝夏。",
-            "ans": "hot",
-            "opts": [
-              "cold",
-              "cool"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_15.mp3"
-          },
-          {
-            "id": "g4_1_16",
-            "t": "text",
-            "en": "My class starts at eight thirty.",
-            "ja": "授業は8時半に始まります。",
-            "tip": "eight thirty＝8時半。",
-            "ans": "eight thirty",
-            "opts": [
-              "eight",
-              "nine thirty"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g4_1_16.mp3"
-          }
-        ],
         "0": [
           {
             "id": "g4_0_0",
@@ -1459,6 +1219,246 @@
             ],
             "q": null,
             "voice": "audio/voice/lis/g4_0_16.mp3"
+          }
+        ],
+        "1": [
+          {
+            "id": "g4_1_0",
+            "t": "text",
+            "en": "I play tennis after school.",
+            "ja": "放課後テニスをします。",
+            "tip": "tennis＝テニス",
+            "ans": "tennis",
+            "opts": [
+              "soccer",
+              "basketball"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_0.mp3"
+          },
+          {
+            "id": "g4_1_1",
+            "t": "text",
+            "en": "She goes to school by bus.",
+            "ja": "彼女はバスで学校へ行きます。",
+            "tip": "by bus＝バスで",
+            "ans": "by bus",
+            "opts": [
+              "by train",
+              "by bike"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_1.mp3"
+          },
+          {
+            "id": "g4_1_2",
+            "t": "text",
+            "en": "I get up at seven.",
+            "ja": "7時に起きます。",
+            "tip": "seven＝7",
+            "ans": "seven",
+            "opts": [
+              "eleven",
+              "nine"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_2.mp3"
+          },
+          {
+            "id": "g4_1_3",
+            "t": "text",
+            "en": "My brother likes math.",
+            "ja": "兄[弟]は数学が好き。",
+            "tip": "math＝数学",
+            "ans": "math",
+            "opts": [
+              "music",
+              "science"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_3.mp3"
+          },
+          {
+            "id": "g4_1_4",
+            "t": "text",
+            "en": "We have lunch at noon.",
+            "ja": "正午に昼食をとります。",
+            "tip": "lunch＝昼食",
+            "ans": "lunch",
+            "opts": [
+              "breakfast",
+              "dinner"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_4.mp3"
+          },
+          {
+            "id": "g4_1_5",
+            "t": "text",
+            "en": "My uncle is a doctor.",
+            "ja": "おじは医者です。",
+            "tip": "doctor＝医者",
+            "ans": "doctor",
+            "opts": [
+              "teacher",
+              "driver"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_5.mp3"
+          },
+          {
+            "id": "g4_1_6",
+            "t": "text",
+            "en": "I want some water.",
+            "ja": "水がほしいです。",
+            "tip": "water＝水",
+            "ans": "water",
+            "opts": [
+              "juice",
+              "milk"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_6.mp3"
+          },
+          {
+            "id": "g4_1_7",
+            "t": "text",
+            "en": "Let's meet on Monday.",
+            "ja": "月曜日に会いましょう。",
+            "tip": "Monday＝月曜日",
+            "ans": "Monday",
+            "opts": [
+              "Sunday",
+              "Friday"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_7.mp3"
+          },
+          {
+            "id": "g4_1_8",
+            "t": "text",
+            "en": "The book is on the desk.",
+            "ja": "本は机の上にあります。",
+            "tip": "on the desk＝机の上",
+            "ans": "on the desk",
+            "opts": [
+              "under the bed",
+              "by the door"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_8.mp3"
+          },
+          {
+            "id": "g4_1_9",
+            "t": "text",
+            "en": "She has two dogs.",
+            "ja": "犬を2匹飼っています。",
+            "tip": "two＝2",
+            "ans": "two",
+            "opts": [
+              "three",
+              "ten"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_9.mp3"
+          },
+          {
+            "id": "g4_1_10",
+            "t": "text",
+            "en": "It is rainy today.",
+            "ja": "今日は雨です。",
+            "tip": "rainy＝雨の",
+            "ans": "rainy",
+            "opts": [
+              "sunny",
+              "cloudy"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_10.mp3"
+          },
+          {
+            "id": "g4_1_11",
+            "t": "text",
+            "en": "My birthday is in May.",
+            "ja": "誕生日は5月です。",
+            "tip": "May＝5月",
+            "ans": "May",
+            "opts": [
+              "March",
+              "July"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_11.mp3"
+          },
+          {
+            "id": "g4_1_12",
+            "t": "text",
+            "en": "I usually walk to school.",
+            "ja": "たいてい歩いて学校へ行きます。",
+            "tip": "walk＝歩く。",
+            "ans": "walk",
+            "opts": [
+              "run",
+              "swim"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_12.mp3"
+          },
+          {
+            "id": "g4_1_13",
+            "t": "text",
+            "en": "She likes music very much.",
+            "ja": "彼女は音楽が大好きです。",
+            "tip": "music＝音楽。",
+            "ans": "music",
+            "opts": [
+              "math",
+              "art"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_13.mp3"
+          },
+          {
+            "id": "g4_1_14",
+            "t": "text",
+            "en": "We play in the park on Sunday.",
+            "ja": "日曜は公園で遊びます。",
+            "tip": "in the park＝公園で。",
+            "ans": "in the park",
+            "opts": [
+              "at home",
+              "at school"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_14.mp3"
+          },
+          {
+            "id": "g4_1_15",
+            "t": "text",
+            "en": "It is hot in summer.",
+            "ja": "夏は暑いです。",
+            "tip": "hot＝暑い、summer＝夏。",
+            "ans": "hot",
+            "opts": [
+              "cold",
+              "cool"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_15.mp3"
+          },
+          {
+            "id": "g4_1_16",
+            "t": "text",
+            "en": "My class starts at eight thirty.",
+            "ja": "授業は8時半に始まります。",
+            "tip": "eight thirty＝8時半。",
+            "ans": "eight thirty",
+            "opts": [
+              "eight",
+              "nine thirty"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g4_1_16.mp3"
           }
         ],
         "2": [
@@ -1917,246 +1917,6 @@
     },
     "g3": {
       "levels": {
-        "1": [
-          {
-            "id": "g3_1_0",
-            "t": "text",
-            "en": "I went to Kyoto last summer.",
-            "ja": "去年の夏、京都へ行きました。",
-            "tip": "went＝go の過去形。場所Kyotoを聞きとる。",
-            "ans": "Kyoto",
-            "opts": [
-              "Tokyo",
-              "Osaka"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_0.mp3"
-          },
-          {
-            "id": "g3_1_1",
-            "t": "text",
-            "en": "She is taller than her sister.",
-            "ja": "姉[妹]より背が高い。",
-            "tip": "taller than＝〜より背が高い(比較級)。",
-            "ans": "taller",
-            "opts": [
-              "shorter",
-              "older"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_1.mp3"
-          },
-          {
-            "id": "g3_1_2",
-            "t": "text",
-            "en": "I will visit my grandmother next week.",
-            "ja": "来週おばあちゃんを訪ねます。",
-            "tip": "next week＝来週(未来)。",
-            "ans": "next week",
-            "opts": [
-              "last week",
-              "yesterday"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_2.mp3"
-          },
-          {
-            "id": "g3_1_3",
-            "t": "text",
-            "en": "He has lived here for ten years.",
-            "ja": "10年間ここに住んでいます。",
-            "tip": "for ten years＝10年間(現在完了)。",
-            "ans": "ten years",
-            "opts": [
-              "five years",
-              "two months"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_3.mp3"
-          },
-          {
-            "id": "g3_1_4",
-            "t": "text",
-            "en": "This movie is more interesting than that one.",
-            "ja": "この映画はあれよりおもしろい。",
-            "tip": "more interesting＝よりおもしろい(長い語の比較級)。",
-            "ans": "more interesting",
-            "opts": [
-              "more difficult",
-              "more expensive"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_4.mp3"
-          },
-          {
-            "id": "g3_1_5",
-            "t": "text",
-            "en": "She wants to be a nurse in the future.",
-            "ja": "将来看護師になりたい。",
-            "tip": "want to be＝〜になりたい。a nurse＝看護師。",
-            "ans": "a nurse",
-            "opts": [
-              "a teacher",
-              "a pilot"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_5.mp3"
-          },
-          {
-            "id": "g3_1_6",
-            "t": "text",
-            "en": "He was born in Canada.",
-            "ja": "カナダで生まれました。",
-            "tip": "was born＝生まれた。場所Canada。",
-            "ans": "Canada",
-            "opts": [
-              "America",
-              "Australia"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_6.mp3"
-          },
-          {
-            "id": "g3_1_7",
-            "t": "text",
-            "en": "I am looking forward to the festival.",
-            "ja": "お祭りを楽しみにしています。",
-            "tip": "look forward to＝〜を楽しみにする。",
-            "ans": "the festival",
-            "opts": [
-              "the exam",
-              "the trip"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_7.mp3"
-          },
-          {
-            "id": "g3_1_8",
-            "t": "text",
-            "en": "She can speak three languages.",
-            "ja": "3つの言語を話せます。",
-            "tip": "three＝3。数を聞きとる。",
-            "ans": "three",
-            "opts": [
-              "two",
-              "four"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_8.mp3"
-          },
-          {
-            "id": "g3_1_9",
-            "t": "text",
-            "en": "My father usually comes home at seven.",
-            "ja": "父はたいてい7時に帰宅します。",
-            "tip": "at seven＝7時に。",
-            "ans": "at seven",
-            "opts": [
-              "at six",
-              "at eight"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_9.mp3"
-          },
-          {
-            "id": "g3_1_10",
-            "t": "text",
-            "en": "He is the tallest in his class.",
-            "ja": "クラスで一番背が高い。",
-            "tip": "tallest＝一番背が高い(最上級)。",
-            "ans": "tallest",
-            "opts": [
-              "fastest",
-              "oldest"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_10.mp3"
-          },
-          {
-            "id": "g3_1_11",
-            "t": "text",
-            "en": "I have been to America twice.",
-            "ja": "アメリカに2回行ったことがある。",
-            "tip": "have been to＝行ったことがある。twice＝2回。",
-            "ans": "twice",
-            "opts": [
-              "once",
-              "never"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_11.mp3"
-          },
-          {
-            "id": "g3_1_12",
-            "t": "text",
-            "en": "She was cooking when I came home.",
-            "ja": "帰宅したとき料理していた。",
-            "tip": "was cooking＝料理していた(過去進行)。",
-            "ans": "cooking",
-            "opts": [
-              "sleeping",
-              "reading"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_12.mp3"
-          },
-          {
-            "id": "g3_1_13",
-            "t": "text",
-            "en": "This book is more difficult than that one.",
-            "ja": "この本はあれより難しい。",
-            "tip": "more difficult＝より難しい(比較級)。",
-            "ans": "more difficult",
-            "opts": [
-              "more fun",
-              "cheaper"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_13.mp3"
-          },
-          {
-            "id": "g3_1_14",
-            "t": "text",
-            "en": "If it rains, we will stay home.",
-            "ja": "雨なら家にいます。",
-            "tip": "if＝もし〜なら。stay home＝家にいる。",
-            "ans": "stay home",
-            "opts": [
-              "go out",
-              "play soccer"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_14.mp3"
-          },
-          {
-            "id": "g3_1_15",
-            "t": "text",
-            "en": "I have known him for ten years.",
-            "ja": "彼を10年間知っている。",
-            "tip": "for ten years＝10年間(現在完了)。",
-            "ans": "ten years",
-            "opts": [
-              "two years",
-              "one month"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_15.mp3"
-          },
-          {
-            "id": "g3_1_16",
-            "t": "text",
-            "en": "The movie was more exciting than the book.",
-            "ja": "映画は本よりわくわくした。",
-            "tip": "more exciting＝よりわくわく。",
-            "ans": "the movie",
-            "opts": [
-              "the book",
-              "both"
-            ],
-            "q": null,
-            "voice": "audio/voice/lis/g3_1_16.mp3"
-          }
-        ],
         "0": [
           {
             "id": "g3_0_0",
@@ -2170,7 +1930,7 @@
               "🏝️"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_0.mp3"
+            "voice": "audio/voice/lis/g3_1_0.mp3"
           },
           {
             "id": "g3_0_1",
@@ -2184,7 +1944,7 @@
               "👦"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_1.mp3"
+            "voice": "audio/voice/lis/g3_1_1.mp3"
           },
           {
             "id": "g3_0_2",
@@ -2198,7 +1958,7 @@
               "👨‍🏫"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_2.mp3"
+            "voice": "audio/voice/lis/g3_1_2.mp3"
           },
           {
             "id": "g3_0_3",
@@ -2212,7 +1972,7 @@
               "❄️"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_3.mp3"
+            "voice": "audio/voice/lis/g3_1_3.mp3"
           },
           {
             "id": "g3_0_4",
@@ -2226,7 +1986,7 @@
               "🚆"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_4.mp3"
+            "voice": "audio/voice/lis/g3_1_4.mp3"
           },
           {
             "id": "g3_0_5",
@@ -2240,7 +2000,7 @@
               "🎮"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_5.mp3"
+            "voice": "audio/voice/lis/g3_1_5.mp3"
           },
           {
             "id": "g3_0_6",
@@ -2254,7 +2014,7 @@
               "🏪"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_6.mp3"
+            "voice": "audio/voice/lis/g3_1_6.mp3"
           },
           {
             "id": "g3_0_7",
@@ -2268,7 +2028,7 @@
               "🏖️"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_7.mp3"
+            "voice": "audio/voice/lis/g3_1_7.mp3"
           },
           {
             "id": "g3_0_8",
@@ -2282,7 +2042,7 @@
               "💻"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_8.mp3"
+            "voice": "audio/voice/lis/g3_1_8.mp3"
           },
           {
             "id": "g3_0_9",
@@ -2296,7 +2056,7 @@
               "🚌"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_9.mp3"
+            "voice": "audio/voice/lis/g3_1_9.mp3"
           },
           {
             "id": "g3_0_10",
@@ -2310,7 +2070,7 @@
               "🏀"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_10.mp3"
+            "voice": "audio/voice/lis/g3_1_10.mp3"
           },
           {
             "id": "g3_0_11",
@@ -2324,7 +2084,7 @@
               "🎈"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_11.mp3"
+            "voice": "audio/voice/lis/g3_1_11.mp3"
           },
           {
             "id": "g3_0_12",
@@ -2338,7 +2098,7 @@
               "❄️"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_12.mp3"
+            "voice": "audio/voice/lis/g3_1_12.mp3"
           },
           {
             "id": "g3_0_13",
@@ -2352,7 +2112,7 @@
               "👩‍⚕️"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_13.mp3"
+            "voice": "audio/voice/lis/g3_1_13.mp3"
           },
           {
             "id": "g3_0_14",
@@ -2366,7 +2126,7 @@
               "🏀"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_14.mp3"
+            "voice": "audio/voice/lis/g3_1_14.mp3"
           },
           {
             "id": "g3_0_15",
@@ -2380,7 +2140,7 @@
               "🚗"
             ],
             "q": null,
-            "voice": "audio/voice/lis/g3_0_15.mp3"
+            "voice": "audio/voice/lis/g3_1_15.mp3"
           },
           {
             "id": "g3_0_16",
@@ -2392,6 +2152,246 @@
             "opts": [
               "🍞",
               "🍕"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_1_16.mp3"
+          }
+        ],
+        "1": [
+          {
+            "id": "g3_1_0",
+            "t": "text",
+            "en": "I went to Kyoto last summer.",
+            "ja": "去年の夏、京都へ行きました。",
+            "tip": "went＝go の過去形。場所Kyotoを聞きとる。",
+            "ans": "Kyoto",
+            "opts": [
+              "Tokyo",
+              "Osaka"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_0.mp3"
+          },
+          {
+            "id": "g3_1_1",
+            "t": "text",
+            "en": "She is taller than her sister.",
+            "ja": "姉[妹]より背が高い。",
+            "tip": "taller than＝〜より背が高い(比較級)。",
+            "ans": "taller",
+            "opts": [
+              "shorter",
+              "older"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_1.mp3"
+          },
+          {
+            "id": "g3_1_2",
+            "t": "text",
+            "en": "I will visit my grandmother next week.",
+            "ja": "来週おばあちゃんを訪ねます。",
+            "tip": "next week＝来週(未来)。",
+            "ans": "next week",
+            "opts": [
+              "last week",
+              "yesterday"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_2.mp3"
+          },
+          {
+            "id": "g3_1_3",
+            "t": "text",
+            "en": "He has lived here for ten years.",
+            "ja": "10年間ここに住んでいます。",
+            "tip": "for ten years＝10年間(現在完了)。",
+            "ans": "ten years",
+            "opts": [
+              "five years",
+              "two months"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_3.mp3"
+          },
+          {
+            "id": "g3_1_4",
+            "t": "text",
+            "en": "This movie is more interesting than that one.",
+            "ja": "この映画はあれよりおもしろい。",
+            "tip": "more interesting＝よりおもしろい(長い語の比較級)。",
+            "ans": "more interesting",
+            "opts": [
+              "more difficult",
+              "more expensive"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_4.mp3"
+          },
+          {
+            "id": "g3_1_5",
+            "t": "text",
+            "en": "She wants to be a nurse in the future.",
+            "ja": "将来看護師になりたい。",
+            "tip": "want to be＝〜になりたい。a nurse＝看護師。",
+            "ans": "a nurse",
+            "opts": [
+              "a teacher",
+              "a pilot"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_5.mp3"
+          },
+          {
+            "id": "g3_1_6",
+            "t": "text",
+            "en": "He was born in Canada.",
+            "ja": "カナダで生まれました。",
+            "tip": "was born＝生まれた。場所Canada。",
+            "ans": "Canada",
+            "opts": [
+              "America",
+              "Australia"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_6.mp3"
+          },
+          {
+            "id": "g3_1_7",
+            "t": "text",
+            "en": "I am looking forward to the festival.",
+            "ja": "お祭りを楽しみにしています。",
+            "tip": "look forward to＝〜を楽しみにする。",
+            "ans": "the festival",
+            "opts": [
+              "the exam",
+              "the trip"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_7.mp3"
+          },
+          {
+            "id": "g3_1_8",
+            "t": "text",
+            "en": "She can speak three languages.",
+            "ja": "3つの言語を話せます。",
+            "tip": "three＝3。数を聞きとる。",
+            "ans": "three",
+            "opts": [
+              "two",
+              "four"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_8.mp3"
+          },
+          {
+            "id": "g3_1_9",
+            "t": "text",
+            "en": "My father usually comes home at seven.",
+            "ja": "父はたいてい7時に帰宅します。",
+            "tip": "at seven＝7時に。",
+            "ans": "at seven",
+            "opts": [
+              "at six",
+              "at eight"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_9.mp3"
+          },
+          {
+            "id": "g3_1_10",
+            "t": "text",
+            "en": "He is the tallest in his class.",
+            "ja": "クラスで一番背が高い。",
+            "tip": "tallest＝一番背が高い(最上級)。",
+            "ans": "tallest",
+            "opts": [
+              "fastest",
+              "oldest"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_10.mp3"
+          },
+          {
+            "id": "g3_1_11",
+            "t": "text",
+            "en": "I have been to America twice.",
+            "ja": "アメリカに2回行ったことがある。",
+            "tip": "have been to＝行ったことがある。twice＝2回。",
+            "ans": "twice",
+            "opts": [
+              "once",
+              "never"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_11.mp3"
+          },
+          {
+            "id": "g3_1_12",
+            "t": "text",
+            "en": "She was cooking when I came home.",
+            "ja": "帰宅したとき料理していた。",
+            "tip": "was cooking＝料理していた(過去進行)。",
+            "ans": "cooking",
+            "opts": [
+              "sleeping",
+              "reading"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_12.mp3"
+          },
+          {
+            "id": "g3_1_13",
+            "t": "text",
+            "en": "This book is more difficult than that one.",
+            "ja": "この本はあれより難しい。",
+            "tip": "more difficult＝より難しい(比較級)。",
+            "ans": "more difficult",
+            "opts": [
+              "more fun",
+              "cheaper"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_13.mp3"
+          },
+          {
+            "id": "g3_1_14",
+            "t": "text",
+            "en": "If it rains, we will stay home.",
+            "ja": "雨なら家にいます。",
+            "tip": "if＝もし〜なら。stay home＝家にいる。",
+            "ans": "stay home",
+            "opts": [
+              "go out",
+              "play soccer"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_14.mp3"
+          },
+          {
+            "id": "g3_1_15",
+            "t": "text",
+            "en": "I have known him for ten years.",
+            "ja": "彼を10年間知っている。",
+            "tip": "for ten years＝10年間(現在完了)。",
+            "ans": "ten years",
+            "opts": [
+              "two years",
+              "one month"
+            ],
+            "q": null,
+            "voice": "audio/voice/lis/g3_0_15.mp3"
+          },
+          {
+            "id": "g3_1_16",
+            "t": "text",
+            "en": "The movie was more exciting than the book.",
+            "ja": "映画は本よりわくわくした。",
+            "tip": "more exciting＝よりわくわく。",
+            "ans": "the movie",
+            "opts": [
+              "the book",
+              "both"
             ],
             "q": null,
             "voice": "audio/voice/lis/g3_0_16.mp3"

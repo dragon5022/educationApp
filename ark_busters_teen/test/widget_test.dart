@@ -1,30 +1,33 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
+import 'dart:convert';
+import 'dart:io';
 
-import 'package:flutter/material.dart';
+import 'package:ark_busters_teen/data/stage_pack.dart';
+import 'package:ark_busters_teen/screens/stage/result_view.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:ark_busters_teen/main.dart';
-
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  test('all 21 packs parse and every answer is among its choices', () {
+    var total = 0;
+    for (final id in stagePackIds) {
+      final j = jsonDecode(File('assets/data/$id.json').readAsStringSync());
+      final pack = StagePack.fromJson(j as Map<String, dynamic>);
+      expect(pack.levels, isNotEmpty, reason: id);
+      for (final list in pack.levels.values) {
+        for (final p in list) {
+          expect(p.choices, contains(p.a), reason: '$id: ${p.q}');
+        }
+      }
+      total += pack.questionCount;
+    }
+    expect(total, 1210); // live site, 2026-10
+  });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  test('rank table matches the web', () {
+    expect(rankFor(1800).$1, 'S');
+    expect(rankFor(1799).$1, 'A');
+    expect(rankFor(1400).$1, 'A');
+    expect(rankFor(900).$1, 'B');
+    expect(rankFor(500).$1, 'C');
+    expect(rankFor(499).$1, 'D');
   });
 }

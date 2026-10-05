@@ -1,0 +1,7 @@
+node_modules/
+# Never commit credentials or files that contain passwords.
+*service-account*.json
+*-firebase-adminsdk-*.json
+result*.csv
+students*.csv
+!students.sample.csv
