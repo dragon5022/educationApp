@@ -66,5 +66,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>トークバスターで えいごを はなす れんしゅうに マイクを つかいます。</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>はなした えいごが ただしいか チェックするために つかいます。</string>
 </dict>
 </plist>

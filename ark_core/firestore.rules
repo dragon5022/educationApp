@@ -1,0 +1,39 @@
+rules_version = '2';
+
+// ARK BUSTERS — each signed-in student can read/write only their own data.
+//
+//   users/{uid}                 (reserved; not written by the apps in v1)
+//   users/{uid}/apps/{appId}    { schema: 1, entries: { key: { v, t } }, updatedAt }
+//
+// Accounts are created by the school with tool/students (Admin SDK, which
+// bypasses these rules). Clients can never list other users or delete data.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+
+      match /apps/{appId} {
+        allow get: if isOwner(uid);
+        allow list: if isOwner(uid);
+        allow create, update: if isOwner(uid)
+          && appId.matches('^[a-z0-9_-]{1,32}$')
+          && request.resource.data.keys().hasOnly(['schema', 'entries', 'updatedAt'])
+          && request.resource.data.entries is map
+          && request.resource.data.entries.size() <= 2000
+          && request.resource.data.updatedAt == request.time;
+        allow delete: if false;
+      }
+    }
+
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

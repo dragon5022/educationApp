@@ -1,0 +1,442 @@
+{
+ "version": 1,
+ "id": "e-bunpou",
+ "subject": "english",
+ "title": "文法の要塞",
+ "label": "文",
+ "timeLimitMs": 5000,
+ "maxQuestions": 15,
+ "images": {
+  "art": "e-bunpou",
+  "boss": "e-boss",
+  "chara": "uta",
+  "win": "win",
+  "lose": "lose2"
+ },
+ "levels": {
+  "Lv1": [
+   {
+    "q": "I ( ) soccer yesterday.",
+    "a": "played",
+    "choices": [
+     "playing",
+     "played",
+     "plays",
+     "play"
+    ],
+    "e": "yesterday→過去形 played。"
+   },
+   {
+    "q": "She ( ) to school every day.",
+    "a": "goes",
+    "choices": [
+     "goes",
+     "go",
+     "going",
+     "went"
+    ],
+    "e": "三単現＋習慣→goes。"
+   },
+   {
+    "q": "They ( ) busy now.",
+    "a": "are",
+    "choices": [
+     "am",
+     "are",
+     "is",
+     "be"
+    ],
+    "e": "主語they→are。"
+   },
+   {
+    "q": "「〜できる」を表す助動詞は？",
+    "a": "can",
+    "choices": [
+     "can",
+     "will",
+     "must",
+     "may"
+    ],
+    "e": "can＝できる（能力）。"
+   },
+   {
+    "q": "「〜しなければならない」は？",
+    "a": "must",
+    "choices": [
+     "must",
+     "may",
+     "could",
+     "can"
+    ],
+    "e": "must＝義務。"
+   },
+   {
+    "q": "「〜してもよい」は？",
+    "a": "may",
+    "choices": [
+     "should",
+     "must",
+     "can't",
+     "may"
+    ],
+    "e": "may＝許可。"
+   },
+   {
+    "q": "「〜だろう/するつもり」は？",
+    "a": "will",
+    "choices": [
+     "will",
+     "can",
+     "must",
+     "may"
+    ],
+    "e": "will＝未来・意志。"
+   }
+  ],
+  "Lv2": [
+   {
+    "q": "I ( ) TV now.「今見ている」",
+    "a": "am watching",
+    "choices": [
+     "watch",
+     "watches",
+     "am watching",
+     "watched"
+    ],
+    "e": "now＋進行→am watching。"
+   },
+   {
+    "q": "He ( ) a letter now.",
+    "a": "is writing",
+    "choices": [
+     "wrote",
+     "write",
+     "writes",
+     "is writing"
+    ],
+    "e": "現在進行 is writing。"
+   },
+   {
+    "q": "We ( ) tennis tomorrow.「明日する」",
+    "a": "will play",
+    "choices": [
+     "played",
+     "play",
+     "will play",
+     "playing"
+    ],
+    "e": "未来→will play。"
+   },
+   {
+    "q": "She ( ) to Tokyo last week.",
+    "a": "went",
+    "choices": [
+     "go",
+     "goes",
+     "went",
+     "gone"
+    ],
+    "e": "last week→過去 went。"
+   },
+   {
+    "q": "I ( ) my homework already.「もう終えた」",
+    "a": "have finished",
+    "choices": [
+     "have finished",
+     "finished",
+     "finishing",
+     "finish"
+    ],
+    "e": "already→現在完了 have finished。"
+   },
+   {
+    "q": "It ( ) now.「雨が降っている」",
+    "a": "is raining",
+    "choices": [
+     "rained",
+     "rains",
+     "rain",
+     "is raining"
+    ],
+    "e": "現在進行。"
+   },
+   {
+    "q": "Did you ( ) the movie?",
+    "a": "watch",
+    "choices": [
+     "watching",
+     "watch",
+     "watches",
+     "watched"
+    ],
+    "e": "Did＋動詞の原形 watch。"
+   },
+   {
+    "q": "I ( ) not happy then.「その時」",
+    "a": "was",
+    "choices": [
+     "were",
+     "am",
+     "was",
+     "is"
+    ],
+    "e": "I＋過去→was。"
+   },
+   {
+    "q": "I enjoy ( ) music.",
+    "a": "listening",
+    "choices": [
+     "listen",
+     "listened",
+     "to listen",
+     "listening"
+    ],
+    "e": "enjoy＋動名詞(-ing)。"
+   },
+   {
+    "q": "She finished ( ) lunch.",
+    "a": "eating",
+    "choices": [
+     "eating",
+     "ate",
+     "eat",
+     "to eat"
+    ],
+    "e": "finish＋動名詞。"
+   },
+   {
+    "q": "He wants ( ) a doctor.",
+    "a": "to be",
+    "choices": [
+     "to be",
+     "be",
+     "being",
+     "been"
+    ],
+    "e": "want＋to不定詞。"
+   },
+   {
+    "q": "I hope ( ) you again.",
+    "a": "to see",
+    "choices": [
+     "seeing",
+     "saw",
+     "to see",
+     "see"
+    ],
+    "e": "hope＋to不定詞。"
+   },
+   {
+    "q": "Stop ( )!「話すのをやめて」",
+    "a": "talking",
+    "choices": [
+     "talked",
+     "talk",
+     "to talk",
+     "talking"
+    ],
+    "e": "stop＋動名詞＝やめる。"
+   },
+   {
+    "q": "次のうち後ろが必ず動名詞になる動詞は？",
+    "a": "enjoy",
+    "choices": [
+     "hope",
+     "enjoy",
+     "decide",
+     "want"
+    ],
+    "e": "enjoy/finish/stopは動名詞。"
+   },
+   {
+    "q": "次のうち後ろが必ずto不定詞になる動詞は？",
+    "a": "want",
+    "choices": [
+     "finish",
+     "stop",
+     "enjoy",
+     "want"
+    ],
+    "e": "want/hope/decideはto不定詞。"
+   },
+   {
+    "q": "I like ( ) books.（どちらも可だが-ingで）",
+    "a": "reading",
+    "choices": [
+     "reading",
+     "read",
+     "reads",
+     "to reads"
+    ],
+    "e": "like＋動名詞も可。"
+   },
+   {
+    "q": "She is good at ( ).「歌が得意」",
+    "a": "singing",
+    "choices": [
+     "sang",
+     "to sing",
+     "singing",
+     "sing"
+    ],
+    "e": "前置詞at＋動名詞。"
+   },
+   {
+    "q": "Thank you for ( ) me.",
+    "a": "helping",
+    "choices": [
+     "helped",
+     "helping",
+     "to help",
+     "help"
+    ],
+    "e": "前置詞for＋動名詞。"
+   },
+   {
+    "q": "I decided ( ) English.",
+    "a": "to study",
+    "choices": [
+     "studying",
+     "studied",
+     "study",
+     "to study"
+    ],
+    "e": "decide＋to不定詞。"
+   },
+   {
+    "q": "「〜すべきだ」は？",
+    "a": "should",
+    "choices": [
+     "must",
+     "should",
+     "can",
+     "may"
+    ],
+    "e": "should＝助言・すべき。"
+   },
+   {
+    "q": "can の意味は？",
+    "a": "できる",
+    "choices": [
+     "かもしれない",
+     "だろう",
+     "できる",
+     "しなければ"
+    ],
+    "e": "can＝できる。"
+   },
+   {
+    "q": "must の意味は？",
+    "a": "しなければならない",
+    "choices": [
+     "できる",
+     "しなければならない",
+     "だろう",
+     "してもよい"
+    ],
+    "e": "must＝〜ねばならない。"
+   },
+   {
+    "q": "may の意味は？",
+    "a": "かもしれない/してよい",
+    "choices": [
+     "しない",
+     "すべき",
+     "できる",
+     "かもしれない/してよい"
+    ],
+    "e": "may＝許可・推量。"
+   },
+   {
+    "q": "I ( ) swim fast.「速く泳げる」",
+    "a": "can",
+    "choices": [
+     "should",
+     "may",
+     "can",
+     "must"
+    ],
+    "e": "能力→can。"
+   },
+   {
+    "q": "You ( ) study hard.「すべき」",
+    "a": "should",
+    "choices": [
+     "can",
+     "should",
+     "may",
+     "will"
+    ],
+    "e": "助言→should。"
+   },
+   {
+    "q": "( ) I open the window?「開けてもいい？」",
+    "a": "May",
+    "choices": [
+     "May",
+     "Should",
+     "Will",
+     "Must"
+    ],
+    "e": "許可を求める May I 〜?。"
+   }
+  ],
+  "Lv3": [
+   {
+    "q": "He ( ) here since 2020.",
+    "a": "has lived",
+    "choices": [
+     "living",
+     "has lived",
+     "lived",
+     "lives"
+    ],
+    "e": "since→現在完了 has lived。"
+   },
+   {
+    "q": "Don't forget ( ) the door.「閉めるのを」",
+    "a": "to close",
+    "choices": [
+     "closed",
+     "closing",
+     "to close",
+     "close"
+    ],
+    "e": "forget to＝これからやることを忘れるな。"
+   },
+   {
+    "q": "It started ( ).「降り始めた」",
+    "a": "raining",
+    "choices": [
+     "rained",
+     "rain",
+     "to rained",
+     "raining"
+    ],
+    "e": "start＋動名詞/to不定詞。"
+   },
+   {
+    "q": "次のうち動名詞をとらないのは？",
+    "a": "wish",
+    "choices": [
+     "enjoy",
+     "finish",
+     "stop",
+     "wish"
+    ],
+    "e": "wishはto不定詞、他は動名詞。"
+   },
+   {
+    "q": "「〜できた（過去）」は？",
+    "a": "could",
+    "choices": [
+     "can",
+     "could",
+     "will",
+     "must"
+    ],
+    "e": "canの過去→could。"
+   }
+  ]
+ }
+}

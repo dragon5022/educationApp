@@ -1,122 +1,103 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
 
-void main() {
-  runApp(const MyApp());
+import 'package:ark_core/content.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter/services.dart';
+
+import 'core/theme.dart';
+import 'data/stage_pack.dart';
+import 'screens/stage/stage_screen.dart';
+import 'screens/top_screen.dart';
+import 'services/audio_service.dart';
+import 'services/teen_store.dart';
+import 'widgets/common.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Screenshot-test builds only: --dart-define=TEEN_TEST_SLOWMO=8 slows
+  // animations (not the game clock) so short effects can be captured.
+  const slowmo = int.fromEnvironment('TEEN_TEST_SLOWMO', defaultValue: 1);
+  if (slowmo > 1) timeDilation = slowmo.toDouble();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+  // All question data comes from JSON packs via ArkContent: the bundled
+  // copy, or a newer one downloaded from the school's Google Sheet.
+  await ArkContent.instance.configure(
+    appId: 'teen',
+    bundledPacks: bundledStagePacks,
+    source: await ArkContent.sourceFromAsset('assets/data/content_source.json'),
+    appBuild: contentFormatBuild,
+    // A downloaded pack is only used if the game can read it.
+    validators: {
+      for (final id in stagePackIds)
+        id: (j) => StagePack.fromJson(jsonDecode(j) as Map<String, dynamic>).levels.isNotEmpty,
+    },
+  );
+  await AudioService.instance.init();
+  // Purchases (offline-cached unlock) and optional login / cloud progress.
+  await TeenStore.init();
+  runApp(const ArkBustersTeenApp());
+  // Newer questions from the sheet, if online; used from the next stage.
+  unawaited(ArkContent.instance.checkForUpdates());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ArkBustersTeenApp extends StatefulWidget {
+  const ArkBustersTeenApp({super.key});
 
-  // This widget is the root of your application.
+  @override
+  State<ArkBustersTeenApp> createState() => _ArkBustersTeenAppState();
+}
+
+class _ArkBustersTeenAppState extends State<ArkBustersTeenApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.hidden) {
+      AudioService.instance.pauseBgm();
+    } else if (state == AppLifecycleState.resumed) {
+      AudioService.instance.resumeBgm();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      title: 'ARK BUSTERS TEEN',
+      debugShowCheckedModeBanner: false,
+      theme: buildTeenTheme(),
+      // Routes mirror the web URLs: / (ark-top) and /<page> (e.g. /e-bunpou).
+      onGenerateRoute: (settings) {
+        final name = (settings.name ?? '/').replaceAll(RegExp(r'^/|\.html$'), '');
+        if (stagePackIds.contains(name)) return stageRoute(name, settings);
+        return MaterialPageRoute<void>(settings: settings, builder: (_) => const TopScreen());
+      },
+      builder: (context, child) {
+        final pad = MediaQuery.paddingOf(context);
+        return Listener(
+          // web: BGM starts on the first click anywhere (autoplay policy).
+          onPointerDown: (_) => AudioService.instance.startBgm(),
+          child: Stack(
+            children: [
+              ?child,
+              // `.bgm-btn` is position:fixed above every page.
+              Positioned(top: pad.top + 10, right: 10, child: const BgmButton()),
+            ],
+          ),
+        );
+      },
     );
   }
 }

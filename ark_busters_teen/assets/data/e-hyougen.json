@@ -1,0 +1,132 @@
+{
+ "version": 1,
+ "id": "e-hyougen",
+ "subject": "english",
+ "title": "表現の司令室",
+ "label": "表",
+ "timeLimitMs": 5000,
+ "maxQuestions": 15,
+ "images": {
+  "art": "e-hyougen",
+  "boss": "e-boss",
+  "chara": "uta",
+  "win": "win",
+  "lose": "lose2"
+ },
+ "levels": {
+  "Lv1": [
+   {
+    "q": "( ) you like dogs?",
+    "a": "Do",
+    "choices": [
+     "Does",
+     "Do",
+     "Are",
+     "Is"
+    ],
+    "e": "一般動詞like→Do。"
+   },
+   {
+    "q": "( ) she a teacher?",
+    "a": "Is",
+    "choices": [
+     "Do",
+     "Does",
+     "Is",
+     "Are"
+    ],
+    "e": "be動詞の文→Is。"
+   },
+   {
+    "q": "( ) he play tennis?",
+    "a": "Does",
+    "choices": [
+     "Is",
+     "Do",
+     "Are",
+     "Does"
+    ],
+    "e": "三単現の一般動詞→Does。"
+   },
+   {
+    "q": "( ) they students?",
+    "a": "Are",
+    "choices": [
+     "Are",
+     "Is",
+     "Does",
+     "Do"
+    ],
+    "e": "be動詞＋複数→Are。"
+   },
+   {
+    "q": "I ( ) not know.",
+    "a": "do",
+    "choices": [
+     "are",
+     "do",
+     "am",
+     "is"
+    ],
+    "e": "一般動詞の否定→do not。"
+   },
+   {
+    "q": "She ( ) not happy.",
+    "a": "is",
+    "choices": [
+     "do",
+     "does",
+     "is",
+     "are"
+    ],
+    "e": "be動詞の否定→is not。"
+   },
+   {
+    "q": "We ( ) baseball players.",
+    "a": "are",
+    "choices": [
+     "does",
+     "do",
+     "is",
+     "are"
+    ],
+    "e": "be動詞→are。"
+   }
+  ],
+  "Lv2": [
+   {
+    "q": "( ) you a student? - Yes, I am.",
+    "a": "Are",
+    "choices": [
+     "Is",
+     "Do",
+     "Are",
+     "Does"
+    ],
+    "e": "amで答える→Are you。"
+   },
+   {
+    "q": "( ) he like it? - Yes, he does.",
+    "a": "Does",
+    "choices": [
+     "Are",
+     "Do",
+     "Does",
+     "Is"
+    ],
+    "e": "doesで答える→Does he。"
+   },
+   {
+    "q": "( ) it rain a lot here?",
+    "a": "Does",
+    "choices": [
+     "Are",
+     "Does",
+     "Is",
+     "Do"
+    ],
+    "e": "三単現it＋一般動詞→Does。"
+   }
+  ]
+ }
+}

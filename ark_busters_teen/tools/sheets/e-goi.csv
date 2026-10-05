@@ -1,0 +1,53 @@
+﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e
+levels.Lv1,「彼の犬」を表すのは？ ( ) dog,his,his,him,他,he,「彼の〜」は所有格 his。
+levels.Lv1,「私の本」を表すのは？ ( ) book,my,I,mine,me,my,「私の〜」は所有格 my。
+levels.Lv1,「彼女のかばん」を表すのは？ ( ) bag,her,hers,she,him,her,「彼女の〜」は所有格 her。
+levels.Lv1,「私たちの学校」を表すのは？ ( ) school,our,us,our,we,ours,「私たちの〜」は our。
+levels.Lv1,「月曜日に」は？ ( ) Monday,on,at,in,on,to,曜日→on。
+levels.Lv1,「7時に」は？ ( ) seven,at,to,in,on,at,時刻→at。
+levels.Lv1,「夏に」は？ ( ) summer,in,to,in,at,on,季節→in。
+levels.Lv1,go の過去形は？,went,going,gone,went,goed,go-went-gone（不規則）。
+levels.Lv1,come の過去形は？,came,comed,came,come,coming,come-came-come。
+levels.Lv1,see の過去形は？,saw,seen,seeing,saw,seed,see-saw-seen。
+levels.Lv1,eat の過去形は？,ate,ate,eaten,eated,eating,eat-ate-eaten。
+levels.Lv1,take の過去形は？,took,took,taking,taken,taked,take-took-taken。
+levels.Lv1,run のing形は？,running,runned,runing,running,ran,語尾を重ねてrunning。
+levels.Lv1,swim のing形は？,swimming,swimming,swum,swam,swiming,mを重ねてswimming。
+levels.Lv1,make のing形は？,making,makeing,made,making,maked,eをとってmaking。
+levels.Lv1,write のing形は？,writing,writeing,wrote,written,writing,eをとってwriting。
+levels.Lv1,study の三単現は？,studies,studyes,studys,studied,studies,y→iesでstudies。
+levels.Lv1,go の三単現は？,goes,goes,goees,going,gos,go→goes。
+levels.Lv1,have の三単現は？,has,haves,having,have,has,have→has（不規則）。
+levels.Lv1,watch の三単現は？,watches,watchs,watches,watch,watched,ch→＋esでwatches。
+levels.Lv1,book の複数形は？,books,books',bookes,book,books,規則：＋s。
+levels.Lv1,box の複数形は？,boxes,boxies,boxes,boxs,box,x→＋esでboxes。
+levels.Lv1,city の複数形は？,cities,citys,cities,cityies,cityes,子音＋y→iesでcities。
+levels.Lv2,I know ( ).「私は彼を知っている」,him,his,him,he,himself,動詞の後ろは目的格 him。
+levels.Lv2,She likes ( ).「彼女は私が好き」,me,me,my,mine,I,動詞の後ろは目的格 me。
+levels.Lv2,This book is ( ).「これは私のもの」,mine,my,me,mine,I,「私のもの」は所有代名詞 mine。
+levels.Lv2,That bag is ( ).「あれは彼女のもの」,hers,she,her,hers,hers',「彼女のもの」は hers。
+levels.Lv2,Look at ( ).「彼らを見て」,them,they,them,theirs,their,目的格 them。
+levels.Lv2,( ) is my friend.「彼は私の友達」,He,Himself,He,Him,His,主語は主格 He。
+levels.Lv2,「〜の前に」は？,before,after,under,over,before,before＝前に。
+levels.Lv2,look ( ) 〜「〜を探す」,for,up,after,at,for,look for＝探す。
+levels.Lv2,look ( ) 〜「〜を見る」,at,up,after,at,for,look at＝見る。
+levels.Lv2,get ( )「起きる」,up,off,up,in,on,get up＝起きる。
+levels.Lv2,「〜のおかげで」 thanks ( ),to,for,at,to,of,thanks to＝おかげで。
+levels.Lv2,be interested ( ) 〜「興味がある」,in,to,in,on,at,be interested in。
+levels.Lv2,listen ( ) music「音楽を聞く」,to,to,for,at,on,listen to＝聞く。
+levels.Lv2,run の過去形は？,ran,ran,running,run,runned,run-ran-run。
+levels.Lv2,write の過去分詞は？,written,written,wrote,writing,writed,write-wrote-written。
+levels.Lv2,speak の過去分詞は？,spoken,speaked,speaking,spoken,spoke,speak-spoke-spoken。
+levels.Lv2,give の過去分詞は？,given,giving,given,gave,gived,give-gave-given。
+levels.Lv2,take の過去分詞は？,taken,taken,taking,taked,took,take-took-taken。
+levels.Lv2,sit のing形は？,sitting,sitting,sit,sat,siting,tを重ねてsitting。
+levels.Lv2,buy の過去形は？,bought,buying,bought,buys,buyed,buy-bought-bought。
+levels.Lv2,child の複数形は？,children,childrens,childes,childs,children,不規則：child-children。
+levels.Lv2,man の複数形は？,men,mans,mens,men,manes,不規則：man-men。
+levels.Lv2,woman の複数形は？,women,womans,women,womens,womanes,不規則：woman-women。
+levels.Lv2,foot の複数形は？,feet,feet,feets,footes,foots,不規則：foot-feet。
+levels.Lv2,tooth の複数形は？,teeth,tooths,teeth,teeths,tooth,不規則：tooth-teeth。
+levels.Lv2,sheep の複数形は？,sheep,sheepes,sheep,shoop,sheeps,単複同形：sheep-sheep。
+levels.Lv2,leaf の複数形は？,leaves,leafes,leafs,leaves,leave,f→vesでleaves。
+levels.Lv3,He hurt ( ).「彼は自分を傷つけた」,himself,him,his,he,himself,主語と同じ→再帰代名詞 himself。
+levels.Lv3,( ) car is new.「あなたの車」,Your,Yourself,Your,Yours,You,所有格 Your。
