@@ -1,6 +1,12 @@
 {
-  "_comment": "Google Sheet that question updates come from. Fill ONE of spreadsheetId (sheet shared as 'anyone with the link can view') or publishedId (File > Share > Publish to web). manifestGid = gid of the manifest tab. Empty = updates off. See ark_core/doc/CONTENT_SHEETS.md",
-  "spreadsheetId": "",
+  "_comment": "Google Sheet for question updates (shared by KIDS and TEEN; each app reads only its own tabs). 'tabs' (pack -> gid) and 'manifestGid' speed up lookups; tabs are also found by name if a gid changes. See ark_core/doc/CONTENT_SHEETS.md",
+  "spreadsheetId": "1hgSc4wg00QQhS-qJt7qhRSU5kuShRwj9UZXt9vjFyOE",
   "publishedId": "",
-  "manifestGid": "0"
+  "manifestGid": "1375340274",
+  "tabs": {
+    "listening": "466790687",
+    "sentence": "1394232315",
+    "talk": "360607230",
+    "vocab": "164231158"
+  }
 }

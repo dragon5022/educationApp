@@ -1,6 +1,29 @@
 {
-  "_comment": "Google Sheet that TEEN question updates come from. Fill ONE of spreadsheetId (sheet shared as 'anyone with the link can view') or publishedId (File > Share > Publish to web). manifestGid = gid of the manifest tab. Empty = updates off. See ark_core/doc/CONTENT_SHEETS.md",
-  "spreadsheetId": "",
+  "_comment": "Google Sheet for question updates (shared by KIDS and TEEN; each app reads only its own tabs). 'tabs' (pack -> gid) and 'manifestGid' speed up lookups; tabs are also found by name if a gid changes. See ark_core/doc/CONTENT_SHEETS.md",
+  "spreadsheetId": "1hgSc4wg00QQhS-qJt7qhRSU5kuShRwj9UZXt9vjFyOE",
   "publishedId": "",
-  "manifestGid": "0"
+  "manifestGid": "1375340274",
+  "tabs": {
+    "e-bunpou": "793475413",
+    "e-choubun": "1955498001",
+    "e-goi": "1922367049",
+    "e-hyougen": "1015039403",
+    "k-bunpou": "1690731413",
+    "k-kanji": "1944537523",
+    "k-koten": "429652053",
+    "k-kotoba": "186109514",
+    "m-kansu": "1517662688",
+    "m-keisu": "1838099228",
+    "m-seifu": "1926380682",
+    "m-shisu": "1372484704",
+    "m-zukei": "284461137",
+    "r-daichi": "1191532731",
+    "r-genso": "1062968424",
+    "r-inochi": "468677796",
+    "r-rikigaku": "1218026518",
+    "s-chizu": "1542453830",
+    "s-jidai": "1172997365",
+    "s-rekishi": "1310401122",
+    "s-seigi": "508015348"
+  }
 }

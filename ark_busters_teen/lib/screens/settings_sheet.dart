@@ -128,20 +128,26 @@ class _SettingsSheetState extends State<_SettingsSheet> {
             const SizedBox(height: 16),
             // School-issued login; hidden until Firebase is configured.
             ArkAccountRow(theme: TeenStore.authTheme, texts: ArkAuthTexts.teen),
-            if (TeenStore.showPurchaseUi) ...[
-              const SizedBox(height: 12),
-              ValueListenableBuilder<bool>(
-                valueListenable: PurchaseService.instance.isUnlocked,
-                builder: (context, unlocked, _) => unlocked
-                    ? const _Note('✓ 全ステージ解放済み')
-                    : _Button(
-                        label: '全ステージを解放する',
-                        color: TeenColors.goldBright,
-                        textColor: TeenColors.navyDeep,
-                        onTap: () => TeenStore.openPaywall(context),
+            // Shown once the sheet's pricing tab enables purchases.
+            ValueListenableBuilder<bool>(
+              valueListenable: TeenStore.monetizationEnabled,
+              builder: (context, _, _) => !TeenStore.showPurchaseUi
+                  ? const SizedBox.shrink()
+                  : Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: ValueListenableBuilder<bool>(
+                        valueListenable: PurchaseService.instance.isUnlocked,
+                        builder: (context, unlocked, _) => unlocked
+                            ? const _Note('✓ 全ステージ解放済み')
+                            : _Button(
+                                label: '全ステージを解放する',
+                                color: TeenColors.goldBright,
+                                textColor: TeenColors.navyDeep,
+                                onTap: () => TeenStore.openPaywall(context),
+                              ),
                       ),
-              ),
-            ],
+                    ),
+            ),
             const SizedBox(height: 12),
             _Button(
               label: _updating ? '確認中…' : '問題データを更新',

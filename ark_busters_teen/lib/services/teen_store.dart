@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ark_core/auth.dart';
+import 'package:ark_core/content.dart';
 import 'package:ark_core/purchase.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +20,33 @@ class TeenStore {
   static const productId = 'com.ark.teen.full_unlock';
   static const entitlement = 'teen_full';
 
-  /// Purchase UI only when on (or in debug builds). Off until the paid
-  /// question sets exist — every bundled question is free today.
-  static const monetizationEnabled = false;
-  static bool get showPurchaseUi => monetizationEnabled || kDebugMode;
+  /// Purchases are controlled from the Google Sheet's `pricing` tab
+  /// (`teen,enabled,true`), so the school can switch them on without an app
+  /// update. Debug builds always show the purchase UI for testing.
+  static final ValueNotifier<bool> monetizationEnabled = ValueNotifier(false);
+  static bool get showPurchaseUi => monetizationEnabled.value || kDebugMode;
 
-  /// What is free without buying. TODO(client): e.g.
-  /// `ContentAccessRules(defaultFreeCount: 1)` = only Lv1 of each stage.
-  static final access = ContentAccess(rules: ContentAccessRules.allFree);
+  /// What is free without buying, while the sheet has no `pricing` rows for
+  /// this app (and as the offline first-launch default).
+  // Lv1 of each stage is free.
+  static const defaultRules = ContentAccessRules(defaultFreeCount: 1);
+
+  static final access = ContentAccess(rules: defaultRules);
+
+  /// Applies the sheet's settings (see `ark_core` pricing_sheet.dart).
+  static void _applyPricing() {
+    final p = ArkContent.instance.pricing.value;
+    if (p == null) {
+      monetizationEnabled.value = false;
+      access.updateRules(defaultRules);
+      return;
+    }
+    monetizationEnabled.value = p['enabled'] == true;
+    // While purchases are off, everything stays playable.
+    access.updateRules(
+      monetizationEnabled.value ? ContentAccessRules.fromJson(p) : ContentAccessRules.allFree,
+    );
+  }
 
   /// TODO(client): 利用規約 / プライバシーポリシー pages.
   static final Uri? termsUrl = null;
@@ -58,6 +78,8 @@ class TeenStore {
   static const _rankOrder = 'DCBAS';
 
   static Future<void> init() async {
+    ArkContent.instance.pricing.addListener(_applyPricing);
+    _applyPricing();
     unawaited(PurchaseService.instance.configure(const PurchaseConfig(
       products: [PurchaseProduct(id: productId, entitlements: {entitlement})],
       requiredEntitlement: entitlement,

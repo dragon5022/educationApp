@@ -338,17 +338,22 @@ class _ArkPanelState extends State<ArkPanel> {
             },
           ),
         ),
-        if (KidsStore.showPurchaseUi)
-          ValueListenableBuilder<bool>(
-            valueListenable: PurchaseService.instance.isUnlocked,
-            builder: (context, unlocked, _) => unlocked
-                ? const _Row('ぜんぶの もんだい', 'あそべるよ ✅')
-                : _ArkButton(
-                    label: 'ぜんぶの もんだいを あそぶ',
-                    // Parent gate first; restore / codes are in the sheet.
-                    onTap: () => KidsStore.openPaywall(context),
-                  ),
-          ),
+        // Shown once the sheet's pricing tab enables purchases.
+        ValueListenableBuilder<bool>(
+          valueListenable: KidsStore.monetizationEnabled,
+          builder: (context, _, _) => !KidsStore.showPurchaseUi
+              ? const SizedBox.shrink()
+              : ValueListenableBuilder<bool>(
+                  valueListenable: PurchaseService.instance.isUnlocked,
+                  builder: (context, unlocked, _) => unlocked
+                      ? const _Row('ぜんぶの もんだい', 'あそべるよ ✅')
+                      : _ArkButton(
+                          label: 'ぜんぶの もんだいを あそぶ',
+                          // Parent gate first; restore / codes are in the sheet.
+                          onTap: () => KidsStore.openPaywall(context),
+                        ),
+                ),
+        ),
         const SizedBox(height: 8),
         _ArkButton(
           label: _syncing ? 'こうしんちゅう…' : 'もんだいデータを こうしん',
