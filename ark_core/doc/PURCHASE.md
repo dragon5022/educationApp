@@ -121,3 +121,22 @@ App Store Connect 未設定でも購入・キャンセル・Ask to Buy（承認�
 3. ファミリー共有を ON にするか。
 4. 塾への配布方法（Apple ワンタイムコード CSV / カスタムコード、Play プロモーションコードの四半期上限）。
 5. 利用規約・プライバシーポリシーの URL。
+
+## 無料・有料の範囲と課金のオン／オフ（Googleスプレッドシート `pricing` タブ）
+
+課金を有効にするかどうか、どこまで無料で遊べるかは、問題データと同じスプレッドシートの
+**`pricing` タブ**で決めます。アプリの更新は不要で、アプリの次回起動時（オンライン時）に反映されます。
+
+| app | item | value | 意味 |
+|---|---|---|---|
+| kids / teen | `enabled` | `true` / `false` | 課金を有効にする。`false` のあいだは全部無料（カギなし） |
+| kids / teen | `defaultFreeCount` | 数字 | ゲーム（ステージ）ごとに無料で遊べるモード（レベル）の数。`0` = 全部有料 |
+| kids / teen | `freeCounts.<タブ名>` | 数字 | そのタブだけ別の数（例 `freeCounts.vocab` = `2`、`freeCounts.listening/g5` = `3`） |
+| kids / teen | `freePacks` | タブ名（カンマ区切り） | 全部無料にするタブ |
+| kids / teen | `lockedPacks` | タブ名（カンマ区切り） | 全部有料にするタブ |
+
+- 行が無い／タブが無い場合、アプリは内蔵のデフォルト（課金オフ・各ゲーム最初のモードを無料）で動きます。
+- 購入済みの端末では、設定に関係なく全部遊べます。
+- 開発者向け: `ark_core/lib/src/content/pricing_sheet.dart` が行を `ContentAccessRules.fromJson` の形に変換し、
+  `ArkContent.instance.pricing` に入ります。各アプリの `KidsStore` / `TeenStore` がそれを `ContentAccess.updateRules` に渡します。
+  デバッグビルドでは `enabled` に関係なく購入 UI が表示され、ストアが無い環境では購入がシミュレーションされます。

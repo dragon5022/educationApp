@@ -43,32 +43,44 @@
 
 ---
 
+### 課金（有料・無料）の設定
+
+`pricing` タブで決めます（`enabled` / `defaultFreeCount` など）。詳しくは `PURCHASE.md` の「無料・有料の範囲と課金のオン／オフ」。
+このタブは `manifest` の version を上げなくても、アプリの次回起動時に反映されます。
+
 ## 開発者向け：最初の1回だけの準備
 
-1. **CSVを作る**（アプリに入っている問題をそのまま書き出します）
+KIDS と TEEN は **1つのスプレッドシート** を共有します（各アプリは自分のタブだけ読みます）。
+現在のシート：`https://docs.google.com/spreadsheets/d/1OC1COiGu30Au26VWBFMJIOra_XtqE_MzJifFjKOaA6E/edit`
+
+1. **ブックを作る**（アプリに入っている問題をそのまま書き出し、1つの .xlsx にまとめます）
 
    ```
    cd ark_core
    dart run tool/sheets/export_sheets.dart ../ark_busters_kids/assets/data ../ark_busters_kids/tools/sheets
+   dart run tool/sheets/export_sheets.dart ../ark_busters_teen/assets/data ../ark_busters_teen/tools/sheets
+   python tool/sheets/make_workbook.py ../ARK_BUSTERS_questions.xlsx KIDS=../ark_busters_kids TEEN=../ark_busters_teen
    ```
 
-   `manifest.csv` と、問題ごとの CSV（`vocab.csv` など）ができます。
-2. 学院のGoogleアカウントで新しいスプレッドシートを作り、
-   - 最初のタブ名を `manifest` にして `manifest.csv` をインポート（ファイル → インポート → 現在のシートを置換）。
-   - 問題ごとに新しいタブを作り、タブ名を `vocab` などにして各 CSV をインポート。
-3. 各問題タブのURL末尾の `gid=数字` を、`manifest` の `gid` 列に書き込みます（`manifest` 自身の gid も控えておく）。
-4. 共有 → 一般的なアクセス → **「リンクを知っている全員」・閲覧者** にします。
-   （または ファイル → 共有 → ウェブに公開。こちらは反映まで数分かかります）
-5. アプリの `assets/data/content_source.json` に ID を書きます：
-   - 共有リンクの場合：URL `https://docs.google.com/spreadsheets/d/<ここ>/edit` の部分を `spreadsheetId` に
-   - ウェブに公開の場合：公開URL `/d/e/<ここ>/pub` の部分を `publishedId` に
-   - `manifestGid` に `manifest` タブの gid
-6. この設定でアプリを1回リリースすれば、以後は問題の更新にアプリの更新は不要です。
+   できるもの：`使い方` タブ、共通の `manifest` タブ、問題タブ 25 枚（全セル書式なしテキスト、2行目は列の説明）。
+2. Googleスプレッドシートで **ファイル → インポート → アップロード → 「スプレッドシートを置換」** で .xlsx を読み込みます。
+3. 共有 → 一般的なアクセス → **「リンクを知っている全員」・閲覧者** にします。
+4. 確認：
+
+   ```
+   dart run tool/sheets/verify_sheet.dart ../ark_busters_kids/assets/data/content_source.json ../ark_busters_kids/assets/data
+   dart run tool/sheets/verify_sheet.dart ../ark_busters_teen/assets/data/content_source.json ../ark_busters_teen/assets/data
+   ```
+
+   全部 ✓「same as the app」なら完了です。
+5. 各アプリの `assets/data/content_source.json` には `spreadsheetId` が入っています。タブは**名前**で探すので gid の入力は不要です
+   （`tabs` / `manifestGid` に gid を入れると少し速く・確実になります。`manifest` の `gid` 列でも指定可）。
+   この設定でアプリを1回リリースすれば、以後の問題更新にアプリの更新は不要です。
 
 ## How it works (developers)
 
 - `ArkContent` (`lib/src/content/ark_content.dart`): `loadPack(id)` returns the last downloaded pack that passes the app's validator, otherwise the bundled JSON — the app always works offline.
-- `checkForUpdates()` reads the `manifest` tab (`pack, version, gid, minAppBuild`). For each pack whose remote `version` is higher than the local one it downloads that tab as CSV, rebuilds the pack with `rebuildPack` (bundled pack = template for settings, structure and value types), validates it (no empty question groups + the app's parser) and stores it in SharedPreferences. Failures keep the current questions; network errors are reported as offline. Throttled to every 30 min unless `force: true`.
+- `checkForUpdates()` reads the `manifest` tab (`pack, version`, optional `gid, minAppBuild`). Tabs are located by manifest `gid` → config `tabs` map → tab name (gviz, `headers=1`); a tab without a `_path` column (e.g. Google falling back to the first tab) is rejected. For each pack whose remote `version` is higher than the local one it downloads that tab as CSV, rebuilds the pack with `rebuildPack` (bundled pack = template for settings, structure and value types), validates it (no empty question groups + the app's parser) and stores it in SharedPreferences. Failures keep the current questions; network errors are reported as offline. Throttled to every 30 min unless `force: true`.
 - Sheet format (`lib/src/content/sheet_codec.dart`): one row per question; `_path` = the question array the row belongs to; nested fields as dotted columns (`answer.0.w`); empty cell = absent/null; lists compacted. Round-trip tested on all KIDS packs (`test/content`).
 - `minAppBuild`: if a release changes the pack format, bump the app's content format build and set `minAppBuild` so older installs ignore the new data.
 - New packs/apps (TEEN, future series) work the same way: register packs in `ArkContent.configure`, export CSVs with the tool, add tabs + manifest rows.

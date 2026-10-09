@@ -46,3 +46,6 @@ Thumbs.db
 # Large local caches / temp export debug
 **/tools/_*.txt
 **/tools/__pycache__/
+
+# Generated Google Sheet workbook (rebuild with ark_core/tool/sheets/make_workbook.py)
+ARK_BUSTERS_questions.xlsx

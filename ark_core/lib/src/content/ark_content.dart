@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'csv.dart';
+import 'pricing_sheet.dart';
 import 'sheet_codec.dart';
 import 'sheet_source.dart';
 
@@ -52,6 +53,12 @@ class ArkContent {
   /// Bumps whenever [checkForUpdates] installs a newer pack.
   final ValueNotifier<int> revision = ValueNotifier(0);
 
+  /// Free/paid settings from the sheet's `pricing` tab for this app
+  /// (`enabled`, `defaultFreeCount`, `freeCounts`, `freePacks`,
+  /// `lockedPacks`), or null until a check has found rows for the app.
+  /// Survives restarts; listen to pick up changes.
+  final ValueNotifier<Map<String, dynamic>?> pricing = ValueNotifier(null);
+
   String get appId => _appId;
   Iterable<String> get packIds => _bundled.keys;
 
@@ -76,6 +83,11 @@ class ArkContent {
     _loadAsset = assetLoader ?? rootBundle.loadString;
     _templates.clear();
     _lastCheck = null;
+    final prefs = await SharedPreferences.getInstance();
+    final cached = prefs.getString(_key('_pricing', 'json'));
+    pricing.value = cached == null
+        ? null
+        : Map<String, dynamic>.from(jsonDecode(cached) as Map);
   }
 
   /// Reads `content_source.json`-style config from an asset (missing or
@@ -148,15 +160,22 @@ class ArkContent {
     }
     final client = _client ?? http.Client();
     try {
-      final manifest = parseCsvRecords(await _get(client, source.tabCsv(source.manifestGid)));
+      final manifest = parseCsvRecords(await _get(client, source.manifestCsv()));
+      // A wrong tab (e.g. Google falling back to the first tab) has no
+      // pack / version columns: don't treat it as a manifest.
+      if (manifest.isEmpty ||
+          !manifest.first.containsKey('pack') ||
+          !manifest.first.containsKey('version')) {
+        throw const _HttpFailure('manifest タブが見つかりません（タブ名・列名を確認してください）');
+      }
       final prefs = await SharedPreferences.getInstance();
       for (final row in manifest) {
         final id = (row['pack'] ?? '').trim();
         if (!_bundled.containsKey(id)) continue;
         final remote = int.tryParse((row['version'] ?? '').trim());
-        final gid = (row['gid'] ?? '').trim();
-        if (remote == null || gid.isEmpty) {
-          report.failed[id] = 'manifest の version / gid が正しくありません';
+        final gid = (row['gid'] ?? '').trim(); // optional
+        if (remote == null) {
+          report.failed[id] = 'manifest の version が数字ではありません';
           continue;
         }
         final minBuild = int.tryParse((row['minAppBuild'] ?? '').trim()) ?? 0;
@@ -169,7 +188,11 @@ class ArkContent {
           continue;
         }
         try {
-          final rows = parseCsvRecords(await _get(client, source.tabCsv(gid)));
+          final rows = parseCsvRecords(await _get(client, source.packCsv(id, gid: gid)));
+          if (rows.isEmpty || !rows.first.containsKey(pathColumn)) {
+            report.failed[id] = 'タブ「$id」が見つからないか、_path 列がありません';
+            continue;
+          }
           final pack = rebuildPack(await _template(id), rows)..['version'] = remote;
           final json = jsonEncode(pack);
           final problem = _problem(id, pack, json);
@@ -184,6 +207,7 @@ class ArkContent {
           report.failed[id] = '$e';
         }
       }
+      await _checkPricing(client, source, report);
     } on _HttpFailure catch (e) {
       report.failed['manifest'] = e.message;
     } catch (e) {
@@ -195,6 +219,30 @@ class ArkContent {
     }
     if (report.updated.isNotEmpty) revision.value++;
     return report;
+  }
+
+  /// Optional `pricing` tab. Missing tab / no rows for this app → keep
+  /// whatever is cached (the app falls back to its bundled defaults).
+  Future<void> _checkPricing(
+    http.Client client,
+    SheetSource source,
+    ContentUpdateReport report,
+  ) async {
+    try {
+      final rows = parseCsvRecords(await _get(client, source.packCsv(SheetSource.pricingTab)));
+      if (rows.isEmpty || !rows.first.containsKey('item')) return;
+      final p = pricingFromRows(rows, _appId);
+      if (p == null) return;
+      final json = jsonEncode(p);
+      final prefs = await SharedPreferences.getInstance();
+      if (prefs.getString(_key('_pricing', 'json')) != json) {
+        await prefs.setString(_key('_pricing', 'json'), json);
+        report.pricingChanged = true;
+      }
+      pricing.value = p;
+    } catch (e) {
+      debugPrint('pricing tab: $e');
+    }
   }
 
   Future<String> _get(http.Client client, Uri uri) async {
@@ -263,6 +311,7 @@ class ContentUpdateReport {
   final List<String> upToDate = [];
   final List<String> needsAppUpdate = [];
   final Map<String, String> failed = {};
+  bool pricingChanged = false;
   bool offline = false;
   bool notConfigured = false;
   bool skipped = false;

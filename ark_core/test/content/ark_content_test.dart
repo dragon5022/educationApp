@@ -17,13 +17,29 @@ class _Sheet {
   List<List<String>> talkRows = flattenPack(_pack);
   int talkFetches = 0;
   String? manifestOverride;
+  String? pricingCsv;
+
+  final requests = <Uri>[];
 
   MockClient client() => MockClient((req) async {
-        final gid = req.url.queryParameters['gid'];
+        requests.add(req.url);
+        // gviz by name: /gviz/tq?sheet=<name>  →  same content as by gid.
+        final byName = req.url.queryParameters['sheet'];
+        final gid = byName == 'manifest'
+            ? '0'
+            : byName == 'talk'
+                ? '123'
+                : req.url.queryParameters['gid'];
         if (gid == '0') {
           return http.Response.bytes(
             utf8.encode(manifestOverride ??
                 'pack,version,gid\r\ntalk,$version,123\r\nunknown,9,456'),
+            200,
+          );
+        }
+        if (byName == 'pricing') {
+          return http.Response.bytes(
+            utf8.encode(pricingCsv ?? 'app,item,value'),
             200,
           );
         }
@@ -35,11 +51,16 @@ class _Sheet {
       });
 }
 
-Future<void> _configure(_Sheet sheet, {int build = 1, http.Client? client}) =>
+Future<void> _configure(
+  _Sheet sheet, {
+  int build = 1,
+  http.Client? client,
+  SheetSource source = const SheetSource(spreadsheetId: 'ID', manifestGid: '0'),
+}) =>
     ArkContent.instance.configure(
       appId: 'test',
       bundledPacks: {'talk': _asset},
-      source: const SheetSource(spreadsheetId: 'ID'),
+      source: source,
       validators: {
         'talk': (j) => ((jsonDecode(j) as Map)['grades']['g5'] as List).length >= 3,
       },
@@ -124,5 +145,73 @@ void main() {
     await ArkContent.instance.checkForUpdates();
     final again = await ArkContent.instance.checkForUpdates();
     expect(again.skipped, isTrue);
+  });
+
+  test('tabs found by name when no gids are known', () async {
+    final sheet = _Sheet()..manifestOverride = 'pack,version\ntalk,7';
+    await _configure(sheet, source: const SheetSource(spreadsheetId: 'ID'));
+    final r = await ArkContent.instance.checkForUpdates(force: true);
+    expect(r.updated, ['talk']);
+    expect(sheet.requests.every((u) => u.path.endsWith('/gviz/tq')), isTrue);
+    expect(sheet.requests.map((u) => u.queryParameters['sheet']), ['manifest', 'talk', 'pricing']);
+    expect(sheet.requests.first.queryParameters['headers'], '1');
+  });
+
+  test('config tab gids are used when the manifest has none', () async {
+    final sheet = _Sheet()..manifestOverride = 'pack,version\ntalk,7';
+    await _configure(
+      sheet,
+      source: SheetSource.fromConfig({
+        'spreadsheetId': 'ID',
+        'manifestGid': '0',
+        'tabs': {'talk': '123'},
+      })!,
+    );
+    final r = await ArkContent.instance.checkForUpdates(force: true);
+    expect(r.updated, ['talk']);
+    expect(sheet.requests.where((u) => u.queryParameters['gid'] == '123'), isNotEmpty);
+  });
+
+  test('a tab without _path (e.g. Google returning the guide tab) is rejected', () async {
+    final sheet = _Sheet()..talkRows = [
+      ['ARK BUSTERS 問題データ'],
+      ['1. 問題のタブで…'],
+    ];
+    await _configure(sheet);
+    final r = await ArkContent.instance.checkForUpdates(force: true);
+    expect(r.failed.keys, ['talk']);
+    expect(await ArkContent.instance.loadPack('talk'), _bundled);
+  });
+
+  test('a manifest without pack/version columns is reported, not used', () async {
+    final sheet = _Sheet()..manifestOverride = 'ARK BUSTERS 問題データ\n使い方';
+    await _configure(sheet);
+    final r = await ArkContent.instance.checkForUpdates(force: true);
+    expect(r.failed.containsKey('manifest'), isTrue);
+    expect(sheet.talkFetches, 0);
+  });
+
+  test('pricing tab is parsed, cached and reported', () async {
+    final sheet = _Sheet()
+      ..version = (_pack['version'] as num).toInt()
+      ..pricingCsv = 'app,item,value\ntest,enabled,true\ntest,defaultFreeCount,2';
+    await _configure(sheet);
+    expect(ArkContent.instance.pricing.value, isNull);
+    final r = await ArkContent.instance.checkForUpdates(force: true);
+    expect(r.pricingChanged, isTrue);
+    expect(ArkContent.instance.pricing.value, {'enabled': true, 'defaultFreeCount': 2});
+
+    // Unchanged on the next check; still there after a reconfigure (cache).
+    final again = await ArkContent.instance.checkForUpdates(force: true);
+    expect(again.pricingChanged, isFalse);
+    await _configure(sheet);
+    expect(ArkContent.instance.pricing.value?['defaultFreeCount'], 2);
+  });
+
+  test('missing pricing tab keeps the cached settings', () async {
+    final sheet = _Sheet()..version = (_pack['version'] as num).toInt();
+    await _configure(sheet);
+    await ArkContent.instance.checkForUpdates(force: true);
+    expect(ArkContent.instance.pricing.value, isNull);
   });
 }
