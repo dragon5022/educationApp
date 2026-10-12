@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ark_core/content.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
@@ -174,21 +175,43 @@ class AudioService {
 
   // ------------------------------------------------------------- voice
 
-  /// Recorded clip; asset path without the `assets/` prefix. Respects ark_voice.
+  /// Recorded clip; path without the `assets/` prefix. Respects ark_voice.
+  /// Bundled → asset; otherwise the media cache (downloaded from the
+  /// school's Storage). If the file is unavailable and [fallbackText] is
+  /// given, the English is read aloud instead.
   ///
   /// With [overlap], the clip plays on its own short-lived player without
   /// cutting off other voices (web `new Audio(src).play()` per tap).
-  Future<void> playVoiceAsset(String? assetPath, {bool overlap = false}) async {
-    if (assetPath == null || assetPath.isEmpty) return;
+  Future<void> playVoiceAsset(
+    String? path, {
+    String? fallbackText,
+    bool overlap = false,
+  }) async {
+    if (path == null || path.isEmpty) {
+      if (fallbackText != null) await speak(fallbackText);
+      return;
+    }
     await init();
     if (!await ProgressService.instance.isVoiceOn()) return;
+    final ref = await ArkMedia.instance.resolve(path);
+    final Source? src = switch (ref.kind) {
+      MediaKind.asset => AssetSource(ref.assetPath!.substring('assets/'.length)),
+      MediaKind.file => DeviceFileSource(ref.file!.path),
+      MediaKind.url => UrlSource(ref.uri!.toString()),
+      MediaKind.missing => null,
+    };
+    if (src == null) {
+      debugPrint('voice $path: not available');
+      if (fallbackText != null) await speak(fallbackText);
+      return;
+    }
     if (overlap) {
       final p = AudioPlayer();
       p.onPlayerComplete.first.then((_) => p.dispose());
       try {
-        await p.play(AssetSource(assetPath));
+        await p.play(src);
       } catch (e) {
-        debugPrint('voice $assetPath failed: $e');
+        debugPrint('voice $path failed: $e');
         unawaited(p.dispose());
       }
       return;
@@ -197,9 +220,9 @@ class AudioService {
       await _tts.stop();
       await _voice.stop();
       await _voice.setVolume(1);
-      await _voice.play(AssetSource(assetPath));
+      await _voice.play(src);
     } catch (e) {
-      debugPrint('voice $assetPath failed: $e');
+      debugPrint('voice $path failed: $e');
     }
   }
 

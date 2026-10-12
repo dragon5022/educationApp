@@ -345,8 +345,8 @@ Detailed TEEN requirements should be a separate appendix after KIDS hub+modes ar
 | Speech recognition (Talk STEP2) | Done (`speech_to_text`, permissions) — **not yet tested on a real device** |
 | Fonts | Bundled (M PLUS Rounded 1c, Mochiy Pop One, Fredoka, Zen Maru Gothic, Bungee, DotGothic16) |
 | Image lightweighting | Done — WebP q90; AI upscale (Real-ESRGAN) 199 / 466 images, rest pending |
-| Content updates without re-submit (§16) | **Done** — Google Sheet → app (`ark_core` content module, version flag in `manifest` tab, validated, offline fallback). Off until the school's sheet ID is set in `assets/data/content_source.json`. Guide: `ark_core/doc/CONTENT_SHEETS.md` |
-| IAP / free vs paid split / restore / parent gate / Offer Codes | **Built** (`ark_core` purchase module, wired into hub settings + mode-card locks). Hidden in release (`KidsStore.monetizationEnabled = false`) until the client defines paid content, price and product IDs |
+| Content updates without re-submit (§16) | **Done** — Google Sheet → app (`ark_core` content module). Text questions: sheet only. New voice clips / pictures: upload to Firebase Storage (`media/…`), auto-downloaded and cached by the app; read-aloud fallback when a clip is missing (`ark_core/doc/MEDIA.md`). Needs the school's Firebase bucket in `content_source.json` |
+| IAP / free vs paid split / restore / parent gate / Offer Codes | **Built and wired** (`ark_core` purchase module; locks on mode cards / levels; KIDS parent gate). Switched on and tuned from the sheet's `pricing` tab (`enabled`, `defaultFreeCount` …). Needs store accounts, product IDs, price, legal URLs, paid content |
 | Light login (progress sync, device change) | **Built** (`ark_core` auth module: Firebase, school-issued IDs, merge-safe sync, admin CSV tool). Hidden until the school's Firebase project exists (`flutterfire configure`) |
 | App icon, splash, app name, bundle id | **Not started** (still Flutter defaults, `com.ark.ark_busters_kids`) |
 | Real-device QA (sound, mic, performance) | **Not started** — no emulator on the dev VM |

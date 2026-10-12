@@ -218,7 +218,7 @@ class _ListeningBattleScreenState extends State<ListeningBattleScreen> {
       _locked = false;
       _left = _timeLimit;
     });
-    AudioService.instance.playVoiceAsset(item.voice);
+    AudioService.instance.playVoiceAsset(item.voice, fallbackText: item.en);
     _timer?.cancel();
     if (_timeLimit > 0) {
       _timer = Timer.periodic(const Duration(seconds: 1), (_) {
@@ -352,7 +352,7 @@ class _ListeningBattleScreenState extends State<ListeningBattleScreen> {
               if (item.q != null)
                 Text(item.q!, style: const TextStyle(color: AppColors.cream, fontSize: 18)),
               IconButton(
-                onPressed: () => AudioService.instance.playVoiceAsset(item.voice),
+                onPressed: () => AudioService.instance.playVoiceAsset(item.voice, fallbackText: item.en),
                 icon: const Icon(Icons.volume_up, color: Colors.white, size: 40),
               ),
               const Text('きいて えらぼう', style: TextStyle(color: Colors.white70)),

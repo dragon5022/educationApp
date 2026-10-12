@@ -1,0 +1,9 @@
+{
+  "name": "ark-media-tools",
+  "private": true,
+  "type": "module",
+  "description": "Uploads question media (voice clips, pictures) to Firebase Storage for the ARK BUSTERS apps.",
+  "dependencies": {
+    "firebase-admin": "^14.5.0"
+  }
+}

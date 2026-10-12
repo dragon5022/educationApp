@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'ark_media.dart';
 import 'csv.dart';
 import 'pricing_sheet.dart';
 import 'sheet_codec.dart';
@@ -47,6 +48,7 @@ class ArkContent {
   SheetSource? _source;
   int _appBuild = 0;
   http.Client? _client;
+  ArkMedia? _media;
   Future<String> Function(String asset) _loadAsset = rootBundle.loadString;
   final Map<String, Map<String, dynamic>> _templates = {};
 
@@ -71,6 +73,7 @@ class ArkContent {
     SheetSource? source,
     Map<String, PackValidator> validators = const {},
     int appBuild = 0,
+    ArkMedia? media,
     @visibleForTesting http.Client? client,
     @visibleForTesting Future<String> Function(String asset)? assetLoader,
   }) async {
@@ -79,6 +82,7 @@ class ArkContent {
     _validators = Map.unmodifiable(validators);
     _source = source;
     _appBuild = appBuild;
+    _media = media;
     _client = client;
     _loadAsset = assetLoader ?? rootBundle.loadString;
     _templates.clear();
@@ -118,6 +122,23 @@ class ArkContent {
     if (v != null && prefs.getString(_key(packId, 'json')) != null) return v;
     final t = await _template(packId);
     return (t['version'] as num?)?.toInt() ?? 0;
+  }
+
+  /// Downloads media that current packs reference but the device lacks
+  /// (e.g. a download that failed earlier). Returns files fetched.
+  Future<int> prefetchMedia() async {
+    final media = _media;
+    if (media == null || !media.canDownload) return 0;
+    var n = 0;
+    for (final id in _bundled.keys) {
+      try {
+        final pack = Map<String, dynamic>.from(jsonDecode(await loadPack(id)) as Map);
+        n += await media.prefetchPack(pack);
+      } catch (e) {
+        debugPrint('prefetch $id: $e');
+      }
+    }
+    return n;
   }
 
   /// Forgets downloaded questions (all packs, or one).
@@ -203,6 +224,9 @@ class ArkContent {
           await prefs.setString(_key(id, 'json'), json);
           await prefs.setInt(_key(id, 'version'), remote);
           report.updated.add(id);
+          // New voice clips / pictures referenced by the pack.
+          final media = _media;
+          if (media != null) unawaited(media.prefetchPack(pack));
         } catch (e) {
           report.failed[id] = '$e';
         }

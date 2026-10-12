@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:audioplayers/audioplayers.dart';
+import 'package:ark_core/content.dart';
 import 'package:flutter/material.dart';
 
 import '../../game_kit/game_kit.dart';
@@ -576,7 +577,7 @@ class ExplainCard extends StatelessWidget {
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(11),
-                child: Image.asset(image!, width: 164, fit: BoxFit.fitWidth),
+                child: ArkMediaImage(image!, width: 164, fit: BoxFit.fitWidth),
               ),
             ),
             const SizedBox(height: 14),
