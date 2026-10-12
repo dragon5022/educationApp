@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:ark_core/content.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 
 import '../core/content/game_packs.dart';
 import '../core/content/vocab_pack.dart';
@@ -37,11 +39,26 @@ class ContentRepository {
   TalkPack? get talk => _talk;
   SentencePack? get sentence => _sentence;
 
+  /// `assets/data/content_source.json` (sheet + media settings), or {}.
+  static Future<Map<String, dynamic>> _config() async {
+    try {
+      final j = jsonDecode(await rootBundle.loadString('assets/data/content_source.json'));
+      return Map<String, dynamic>.from(j as Map);
+    } catch (_) {
+      return {};
+    }
+  }
+
   Future<void> init() async {
+    final cfg = await _config();
+    // Voice clips / pictures that are not bundled: downloaded from the
+    // school's Firebase Storage and cached.
+    await ArkMedia.instance.configure(source: MediaSource.fromConfig(cfg));
     await ArkContent.instance.configure(
       appId: 'kids',
       bundledPacks: _packs,
-      source: await ArkContent.sourceFromAsset('assets/data/content_source.json'),
+      source: SheetSource.fromConfig(cfg),
+      media: ArkMedia.instance,
       appBuild: contentFormatBuild,
       // A downloaded pack is only used if the game can read it.
       validators: {
@@ -77,6 +94,8 @@ class ContentRepository {
   /// [force]); new questions are used from the next game. Never throws.
   Future<ContentUpdateReport> checkForUpdates({bool force = false}) async {
     final report = await ArkContent.instance.checkForUpdates(force: force);
+    // Media a previous run could not download (offline then).
+    if (!report.offline) unawaited(ArkContent.instance.prefetchMedia());
     if (report.updated.isNotEmpty) {
       try {
         await _loadAll();

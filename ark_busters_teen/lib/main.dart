@@ -24,10 +24,14 @@ Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
   // All question data comes from JSON packs via ArkContent: the bundled
   // copy, or a newer one downloaded from the school's Google Sheet.
+  final contentCfg = await _contentConfig();
+  // Pictures / audio referenced by new questions: Firebase Storage → cache.
+  await ArkMedia.instance.configure(source: MediaSource.fromConfig(contentCfg));
   await ArkContent.instance.configure(
     appId: 'teen',
     bundledPacks: bundledStagePacks,
-    source: await ArkContent.sourceFromAsset('assets/data/content_source.json'),
+    source: SheetSource.fromConfig(contentCfg),
+    media: ArkMedia.instance,
     appBuild: contentFormatBuild,
     // A downloaded pack is only used if the game can read it.
     validators: {
@@ -40,7 +44,7 @@ Future<void> main() async {
   await TeenStore.init();
   runApp(const ArkBustersTeenApp());
   // Newer questions from the sheet, if online; used from the next stage.
-  unawaited(ArkContent.instance.checkForUpdates());
+  unawaited(ArkContent.instance.checkForUpdates().then((_) => ArkContent.instance.prefetchMedia()));
 }
 
 class ArkBustersTeenApp extends StatefulWidget {
@@ -99,5 +103,15 @@ class _ArkBustersTeenAppState extends State<ArkBustersTeenApp> with WidgetsBindi
         );
       },
     );
+  }
+}
+
+/// `assets/data/content_source.json` (sheet + media settings), or {}.
+Future<Map<String, dynamic>> _contentConfig() async {
+  try {
+    final j = jsonDecode(await rootBundle.loadString('assets/data/content_source.json'));
+    return Map<String, dynamic>.from(j as Map);
+  } catch (_) {
+    return {};
   }
 }

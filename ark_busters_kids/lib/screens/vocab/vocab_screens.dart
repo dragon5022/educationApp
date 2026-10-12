@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math' as math;
 
+import 'package:ark_core/content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
@@ -245,7 +246,8 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
     final nextImg = _qi + 1 < _questions.length ? _questions[_qi + 1].img : null;
     if (nextImg != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) precacheImage(AssetImage('assets/$nextImg'), context);
+        final provider = ArkMediaImage.providerFor(nextImg);
+        if (mounted && provider != null) precacheImage(provider, context);
       });
     }
     setState(() {});
@@ -311,7 +313,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
   void _playVoca() {
     final q = _q;
     if (q.voice != null) {
-      AudioService.instance.playVoiceAsset(q.voice);
+      AudioService.instance.playVoiceAsset(q.voice, fallbackText: q.w);
     } else {
       AudioService.instance.speak(q.w);
     }
@@ -612,12 +614,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
       final iw = math.min(vw * 0.42, 170.0); // mobileFit: min(42vw,170px)
       card = ClipRRect(
         borderRadius: BorderRadius.circular(14),
-        child: Image.asset(
-          'assets/${q.img}',
-          width: iw,
-          fit: BoxFit.fitWidth,
-          gaplessPlayback: true,
-        ),
+        child: ArkMediaImage(q.img!, width: iw, fit: BoxFit.fitWidth),
       );
     } else {
       card = SizedBox(
@@ -793,7 +790,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
                             timeup: _explainTimeup,
                             word: _q.w,
                             ja: _q.ja,
-                            image: _q.img == null ? null : 'assets/${_q.img}',
+                            image: _q.img,
                             onListen: _playVoca,
                             onNext: _nextAfterExplain,
                           ),

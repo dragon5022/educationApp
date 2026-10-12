@@ -1,7 +1,9 @@
 {
-  "_comment": "Google Sheet for question updates (shared by KIDS and TEEN; each app reads only its own tabs). 'tabs' (pack -> gid) and 'manifestGid' speed up lookups; tabs are also found by name if a gid changes. See ark_core/doc/CONTENT_SHEETS.md",
+  "_comment": "Google Sheet for question updates (shared by KIDS and TEEN; each app reads only its own tabs). 'tabs' (pack -> gid) and 'manifestGid' speed up lookups; tabs are also found by name if a gid changes. See ark_core/doc/CONTENT_SHEETS.md Media (new voice clips / pictures) downloads from Firebase Storage: set firebaseBucket (<project>.appspot.com); files live under <mediaFolder>/<same relative path as the sheet>. See ark_core/doc/MEDIA.md",
   "spreadsheetId": "1hgSc4wg00QQhS-qJt7qhRSU5kuShRwj9UZXt9vjFyOE",
   "publishedId": "",
+  "firebaseBucket": "",
+  "mediaFolder": "media",
   "manifestGid": "1375340274",
   "tabs": {
     "listening": "466790687",

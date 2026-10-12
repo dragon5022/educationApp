@@ -1,0 +1,17 @@
+rules_version = '2';
+
+// Media for question updates (voice clips, pictures) lives under media/.
+// Anyone can download (the apps fetch with plain HTTPS, no login);
+// uploads happen in the Firebase console or with tool/media/upload_media.mjs
+// (admin credentials), never from the apps.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /media/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
