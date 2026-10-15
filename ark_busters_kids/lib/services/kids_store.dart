@@ -18,8 +18,8 @@ import 'progress_service.dart';
 class KidsStore {
   KidsStore._();
 
-  /// TODO(client): final product id from App Store Connect / Play Console.
-  static const productId = 'com.ark.kids.full_unlock';
+  /// Product id to create in App Store Connect / Play Console (same on both).
+  static const productId = 'top.arkacademy.kids.full_unlock';
   static const entitlement = 'kids_full';
 
   /// Purchases are controlled from the Google Sheet's `pricing` tab
@@ -50,9 +50,10 @@ class KidsStore {
     );
   }
 
-  /// TODO(client): 利用規約 / プライバシーポリシー pages.
-  static final Uri? termsUrl = null;
-  static final Uri? privacyUrl = null;
+  /// Legal pages on the school's site (drafts in docs/store/site; the client
+  /// uploads them at exactly these paths).
+  static final Uri termsUrl = Uri.parse('https://arkacademy.top/arkbusters/terms.html');
+  static final Uri privacyUrl = Uri.parse('https://arkacademy.top/arkbusters/privacy.html');
 
   static Future<void> init() async {
     ArkContent.instance.pricing.addListener(_applyPricing);
@@ -64,6 +65,12 @@ class KidsStore {
 
     await ArkAuth.instance.init(
       appId: 'kids',
+      // Student IDs become <id>@students.arkacademy.top (the school's domain).
+      config: const ArkAuthConfig(
+        idDomain: 'students.arkacademy.top',
+        supportContact: 'contact@arkacademy.top',
+        accountDeletionUrl: 'https://arkacademy.top/arkbusters/privacy.html#delete',
+      ),
       // TODO(client): DefaultFirebaseOptions.currentPlatform after running
       // `flutterfire configure`. Until then login is hidden and the app
       // plays fully offline.

@@ -1,4 +1,4 @@
-package com.ark.ark_busters_kids
+package top.arkacademy.kids
 
 import io.flutter.embedding.android.FlutterActivity
 

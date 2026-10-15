@@ -2,7 +2,7 @@
     <!-- Question updates (Google Sheet), login / cloud progress (Firebase) -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="ARK BUSTERS TEEN"
+        android:label="ARKティーン"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

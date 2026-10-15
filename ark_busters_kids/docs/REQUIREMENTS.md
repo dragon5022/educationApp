@@ -348,7 +348,7 @@ Detailed TEEN requirements should be a separate appendix after KIDS hub+modes ar
 | Content updates without re-submit (§16) | **Done** — Google Sheet → app (`ark_core` content module). Text questions: sheet only. New voice clips / pictures: upload to Firebase Storage (`media/…`), auto-downloaded and cached by the app; read-aloud fallback when a clip is missing (`ark_core/doc/MEDIA.md`). Needs the school's Firebase bucket in `content_source.json` |
 | IAP / free vs paid split / restore / parent gate / Offer Codes | **Built and wired** (`ark_core` purchase module; locks on mode cards / levels; KIDS parent gate). Switched on and tuned from the sheet's `pricing` tab (`enabled`, `defaultFreeCount` …). Needs store accounts, product IDs, price, legal URLs, paid content |
 | Light login (progress sync, device change) | **Built** (`ark_core` auth module: Firebase, school-issued IDs, merge-safe sync, admin CSV tool). Hidden until the school's Firebase project exists (`flutterfire configure`) |
-| App icon, splash, app name, bundle id | **Not started** (still Flutter defaults, `com.ark.ark_busters_kids`) |
+| App icon, splash, app name, bundle id | **Done (provisional art)** — `top.arkacademy.kids` / `top.arkacademy.teen` on both platforms, names ARKキッズ / ARKティーン, generated icons + splash (`assets/icon`), legal page drafts and store notes in `docs/store/` |
 | Real-device QA (sound, mic, performance) | **Not started** — no emulator on the dev VM |
 | TEEN Flutter app | **Done** — 21 stages / 1,210 questions (live site), same Sheet updater, purchase and login modules (`ark_busters_teen`) |
 

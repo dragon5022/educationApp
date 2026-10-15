@@ -4,7 +4,7 @@
     <!-- Talk Buster: speaking practice with speech recognition -->
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <application
-        android:label="ark_busters_kids"
+        android:label="ARKキッズ"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
