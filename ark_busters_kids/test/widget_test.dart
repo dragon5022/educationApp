@@ -12,7 +12,9 @@ void main() {
     addTearDown(tester.view.reset);
 
     await tester.pumpWidget(const MaterialApp(home: HubScreen()));
-    await tester.pump(const Duration(seconds: 2));
+    // Let the staggered reveal / shine-sweep start delays (≤ 4 s) elapse so
+    // no timers are left pending when the test ends.
+    await tester.pump(const Duration(seconds: 5));
 
     final cards = find.byWidgetPredicate(
       (w) => w is Image &&
@@ -21,5 +23,7 @@ void main() {
     );
     // The ListView builds cards lazily; the 4th sits below the fold.
     expect(cards, findsAtLeastNWidgets(3));
+    // Dispose the looping animations.
+    await tester.pumpWidget(const SizedBox());
   });
 }
