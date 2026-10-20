@@ -1,37 +1,301 @@
-﻿_path,id,ja,en,voice
-grades.g5,g5_0,おはよう,Good morning!,audio/voice/talk/1.mp3
-grades.g5,g5_1,はじめまして,Nice to meet you.,audio/voice/talk/2.mp3
-grades.g5,g5_2,ありがとう,Thank you.,audio/voice/talk/3.mp3
-grades.g5,g5_3,なまえは なに？,What's your name?,audio/voice/talk/4.mp3
-grades.g5,g5_4,げんき？,How are you?,audio/voice/talk/5.mp3
-grades.g5,g5_5,げんきだよ,I'm fine.,audio/voice/talk/6.mp3
-grades.g5,g5_6,またね！,See you!,audio/voice/talk/7.mp3
-grades.g5,g5_7,ごめんね,I'm sorry.,audio/voice/talk/8.mp3
-grades.g5,g5_8,あおが すき,I like blue.,audio/voice/talk/9.mp3
-grades.g5,g5_9,なんさい？,How old are you?,audio/voice/talk/10.mp3
-grades.g5,g5_10,9さいだよ,I'm nine.,audio/voice/talk/11.mp3
-grades.g5,g5_11,おねがい,Please.,audio/voice/talk/12.mp3
-grades.g4,g4_0,えきは どこ？,Where is the station?,audio/voice/talk/13.mp3
-grades.g4,g4_1,いくら？,How much is it?,audio/voice/talk/14.mp3
-grades.g4,g4_2,いま なんじ？,What time is it?,audio/voice/talk/15.mp3
-grades.g4,g4_3,てつだおうか？,Can I help you?,audio/voice/talk/16.mp3
-grades.g4,g4_4,トイレ かりていい？,May I use the bathroom?,audio/voice/talk/17.mp3
-grades.g4,g4_5,しゅみは なに？,What do you like to do?,audio/voice/talk/18.mp3
-grades.g4,g4_6,いっしょに いこう,Let's go together.,audio/voice/talk/19.mp3
-grades.g4,g4_7,おなか すいた,I'm hungry.,audio/voice/talk/20.mp3
-grades.g4,g4_8,もういちど 言って？,Pardon?,audio/voice/talk/21.mp3
-grades.g4,g4_9,きをつけてね,Take care!,audio/voice/talk/22.mp3
-grades.g4,g4_10,おめでとう,Congratulations!,audio/voice/talk/23.mp3
-grades.g4,g4_11,だいじょうぶ,It's okay.,audio/voice/talk/24.mp3
-grades.g3,g3_0,みちに まよった,I'm lost.,audio/voice/talk/25.mp3
-grades.g3,g3_1,どう おもう？,What do you think?,audio/voice/talk/26.mp3
-grades.g3,g3_2,いっしょに いかない？,Why don't we go?,audio/voice/talk/27.mp3
-grades.g3,g3_3,なんで そう おもうの？,Why do you think so?,audio/voice/talk/28.mp3
-grades.g3,g3_4,おすすめは なに？,What do you recommend?,audio/voice/talk/29.mp3
-grades.g3,g3_5,さんせい！,I agree with you.,audio/voice/talk/30.mp3
-grades.g3,g3_6,たのしみ！,I'm looking forward to it.,audio/voice/talk/31.mp3
-grades.g3,g3_7,きが かわった,I changed my mind.,audio/voice/talk/32.mp3
-grades.g3,g3_8,おかげさまで,Thanks to you.,audio/voice/talk/33.mp3
-grades.g3,g3_9,じしんが ない,I'm not sure.,audio/voice/talk/34.mp3
-grades.g3,g3_10,れんらく とりあおう,Let's keep in touch.,audio/voice/talk/35.mp3
-grades.g3,g3_11,むりしないで,Don't push yourself.,audio/voice/talk/36.mp3
+﻿_path,id,ja,en,voice,free,scene
+grades.g5,g5_0,おはよう,Good morning!,audio/voice/talk/KIDS_T_0001.mp3,true,
+grades.g5,g5_1,はじめまして,Nice to meet you.,audio/voice/talk/KIDS_T_0002.mp3,true,
+grades.g5,g5_2,ありがとう,Thank you.,audio/voice/talk/KIDS_T_0003.mp3,true,
+grades.g5,g5_3,なまえは なに？,What's your name?,audio/voice/talk/KIDS_T_0004.mp3,true,
+grades.g5,g5_4,げんき？,How are you?,audio/voice/talk/KIDS_T_0005.mp3,true,
+grades.g5,g5_5,げんきだよ,I'm fine.,audio/voice/talk/KIDS_T_0006.mp3,true,
+grades.g5,g5_6,またね！,See you!,audio/voice/talk/KIDS_T_0007.mp3,true,
+grades.g5,g5_7,ごめんね,I'm sorry.,audio/voice/talk/KIDS_T_0008.mp3,true,
+grades.g5,g5_8,あおが すき,I like blue.,audio/voice/talk/KIDS_T_0009.mp3,true,
+grades.g5,g5_9,なんさい？,How old are you?,audio/voice/talk/KIDS_T_0010.mp3,true,
+grades.g5,g5_10,9さいだよ,I'm nine.,audio/voice/talk/KIDS_T_0011.mp3,true,
+grades.g5,g5_11,おねがい,Please.,audio/voice/talk/KIDS_T_0012.mp3,true,
+grades.g5,g5_12,こんにちは。,Hello.,audio/voice/talk/KIDS_T_0013.mp3,true,あいさつ
+grades.g5,g5_13,さようなら。,Goodbye.,audio/voice/talk/KIDS_T_0014.mp3,true,あいさつ
+grades.g5,g5_14,またね。,See you later.,audio/voice/talk/KIDS_T_0015.mp3,true,あいさつ
+grades.g5,g5_15,私の名前はユキです。,My name is Yuki.,audio/voice/talk/KIDS_T_0016.mp3,true,自己紹介
+grades.g5,g5_16,元気です、ありがとう。,"I'm fine, thank you.",audio/voice/talk/KIDS_T_0017.mp3,true,あいさつ
+grades.g5,g5_17,私は12歳です。,I'm twelve years old.,audio/voice/talk/KIDS_T_0018.mp3,true,自己紹介
+grades.g5,g5_18,これは何ですか。,What's this?,audio/voice/talk/KIDS_T_0019.mp3,true,たずねる
+grades.g5,g5_19,それはペンです。,It's a pen.,audio/voice/talk/KIDS_T_0020.mp3,true,こたえる
+grades.g5,g5_20,私は犬が好きです。,I like dogs.,audio/voice/talk/KIDS_T_0021.mp3,true,好き嫌い
+grades.g5,g5_21,私は納豆が好きではありません。,I don't like natto.,audio/voice/talk/KIDS_T_0022.mp3,true,好き嫌い
+grades.g5,g5_22,あなたは犬が好きですか。,Do you like dogs?,audio/voice/talk/KIDS_T_0023.mp3,true,好き嫌い
+grades.g5,g5_23,はい、好きです。,"Yes, I do.",audio/voice/talk/KIDS_T_0024.mp3,true,こたえる
+grades.g5,g5_24,いいえ、好きではありません。,"No, I don't.",audio/voice/talk/KIDS_T_0025.mp3,true,こたえる
+grades.g5,g5_25,私には兄が一人います。,I have one brother.,audio/voice/talk/KIDS_T_0026.mp3,true,家族
+grades.g5,g5_26,これは私のかばんです。,This is my bag.,audio/voice/talk/KIDS_T_0051.mp3,false,持ち物
+grades.g5,g5_27,トイレはどこですか。,Where is the bathroom?,audio/voice/talk/KIDS_T_0052.mp3,false,場所
+grades.g5,g5_28,どういたしまして。,You're welcome.,audio/voice/talk/KIDS_T_0053.mp3,false,お礼
+grades.g5,g5_29,すみません。,Excuse me.,audio/voice/talk/KIDS_T_0054.mp3,false,呼びかけ
+grades.g5,g5_30,はい、お願いします。,"Yes, please.",audio/voice/talk/KIDS_T_0055.mp3,false,返事
+grades.g5,g5_31,いいえ、けっこうです。,"No, thank you.",audio/voice/talk/KIDS_T_0056.mp3,false,返事
+grades.g5,g5_32,私は日本出身です。,I'm from Japan.,audio/voice/talk/KIDS_T_0057.mp3,false,自己紹介
+grades.g5,g5_33,3時です。,It's three o'clock.,audio/voice/talk/KIDS_T_0058.mp3,false,時間
+grades.g5,g5_34,今日は月曜日です。,It's Monday today.,audio/voice/talk/KIDS_T_0059.mp3,false,曜日
+grades.g5,g5_35,私はサッカーをします。,I play soccer.,audio/voice/talk/KIDS_T_0060.mp3,false,スポーツ
+grades.g5,g5_36,立ってください。,Please stand up.,audio/voice/talk/KIDS_T_0061.mp3,false,教室
+grades.g5,g5_37,すわってください。,Please sit down.,audio/voice/talk/KIDS_T_0062.mp3,false,教室
+grades.g5,g5_38,わかりました。,"OK, I understand.",audio/voice/talk/KIDS_T_0063.mp3,false,教室
+grades.g5,g5_39,わかりません。,I don't understand.,audio/voice/talk/KIDS_T_0064.mp3,false,教室
+grades.g5,g5_40,もう一度お願いします。,"One more time, please.",audio/voice/talk/KIDS_T_0065.mp3,false,教室
+grades.g5,g5_41,がんばって。,Good luck.,audio/voice/talk/KIDS_T_0066.mp3,false,はげます
+grades.g5,g5_42,お誕生日おめでとう。,Happy birthday.,audio/voice/talk/KIDS_T_0067.mp3,false,お祝い
+grades.g5,g5_43,これはいくらですか。,How much is this?,audio/voice/talk/KIDS_T_0068.mp3,false,買い物
+grades.g5,g5_44,のどがかわきました。,I'm thirsty.,audio/voice/talk/KIDS_T_0069.mp3,false,気持ち
+grades.g5,g5_45,水をください。,"Water, please.",audio/voice/talk/KIDS_T_0070.mp3,false,食べ物
+grades.g5,g5_46,私はリンゴが3つほしいです。,I want three apples.,audio/voice/talk/KIDS_T_0071.mp3,false,ほしい
+grades.g5,g5_47,手伝ってくれますか。,Can you help me?,audio/voice/talk/KIDS_T_0072.mp3,false,お願い
+grades.g5,g5_48,もちろん。,Sure.,audio/voice/talk/KIDS_T_0073.mp3,false,返事
+grades.g5,g5_49,これが好きです。,I like this one.,audio/voice/talk/KIDS_T_0074.mp3,false,買い物
+grades.g5,g5_50,あなたの好きな色は何ですか。,What color do you like?,audio/voice/talk/KIDS_T_0075.mp3,false,たずねる
+grades.g5,g5_51,またあした。,See you tomorrow.,audio/voice/talk/KIDS_T_0076.mp3,false,あいさつ
+grades.g5,g5_52,おやすみなさい。,Good night.,audio/voice/talk/KIDS_T_0077.mp3,false,あいさつ
+grades.g5,g5_53,こんにちは。,Good afternoon.,audio/voice/talk/KIDS_T_0078.mp3,false,あいさつ
+grades.g5,g5_54,こんばんは。,Good evening.,audio/voice/talk/KIDS_T_0079.mp3,false,あいさつ
+grades.g5,g5_55,また来週。,See you next week.,audio/voice/talk/KIDS_T_0080.mp3,false,あいさつ
+grades.g5,g5_56,やあ、ケン。,"Hi, Ken.",audio/voice/talk/KIDS_T_0081.mp3,false,あいさつ
+grades.g5,g5_57,今日の調子はどうですか。,How are you today?,audio/voice/talk/KIDS_T_0082.mp3,false,あいさつ
+grades.g5,g5_58,私はミカです。,I'm Mika.,audio/voice/talk/KIDS_T_0083.mp3,false,自己紹介
+grades.g5,g5_59,私は10歳です。,I'm ten years old.,audio/voice/talk/KIDS_T_0084.mp3,false,自己紹介
+grades.g5,g5_60,私は広島に住んでいます。,I live in Hiroshima.,audio/voice/talk/KIDS_T_0085.mp3,false,自己紹介
+grades.g5,g5_61,私は学生です。,I'm a student.,audio/voice/talk/KIDS_T_0086.mp3,false,自己紹介
+grades.g5,g5_62,あれは何ですか。,What's that?,audio/voice/talk/KIDS_T_0087.mp3,false,たずねる
+grades.g5,g5_63,それはネコです。,It's a cat.,audio/voice/talk/KIDS_T_0088.mp3,false,こたえる
+grades.g5,g5_64,あの男の子はだれですか。,Who is that boy?,audio/voice/talk/KIDS_T_0089.mp3,false,たずねる
+grades.g5,g5_65,彼は私の友達です。,He is my friend.,audio/voice/talk/KIDS_T_0090.mp3,false,こたえる
+grades.g5,g5_66,あなたはどこの出身ですか。,Where are you from?,audio/voice/talk/KIDS_T_0091.mp3,false,たずねる
+grades.g5,g5_67,私はネコが好きです。,I like cats.,audio/voice/talk/KIDS_T_0092.mp3,false,好き嫌い
+grades.g5,g5_68,私はアイスクリームが大好きです。,I love ice cream.,audio/voice/talk/KIDS_T_0093.mp3,false,好き嫌い
+grades.g5,g5_69,私はニンジンが好きではありません。,I don't like carrots.,audio/voice/talk/KIDS_T_0094.mp3,false,好き嫌い
+grades.g5,g5_70,あなたは何のスポーツが好きですか。,What sport do you like?,audio/voice/talk/KIDS_T_0095.mp3,false,たずねる
+grades.g5,g5_71,私は野球が好きです。,I like baseball.,audio/voice/talk/KIDS_T_0096.mp3,false,こたえる
+grades.g5,g5_72,こちらは私の母です。,This is my mother.,audio/voice/talk/KIDS_T_0097.mp3,false,家族
+grades.g5,g5_73,私には姉妹が2人います。,I have two sisters.,audio/voice/talk/KIDS_T_0098.mp3,false,家族
+grades.g5,g5_74,これはあなたのペンですか。,Is this your pen?,audio/voice/talk/KIDS_T_0099.mp3,false,持ち物
+grades.g5,g5_75,はい、そうです。,"Yes, it is.",audio/voice/talk/KIDS_T_0100.mp3,false,こたえる
+grades.g5,g5_76,いいえ、ちがいます。,"No, it isn't.",audio/voice/talk/KIDS_T_0101.mp3,false,こたえる
+grades.g5,g5_77,お昼ごはんの時間です。,It's time for lunch.,audio/voice/talk/KIDS_T_0102.mp3,false,時間
+grades.g5,g5_78,今日は何曜日ですか。,What day is it today?,audio/voice/talk/KIDS_T_0103.mp3,false,曜日
+grades.g5,g5_79,今日は晴れです。,It's sunny today.,audio/voice/talk/KIDS_T_0104.mp3,false,天気
+grades.g5,g5_80,今日は寒いです。,It's cold today.,audio/voice/talk/KIDS_T_0105.mp3,false,天気
+grades.g5,g5_81,本を開いてください。,Open your books.,audio/voice/talk/KIDS_T_0106.mp3,false,教室
+grades.g5,g5_82,ドアを閉めてください。,"Close the door, please.",audio/voice/talk/KIDS_T_0107.mp3,false,教室
+grades.g5,g5_83,これを見てください。,Look at this.,audio/voice/talk/KIDS_T_0108.mp3,false,教室
+grades.g5,g5_84,質問があります。,I have a question.,audio/voice/talk/KIDS_T_0109.mp3,false,教室
+grades.g5,g5_85,私は算数が好きです。,I like math.,audio/voice/talk/KIDS_T_0110.mp3,false,学校
+grades.g5,g5_86,私の学校は大きいです。,My school is big.,audio/voice/talk/KIDS_T_0111.mp3,false,学校
+grades.g5,g5_87,ただいま。,I'm home.,audio/voice/talk/KIDS_T_0112.mp3,false,家
+grades.g5,g5_88,おかえりなさい。,Welcome home.,audio/voice/talk/KIDS_T_0113.mp3,false,家
+grades.g5,g5_89,食べましょう。,Let's eat.,audio/voice/talk/KIDS_T_0114.mp3,false,食べ物
+grades.g5,g5_90,おいしいね。,It's yummy.,audio/voice/talk/KIDS_T_0115.mp3,false,食べ物
+grades.g5,g5_91,おにごっこをしよう。,Let's play tag.,audio/voice/talk/KIDS_T_0116.mp3,false,遊び
+grades.g5,g5_92,いっしょに遊ぼう。,Let's play together.,audio/voice/talk/KIDS_T_0117.mp3,false,遊び
+grades.g5,g5_93,私の番です。,It's my turn.,audio/voice/talk/KIDS_T_0118.mp3,false,遊び
+grades.g5,g5_94,私はうれしいです。,I'm happy.,audio/voice/talk/KIDS_T_0119.mp3,false,気持ち
+grades.g5,g5_95,私はねむいです。,I'm sleepy.,audio/voice/talk/KIDS_T_0120.mp3,false,気持ち
+grades.g5,g5_96,あなたならできるよ。,You can do it.,audio/voice/talk/KIDS_T_0121.mp3,false,はげます
+grades.g5,g5_97,どうもありがとう。,Thanks a lot.,audio/voice/talk/KIDS_T_0122.mp3,false,お礼
+grades.g5,g5_98,私も。,Me too.,audio/voice/talk/KIDS_T_0123.mp3,false,返事
+grades.g5,g5_99,私は泳げます。,I can swim.,audio/voice/talk/KIDS_T_0124.mp3,false,スポーツ
+grades.g4,g4_0,えきは どこ？,Where is the station?,audio/voice/talk/KIDS_T_0027.mp3,true,
+grades.g4,g4_1,いくら？,How much is it?,audio/voice/talk/KIDS_T_0028.mp3,true,
+grades.g4,g4_2,いま なんじ？,What time is it?,audio/voice/talk/KIDS_T_0029.mp3,true,
+grades.g4,g4_3,てつだおうか？,Can I help you?,audio/voice/talk/KIDS_T_0030.mp3,true,
+grades.g4,g4_4,トイレ かりていい？,May I use the bathroom?,audio/voice/talk/KIDS_T_0031.mp3,true,
+grades.g4,g4_5,しゅみは なに？,What do you like to do?,audio/voice/talk/KIDS_T_0032.mp3,true,
+grades.g4,g4_6,いっしょに いこう,Let's go together.,audio/voice/talk/KIDS_T_0033.mp3,true,
+grades.g4,g4_7,おなか すいた,I'm hungry.,audio/voice/talk/KIDS_T_0034.mp3,true,
+grades.g4,g4_8,もういちど 言って？,Pardon?,audio/voice/talk/KIDS_T_0035.mp3,true,
+grades.g4,g4_9,きをつけてね,Take care!,audio/voice/talk/KIDS_T_0036.mp3,true,
+grades.g4,g4_10,おめでとう,Congratulations!,audio/voice/talk/KIDS_T_0037.mp3,true,
+grades.g4,g4_11,だいじょうぶ,It's okay.,audio/voice/talk/KIDS_T_0038.mp3,true,
+grades.g4,g4_12,私は毎朝6時に起きます。,I get up at six every morning.,audio/voice/talk/KIDS_T_0125.mp3,false,一日の生活
+grades.g4,g4_13,私はバスで学校へ行きます。,I go to school by bus.,audio/voice/talk/KIDS_T_0126.mp3,false,通学
+grades.g4,g4_14,私は昨日サッカーをしました。,I played soccer yesterday.,audio/voice/talk/KIDS_T_0127.mp3,false,過去
+grades.g4,g4_15,私は先週京都へ行きました。,I went to Kyoto last week.,audio/voice/talk/KIDS_T_0128.mp3,false,過去
+grades.g4,g4_16,週末は何をしましたか。,What did you do on the weekend?,audio/voice/talk/KIDS_T_0129.mp3,false,たずねる
+grades.g4,g4_17,私は宿題をしました。,I did my homework.,audio/voice/talk/KIDS_T_0130.mp3,false,過去
+grades.g4,g4_18,あなたはどこに住んでいますか。,Where do you live?,audio/voice/talk/KIDS_T_0131.mp3,false,たずねる
+grades.g4,g4_19,私は東京に住んでいます。,I live in Tokyo.,audio/voice/talk/KIDS_T_0132.mp3,false,こたえる
+grades.g4,g4_20,駅への道を教えてください。,Could you tell me the way to the station?,audio/voice/talk/KIDS_T_0133.mp3,false,道案内
+grades.g4,g4_21,まっすぐ行ってください。,Go straight.,audio/voice/talk/KIDS_T_0134.mp3,false,道案内
+grades.g4,g4_22,右に曲がってください。,Turn right.,audio/voice/talk/KIDS_T_0135.mp3,false,道案内
+grades.g4,g4_23,ここから遠いですか。,Is it far from here?,audio/voice/talk/KIDS_T_0136.mp3,false,道案内
+grades.g4,g4_24,歩いて10分くらいです。,It's about ten minutes on foot.,audio/voice/talk/KIDS_T_0137.mp3,false,道案内
+grades.g4,g4_25,これを試着してもいいですか。,Can I try this on?,audio/voice/talk/KIDS_T_0138.mp3,false,買い物
+grades.g4,g4_26,別の色はありますか。,Do you have another color?,audio/voice/talk/KIDS_T_0139.mp3,false,買い物
+grades.g4,g4_27,もっと大きいのはありますか。,Do you have a bigger one?,audio/voice/talk/KIDS_T_0140.mp3,false,買い物
+grades.g4,g4_28,これをください。,I'll take this one.,audio/voice/talk/KIDS_T_0141.mp3,false,買い物
+grades.g4,g4_29,映画を見に行きませんか。,Would you like to go to a movie?,audio/voice/talk/KIDS_T_0142.mp3,false,さそう
+grades.g4,g4_30,いいですね。,That sounds good.,audio/voice/talk/KIDS_T_0143.mp3,false,返事
+grades.g4,g4_31,ごめん、行けません。,"Sorry, I can't.",audio/voice/talk/KIDS_T_0144.mp3,false,返事
+grades.g4,g4_32,何時に会いましょうか。,What time shall we meet?,audio/voice/talk/KIDS_T_0145.mp3,false,約束
+grades.g4,g4_33,10時に駅で会いましょう。,Let's meet at the station at ten.,audio/voice/talk/KIDS_T_0146.mp3,false,約束
+grades.g4,g4_34,気分が悪いです。,I feel sick.,audio/voice/talk/KIDS_T_0147.mp3,false,体調
+grades.g4,g4_35,頭が痛いです。,I have a headache.,audio/voice/talk/KIDS_T_0148.mp3,false,体調
+grades.g4,g4_36,かぜをひきました。,I have a cold.,audio/voice/talk/KIDS_T_0149.mp3,false,体調
+grades.g4,g4_37,手伝いましょうか。,Shall I help you?,audio/voice/talk/KIDS_T_0150.mp3,false,申し出
+grades.g4,g4_38,私は音楽を聞くのが好きです。,I like listening to music.,audio/voice/talk/KIDS_T_0151.mp3,false,好み
+grades.g4,g4_39,私はテニスをするのが得意です。,I'm good at playing tennis.,audio/voice/talk/KIDS_T_0152.mp3,false,好み
+grades.g4,g4_40,明日は晴れるでしょう。,It will be sunny tomorrow.,audio/voice/talk/KIDS_T_0153.mp3,false,天気
+grades.g4,g4_41,私は今テレビを見ています。,I'm watching TV now.,audio/voice/talk/KIDS_T_0154.mp3,false,今している
+grades.g4,g4_42,彼は今電話で話しています。,He is talking on the phone now.,audio/voice/talk/KIDS_T_0155.mp3,false,今している
+grades.g4,g4_43,あなたはピアノが弾けますか。,Can you play the piano?,audio/voice/talk/KIDS_T_0156.mp3,false,たずねる
+grades.g4,g4_44,少しだけ弾けます。,I can play a little.,audio/voice/talk/KIDS_T_0157.mp3,false,こたえる
+grades.g4,g4_45,私は将来、先生になりたいです。,I want to be a teacher in the future.,audio/voice/talk/KIDS_T_0158.mp3,false,将来
+grades.g4,g4_46,昼ごはんに何を食べましたか。,What did you eat for lunch?,audio/voice/talk/KIDS_T_0159.mp3,false,食事
+grades.g4,g4_47,サンドイッチを食べました。,I ate a sandwich.,audio/voice/talk/KIDS_T_0160.mp3,false,食事
+grades.g4,g4_48,どうやってそこへ行きますか。,How do you get there?,audio/voice/talk/KIDS_T_0161.mp3,false,交通
+grades.g4,g4_49,電車で行きます。,I go there by train.,audio/voice/talk/KIDS_T_0162.mp3,false,交通
+grades.g4,g4_50,あなたのお姉さんは何歳ですか。,How old is your sister?,audio/voice/talk/KIDS_T_0163.mp3,false,家族
+grades.g4,g4_51,彼女は15歳です。,She is fifteen.,audio/voice/talk/KIDS_T_0164.mp3,false,家族
+grades.g4,g4_52,何か飲みますか。,Would you like something to drink?,audio/voice/talk/KIDS_T_0165.mp3,false,もてなし
+grades.g4,g4_53,お茶をお願いします。,"Tea, please.",audio/voice/talk/KIDS_T_0166.mp3,false,もてなし
+grades.g4,g4_54,写真をとってもいいですか。,Can I take a picture?,audio/voice/talk/KIDS_T_0167.mp3,false,お願い
+grades.g4,g4_55,窓を開けてもいいですか。,May I open the window?,audio/voice/talk/KIDS_T_0168.mp3,false,お願い
+grades.g4,g4_56,もちろんいいですよ。,"Sure, go ahead.",audio/voice/talk/KIDS_T_0169.mp3,false,返事
+grades.g4,g4_57,お先にどうぞ。,After you.,audio/voice/talk/KIDS_T_0170.mp3,false,気づかい
+grades.g4,g4_58,楽しかったです。,I had a good time.,audio/voice/talk/KIDS_T_0171.mp3,false,気持ち
+grades.g4,g4_59,また会いましょう。,Let's meet again.,audio/voice/talk/KIDS_T_0172.mp3,false,あいさつ
+grades.g4,g4_60,私は10時に寝ます。,I go to bed at ten.,audio/voice/talk/KIDS_T_0173.mp3,false,一日の生活
+grades.g4,g4_61,私は7時に朝ごはんを食べます。,I eat breakfast at seven.,audio/voice/talk/KIDS_T_0174.mp3,false,一日の生活
+grades.g4,g4_62,私は歩いて学校へ行きます。,I walk to school.,audio/voice/talk/KIDS_T_0175.mp3,false,通学
+grades.g4,g4_63,私は昨夜映画を見ました。,I watched a movie last night.,audio/voice/talk/KIDS_T_0176.mp3,false,過去
+grades.g4,g4_64,私は日曜日に祖母をたずねました。,I visited my grandmother on Sunday.,audio/voice/talk/KIDS_T_0177.mp3,false,過去
+grades.g4,g4_65,昨日はどこへ行きましたか。,Where did you go yesterday?,audio/voice/talk/KIDS_T_0178.mp3,false,たずねる
+grades.g4,g4_66,公園へ行きました。,I went to the park.,audio/voice/talk/KIDS_T_0179.mp3,false,こたえる
+grades.g4,g4_67,その角を左に曲がってください。,Turn left at the corner.,audio/voice/talk/KIDS_T_0180.mp3,false,道案内
+grades.g4,g4_68,銀行のとなりです。,It's next to the bank.,audio/voice/talk/KIDS_T_0181.mp3,false,道案内
+grades.g4,g4_69,もっと小さいのはありますか。,Do you have a smaller one?,audio/voice/talk/KIDS_T_0182.mp3,false,買い物
+grades.g4,g4_70,見ているだけです。,I'm just looking.,audio/voice/talk/KIDS_T_0183.mp3,false,買い物
+grades.g4,g4_71,放課後テニスをしましょう。,Let's play tennis after school.,audio/voice/talk/KIDS_T_0184.mp3,false,さそう
+grades.g4,g4_72,いっしょに来ませんか。,Do you want to come with me?,audio/voice/talk/KIDS_T_0185.mp3,false,さそう
+grades.g4,g4_73,ぜひそうしたいです。,I'd love to.,audio/voice/talk/KIDS_T_0186.mp3,false,返事
+grades.g4,g4_74,どこで会いましょうか。,Where shall we meet?,audio/voice/talk/KIDS_T_0187.mp3,false,約束
+grades.g4,g4_75,公園で会いましょう。,See you at the park.,audio/voice/talk/KIDS_T_0188.mp3,false,約束
+grades.g4,g4_76,おなかが痛いです。,I have a stomachache.,audio/voice/talk/KIDS_T_0189.mp3,false,体調
+grades.g4,g4_77,今はもう気分がよくなりました。,I feel better now.,audio/voice/talk/KIDS_T_0190.mp3,false,体調
+grades.g4,g4_78,どうしたのですか。,What's wrong?,audio/voice/talk/KIDS_T_0191.mp3,false,気づかい
+grades.g4,g4_79,かばんを持ちましょうか。,Shall I carry your bag?,audio/voice/talk/KIDS_T_0192.mp3,false,申し出
+grades.g4,g4_80,私はテレビゲームをするのが好きです。,I like playing video games.,audio/voice/talk/KIDS_T_0193.mp3,false,好み
+grades.g4,g4_81,私は料理が得意です。,I'm good at cooking.,audio/voice/talk/KIDS_T_0194.mp3,false,好み
+grades.g4,g4_82,昨日は雨でした。,It was rainy yesterday.,audio/voice/talk/KIDS_T_0195.mp3,false,天気
+grades.g4,g4_83,今日の天気はどうですか。,How's the weather today?,audio/voice/talk/KIDS_T_0196.mp3,false,天気
+grades.g4,g4_84,私は今宿題をしています。,I'm doing my homework now.,audio/voice/talk/KIDS_T_0197.mp3,false,今している
+grades.g4,g4_85,あなたは何をしているのですか。,What are you doing?,audio/voice/talk/KIDS_T_0198.mp3,false,今している
+grades.g4,g4_86,あなたは自転車に乗れますか。,Can you ride a bike?,audio/voice/talk/KIDS_T_0199.mp3,false,たずねる
+grades.g4,g4_87,私はサッカー選手になりたいです。,I want to be a soccer player.,audio/voice/talk/KIDS_T_0200.mp3,false,将来
+grades.g4,g4_88,夕ごはんは何がいいですか。,What would you like for dinner?,audio/voice/talk/KIDS_T_0201.mp3,false,食事
+grades.g4,g4_89,カレーライスがいいです。,I'd like curry and rice.,audio/voice/talk/KIDS_T_0202.mp3,false,食事
+grades.g4,g4_90,動物園へ行くのはどのバスですか。,Which bus goes to the zoo?,audio/voice/talk/KIDS_T_0203.mp3,false,交通
+grades.g4,g4_91,私の父は料理人です。,My father is a cook.,audio/voice/talk/KIDS_T_0204.mp3,false,家族
+grades.g4,g4_92,ご自由にどうぞ。,Help yourself.,audio/voice/talk/KIDS_T_0205.mp3,false,もてなし
+grades.g4,g4_93,ペンを借りてもいいですか。,Can I borrow your pen?,audio/voice/talk/KIDS_T_0206.mp3,false,お願い
+grades.g4,g4_94,ここで待っていてください。,Please wait here.,audio/voice/talk/KIDS_T_0207.mp3,false,お願い
+grades.g4,g4_95,いいですよ。,No problem.,audio/voice/talk/KIDS_T_0208.mp3,false,返事
+grades.g4,g4_96,あなたのいちばん好きな教科は何ですか。,What's your favorite subject?,audio/voice/talk/KIDS_T_0209.mp3,false,学校
+grades.g4,g4_97,今日は授業が5時間あります。,We have five classes today.,audio/voice/talk/KIDS_T_0210.mp3,false,学校
+grades.g4,g4_98,テレビを見てもいいですか。,Can I watch TV?,audio/voice/talk/KIDS_T_0211.mp3,false,家
+grades.g4,g4_99,私はとても疲れていました。,I was very tired.,audio/voice/talk/KIDS_T_0212.mp3,false,気持ち
+grades.g3,g3_0,みちに まよった,I'm lost.,audio/voice/talk/KIDS_T_0039.mp3,true,
+grades.g3,g3_1,どう おもう？,What do you think?,audio/voice/talk/KIDS_T_0040.mp3,true,
+grades.g3,g3_2,いっしょに いかない？,Why don't we go?,audio/voice/talk/KIDS_T_0041.mp3,true,
+grades.g3,g3_3,なんで そう おもうの？,Why do you think so?,audio/voice/talk/KIDS_T_0042.mp3,true,
+grades.g3,g3_4,おすすめは なに？,What do you recommend?,audio/voice/talk/KIDS_T_0043.mp3,true,
+grades.g3,g3_5,さんせい！,I agree with you.,audio/voice/talk/KIDS_T_0044.mp3,true,
+grades.g3,g3_6,たのしみ！,I'm looking forward to it.,audio/voice/talk/KIDS_T_0045.mp3,true,
+grades.g3,g3_7,きが かわった,I changed my mind.,audio/voice/talk/KIDS_T_0046.mp3,true,
+grades.g3,g3_8,おかげさまで,Thanks to you.,audio/voice/talk/KIDS_T_0047.mp3,true,
+grades.g3,g3_9,じしんが ない,I'm not sure.,audio/voice/talk/KIDS_T_0048.mp3,true,
+grades.g3,g3_10,れんらく とりあおう,Let's keep in touch.,audio/voice/talk/KIDS_T_0049.mp3,true,
+grades.g3,g3_11,むりしないで,Don't push yourself.,audio/voice/talk/KIDS_T_0050.mp3,true,
+grades.g3,g3_12,私は夏のほうが冬より好きです。,I like summer better than winter.,audio/voice/talk/KIDS_T_0213.mp3,false,意見
+grades.g3,g3_13,なぜなら泳ぐのが好きだからです。,Because I like swimming.,audio/voice/talk/KIDS_T_0214.mp3,false,理由
+grades.g3,g3_14,私はこの映画がおもしろいと思います。,I think this movie is interesting.,audio/voice/talk/KIDS_T_0215.mp3,false,意見
+grades.g3,g3_15,私もそう思います。,I think so too.,audio/voice/talk/KIDS_T_0216.mp3,false,あいづち
+grades.g3,g3_16,私はそうは思いません。,I don't think so.,audio/voice/talk/KIDS_T_0217.mp3,false,あいづち
+grades.g3,g3_17,私は沖縄に行ったことがあります。,I have been to Okinawa.,audio/voice/talk/KIDS_T_0218.mp3,false,経験
+grades.g3,g3_18,私は一度も海外に行ったことがありません。,I have never been abroad.,audio/voice/talk/KIDS_T_0219.mp3,false,経験
+grades.g3,g3_19,もう宿題を終えましたか。,Have you finished your homework yet?,audio/voice/talk/KIDS_T_0220.mp3,false,たずねる
+grades.g3,g3_20,まだ終えていません。,Not yet.,audio/voice/talk/KIDS_T_0221.mp3,false,こたえる
+grades.g3,g3_21,この本はあの本よりおもしろいです。,This book is more interesting than that one.,audio/voice/talk/KIDS_T_0222.mp3,false,比較
+grades.g3,g3_22,これがいちばん好きです。,I like this one the best.,audio/voice/talk/KIDS_T_0223.mp3,false,比較
+grades.g3,g3_23,富士山は日本でいちばん高い山です。,Mt. Fuji is the highest mountain in Japan.,audio/voice/talk/KIDS_T_0224.mp3,false,比較
+grades.g3,g3_24,もしもし、タロウですが。,"Hello, this is Taro.",audio/voice/talk/KIDS_T_0225.mp3,false,電話
+grades.g3,g3_25,ケンをお願いできますか。,May I speak to Ken?,audio/voice/talk/KIDS_T_0226.mp3,false,電話
+grades.g3,g3_26,少々お待ちください。,"Just a moment, please.",audio/voice/talk/KIDS_T_0227.mp3,false,電話
+grades.g3,g3_27,伝言をお願いできますか。,Can I leave a message?,audio/voice/talk/KIDS_T_0228.mp3,false,電話
+grades.g3,g3_28,あとでかけ直します。,I'll call back later.,audio/voice/talk/KIDS_T_0229.mp3,false,電話
+grades.g3,g3_29,2名ですが席はありますか。,Do you have a table for two?,audio/voice/talk/KIDS_T_0230.mp3,false,レストラン
+grades.g3,g3_30,メニューを見せてください。,Could I see the menu?,audio/voice/talk/KIDS_T_0231.mp3,false,レストラン
+grades.g3,g3_31,これはどんな料理ですか。,What kind of dish is this?,audio/voice/talk/KIDS_T_0232.mp3,false,レストラン
+grades.g3,g3_32,これにします。,I'll have this one.,audio/voice/talk/KIDS_T_0233.mp3,false,レストラン
+grades.g3,g3_33,お会計をお願いします。,"Check, please.",audio/voice/talk/KIDS_T_0234.mp3,false,レストラン
+grades.g3,g3_34,とてもおいしかったです。,It was delicious.,audio/voice/talk/KIDS_T_0235.mp3,false,レストラン
+grades.g3,g3_35,駅までどのくらいかかりますか。,How long does it take to get to the station?,audio/voice/talk/KIDS_T_0236.mp3,false,旅行
+grades.g3,g3_36,20分くらいかかります。,It takes about twenty minutes.,audio/voice/talk/KIDS_T_0237.mp3,false,旅行
+grades.g3,g3_37,どの電車に乗ればいいですか。,Which train should I take?,audio/voice/talk/KIDS_T_0238.mp3,false,旅行
+grades.g3,g3_38,切符はどこで買えますか。,Where can I buy a ticket?,audio/voice/talk/KIDS_T_0239.mp3,false,旅行
+grades.g3,g3_39,写真をとっていただけますか。,Could you take a picture of me?,audio/voice/talk/KIDS_T_0240.mp3,false,旅行
+grades.g3,g3_40,助けていただけますか。,Could you help me?,audio/voice/talk/KIDS_T_0241.mp3,false,お願い
+grades.g3,g3_41,将来、私は医者になりたいです。,I want to be a doctor in the future.,audio/voice/talk/KIDS_T_0242.mp3,false,将来
+grades.g3,g3_42,なぜなら人を助けたいからです。,Because I want to help people.,audio/voice/talk/KIDS_T_0243.mp3,false,理由
+grades.g3,g3_43,私は3年間英語を勉強しています。,I have studied English for three years.,audio/voice/talk/KIDS_T_0244.mp3,false,経験
+grades.g3,g3_44,あなたはどのくらい日本にいますか。,How long have you been in Japan?,audio/voice/talk/KIDS_T_0245.mp3,false,たずねる
+grades.g3,g3_45,私は疲れていたので早く寝ました。,I went to bed early because I was tired.,audio/voice/talk/KIDS_T_0246.mp3,false,理由
+grades.g3,g3_46,もし雨が降ったら家にいます。,"If it rains, I'll stay home.",audio/voice/talk/KIDS_T_0247.mp3,false,仮定
+grades.g3,g3_47,私はあなたに賛成しません。,I don't agree with you.,audio/voice/talk/KIDS_T_0248.mp3,false,意見
+grades.g3,g3_48,それはいい考えですね。,That's a good idea.,audio/voice/talk/KIDS_T_0249.mp3,false,あいづち
+grades.g3,g3_49,もう一度言ってもらえますか。,Could you say that again?,audio/voice/talk/KIDS_T_0250.mp3,false,聞き返す
+grades.g3,g3_50,ゆっくり話してもらえますか。,Could you speak slowly?,audio/voice/talk/KIDS_T_0251.mp3,false,聞き返す
+grades.g3,g3_51,手伝ってくれてありがとう。,Thank you for helping me.,audio/voice/talk/KIDS_T_0252.mp3,false,お礼
+grades.g3,g3_52,気にしないで。,Don't worry about it.,audio/voice/talk/KIDS_T_0253.mp3,false,気づかい
+grades.g3,g3_53,お会いできてよかったです。,It was nice meeting you.,audio/voice/talk/KIDS_T_0254.mp3,false,あいさつ
+grades.g3,g3_54,あなたの趣味は何ですか。,What are your hobbies?,audio/voice/talk/KIDS_T_0255.mp3,false,たずねる
+grades.g3,g3_55,私は本を読むのが好きです。,I like reading books.,audio/voice/talk/KIDS_T_0256.mp3,false,こたえる
+grades.g3,g3_56,週末は何をする予定ですか。,What are you going to do this weekend?,audio/voice/talk/KIDS_T_0257.mp3,false,予定
+grades.g3,g3_57,友達と買い物に行く予定です。,I'm going to go shopping with my friends.,audio/voice/talk/KIDS_T_0258.mp3,false,予定
+grades.g3,g3_58,私はサッカーのほうが野球よりわくわくすると思います。,I think soccer is more exciting than baseball.,audio/voice/talk/KIDS_T_0259.mp3,false,意見
+grades.g3,g3_59,なぜなら友達とするのが楽しいからです。,Because it's fun to play with my friends.,audio/voice/talk/KIDS_T_0260.mp3,false,理由
+grades.g3,g3_60,私の意見では、制服はよいと思います。,"In my opinion, school uniforms are good.",audio/voice/talk/KIDS_T_0261.mp3,false,意見
+grades.g3,g3_61,なぜなら毎日服を選ばなくてよいからです。,Because we don't have to choose clothes every day.,audio/voice/talk/KIDS_T_0262.mp3,false,理由
+grades.g3,g3_62,そのとおりですね。,That's true.,audio/voice/talk/KIDS_T_0263.mp3,false,あいづち
+grades.g3,g3_63,本当ですか。知りませんでした。,Really? I didn't know that.,audio/voice/talk/KIDS_T_0264.mp3,false,あいづち
+grades.g3,g3_64,私はこの映画を2回見たことがあります。,I have seen this movie twice.,audio/voice/talk/KIDS_T_0265.mp3,false,経験
+grades.g3,g3_65,北海道に行ったことはありますか。,Have you ever been to Hokkaido?,audio/voice/talk/KIDS_T_0266.mp3,false,経験
+grades.g3,g3_66,はい、去年の夏に行きました。,"Yes, I went there last summer.",audio/voice/talk/KIDS_T_0267.mp3,false,こたえる
+grades.g3,g3_67,私は5歳のときからここに住んでいます。,I have lived here since I was five.,audio/voice/talk/KIDS_T_0268.mp3,false,経験
+grades.g3,g3_68,あなたはおすしを食べたことがありますか。,Have you ever eaten sushi?,audio/voice/talk/KIDS_T_0269.mp3,false,たずねる
+grades.g3,g3_69,トムはケンより速く走ります。,Tom runs faster than Ken.,audio/voice/talk/KIDS_T_0270.mp3,false,比較
+grades.g3,g3_70,このかばんは私のと同じくらいの大きさです。,This bag is as big as mine.,audio/voice/talk/KIDS_T_0271.mp3,false,比較
+grades.g3,g3_71,どちらさまですか。,"Who's calling, please?",audio/voice/talk/KIDS_T_0272.mp3,false,電話
+grades.g3,g3_72,彼は今出かけています。,He's out now.,audio/voice/talk/KIDS_T_0273.mp3,false,電話
+grades.g3,g3_73,ご注文はお決まりですか。,Are you ready to order?,audio/voice/talk/KIDS_T_0274.mp3,false,レストラン
+grades.g3,g3_74,お水をいただけますか。,Could I have some water?,audio/voice/talk/KIDS_T_0275.mp3,false,レストラン
+grades.g3,g3_75,この近くにコンビニはありますか。,Is there a convenience store near here?,audio/voice/talk/KIDS_T_0276.mp3,false,旅行
+grades.g3,g3_76,ここにどのくらい滞在しますか。,How long will you stay here?,audio/voice/talk/KIDS_T_0277.mp3,false,旅行
+grades.g3,g3_77,1週間滞在する予定です。,I'm going to stay for a week.,audio/voice/talk/KIDS_T_0278.mp3,false,旅行
+grades.g3,g3_78,ドアを開けていただけますか。,Could you open the door for me?,audio/voice/talk/KIDS_T_0279.mp3,false,お願い
+grades.g3,g3_79,この使い方を教えていただけますか。,Could you show me how to use this?,audio/voice/talk/KIDS_T_0280.mp3,false,お願い
+grades.g3,g3_80,いつか海外で働きたいです。,I want to work abroad someday.,audio/voice/talk/KIDS_T_0281.mp3,false,将来
+grades.g3,g3_81,なぜならほかの国の文化に興味があるからです。,Because I'm interested in other cultures.,audio/voice/talk/KIDS_T_0282.mp3,false,理由
+grades.g3,g3_82,もしひまなら、公園に行きましょう。,"If you're free, let's go to the park.",audio/voice/talk/KIDS_T_0283.mp3,false,仮定
+grades.g3,g3_83,時間があれば手伝います。,"If I have time, I'll help you.",audio/voice/talk/KIDS_T_0284.mp3,false,仮定
+grades.g3,g3_84,本を読むことは大切だと思います。,I think it's important to read books.,audio/voice/talk/KIDS_T_0285.mp3,false,意見
+grades.g3,g3_85,それはおもしろそうですね。,That sounds interesting.,audio/voice/talk/KIDS_T_0286.mp3,false,あいづち
+grades.g3,g3_86,どういう意味ですか。,What do you mean?,audio/voice/talk/KIDS_T_0287.mp3,false,聞き返す
+grades.g3,g3_87,それはどうつづりますか。,How do you spell it?,audio/voice/talk/KIDS_T_0288.mp3,false,聞き返す
+grades.g3,g3_88,招待してくれてありがとう。,Thank you for inviting me.,audio/voice/talk/KIDS_T_0289.mp3,false,お礼
+grades.g3,g3_89,だいじょうぶですか。,Are you all right?,audio/voice/talk/KIDS_T_0290.mp3,false,気づかい
+grades.g3,g3_90,疲れているみたいですね。,You look tired.,audio/voice/talk/KIDS_T_0291.mp3,false,気づかい
+grades.g3,g3_91,明日おじをたずねる予定です。,I'm going to visit my uncle tomorrow.,audio/voice/talk/KIDS_T_0292.mp3,false,予定
+grades.g3,g3_92,夏休みの予定はありますか。,Do you have any plans for summer vacation?,audio/voice/talk/KIDS_T_0293.mp3,false,予定
+grades.g3,g3_93,私たちの文化祭は来月です。,Our school festival is next month.,audio/voice/talk/KIDS_T_0294.mp3,false,学校
+grades.g3,g3_94,私は去年吹奏楽部に入りました。,I joined the brass band last year.,audio/voice/talk/KIDS_T_0295.mp3,false,学校
+grades.g3,g3_95,今日は部屋をそうじしなければなりません。,I have to clean my room today.,audio/voice/talk/KIDS_T_0296.mp3,false,家
+grades.g3,g3_96,トランプをしませんか。,Why don't we play cards?,audio/voice/talk/KIDS_T_0297.mp3,false,遊び
+grades.g3,g3_97,それを聞いておどろきました。,I was surprised to hear that.,audio/voice/talk/KIDS_T_0298.mp3,false,気持ち
+grades.g3,g3_98,気に入ってくれてうれしいです。,I'm glad you like it.,audio/voice/talk/KIDS_T_0299.mp3,false,気持ち
+grades.g3,g3_99,あきらめないで。,Don't give up.,audio/voice/talk/KIDS_T_0300.mp3,false,はげます

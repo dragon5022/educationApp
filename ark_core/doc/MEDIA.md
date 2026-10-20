@@ -9,7 +9,7 @@
 ## 藤井先生へ：音声や絵を追加する手順
 
 1. ファイルを用意します。
-   - 音声：mp3（例 `g5_0_17.mp3`）
+   - 音声：mp3（例 `KIDS_L_0901.mp3`。いまある番号の続きにすると分かりやすいです）
    - 絵：webp か png（例 `211.webp`）
    - ファイル名は **半角英数字とアンダーバー**だけにしてください（日本語・スペース不可）。
 2. Firebase コンソール（https://console.firebase.google.com）→ プロジェクト → **Storage** を開きます。
@@ -17,11 +17,11 @@
 
    | ゲーム | フォルダ | シートに書く値（例） |
    |---|---|---|
-   | リスニングの音声 | `media/audio/voice/lis/` | `audio/voice/lis/g5_0_17.mp3` |
-   | ボキャブラリーの音声 | `media/audio/voice/voca/` | `audio/voice/voca/211.mp3` |
+   | リスニングの音声 | `media/audio/voice/lis/` | `audio/voice/lis/KIDS_L_0901.mp3` |
+   | ボキャブラリーの音声 | `media/audio/voice/voca/` | `audio/voice/voca/KIDS_V_1401.mp3` |
    | ボキャブラリーの絵 | `media/images/vocab/` | `images/vocab/211.webp` |
-   | トークの音声 | `media/audio/voice/talk/` | `audio/voice/talk/37.mp3` |
-   | センテンスの音声 | `media/audio/voice/gram/` | `audio/voice/gram/43.mp3` |
+   | トークの音声 | `media/audio/voice/talk/` | `audio/voice/talk/KIDS_T_0301.mp3` |
+   | センテンスの音声 | `media/audio/voice/gram/` | `audio/voice/gram/KIDS_S_0401.mp3` |
 
    `media/` から下の道すじが、そのままシートの `voice` / `img` 列に書く値になります。
 4. スプレッドシートの問題タブで、新しい行の `voice`（音声）や `img`（絵）の列に、上の「シートに書く値」を書きます。
@@ -35,6 +35,12 @@
 - 同じファイル名で置きかえても、すでにダウンロード済みの端末には反映されません。
   **直したいときは新しいファイル名にして、シートの値も変えてください。**
 - ファイルが多いときは、開発者がまとめてアップロードすることもできます（下記）。
+
+### 有料の問題の音声（KIDS）
+
+アプリに入っているのは**無料の問題の音声（500 本）**だけです。有料の問題の音声（2,500 本、約 86 MB）は
+Storage の `media/audio/voice/…` に置いておき、**購入後にアプリが必要な分をダウンロード**します
+（まだ無いあいだは英語の読み上げで代用）。開発者が `content/kids_voice/paid` を下記の「まとめてアップロード」で上げます。
 
 ---
 

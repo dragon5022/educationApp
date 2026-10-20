@@ -1,442 +1,1812 @@
 {
- "version": 1,
- "id": "e-bunpou",
- "subject": "english",
- "title": "文法の要塞",
- "label": "文",
- "timeLimitMs": 5000,
- "maxQuestions": 15,
- "images": {
-  "art": "e-bunpou",
-  "boss": "e-boss",
-  "chara": "uta",
-  "win": "win",
-  "lose": "lose2"
- },
- "levels": {
-  "Lv1": [
-   {
-    "q": "I ( ) soccer yesterday.",
-    "a": "played",
-    "choices": [
-     "playing",
-     "played",
-     "plays",
-     "play"
+  "version": 2,
+  "id": "e-bunpou",
+  "subject": "english",
+  "title": "文法の要塞",
+  "label": "文",
+  "timeLimitMs": 5000,
+  "maxQuestions": 15,
+  "images": {
+    "art": "e-bunpou",
+    "boss": "e-boss",
+    "chara": "uta",
+    "win": "win",
+    "lose": "lose2"
+  },
+  "levels": {
+    "Lv1": [
+      {
+        "q": "I ( ) soccer yesterday.",
+        "a": "played",
+        "choices": [
+          "playing",
+          "played",
+          "plays",
+          "play"
+        ],
+        "e": "yesterday→過去形 played。",
+        "free": true
+      },
+      {
+        "q": "She ( ) to school every day.",
+        "a": "goes",
+        "choices": [
+          "goes",
+          "go",
+          "going",
+          "went"
+        ],
+        "e": "三単現＋習慣→goes。",
+        "free": true
+      },
+      {
+        "q": "They ( ) busy now.",
+        "a": "are",
+        "choices": [
+          "am",
+          "are",
+          "is",
+          "be"
+        ],
+        "e": "主語they→are。",
+        "free": true
+      },
+      {
+        "q": "「〜できる」を表す助動詞は？",
+        "a": "can",
+        "choices": [
+          "can",
+          "will",
+          "must",
+          "may"
+        ],
+        "e": "can＝できる（能力）。",
+        "free": true
+      },
+      {
+        "q": "「〜しなければならない」は？",
+        "a": "must",
+        "choices": [
+          "must",
+          "may",
+          "could",
+          "can"
+        ],
+        "e": "must＝義務。",
+        "free": true
+      },
+      {
+        "q": "「〜してもよい」は？",
+        "a": "may",
+        "choices": [
+          "should",
+          "must",
+          "can't",
+          "may"
+        ],
+        "e": "may＝許可。",
+        "free": true
+      },
+      {
+        "q": "「〜だろう/するつもり」は？",
+        "a": "will",
+        "choices": [
+          "will",
+          "can",
+          "must",
+          "may"
+        ],
+        "e": "will＝未来・意志。",
+        "free": true
+      },
+      {
+        "q": "She ( ) fast every day.（run）",
+        "a": "runs",
+        "choices": [
+          "ran",
+          "run",
+          "runs",
+          "running"
+        ],
+        "e": "三単現→runs。",
+        "free": true
+      },
+      {
+        "q": "I ( ) my friends every day.（see）",
+        "a": "see",
+        "choices": [
+          "saw",
+          "see",
+          "seeing",
+          "sees"
+        ],
+        "e": "主語I→原形 see。",
+        "free": true
+      },
+      {
+        "q": "I ( ) my grandmother every Sunday.（visit）",
+        "a": "visit",
+        "choices": [
+          "visits",
+          "visited",
+          "visiting",
+          "visit"
+        ],
+        "e": "主語I→原形 visit。",
+        "free": true
+      },
+      {
+        "q": "I ( ) the room every day.（clean）",
+        "a": "clean",
+        "choices": [
+          "clean",
+          "cleaned",
+          "cleans",
+          "cleaning"
+        ],
+        "e": "主語I→原形 clean。",
+        "free": true
+      },
+      {
+        "q": "It ( ) sunny now.",
+        "a": "is",
+        "choices": [
+          "am",
+          "be",
+          "are",
+          "is"
+        ],
+        "e": "主語It→is。",
+        "free": true
+      },
+      {
+        "q": "He ( ) happy now.",
+        "a": "is",
+        "choices": [
+          "are",
+          "be",
+          "is",
+          "am"
+        ],
+        "e": "主語He→is。",
+        "free": true
+      },
+      {
+        "q": "Ken ( ) his grandmother every Sunday.（visit）",
+        "a": "visits",
+        "choices": [
+          "visit",
+          "visits",
+          "visited",
+          "visiting"
+        ],
+        "e": "三単現→visits。",
+        "free": true
+      },
+      {
+        "q": "I ( ) fast every day.（run）",
+        "a": "run",
+        "choices": [
+          "runs",
+          "ran",
+          "run",
+          "running"
+        ],
+        "e": "主語I→原形 run。",
+        "free": true
+      },
+      {
+        "q": "We ( ) happy now.",
+        "a": "are",
+        "choices": [
+          "be",
+          "am",
+          "is",
+          "are"
+        ],
+        "e": "主語We→are。",
+        "free": true
+      },
+      {
+        "q": "My father ( ) the car every day.（wash）",
+        "a": "washes",
+        "choices": [
+          "washing",
+          "wash",
+          "washes",
+          "washed"
+        ],
+        "e": "三単現→washes。",
+        "free": true
+      },
+      {
+        "q": "I ( ) the car every day.（wash）",
+        "a": "wash",
+        "choices": [
+          "washes",
+          "wash",
+          "washed",
+          "washing"
+        ],
+        "e": "主語I→原形 wash。",
+        "free": true
+      },
+      {
+        "q": "I ( ) dinner every day.（make）",
+        "a": "make",
+        "choices": [
+          "make",
+          "made",
+          "makes",
+          "making"
+        ],
+        "e": "主語I→原形 make。",
+        "free": true
+      },
+      {
+        "q": "I ( ) to school every day.（go）",
+        "a": "go",
+        "choices": [
+          "went",
+          "going",
+          "go",
+          "goes"
+        ],
+        "e": "主語I→原形 go。",
+        "free": true
+      },
+      {
+        "q": "Ken ( ) a letter every day.（write）",
+        "a": "writes",
+        "choices": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "e": "三単現→writes。",
+        "free": true
+      },
+      {
+        "q": "My father ( ) TV every day.（watch）",
+        "a": "watches",
+        "choices": [
+          "watch",
+          "watches",
+          "watched",
+          "watching"
+        ],
+        "e": "三単現→watches。",
+        "free": true
+      },
+      {
+        "q": "I ( ) English every day.（teach）",
+        "a": "teach",
+        "choices": [
+          "teaching",
+          "teach",
+          "taught",
+          "teaches"
+        ],
+        "e": "主語I→原形 teach。",
+        "free": true
+      },
+      {
+        "q": "He ( ) pictures every day.（take）",
+        "a": "takes",
+        "choices": [
+          "taking",
+          "take",
+          "took",
+          "takes"
+        ],
+        "e": "三単現→takes。",
+        "free": true
+      },
+      {
+        "q": "Mr. Brown ( ) English every day.（teach）",
+        "a": "teaches",
+        "choices": [
+          "teach",
+          "taught",
+          "teaching",
+          "teaches"
+        ],
+        "e": "三単現→teaches。",
+        "free": true
+      },
+      {
+        "q": "The teacher ( ) home every day.（come）",
+        "a": "comes",
+        "choices": [
+          "coming",
+          "comes",
+          "came",
+          "come"
+        ],
+        "e": "三単現→comes。",
+        "free": true
+      },
+      {
+        "q": "I ( ) my mother every day.（help）",
+        "a": "help",
+        "choices": [
+          "helps",
+          "help",
+          "helped",
+          "helping"
+        ],
+        "e": "主語I→原形 help。",
+        "free": true
+      },
+      {
+        "q": "I ( ) hard every day.（work）",
+        "a": "work",
+        "choices": [
+          "working",
+          "work",
+          "worked",
+          "works"
+        ],
+        "e": "主語I→原形 work。",
+        "free": true
+      },
+      {
+        "q": "I ( ) TV every day.（watch）",
+        "a": "watch",
+        "choices": [
+          "watching",
+          "watch",
+          "watched",
+          "watches"
+        ],
+        "e": "主語I→原形 watch。",
+        "free": true
+      },
+      {
+        "q": "I ( ) a letter every day.（write）",
+        "a": "write",
+        "choices": [
+          "writes",
+          "wrote",
+          "write",
+          "writing"
+        ],
+        "e": "主語I→原形 write。",
+        "free": true
+      },
+      {
+        "q": "My friends ( ) happy now.",
+        "a": "are",
+        "choices": [
+          "be",
+          "am",
+          "is",
+          "are"
+        ],
+        "e": "主語My friends→are。",
+        "free": true
+      },
+      {
+        "q": "You ( ) happy now.",
+        "a": "are",
+        "choices": [
+          "is",
+          "are",
+          "be",
+          "am"
+        ],
+        "e": "主語You→are。",
+        "free": true
+      },
+      {
+        "q": "Ken ( ) a friend every day.（call）",
+        "a": "calls",
+        "choices": [
+          "called",
+          "calls",
+          "call",
+          "calling"
+        ],
+        "e": "三単現→calls。",
+        "free": true
+      },
+      {
+        "q": "My father ( ) the room every day.（clean）",
+        "a": "cleans",
+        "choices": [
+          "cleans",
+          "clean",
+          "cleaned",
+          "cleaning"
+        ],
+        "e": "三単現→cleans。",
+        "free": true
+      },
+      {
+        "q": "Mary ( ) curry every day.（cook）",
+        "a": "cooks",
+        "choices": [
+          "cooked",
+          "cook",
+          "cooking",
+          "cooks"
+        ],
+        "e": "三単現→cooks。",
+        "free": true
+      },
+      {
+        "q": "I ( ) milk at the store every day.（buy）",
+        "a": "buy",
+        "choices": [
+          "buy",
+          "bought",
+          "buys",
+          "buying"
+        ],
+        "e": "主語I→原形 buy。",
+        "free": true
+      },
+      {
+        "q": "The boy ( ) at home every day.（stay）",
+        "a": "stays",
+        "choices": [
+          "stay",
+          "stays",
+          "staying",
+          "stayed"
+        ],
+        "e": "三単現→stays。",
+        "free": true
+      },
+      {
+        "q": "I ( ) home every day.（come）",
+        "a": "come",
+        "choices": [
+          "comes",
+          "came",
+          "coming",
+          "come"
+        ],
+        "e": "主語I→原形 come。",
+        "free": true
+      },
+      {
+        "q": "I ( ) happy now.",
+        "a": "am",
+        "choices": [
+          "am",
+          "be",
+          "are",
+          "is"
+        ],
+        "e": "主語I→am。",
+        "free": true
+      },
+      {
+        "q": "Mary ( ) tennis every day.（play）",
+        "a": "plays",
+        "choices": [
+          "play",
+          "playing",
+          "plays",
+          "played"
+        ],
+        "e": "三単現→plays。",
+        "free": true
+      },
+      {
+        "q": "I ( ) to the park every day.（walk）",
+        "a": "walk",
+        "choices": [
+          "walk",
+          "walking",
+          "walks",
+          "walked"
+        ],
+        "e": "主語I→原形 walk。",
+        "free": true
+      },
+      {
+        "q": "Tom ( ) a book every day.（read）",
+        "a": "reads",
+        "choices": [
+          "to read",
+          "read",
+          "reading",
+          "reads"
+        ],
+        "e": "三単現→reads。",
+        "free": true
+      },
+      {
+        "q": "I ( ) curry every day.（cook）",
+        "a": "cook",
+        "choices": [
+          "cook",
+          "cooking",
+          "cooked",
+          "cooks"
+        ],
+        "e": "主語I→原形 cook。",
+        "free": true
+      },
+      {
+        "q": "She ( ) dinner every day.（make）",
+        "a": "makes",
+        "choices": [
+          "made",
+          "making",
+          "makes",
+          "make"
+        ],
+        "e": "三単現→makes。",
+        "free": true
+      },
+      {
+        "q": "I ( ) a pen every day.（use）",
+        "a": "use",
+        "choices": [
+          "use",
+          "used",
+          "using",
+          "uses"
+        ],
+        "e": "主語I→原形 use。",
+        "free": true
+      },
+      {
+        "q": "I ( ) the windows every morning.（open）",
+        "a": "open",
+        "choices": [
+          "opening",
+          "opened",
+          "open",
+          "opens"
+        ],
+        "e": "主語I→原形 open。",
+        "free": true
+      },
+      {
+        "q": "Ken ( ) lunch every day.（eat）",
+        "a": "eats",
+        "choices": [
+          "eating",
+          "ate",
+          "eat",
+          "eats"
+        ],
+        "e": "三単現→eats。",
+        "free": true
+      },
+      {
+        "q": "Mary ( ) in Tokyo now.（live）",
+        "a": "lives",
+        "choices": [
+          "live",
+          "lived",
+          "living",
+          "lives"
+        ],
+        "e": "三単現→lives（nowなので過去形livedは×）。",
+        "free": true
+      },
+      {
+        "q": "They ( ) happy now.",
+        "a": "are",
+        "choices": [
+          "am",
+          "are",
+          "is",
+          "be"
+        ],
+        "e": "主語They→are。",
+        "free": true
+      },
+      {
+        "q": "I ( ) a friend every day.（call）",
+        "a": "call",
+        "choices": [
+          "call",
+          "called",
+          "calling",
+          "calls"
+        ],
+        "e": "主語I→原形 call。",
+        "free": true
+      }
     ],
-    "e": "yesterday→過去形 played。"
-   },
-   {
-    "q": "She ( ) to school every day.",
-    "a": "goes",
-    "choices": [
-     "goes",
-     "go",
-     "going",
-     "went"
+    "Lv2": [
+      {
+        "q": "I ( ) TV now.「今見ている」",
+        "a": "am watching",
+        "choices": [
+          "watch",
+          "watches",
+          "am watching",
+          "watched"
+        ],
+        "e": "now＋進行→am watching。",
+        "free": false
+      },
+      {
+        "q": "He ( ) a letter now.",
+        "a": "is writing",
+        "choices": [
+          "wrote",
+          "write",
+          "writes",
+          "is writing"
+        ],
+        "e": "現在進行 is writing。",
+        "free": false
+      },
+      {
+        "q": "We ( ) tennis tomorrow.「明日する」",
+        "a": "will play",
+        "choices": [
+          "played",
+          "play",
+          "will play",
+          "playing"
+        ],
+        "e": "未来→will play。",
+        "free": false
+      },
+      {
+        "q": "She ( ) to Tokyo last week.",
+        "a": "went",
+        "choices": [
+          "go",
+          "goes",
+          "went",
+          "gone"
+        ],
+        "e": "last week→過去 went。",
+        "free": false
+      },
+      {
+        "q": "I ( ) my homework already.「もう終えた」",
+        "a": "have finished",
+        "choices": [
+          "have finished",
+          "finished",
+          "finishing",
+          "finish"
+        ],
+        "e": "already→現在完了 have finished。",
+        "free": false
+      },
+      {
+        "q": "It ( ) now.「雨が降っている」",
+        "a": "is raining",
+        "choices": [
+          "rained",
+          "rains",
+          "rain",
+          "is raining"
+        ],
+        "e": "現在進行。",
+        "free": false
+      },
+      {
+        "q": "Did you ( ) the movie?",
+        "a": "watch",
+        "choices": [
+          "watching",
+          "watch",
+          "watches",
+          "watched"
+        ],
+        "e": "Did＋動詞の原形 watch。",
+        "free": false
+      },
+      {
+        "q": "I ( ) not happy then.「その時」",
+        "a": "was",
+        "choices": [
+          "were",
+          "am",
+          "was",
+          "is"
+        ],
+        "e": "I＋過去→was。",
+        "free": false
+      },
+      {
+        "q": "I enjoy ( ) to music.（listen）",
+        "a": "listening",
+        "choices": [
+          "listen",
+          "listened",
+          "to listen",
+          "listening"
+        ],
+        "e": "enjoy＋動名詞(-ing)。",
+        "free": false
+      },
+      {
+        "q": "She finished ( ) lunch.",
+        "a": "eating",
+        "choices": [
+          "eating",
+          "ate",
+          "eat",
+          "to eat"
+        ],
+        "e": "finish＋動名詞。",
+        "free": false
+      },
+      {
+        "q": "He wants ( ) a doctor.",
+        "a": "to be",
+        "choices": [
+          "to be",
+          "be",
+          "being",
+          "been"
+        ],
+        "e": "want＋to不定詞。",
+        "free": false
+      },
+      {
+        "q": "I hope ( ) you again.",
+        "a": "to see",
+        "choices": [
+          "seeing",
+          "saw",
+          "to see",
+          "see"
+        ],
+        "e": "hope＋to不定詞。",
+        "free": false
+      },
+      {
+        "q": "Stop ( )!「話すのをやめて」",
+        "a": "talking",
+        "choices": [
+          "talked",
+          "talk",
+          "to talk",
+          "talking"
+        ],
+        "e": "stop＋動名詞＝やめる。",
+        "free": false
+      },
+      {
+        "q": "後ろが必ず動名詞になる動詞は？",
+        "a": "enjoy",
+        "choices": [
+          "hope",
+          "enjoy",
+          "decide",
+          "want"
+        ],
+        "e": "enjoy/finish/stopは動名詞。",
+        "free": false
+      },
+      {
+        "q": "後ろが必ずto不定詞になる動詞は？",
+        "a": "want",
+        "choices": [
+          "finish",
+          "stop",
+          "enjoy",
+          "want"
+        ],
+        "e": "want/hope/decideはto不定詞。",
+        "free": false
+      },
+      {
+        "q": "I like ( ) books.（read）",
+        "a": "reading",
+        "choices": [
+          "reading",
+          "read",
+          "reads",
+          "to reads"
+        ],
+        "e": "like＋動名詞 reading（to readも可）。",
+        "free": false
+      },
+      {
+        "q": "She is good at ( ).「歌が得意」",
+        "a": "singing",
+        "choices": [
+          "sang",
+          "to sing",
+          "singing",
+          "sing"
+        ],
+        "e": "前置詞at＋動名詞。",
+        "free": false
+      },
+      {
+        "q": "Thank you for ( ) me.",
+        "a": "helping",
+        "choices": [
+          "helped",
+          "helping",
+          "to help",
+          "help"
+        ],
+        "e": "前置詞for＋動名詞。",
+        "free": false
+      },
+      {
+        "q": "I decided ( ) English.",
+        "a": "to study",
+        "choices": [
+          "studying",
+          "studied",
+          "study",
+          "to study"
+        ],
+        "e": "decide＋to不定詞。",
+        "free": false
+      },
+      {
+        "q": "「〜すべきだ」は？",
+        "a": "should",
+        "choices": [
+          "must",
+          "should",
+          "can",
+          "may"
+        ],
+        "e": "should＝助言・すべき。",
+        "free": false
+      },
+      {
+        "q": "can の意味は？",
+        "a": "できる",
+        "choices": [
+          "かもしれない",
+          "だろう",
+          "できる",
+          "しなければ"
+        ],
+        "e": "can＝できる。",
+        "free": false
+      },
+      {
+        "q": "must の意味は？",
+        "a": "しなければならない",
+        "choices": [
+          "できる",
+          "しなければならない",
+          "だろう",
+          "してもよい"
+        ],
+        "e": "must＝〜ねばならない。",
+        "free": false
+      },
+      {
+        "q": "may の意味は？",
+        "a": "かもしれない/してよい",
+        "choices": [
+          "しない",
+          "すべき",
+          "できる",
+          "かもしれない/してよい"
+        ],
+        "e": "may＝許可・推量。",
+        "free": false
+      },
+      {
+        "q": "I ( ) swim fast.「速く泳げる」",
+        "a": "can",
+        "choices": [
+          "should",
+          "may",
+          "can",
+          "must"
+        ],
+        "e": "能力→can。",
+        "free": false
+      },
+      {
+        "q": "You ( ) study hard.「すべき」",
+        "a": "should",
+        "choices": [
+          "can",
+          "should",
+          "may",
+          "will"
+        ],
+        "e": "助言→should。",
+        "free": false
+      },
+      {
+        "q": "( ) I open the window?「開けてもいい？」",
+        "a": "May",
+        "choices": [
+          "May",
+          "Should",
+          "Will",
+          "Must"
+        ],
+        "e": "許可を求める May I 〜?。",
+        "free": false
+      },
+      {
+        "q": "We ( ) our teacher tomorrow.（help／明日）",
+        "a": "will help",
+        "choices": [
+          "helps",
+          "helping",
+          "will help",
+          "helped"
+        ],
+        "e": "未来→will help。",
+        "free": false
+      },
+      {
+        "q": "I ( ) a book now.（read／今〜している）",
+        "a": "am reading",
+        "choices": [
+          "am reading",
+          "read",
+          "reads",
+          "reading"
+        ],
+        "e": "進行→am reading。",
+        "free": false
+      },
+      {
+        "q": "He ( ) fast now.（run／今〜している）",
+        "a": "is running",
+        "choices": [
+          "run",
+          "ran",
+          "runs",
+          "is running"
+        ],
+        "e": "進行→is running。",
+        "free": false
+      },
+      {
+        "q": "She ( ) a letter now.（write／今〜している）",
+        "a": "is writing",
+        "choices": [
+          "writes",
+          "wrote",
+          "is writing",
+          "write"
+        ],
+        "e": "進行→is writing。",
+        "free": false
+      },
+      {
+        "q": "I ( ) a letter yesterday.（write）",
+        "a": "wrote",
+        "choices": [
+          "write",
+          "writing",
+          "writes",
+          "wrote"
+        ],
+        "e": "yesterday→過去 wrote。",
+        "free": false
+      },
+      {
+        "q": "We ( ) lunch tomorrow.（eat／明日）",
+        "a": "will eat",
+        "choices": [
+          "eats",
+          "ate",
+          "will eat",
+          "eating"
+        ],
+        "e": "未来→will eat。",
+        "free": false
+      },
+      {
+        "q": "I ( ) at home yesterday.（stay）",
+        "a": "stayed",
+        "choices": [
+          "stay",
+          "stays",
+          "staying",
+          "stayed"
+        ],
+        "e": "yesterday→過去 stayed。",
+        "free": false
+      },
+      {
+        "q": "I ( ) dinner yesterday.（make）",
+        "a": "made",
+        "choices": [
+          "making",
+          "makes",
+          "made",
+          "make"
+        ],
+        "e": "yesterday→過去 made。",
+        "free": false
+      },
+      {
+        "q": "They ( ) a book now.（buy／今〜している）",
+        "a": "are buying",
+        "choices": [
+          "are buying",
+          "buys",
+          "buy",
+          "bought"
+        ],
+        "e": "進行→are buying。",
+        "free": false
+      },
+      {
+        "q": "We ( ) TV tomorrow.（watch／明日）",
+        "a": "will watch",
+        "choices": [
+          "watched",
+          "will watch",
+          "watching",
+          "watches"
+        ],
+        "e": "未来→will watch。",
+        "free": false
+      },
+      {
+        "q": "I ( ) the car now.（wash／今〜している）",
+        "a": "am washing",
+        "choices": [
+          "wash",
+          "washes",
+          "washed",
+          "am washing"
+        ],
+        "e": "進行→am washing。",
+        "free": false
+      },
+      {
+        "q": "He ( ) English now.（teach／今〜している）",
+        "a": "is teaching",
+        "choices": [
+          "teaches",
+          "taught",
+          "is teaching",
+          "teach"
+        ],
+        "e": "進行→is teaching。",
+        "free": false
+      },
+      {
+        "q": "We ( ) a friend tomorrow.（call／明日）",
+        "a": "will call",
+        "choices": [
+          "called",
+          "calling",
+          "calls",
+          "will call"
+        ],
+        "e": "未来→will call。",
+        "free": false
+      },
+      {
+        "q": "I ( ) Kyoto yesterday.（visit）",
+        "a": "visited",
+        "choices": [
+          "visiting",
+          "visit",
+          "visits",
+          "visited"
+        ],
+        "e": "yesterday→過去 visited。",
+        "free": false
+      },
+      {
+        "q": "I ( ) home now.（come／今〜している）",
+        "a": "am coming",
+        "choices": [
+          "comes",
+          "come",
+          "came",
+          "am coming"
+        ],
+        "e": "進行→am coming。",
+        "free": false
+      },
+      {
+        "q": "I ( ) at home now.（stay／今〜している）",
+        "a": "am staying",
+        "choices": [
+          "stayed",
+          "stays",
+          "stay",
+          "am staying"
+        ],
+        "e": "進行→am staying。",
+        "free": false
+      },
+      {
+        "q": "They ( ) curry now.（cook／今〜している）",
+        "a": "are cooking",
+        "choices": [
+          "cooked",
+          "cook",
+          "are cooking",
+          "cooks"
+        ],
+        "e": "進行→are cooking。",
+        "free": false
+      },
+      {
+        "q": "I ( ) the door yesterday.（open）",
+        "a": "opened",
+        "choices": [
+          "opens",
+          "opening",
+          "open",
+          "opened"
+        ],
+        "e": "yesterday→過去 opened。",
+        "free": false
+      },
+      {
+        "q": "She ( ) dinner now.（make／今〜している）",
+        "a": "is making",
+        "choices": [
+          "makes",
+          "made",
+          "is making",
+          "make"
+        ],
+        "e": "進行→is making。",
+        "free": false
+      },
+      {
+        "q": "I ( ) TV yesterday.（watch）",
+        "a": "watched",
+        "choices": [
+          "watching",
+          "watches",
+          "watch",
+          "watched"
+        ],
+        "e": "yesterday→過去 watched。",
+        "free": false
+      },
+      {
+        "q": "I ( ) hard yesterday.（work）",
+        "a": "worked",
+        "choices": [
+          "worked",
+          "works",
+          "work",
+          "working"
+        ],
+        "e": "yesterday→過去 worked。",
+        "free": false
+      },
+      {
+        "q": "I ( ) a movie now.（watch／今〜している）",
+        "a": "am watching",
+        "choices": [
+          "watch",
+          "watched",
+          "watches",
+          "am watching"
+        ],
+        "e": "進行→am watching。",
+        "free": false
+      },
+      {
+        "q": "He ( ) a pen now.（use／今〜している）",
+        "a": "is using",
+        "choices": [
+          "uses",
+          "used",
+          "is using",
+          "use"
+        ],
+        "e": "進行→is using。",
+        "free": false
+      },
+      {
+        "q": "We ( ) a book tomorrow.（buy／明日）",
+        "a": "will buy",
+        "choices": [
+          "buys",
+          "bought",
+          "will buy",
+          "buying"
+        ],
+        "e": "未来→will buy。",
+        "free": false
+      }
     ],
-    "e": "三単現＋習慣→goes。"
-   },
-   {
-    "q": "They ( ) busy now.",
-    "a": "are",
-    "choices": [
-     "am",
-     "are",
-     "is",
-     "be"
-    ],
-    "e": "主語they→are。"
-   },
-   {
-    "q": "「〜できる」を表す助動詞は？",
-    "a": "can",
-    "choices": [
-     "can",
-     "will",
-     "must",
-     "may"
-    ],
-    "e": "can＝できる（能力）。"
-   },
-   {
-    "q": "「〜しなければならない」は？",
-    "a": "must",
-    "choices": [
-     "must",
-     "may",
-     "could",
-     "can"
-    ],
-    "e": "must＝義務。"
-   },
-   {
-    "q": "「〜してもよい」は？",
-    "a": "may",
-    "choices": [
-     "should",
-     "must",
-     "can't",
-     "may"
-    ],
-    "e": "may＝許可。"
-   },
-   {
-    "q": "「〜だろう/するつもり」は？",
-    "a": "will",
-    "choices": [
-     "will",
-     "can",
-     "must",
-     "may"
-    ],
-    "e": "will＝未来・意志。"
-   }
-  ],
-  "Lv2": [
-   {
-    "q": "I ( ) TV now.「今見ている」",
-    "a": "am watching",
-    "choices": [
-     "watch",
-     "watches",
-     "am watching",
-     "watched"
-    ],
-    "e": "now＋進行→am watching。"
-   },
-   {
-    "q": "He ( ) a letter now.",
-    "a": "is writing",
-    "choices": [
-     "wrote",
-     "write",
-     "writes",
-     "is writing"
-    ],
-    "e": "現在進行 is writing。"
-   },
-   {
-    "q": "We ( ) tennis tomorrow.「明日する」",
-    "a": "will play",
-    "choices": [
-     "played",
-     "play",
-     "will play",
-     "playing"
-    ],
-    "e": "未来→will play。"
-   },
-   {
-    "q": "She ( ) to Tokyo last week.",
-    "a": "went",
-    "choices": [
-     "go",
-     "goes",
-     "went",
-     "gone"
-    ],
-    "e": "last week→過去 went。"
-   },
-   {
-    "q": "I ( ) my homework already.「もう終えた」",
-    "a": "have finished",
-    "choices": [
-     "have finished",
-     "finished",
-     "finishing",
-     "finish"
-    ],
-    "e": "already→現在完了 have finished。"
-   },
-   {
-    "q": "It ( ) now.「雨が降っている」",
-    "a": "is raining",
-    "choices": [
-     "rained",
-     "rains",
-     "rain",
-     "is raining"
-    ],
-    "e": "現在進行。"
-   },
-   {
-    "q": "Did you ( ) the movie?",
-    "a": "watch",
-    "choices": [
-     "watching",
-     "watch",
-     "watches",
-     "watched"
-    ],
-    "e": "Did＋動詞の原形 watch。"
-   },
-   {
-    "q": "I ( ) not happy then.「その時」",
-    "a": "was",
-    "choices": [
-     "were",
-     "am",
-     "was",
-     "is"
-    ],
-    "e": "I＋過去→was。"
-   },
-   {
-    "q": "I enjoy ( ) music.",
-    "a": "listening",
-    "choices": [
-     "listen",
-     "listened",
-     "to listen",
-     "listening"
-    ],
-    "e": "enjoy＋動名詞(-ing)。"
-   },
-   {
-    "q": "She finished ( ) lunch.",
-    "a": "eating",
-    "choices": [
-     "eating",
-     "ate",
-     "eat",
-     "to eat"
-    ],
-    "e": "finish＋動名詞。"
-   },
-   {
-    "q": "He wants ( ) a doctor.",
-    "a": "to be",
-    "choices": [
-     "to be",
-     "be",
-     "being",
-     "been"
-    ],
-    "e": "want＋to不定詞。"
-   },
-   {
-    "q": "I hope ( ) you again.",
-    "a": "to see",
-    "choices": [
-     "seeing",
-     "saw",
-     "to see",
-     "see"
-    ],
-    "e": "hope＋to不定詞。"
-   },
-   {
-    "q": "Stop ( )!「話すのをやめて」",
-    "a": "talking",
-    "choices": [
-     "talked",
-     "talk",
-     "to talk",
-     "talking"
-    ],
-    "e": "stop＋動名詞＝やめる。"
-   },
-   {
-    "q": "次のうち後ろが必ず動名詞になる動詞は？",
-    "a": "enjoy",
-    "choices": [
-     "hope",
-     "enjoy",
-     "decide",
-     "want"
-    ],
-    "e": "enjoy/finish/stopは動名詞。"
-   },
-   {
-    "q": "次のうち後ろが必ずto不定詞になる動詞は？",
-    "a": "want",
-    "choices": [
-     "finish",
-     "stop",
-     "enjoy",
-     "want"
-    ],
-    "e": "want/hope/decideはto不定詞。"
-   },
-   {
-    "q": "I like ( ) books.（どちらも可だが-ingで）",
-    "a": "reading",
-    "choices": [
-     "reading",
-     "read",
-     "reads",
-     "to reads"
-    ],
-    "e": "like＋動名詞も可。"
-   },
-   {
-    "q": "She is good at ( ).「歌が得意」",
-    "a": "singing",
-    "choices": [
-     "sang",
-     "to sing",
-     "singing",
-     "sing"
-    ],
-    "e": "前置詞at＋動名詞。"
-   },
-   {
-    "q": "Thank you for ( ) me.",
-    "a": "helping",
-    "choices": [
-     "helped",
-     "helping",
-     "to help",
-     "help"
-    ],
-    "e": "前置詞for＋動名詞。"
-   },
-   {
-    "q": "I decided ( ) English.",
-    "a": "to study",
-    "choices": [
-     "studying",
-     "studied",
-     "study",
-     "to study"
-    ],
-    "e": "decide＋to不定詞。"
-   },
-   {
-    "q": "「〜すべきだ」は？",
-    "a": "should",
-    "choices": [
-     "must",
-     "should",
-     "can",
-     "may"
-    ],
-    "e": "should＝助言・すべき。"
-   },
-   {
-    "q": "can の意味は？",
-    "a": "できる",
-    "choices": [
-     "かもしれない",
-     "だろう",
-     "できる",
-     "しなければ"
-    ],
-    "e": "can＝できる。"
-   },
-   {
-    "q": "must の意味は？",
-    "a": "しなければならない",
-    "choices": [
-     "できる",
-     "しなければならない",
-     "だろう",
-     "してもよい"
-    ],
-    "e": "must＝〜ねばならない。"
-   },
-   {
-    "q": "may の意味は？",
-    "a": "かもしれない/してよい",
-    "choices": [
-     "しない",
-     "すべき",
-     "できる",
-     "かもしれない/してよい"
-    ],
-    "e": "may＝許可・推量。"
-   },
-   {
-    "q": "I ( ) swim fast.「速く泳げる」",
-    "a": "can",
-    "choices": [
-     "should",
-     "may",
-     "can",
-     "must"
-    ],
-    "e": "能力→can。"
-   },
-   {
-    "q": "You ( ) study hard.「すべき」",
-    "a": "should",
-    "choices": [
-     "can",
-     "should",
-     "may",
-     "will"
-    ],
-    "e": "助言→should。"
-   },
-   {
-    "q": "( ) I open the window?「開けてもいい？」",
-    "a": "May",
-    "choices": [
-     "May",
-     "Should",
-     "Will",
-     "Must"
-    ],
-    "e": "許可を求める May I 〜?。"
-   }
-  ],
-  "Lv3": [
-   {
-    "q": "He ( ) here since 2020.",
-    "a": "has lived",
-    "choices": [
-     "living",
-     "has lived",
-     "lived",
-     "lives"
-    ],
-    "e": "since→現在完了 has lived。"
-   },
-   {
-    "q": "Don't forget ( ) the door.「閉めるのを」",
-    "a": "to close",
-    "choices": [
-     "closed",
-     "closing",
-     "to close",
-     "close"
-    ],
-    "e": "forget to＝これからやることを忘れるな。"
-   },
-   {
-    "q": "It started ( ).「降り始めた」",
-    "a": "raining",
-    "choices": [
-     "rained",
-     "rain",
-     "to rained",
-     "raining"
-    ],
-    "e": "start＋動名詞/to不定詞。"
-   },
-   {
-    "q": "次のうち動名詞をとらないのは？",
-    "a": "wish",
-    "choices": [
-     "enjoy",
-     "finish",
-     "stop",
-     "wish"
-    ],
-    "e": "wishはto不定詞、他は動名詞。"
-   },
-   {
-    "q": "「〜できた（過去）」は？",
-    "a": "could",
-    "choices": [
-     "can",
-     "could",
-     "will",
-     "must"
-    ],
-    "e": "canの過去→could。"
-   }
-  ]
- }
+    "Lv3": [
+      {
+        "q": "He ( ) here since 2020.",
+        "a": "has lived",
+        "choices": [
+          "living",
+          "has lived",
+          "lived",
+          "lives"
+        ],
+        "e": "since→現在完了 has lived。",
+        "free": false
+      },
+      {
+        "q": "Don't forget ( ) the door.「閉めるのを」",
+        "a": "to close",
+        "choices": [
+          "closed",
+          "closing",
+          "to close",
+          "close"
+        ],
+        "e": "forget to＝これからやることを忘れるな。",
+        "free": false
+      },
+      {
+        "q": "It started ( ).「降り始めた」",
+        "a": "raining",
+        "choices": [
+          "rained",
+          "rain",
+          "to rained",
+          "raining"
+        ],
+        "e": "start＋動名詞/to不定詞。",
+        "free": false
+      },
+      {
+        "q": "動名詞をとらない動詞は？",
+        "a": "wish",
+        "choices": [
+          "enjoy",
+          "finish",
+          "stop",
+          "wish"
+        ],
+        "e": "wishはto不定詞、他は動名詞。",
+        "free": false
+      },
+      {
+        "q": "「〜できた（過去）」は？",
+        "a": "could",
+        "choices": [
+          "can",
+          "could",
+          "will",
+          "must"
+        ],
+        "e": "canの過去→could。",
+        "free": false
+      },
+      {
+        "q": "He ( ) to school since 2020.（walk／ずっと）",
+        "a": "has walked",
+        "choices": [
+          "walked",
+          "has walked",
+          "walk",
+          "walks"
+        ],
+        "e": "since→現在完了 has walked（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) tennis since 2020.（play／ずっと）",
+        "a": "have played",
+        "choices": [
+          "played",
+          "have played",
+          "plays",
+          "play"
+        ],
+        "e": "since→現在完了 have played（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) this TV program since 2020.（watch／ずっと）",
+        "a": "has watched",
+        "choices": [
+          "watchs",
+          "watch",
+          "has watched",
+          "watched"
+        ],
+        "e": "since→現在完了 has watched（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "I ( ) this bike since 2020.（have／ずっと）",
+        "a": "have had",
+        "choices": [
+          "had",
+          "have",
+          "have had",
+          "has"
+        ],
+        "e": "since→現在完了 have had（haveの過去分詞はhad）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) baseball games on TV since 2020.（watch／ずっと）",
+        "a": "have watched",
+        "choices": [
+          "watch",
+          "have watched",
+          "watched",
+          "watchs"
+        ],
+        "e": "since→現在完了 have watched（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) English since 2020.（study／ずっと）",
+        "a": "have studied",
+        "choices": [
+          "studys",
+          "studied",
+          "study",
+          "have studied"
+        ],
+        "e": "since→現在完了 have studied（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "They ( ) here since 2020.（work／ずっと）",
+        "a": "have worked",
+        "choices": [
+          "worked",
+          "work",
+          "works",
+          "have worked"
+        ],
+        "e": "since→現在完了 have worked（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "She ( ) home since 2020.（stay／ずっと）",
+        "a": "has stayed",
+        "choices": [
+          "stay",
+          "stays",
+          "stayed",
+          "has stayed"
+        ],
+        "e": "since→現在完了 has stayed（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) English since 2020.（study／ずっと）",
+        "a": "has studied",
+        "choices": [
+          "has studied",
+          "studied",
+          "studys",
+          "study"
+        ],
+        "e": "since→現在完了 has studied（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "I ( ) her since 2020.（help／ずっと）",
+        "a": "have helped",
+        "choices": [
+          "helped",
+          "help",
+          "have helped",
+          "helps"
+        ],
+        "e": "since→現在完了 have helped（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "They ( ) Kyoto many times since 2020.（visit）",
+        "a": "have visited",
+        "choices": [
+          "visited",
+          "visits",
+          "have visited",
+          "visit"
+        ],
+        "e": "since＋many times→現在完了 have visited（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) him since 2020.（know／ずっと）",
+        "a": "have known",
+        "choices": [
+          "have known",
+          "knows",
+          "known",
+          "know"
+        ],
+        "e": "since→現在完了 have known（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) at this school since 2020.（teach／ずっと）",
+        "a": "have taught",
+        "choices": [
+          "taught",
+          "teach",
+          "have taught",
+          "teaches"
+        ],
+        "e": "since→現在完了 have taught（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) Kyoto three times since 2020.（visit）",
+        "a": "has visited",
+        "choices": [
+          "has visited",
+          "visit",
+          "visited",
+          "visits"
+        ],
+        "e": "since＋three times→現在完了 has visited（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "I ( ) tennis since 2020.（play／ずっと）",
+        "a": "have played",
+        "choices": [
+          "have played",
+          "plays",
+          "play",
+          "played"
+        ],
+        "e": "since→現在完了 have played（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) a dog since 2020.（have／ずっと）",
+        "a": "has had",
+        "choices": [
+          "have",
+          "has had",
+          "had",
+          "has"
+        ],
+        "e": "since→現在完了 has had（haveの過去分詞はhad）。",
+        "free": false
+      },
+      {
+        "q": "They ( ) this drama since 2020.（watch／ずっと）",
+        "a": "have watched",
+        "choices": [
+          "have watched",
+          "watch",
+          "watchs",
+          "watched"
+        ],
+        "e": "since→現在完了 have watched（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "I ( ) in Tokyo since 2020.（live／ずっと）",
+        "a": "have lived",
+        "choices": [
+          "lived",
+          "lives",
+          "live",
+          "have lived"
+        ],
+        "e": "since→現在完了 have lived（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "We ( ) in Tokyo since 2020.（live／ずっと）",
+        "a": "have lived",
+        "choices": [
+          "live",
+          "have lived",
+          "lived",
+          "lives"
+        ],
+        "e": "since→現在完了 have lived（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "I ( ) this pen since 2020.（use／ずっと）",
+        "a": "have used",
+        "choices": [
+          "use",
+          "uses",
+          "have used",
+          "used"
+        ],
+        "e": "since→現在完了 have used（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "He ( ) this cooking show since 2020.（watch／ずっと）",
+        "a": "has watched",
+        "choices": [
+          "watched",
+          "watchs",
+          "watch",
+          "has watched"
+        ],
+        "e": "since→現在完了 has watched（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "She ( ) this pen since 2020.（use／ずっと）",
+        "a": "has used",
+        "choices": [
+          "used",
+          "use",
+          "has used",
+          "uses"
+        ],
+        "e": "since→現在完了 has used（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) sick since last week.（be／ずっと）",
+        "a": "has been",
+        "choices": [
+          "has been",
+          "was",
+          "is",
+          "been"
+        ],
+        "e": "since→現在完了 has been（beの過去分詞はbeen）。",
+        "free": false
+      },
+      {
+        "q": "She ( ) at this hospital since 2020.（work／ずっと）",
+        "a": "has worked",
+        "choices": [
+          "has worked",
+          "worked",
+          "work",
+          "works"
+        ],
+        "e": "since→現在完了 has worked（過去分詞）。",
+        "free": false
+      },
+      {
+        "q": "They ( ) in Kyoto since 2020.（be／ずっと）",
+        "a": "have been",
+        "choices": [
+          "were",
+          "are",
+          "have been",
+          "been"
+        ],
+        "e": "since→現在完了 have been（beの過去分詞はbeen）。",
+        "free": false
+      },
+      {
+        "q": "He stopped ( ) when I came in.（talk）",
+        "a": "talking",
+        "choices": [
+          "talk",
+          "is talking",
+          "talked",
+          "talking"
+        ],
+        "e": "stop＋動名詞＝〜するのをやめる→talking。",
+        "free": false
+      },
+      {
+        "q": "I stopped ( ) snacks at night.（eat）",
+        "a": "eating",
+        "choices": [
+          "to eating",
+          "ate",
+          "eat",
+          "eating"
+        ],
+        "e": "stop＋動名詞→eating。",
+        "free": false
+      },
+      {
+        "q": "I decided ( ) more books.（read）",
+        "a": "to read",
+        "choices": [
+          "to reading",
+          "to read",
+          "read",
+          "reading"
+        ],
+        "e": "decide＋to不定詞→to read。",
+        "free": false
+      },
+      {
+        "q": "I plan ( ) a song at the party.（sing）",
+        "a": "to sing",
+        "choices": [
+          "sing",
+          "singing",
+          "to sing",
+          "to singing"
+        ],
+        "e": "plan＋to不定詞→to sing。",
+        "free": false
+      },
+      {
+        "q": "I hope ( ) in the sea this summer.（swim）",
+        "a": "to swim",
+        "choices": [
+          "to swim",
+          "swim",
+          "swimming",
+          "to swimming"
+        ],
+        "e": "hope＋to不定詞→to swim。",
+        "free": false
+      },
+      {
+        "q": "I finished ( ) the book.（read）",
+        "a": "reading",
+        "choices": [
+          "read",
+          "reading",
+          "to reading",
+          "to read"
+        ],
+        "e": "finish＋動名詞→reading。",
+        "free": false
+      },
+      {
+        "q": "I enjoy ( ) in the park.（walk）",
+        "a": "walking",
+        "choices": [
+          "walking",
+          "to walking",
+          "to walk",
+          "walk"
+        ],
+        "e": "enjoy＋動名詞→walking。",
+        "free": false
+      },
+      {
+        "q": "I gave up ( ) the piano.（play）",
+        "a": "playing",
+        "choices": [
+          "to play",
+          "to playing",
+          "play",
+          "playing"
+        ],
+        "e": "give up＋動名詞→playing。",
+        "free": false
+      },
+      {
+        "q": "I want ( ) this book.（read）",
+        "a": "to read",
+        "choices": [
+          "read",
+          "to read",
+          "reading",
+          "to reading"
+        ],
+        "e": "want＋to不定詞→to read。",
+        "free": false
+      },
+      {
+        "q": "I stopped ( ) tennis last year.（play）",
+        "a": "playing",
+        "choices": [
+          "to playing",
+          "played",
+          "playing",
+          "play"
+        ],
+        "e": "stop＋動名詞→playing。",
+        "free": false
+      },
+      {
+        "q": "I stopped ( ) pictures.（draw）",
+        "a": "drawing",
+        "choices": [
+          "drew",
+          "drawing",
+          "to drawing",
+          "draw"
+        ],
+        "e": "stop＋動名詞→drawing。",
+        "free": false
+      },
+      {
+        "q": "I keep ( ) for my family every day.（cook）",
+        "a": "cooking",
+        "choices": [
+          "cooking",
+          "to cook",
+          "cook",
+          "to cooking"
+        ],
+        "e": "keep＋動名詞→cooking。",
+        "free": false
+      },
+      {
+        "q": "I stopped ( ) the room and took a rest.（clean）",
+        "a": "cleaning",
+        "choices": [
+          "clean",
+          "cleaned",
+          "cleaning",
+          "to cleaning"
+        ],
+        "e": "stop＋動名詞→cleaning。",
+        "free": false
+      },
+      {
+        "q": "I keep ( ) this song.（sing）",
+        "a": "singing",
+        "choices": [
+          "sing",
+          "singing",
+          "to sing",
+          "to singing"
+        ],
+        "e": "keep＋動名詞→singing。",
+        "free": false
+      },
+      {
+        "q": "I keep ( ) in my diary every day.（write）",
+        "a": "writing",
+        "choices": [
+          "write",
+          "to write",
+          "to writing",
+          "writing"
+        ],
+        "e": "keep＋動名詞→writing。",
+        "free": false
+      },
+      {
+        "q": "I finished ( ) English today.（study）",
+        "a": "studying",
+        "choices": [
+          "studying",
+          "to studying",
+          "to study",
+          "study"
+        ],
+        "e": "finish＋動名詞→studying。",
+        "free": false
+      },
+      {
+        "q": "I would like ( ) lunch.（eat）",
+        "a": "to eat",
+        "choices": [
+          "to eat",
+          "eat",
+          "to eating",
+          "eating"
+        ],
+        "e": "would like＋to不定詞→to eat。",
+        "free": false
+      },
+      {
+        "q": "I practice ( ) the piano every day.（play）",
+        "a": "playing",
+        "choices": [
+          "play",
+          "playing",
+          "to play",
+          "to playing"
+        ],
+        "e": "practice＋動名詞→playing。",
+        "free": false
+      },
+      {
+        "q": "I plan ( ) them tomorrow.（help）",
+        "a": "to help",
+        "choices": [
+          "to help",
+          "helping",
+          "help",
+          "to helping"
+        ],
+        "e": "plan＋to不定詞→to help。",
+        "free": false
+      }
+    ]
+  }
 }

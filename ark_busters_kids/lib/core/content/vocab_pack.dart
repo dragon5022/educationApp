@@ -9,6 +9,7 @@ class VocabItem {
     required this.lv,
     this.img,
     this.voice,
+    this.free = true,
   });
 
   final int id;
@@ -18,6 +19,9 @@ class VocabItem {
   final String? img; // relative asset path without "assets/"
   final String? voice;
 
+  /// Playable without the purchase (sheet column `free`).
+  final bool free;
+
   factory VocabItem.fromJson(Map<String, dynamic> j) => VocabItem(
         id: j['id'] as int,
         w: j['w'] as String,
@@ -25,6 +29,7 @@ class VocabItem {
         lv: j['lv'] as int,
         img: j['img'] as String?,
         voice: j['voice'] as String?,
+        free: j['free'] != false,
       );
 
   Map<String, dynamic> toJson() => {
@@ -34,6 +39,7 @@ class VocabItem {
         'lv': lv,
         if (img != null) 'img': img,
         if (voice != null) 'voice': voice,
+        'free': free,
       };
 }
 

@@ -7,6 +7,8 @@ import '../../core/content/game_packs.dart';
 import '../../core/progress/progress_keys.dart';
 import '../../core/theme/app_colors.dart';
 import '../../services/audio_service.dart';
+import '../../services/char_voice.dart';
+import '../../services/kids_store.dart';
 import '../../services/content_repository.dart';
 import '../../services/progress_service.dart';
 import '../../widgets/page_background.dart';
@@ -64,7 +66,10 @@ class _ListeningHomeScreenState extends State<ListeningHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final levels = _pack?.grades[_grade] ?? {};
+    final levels = {
+      for (final e in (_pack?.grades[_grade] ?? {}).entries)
+        e.key: KidsStore.allowed<ListeningItem>(e.value, (i) => i.free).toList(),
+    };
     return Scaffold(
       backgroundColor: const Color(0xFF120C33),
       body: PageBackground(
@@ -189,14 +194,16 @@ class _ListeningBattleScreenState extends State<ListeningBattleScreen> {
   @override
   void initState() {
     super.initState();
-    final pool = List<ListeningItem>.from(
-      widget.pack.grades[widget.grade]?[widget.level] ?? [],
-    )..shuffle(Random());
+    final pool = KidsStore.allowed<ListeningItem>(
+      widget.pack.grades[widget.grade]?[widget.level] ?? const [],
+      (i) => i.free,
+    ).toList()..shuffle(Random());
     _queue = pool.take(widget.pack.qn).toList();
     _lives = widget.pack.livesByLevel[widget.level] ?? 3;
     _timeLimit = widget.pack.timeByLevel[widget.level] ?? 0;
     AudioService.instance.playBattleBgm();
     AudioService.instance.playSfx('ready-go');
+    CharVoice.start();
     WidgetsBinding.instance.addPostFrameCallback((_) => _prepQ());
   }
 
@@ -300,6 +307,7 @@ class _ListeningBattleScreenState extends State<ListeningBattleScreen> {
       }
     }
     if (!mounted) return;
+    CharVoice.result(win);
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (_) => _ModeResultScreen(
@@ -444,6 +452,7 @@ class _ModeResultScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
+                    CharVoice.retry();
                     AudioService.instance.playHubBgm();
                     Navigator.pop(context);
                   },

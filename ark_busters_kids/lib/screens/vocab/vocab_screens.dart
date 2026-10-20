@@ -9,6 +9,8 @@ import '../../core/content/vocab_pack.dart';
 import '../../core/progress/progress_keys.dart';
 import '../../game_kit/game_kit.dart';
 import '../../services/audio_service.dart';
+import '../../services/char_voice.dart';
+import '../../services/kids_store.dart';
 import '../../services/content_repository.dart';
 import '../../services/progress_service.dart';
 import 'vocab_widgets.dart';
@@ -114,7 +116,7 @@ class _VocabHomeScreenState extends State<VocabHomeScreen> {
 
 /// web `poolFor(kyu, level)`.
 List<VocabItem> vocaPool(VocabPack pack, int kyu, int level) {
-  var p = pack.items.where((v) => v.lv == kyu);
+  var p = KidsStore.allowed<VocabItem>(pack.items, (v) => v.free).where((v) => v.lv == kyu);
   if (level == 3) {
     final re = RegExp(r'^[a-zA-Z]+$');
     p = p.where((v) => re.hasMatch(v.w) && v.w.length <= 8);
@@ -208,6 +210,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
   /// web `startGame(level)` (after the encounter pop).
   void _startGame() {
     AudioService.instance.playSfx('start');
+    CharVoice.start();
     _time = _timeByLevel[widget.level] ?? 5;
     final pool = vocaPool(widget.pack, widget.kyu, widget.level)..shuffle(_rng);
     _questions = pool.take(math.min(_qn, pool.length)).toList();
@@ -412,6 +415,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
     final score = _score, correct = _correct;
     final win = correct >= (_qn * 0.6).ceil();
     AudioService.instance.playSfx(win ? 'clear' : 'gameover');
+    CharVoice.result(win);
     final String rank, msg;
     if (correct >= 10) {
       rank = 'S';
@@ -458,6 +462,7 @@ class _VocabBattleScreenState extends State<_VocabBattleScreen>
   }
 
   Future<void> _retry() async {
+    CharVoice.retry();
     setState(() => _end = null);
     await AnswerFx.battleFlash(context);
     if (!mounted) return;

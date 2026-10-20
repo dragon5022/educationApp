@@ -1,39 +1,150 @@
-﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e
-levels.Lv1,I ( ) soccer yesterday.,played,playing,played,plays,play,yesterday→過去形 played。
-levels.Lv1,She ( ) to school every day.,goes,goes,go,going,went,三単現＋習慣→goes。
-levels.Lv1,They ( ) busy now.,are,am,are,is,be,主語they→are。
-levels.Lv1,「〜できる」を表す助動詞は？,can,can,will,must,may,can＝できる（能力）。
-levels.Lv1,「〜しなければならない」は？,must,must,may,could,can,must＝義務。
-levels.Lv1,「〜してもよい」は？,may,should,must,can't,may,may＝許可。
-levels.Lv1,「〜だろう/するつもり」は？,will,will,can,must,may,will＝未来・意志。
-levels.Lv2,I ( ) TV now.「今見ている」,am watching,watch,watches,am watching,watched,now＋進行→am watching。
-levels.Lv2,He ( ) a letter now.,is writing,wrote,write,writes,is writing,現在進行 is writing。
-levels.Lv2,We ( ) tennis tomorrow.「明日する」,will play,played,play,will play,playing,未来→will play。
-levels.Lv2,She ( ) to Tokyo last week.,went,go,goes,went,gone,last week→過去 went。
-levels.Lv2,I ( ) my homework already.「もう終えた」,have finished,have finished,finished,finishing,finish,already→現在完了 have finished。
-levels.Lv2,It ( ) now.「雨が降っている」,is raining,rained,rains,rain,is raining,現在進行。
-levels.Lv2,Did you ( ) the movie?,watch,watching,watch,watches,watched,Did＋動詞の原形 watch。
-levels.Lv2,I ( ) not happy then.「その時」,was,were,am,was,is,I＋過去→was。
-levels.Lv2,I enjoy ( ) music.,listening,listen,listened,to listen,listening,enjoy＋動名詞(-ing)。
-levels.Lv2,She finished ( ) lunch.,eating,eating,ate,eat,to eat,finish＋動名詞。
-levels.Lv2,He wants ( ) a doctor.,to be,to be,be,being,been,want＋to不定詞。
-levels.Lv2,I hope ( ) you again.,to see,seeing,saw,to see,see,hope＋to不定詞。
-levels.Lv2,Stop ( )!「話すのをやめて」,talking,talked,talk,to talk,talking,stop＋動名詞＝やめる。
-levels.Lv2,次のうち後ろが必ず動名詞になる動詞は？,enjoy,hope,enjoy,decide,want,enjoy/finish/stopは動名詞。
-levels.Lv2,次のうち後ろが必ずto不定詞になる動詞は？,want,finish,stop,enjoy,want,want/hope/decideはto不定詞。
-levels.Lv2,I like ( ) books.（どちらも可だが-ingで）,reading,reading,read,reads,to reads,like＋動名詞も可。
-levels.Lv2,She is good at ( ).「歌が得意」,singing,sang,to sing,singing,sing,前置詞at＋動名詞。
-levels.Lv2,Thank you for ( ) me.,helping,helped,helping,to help,help,前置詞for＋動名詞。
-levels.Lv2,I decided ( ) English.,to study,studying,studied,study,to study,decide＋to不定詞。
-levels.Lv2,「〜すべきだ」は？,should,must,should,can,may,should＝助言・すべき。
-levels.Lv2,can の意味は？,できる,かもしれない,だろう,できる,しなければ,can＝できる。
-levels.Lv2,must の意味は？,しなければならない,できる,しなければならない,だろう,してもよい,must＝〜ねばならない。
-levels.Lv2,may の意味は？,かもしれない/してよい,しない,すべき,できる,かもしれない/してよい,may＝許可・推量。
-levels.Lv2,I ( ) swim fast.「速く泳げる」,can,should,may,can,must,能力→can。
-levels.Lv2,You ( ) study hard.「すべき」,should,can,should,may,will,助言→should。
-levels.Lv2,( ) I open the window?「開けてもいい？」,May,May,Should,Will,Must,許可を求める May I 〜?。
-levels.Lv3,He ( ) here since 2020.,has lived,living,has lived,lived,lives,since→現在完了 has lived。
-levels.Lv3,Don't forget ( ) the door.「閉めるのを」,to close,closed,closing,to close,close,forget to＝これからやることを忘れるな。
-levels.Lv3,It started ( ).「降り始めた」,raining,rained,rain,to rained,raining,start＋動名詞/to不定詞。
-levels.Lv3,次のうち動名詞をとらないのは？,wish,enjoy,finish,stop,wish,wishはto不定詞、他は動名詞。
-levels.Lv3,「〜できた（過去）」は？,could,can,could,will,must,canの過去→could。
+﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e,free
+levels.Lv1,I ( ) soccer yesterday.,played,playing,played,plays,play,yesterday→過去形 played。,true
+levels.Lv1,She ( ) to school every day.,goes,goes,go,going,went,三単現＋習慣→goes。,true
+levels.Lv1,They ( ) busy now.,are,am,are,is,be,主語they→are。,true
+levels.Lv1,「〜できる」を表す助動詞は？,can,can,will,must,may,can＝できる（能力）。,true
+levels.Lv1,「〜しなければならない」は？,must,must,may,could,can,must＝義務。,true
+levels.Lv1,「〜してもよい」は？,may,should,must,can't,may,may＝許可。,true
+levels.Lv1,「〜だろう/するつもり」は？,will,will,can,must,may,will＝未来・意志。,true
+levels.Lv1,She ( ) fast every day.（run）,runs,ran,run,runs,running,三単現→runs。,true
+levels.Lv1,I ( ) my friends every day.（see）,see,saw,see,seeing,sees,主語I→原形 see。,true
+levels.Lv1,I ( ) my grandmother every Sunday.（visit）,visit,visits,visited,visiting,visit,主語I→原形 visit。,true
+levels.Lv1,I ( ) the room every day.（clean）,clean,clean,cleaned,cleans,cleaning,主語I→原形 clean。,true
+levels.Lv1,It ( ) sunny now.,is,am,be,are,is,主語It→is。,true
+levels.Lv1,He ( ) happy now.,is,are,be,is,am,主語He→is。,true
+levels.Lv1,Ken ( ) his grandmother every Sunday.（visit）,visits,visit,visits,visited,visiting,三単現→visits。,true
+levels.Lv1,I ( ) fast every day.（run）,run,runs,ran,run,running,主語I→原形 run。,true
+levels.Lv1,We ( ) happy now.,are,be,am,is,are,主語We→are。,true
+levels.Lv1,My father ( ) the car every day.（wash）,washes,washing,wash,washes,washed,三単現→washes。,true
+levels.Lv1,I ( ) the car every day.（wash）,wash,washes,wash,washed,washing,主語I→原形 wash。,true
+levels.Lv1,I ( ) dinner every day.（make）,make,make,made,makes,making,主語I→原形 make。,true
+levels.Lv1,I ( ) to school every day.（go）,go,went,going,go,goes,主語I→原形 go。,true
+levels.Lv1,Ken ( ) a letter every day.（write）,writes,wrote,write,writes,writing,三単現→writes。,true
+levels.Lv1,My father ( ) TV every day.（watch）,watches,watch,watches,watched,watching,三単現→watches。,true
+levels.Lv1,I ( ) English every day.（teach）,teach,teaching,teach,taught,teaches,主語I→原形 teach。,true
+levels.Lv1,He ( ) pictures every day.（take）,takes,taking,take,took,takes,三単現→takes。,true
+levels.Lv1,Mr. Brown ( ) English every day.（teach）,teaches,teach,taught,teaching,teaches,三単現→teaches。,true
+levels.Lv1,The teacher ( ) home every day.（come）,comes,coming,comes,came,come,三単現→comes。,true
+levels.Lv1,I ( ) my mother every day.（help）,help,helps,help,helped,helping,主語I→原形 help。,true
+levels.Lv1,I ( ) hard every day.（work）,work,working,work,worked,works,主語I→原形 work。,true
+levels.Lv1,I ( ) TV every day.（watch）,watch,watching,watch,watched,watches,主語I→原形 watch。,true
+levels.Lv1,I ( ) a letter every day.（write）,write,writes,wrote,write,writing,主語I→原形 write。,true
+levels.Lv1,My friends ( ) happy now.,are,be,am,is,are,主語My friends→are。,true
+levels.Lv1,You ( ) happy now.,are,is,are,be,am,主語You→are。,true
+levels.Lv1,Ken ( ) a friend every day.（call）,calls,called,calls,call,calling,三単現→calls。,true
+levels.Lv1,My father ( ) the room every day.（clean）,cleans,cleans,clean,cleaned,cleaning,三単現→cleans。,true
+levels.Lv1,Mary ( ) curry every day.（cook）,cooks,cooked,cook,cooking,cooks,三単現→cooks。,true
+levels.Lv1,I ( ) milk at the store every day.（buy）,buy,buy,bought,buys,buying,主語I→原形 buy。,true
+levels.Lv1,The boy ( ) at home every day.（stay）,stays,stay,stays,staying,stayed,三単現→stays。,true
+levels.Lv1,I ( ) home every day.（come）,come,comes,came,coming,come,主語I→原形 come。,true
+levels.Lv1,I ( ) happy now.,am,am,be,are,is,主語I→am。,true
+levels.Lv1,Mary ( ) tennis every day.（play）,plays,play,playing,plays,played,三単現→plays。,true
+levels.Lv1,I ( ) to the park every day.（walk）,walk,walk,walking,walks,walked,主語I→原形 walk。,true
+levels.Lv1,Tom ( ) a book every day.（read）,reads,to read,read,reading,reads,三単現→reads。,true
+levels.Lv1,I ( ) curry every day.（cook）,cook,cook,cooking,cooked,cooks,主語I→原形 cook。,true
+levels.Lv1,She ( ) dinner every day.（make）,makes,made,making,makes,make,三単現→makes。,true
+levels.Lv1,I ( ) a pen every day.（use）,use,use,used,using,uses,主語I→原形 use。,true
+levels.Lv1,I ( ) the windows every morning.（open）,open,opening,opened,open,opens,主語I→原形 open。,true
+levels.Lv1,Ken ( ) lunch every day.（eat）,eats,eating,ate,eat,eats,三単現→eats。,true
+levels.Lv1,Mary ( ) in Tokyo now.（live）,lives,live,lived,living,lives,三単現→lives（nowなので過去形livedは×）。,true
+levels.Lv1,They ( ) happy now.,are,am,are,is,be,主語They→are。,true
+levels.Lv1,I ( ) a friend every day.（call）,call,call,called,calling,calls,主語I→原形 call。,true
+levels.Lv2,I ( ) TV now.「今見ている」,am watching,watch,watches,am watching,watched,now＋進行→am watching。,false
+levels.Lv2,He ( ) a letter now.,is writing,wrote,write,writes,is writing,現在進行 is writing。,false
+levels.Lv2,We ( ) tennis tomorrow.「明日する」,will play,played,play,will play,playing,未来→will play。,false
+levels.Lv2,She ( ) to Tokyo last week.,went,go,goes,went,gone,last week→過去 went。,false
+levels.Lv2,I ( ) my homework already.「もう終えた」,have finished,have finished,finished,finishing,finish,already→現在完了 have finished。,false
+levels.Lv2,It ( ) now.「雨が降っている」,is raining,rained,rains,rain,is raining,現在進行。,false
+levels.Lv2,Did you ( ) the movie?,watch,watching,watch,watches,watched,Did＋動詞の原形 watch。,false
+levels.Lv2,I ( ) not happy then.「その時」,was,were,am,was,is,I＋過去→was。,false
+levels.Lv2,I enjoy ( ) to music.（listen）,listening,listen,listened,to listen,listening,enjoy＋動名詞(-ing)。,false
+levels.Lv2,She finished ( ) lunch.,eating,eating,ate,eat,to eat,finish＋動名詞。,false
+levels.Lv2,He wants ( ) a doctor.,to be,to be,be,being,been,want＋to不定詞。,false
+levels.Lv2,I hope ( ) you again.,to see,seeing,saw,to see,see,hope＋to不定詞。,false
+levels.Lv2,Stop ( )!「話すのをやめて」,talking,talked,talk,to talk,talking,stop＋動名詞＝やめる。,false
+levels.Lv2,後ろが必ず動名詞になる動詞は？,enjoy,hope,enjoy,decide,want,enjoy/finish/stopは動名詞。,false
+levels.Lv2,後ろが必ずto不定詞になる動詞は？,want,finish,stop,enjoy,want,want/hope/decideはto不定詞。,false
+levels.Lv2,I like ( ) books.（read）,reading,reading,read,reads,to reads,like＋動名詞 reading（to readも可）。,false
+levels.Lv2,She is good at ( ).「歌が得意」,singing,sang,to sing,singing,sing,前置詞at＋動名詞。,false
+levels.Lv2,Thank you for ( ) me.,helping,helped,helping,to help,help,前置詞for＋動名詞。,false
+levels.Lv2,I decided ( ) English.,to study,studying,studied,study,to study,decide＋to不定詞。,false
+levels.Lv2,「〜すべきだ」は？,should,must,should,can,may,should＝助言・すべき。,false
+levels.Lv2,can の意味は？,できる,かもしれない,だろう,できる,しなければ,can＝できる。,false
+levels.Lv2,must の意味は？,しなければならない,できる,しなければならない,だろう,してもよい,must＝〜ねばならない。,false
+levels.Lv2,may の意味は？,かもしれない/してよい,しない,すべき,できる,かもしれない/してよい,may＝許可・推量。,false
+levels.Lv2,I ( ) swim fast.「速く泳げる」,can,should,may,can,must,能力→can。,false
+levels.Lv2,You ( ) study hard.「すべき」,should,can,should,may,will,助言→should。,false
+levels.Lv2,( ) I open the window?「開けてもいい？」,May,May,Should,Will,Must,許可を求める May I 〜?。,false
+levels.Lv2,We ( ) our teacher tomorrow.（help／明日）,will help,helps,helping,will help,helped,未来→will help。,false
+levels.Lv2,I ( ) a book now.（read／今〜している）,am reading,am reading,read,reads,reading,進行→am reading。,false
+levels.Lv2,He ( ) fast now.（run／今〜している）,is running,run,ran,runs,is running,進行→is running。,false
+levels.Lv2,She ( ) a letter now.（write／今〜している）,is writing,writes,wrote,is writing,write,進行→is writing。,false
+levels.Lv2,I ( ) a letter yesterday.（write）,wrote,write,writing,writes,wrote,yesterday→過去 wrote。,false
+levels.Lv2,We ( ) lunch tomorrow.（eat／明日）,will eat,eats,ate,will eat,eating,未来→will eat。,false
+levels.Lv2,I ( ) at home yesterday.（stay）,stayed,stay,stays,staying,stayed,yesterday→過去 stayed。,false
+levels.Lv2,I ( ) dinner yesterday.（make）,made,making,makes,made,make,yesterday→過去 made。,false
+levels.Lv2,They ( ) a book now.（buy／今〜している）,are buying,are buying,buys,buy,bought,進行→are buying。,false
+levels.Lv2,We ( ) TV tomorrow.（watch／明日）,will watch,watched,will watch,watching,watches,未来→will watch。,false
+levels.Lv2,I ( ) the car now.（wash／今〜している）,am washing,wash,washes,washed,am washing,進行→am washing。,false
+levels.Lv2,He ( ) English now.（teach／今〜している）,is teaching,teaches,taught,is teaching,teach,進行→is teaching。,false
+levels.Lv2,We ( ) a friend tomorrow.（call／明日）,will call,called,calling,calls,will call,未来→will call。,false
+levels.Lv2,I ( ) Kyoto yesterday.（visit）,visited,visiting,visit,visits,visited,yesterday→過去 visited。,false
+levels.Lv2,I ( ) home now.（come／今〜している）,am coming,comes,come,came,am coming,進行→am coming。,false
+levels.Lv2,I ( ) at home now.（stay／今〜している）,am staying,stayed,stays,stay,am staying,進行→am staying。,false
+levels.Lv2,They ( ) curry now.（cook／今〜している）,are cooking,cooked,cook,are cooking,cooks,進行→are cooking。,false
+levels.Lv2,I ( ) the door yesterday.（open）,opened,opens,opening,open,opened,yesterday→過去 opened。,false
+levels.Lv2,She ( ) dinner now.（make／今〜している）,is making,makes,made,is making,make,進行→is making。,false
+levels.Lv2,I ( ) TV yesterday.（watch）,watched,watching,watches,watch,watched,yesterday→過去 watched。,false
+levels.Lv2,I ( ) hard yesterday.（work）,worked,worked,works,work,working,yesterday→過去 worked。,false
+levels.Lv2,I ( ) a movie now.（watch／今〜している）,am watching,watch,watched,watches,am watching,進行→am watching。,false
+levels.Lv2,He ( ) a pen now.（use／今〜している）,is using,uses,used,is using,use,進行→is using。,false
+levels.Lv2,We ( ) a book tomorrow.（buy／明日）,will buy,buys,bought,will buy,buying,未来→will buy。,false
+levels.Lv3,He ( ) here since 2020.,has lived,living,has lived,lived,lives,since→現在完了 has lived。,false
+levels.Lv3,Don't forget ( ) the door.「閉めるのを」,to close,closed,closing,to close,close,forget to＝これからやることを忘れるな。,false
+levels.Lv3,It started ( ).「降り始めた」,raining,rained,rain,to rained,raining,start＋動名詞/to不定詞。,false
+levels.Lv3,動名詞をとらない動詞は？,wish,enjoy,finish,stop,wish,wishはto不定詞、他は動名詞。,false
+levels.Lv3,「〜できた（過去）」は？,could,can,could,will,must,canの過去→could。,false
+levels.Lv3,He ( ) to school since 2020.（walk／ずっと）,has walked,walked,has walked,walk,walks,since→現在完了 has walked（過去分詞）。,false
+levels.Lv3,We ( ) tennis since 2020.（play／ずっと）,have played,played,have played,plays,play,since→現在完了 have played（過去分詞）。,false
+levels.Lv3,Ken ( ) this TV program since 2020.（watch／ずっと）,has watched,watchs,watch,has watched,watched,since→現在完了 has watched（過去分詞）。,false
+levels.Lv3,I ( ) this bike since 2020.（have／ずっと）,have had,had,have,have had,has,since→現在完了 have had（haveの過去分詞はhad）。,false
+levels.Lv3,We ( ) baseball games on TV since 2020.（watch／ずっと）,have watched,watch,have watched,watched,watchs,since→現在完了 have watched（過去分詞）。,false
+levels.Lv3,We ( ) English since 2020.（study／ずっと）,have studied,studys,studied,study,have studied,since→現在完了 have studied（過去分詞）。,false
+levels.Lv3,They ( ) here since 2020.（work／ずっと）,have worked,worked,work,works,have worked,since→現在完了 have worked（過去分詞）。,false
+levels.Lv3,She ( ) home since 2020.（stay／ずっと）,has stayed,stay,stays,stayed,has stayed,since→現在完了 has stayed（過去分詞）。,false
+levels.Lv3,Ken ( ) English since 2020.（study／ずっと）,has studied,has studied,studied,studys,study,since→現在完了 has studied（過去分詞）。,false
+levels.Lv3,I ( ) her since 2020.（help／ずっと）,have helped,helped,help,have helped,helps,since→現在完了 have helped（過去分詞）。,false
+levels.Lv3,They ( ) Kyoto many times since 2020.（visit）,have visited,visited,visits,have visited,visit,since＋many times→現在完了 have visited（過去分詞）。,false
+levels.Lv3,We ( ) him since 2020.（know／ずっと）,have known,have known,knows,known,know,since→現在完了 have known（過去分詞）。,false
+levels.Lv3,We ( ) at this school since 2020.（teach／ずっと）,have taught,taught,teach,have taught,teaches,since→現在完了 have taught（過去分詞）。,false
+levels.Lv3,Ken ( ) Kyoto three times since 2020.（visit）,has visited,has visited,visit,visited,visits,since＋three times→現在完了 has visited（過去分詞）。,false
+levels.Lv3,I ( ) tennis since 2020.（play／ずっと）,have played,have played,plays,play,played,since→現在完了 have played（過去分詞）。,false
+levels.Lv3,Ken ( ) a dog since 2020.（have／ずっと）,has had,have,has had,had,has,since→現在完了 has had（haveの過去分詞はhad）。,false
+levels.Lv3,They ( ) this drama since 2020.（watch／ずっと）,have watched,have watched,watch,watchs,watched,since→現在完了 have watched（過去分詞）。,false
+levels.Lv3,I ( ) in Tokyo since 2020.（live／ずっと）,have lived,lived,lives,live,have lived,since→現在完了 have lived（過去分詞）。,false
+levels.Lv3,We ( ) in Tokyo since 2020.（live／ずっと）,have lived,live,have lived,lived,lives,since→現在完了 have lived（過去分詞）。,false
+levels.Lv3,I ( ) this pen since 2020.（use／ずっと）,have used,use,uses,have used,used,since→現在完了 have used（過去分詞）。,false
+levels.Lv3,He ( ) this cooking show since 2020.（watch／ずっと）,has watched,watched,watchs,watch,has watched,since→現在完了 has watched（過去分詞）。,false
+levels.Lv3,She ( ) this pen since 2020.（use／ずっと）,has used,used,use,has used,uses,since→現在完了 has used（過去分詞）。,false
+levels.Lv3,Ken ( ) sick since last week.（be／ずっと）,has been,has been,was,is,been,since→現在完了 has been（beの過去分詞はbeen）。,false
+levels.Lv3,She ( ) at this hospital since 2020.（work／ずっと）,has worked,has worked,worked,work,works,since→現在完了 has worked（過去分詞）。,false
+levels.Lv3,They ( ) in Kyoto since 2020.（be／ずっと）,have been,were,are,have been,been,since→現在完了 have been（beの過去分詞はbeen）。,false
+levels.Lv3,He stopped ( ) when I came in.（talk）,talking,talk,is talking,talked,talking,stop＋動名詞＝〜するのをやめる→talking。,false
+levels.Lv3,I stopped ( ) snacks at night.（eat）,eating,to eating,ate,eat,eating,stop＋動名詞→eating。,false
+levels.Lv3,I decided ( ) more books.（read）,to read,to reading,to read,read,reading,decide＋to不定詞→to read。,false
+levels.Lv3,I plan ( ) a song at the party.（sing）,to sing,sing,singing,to sing,to singing,plan＋to不定詞→to sing。,false
+levels.Lv3,I hope ( ) in the sea this summer.（swim）,to swim,to swim,swim,swimming,to swimming,hope＋to不定詞→to swim。,false
+levels.Lv3,I finished ( ) the book.（read）,reading,read,reading,to reading,to read,finish＋動名詞→reading。,false
+levels.Lv3,I enjoy ( ) in the park.（walk）,walking,walking,to walking,to walk,walk,enjoy＋動名詞→walking。,false
+levels.Lv3,I gave up ( ) the piano.（play）,playing,to play,to playing,play,playing,give up＋動名詞→playing。,false
+levels.Lv3,I want ( ) this book.（read）,to read,read,to read,reading,to reading,want＋to不定詞→to read。,false
+levels.Lv3,I stopped ( ) tennis last year.（play）,playing,to playing,played,playing,play,stop＋動名詞→playing。,false
+levels.Lv3,I stopped ( ) pictures.（draw）,drawing,drew,drawing,to drawing,draw,stop＋動名詞→drawing。,false
+levels.Lv3,I keep ( ) for my family every day.（cook）,cooking,cooking,to cook,cook,to cooking,keep＋動名詞→cooking。,false
+levels.Lv3,I stopped ( ) the room and took a rest.（clean）,cleaning,clean,cleaned,cleaning,to cleaning,stop＋動名詞→cleaning。,false
+levels.Lv3,I keep ( ) this song.（sing）,singing,sing,singing,to sing,to singing,keep＋動名詞→singing。,false
+levels.Lv3,I keep ( ) in my diary every day.（write）,writing,write,to write,to writing,writing,keep＋動名詞→writing。,false
+levels.Lv3,I finished ( ) English today.（study）,studying,studying,to studying,to study,study,finish＋動名詞→studying。,false
+levels.Lv3,I would like ( ) lunch.（eat）,to eat,to eat,eat,to eating,eating,would like＋to不定詞→to eat。,false
+levels.Lv3,I practice ( ) the piano every day.（play）,playing,play,playing,to play,to playing,practice＋動名詞→playing。,false
+levels.Lv3,I plan ( ) them tomorrow.（help）,to help,to help,helping,help,to helping,plan＋to不定詞→to help。,false

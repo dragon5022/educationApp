@@ -28,12 +28,16 @@ class Problem {
     required this.a,
     required this.choices,
     this.e,
+    this.free = true,
   });
 
   final String q;
   final String a;
   final List<String> choices;
   final String? e;
+
+  /// Playable without the purchase (sheet column `free`).
+  final bool free;
 
   factory Problem.fromJson(Map<String, dynamic> j) => Problem(
         q: _plain('${j['q'] ?? ''}'),
@@ -43,6 +47,7 @@ class Problem {
           for (final c in (j['choices'] as List<dynamic>? ?? const [])) '$c',
         ],
         e: j['e'] == null || '${j['e']}'.isEmpty ? null : _plain('${j['e']}'),
+        free: j['free'] != false,
       );
 }
 

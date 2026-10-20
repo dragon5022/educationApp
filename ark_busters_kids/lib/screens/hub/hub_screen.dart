@@ -4,6 +4,7 @@ import '../../core/constants/game_modes.dart';
 import '../../core/theme/app_colors.dart';
 import '../../game_kit/game_kit.dart';
 import '../../services/audio_service.dart';
+import '../../services/char_voice.dart';
 import '../../services/progress_service.dart';
 import '../../widgets/deco_stars.dart';
 import '../../widgets/page_background.dart';
@@ -53,6 +54,7 @@ class _HubScreenState extends State<HubScreen> {
       if (!mounted) return;
       await _openSequel();
     }
+    CharVoice.greet();
   }
 
   Future<void> _refreshCards() async {

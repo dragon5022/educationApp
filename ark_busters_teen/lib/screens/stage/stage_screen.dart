@@ -75,6 +75,7 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
   OrbState _orb = OrbState.normal;
   Mood _mood = Mood.normal;
   int _moodSerial = 0, _explodeSerial = 0, _comboSerial = 0;
+  bool _hurried = false; // the character's 「時間が足りない」 once per game
   int _tickedAt = 0;
   late final AnimationController _shake =
       AnimationController(vsync: this, duration: const Duration(milliseconds: 400), value: 1);
@@ -180,6 +181,7 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
     final a = AudioService.instance;
     a.playStart();
     a.startBgm();
+    _say('start', delay: const Duration(milliseconds: 600));
     _cancelTimers();
     setState(() {
       _phase = Phase.level;
@@ -190,7 +192,7 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
   /// Web chooseLevel(lv).
   void _chooseLevel(String lv) {
     final pack = _pack!;
-    final active = pack.levels[lv] ?? const <Problem>[];
+    final active = TeenStore.allowed<Problem>(pack.levels[lv] ?? const [], (p) => p.free).toList();
     _level = lv;
     _total = math.max(1, math.min(pack.maxQuestions, active.length));
     // resetState()
@@ -199,6 +201,7 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
     _qIndex = 0;
     _combo = 0;
     _maxCombo = 0;
+    _hurried = false;
     _queue = ([...active]..shuffle(_rng)).take(_total).toList();
     _locked = false;
     setState(() => _phase = Phase.countdown);
@@ -282,6 +285,10 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
     if (ratio > .65) orb = OrbState.danger;
     if (remaining <= 3 && remaining > 0) {
       mood = Mood.danger;
+      if (!_hurried) {
+        _hurried = true;
+        _say('hurry');
+      }
     } else if (remaining > 3) {
       mood = Mood.normal;
     }
@@ -314,6 +321,11 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
       final comboBonus = _combo >= 3 ? _combo * 10 : 0;
       _score += 100 + timeBonus + comboBonus;
       if (_combo >= 3) _comboSerial++;
+      if (_combo >= 3 && _combo % 3 == 0) {
+        // 3, 6, 9… in a row: 「すごいすごい！」 / 「この調子でGOGO！」
+        _say(_chara == 'uta' && _combo % 6 == 0 ? 'combo' : 'praise',
+            delay: const Duration(milliseconds: 350));
+      }
       _setMood(Mood.happy);
     } else {
       marks[i] = ChoiceMark.wrong;
@@ -358,6 +370,11 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
     _showExplain(p);
   }
 
+  /// The stage's character (詩 uta / 奏 kanade) says [line].
+  String get _chara => _pack!.images.chara;
+  void _say(String line, {Duration delay = Duration.zero}) =>
+      AudioService.instance.playCharVoice(_chara, line, delay: delay);
+
   void _setMood(Mood m) {
     _mood = m;
     _moodSerial++;
@@ -366,6 +383,7 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
   /// Web explodeBalloon(): orb burst, BOOM!, screen shake.
   void _explode() {
     AudioService.instance.playBoom();
+    _say('miss', delay: const Duration(milliseconds: 450));
     HapticFeedback.heavyImpact(); // app extra: miss / timeout
     _orb = OrbState.exploded;
     _explodeSerial++;
@@ -397,6 +415,14 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
       a.playLose();
     }
     final (rank, _) = rankFor(_score);
+    _say(
+      _lives <= 0
+          ? 'lose'
+          : _chara == 'uta'
+              ? (rank == 'S' ? 'srank' : 'win')
+              : 'clear',
+      delay: const Duration(milliseconds: 900),
+    );
     setState(() {
       _phase = Phase.end;
       _newBest = false;
@@ -524,7 +550,10 @@ class _StageScreenState extends State<StageScreen> with TickerProviderStateMixin
           child: withBack(ListenableBuilder(
             listenable: TeenStore.access,
             builder: (context, _) => LevelSelect(
-              levels: {for (final e in pack.levels.entries) e.key: e.value.length},
+              levels: {
+                for (final e in pack.levels.entries)
+                  e.key: TeenStore.allowed<Problem>(e.value, (p) => p.free).length,
+              },
               best: _bestRanks,
               onPick: _chooseLevel,
               isLocked: (i, level) => TeenStore.access.isLocked(pack.id, i, group: level),

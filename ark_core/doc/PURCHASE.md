@@ -135,7 +135,11 @@ App Store Connect 未設定でも購入・キャンセル・Ask to Buy（承認�
 | kids / teen | `freePacks` | タブ名（カンマ区切り） | 全部無料にするタブ |
 | kids / teen | `lockedPacks` | タブ名（カンマ区切り） | 全部有料にするタブ |
 
-- 行が無い／タブが無い場合、アプリは内蔵のデフォルト（課金オフ・各ゲーム最初のモードを無料）で動きます。
+- **問題ごとの無料・有料**は、問題タブの `free` 列で決まります（先生の問題バンクの「区分」そのまま）。
+  `enabled` が `true` で未購入のあいだ、`free` が `false` の問題は出題されません。
+  KIDS はこれだけで運用できます（モードのカギは無し）。TEEN は `free` 列に加えて、
+  行が無ければ各ステージの **Lv1 だけ無料**（Lv2・3 はカギ）になります。
+- 行が無い／タブが無い場合、アプリは内蔵のデフォルト（課金オフ = 全部無料）で動きます。
 - 購入済みの端末では、設定に関係なく全部遊べます。
 - 開発者向け: `ark_core/lib/src/content/pricing_sheet.dart` が行を `ContentAccessRules.fromJson` の形に変換し、
   `ArkContent.instance.pricing` に入ります。各アプリの `KidsStore` / `TeenStore` がそれを `ContentAccess.updateRules` に渡します。

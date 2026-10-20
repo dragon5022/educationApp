@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "qn": 10,
   "winRatio": 0.6,
   "grades": {
@@ -8,73 +8,789 @@
         "id": "g5_0",
         "ja": "おはよう",
         "en": "Good morning!",
-        "voice": "audio/voice/talk/1.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0001.mp3",
+        "free": true
       },
       {
         "id": "g5_1",
         "ja": "はじめまして",
         "en": "Nice to meet you.",
-        "voice": "audio/voice/talk/2.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0002.mp3",
+        "free": true
       },
       {
         "id": "g5_2",
         "ja": "ありがとう",
         "en": "Thank you.",
-        "voice": "audio/voice/talk/3.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0003.mp3",
+        "free": true
       },
       {
         "id": "g5_3",
         "ja": "なまえは なに？",
         "en": "What's your name?",
-        "voice": "audio/voice/talk/4.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0004.mp3",
+        "free": true
       },
       {
         "id": "g5_4",
         "ja": "げんき？",
         "en": "How are you?",
-        "voice": "audio/voice/talk/5.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0005.mp3",
+        "free": true
       },
       {
         "id": "g5_5",
         "ja": "げんきだよ",
         "en": "I'm fine.",
-        "voice": "audio/voice/talk/6.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0006.mp3",
+        "free": true
       },
       {
         "id": "g5_6",
         "ja": "またね！",
         "en": "See you!",
-        "voice": "audio/voice/talk/7.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0007.mp3",
+        "free": true
       },
       {
         "id": "g5_7",
         "ja": "ごめんね",
         "en": "I'm sorry.",
-        "voice": "audio/voice/talk/8.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0008.mp3",
+        "free": true
       },
       {
         "id": "g5_8",
         "ja": "あおが すき",
         "en": "I like blue.",
-        "voice": "audio/voice/talk/9.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0009.mp3",
+        "free": true
       },
       {
         "id": "g5_9",
         "ja": "なんさい？",
         "en": "How old are you?",
-        "voice": "audio/voice/talk/10.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0010.mp3",
+        "free": true
       },
       {
         "id": "g5_10",
         "ja": "9さいだよ",
         "en": "I'm nine.",
-        "voice": "audio/voice/talk/11.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0011.mp3",
+        "free": true
       },
       {
         "id": "g5_11",
         "ja": "おねがい",
         "en": "Please.",
-        "voice": "audio/voice/talk/12.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0012.mp3",
+        "free": true
+      },
+      {
+        "id": "g5_12",
+        "ja": "こんにちは。",
+        "en": "Hello.",
+        "voice": "audio/voice/talk/KIDS_T_0013.mp3",
+        "free": true,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_13",
+        "ja": "さようなら。",
+        "en": "Goodbye.",
+        "voice": "audio/voice/talk/KIDS_T_0014.mp3",
+        "free": true,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_14",
+        "ja": "またね。",
+        "en": "See you later.",
+        "voice": "audio/voice/talk/KIDS_T_0015.mp3",
+        "free": true,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_15",
+        "ja": "私の名前はユキです。",
+        "en": "My name is Yuki.",
+        "voice": "audio/voice/talk/KIDS_T_0016.mp3",
+        "free": true,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_16",
+        "ja": "元気です、ありがとう。",
+        "en": "I'm fine, thank you.",
+        "voice": "audio/voice/talk/KIDS_T_0017.mp3",
+        "free": true,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_17",
+        "ja": "私は12歳です。",
+        "en": "I'm twelve years old.",
+        "voice": "audio/voice/talk/KIDS_T_0018.mp3",
+        "free": true,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_18",
+        "ja": "これは何ですか。",
+        "en": "What's this?",
+        "voice": "audio/voice/talk/KIDS_T_0019.mp3",
+        "free": true,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_19",
+        "ja": "それはペンです。",
+        "en": "It's a pen.",
+        "voice": "audio/voice/talk/KIDS_T_0020.mp3",
+        "free": true,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_20",
+        "ja": "私は犬が好きです。",
+        "en": "I like dogs.",
+        "voice": "audio/voice/talk/KIDS_T_0021.mp3",
+        "free": true,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_21",
+        "ja": "私は納豆が好きではありません。",
+        "en": "I don't like natto.",
+        "voice": "audio/voice/talk/KIDS_T_0022.mp3",
+        "free": true,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_22",
+        "ja": "あなたは犬が好きですか。",
+        "en": "Do you like dogs?",
+        "voice": "audio/voice/talk/KIDS_T_0023.mp3",
+        "free": true,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_23",
+        "ja": "はい、好きです。",
+        "en": "Yes, I do.",
+        "voice": "audio/voice/talk/KIDS_T_0024.mp3",
+        "free": true,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_24",
+        "ja": "いいえ、好きではありません。",
+        "en": "No, I don't.",
+        "voice": "audio/voice/talk/KIDS_T_0025.mp3",
+        "free": true,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_25",
+        "ja": "私には兄が一人います。",
+        "en": "I have one brother.",
+        "voice": "audio/voice/talk/KIDS_T_0026.mp3",
+        "free": true,
+        "scene": "家族"
+      },
+      {
+        "id": "g5_26",
+        "ja": "これは私のかばんです。",
+        "en": "This is my bag.",
+        "voice": "audio/voice/talk/KIDS_T_0051.mp3",
+        "free": false,
+        "scene": "持ち物"
+      },
+      {
+        "id": "g5_27",
+        "ja": "トイレはどこですか。",
+        "en": "Where is the bathroom?",
+        "voice": "audio/voice/talk/KIDS_T_0052.mp3",
+        "free": false,
+        "scene": "場所"
+      },
+      {
+        "id": "g5_28",
+        "ja": "どういたしまして。",
+        "en": "You're welcome.",
+        "voice": "audio/voice/talk/KIDS_T_0053.mp3",
+        "free": false,
+        "scene": "お礼"
+      },
+      {
+        "id": "g5_29",
+        "ja": "すみません。",
+        "en": "Excuse me.",
+        "voice": "audio/voice/talk/KIDS_T_0054.mp3",
+        "free": false,
+        "scene": "呼びかけ"
+      },
+      {
+        "id": "g5_30",
+        "ja": "はい、お願いします。",
+        "en": "Yes, please.",
+        "voice": "audio/voice/talk/KIDS_T_0055.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g5_31",
+        "ja": "いいえ、けっこうです。",
+        "en": "No, thank you.",
+        "voice": "audio/voice/talk/KIDS_T_0056.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g5_32",
+        "ja": "私は日本出身です。",
+        "en": "I'm from Japan.",
+        "voice": "audio/voice/talk/KIDS_T_0057.mp3",
+        "free": false,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_33",
+        "ja": "3時です。",
+        "en": "It's three o'clock.",
+        "voice": "audio/voice/talk/KIDS_T_0058.mp3",
+        "free": false,
+        "scene": "時間"
+      },
+      {
+        "id": "g5_34",
+        "ja": "今日は月曜日です。",
+        "en": "It's Monday today.",
+        "voice": "audio/voice/talk/KIDS_T_0059.mp3",
+        "free": false,
+        "scene": "曜日"
+      },
+      {
+        "id": "g5_35",
+        "ja": "私はサッカーをします。",
+        "en": "I play soccer.",
+        "voice": "audio/voice/talk/KIDS_T_0060.mp3",
+        "free": false,
+        "scene": "スポーツ"
+      },
+      {
+        "id": "g5_36",
+        "ja": "立ってください。",
+        "en": "Please stand up.",
+        "voice": "audio/voice/talk/KIDS_T_0061.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_37",
+        "ja": "すわってください。",
+        "en": "Please sit down.",
+        "voice": "audio/voice/talk/KIDS_T_0062.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_38",
+        "ja": "わかりました。",
+        "en": "OK, I understand.",
+        "voice": "audio/voice/talk/KIDS_T_0063.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_39",
+        "ja": "わかりません。",
+        "en": "I don't understand.",
+        "voice": "audio/voice/talk/KIDS_T_0064.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_40",
+        "ja": "もう一度お願いします。",
+        "en": "One more time, please.",
+        "voice": "audio/voice/talk/KIDS_T_0065.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_41",
+        "ja": "がんばって。",
+        "en": "Good luck.",
+        "voice": "audio/voice/talk/KIDS_T_0066.mp3",
+        "free": false,
+        "scene": "はげます"
+      },
+      {
+        "id": "g5_42",
+        "ja": "お誕生日おめでとう。",
+        "en": "Happy birthday.",
+        "voice": "audio/voice/talk/KIDS_T_0067.mp3",
+        "free": false,
+        "scene": "お祝い"
+      },
+      {
+        "id": "g5_43",
+        "ja": "これはいくらですか。",
+        "en": "How much is this?",
+        "voice": "audio/voice/talk/KIDS_T_0068.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g5_44",
+        "ja": "のどがかわきました。",
+        "en": "I'm thirsty.",
+        "voice": "audio/voice/talk/KIDS_T_0069.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g5_45",
+        "ja": "水をください。",
+        "en": "Water, please.",
+        "voice": "audio/voice/talk/KIDS_T_0070.mp3",
+        "free": false,
+        "scene": "食べ物"
+      },
+      {
+        "id": "g5_46",
+        "ja": "私はリンゴが3つほしいです。",
+        "en": "I want three apples.",
+        "voice": "audio/voice/talk/KIDS_T_0071.mp3",
+        "free": false,
+        "scene": "ほしい"
+      },
+      {
+        "id": "g5_47",
+        "ja": "手伝ってくれますか。",
+        "en": "Can you help me?",
+        "voice": "audio/voice/talk/KIDS_T_0072.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g5_48",
+        "ja": "もちろん。",
+        "en": "Sure.",
+        "voice": "audio/voice/talk/KIDS_T_0073.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g5_49",
+        "ja": "これが好きです。",
+        "en": "I like this one.",
+        "voice": "audio/voice/talk/KIDS_T_0074.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g5_50",
+        "ja": "あなたの好きな色は何ですか。",
+        "en": "What color do you like?",
+        "voice": "audio/voice/talk/KIDS_T_0075.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_51",
+        "ja": "またあした。",
+        "en": "See you tomorrow.",
+        "voice": "audio/voice/talk/KIDS_T_0076.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_52",
+        "ja": "おやすみなさい。",
+        "en": "Good night.",
+        "voice": "audio/voice/talk/KIDS_T_0077.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_53",
+        "ja": "こんにちは。",
+        "en": "Good afternoon.",
+        "voice": "audio/voice/talk/KIDS_T_0078.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_54",
+        "ja": "こんばんは。",
+        "en": "Good evening.",
+        "voice": "audio/voice/talk/KIDS_T_0079.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_55",
+        "ja": "また来週。",
+        "en": "See you next week.",
+        "voice": "audio/voice/talk/KIDS_T_0080.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_56",
+        "ja": "やあ、ケン。",
+        "en": "Hi, Ken.",
+        "voice": "audio/voice/talk/KIDS_T_0081.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_57",
+        "ja": "今日の調子はどうですか。",
+        "en": "How are you today?",
+        "voice": "audio/voice/talk/KIDS_T_0082.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g5_58",
+        "ja": "私はミカです。",
+        "en": "I'm Mika.",
+        "voice": "audio/voice/talk/KIDS_T_0083.mp3",
+        "free": false,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_59",
+        "ja": "私は10歳です。",
+        "en": "I'm ten years old.",
+        "voice": "audio/voice/talk/KIDS_T_0084.mp3",
+        "free": false,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_60",
+        "ja": "私は広島に住んでいます。",
+        "en": "I live in Hiroshima.",
+        "voice": "audio/voice/talk/KIDS_T_0085.mp3",
+        "free": false,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_61",
+        "ja": "私は学生です。",
+        "en": "I'm a student.",
+        "voice": "audio/voice/talk/KIDS_T_0086.mp3",
+        "free": false,
+        "scene": "自己紹介"
+      },
+      {
+        "id": "g5_62",
+        "ja": "あれは何ですか。",
+        "en": "What's that?",
+        "voice": "audio/voice/talk/KIDS_T_0087.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_63",
+        "ja": "それはネコです。",
+        "en": "It's a cat.",
+        "voice": "audio/voice/talk/KIDS_T_0088.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_64",
+        "ja": "あの男の子はだれですか。",
+        "en": "Who is that boy?",
+        "voice": "audio/voice/talk/KIDS_T_0089.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_65",
+        "ja": "彼は私の友達です。",
+        "en": "He is my friend.",
+        "voice": "audio/voice/talk/KIDS_T_0090.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_66",
+        "ja": "あなたはどこの出身ですか。",
+        "en": "Where are you from?",
+        "voice": "audio/voice/talk/KIDS_T_0091.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_67",
+        "ja": "私はネコが好きです。",
+        "en": "I like cats.",
+        "voice": "audio/voice/talk/KIDS_T_0092.mp3",
+        "free": false,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_68",
+        "ja": "私はアイスクリームが大好きです。",
+        "en": "I love ice cream.",
+        "voice": "audio/voice/talk/KIDS_T_0093.mp3",
+        "free": false,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_69",
+        "ja": "私はニンジンが好きではありません。",
+        "en": "I don't like carrots.",
+        "voice": "audio/voice/talk/KIDS_T_0094.mp3",
+        "free": false,
+        "scene": "好き嫌い"
+      },
+      {
+        "id": "g5_70",
+        "ja": "あなたは何のスポーツが好きですか。",
+        "en": "What sport do you like?",
+        "voice": "audio/voice/talk/KIDS_T_0095.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g5_71",
+        "ja": "私は野球が好きです。",
+        "en": "I like baseball.",
+        "voice": "audio/voice/talk/KIDS_T_0096.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_72",
+        "ja": "こちらは私の母です。",
+        "en": "This is my mother.",
+        "voice": "audio/voice/talk/KIDS_T_0097.mp3",
+        "free": false,
+        "scene": "家族"
+      },
+      {
+        "id": "g5_73",
+        "ja": "私には姉妹が2人います。",
+        "en": "I have two sisters.",
+        "voice": "audio/voice/talk/KIDS_T_0098.mp3",
+        "free": false,
+        "scene": "家族"
+      },
+      {
+        "id": "g5_74",
+        "ja": "これはあなたのペンですか。",
+        "en": "Is this your pen?",
+        "voice": "audio/voice/talk/KIDS_T_0099.mp3",
+        "free": false,
+        "scene": "持ち物"
+      },
+      {
+        "id": "g5_75",
+        "ja": "はい、そうです。",
+        "en": "Yes, it is.",
+        "voice": "audio/voice/talk/KIDS_T_0100.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_76",
+        "ja": "いいえ、ちがいます。",
+        "en": "No, it isn't.",
+        "voice": "audio/voice/talk/KIDS_T_0101.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g5_77",
+        "ja": "お昼ごはんの時間です。",
+        "en": "It's time for lunch.",
+        "voice": "audio/voice/talk/KIDS_T_0102.mp3",
+        "free": false,
+        "scene": "時間"
+      },
+      {
+        "id": "g5_78",
+        "ja": "今日は何曜日ですか。",
+        "en": "What day is it today?",
+        "voice": "audio/voice/talk/KIDS_T_0103.mp3",
+        "free": false,
+        "scene": "曜日"
+      },
+      {
+        "id": "g5_79",
+        "ja": "今日は晴れです。",
+        "en": "It's sunny today.",
+        "voice": "audio/voice/talk/KIDS_T_0104.mp3",
+        "free": false,
+        "scene": "天気"
+      },
+      {
+        "id": "g5_80",
+        "ja": "今日は寒いです。",
+        "en": "It's cold today.",
+        "voice": "audio/voice/talk/KIDS_T_0105.mp3",
+        "free": false,
+        "scene": "天気"
+      },
+      {
+        "id": "g5_81",
+        "ja": "本を開いてください。",
+        "en": "Open your books.",
+        "voice": "audio/voice/talk/KIDS_T_0106.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_82",
+        "ja": "ドアを閉めてください。",
+        "en": "Close the door, please.",
+        "voice": "audio/voice/talk/KIDS_T_0107.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_83",
+        "ja": "これを見てください。",
+        "en": "Look at this.",
+        "voice": "audio/voice/talk/KIDS_T_0108.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_84",
+        "ja": "質問があります。",
+        "en": "I have a question.",
+        "voice": "audio/voice/talk/KIDS_T_0109.mp3",
+        "free": false,
+        "scene": "教室"
+      },
+      {
+        "id": "g5_85",
+        "ja": "私は算数が好きです。",
+        "en": "I like math.",
+        "voice": "audio/voice/talk/KIDS_T_0110.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g5_86",
+        "ja": "私の学校は大きいです。",
+        "en": "My school is big.",
+        "voice": "audio/voice/talk/KIDS_T_0111.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g5_87",
+        "ja": "ただいま。",
+        "en": "I'm home.",
+        "voice": "audio/voice/talk/KIDS_T_0112.mp3",
+        "free": false,
+        "scene": "家"
+      },
+      {
+        "id": "g5_88",
+        "ja": "おかえりなさい。",
+        "en": "Welcome home.",
+        "voice": "audio/voice/talk/KIDS_T_0113.mp3",
+        "free": false,
+        "scene": "家"
+      },
+      {
+        "id": "g5_89",
+        "ja": "食べましょう。",
+        "en": "Let's eat.",
+        "voice": "audio/voice/talk/KIDS_T_0114.mp3",
+        "free": false,
+        "scene": "食べ物"
+      },
+      {
+        "id": "g5_90",
+        "ja": "おいしいね。",
+        "en": "It's yummy.",
+        "voice": "audio/voice/talk/KIDS_T_0115.mp3",
+        "free": false,
+        "scene": "食べ物"
+      },
+      {
+        "id": "g5_91",
+        "ja": "おにごっこをしよう。",
+        "en": "Let's play tag.",
+        "voice": "audio/voice/talk/KIDS_T_0116.mp3",
+        "free": false,
+        "scene": "遊び"
+      },
+      {
+        "id": "g5_92",
+        "ja": "いっしょに遊ぼう。",
+        "en": "Let's play together.",
+        "voice": "audio/voice/talk/KIDS_T_0117.mp3",
+        "free": false,
+        "scene": "遊び"
+      },
+      {
+        "id": "g5_93",
+        "ja": "私の番です。",
+        "en": "It's my turn.",
+        "voice": "audio/voice/talk/KIDS_T_0118.mp3",
+        "free": false,
+        "scene": "遊び"
+      },
+      {
+        "id": "g5_94",
+        "ja": "私はうれしいです。",
+        "en": "I'm happy.",
+        "voice": "audio/voice/talk/KIDS_T_0119.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g5_95",
+        "ja": "私はねむいです。",
+        "en": "I'm sleepy.",
+        "voice": "audio/voice/talk/KIDS_T_0120.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g5_96",
+        "ja": "あなたならできるよ。",
+        "en": "You can do it.",
+        "voice": "audio/voice/talk/KIDS_T_0121.mp3",
+        "free": false,
+        "scene": "はげます"
+      },
+      {
+        "id": "g5_97",
+        "ja": "どうもありがとう。",
+        "en": "Thanks a lot.",
+        "voice": "audio/voice/talk/KIDS_T_0122.mp3",
+        "free": false,
+        "scene": "お礼"
+      },
+      {
+        "id": "g5_98",
+        "ja": "私も。",
+        "en": "Me too.",
+        "voice": "audio/voice/talk/KIDS_T_0123.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g5_99",
+        "ja": "私は泳げます。",
+        "en": "I can swim.",
+        "voice": "audio/voice/talk/KIDS_T_0124.mp3",
+        "free": false,
+        "scene": "スポーツ"
       }
     ],
     "g4": [
@@ -82,73 +798,789 @@
         "id": "g4_0",
         "ja": "えきは どこ？",
         "en": "Where is the station?",
-        "voice": "audio/voice/talk/13.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0027.mp3",
+        "free": true
       },
       {
         "id": "g4_1",
         "ja": "いくら？",
         "en": "How much is it?",
-        "voice": "audio/voice/talk/14.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0028.mp3",
+        "free": true
       },
       {
         "id": "g4_2",
         "ja": "いま なんじ？",
         "en": "What time is it?",
-        "voice": "audio/voice/talk/15.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0029.mp3",
+        "free": true
       },
       {
         "id": "g4_3",
         "ja": "てつだおうか？",
         "en": "Can I help you?",
-        "voice": "audio/voice/talk/16.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0030.mp3",
+        "free": true
       },
       {
         "id": "g4_4",
         "ja": "トイレ かりていい？",
         "en": "May I use the bathroom?",
-        "voice": "audio/voice/talk/17.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0031.mp3",
+        "free": true
       },
       {
         "id": "g4_5",
         "ja": "しゅみは なに？",
         "en": "What do you like to do?",
-        "voice": "audio/voice/talk/18.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0032.mp3",
+        "free": true
       },
       {
         "id": "g4_6",
         "ja": "いっしょに いこう",
         "en": "Let's go together.",
-        "voice": "audio/voice/talk/19.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0033.mp3",
+        "free": true
       },
       {
         "id": "g4_7",
         "ja": "おなか すいた",
         "en": "I'm hungry.",
-        "voice": "audio/voice/talk/20.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0034.mp3",
+        "free": true
       },
       {
         "id": "g4_8",
         "ja": "もういちど 言って？",
         "en": "Pardon?",
-        "voice": "audio/voice/talk/21.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0035.mp3",
+        "free": true
       },
       {
         "id": "g4_9",
         "ja": "きをつけてね",
         "en": "Take care!",
-        "voice": "audio/voice/talk/22.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0036.mp3",
+        "free": true
       },
       {
         "id": "g4_10",
         "ja": "おめでとう",
         "en": "Congratulations!",
-        "voice": "audio/voice/talk/23.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0037.mp3",
+        "free": true
       },
       {
         "id": "g4_11",
         "ja": "だいじょうぶ",
         "en": "It's okay.",
-        "voice": "audio/voice/talk/24.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0038.mp3",
+        "free": true
+      },
+      {
+        "id": "g4_12",
+        "ja": "私は毎朝6時に起きます。",
+        "en": "I get up at six every morning.",
+        "voice": "audio/voice/talk/KIDS_T_0125.mp3",
+        "free": false,
+        "scene": "一日の生活"
+      },
+      {
+        "id": "g4_13",
+        "ja": "私はバスで学校へ行きます。",
+        "en": "I go to school by bus.",
+        "voice": "audio/voice/talk/KIDS_T_0126.mp3",
+        "free": false,
+        "scene": "通学"
+      },
+      {
+        "id": "g4_14",
+        "ja": "私は昨日サッカーをしました。",
+        "en": "I played soccer yesterday.",
+        "voice": "audio/voice/talk/KIDS_T_0127.mp3",
+        "free": false,
+        "scene": "過去"
+      },
+      {
+        "id": "g4_15",
+        "ja": "私は先週京都へ行きました。",
+        "en": "I went to Kyoto last week.",
+        "voice": "audio/voice/talk/KIDS_T_0128.mp3",
+        "free": false,
+        "scene": "過去"
+      },
+      {
+        "id": "g4_16",
+        "ja": "週末は何をしましたか。",
+        "en": "What did you do on the weekend?",
+        "voice": "audio/voice/talk/KIDS_T_0129.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g4_17",
+        "ja": "私は宿題をしました。",
+        "en": "I did my homework.",
+        "voice": "audio/voice/talk/KIDS_T_0130.mp3",
+        "free": false,
+        "scene": "過去"
+      },
+      {
+        "id": "g4_18",
+        "ja": "あなたはどこに住んでいますか。",
+        "en": "Where do you live?",
+        "voice": "audio/voice/talk/KIDS_T_0131.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g4_19",
+        "ja": "私は東京に住んでいます。",
+        "en": "I live in Tokyo.",
+        "voice": "audio/voice/talk/KIDS_T_0132.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g4_20",
+        "ja": "駅への道を教えてください。",
+        "en": "Could you tell me the way to the station?",
+        "voice": "audio/voice/talk/KIDS_T_0133.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_21",
+        "ja": "まっすぐ行ってください。",
+        "en": "Go straight.",
+        "voice": "audio/voice/talk/KIDS_T_0134.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_22",
+        "ja": "右に曲がってください。",
+        "en": "Turn right.",
+        "voice": "audio/voice/talk/KIDS_T_0135.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_23",
+        "ja": "ここから遠いですか。",
+        "en": "Is it far from here?",
+        "voice": "audio/voice/talk/KIDS_T_0136.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_24",
+        "ja": "歩いて10分くらいです。",
+        "en": "It's about ten minutes on foot.",
+        "voice": "audio/voice/talk/KIDS_T_0137.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_25",
+        "ja": "これを試着してもいいですか。",
+        "en": "Can I try this on?",
+        "voice": "audio/voice/talk/KIDS_T_0138.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_26",
+        "ja": "別の色はありますか。",
+        "en": "Do you have another color?",
+        "voice": "audio/voice/talk/KIDS_T_0139.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_27",
+        "ja": "もっと大きいのはありますか。",
+        "en": "Do you have a bigger one?",
+        "voice": "audio/voice/talk/KIDS_T_0140.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_28",
+        "ja": "これをください。",
+        "en": "I'll take this one.",
+        "voice": "audio/voice/talk/KIDS_T_0141.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_29",
+        "ja": "映画を見に行きませんか。",
+        "en": "Would you like to go to a movie?",
+        "voice": "audio/voice/talk/KIDS_T_0142.mp3",
+        "free": false,
+        "scene": "さそう"
+      },
+      {
+        "id": "g4_30",
+        "ja": "いいですね。",
+        "en": "That sounds good.",
+        "voice": "audio/voice/talk/KIDS_T_0143.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g4_31",
+        "ja": "ごめん、行けません。",
+        "en": "Sorry, I can't.",
+        "voice": "audio/voice/talk/KIDS_T_0144.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g4_32",
+        "ja": "何時に会いましょうか。",
+        "en": "What time shall we meet?",
+        "voice": "audio/voice/talk/KIDS_T_0145.mp3",
+        "free": false,
+        "scene": "約束"
+      },
+      {
+        "id": "g4_33",
+        "ja": "10時に駅で会いましょう。",
+        "en": "Let's meet at the station at ten.",
+        "voice": "audio/voice/talk/KIDS_T_0146.mp3",
+        "free": false,
+        "scene": "約束"
+      },
+      {
+        "id": "g4_34",
+        "ja": "気分が悪いです。",
+        "en": "I feel sick.",
+        "voice": "audio/voice/talk/KIDS_T_0147.mp3",
+        "free": false,
+        "scene": "体調"
+      },
+      {
+        "id": "g4_35",
+        "ja": "頭が痛いです。",
+        "en": "I have a headache.",
+        "voice": "audio/voice/talk/KIDS_T_0148.mp3",
+        "free": false,
+        "scene": "体調"
+      },
+      {
+        "id": "g4_36",
+        "ja": "かぜをひきました。",
+        "en": "I have a cold.",
+        "voice": "audio/voice/talk/KIDS_T_0149.mp3",
+        "free": false,
+        "scene": "体調"
+      },
+      {
+        "id": "g4_37",
+        "ja": "手伝いましょうか。",
+        "en": "Shall I help you?",
+        "voice": "audio/voice/talk/KIDS_T_0150.mp3",
+        "free": false,
+        "scene": "申し出"
+      },
+      {
+        "id": "g4_38",
+        "ja": "私は音楽を聞くのが好きです。",
+        "en": "I like listening to music.",
+        "voice": "audio/voice/talk/KIDS_T_0151.mp3",
+        "free": false,
+        "scene": "好み"
+      },
+      {
+        "id": "g4_39",
+        "ja": "私はテニスをするのが得意です。",
+        "en": "I'm good at playing tennis.",
+        "voice": "audio/voice/talk/KIDS_T_0152.mp3",
+        "free": false,
+        "scene": "好み"
+      },
+      {
+        "id": "g4_40",
+        "ja": "明日は晴れるでしょう。",
+        "en": "It will be sunny tomorrow.",
+        "voice": "audio/voice/talk/KIDS_T_0153.mp3",
+        "free": false,
+        "scene": "天気"
+      },
+      {
+        "id": "g4_41",
+        "ja": "私は今テレビを見ています。",
+        "en": "I'm watching TV now.",
+        "voice": "audio/voice/talk/KIDS_T_0154.mp3",
+        "free": false,
+        "scene": "今している"
+      },
+      {
+        "id": "g4_42",
+        "ja": "彼は今電話で話しています。",
+        "en": "He is talking on the phone now.",
+        "voice": "audio/voice/talk/KIDS_T_0155.mp3",
+        "free": false,
+        "scene": "今している"
+      },
+      {
+        "id": "g4_43",
+        "ja": "あなたはピアノが弾けますか。",
+        "en": "Can you play the piano?",
+        "voice": "audio/voice/talk/KIDS_T_0156.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g4_44",
+        "ja": "少しだけ弾けます。",
+        "en": "I can play a little.",
+        "voice": "audio/voice/talk/KIDS_T_0157.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g4_45",
+        "ja": "私は将来、先生になりたいです。",
+        "en": "I want to be a teacher in the future.",
+        "voice": "audio/voice/talk/KIDS_T_0158.mp3",
+        "free": false,
+        "scene": "将来"
+      },
+      {
+        "id": "g4_46",
+        "ja": "昼ごはんに何を食べましたか。",
+        "en": "What did you eat for lunch?",
+        "voice": "audio/voice/talk/KIDS_T_0159.mp3",
+        "free": false,
+        "scene": "食事"
+      },
+      {
+        "id": "g4_47",
+        "ja": "サンドイッチを食べました。",
+        "en": "I ate a sandwich.",
+        "voice": "audio/voice/talk/KIDS_T_0160.mp3",
+        "free": false,
+        "scene": "食事"
+      },
+      {
+        "id": "g4_48",
+        "ja": "どうやってそこへ行きますか。",
+        "en": "How do you get there?",
+        "voice": "audio/voice/talk/KIDS_T_0161.mp3",
+        "free": false,
+        "scene": "交通"
+      },
+      {
+        "id": "g4_49",
+        "ja": "電車で行きます。",
+        "en": "I go there by train.",
+        "voice": "audio/voice/talk/KIDS_T_0162.mp3",
+        "free": false,
+        "scene": "交通"
+      },
+      {
+        "id": "g4_50",
+        "ja": "あなたのお姉さんは何歳ですか。",
+        "en": "How old is your sister?",
+        "voice": "audio/voice/talk/KIDS_T_0163.mp3",
+        "free": false,
+        "scene": "家族"
+      },
+      {
+        "id": "g4_51",
+        "ja": "彼女は15歳です。",
+        "en": "She is fifteen.",
+        "voice": "audio/voice/talk/KIDS_T_0164.mp3",
+        "free": false,
+        "scene": "家族"
+      },
+      {
+        "id": "g4_52",
+        "ja": "何か飲みますか。",
+        "en": "Would you like something to drink?",
+        "voice": "audio/voice/talk/KIDS_T_0165.mp3",
+        "free": false,
+        "scene": "もてなし"
+      },
+      {
+        "id": "g4_53",
+        "ja": "お茶をお願いします。",
+        "en": "Tea, please.",
+        "voice": "audio/voice/talk/KIDS_T_0166.mp3",
+        "free": false,
+        "scene": "もてなし"
+      },
+      {
+        "id": "g4_54",
+        "ja": "写真をとってもいいですか。",
+        "en": "Can I take a picture?",
+        "voice": "audio/voice/talk/KIDS_T_0167.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g4_55",
+        "ja": "窓を開けてもいいですか。",
+        "en": "May I open the window?",
+        "voice": "audio/voice/talk/KIDS_T_0168.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g4_56",
+        "ja": "もちろんいいですよ。",
+        "en": "Sure, go ahead.",
+        "voice": "audio/voice/talk/KIDS_T_0169.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g4_57",
+        "ja": "お先にどうぞ。",
+        "en": "After you.",
+        "voice": "audio/voice/talk/KIDS_T_0170.mp3",
+        "free": false,
+        "scene": "気づかい"
+      },
+      {
+        "id": "g4_58",
+        "ja": "楽しかったです。",
+        "en": "I had a good time.",
+        "voice": "audio/voice/talk/KIDS_T_0171.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g4_59",
+        "ja": "また会いましょう。",
+        "en": "Let's meet again.",
+        "voice": "audio/voice/talk/KIDS_T_0172.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g4_60",
+        "ja": "私は10時に寝ます。",
+        "en": "I go to bed at ten.",
+        "voice": "audio/voice/talk/KIDS_T_0173.mp3",
+        "free": false,
+        "scene": "一日の生活"
+      },
+      {
+        "id": "g4_61",
+        "ja": "私は7時に朝ごはんを食べます。",
+        "en": "I eat breakfast at seven.",
+        "voice": "audio/voice/talk/KIDS_T_0174.mp3",
+        "free": false,
+        "scene": "一日の生活"
+      },
+      {
+        "id": "g4_62",
+        "ja": "私は歩いて学校へ行きます。",
+        "en": "I walk to school.",
+        "voice": "audio/voice/talk/KIDS_T_0175.mp3",
+        "free": false,
+        "scene": "通学"
+      },
+      {
+        "id": "g4_63",
+        "ja": "私は昨夜映画を見ました。",
+        "en": "I watched a movie last night.",
+        "voice": "audio/voice/talk/KIDS_T_0176.mp3",
+        "free": false,
+        "scene": "過去"
+      },
+      {
+        "id": "g4_64",
+        "ja": "私は日曜日に祖母をたずねました。",
+        "en": "I visited my grandmother on Sunday.",
+        "voice": "audio/voice/talk/KIDS_T_0177.mp3",
+        "free": false,
+        "scene": "過去"
+      },
+      {
+        "id": "g4_65",
+        "ja": "昨日はどこへ行きましたか。",
+        "en": "Where did you go yesterday?",
+        "voice": "audio/voice/talk/KIDS_T_0178.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g4_66",
+        "ja": "公園へ行きました。",
+        "en": "I went to the park.",
+        "voice": "audio/voice/talk/KIDS_T_0179.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g4_67",
+        "ja": "その角を左に曲がってください。",
+        "en": "Turn left at the corner.",
+        "voice": "audio/voice/talk/KIDS_T_0180.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_68",
+        "ja": "銀行のとなりです。",
+        "en": "It's next to the bank.",
+        "voice": "audio/voice/talk/KIDS_T_0181.mp3",
+        "free": false,
+        "scene": "道案内"
+      },
+      {
+        "id": "g4_69",
+        "ja": "もっと小さいのはありますか。",
+        "en": "Do you have a smaller one?",
+        "voice": "audio/voice/talk/KIDS_T_0182.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_70",
+        "ja": "見ているだけです。",
+        "en": "I'm just looking.",
+        "voice": "audio/voice/talk/KIDS_T_0183.mp3",
+        "free": false,
+        "scene": "買い物"
+      },
+      {
+        "id": "g4_71",
+        "ja": "放課後テニスをしましょう。",
+        "en": "Let's play tennis after school.",
+        "voice": "audio/voice/talk/KIDS_T_0184.mp3",
+        "free": false,
+        "scene": "さそう"
+      },
+      {
+        "id": "g4_72",
+        "ja": "いっしょに来ませんか。",
+        "en": "Do you want to come with me?",
+        "voice": "audio/voice/talk/KIDS_T_0185.mp3",
+        "free": false,
+        "scene": "さそう"
+      },
+      {
+        "id": "g4_73",
+        "ja": "ぜひそうしたいです。",
+        "en": "I'd love to.",
+        "voice": "audio/voice/talk/KIDS_T_0186.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g4_74",
+        "ja": "どこで会いましょうか。",
+        "en": "Where shall we meet?",
+        "voice": "audio/voice/talk/KIDS_T_0187.mp3",
+        "free": false,
+        "scene": "約束"
+      },
+      {
+        "id": "g4_75",
+        "ja": "公園で会いましょう。",
+        "en": "See you at the park.",
+        "voice": "audio/voice/talk/KIDS_T_0188.mp3",
+        "free": false,
+        "scene": "約束"
+      },
+      {
+        "id": "g4_76",
+        "ja": "おなかが痛いです。",
+        "en": "I have a stomachache.",
+        "voice": "audio/voice/talk/KIDS_T_0189.mp3",
+        "free": false,
+        "scene": "体調"
+      },
+      {
+        "id": "g4_77",
+        "ja": "今はもう気分がよくなりました。",
+        "en": "I feel better now.",
+        "voice": "audio/voice/talk/KIDS_T_0190.mp3",
+        "free": false,
+        "scene": "体調"
+      },
+      {
+        "id": "g4_78",
+        "ja": "どうしたのですか。",
+        "en": "What's wrong?",
+        "voice": "audio/voice/talk/KIDS_T_0191.mp3",
+        "free": false,
+        "scene": "気づかい"
+      },
+      {
+        "id": "g4_79",
+        "ja": "かばんを持ちましょうか。",
+        "en": "Shall I carry your bag?",
+        "voice": "audio/voice/talk/KIDS_T_0192.mp3",
+        "free": false,
+        "scene": "申し出"
+      },
+      {
+        "id": "g4_80",
+        "ja": "私はテレビゲームをするのが好きです。",
+        "en": "I like playing video games.",
+        "voice": "audio/voice/talk/KIDS_T_0193.mp3",
+        "free": false,
+        "scene": "好み"
+      },
+      {
+        "id": "g4_81",
+        "ja": "私は料理が得意です。",
+        "en": "I'm good at cooking.",
+        "voice": "audio/voice/talk/KIDS_T_0194.mp3",
+        "free": false,
+        "scene": "好み"
+      },
+      {
+        "id": "g4_82",
+        "ja": "昨日は雨でした。",
+        "en": "It was rainy yesterday.",
+        "voice": "audio/voice/talk/KIDS_T_0195.mp3",
+        "free": false,
+        "scene": "天気"
+      },
+      {
+        "id": "g4_83",
+        "ja": "今日の天気はどうですか。",
+        "en": "How's the weather today?",
+        "voice": "audio/voice/talk/KIDS_T_0196.mp3",
+        "free": false,
+        "scene": "天気"
+      },
+      {
+        "id": "g4_84",
+        "ja": "私は今宿題をしています。",
+        "en": "I'm doing my homework now.",
+        "voice": "audio/voice/talk/KIDS_T_0197.mp3",
+        "free": false,
+        "scene": "今している"
+      },
+      {
+        "id": "g4_85",
+        "ja": "あなたは何をしているのですか。",
+        "en": "What are you doing?",
+        "voice": "audio/voice/talk/KIDS_T_0198.mp3",
+        "free": false,
+        "scene": "今している"
+      },
+      {
+        "id": "g4_86",
+        "ja": "あなたは自転車に乗れますか。",
+        "en": "Can you ride a bike?",
+        "voice": "audio/voice/talk/KIDS_T_0199.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g4_87",
+        "ja": "私はサッカー選手になりたいです。",
+        "en": "I want to be a soccer player.",
+        "voice": "audio/voice/talk/KIDS_T_0200.mp3",
+        "free": false,
+        "scene": "将来"
+      },
+      {
+        "id": "g4_88",
+        "ja": "夕ごはんは何がいいですか。",
+        "en": "What would you like for dinner?",
+        "voice": "audio/voice/talk/KIDS_T_0201.mp3",
+        "free": false,
+        "scene": "食事"
+      },
+      {
+        "id": "g4_89",
+        "ja": "カレーライスがいいです。",
+        "en": "I'd like curry and rice.",
+        "voice": "audio/voice/talk/KIDS_T_0202.mp3",
+        "free": false,
+        "scene": "食事"
+      },
+      {
+        "id": "g4_90",
+        "ja": "動物園へ行くのはどのバスですか。",
+        "en": "Which bus goes to the zoo?",
+        "voice": "audio/voice/talk/KIDS_T_0203.mp3",
+        "free": false,
+        "scene": "交通"
+      },
+      {
+        "id": "g4_91",
+        "ja": "私の父は料理人です。",
+        "en": "My father is a cook.",
+        "voice": "audio/voice/talk/KIDS_T_0204.mp3",
+        "free": false,
+        "scene": "家族"
+      },
+      {
+        "id": "g4_92",
+        "ja": "ご自由にどうぞ。",
+        "en": "Help yourself.",
+        "voice": "audio/voice/talk/KIDS_T_0205.mp3",
+        "free": false,
+        "scene": "もてなし"
+      },
+      {
+        "id": "g4_93",
+        "ja": "ペンを借りてもいいですか。",
+        "en": "Can I borrow your pen?",
+        "voice": "audio/voice/talk/KIDS_T_0206.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g4_94",
+        "ja": "ここで待っていてください。",
+        "en": "Please wait here.",
+        "voice": "audio/voice/talk/KIDS_T_0207.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g4_95",
+        "ja": "いいですよ。",
+        "en": "No problem.",
+        "voice": "audio/voice/talk/KIDS_T_0208.mp3",
+        "free": false,
+        "scene": "返事"
+      },
+      {
+        "id": "g4_96",
+        "ja": "あなたのいちばん好きな教科は何ですか。",
+        "en": "What's your favorite subject?",
+        "voice": "audio/voice/talk/KIDS_T_0209.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g4_97",
+        "ja": "今日は授業が5時間あります。",
+        "en": "We have five classes today.",
+        "voice": "audio/voice/talk/KIDS_T_0210.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g4_98",
+        "ja": "テレビを見てもいいですか。",
+        "en": "Can I watch TV?",
+        "voice": "audio/voice/talk/KIDS_T_0211.mp3",
+        "free": false,
+        "scene": "家"
+      },
+      {
+        "id": "g4_99",
+        "ja": "私はとても疲れていました。",
+        "en": "I was very tired.",
+        "voice": "audio/voice/talk/KIDS_T_0212.mp3",
+        "free": false,
+        "scene": "気持ち"
       }
     ],
     "g3": [
@@ -156,73 +1588,789 @@
         "id": "g3_0",
         "ja": "みちに まよった",
         "en": "I'm lost.",
-        "voice": "audio/voice/talk/25.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0039.mp3",
+        "free": true
       },
       {
         "id": "g3_1",
         "ja": "どう おもう？",
         "en": "What do you think?",
-        "voice": "audio/voice/talk/26.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0040.mp3",
+        "free": true
       },
       {
         "id": "g3_2",
         "ja": "いっしょに いかない？",
         "en": "Why don't we go?",
-        "voice": "audio/voice/talk/27.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0041.mp3",
+        "free": true
       },
       {
         "id": "g3_3",
         "ja": "なんで そう おもうの？",
         "en": "Why do you think so?",
-        "voice": "audio/voice/talk/28.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0042.mp3",
+        "free": true
       },
       {
         "id": "g3_4",
         "ja": "おすすめは なに？",
         "en": "What do you recommend?",
-        "voice": "audio/voice/talk/29.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0043.mp3",
+        "free": true
       },
       {
         "id": "g3_5",
         "ja": "さんせい！",
         "en": "I agree with you.",
-        "voice": "audio/voice/talk/30.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0044.mp3",
+        "free": true
       },
       {
         "id": "g3_6",
         "ja": "たのしみ！",
         "en": "I'm looking forward to it.",
-        "voice": "audio/voice/talk/31.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0045.mp3",
+        "free": true
       },
       {
         "id": "g3_7",
         "ja": "きが かわった",
         "en": "I changed my mind.",
-        "voice": "audio/voice/talk/32.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0046.mp3",
+        "free": true
       },
       {
         "id": "g3_8",
         "ja": "おかげさまで",
         "en": "Thanks to you.",
-        "voice": "audio/voice/talk/33.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0047.mp3",
+        "free": true
       },
       {
         "id": "g3_9",
         "ja": "じしんが ない",
         "en": "I'm not sure.",
-        "voice": "audio/voice/talk/34.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0048.mp3",
+        "free": true
       },
       {
         "id": "g3_10",
         "ja": "れんらく とりあおう",
         "en": "Let's keep in touch.",
-        "voice": "audio/voice/talk/35.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0049.mp3",
+        "free": true
       },
       {
         "id": "g3_11",
         "ja": "むりしないで",
         "en": "Don't push yourself.",
-        "voice": "audio/voice/talk/36.mp3"
+        "voice": "audio/voice/talk/KIDS_T_0050.mp3",
+        "free": true
+      },
+      {
+        "id": "g3_12",
+        "ja": "私は夏のほうが冬より好きです。",
+        "en": "I like summer better than winter.",
+        "voice": "audio/voice/talk/KIDS_T_0213.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_13",
+        "ja": "なぜなら泳ぐのが好きだからです。",
+        "en": "Because I like swimming.",
+        "voice": "audio/voice/talk/KIDS_T_0214.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_14",
+        "ja": "私はこの映画がおもしろいと思います。",
+        "en": "I think this movie is interesting.",
+        "voice": "audio/voice/talk/KIDS_T_0215.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_15",
+        "ja": "私もそう思います。",
+        "en": "I think so too.",
+        "voice": "audio/voice/talk/KIDS_T_0216.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_16",
+        "ja": "私はそうは思いません。",
+        "en": "I don't think so.",
+        "voice": "audio/voice/talk/KIDS_T_0217.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_17",
+        "ja": "私は沖縄に行ったことがあります。",
+        "en": "I have been to Okinawa.",
+        "voice": "audio/voice/talk/KIDS_T_0218.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_18",
+        "ja": "私は一度も海外に行ったことがありません。",
+        "en": "I have never been abroad.",
+        "voice": "audio/voice/talk/KIDS_T_0219.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_19",
+        "ja": "もう宿題を終えましたか。",
+        "en": "Have you finished your homework yet?",
+        "voice": "audio/voice/talk/KIDS_T_0220.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g3_20",
+        "ja": "まだ終えていません。",
+        "en": "Not yet.",
+        "voice": "audio/voice/talk/KIDS_T_0221.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g3_21",
+        "ja": "この本はあの本よりおもしろいです。",
+        "en": "This book is more interesting than that one.",
+        "voice": "audio/voice/talk/KIDS_T_0222.mp3",
+        "free": false,
+        "scene": "比較"
+      },
+      {
+        "id": "g3_22",
+        "ja": "これがいちばん好きです。",
+        "en": "I like this one the best.",
+        "voice": "audio/voice/talk/KIDS_T_0223.mp3",
+        "free": false,
+        "scene": "比較"
+      },
+      {
+        "id": "g3_23",
+        "ja": "富士山は日本でいちばん高い山です。",
+        "en": "Mt. Fuji is the highest mountain in Japan.",
+        "voice": "audio/voice/talk/KIDS_T_0224.mp3",
+        "free": false,
+        "scene": "比較"
+      },
+      {
+        "id": "g3_24",
+        "ja": "もしもし、タロウですが。",
+        "en": "Hello, this is Taro.",
+        "voice": "audio/voice/talk/KIDS_T_0225.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_25",
+        "ja": "ケンをお願いできますか。",
+        "en": "May I speak to Ken?",
+        "voice": "audio/voice/talk/KIDS_T_0226.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_26",
+        "ja": "少々お待ちください。",
+        "en": "Just a moment, please.",
+        "voice": "audio/voice/talk/KIDS_T_0227.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_27",
+        "ja": "伝言をお願いできますか。",
+        "en": "Can I leave a message?",
+        "voice": "audio/voice/talk/KIDS_T_0228.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_28",
+        "ja": "あとでかけ直します。",
+        "en": "I'll call back later.",
+        "voice": "audio/voice/talk/KIDS_T_0229.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_29",
+        "ja": "2名ですが席はありますか。",
+        "en": "Do you have a table for two?",
+        "voice": "audio/voice/talk/KIDS_T_0230.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_30",
+        "ja": "メニューを見せてください。",
+        "en": "Could I see the menu?",
+        "voice": "audio/voice/talk/KIDS_T_0231.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_31",
+        "ja": "これはどんな料理ですか。",
+        "en": "What kind of dish is this?",
+        "voice": "audio/voice/talk/KIDS_T_0232.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_32",
+        "ja": "これにします。",
+        "en": "I'll have this one.",
+        "voice": "audio/voice/talk/KIDS_T_0233.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_33",
+        "ja": "お会計をお願いします。",
+        "en": "Check, please.",
+        "voice": "audio/voice/talk/KIDS_T_0234.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_34",
+        "ja": "とてもおいしかったです。",
+        "en": "It was delicious.",
+        "voice": "audio/voice/talk/KIDS_T_0235.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_35",
+        "ja": "駅までどのくらいかかりますか。",
+        "en": "How long does it take to get to the station?",
+        "voice": "audio/voice/talk/KIDS_T_0236.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_36",
+        "ja": "20分くらいかかります。",
+        "en": "It takes about twenty minutes.",
+        "voice": "audio/voice/talk/KIDS_T_0237.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_37",
+        "ja": "どの電車に乗ればいいですか。",
+        "en": "Which train should I take?",
+        "voice": "audio/voice/talk/KIDS_T_0238.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_38",
+        "ja": "切符はどこで買えますか。",
+        "en": "Where can I buy a ticket?",
+        "voice": "audio/voice/talk/KIDS_T_0239.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_39",
+        "ja": "写真をとっていただけますか。",
+        "en": "Could you take a picture of me?",
+        "voice": "audio/voice/talk/KIDS_T_0240.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_40",
+        "ja": "助けていただけますか。",
+        "en": "Could you help me?",
+        "voice": "audio/voice/talk/KIDS_T_0241.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g3_41",
+        "ja": "将来、私は医者になりたいです。",
+        "en": "I want to be a doctor in the future.",
+        "voice": "audio/voice/talk/KIDS_T_0242.mp3",
+        "free": false,
+        "scene": "将来"
+      },
+      {
+        "id": "g3_42",
+        "ja": "なぜなら人を助けたいからです。",
+        "en": "Because I want to help people.",
+        "voice": "audio/voice/talk/KIDS_T_0243.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_43",
+        "ja": "私は3年間英語を勉強しています。",
+        "en": "I have studied English for three years.",
+        "voice": "audio/voice/talk/KIDS_T_0244.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_44",
+        "ja": "あなたはどのくらい日本にいますか。",
+        "en": "How long have you been in Japan?",
+        "voice": "audio/voice/talk/KIDS_T_0245.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g3_45",
+        "ja": "私は疲れていたので早く寝ました。",
+        "en": "I went to bed early because I was tired.",
+        "voice": "audio/voice/talk/KIDS_T_0246.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_46",
+        "ja": "もし雨が降ったら家にいます。",
+        "en": "If it rains, I'll stay home.",
+        "voice": "audio/voice/talk/KIDS_T_0247.mp3",
+        "free": false,
+        "scene": "仮定"
+      },
+      {
+        "id": "g3_47",
+        "ja": "私はあなたに賛成しません。",
+        "en": "I don't agree with you.",
+        "voice": "audio/voice/talk/KIDS_T_0248.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_48",
+        "ja": "それはいい考えですね。",
+        "en": "That's a good idea.",
+        "voice": "audio/voice/talk/KIDS_T_0249.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_49",
+        "ja": "もう一度言ってもらえますか。",
+        "en": "Could you say that again?",
+        "voice": "audio/voice/talk/KIDS_T_0250.mp3",
+        "free": false,
+        "scene": "聞き返す"
+      },
+      {
+        "id": "g3_50",
+        "ja": "ゆっくり話してもらえますか。",
+        "en": "Could you speak slowly?",
+        "voice": "audio/voice/talk/KIDS_T_0251.mp3",
+        "free": false,
+        "scene": "聞き返す"
+      },
+      {
+        "id": "g3_51",
+        "ja": "手伝ってくれてありがとう。",
+        "en": "Thank you for helping me.",
+        "voice": "audio/voice/talk/KIDS_T_0252.mp3",
+        "free": false,
+        "scene": "お礼"
+      },
+      {
+        "id": "g3_52",
+        "ja": "気にしないで。",
+        "en": "Don't worry about it.",
+        "voice": "audio/voice/talk/KIDS_T_0253.mp3",
+        "free": false,
+        "scene": "気づかい"
+      },
+      {
+        "id": "g3_53",
+        "ja": "お会いできてよかったです。",
+        "en": "It was nice meeting you.",
+        "voice": "audio/voice/talk/KIDS_T_0254.mp3",
+        "free": false,
+        "scene": "あいさつ"
+      },
+      {
+        "id": "g3_54",
+        "ja": "あなたの趣味は何ですか。",
+        "en": "What are your hobbies?",
+        "voice": "audio/voice/talk/KIDS_T_0255.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g3_55",
+        "ja": "私は本を読むのが好きです。",
+        "en": "I like reading books.",
+        "voice": "audio/voice/talk/KIDS_T_0256.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g3_56",
+        "ja": "週末は何をする予定ですか。",
+        "en": "What are you going to do this weekend?",
+        "voice": "audio/voice/talk/KIDS_T_0257.mp3",
+        "free": false,
+        "scene": "予定"
+      },
+      {
+        "id": "g3_57",
+        "ja": "友達と買い物に行く予定です。",
+        "en": "I'm going to go shopping with my friends.",
+        "voice": "audio/voice/talk/KIDS_T_0258.mp3",
+        "free": false,
+        "scene": "予定"
+      },
+      {
+        "id": "g3_58",
+        "ja": "私はサッカーのほうが野球よりわくわくすると思います。",
+        "en": "I think soccer is more exciting than baseball.",
+        "voice": "audio/voice/talk/KIDS_T_0259.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_59",
+        "ja": "なぜなら友達とするのが楽しいからです。",
+        "en": "Because it's fun to play with my friends.",
+        "voice": "audio/voice/talk/KIDS_T_0260.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_60",
+        "ja": "私の意見では、制服はよいと思います。",
+        "en": "In my opinion, school uniforms are good.",
+        "voice": "audio/voice/talk/KIDS_T_0261.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_61",
+        "ja": "なぜなら毎日服を選ばなくてよいからです。",
+        "en": "Because we don't have to choose clothes every day.",
+        "voice": "audio/voice/talk/KIDS_T_0262.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_62",
+        "ja": "そのとおりですね。",
+        "en": "That's true.",
+        "voice": "audio/voice/talk/KIDS_T_0263.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_63",
+        "ja": "本当ですか。知りませんでした。",
+        "en": "Really? I didn't know that.",
+        "voice": "audio/voice/talk/KIDS_T_0264.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_64",
+        "ja": "私はこの映画を2回見たことがあります。",
+        "en": "I have seen this movie twice.",
+        "voice": "audio/voice/talk/KIDS_T_0265.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_65",
+        "ja": "北海道に行ったことはありますか。",
+        "en": "Have you ever been to Hokkaido?",
+        "voice": "audio/voice/talk/KIDS_T_0266.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_66",
+        "ja": "はい、去年の夏に行きました。",
+        "en": "Yes, I went there last summer.",
+        "voice": "audio/voice/talk/KIDS_T_0267.mp3",
+        "free": false,
+        "scene": "こたえる"
+      },
+      {
+        "id": "g3_67",
+        "ja": "私は5歳のときからここに住んでいます。",
+        "en": "I have lived here since I was five.",
+        "voice": "audio/voice/talk/KIDS_T_0268.mp3",
+        "free": false,
+        "scene": "経験"
+      },
+      {
+        "id": "g3_68",
+        "ja": "あなたはおすしを食べたことがありますか。",
+        "en": "Have you ever eaten sushi?",
+        "voice": "audio/voice/talk/KIDS_T_0269.mp3",
+        "free": false,
+        "scene": "たずねる"
+      },
+      {
+        "id": "g3_69",
+        "ja": "トムはケンより速く走ります。",
+        "en": "Tom runs faster than Ken.",
+        "voice": "audio/voice/talk/KIDS_T_0270.mp3",
+        "free": false,
+        "scene": "比較"
+      },
+      {
+        "id": "g3_70",
+        "ja": "このかばんは私のと同じくらいの大きさです。",
+        "en": "This bag is as big as mine.",
+        "voice": "audio/voice/talk/KIDS_T_0271.mp3",
+        "free": false,
+        "scene": "比較"
+      },
+      {
+        "id": "g3_71",
+        "ja": "どちらさまですか。",
+        "en": "Who's calling, please?",
+        "voice": "audio/voice/talk/KIDS_T_0272.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_72",
+        "ja": "彼は今出かけています。",
+        "en": "He's out now.",
+        "voice": "audio/voice/talk/KIDS_T_0273.mp3",
+        "free": false,
+        "scene": "電話"
+      },
+      {
+        "id": "g3_73",
+        "ja": "ご注文はお決まりですか。",
+        "en": "Are you ready to order?",
+        "voice": "audio/voice/talk/KIDS_T_0274.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_74",
+        "ja": "お水をいただけますか。",
+        "en": "Could I have some water?",
+        "voice": "audio/voice/talk/KIDS_T_0275.mp3",
+        "free": false,
+        "scene": "レストラン"
+      },
+      {
+        "id": "g3_75",
+        "ja": "この近くにコンビニはありますか。",
+        "en": "Is there a convenience store near here?",
+        "voice": "audio/voice/talk/KIDS_T_0276.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_76",
+        "ja": "ここにどのくらい滞在しますか。",
+        "en": "How long will you stay here?",
+        "voice": "audio/voice/talk/KIDS_T_0277.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_77",
+        "ja": "1週間滞在する予定です。",
+        "en": "I'm going to stay for a week.",
+        "voice": "audio/voice/talk/KIDS_T_0278.mp3",
+        "free": false,
+        "scene": "旅行"
+      },
+      {
+        "id": "g3_78",
+        "ja": "ドアを開けていただけますか。",
+        "en": "Could you open the door for me?",
+        "voice": "audio/voice/talk/KIDS_T_0279.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g3_79",
+        "ja": "この使い方を教えていただけますか。",
+        "en": "Could you show me how to use this?",
+        "voice": "audio/voice/talk/KIDS_T_0280.mp3",
+        "free": false,
+        "scene": "お願い"
+      },
+      {
+        "id": "g3_80",
+        "ja": "いつか海外で働きたいです。",
+        "en": "I want to work abroad someday.",
+        "voice": "audio/voice/talk/KIDS_T_0281.mp3",
+        "free": false,
+        "scene": "将来"
+      },
+      {
+        "id": "g3_81",
+        "ja": "なぜならほかの国の文化に興味があるからです。",
+        "en": "Because I'm interested in other cultures.",
+        "voice": "audio/voice/talk/KIDS_T_0282.mp3",
+        "free": false,
+        "scene": "理由"
+      },
+      {
+        "id": "g3_82",
+        "ja": "もしひまなら、公園に行きましょう。",
+        "en": "If you're free, let's go to the park.",
+        "voice": "audio/voice/talk/KIDS_T_0283.mp3",
+        "free": false,
+        "scene": "仮定"
+      },
+      {
+        "id": "g3_83",
+        "ja": "時間があれば手伝います。",
+        "en": "If I have time, I'll help you.",
+        "voice": "audio/voice/talk/KIDS_T_0284.mp3",
+        "free": false,
+        "scene": "仮定"
+      },
+      {
+        "id": "g3_84",
+        "ja": "本を読むことは大切だと思います。",
+        "en": "I think it's important to read books.",
+        "voice": "audio/voice/talk/KIDS_T_0285.mp3",
+        "free": false,
+        "scene": "意見"
+      },
+      {
+        "id": "g3_85",
+        "ja": "それはおもしろそうですね。",
+        "en": "That sounds interesting.",
+        "voice": "audio/voice/talk/KIDS_T_0286.mp3",
+        "free": false,
+        "scene": "あいづち"
+      },
+      {
+        "id": "g3_86",
+        "ja": "どういう意味ですか。",
+        "en": "What do you mean?",
+        "voice": "audio/voice/talk/KIDS_T_0287.mp3",
+        "free": false,
+        "scene": "聞き返す"
+      },
+      {
+        "id": "g3_87",
+        "ja": "それはどうつづりますか。",
+        "en": "How do you spell it?",
+        "voice": "audio/voice/talk/KIDS_T_0288.mp3",
+        "free": false,
+        "scene": "聞き返す"
+      },
+      {
+        "id": "g3_88",
+        "ja": "招待してくれてありがとう。",
+        "en": "Thank you for inviting me.",
+        "voice": "audio/voice/talk/KIDS_T_0289.mp3",
+        "free": false,
+        "scene": "お礼"
+      },
+      {
+        "id": "g3_89",
+        "ja": "だいじょうぶですか。",
+        "en": "Are you all right?",
+        "voice": "audio/voice/talk/KIDS_T_0290.mp3",
+        "free": false,
+        "scene": "気づかい"
+      },
+      {
+        "id": "g3_90",
+        "ja": "疲れているみたいですね。",
+        "en": "You look tired.",
+        "voice": "audio/voice/talk/KIDS_T_0291.mp3",
+        "free": false,
+        "scene": "気づかい"
+      },
+      {
+        "id": "g3_91",
+        "ja": "明日おじをたずねる予定です。",
+        "en": "I'm going to visit my uncle tomorrow.",
+        "voice": "audio/voice/talk/KIDS_T_0292.mp3",
+        "free": false,
+        "scene": "予定"
+      },
+      {
+        "id": "g3_92",
+        "ja": "夏休みの予定はありますか。",
+        "en": "Do you have any plans for summer vacation?",
+        "voice": "audio/voice/talk/KIDS_T_0293.mp3",
+        "free": false,
+        "scene": "予定"
+      },
+      {
+        "id": "g3_93",
+        "ja": "私たちの文化祭は来月です。",
+        "en": "Our school festival is next month.",
+        "voice": "audio/voice/talk/KIDS_T_0294.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g3_94",
+        "ja": "私は去年吹奏楽部に入りました。",
+        "en": "I joined the brass band last year.",
+        "voice": "audio/voice/talk/KIDS_T_0295.mp3",
+        "free": false,
+        "scene": "学校"
+      },
+      {
+        "id": "g3_95",
+        "ja": "今日は部屋をそうじしなければなりません。",
+        "en": "I have to clean my room today.",
+        "voice": "audio/voice/talk/KIDS_T_0296.mp3",
+        "free": false,
+        "scene": "家"
+      },
+      {
+        "id": "g3_96",
+        "ja": "トランプをしませんか。",
+        "en": "Why don't we play cards?",
+        "voice": "audio/voice/talk/KIDS_T_0297.mp3",
+        "free": false,
+        "scene": "遊び"
+      },
+      {
+        "id": "g3_97",
+        "ja": "それを聞いておどろきました。",
+        "en": "I was surprised to hear that.",
+        "voice": "audio/voice/talk/KIDS_T_0298.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g3_98",
+        "ja": "気に入ってくれてうれしいです。",
+        "en": "I'm glad you like it.",
+        "voice": "audio/voice/talk/KIDS_T_0299.mp3",
+        "free": false,
+        "scene": "気持ち"
+      },
+      {
+        "id": "g3_99",
+        "ja": "あきらめないで。",
+        "en": "Don't give up.",
+        "voice": "audio/voice/talk/KIDS_T_0300.mp3",
+        "free": false,
+        "scene": "はげます"
       }
     ]
   }

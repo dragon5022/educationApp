@@ -1,241 +1,378 @@
-﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e
+﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e,free
 levels.Lv1,"Tom has a cat. The cat is on his book. ""Look! My cat is on my book!"" Tom is happy. The cat is happy, too.
 
-Where is the cat?",On the book.,On the book.,On the bed.,On the chair.,On the box.,トムはネコをかっている。ネコが本の上にいる。「見て！ネコが本の上にいる！」トムはうれしい。ネコもうれしい。
+Where is the cat?",On the book.,On the book.,On the bed.,On the chair.,On the box.,トムはネコをかっている。ネコが本の上にいる。「見て！ネコが本の上にいる！」トムはうれしい。ネコもうれしい。,true
 levels.Lv1,"A dog can run. A dog can jump. But this dog can dance! The dog dances and dances. We all clap. What a funny dog!
 
-What can this dog do?",Dance.,Dance.,Cook.,Read.,Sing.,イヌは走れる。イヌはとべる。でもこのイヌはおどれる！イヌはおどっておどる。みんなでてをたたく。なんておもしろいイヌ！
-levels.Lv1,"Ben puts on his hat. The hat is too big. The hat goes down. Ben can not see! ""Where am I?"" Ben says. Mom laughs.
+What can this dog do?",Dance.,Dance.,Cook.,Read.,Sing.,イヌは走れる。イヌはとべる。でもこのイヌはおどれる！イヌはおどっておどる。みんなでてをたたく。なんておもしろいイヌ！,true
+levels.Lv1,"Ben puts on his hat. The hat is too big. The hat goes down. Ben can't see! ""Where am I?"" Ben says. Mom laughs.
 
-Why can't Ben see?",The hat is too big.,The hat is too big.,It is dark.,He is sleepy.,His eyes hurt.,ベンはぼうしをかぶる。ぼうしが大きすぎる。ぼうしが下がる。ベンは見えない！「ぼく、どこ？」とベンが言う。ママがわらう。
+Why can't Ben see?",The hat is too big.,The hat is too big.,It is dark.,He is sleepy.,His eyes hurt.,ベンはぼうしをかぶる。ぼうしが大きすぎる。ぼうしが下がる。ベンは見えない！「ぼく、どこ？」とベンが言う。ママがわらう。,true
 levels.Lv1,"It is lunch time. Sam wants cake. He opens his box. No cake! Just one green bean. Sam looks sad. Then his dog eats the bean. Now they both laugh.
 
-What is in Sam's box?",One green bean.,One green bean.,A big cake.,Two apples.,Some milk.,おひるの時間。サムはケーキがほしい。はこをあける。ケーキがない！みどりのまめが一つだけ。サムはかなしそう。それからイヌがまめを食べる。二人ともわらう。
+What is in Sam's box?",One green bean.,One green bean.,A big cake.,Two apples.,Some milk.,おひるの時間。サムはケーキがほしい。はこをあける。ケーキがない！みどりのまめが一つだけ。サムはかなしそう。それからイヌがまめを食べる。二人ともわらう。,true
 levels.Lv1,"The baby has a spoon. The baby eats. One, two, three! Food is on his face. Food is on his hair. Food is everywhere! But the baby is so happy.
 
-Where is the food?",Everywhere.,Everywhere.,In the box.,On the plate.,In the bag.,あかちゃんがスプーンをもつ。あかちゃんが食べる。1、2、3！食べものがかおにつく。かみにつく。どこにでもある！でもあかちゃんはとてもうれしい。
+Where is the food?",Everywhere.,Everywhere.,In the box.,On the plate.,In the bag.,あかちゃんがスプーンをもつ。あかちゃんが食べる。1、2、3！食べものがかおにつく。かみにつく。どこにでもある！でもあかちゃんはとてもうれしい。,true
 levels.Lv1,"It is night. The room is dark. Yuki hears a sound. Tap, tap, tap. What is it? She looks. It is just the rain. Yuki smiles and goes to bed.
 
-What is the sound?",The rain.,The rain.,A cat.,A ghost.,Her mom.,夜だ。へやがくらい。ユキは音を聞く。トン、トン、トン。なに？見る。ただの雨だ。ユキはわらってねる。
-levels.Lv1,"Ben sees a big box. The box moves! Ben is scared. The box moves again. Ben opens it. It is his cat! ""Oh, it is you!"" Ben is happy now.
+What is the sound?",The rain.,The rain.,A cat.,A bird.,Her mom.,夜だ。へやがくらい。ユキは音を聞く。トン、トン、トン。なに？見る。ただの雨だ。ユキはわらってねる。,true
+levels.Lv1,"Ben sees a big box. The box moves! Ben is surprised. The box moves again. Ben opens it. It is his cat! ""Oh, it is you!"" Ben is happy now.
 
-What is in the box?",His cat.,His cat.,A ghost.,A dog.,A toy.,ベンは大きなはこを見る。はこがうごく！ベンはこわい。はこがまたうごく。ベンがあける。ネコだ！「なんだ、きみか！」ベンは今うれしい。
-levels.Lv1,"The house is dark. Mika walks. She sees two eyes! The eyes are big. The eyes shine. Mika runs! But it is her cat. ""Meow,"" says the cat.
+What is in the box?",His cat.,His cat.,A ball.,A dog.,A toy.,ベンは大きなはこを見る。はこがうごく！ベンはびっくり。はこがまたうごく。ベンがあける。ネコだ！「なんだ、きみか！」ベンは今うれしい。,true
+levels.Lv1,"Mika is in the garden. She sees two small eyes. The eyes are big. The eyes shine. It is a baby bird! Mika gives it some water. ""Chirp,"" says the bird. Mika smiles.
 
-What has the two shining eyes?",Her cat.,Her cat.,A monster.,A dog.,A bird.,いえがくらい。ミカがあるく。目が二つ見える！目が大きい。目が光る。ミカは走る！でもそれはネコ。「ニャー」とネコが言う。
-levels.Lv1,"Tom is in bed. He hears feet. Step, step, step. Someone is here! Tom hides. The door opens. It is Dad. ""Time for bed!"" Dad says. Tom laughs.
+What has the two shining eyes?",A baby bird.,A baby bird.,A cat.,A dog.,A fish.,ミカはにわにいる。小さな目が二つ見える。目が大きい。目が光る。ひなだ！ミカは水をあげる。「ピヨ」と鳥が言う。ミカはわらう。,true
+levels.Lv1,"Tom is in bed. He hears feet. Step, step, step. The door opens. It is Dad. He has a big cake! ""Happy birthday, Tom!"" Dad says. Tom laughs.
 
-Who comes into the room?",Dad.,Dad.,A ghost.,His friend.,A cat.,トムはベッドにいる。足音が聞こえる。トン、トン、トン。だれかいる！トムはかくれる。ドアがあく。パパだ。「ねる時間だよ！」とパパが言う。トムはわらう。
-levels.Lv1,"The moon is big. Sara looks out. She sees a white thing. It moves. It is so white! Is it a ghost? No! It is just a cat on the wall.
+Who comes into the room?",Dad.,Dad.,Mom.,His friend.,A cat.,トムはベッドにいる。足音が聞こえる。トン、トン、トン。ドアがあく。パパだ。大きなケーキをもっている！「たんじょうびおめでとう、トム！」とパパが言う。トムはわらう。,true
+levels.Lv1,"The moon is big. Sara looks out. She sees a white thing. It moves. It is so white! What is it? It is a cat on the wall. The cat looks at the moon, too.
 
-What is the white thing?",A cat.,A cat.,A ghost.,Snow.,A flag.,つきが大きい。サラが外を見る。白いものが見える。うごく。とても白い！おばけ？ちがう！へいの上のネコだ。
+What is the white thing?",A cat.,A cat.,A bird.,Snow.,A flag.,つきが大きい。サラが外を見る。白いものが見える。うごく。とても白い！なに？へいの上のネコだ。ネコもつきを見ている。,true
 levels.Lv1,"Aya likes a boy. The boy gives her a flower. The flower is red. Aya is happy. She gives him a flower, too. Now they are friends.
 
-What does the boy give Aya?",A flower.,A flower.,A book.,A cat.,A cake.,アヤは男の子がすき。男の子が花をくれる。花はあかい。アヤはうれしい。アヤも花をあげる。二人はともだちになる。
+What does the boy give Aya?",A flower.,A flower.,A book.,A cat.,A cake.,アヤは男の子がすき。男の子が花をくれる。花はあかい。アヤはうれしい。アヤも花をあげる。二人はともだちになる。,true
 levels.Lv1,"It rains. Mina has no umbrella. A boy comes. ""Let's share!"" he says. They walk together. They are happy. The rain is nice today.
 
-What do they share?",An umbrella.,An umbrella.,A book.,A cake.,A bag.,雨がふる。ミナはかさがない。男の子が来る。「いっしょに入ろう！」と言う。二人であるく。うれしい。今日は雨がいい。
+What do they share?",An umbrella.,An umbrella.,A book.,A cake.,A bag.,雨がふる。ミナはかさがない。男の子が来る。「いっしょに入ろう！」と言う。二人であるく。うれしい。今日は雨がいい。,true
 levels.Lv1,"Sora gives Hana a blue ribbon. ""It is like the sky,"" he says. Hana likes it. She puts it on. She looks at the sky and smiles.
 
-What color is the ribbon?",Blue.,Blue.,Red.,Green.,Pink.,ソラがハナにあおいリボンをあげる。「そらみたいだね」と言う。ハナはきにいる。つける。そらを見てわらう。
-levels.Lv1,"Ken sits next to Mai. He is shy. He can not talk. So he draws a cat. He gives it to Mai. Mai smiles big. Now they talk every day.
+What color is the ribbon?",Blue.,Blue.,Red.,Green.,Pink.,ソラがハナにあおいリボンをあげる。「そらみたいだね」と言う。ハナはきにいる。つける。そらを見てわらう。,true
+levels.Lv1,"Ken sits next to Mai. He is shy. He can't talk. So he draws a cat. He gives it to Mai. Mai smiles big. Now they talk every day.
 
-What does Ken draw?",A cat.,A cat.,A dog.,A car.,A house.,ケンはマイのとなりにすわる。はずかしい。話せない。だからネコをかく。マイにあげる。マイは大きくわらう。二人はまいにち話す。
+What does Ken draw?",A cat.,A cat.,A dog.,A car.,A house.,ケンはマイのとなりにすわる。はずかしい。話せない。だからネコをかく。マイにあげる。マイは大きくわらう。二人はまいにち話す。,true
 levels.Lv1,"Tomo waits for Saki. He waits and waits. Then Saki comes. She has two ice creams. ""One for you!"" she says. They eat together. Yum!
 
-What does Saki bring?",Two ice creams.,Two ice creams.,Two books.,Two flowers.,Two hats.,トモはサキをまつ。まってまつ。サキが来る。アイスを二つもっている。「一つはあなたに！」と言う。いっしょに食べる。おいしい！
+What does Saki bring?",Two ice creams.,Two ice creams.,Two books.,Two flowers.,Two hats.,トモはサキをまつ。まってまつ。サキが来る。アイスを二つもっている。「一つはあなたに！」と言う。いっしょに食べる。おいしい！,true
 levels.Lv1,"A boy finds money. It is not his. He looks for the owner. He finds her. He gives it back. ""Thank you!"" she says. The boy feels good.
 
-What does the boy do with the money?",He gives it back.,He gives it back.,He keeps it.,He buys toys.,He hides it.,男の子がお金を見つける。じぶんのじゃない。もちぬしをさがす。見つける。かえす。「ありがとう！」と言われる。男の子はいいきもち。
+What does the boy do with the money?",He gives it back.,He gives it back.,He keeps it.,He buys toys.,He hides it.,男の子がお金を見つける。じぶんのじゃない。もちぬしをさがす。見つける。かえす。「ありがとう！」と言われる。男の子はいいきもち。,true
 levels.Lv1,"A dog waits at the door. He waits all day. His friend comes home. The dog runs to him. They are so happy. A dog is a good friend.
 
-What does the dog do all day?",He waits.,He waits.,He sleeps.,He eats.,He runs away.,イヌがドアでまつ。一日じゅうまつ。ともだちが帰る。イヌがかけよる。とてもうれしい。イヌはいいともだち。
+What does the dog do all day?",He waits.,He waits.,He sleeps.,He eats.,He runs away.,イヌがドアでまつ。一日じゅうまつ。ともだちが帰る。イヌがかけよる。とてもうれしい。イヌはいいともだち。,true
 levels.Lv1,"Mika has no money. So she makes a card. She writes, ""I love you, Mom."" Mom reads it. Mom cries. ""This is the best gift,"" Mom says.
 
-What does Mika make?",A card.,A card.,A cake.,A hat.,A toy.,ミカはお金がない。だからカードをつくる。「ママ、だいすき」とかく。ママが読む。ママがなく。「いちばんのプレゼント」とママが言う。
+What does Mika make?",A card.,A card.,A cake.,A hat.,A toy.,ミカはお金がない。だからカードをつくる。「ママ、だいすき」とかく。ママが読む。ママがなく。「いちばんのプレゼント」とママが言う。,true
 levels.Lv1,"A baby cries. A little girl has ice cream. She gives it to the baby. The baby smiles. The girl has no ice cream now. But she is happy.
 
-What does the girl give the baby?",Her ice cream.,Her ice cream.,A toy.,A book.,A hat.,あかちゃんがなく。小さな女の子がアイスをもつ。あかちゃんにあげる。あかちゃんがわらう。女の子はアイスがない。でもうれしい。
+What does the girl give the baby?",Her ice cream.,Her ice cream.,A toy.,A book.,A hat.,あかちゃんがなく。小さな女の子がアイスをもつ。あかちゃんにあげる。あかちゃんがわらう。女の子はアイスがない。でもうれしい。,true
 levels.Lv1,"It is cold. A man sees a small cat. The cat is cold. The man gives it food. He gives it a warm box. The cat is happy. The man is happy, too.
 
-What does the man give the cat?",Food and a warm box.,Food and a warm box.,A toy.,A ball.,A hat.,さむい。男の人が小さなネコを見る。ネコはさむい。男の人が食べものをあげる。あたたかいはこもあげる。ネコはうれしい。男の人もうれしい。
+What does the man give the cat?",Food and a warm box.,Food and a warm box.,A toy.,A ball.,A hat.,さむい。男の人が小さなネコを見る。ネコはさむい。男の人が食べものをあげる。あたたかいはこもあげる。ネコはうれしい。男の人もうれしい。,true
+levels.Lv1,"Mika has a red bag. Her pencils and her lunch are in the bag. There is no book in it. 
+Q: What is NOT in Mika's bag?",A book.,A book.,Her pencils.,Her lunch.,An eraser.,ミカは赤いかばんを持っている。えんぴつとお弁当が入っている。本は入っていない。→入っていないのは本。,true
+levels.Lv1,"Sam likes milk. Every morning he drinks two cups of milk. He does not like juice. 
+Q: What does Sam drink every morning?",Milk.,Milk.,Juice.,Tea.,Water.,サムは牛乳が好きで毎朝2杯飲む。ジュースは好きでない。→牛乳。,true
+levels.Lv1,"There are three cats in the box. One is black. Two are white. 
+Q: How many white cats are there?",Two.,Two.,One.,Three.,Four.,箱に3匹のネコ。1匹は黒、2匹は白。→白は2匹。,true
+levels.Lv1,"Ken plays soccer on Sunday. On Monday he plays the piano. Today is Sunday. 
+Q: What does Ken do today?",Plays soccer.,Plays soccer.,Plays the piano.,Reads a book.,Sleeps.,ケンは日曜サッカー、月曜ピアノ。今日は日曜。→サッカー。,true
+levels.Lv1,"The dog is under the table. The ball is on the table. The cat is on the chair. 
+Q: Where is the dog?",Under the table.,Under the table.,On the table.,On the chair.,In the box.,犬はテーブルの下、ボールは上、ネコはいすの上。→犬は下。,true
+levels.Lv1,"Emi wants an apple. But there are only bananas in the kitchen. So she eats a banana. 
+Q: What does Emi eat?",A banana.,A banana.,An apple.,An orange.,Bread.,エミはりんごが欲しいがバナナしかない。→バナナを食べる。,true
+levels.Lv1,"It is raining today. Tom takes his umbrella to school. He does not take his cap. 
+Q: What does Tom take to school?",His umbrella.,His umbrella.,His cap.,His ball.,His dog.,雨なのでトムはかさを持っていく。ぼうしは持たない。→かさ。,true
+levels.Lv1,"Yuki has two brothers and one sister. She has no dog. 
+Q: How many sisters does Yuki have?",One.,One.,Two.,Three.,Zero.,ユキは兄弟が2人、姉妹が1人。→姉妹は1人。,true
+levels.Lv1,"The shop opens at nine. It is eight now. The shop is not open. 
+Q: Is the shop open now?","No, it is not.","No, it is not.","Yes, it is.",It opens at eight.,It is always open.,店は9時開店。今8時なのでまだ開いていない。→開いていない。,true
+levels.Lv1,"Ben is happy. Today is his birthday. He is seven years old. 
+Q: Why is Ben happy?",It is his birthday.,It is his birthday.,It is raining.,He is sleepy.,He lost his cake.,ベンは今日誕生日で7歳。→誕生日だからうれしい。,true
+levels.Lv1,"Nana likes red. Her bike is red. Her hat is red, too. But her shoes are blue. 
+Q: What color are Nana's shoes?",Blue.,Blue.,Red.,Green.,Yellow.,ナナは赤が好き。自転車も帽子も赤。でもくつは青。→くつは青。,true
+levels.Lv1,"The bird is in the tree. It sings a song. A boy listens to the bird. 
+Q: What does the bird do?",It sings.,It sings.,It swims.,It sleeps.,It runs.,鳥が木で歌う。少年が聞く。→鳥は歌う。,true
+levels.Lv1,"Mom makes cookies. There are ten cookies. Ken eats three. 
+Q: How many cookies are left?",Seven.,Seven.,Three.,Ten.,Five.,クッキー10個。ケンが3個食べる。→残り7個。,true
+levels.Lv1,"Lisa goes to the park by bike. Her brother goes by bus. 
+Q: How does Lisa go to the park?",By bike.,By bike.,By bus.,By car.,On foot.,リサは自転車、兄弟はバスで公園へ。→リサは自転車。,true
+levels.Lv1,"The soup is hot. Dad waits. Then he drinks it slowly. 
+Q: Why does Dad wait?",The soup is hot.,The soup is hot.,The soup is cold.,He is full.,He hates soup.,スープが熱い。パパは待ってからゆっくり飲む。→熱いから。,true
+levels.Lv1,"There are five apples on the tree. Two apples fall down. 
+Q: How many apples are on the tree now?",Three.,Three.,Five.,Two.,Seven.,木にりんご5個。2個落ちる。→木には3個。,true
+levels.Lv1,"Kenta is tall. His sister is short. His dog is very small. 
+Q: Who is tall?",Kenta.,Kenta.,His sister.,His dog.,His cat.,ケンタは背が高い。姉妹は低い。犬は小さい。→背が高いのはケンタ。,true
+levels.Lv1,"Aya reads a book every night. Tonight she reads a book about the sea. 
+Q: What is tonight's book about?",The sea.,The sea.,The sky.,Cars.,Dogs.,アヤは毎晩読書。今夜は海の本。→海について。,true
+levels.Lv1,"The cake is for Grandma. It has ten candles. Grandma is happy. 
+Q: Who is the cake for?",Grandma.,Grandma.,The dog.,The teacher.,Ken.,ケーキはおばあちゃんのため。→おばあちゃん。,true
+levels.Lv1,"Taro can swim. He can run fast. But he can't fly. 
+Q: What can Taro NOT do?",Fly.,Fly.,Swim.,Run.,Walk.,タロウは泳げる、速く走れる。でも飛べない。→飛べない。,true
+levels.Lv1,"The train comes at ten. Mari is at the station at nine fifty. She waits ten minutes. 
+Q: What time does the train come?",At ten.,At ten.,At nine.,At eleven.,At nine fifty.,電車は10時。マリは9時50分に着き10分待つ。→10時。,true
+levels.Lv1,"Our class has twenty students. Ten are boys. 
+Q: How many girls are in the class?",Ten.,Ten.,Twenty.,Five.,Fifteen.,クラスは20人、男子10人。→女子は10人。,true
+levels.Lv1,"Jim likes summer. He can swim in the sea. He does not like winter. 
+Q: Why does Jim like summer?",He can swim in the sea.,He can swim in the sea.,He can ski.,It is cold.,He likes snow.,ジムは夏が好き。海で泳げるから。→海で泳げるから。,true
+levels.Lv1,"The pen is on the desk. The eraser is in the pencil case. The ruler is in the bag. 
+Q: Where is the pen?",On the desk.,On the desk.,In the bag.,In the pencil case.,On the chair.,ペンは机の上。→机の上。,true
+levels.Lv1,"Mika waters the flowers every day. Today she is sick, so her mother waters them. 
+Q: Who waters the flowers today?",Her mother.,Her mother.,Mika.,Her father.,The teacher.,いつもはミカが水やり。今日は病気で母がやる。→母。,true
+levels.Lv1,"There are four seasons. Now it is cold and there is snow. 
+Q: What season is it now?",Winter.,Winter.,Summer.,Spring.,Fall.,寒くて雪→今は冬。,true
+levels.Lv1,"Ken has 100 yen. A candy is 30 yen. He buys one candy. 
+Q: How much money does Ken have now?",70 yen.,70 yen.,30 yen.,100 yen.,130 yen.,100円からあめ30円を買う。→残り70円。,true
+levels.Lv1,"The library is quiet. People read books there. They do not talk loudly. 
+Q: What do people do in the library?",Read books.,Read books.,Sing songs.,Play soccer.,Cook food.,図書館は静か。本を読む。→本を読む。,true
+levels.Lv1,"Sara has a cat and a bird. The cat is white. The bird is yellow. 
+Q: What color is the bird?",Yellow.,Yellow.,White.,Black.,Brown.,サラのネコは白、鳥は黄色。→鳥は黄色。,true
+levels.Lv1,"Today Ken feels cold. He puts on a coat. Then he feels warm. 
+Q: Why does Ken put on a coat?",He feels cold.,He feels cold.,He feels hot.,He is sleepy.,He is hungry.,ケンは寒いのでコートを着る。→寒いから。,true
 levels.Lv2,"Tom has a cat. The cat likes to sleep on Tom's homework. Every morning, Tom says, ""My cat ate my homework!"" His teacher just smiles. She has a cat, too.
 
-Why does Tom's teacher smile?",She also has a cat.,She also has a cat.,She is angry.,She hates cats.,She lost her homework.,トムはネコを飼っている。そのネコはトムの宿題の上で寝るのが好きだ。毎朝トムは「ネコが宿題を食べた！」と言う。先生はただ笑う。先生もネコを飼っているのだ。
+Why does Tom's teacher smile?",She also has a cat.,She also has a cat.,She is angry.,She hates cats.,She lost her homework.,トムはネコを飼っている。そのネコはトムの宿題の上で寝るのが好きだ。毎朝トムは「ネコが宿題を食べた！」と言う。先生はただ笑う。先生もネコを飼っているのだ。,false
 levels.Lv2,"Ken wanted to be tall. Every night he ate a lot of vegetables. One day his little brother said, ""Ken, you are not taller. You are just rounder!"" Ken stopped eating so much.
 
-What happened to Ken?","He became rounder, not taller.","He became rounder, not taller.",He became taller.,He became thinner.,He stopped eating vegetables forever.,ケンは背が高くなりたかった。毎晩たくさん野菜を食べた。ある日、弟が言った。「ケン、背は高くなってないよ。ただ丸くなっただけ！」ケンは食べ過ぎるのをやめた。
+What happened to Ken?","He became rounder, not taller.","He became rounder, not taller.",He became taller.,He became thinner.,He stopped eating vegetables forever.,ケンは背が高くなりたかった。毎晩たくさん野菜を食べた。ある日、弟が言った。「ケン、背は高くなってないよ。ただ丸くなっただけ！」ケンは食べ過ぎるのをやめた。,false
 levels.Lv2,"A dog walked into a shop. It looked at the toys. It picked up a small ball and put it on the table. The shopkeeper was surprised. Then the dog's owner came in and paid for it.
 
-What did the dog choose?",A small ball.,A small ball.,A big bone.,A toy car.,Some food.,一匹の犬が店に入ってきた。おもちゃを見て、小さなボールをくわえてテーブルに置いた。店員は驚いた。それから犬の飼い主が入ってきて、お金を払った。
+What did the dog choose?",A small ball.,A small ball.,A big bone.,A toy car.,Some food.,一匹の犬が店に入ってきた。おもちゃを見て、小さなボールをくわえてテーブルに置いた。店員は驚いた。それから犬の飼い主が入ってきて、お金を払った。,false
 levels.Lv2,"Mary cooked dinner for her family. The soup looked strange and green. Everyone was afraid to try it. Her dad ate it first and said, ""It's delicious!"" Then he quietly drank a lot of water.
 
-What did Mary's dad do after eating?",He quietly drank a lot of water.,He quietly drank a lot of water.,He cooked again.,He left the house.,He ate more soup.,メアリーは家族に夕食を作った。スープは変な緑色をしていた。みんな食べるのをこわがった。父が最初に食べて「おいしい！」と言った。それからこっそり水をたくさん飲んだ。
-levels.Lv2,"Sam was very sleepy in class. He closed his eyes for just one minute. When he opened them, the room was empty and dark. He had slept until evening! No one woke him up.
+What did Mary's dad do after eating?",He quietly drank a lot of water.,He quietly drank a lot of water.,He cooked again.,He left the house.,He ate more soup.,メアリーは家族に夕食を作った。スープは変な緑色をしていた。みんな食べるのをこわがった。父が最初に食べて「おいしい！」と言った。それからこっそり水をたくさん飲んだ。,false
+levels.Lv2,"Sam was very sleepy in class. He closed his eyes for just one minute. When he opened them, everyone was looking at him and smiling. The teacher said, ""Good morning, Sam. Did you have a nice dream?"" Everyone laughed, and Sam laughed, too.
 
-Why was the room empty?",Sam slept until evening.,Sam slept until evening.,Sam went home early.,The class moved to another room.,It was a holiday.,サムは授業中とても眠かった。ほんの1分だけ目を閉じた。目を開けると、部屋は空っぽで暗かった。夕方まで寝てしまったのだ！誰も起こしてくれなかった。
-levels.Lv2,"It was midnight. Yuki heard a soft knock on her window. She lived on the third floor. Slowly, she pulled back the curtain. There was nothing there. But on the glass, she saw the print of a small wet hand.
+What did the teacher say to Sam?",Did you have a nice dream?,Did you have a nice dream?,Go home now.,Open your book.,You are late.,サムは授業中とても眠かった。ほんの1分だけ目を閉じた。目を開けると、みんなが彼を見てほほえんでいた。先生は「おはよう、サム。いい夢を見た？」と言った。みんな笑い、サムも笑った。,false
+levels.Lv2,"It was midnight. Yuki heard a soft sound at her window. She lived on the third floor. Slowly, she pulled back the curtain. A small bird was sitting there in the rain. Yuki opened the window a little and gave it a warm place to stay.
 
-What did Yuki find on the window?",A small wet handprint.,A small wet handprint.,A bird.,A letter.,Her own face.,真夜中だった。ユキは窓を軽くたたく音を聞いた。彼女は3階に住んでいた。ゆっくりカーテンを開けた。そこには何もなかった。でもガラスには、小さな濡れた手の跡があった。
-levels.Lv2,"Ben found an old doll in the attic. He put it on a chair and went to sleep. In the morning, the doll was on his bed, next to his pillow. He never touched it again.
+What did Yuki find at the window?",A small bird.,A small bird.,A cat.,A letter.,Her friend.,真夜中だった。ユキは窓で小さな音を聞いた。彼女は3階に住んでいた。ゆっくりカーテンを開けた。小さな鳥が雨の中でそこに座っていた。ユキは窓を少し開けて、あたたかい場所をあげた。,false
+levels.Lv2,"Ben found an old doll in the attic. It was his grandmother's doll. He cleaned it and put it on a chair. In the morning, he gave it to his grandmother. She smiled and said, ""I played with this doll when I was a girl!""
 
-Where was the doll in the morning?","On his bed, next to his pillow.","On his bed, next to his pillow.",On the chair.,In the attic.,On the floor.,ベンは屋根裏で古い人形を見つけた。椅子に置いて寝た。朝、人形は彼のベッドの上、枕のそばにあった。彼は二度とそれに触れなかった。
-levels.Lv2,"Every night at three, the old clock in the hall rang four times. But the clock was broken. It had no hands and no battery. The family stopped going downstairs at night.
+What did Ben do with the doll?",He gave it to his grandmother.,He gave it to his grandmother.,He sold it.,He left it in the attic.,He gave it to his sister.,ベンは屋根裏で古い人形を見つけた。それは祖母の人形だった。きれいにして椅子に置いた。朝、祖母にそれをあげた。祖母はほほえんで言った。「女の子のころ、この人形で遊んだのよ！」,false
+levels.Lv2,"Every morning at seven, the old clock in the hall rang. It was very old, but it was never wrong. Grandpa cleaned it every Sunday. ""This clock is older than me,"" he said, ""but it still works hard. So do I!""
 
-Why is the clock strange?",It rings even though it is broken.,It rings even though it is broken.,It is too loud.,It is very old.,It shows the wrong time.,毎晩3時に、廊下の古い時計が4回鳴った。でもその時計は壊れていた。針もなく電池もなかった。家族は夜に下へ行くのをやめた。
-levels.Lv2,"Mika took a photo of her empty room. When she looked at the picture, she saw a face in the mirror behind her. But she was alone in the house. She deleted the photo at once.
+Why did Grandpa like the clock?",It was old but still worked well.,It was old but still worked well.,It was new.,It was very quiet.,It was a gift from Ben.,毎朝7時に、廊下の古い時計が鳴った。とても古かったが、決して狂わなかった。おじいちゃんは毎週日曜日にそれを手入れした。「この時計は私より年上だ」と彼は言った。「でもまだよく働く。私もだ！」,false
+levels.Lv2,"Mika took a photo of her room. When she looked at the picture, she saw a face in the mirror behind her. It was her little brother! He was hiding there and making a funny face. Mika laughed and kept the photo.
 
-What did Mika see in the photo?",A face in the mirror.,A face in the mirror.,A cat.,Her friend.,A shadow on the floor.,ミカは誰もいない自分の部屋の写真を撮った。写真を見ると、後ろの鏡に顔が映っていた。でも家には彼女ひとりだった。彼女はすぐに写真を消した。
-levels.Lv2,"A boy walked home in the dark. He heard footsteps behind him. He walked faster. The footsteps walked faster, too. He stopped. The footsteps stopped. He was too afraid to look back.
+Whose face did Mika see in the photo?",Her little brother's.,Her little brother's.,Her mother's.,Her own.,Her teacher's.,ミカは自分の部屋の写真を撮った。写真を見ると、後ろの鏡に顔が映っていた。弟だった！彼はそこに隠れて、変な顔をしていた。ミカは笑って、その写真をとっておいた。,false
+levels.Lv2,"A boy walked home in the evening. He heard footsteps behind him. He walked faster. The footsteps walked faster, too. He stopped and looked back. It was his dog! The dog followed him all the way from the park.
 
-What happened when the boy stopped?",The footsteps also stopped.,The footsteps also stopped.,The footsteps ran away.,He saw a dog.,The footsteps got louder.,少年は暗闇の中を歩いて帰った。後ろから足音が聞こえた。彼は速く歩いた。足音も速くなった。彼は止まった。足音も止まった。こわくて振り返れなかった。
+What was behind the boy?",His dog.,His dog.,His friend.,A cat.,His father.,少年は夕方、歩いて帰った。後ろから足音が聞こえた。彼は速く歩いた。足音も速くなった。彼は止まって振り返った。彼の犬だった！犬は公園からずっと彼についてきたのだ。,false
 levels.Lv2,"Aya sat next to a quiet boy on the bus every day. They never spoke. One morning, he gave her a small paper flower. She kept it in her bag. The next day, she gave him one, too.
 
-What did the boy give Aya?",A small paper flower.,A small paper flower.,A book.,His phone number.,A candy.,アヤは毎日バスで静かな男の子の隣に座った。二人は話さなかった。ある朝、彼は彼女に小さな紙の花をくれた。彼女はそれをかばんに入れておいた。翌日、彼女も彼に一つあげた。
+What did the boy give Aya?",A small paper flower.,A small paper flower.,A book.,His phone number.,A candy.,アヤは毎日バスで静かな男の子の隣に座った。二人は話さなかった。ある朝、彼は彼女に小さな紙の花をくれた。彼女はそれをかばんに入れておいた。翌日、彼女も彼に一つあげた。,false
 levels.Lv2,"Ryo liked a girl in his class. He was too shy to talk to her. So he drew a picture of her smile and left it on her desk. He did not write his name. But she knew it was him.
 
-Why did Ryo leave a picture?",He was too shy to talk to her.,He was too shy to talk to her.,He wanted to win a prize.,His teacher told him to.,He needed money.,リョウはクラスの女の子が好きだった。恥ずかしくて話しかけられなかった。だから彼女の笑顔の絵を描いて、机に置いた。名前は書かなかった。でも彼女は彼だと分かった。
+Why did Ryo leave a picture?",He was too shy to talk to her.,He was too shy to talk to her.,He wanted to win a prize.,His teacher told him to.,He needed money.,リョウはクラスの女の子が好きだった。恥ずかしくて話しかけられなかった。だから彼女の笑顔の絵を描いて、机に置いた。名前は書かなかった。でも彼女は彼だと分かった。,false
 levels.Lv2,"It started to rain. Mina had no umbrella. A boy she liked ran to her and held his umbrella over her head. ""Let's share,"" he said. They walked home slowly, even though the rain soon stopped.
 
-Why did they walk slowly?",They wanted to stay together longer.,They wanted to stay together longer.,They were tired.,The road was wet.,They were lost.,雨が降り始めた。ミナは傘を持っていなかった。好きな男の子が走ってきて、彼女の頭の上に傘をさしかけた。「一緒に入ろう」と彼は言った。雨はすぐにやんだのに、二人はゆっくり歩いて帰った。
+Why did they walk slowly?",They wanted to stay together longer.,They wanted to stay together longer.,They were tired.,The road was wet.,They were lost.,雨が降り始めた。ミナは傘を持っていなかった。好きな男の子が走ってきて、彼女の頭の上に傘をさしかけた。「一緒に入ろう」と彼は言った。雨はすぐにやんだのに、二人はゆっくり歩いて帰った。,false
 levels.Lv2,"Sora and Hana were good friends. On her birthday, Sora gave Hana a blue ribbon. ""It's the color of the sky,"" he said. ""So you can think of me when you look up."" Hana wore it every day after that.
 
-Why did Sora choose a blue ribbon?",So Hana would think of him when looking at the sky.,So Hana would think of him when looking at the sky.,Blue was on sale.,It was Hana's old ribbon.,The teacher chose it.,ソラとハナは仲のよい友達だった。誕生日に、ソラはハナに青いリボンをあげた。「空の色だよ」と彼は言った。「見上げたとき、僕のことを思い出せるように。」それからハナは毎日それをつけた。
+Why did Sora choose a blue ribbon?",So Hana would think of him when looking at the sky.,So Hana would think of him when looking at the sky.,Blue was on sale.,It was Hana's old ribbon.,The teacher chose it.,ソラとハナは仲のよい友達だった。誕生日に、ソラはハナに青いリボンをあげた。「空の色だよ」と彼は言った。「見上げたとき、僕のことを思い出せるように。」それからハナは毎日それをつけた。,false
 levels.Lv2,"Every day after school, Tomo waited at the gate for Saki. One day Saki was sick and did not come. Tomo waited for two hours in the cold. The next day, Saki cried and said, ""Don't wait so long again.""
 
-Why did Saki cry?",Tomo waited so long in the cold for her.,Tomo waited so long in the cold for her.,She lost her bag.,She failed a test.,Tomo was angry.,放課後、トモは毎日門でサキを待った。ある日サキは病気で来なかった。トモは寒い中2時間待った。翌日、サキは泣いて言った。「もうそんなに長く待たないで。」
+Why did Saki cry?",Tomo waited so long in the cold for her.,Tomo waited so long in the cold for her.,She lost her bag.,She failed a test.,Tomo was angry.,放課後、トモは毎日門でサキを待った。ある日サキは病気で来なかった。トモは寒い中2時間待った。翌日、サキは泣いて言った。「もうそんなに長く待たないで。」,false
 levels.Lv2,"A poor boy found a wallet full of money. He looked for the owner for two hours. Finally, he gave it back. The owner was so happy that she gave him a small reward and a big smile.
 
-What did the boy do with the wallet?",He gave it back to the owner.,He gave it back to the owner.,He kept the money.,He threw it away.,He bought toys.,貧しい少年がお金でいっぱいの財布を見つけた。2時間、持ち主を探した。ついに返した。持ち主はとても喜び、彼に小さなお礼と大きな笑顔をくれた。
-levels.Lv2,"An old dog waited at the station every day. His owner had died, but the dog did not know. People in the town took care of him. They all loved the faithful dog who never stopped waiting.
+What did the boy do with the wallet?",He gave it back to the owner.,He gave it back to the owner.,He kept the money.,He threw it away.,He bought toys.,貧しい少年がお金でいっぱいの財布を見つけた。2時間、持ち主を探した。ついに返した。持ち主はとても喜び、彼に小さなお礼と大きな笑顔をくれた。,false
+levels.Lv2,"An old dog waited at the station every evening. His owner came home by train at six. The dog always knew the time. People in the town loved him and often gave him snacks. When the train arrived, the dog's tail never stopped moving.
 
-Why did the dog wait at the station?",He was waiting for his owner.,He was waiting for his owner.,He wanted food.,He was lost.,He liked trains.,年老いた犬が毎日駅で待っていた。飼い主は亡くなっていたが、犬はそれを知らなかった。町の人々が犬の世話をした。みんな、待つことをやめない忠実な犬を愛した。
-levels.Lv2,"Mika had no money for her mother's birthday. So she made a card by hand and wrote, ""Thank you for everything."" Her mother cried and said it was the best present she had ever received.
+Why did the dog wait at the station?",He was waiting for his owner.,He was waiting for his owner.,He wanted food.,He was lost.,He liked trains.,年老いた犬が毎晩駅で待っていた。飼い主は6時の電車で帰ってきた。犬はいつも時間を知っていた。町の人々は犬を愛し、よくおやつをあげた。電車が着くと、犬のしっぽは止まらなかった。,false
+levels.Lv2,"Mika had no money for her mother's birthday. So she made a card by hand and wrote, ""Thank you for everything."" Her mother cried and said it was the best present in her life.
 
-Why did the mother cry?",She was moved by the handmade card.,She was moved by the handmade card.,She was sad.,She lost her present.,She was sick.,ミカは母の誕生日にあげるお金がなかった。だから手作りのカードを作り、「いつもありがとう」と書いた。母は泣いて、今までもらった中で一番のプレゼントだと言った。
+Why did the mother cry?",She was moved by the handmade card.,She was moved by the handmade card.,She was sad.,She lost her present.,She was sick.,ミカは母の誕生日にあげるお金がなかった。だから手作りのカードを作り、「いつもありがとう」と書いた。母は泣いて、今までもらった中で一番のプレゼントだと言った。,false
 levels.Lv2,"A small girl gave her ice cream to a crying baby. Her own ice cream fell on the ground a moment later. She did not cry. ""The baby's smile is sweeter than ice cream,"" she said.
 
-Why didn't the girl cry?",The baby's smile made her happy.,The baby's smile made her happy.,She had more ice cream.,She did not like ice cream.,Her mother helped her.,小さな女の子が、泣いている赤ちゃんに自分のアイスをあげた。その直後、彼女のアイスは地面に落ちた。彼女は泣かなかった。「赤ちゃんの笑顔の方がアイスより甘いもん」と言った。
-levels.Lv2,"Every winter, a man left warm food outside for the street cats. He was not rich, but he shared what he had. One cold morning, the cats came to his door and sat with him, keeping him warm too.
+Why didn't the girl cry?",The baby's smile made her happy.,The baby's smile made her happy.,She had more ice cream.,She did not like ice cream.,Her mother helped her.,小さな女の子が、泣いている赤ちゃんに自分のアイスをあげた。その直後、彼女のアイスは地面に落ちた。彼女は泣かなかった。「赤ちゃんの笑顔の方がアイスより甘いもん」と言った。,false
+levels.Lv2,"Every winter, a man left warm food outside for the street cats. He was not rich, but he shared what he had. One cold morning, the cats came to his door and sat with him. They kept him warm, too.
 
-What did the cats do one cold morning?",They sat with the man and kept him warm.,They sat with the man and kept him warm.,They ran away.,They brought him food.,They woke him up.,毎年冬、ある男が野良猫のために温かい食べ物を外に置いた。彼は裕福ではなかったが、持っているものを分け合った。ある寒い朝、猫たちが彼のドアに来て一緒に座り、彼も温めてくれた。
+What did the cats do one cold morning?",They sat with the man and kept him warm.,They sat with the man and kept him warm.,They ran away.,They brought him food.,They woke him up.,毎年冬、ある男が野良猫のために温かい食べ物を外に置いた。彼は裕福ではなかったが、持っているものを分け合った。ある寒い朝、猫たちが彼のドアに来て一緒に座り、彼も温めてくれた。,false
+levels.Lv2,"Ken wanted a dog. His mother said, ""First, take care of this plant for one month."" Ken watered it every day, and it grew well. The next month, he got a puppy. 
+Q: Why did Ken get a puppy?",He took care of the plant well.,He took care of the plant well.,He bought it himself.,He cried a lot.,The plant died.,犬が欲しいケンは、母に「まず1か月植物の世話を」と言われ毎日世話をした。翌月子犬をもらえた。→世話をきちんとしたから。,false
+levels.Lv2,"Mari lost her key in the park. She looked everywhere. Finally, she found it in her own pocket. 
+Q: Where was the key?",In her pocket.,In her pocket.,Under a tree.,In the pond.,At school.,マリは公園でカギをなくし探したが、自分のポケットにあった。→ポケットの中。,false
+levels.Lv2,"Tom said he was not afraid of anything. But when a small spider walked on his desk, he jumped and shouted. 
+Q: What do we learn about Tom?",He was afraid of the spider.,He was afraid of the spider.,He liked spiders.,He was very brave.,He caught the spider.,トムは何も怖くないと言ったが、小さなクモに飛び上がって叫んだ。→本当はクモが怖い。,false
+levels.Lv2,"It was Aya's turn to clean the board. She was busy talking, so her friend Yuki cleaned it for her. Aya said thank you. 
+Q: Who cleaned the board?",Yuki.,Yuki.,Aya.,The teacher.,No one.,黒板そうじはアヤの番だが、話に夢中でユキが代わりにやった。→ユキ。,false
+levels.Lv2,"Grandpa put on his glasses to read the news. He looked and looked but could not find them. They were already on his face. 
+Q: Where were the glasses?",On his face.,On his face.,On the table.,In the box.,Under the bed.,おじいちゃんはメガネを探したが、すでに顔にかけていた。→顔の上。,false
+levels.Lv2,"Sara baked bread for the first time. It was very hard, like a rock. Her family smiled and ate it anyway. 
+Q: How was the bread?",Very hard.,Very hard.,Very soft.,Too sweet.,Cold.,サラが初めて焼いたパンは石のように固かった。家族は笑って食べた。→とても固い。,false
+levels.Lv2,"Ken's team was losing 3 to 0. In the last minute, Ken scored one goal. His team was happy, but they still lost. 
+Q: Did Ken's team win?","No, they lost.","No, they lost.","Yes, they won.",The game stopped.,They scored three.,3対0で負けていたが、最後にケンが1点。それでも負けた。→負けた。,false
+levels.Lv2,"Mom told Ben not to eat the cake before dinner. Ben did not eat it. Instead, he ate all the cookies. 
+Q: What did Ben eat?",All the cookies.,All the cookies.,The cake.,Nothing.,The dinner.,ベンはケーキは食べなかったが、クッキーを全部食べた。→クッキー。,false
+levels.Lv2,"Lisa practiced the song for a week. On the day of the show, she forgot the words, but she smiled and hummed. Everyone clapped. 
+Q: What happened on the show day?",She forgot the words.,She forgot the words.,She did not come.,She sang perfectly.,She cried and left.,リサは1週間練習したが本番で歌詞を忘れ、笑って口ずさんだ。→歌詞を忘れた。,false
+levels.Lv2,"The weather report said it would be sunny. So Jim left his umbrella at home. In the afternoon, it rained hard. 
+Q: Why did Jim get wet?",He left his umbrella at home.,He left his umbrella at home.,He forgot his shoes.,He swam in the sea.,He washed the car.,晴れ予報でかさを置いてきたが午後大雨。→かさを置いてきたから。,false
+levels.Lv2,"Nana wanted the big cake, but only a small piece was left. Her brother gave her his piece. Nana was very happy. 
+Q: Why was Nana happy?",Her brother gave her his piece.,Her brother gave her his piece.,She ate the whole cake.,She baked a new cake.,She got money.,大きいケーキは残りわずか。兄が自分の分をくれた。→兄が分けてくれたから。,false
+levels.Lv2,"The cat sat on Ken's homework every morning. Ken could not write. One day he put a warm blanket on the sofa, and the cat moved there. 
+Q: How did Ken solve the problem?",He put a warm blanket on the sofa.,He put a warm blanket on the sofa.,He threw the cat outside.,He stopped doing homework.,He bought a new cat.,ネコが宿題の上に座る。暖かい毛布をソファに置くとネコは移動。→毛布を置いた。,false
+levels.Lv2,"Taro planted tomato seeds in May. He watered them all summer. In August, he picked ten red tomatoes. 
+Q: When did Taro pick the tomatoes?",In August.,In August.,In May.,In winter.,He picked none.,5月に種、夏中水やり、8月に赤いトマト10個収穫。→8月。,false
+levels.Lv2,"Emi drew a picture of a horse. Her little brother said it looked like a dog. Emi laughed and added a long tail. 
+Q: What did Emi's brother think of the picture?",It looked like a dog.,It looked like a dog.,It looked like a horse.,It was too dark.,It was beautiful.,エミの馬の絵を弟は犬みたいと言った。→犬に見えた。,false
+levels.Lv2,"The bus was full, so an old man had no seat. A young girl stood up and gave him her seat. He said thank you. 
+Q: Why did the man say thank you?",The girl gave him her seat.,The girl gave him her seat.,The bus was empty.,He found money.,The girl sang.,満員バスで席のない老人に少女が席をゆずった。→席をゆずったから。,false
+levels.Lv2,"Ken saved 500 yen. He wanted a 700-yen toy. He waited and saved more. After two weeks, he bought it. 
+Q: Why did Ken wait two weeks?",He needed more money.,He needed more money.,The shop was closed.,He lost the toy.,He hated the toy.,500円貯めたが700円のおもちゃに足りず、貯めて2週間後に買えた。→お金が足りなかったから。,false
+levels.Lv2,"Mari's room was messy. Her mother said, ""Clean it and I will be happy."" Mari cleaned it, and she felt good, too. 
+Q: How did Mari feel after cleaning?",She felt good.,She felt good.,She felt angry.,She felt sick.,She felt sleepy.,部屋を片付けたマリは自分も気持ちよくなった。→気分が良い。,false
+levels.Lv2,"Tom bought a plant to make his room green. He forgot to water it. After a month, the plant was brown. 
+Q: Why did the plant turn brown?",He forgot to water it.,He forgot to water it.,He gave it too much water.,It was winter.,He painted it.,水やりを忘れて1か月で茶色に。→水やりを忘れたから。,false
+levels.Lv2,"The teacher asked a hard question. No one raised a hand. Then quiet Aya answered, and she was right. 
+Q: Who answered the question?",Aya.,Aya.,The teacher.,Tom.,No one.,難問に誰も手を挙げず、静かなアヤが正解した。→アヤ。,false
+levels.Lv2,"Ben and his sister found 100 yen on the road. They gave it to a police officer. The officer said, ""Good children."" 
+Q: What did Ben and his sister do with the money?",They gave it to a police officer.,They gave it to a police officer.,They kept it.,They bought candy.,They lost it.,拾った100円を警察に届けた。→警察に渡した。,false
+levels.Lv2,"Yuki wanted to run fast. She practiced every morning before school. On sports day, she came in first. 
+Q: Why did Yuki come in first?",She practiced every morning.,She practiced every morning.,She was lucky.,The others were slow.,She took a bus.,毎朝練習して運動会で1位。→毎朝練習したから。,false
+levels.Lv2,"Dad tried to fix the chair. After one hour, the chair had three legs, not four. So he bought a new one. 
+Q: What did Dad do in the end?",He bought a new chair.,He bought a new chair.,He fixed the chair.,He sat on the floor.,He sold the chair.,パパは修理を失敗し新しいいすを買った。→新しいのを買った。,false
+levels.Lv2,"The class went to the zoo. It started to rain, so they saw only the lions. The children still had fun. 
+Q: Which animal did the children see?",The lions.,The lions.,The pandas.,The birds.,No animals.,雨でライオンだけ見た。→ライオン。,false
+levels.Lv2,"Sara's phone battery was low. She wanted to play a game, but she called her grandmother instead. Grandma was very happy. 
+Q: What did Sara do?",She called her grandmother.,She called her grandmother.,She played a game.,She turned off the phone.,She bought a new phone.,電池が少なく、ゲームでなく祖母に電話した。→祖母に電話した。,false
+levels.Lv2,"Ken forgot his lunch. His friend shared half of his own lunch with him. Ken said he would do the same one day. 
+Q: What did Ken's friend do?",He shared his lunch.,He shared his lunch.,He ate all his lunch.,He went home.,He bought new lunch.,弁当を忘れたケンに友達が半分分けた。→弁当を分けた。,false
+levels.Lv2,"The store had a sale. A 1000-yen shirt was 800 yen. Mari bought it and saved 200 yen. 
+Q: How much did Mari save?",200 yen.,200 yen.,800 yen.,1000 yen.,100 yen.,1000円が800円。→200円得した。,false
+levels.Lv2,"Taro was scared of the dark. His father gave him a small light for his room. After that, Taro slept well. 
+Q: How did Taro sleep after getting the light?",He slept well.,He slept well.,He could not sleep.,He cried all night.,He read all night.,暗闇が怖いタロウは小さな明かりでよく眠れた。→よく眠れた。,false
+levels.Lv2,"Aya wrote a letter to her old friend. She waited many days. At last, a long reply came, and Aya smiled. 
+Q: Why did Aya smile?",A reply came from her friend.,A reply came from her friend.,She lost the letter.,No one wrote back.,She moved away.,手紙を書いて待つと長い返事が来た。→返事が来たから。,false
+levels.Lv2,"The soccer ball went over the wall. Ken could not reach it. A tall man walked by and got it for him. 
+Q: Who got the ball for Ken?",A tall man.,A tall man.,Ken's mother.,A small child.,No one.,壁を越えたボールを背の高い男性が取ってくれた。→背の高い男性。,false
+levels.Lv2,"Mari promised to feed the fish while her friend was away. She was busy and forgot for three days. When her friend came back, the fish looked very thin and stared at Mari angrily. 
+Q: Why did the fish look thin?",Mari forgot to feed it.,Mari forgot to feed it.,The fish ate too much.,The water was cold.,The friend fed it.,マリは魚のエサやりを約束したが3日忘れ、魚はやせて怒った目でにらんだ。→エサをあげ忘れたから。,false
 levels.Lv3,"Mr. Brown was proud of his new smart speaker. ""Turn off the lights,"" he said, and the lights went off. His grandmother watched quietly. Later, she walked to the wall, pushed the switch, and said, ""My speaker is faster than yours."" Everyone laughed because she was right.
 
-Why did everyone laugh?",The grandmother's switch was faster than the speaker.,The grandmother's switch was faster than the speaker.,The speaker was broken.,Mr. Brown fell down.,The lights never turned off.,ブラウンさんは新しいスマートスピーカーを自慢していた。「ライトを消して」と言うと、明かりが消えた。祖母は静かに見ていた。後で彼女は壁まで歩き、スイッチを押して言った。「私のスピーカーの方が速いわ。」彼女が正しかったので、みんな笑った。
+Why did everyone laugh?",The grandmother's switch was faster than the speaker.,The grandmother's switch was faster than the speaker.,The speaker was broken.,Mr. Brown fell down.,The lights never turned off.,ブラウンさんは新しいスマートスピーカーを自慢していた。「ライトを消して」と言うと、明かりが消えた。祖母は静かに見ていた。後で彼女は壁まで歩き、スイッチを押して言った。「私のスピーカーの方が速いわ。」彼女が正しかったので、みんな笑った。,false
 levels.Lv3,"Lisa decided to surprise her friends by baking a cake. She followed the recipe carefully, but she used salt instead of sugar. When her friends tried it, their faces changed completely. Lisa took one bite and shouted, ""Who made this terrible cake?"" Then she remembered that she did.
 
-Why did the cake taste bad?",Lisa used salt instead of sugar.,Lisa used salt instead of sugar.,Lisa burned the cake.,The oven was broken.,Lisa forgot the eggs.,リサは友達を驚かせようとケーキを焼くことにした。レシピを丁寧に守ったが、砂糖の代わりに塩を使った。友達が食べると、顔つきがすっかり変わった。リサも一口食べて叫んだ。「誰がこんなひどいケーキ作ったの？」そして、自分だったと思い出した。
+Why did the cake taste bad?",Lisa used salt instead of sugar.,Lisa used salt instead of sugar.,Lisa burned the cake.,The oven was broken.,Lisa forgot the eggs.,リサは友達を驚かせようとケーキを焼くことにした。レシピを丁寧に守ったが、砂糖の代わりに塩を使った。友達が食べると、顔つきがすっかり変わった。リサも一口食べて叫んだ。「誰がこんなひどいケーキ作ったの？」そして、自分だったと思い出した。,false
 levels.Lv3,"During the test, Jack's stomach made a very loud noise. The whole class went quiet and looked at him. Jack pointed at the boy next to him and frowned. But the boy next to him was eating a sandwich and just smiled. Everyone knew the truth.
 
-What did Jack try to do?",Blame the boy next to him.,Blame the boy next to him.,Share his lunch.,Leave the classroom.,Finish the test first.,テスト中、ジャックのお腹がとても大きな音を立てた。クラス全体が静かになり、彼を見た。ジャックは隣の男の子を指さして、しかめ面をした。でも隣の子はサンドイッチを食べていて、ただ笑っていた。みんな本当のことを知っていた。
+What did Jack try to do?",Blame the boy next to him.,Blame the boy next to him.,Share his lunch.,Leave the classroom.,Finish the test first.,テスト中、ジャックのお腹がとても大きな音を立てた。クラス全体が静かになり、彼を見た。ジャックは隣の男の子を指さして、しかめ面をした。でも隣の子はサンドイッチを食べていて、ただ笑っていた。みんな本当のことを知っていた。,false
 levels.Lv3,"Emma's parents told her not to feed the dog from the table. So Emma was very careful. She never gave food to the dog from the table. Instead, she dropped it on the floor first, then the dog ate it. ""I followed the rule,"" she said with a big smile.
 
-How did Emma follow the rule?",She dropped food on the floor instead of giving it from the table.,She dropped food on the floor instead of giving it from the table.,She stopped feeding the dog.,She fed the dog outside.,She asked her parents first.,エマの両親は、テーブルから犬に食べ物をあげないように言った。だからエマはとても気をつけた。テーブルから犬に食べ物を与えることは決してしなかった。代わりに、まず床に落として、それを犬が食べた。「ルールは守ったよ」と彼女は満面の笑みで言った。
+How did Emma follow the rule?",She dropped food on the floor instead of giving it from the table.,She dropped food on the floor instead of giving it from the table.,She stopped feeding the dog.,She fed the dog outside.,She asked her parents first.,エマの両親は、テーブルから犬に食べ物をあげないように言った。だからエマはとても気をつけた。テーブルから犬に食べ物を与えることは決してしなかった。代わりに、まず床に落として、それを犬が食べた。「ルールは守ったよ」と彼女は満面の笑みで言った。,false
 levels.Lv3,"A man bought a parrot that could say only one sentence: ""Who is there?"" One night, someone knocked on his door. The parrot shouted, ""Who is there?"" The visitor answered, but no one opened the door. He waited for an hour, knocking and answering the bird again and again.
 
-Why did the visitor wait so long?",He thought a person was asking who he was.,He thought a person was asking who he was.,The man was sleeping.,The door was locked.,The parrot opened the door.,ある男がたった一文だけ言えるオウムを買った。「誰だ？」だ。ある夜、誰かがドアをノックした。オウムが「誰だ？」と叫んだ。客は答えたが、誰もドアを開けなかった。彼は1時間待ち、鳥に何度も答え続けた。
-levels.Lv3,"Sara moved into a new apartment. On the first night, she found a note under the door. It said, ""Welcome. Please don't use the bathroom after midnight."" She laughed and forgot about it. But at 1 a.m., when she turned on the bathroom light, she finally understood why someone had warned her.
+Why did the visitor wait so long?",He thought a person was asking who he was.,He thought a person was asking who he was.,The man was sleeping.,The door was locked.,The parrot opened the door.,ある男がたった一文だけ言えるオウムを買った。「誰だ？」だ。ある夜、誰かがドアをノックした。オウムが「誰だ？」と叫んだ。客は答えたが、誰もドアを開けなかった。彼は1時間待ち、鳥に何度も答え続けた。,false
+levels.Lv3,"Sara moved into a new apartment. On the first night, she found a note under the door. It said, ""Welcome! Please look out of the window at 6 a.m."" She laughed and almost forgot about it. But the next morning, when she opened the curtain, she finally understood. The sun was rising over the sea, and it was the most beautiful view in her life.
 
-What did the note tell Sara not to do?",Use the bathroom after midnight.,Use the bathroom after midnight.,Open the windows.,Talk to the neighbors.,Turn on the lights.,サラは新しいアパートに引っ越した。最初の夜、ドアの下にメモを見つけた。「ようこそ。真夜中以降はお風呂を使わないで」と書いてあった。彼女は笑って忘れた。でも午前1時、バスルームの電気をつけたとき、なぜ誰かが警告したのか、ついに理解した。
-levels.Lv3,"The teacher counted the students before the trip. ""One, two, three... thirty-one."" But only thirty students had come that day. She counted again. Thirty-one. She looked at each face carefully. Every face smiled back at her. One of them smiled a little too widely.
+What did the note tell Sara to do?",Look out of the window at 6 a.m.,Look out of the window at 6 a.m.,Open the door.,Talk to the neighbors.,Turn off the lights.,サラは新しいアパートに引っ越した。最初の夜、ドアの下にメモを見つけた。「ようこそ！朝6時に窓の外を見てください」と書いてあった。彼女は笑って、ほとんど忘れかけた。でも翌朝、カーテンを開けたとき、ついに理解した。海の上に太陽が昇っていて、それは人生で一番美しい景色だった。,false
+levels.Lv3,"The teacher counted the students before the trip. ""One, two, three... thirty-one."" But her class had only thirty students. She counted again. Thirty-one. She looked at each face carefully. Then she found the answer. Ken's little brother was standing in the line with a big smile. He wanted to go on the trip, too!
 
-What was strange about the count?",There was one more student than expected.,There was one more student than expected.,One student was missing.,The students were too quiet.,The teacher forgot the number.,先生は遠足の前に生徒を数えた。「1、2、3…31人。」でもその日来ていたのは30人だけだった。もう一度数えた。31人。一人ひとりの顔をよく見た。どの顔も彼女に笑い返した。そのうちの一つが、少し大きすぎる笑みを浮かべていた。
-levels.Lv3,"Kenji liked to play a game alone. He would ask a question out loud and wait for an answer in the silence. For weeks, nothing happened. Then one rainy night, after he asked, ""Is anyone there?"", a quiet voice answered, ""I have been waiting for you to ask again.""
+What was strange about the count?",There was one more student than expected.,There was one more student than expected.,One student was missing.,The students were too quiet.,The teacher forgot the number.,先生は遠足の前に生徒を数えた。「1、2、3…31人。」でも彼女のクラスは30人しかいなかった。もう一度数えた。31人。一人ひとりの顔をよく見た。そして答えが分かった。ケンの弟が満面の笑みで列に立っていたのだ。彼も遠足に行きたかった！,false
+levels.Lv3,"Kenji liked to play a game alone. He would ask a question out loud and wait for an answer. Of course, nothing happened. Then one rainy night, after he asked, ""Is anyone there?"", a quiet voice answered, ""Yes, I am."" It was his grandmother. She was standing at the door with hot cocoa. ""I thought you might be lonely,"" she said.
 
-What happened on the rainy night?",A voice answered his question.,A voice answered his question.,The game stopped working.,His friend came over.,The lights went out.,ケンジはひとりで遊ぶゲームが好きだった。声に出して質問をして、静けさの中で答えを待つのだ。何週間も何も起きなかった。そしてある雨の夜、「誰かいる？」と尋ねた後、静かな声が答えた。「君がまた聞いてくれるのを、ずっと待っていたよ。」
-levels.Lv3,"My grandmother's house had thirteen rooms. As a child, I played in all of them except one. The door of that room was always locked. ""It keeps something safe inside,"" Grandmother said. After she died, we opened it. The room was empty, but the lock was on the inside of the door.
+Who answered Kenji's question?",His grandmother.,His grandmother.,His friend.,A radio.,His dog.,ケンジはひとりで遊ぶゲームが好きだった。声に出して質問をして、答えを待つのだ。もちろん何も起きなかった。そしてある雨の夜、「誰かいる？」と尋ねた後、静かな声が答えた。「うん、いるよ。」祖母だった。彼女はホットココアを持ってドアに立っていた。「さびしいかと思って」と彼女は言った。,false
+levels.Lv3,"During the storm, the power went out. Lily lit a candle and sat alone. To feel less afraid, she whispered, ""It's okay, I'm not scared."" From the next room, a voice said the same words: ""It's okay, I'm not scared."" It was her little brother, holding his teddy bear. Lily laughed, and they sat together until the lights came back.
 
-Why was the empty room frightening?",The lock was on the inside of the door.,The lock was on the inside of the door.,It was full of dolls.,It had no windows.,The walls were black.,祖母の家には13の部屋があった。子どもの頃、私は一つを除いて全部の部屋で遊んだ。その部屋のドアはいつも鍵がかかっていた。「中の何かを守っているのよ」と祖母は言った。祖母が亡くなった後、私たちはその部屋を開けた。部屋は空っぽだったが、鍵はドアの内側についていた。
-levels.Lv3,"During the storm, the power went out. Lily lit a single candle and sat alone. To feel less afraid, she whispered, ""It's okay, I'm not scared."" From the dark corner of the room, a soft voice repeated her exact words: ""It's okay, I'm not scared."" The voice was not hers.
-
-What was frightening in the dark room?",A voice repeated her words.,A voice repeated her words.,The candle went out.,The storm broke the window.,Someone knocked on the door.,嵐の間、停電した。リリーはろうそくを一本つけて、ひとりで座った。こわさを減らそうと、彼女は「大丈夫、こわくない」とささやいた。部屋の暗い隅から、柔らかい声が彼女とまったく同じ言葉をくり返した。「大丈夫、こわくない。」その声は彼女のものではなかった。
+Who said the same words as Lily?",Her little brother.,Her little brother.,Her mother.,The radio.,Her friend.,嵐の間、停電した。リリーはろうそくをつけて、ひとりで座った。こわさを減らそうと、「大丈夫、こわくない」とささやいた。隣の部屋から、声が同じ言葉を言った。「大丈夫、こわくない。」テディベアを抱えた弟だった。リリーは笑い、二人は明かりが戻るまで一緒に座っていた。,false
 levels.Lv3,"Yuna and Kai promised to watch the fireworks together every summer. After high school, Kai moved to a city far away. The first summer apart, Yuna went to the festival alone, feeling sad. Then her phone rang. It was a video call from Kai, showing the same fireworks in his new city. ""We are still watching together,"" he said softly.
 
-How did Kai keep their promise?",He showed Yuna the same fireworks on a video call.,He showed Yuna the same fireworks on a video call.,He came back to the festival.,He sent her a photo.,He bought new fireworks.,ユナとカイは毎年夏、一緒に花火を見ると約束した。高校卒業後、カイは遠い街へ引っ越した。離れて初めての夏、ユナは寂しい気持ちで一人お祭りに行った。すると電話が鳴った。カイからのビデオ通話で、彼の新しい街の同じ花火が映っていた。「僕たちはまだ一緒に見てるよ」と彼は優しく言った。
+How did Kai keep their promise?",He showed Yuna the same fireworks on a video call.,He showed Yuna the same fireworks on a video call.,He came back to the festival.,He sent her a photo.,He bought new fireworks.,ユナとカイは毎年夏、一緒に花火を見ると約束した。高校卒業後、カイは遠い街へ引っ越した。離れて初めての夏、ユナは寂しい気持ちで一人お祭りに行った。すると電話が鳴った。カイからのビデオ通話で、彼の新しい街の同じ花火が映っていた。「僕たちはまだ一緒に見てるよ」と彼は優しく言った。,false
 levels.Lv3,"Haru lent his favorite book to Nao. Inside, he had secretly underlined the words ""I like you"" on different pages. He hoped she would notice. A week later, Nao returned the book. She had underlined the words ""me too"" in the same way. Neither of them said anything out loud, but both were smiling.
 
-What did Nao do with the book?",She underlined the words 'me too'.,She underlined the words 'me too'.,She lost the book.,She wrote a long letter.,She kept it forever.,ハルはお気に入りの本をナオに貸した。中で、彼はこっそりいろんなページの「君が好き」という言葉に下線を引いていた。気づいてほしかった。一週間後、ナオは本を返した。彼女は同じやり方で「私も」という言葉に下線を引いていた。二人とも声には出さなかったが、どちらもほほえんでいた。
+What did Nao do with the book?",She underlined the words 'me too'.,She underlined the words 'me too'.,She lost the book.,She wrote a long letter.,She kept it forever.,ハルはお気に入りの本をナオに貸した。中で、彼はこっそりいろんなページの「君が好き」という言葉に下線を引いていた。気づいてほしかった。一週間後、ナオは本を返した。彼女は同じやり方で「私も」という言葉に下線を引いていた。二人とも声には出さなかったが、どちらもほほえんでいた。,false
 levels.Lv3,"Emi was new and could not speak the language well. During lunch, she always sat alone. One boy, Ken, started leaving small notes on her desk with one easy word and its picture each day. ""Apple."" ""Smile."" ""Friend."" By winter, Emi could speak much better, and the first full sentence she said to Ken was, ""Thank you for everything.""
 
-How did Ken help Emi?",He left notes to teach her words.,He left notes to teach her words.,He did her homework.,He spoke her language.,He gave her money.,エミは転校生で、言葉がうまく話せなかった。昼食のとき、いつも一人で座っていた。ケンという男の子が、毎日机に簡単な単語一つとその絵を描いた小さなメモを置き始めた。「りんご」「笑顔」「友達」。冬までに、エミはずっと上手に話せるようになり、ケンに言った最初の完全な文は「いろいろありがとう」だった。
+How did Ken help Emi?",He left notes to teach her words.,He left notes to teach her words.,He did her homework.,He spoke her language.,He gave her money.,エミは転校生で、言葉がうまく話せなかった。昼食のとき、いつも一人で座っていた。ケンという男の子が、毎日机に簡単な単語一つとその絵を描いた小さなメモを置き始めた。「りんご」「笑顔」「友達」。冬までに、エミはずっと上手に話せるようになり、ケンに言った最初の完全な文は「いろいろありがとう」だった。,false
 levels.Lv3,"Mai always ran in the same park in the morning. She often saw a boy running the other way. They never spoke, but they always nodded and smiled. One rainy day, he was not there, and Mai realized how much she looked forward to that small moment. The next morning, she brought two umbrellas, just in case.
 
-Why did Mai bring two umbrellas?",She hoped to share one with the boy.,She hoped to share one with the boy.,It was very cold.,She lost one before.,Her friend asked for one.,マイは毎朝同じ公園で走っていた。よく反対方向に走る男の子を見かけた。話したことはなかったが、いつもうなずいてほほえみ合った。ある雨の日、彼はいなくて、マイはその小さな瞬間をどれだけ楽しみにしていたか気づいた。翌朝、彼女は念のため傘を二本持ってきた。
+Why did Mai bring two umbrellas?",She hoped to share one with the boy.,She hoped to share one with the boy.,It was very cold.,She lost one before.,Her friend asked for one.,マイは毎朝同じ公園で走っていた。よく反対方向に走る男の子を見かけた。話したことはなかったが、いつもうなずいてほほえみ合った。ある雨の日、彼はいなくて、マイはその小さな瞬間をどれだけ楽しみにしていたか気づいた。翌朝、彼女は念のため傘を二本持ってきた。,false
 levels.Lv3,"Taku was going to move away in spring. He wanted to tell Rin how he felt, but he was afraid. On the last day of school, he finally gave her a letter and ran away, too nervous to see her face. The letter said, ""I will come back in five years. Please wait for me if you can."" Rin read it and quietly promised that she would.
 
-What did Taku ask Rin in the letter?",To wait five years for him.,To wait five years for him.,To move with him.,To forget him.,To write back soon.,タクは春に引っ越す予定だった。リンに気持ちを伝えたかったが、こわかった。学校最後の日、ついに手紙を渡して走り去った。彼女の顔を見るのが怖すぎたのだ。手紙にはこう書いてあった。「5年後に戻ってくる。もしできるなら、待っていてほしい。」リンはそれを読み、静かに待つと心に誓った。
+What did Taku ask Rin in the letter?",To wait five years for him.,To wait five years for him.,To move with him.,To forget him.,To write back soon.,タクは春に引っ越す予定だった。リンに気持ちを伝えたかったが、こわかった。学校最後の日、ついに手紙を渡して走り去った。彼女の顔を見るのが怖すぎたのだ。手紙にはこう書いてあった。「5年後に戻ってくる。もしできるなら、待っていてほしい。」リンはそれを読み、静かに待つと心に誓った。,false
 levels.Lv3,"Every day, an old man planted trees on an empty hill, even though he was already eighty. People asked why he worked so hard for trees he would never see grow tall. He smiled and answered, ""I will not sit in their shade, but children I will never meet will. That is enough for me."" Years later, the hill became a beautiful forest.
 
-Why did the old man plant trees?",So future children could enjoy the shade.,So future children could enjoy the shade.,To sell the wood.,To become famous.,To make money quickly.,毎日、年老いた男が空き地の丘に木を植えていた。彼はもう80歳だった。人々は、自分が大きく育つのを決して見られない木のために、なぜそんなに頑張るのか尋ねた。彼はほほえんで答えた。「私はその木陰に座ることはない。でも、会うことのない子どもたちが座るだろう。それで十分だ。」何年も後、その丘は美しい森になった。
+Why did the old man plant trees?",So future children could enjoy the shade.,So future children could enjoy the shade.,To sell the wood.,To become famous.,To make money quickly.,毎日、年老いた男が空き地の丘に木を植えていた。彼はもう80歳だった。人々は、自分が大きく育つのを決して見られない木のために、なぜそんなに頑張るのか尋ねた。彼はほほえんで答えた。「私はその木陰に座ることはない。でも、会うことのない子どもたちが座るだろう。それで十分だ。」何年も後、その丘は美しい森になった。,false
 levels.Lv3,"Maya practiced the piano for years but always lost in competitions. She felt like giving up. Then a blind boy in the audience asked to touch her hands after a concert. ""Your music helped me see colors,"" he said. ""Please never stop."" Maya never won first prize, but she kept playing for the rest of her life, knowing her music truly mattered.
 
-Why did Maya keep playing the piano?",A blind boy told her that her music mattered.,A blind boy told her that her music mattered.,She finally won first prize.,Her parents forced her.,She wanted to be famous.,マヤは何年もピアノを練習したが、コンクールではいつも負けた。あきらめたい気持ちだった。すると、コンサートの後、客席の目の見えない少年が彼女の手に触れたいと頼んだ。「あなたの音楽で、僕は色が見えたんだ」と彼は言った。「どうかやめないで。」マヤは一度も一位にならなかったが、自分の音楽が本当に意味を持つと知り、生涯ずっと弾き続けた。
+Why did Maya keep playing the piano?",A blind boy told her that her music mattered.,A blind boy told her that her music mattered.,She finally won first prize.,Her parents forced her.,She wanted to be famous.,マヤは何年もピアノを練習したが、コンクールではいつも負けた。あきらめたい気持ちだった。すると、コンサートの後、客席の目の見えない少年が彼女の手に触れたいと頼んだ。「あなたの音楽で、僕は色が見えたんだ」と彼は言った。「どうかやめないで。」マヤは一度も一位にならなかったが、自分の音楽が本当に意味を持つと知り、生涯ずっと弾き続けた。,false
 levels.Lv3,"After the earthquake, a young boy stood in a long line for food. When he finally reached the front, he was given one rice ball. Instead of eating it, he walked over and placed it in the box for people who had even less than he did. A reporter watched, deeply moved, and quietly added his own food to the box too.
 
-What did the boy do with his rice ball?",He gave it to people who had less.,He gave it to people who had less.,He ate it quickly.,He sold it.,He saved it for later.,地震の後、幼い少年が食べ物をもらう長い列に並んでいた。やっと先頭に着くと、おにぎりを一つもらった。彼はそれを食べる代わりに、歩いて行って、自分よりもっと持たない人々のための箱に入れた。記者がそれを見て深く心を動かされ、静かに自分の食べ物も箱に加えた。
+What did the boy do with his rice ball?",He gave it to people who had less.,He gave it to people who had less.,He ate it quickly.,He sold it.,He saved it for later.,地震の後、幼い少年が食べ物をもらう長い列に並んでいた。やっと先頭に着くと、おにぎりを一つもらった。彼はそれを食べる代わりに、歩いて行って、自分よりもっと持たない人々のための箱に入れた。記者がそれを見て深く心を動かされ、静かに自分の食べ物も箱に加えた。,false
 levels.Lv3,"A teacher noticed that one student never ate lunch. Quietly, without telling anyone, she began making an extra lunch box every morning and leaving it on his desk. She never asked for thanks. Twenty years later, that student, now a successful doctor, returned to the school and gave the teacher a lunch box, saying, ""Now it is my turn to take care of you.""
 
-Why did the doctor give the teacher a lunch box?",To return the kindness she had shown him.,To return the kindness she had shown him.,To sell her food.,To teach her cooking.,To say goodbye.,先生は、一人の生徒が決して昼食を食べないことに気づいた。誰にも言わず、彼女は毎朝もう一つ弁当を作り、彼の机に置き始めた。お礼を求めることはなかった。20年後、今は立派な医者になったその生徒が学校に戻り、先生に弁当を渡して言った。「今度は僕があなたの世話をする番です。」
+Why did the doctor give the teacher a lunch box?",To return the kindness she had shown him.,To return the kindness she had shown him.,To sell her food.,To teach her cooking.,To say goodbye.,先生は、一人の生徒が決して昼食を食べないことに気づいた。誰にも言わず、彼女は毎朝もう一つ弁当を作り、彼の机に置き始めた。お礼を求めることはなかった。20年後、今は立派な医者になったその生徒が学校に戻り、先生に弁当を渡して言った。「今度は僕があなたの世話をする番です。」,false
 levels.Lv3,"A runner was leading the race when the boy behind him fell and got hurt. Instead of winning, he stopped, helped the boy up, and walked with him to the finish line together. They came in last, but the whole crowd stood up and cheered louder than they had for the winner. Some things are bigger than winning.
 
-Why did the crowd cheer so loudly?",The runner helped the hurt boy instead of winning.,The runner helped the hurt boy instead of winning.,The runner broke a record.,The race was very fast.,The boy won the race.,あるランナーがレースで先頭を走っていたとき、後ろの少年が転んでけがをした。彼は勝つ代わりに立ち止まり、少年を助け起こし、一緒にゴールまで歩いた。二人は最下位だったが、観衆全員が立ち上がり、優勝者のときより大きな声で声援を送った。勝つことより大きなものがある。
-levels.Lv4,"Daniel always said he was the best cook in his family. One weekend, his parents went away, so he promised to make a special dinner for his little sister. He spent three hours in the kitchen, making strange sounds and big clouds of smoke. Finally, he proudly carried out two plates. His sister looked at the black, burned food and said nothing. Then she quietly took out her phone and ordered pizza. When the pizza arrived, Daniel ate more than anyone. ""Cooking makes me hungry,"" he explained, and his sister laughed so hard that she almost fell off her chair.
+Why did the crowd cheer so loudly?",The runner helped the hurt boy instead of winning.,The runner helped the hurt boy instead of winning.,The runner broke a record.,The race was very fast.,The boy won the race.,あるランナーがレースで先頭を走っていたとき、後ろの少年が転んでけがをした。彼は勝つ代わりに立ち止まり、少年を助け起こし、一緒にゴールまで歩いた。二人は最下位だったが、観衆全員が立ち上がり、優勝者のときより大きな声で声援を送った。勝つことより大きなものがある。,false
+levels.Lv3,"Daniel always said he was the best cook in his family. One weekend, his parents went away, so he promised to make a special dinner for his little sister. He spent three hours in the kitchen, making strange sounds and big clouds of smoke. Finally, he proudly carried out two plates. His sister looked at the black, burned food and said nothing. Then she quietly took out her phone and ordered pizza. When the pizza arrived, Daniel ate more than anyone. ""Cooking makes me hungry,"" he explained, and his sister laughed so hard that she almost fell off her chair.
 
-What did Daniel's sister do about the dinner?",She ordered pizza instead of eating his food.,She ordered pizza instead of eating his food.,She cooked her own dinner.,She ate all the burned food.,She called their parents.,ダニエルはいつも、自分が家族で一番料理がうまいと言っていた。ある週末、両親が出かけたので、彼は妹に特別な夕食を作ると約束した。3時間キッチンにこもり、変な音と大きな煙の雲を立てた。ついに彼は得意げに2皿を運んできた。妹は黒こげの料理を見て、何も言わなかった。それからこっそりスマホを取り出してピザを注文した。ピザが届くと、ダニエルは誰より多く食べた。「料理するとお腹がすくんだ」と彼は説明し、妹は椅子から落ちそうになるほど笑った。
-levels.Lv4,"Grandpa decided to learn how to use the Internet. His grandson taught him slowly and carefully. After a week, Grandpa felt like an expert. One day, the family received a strange email saying they had won a million dollars. Everyone was excited except Grandpa. ""It's a trick,"" he said calmly. ""Nobody gives money for free."" The family was surprised that the oldest person understood the danger best. Later, Grandpa smiled and said, ""I may be old, but I am not easy to fool. Life taught me that lesson long ago.""
+What did Daniel's sister do about the dinner?",She ordered pizza instead of eating his food.,She ordered pizza instead of eating his food.,She cooked her own dinner.,She ate all the burned food.,She called their parents.,ダニエルはいつも、自分が家族で一番料理がうまいと言っていた。ある週末、両親が出かけたので、彼は妹に特別な夕食を作ると約束した。3時間キッチンにこもり、変な音と大きな煙の雲を立てた。ついに彼は得意げに2皿を運んできた。妹は黒こげの料理を見て、何も言わなかった。それからこっそりスマホを取り出してピザを注文した。ピザが届くと、ダニエルは誰より多く食べた。「料理するとお腹がすくんだ」と彼は説明し、妹は椅子から落ちそうになるほど笑った。,false
+levels.Lv3,"Grandpa decided to learn how to use the Internet. His grandson taught him slowly and carefully. After a week, Grandpa felt like an expert. One day, the family received a strange email saying they had won a million dollars. Everyone was excited except Grandpa. ""It's a trick,"" he said calmly. ""Nobody gives money for free."" The family was surprised that the oldest person understood the danger best. Later, Grandpa smiled and said, ""I may be old, but I am not easy to fool. Life taught me that lesson long ago.""
 
-Why was the family surprised?",The oldest person understood the danger best.,The oldest person understood the danger best.,Grandpa won real money.,The email was true.,Grandpa could not use the Internet.,おじいちゃんはインターネットの使い方を学ぶことにした。孫がゆっくり丁寧に教えた。1週間後、おじいちゃんは達人になった気分だった。ある日、家族は「100万ドル当選」という変なメールを受け取った。おじいちゃん以外みんな興奮した。「これは詐欺だ」と彼は落ち着いて言った。「タダで金をくれる者などいない。」一番年上の人が危険を一番よく理解していたので、家族は驚いた。後でおじいちゃんは笑って言った。「年はとっても、簡単にはだまされんよ。人生がずっと前にその教訓を教えてくれたんだ。」
-levels.Lv4,"Nina hated cleaning her messy room. One day her mother said, ""If you clean your room, I will give you a surprise."" Nina worked hard all afternoon. She threw away old papers, organized her books, and even washed the windows. When she finished, the room looked perfect. Excited, she ran to her mother and asked about the surprise. Her mother smiled and said, ""The surprise is how nice your clean room feels."" Nina was a little angry at first, but that night, lying in her tidy room, she had to admit her mother was right.
+Why was the family surprised?",The oldest person understood the danger best.,The oldest person understood the danger best.,Grandpa won real money.,The email was true.,Grandpa could not use the Internet.,おじいちゃんはインターネットの使い方を学ぶことにした。孫がゆっくり丁寧に教えた。1週間後、おじいちゃんは達人になった気分だった。ある日、家族は「100万ドル当選」という変なメールを受け取った。おじいちゃん以外みんな興奮した。「これは詐欺だ」と彼は落ち着いて言った。「タダで金をくれる者などいない。」一番年上の人が危険を一番よく理解していたので、家族は驚いた。後でおじいちゃんは笑って言った。「年はとっても、簡単にはだまされんよ。人生がずっと前にその教訓を教えてくれたんだ。」,false
+levels.Lv3,"Nina hated cleaning her messy room. One day her mother said, ""If you clean your room, I will give you a surprise."" Nina worked hard all afternoon. She threw away old papers, organized her books, and even washed the windows. When she finished, the room looked perfect. Excited, she ran to her mother and asked about the surprise. Her mother smiled and said, ""The surprise is how nice your clean room feels."" Nina was a little angry at first, but that night, lying in her tidy room, she had to admit her mother was right.
 
-What was the 'surprise' her mother meant?",The good feeling of having a clean room.,The good feeling of having a clean room.,A new video game.,Money for cleaning.,A trip to the zoo.,ニーナは散らかった部屋を片付けるのが大嫌いだった。ある日母が言った。「部屋を片付けたら、サプライズをあげる。」ニーナは午後ずっと頑張った。古い紙を捨て、本を整理し、窓まで洗った。終わると部屋は完璧に見えた。わくわくして母のところへ走り、サプライズについて尋ねた。母はほほえんで言った。「サプライズは、きれいな部屋がどれだけ気持ちいいか、ということよ。」ニーナは最初少し怒ったが、その夜、片付いた部屋で横になり、母が正しかったと認めざるを得なかった。
-levels.Lv4,"At the zoo, a little boy stood in front of the monkey cage for a long time. He copied everything the monkey did. When the monkey jumped, the boy jumped. When the monkey scratched its head, the boy scratched his head. A crowd gathered to watch this funny game. Suddenly, the monkey sat down and pointed at the boy, as if saying, ""Now you are the strange animal."" Everyone laughed, and the boy's face turned red. He learned that copying others can sometimes make you the joke.
+What was the 'surprise' her mother meant?",The good feeling of having a clean room.,The good feeling of having a clean room.,A new video game.,Money for cleaning.,A trip to the zoo.,ニーナは散らかった部屋を片付けるのが大嫌いだった。ある日母が言った。「部屋を片付けたら、サプライズをあげる。」ニーナは午後ずっと頑張った。古い紙を捨て、本を整理し、窓まで洗った。終わると部屋は完璧に見えた。わくわくして母のところへ走り、サプライズについて尋ねた。母はほほえんで言った。「サプライズは、きれいな部屋がどれだけ気持ちいいか、ということよ。」ニーナは最初少し怒ったが、その夜、片付いた部屋で横になり、母が正しかったと認めざるを得なかった。,false
+levels.Lv3,"At the zoo, a little boy stood in front of the monkey cage for a long time. He copied everything the monkey did. When the monkey jumped, the boy jumped. When the monkey scratched its head, the boy scratched his head. A crowd gathered to watch this funny game. Suddenly, the monkey sat down and pointed at the boy, as if saying, ""Now you are the strange animal."" Everyone laughed, and the boy's face turned red. He learned that copying others can sometimes make you the joke.
 
-What did the monkey do at the end?",It pointed at the boy as if he were the strange one.,It pointed at the boy as if he were the strange one.,It ran away.,It copied the boy.,It went to sleep.,動物園で、小さな男の子がサルのおりの前に長い間立っていた。彼はサルのすることを全部まねした。サルが跳ねれば男の子も跳ね、サルが頭をかけば男の子も頭をかいた。この面白い遊びを見ようと人だかりができた。突然、サルは座って男の子を指さした。まるで「今度は君が変な動物だ」と言うように。みんな笑い、男の子の顔は赤くなった。彼は、人のまねは時に自分を笑いものにすると学んだ。
-levels.Lv4,"Mr. Sato was famous for falling asleep anywhere. He slept on trains, in meetings, and once even while standing in line. His friends made a funny plan. While he was sleeping on a park bench, they quietly placed a small sign next to him that said, ""Do not wake. World champion of sleeping."" When Mr. Sato woke up, many people were taking photos of him. He read the sign, laughed loudly, and said, ""Well, at least I'm the best at something!"" From that day, he was proud of his special talent.
+What did the monkey do at the end?",It pointed at the boy as if he were the strange one.,It pointed at the boy as if he were the strange one.,It ran away.,It copied the boy.,It went to sleep.,動物園で、小さな男の子がサルのおりの前に長い間立っていた。彼はサルのすることを全部まねした。サルが跳ねれば男の子も跳ね、サルが頭をかけば男の子も頭をかいた。この面白い遊びを見ようと人だかりができた。突然、サルは座って男の子を指さした。まるで「今度は君が変な動物だ」と言うように。みんな笑い、男の子の顔は赤くなった。彼は、人のまねは時に自分を笑いものにすると学んだ。,false
+levels.Lv3,"Mr. Sato was famous for falling asleep anywhere. He slept on trains, in meetings, and once even while standing in line. His friends made a funny plan. While he was sleeping on a park bench, they quietly placed a small sign next to him that said, ""Do not wake. World champion of sleeping."" When Mr. Sato woke up, many people were taking photos of him. He read the sign, laughed loudly, and said, ""Well, at least I'm the best at something!"" From that day, he was proud of his special talent.
 
-How did Mr. Sato react to the sign?",He laughed and felt proud of his talent.,He laughed and felt proud of his talent.,He got very angry.,He ran away from the park.,He took the sign home.,佐藤さんはどこでも寝てしまうことで有名だった。電車でも、会議でも、一度は立って並んでいる時にさえ寝た。友達は面白い計画を立てた。彼が公園のベンチで寝ている間、そっと隣に小さな札を置いた。「起こすな。睡眠の世界チャンピオン」と書いてあった。佐藤さんが目を覚ますと、大勢が彼の写真を撮っていた。札を読んで大声で笑い、「まあ、少なくとも何かで一番だ！」と言った。その日から、彼は自分の特別な才能を誇りに思った。
-levels.Lv4,"Every summer, my family stayed at a small house by the sea. There was an old rule written on the kitchen wall: ""When the tide is high, do not answer the door."" As a child, I thought it was just a silly game. But one stormy night, when the water was high and dark, someone knocked gently. My little brother, too young to read, walked toward the door. I grabbed his hand just in time. Through the window, I saw wet footprints leading away, though no one was there. We never broke that rule again, and we never asked who had written it.
+How did Mr. Sato react to the sign?",He laughed and felt proud of his talent.,He laughed and felt proud of his talent.,He got very angry.,He ran away from the park.,He took the sign home.,佐藤さんはどこでも寝てしまうことで有名だった。電車でも、会議でも、一度は立って並んでいる時にさえ寝た。友達は面白い計画を立てた。彼が公園のベンチで寝ている間、そっと隣に小さな札を置いた。「起こすな。睡眠の世界チャンピオン」と書いてあった。佐藤さんが目を覚ますと、大勢が彼の写真を撮っていた。札を読んで大声で笑い、「まあ、少なくとも何かで一番だ！」と言った。その日から、彼は自分の特別な才能を誇りに思った。,false
+levels.Lv3,"Every summer, my family stayed at a small house by the sea. There was an old rule written on the kitchen wall: ""When the tide is low, go to the beach."" As a child, I thought it was just a silly game. But one morning, when the water was very low, my grandfather took me to the beach. There were small crabs and shells everywhere. We filled a bucket together, and I finally understood the rule.
 
-Why did the writer grab his brother's hand?",To stop him from answering the door during high tide.,To stop him from answering the door during high tide.,To take him to bed.,To pull him from the water.,To show him the footprints.,毎年夏、私の家族は海辺の小さな家に泊まった。台所の壁に古い決まりが書いてあった。「満潮のときはドアを開けるな。」子どもの頃、私はただのくだらない遊びだと思っていた。でもある嵐の夜、水位が高く暗いとき、誰かがそっとノックした。まだ字が読めない弟がドアへ歩いていった。私はぎりぎりで手をつかんだ。窓越しに、誰もいないのに濡れた足跡が遠ざかっていくのが見えた。私たちは二度とその決まりを破らなかったし、誰が書いたのかも尋ねなかった。
-levels.Lv4,"The new student never spoke. She sat at the back of the class and stared at the empty seat beside her. Our teacher said the seat had belonged to a girl who had moved away years ago. One day, I asked the new student why she always looked at that chair. She finally smiled and whispered, ""Because my friend is sitting there, and she says you can see her too, if you look long enough."" I did not look. I changed schools the next month.
+Why did the writer finally understand the rule?","At low tide, the beach was full of crabs and shells.","At low tide, the beach was full of crabs and shells.",The sea was dangerous.,The house was old.,His grandfather was tired.,毎年夏、私の家族は海辺の小さな家に泊まった。台所の壁に古い決まりが書いてあった。「干潮のときは浜へ行け。」子どもの頃、私はただのくだらない遊びだと思っていた。でもある朝、水がとても引いたとき、祖父が私を浜へ連れて行った。小さなカニや貝がそこらじゅうにいた。一緒にバケツをいっぱいにして、私はついにその決まりを理解した。,false
+levels.Lv3,"The new student never spoke. She sat at the back of the class and looked at the empty seat beside her. One day, I asked her why she always looked at that chair. She finally smiled and whispered, ""My best friend is moving to this town next month. I hope she can sit there."" The next month, her friend joined our class, and the two of them laughed every day. Soon they became my friends, too.
 
-Why did the writer change schools?",The new student's words frightened him.,The new student's words frightened him.,The school was too far.,He failed his tests.,The teacher was unkind.,その転校生は決して話さなかった。彼女はクラスの後ろに座り、隣の空いた席をじっと見つめていた。先生は、その席は何年も前に引っ越した女の子のものだったと言った。ある日、私は転校生になぜいつもその椅子を見るのか尋ねた。彼女はついにほほえんでささやいた。「だって私の友達がそこに座っているの。十分長く見れば、あなたにも見えるって言ってるわ。」私は見なかった。翌月、転校した。
-levels.Lv4,"My phone started sending messages to my mother that I never wrote. They were short and kind: ""Good night,"" ""I love you,"" ""Be careful tomorrow."" My mother thought I was being sweet, so I said nothing. But the strange part came later. After I lost my phone in the river during the trip, the messages did not stop. My mother still receives one every night, always at the same time, always in my words. She finds it comforting. I find it impossible.
+Why did the new student look at the empty seat?",She hoped her best friend would sit there.,She hoped her best friend would sit there.,She wanted to move there.,She lost something under it.,The teacher told her to.,その転校生は決して話さなかった。彼女はクラスの後ろに座り、隣の空いた席を見ていた。ある日、私はなぜいつもその椅子を見るのか尋ねた。彼女はついにほほえんでささやいた。「親友が来月この町に引っ越してくるの。そこに座れたらいいな。」翌月、その友達が私たちのクラスに加わり、二人は毎日笑っていた。やがて二人は私の友達にもなった。,false
+levels.Lv3,"My phone started sending messages to my mother that I never wrote. They were short and kind: ""Good night,"" ""I love you,"" ""Be careful tomorrow."" My mother thought I was being sweet, so I said nothing. But I wanted to know the truth. One night, I found the answer. My little sister was using my phone while I was in the bath. ""You never say nice things to Mom,"" she said. ""So I do it for you."" Now I write the messages myself.
 
-Why does the writer find the messages 'impossible'?",They keep coming after the phone was lost in the river.,They keep coming after the phone was lost in the river.,They are written in another language.,His mother never reads them.,He sends them himself.,私のスマホが、私が書いてもいないメッセージを母に送り始めた。短くて優しい内容だった。「おやすみ」「愛してる」「明日気をつけて」。母は私が優しくしていると思ったので、私は何も言わなかった。でも奇妙なのはその後だ。旅行中に川でスマホをなくした後も、メッセージは止まらなかった。母は今も毎晩、いつも同じ時刻に、いつも私の言葉で一通受け取る。母はそれを心地よく思っている。私には、あり得ないことだ。
-levels.Lv4,"The hotel had no room number 4, because in Japan the number four can mean death. I thought this was just an old custom. On my last night, I could not sleep, so I walked down the long, quiet hallway. Between room 3 and room 5, where nothing should be, I saw a door marked with a faded number 4. Cold air came from under it, and I heard someone slowly counting. I walked back to my room quickly and waited for morning, never telling anyone what I had seen.
+Who was sending the messages?",The writer's little sister.,The writer's little sister.,The writer's mother.,A stranger.,The phone company.,私のスマホが、私が書いてもいないメッセージを母に送り始めた。短くて優しい内容だった。「おやすみ」「大好き」「明日気をつけて」。母は私が優しくしていると思ったので、私は何も言わなかった。でも本当のことが知りたかった。ある夜、答えが分かった。私がお風呂に入っている間、妹が私のスマホを使っていたのだ。「お兄ちゃんはお母さんに優しいこと言わないから」と彼女は言った。「だから代わりにやってるの。」今は自分でメッセージを書いている。,false
+levels.Lv3,"The hotel had no room number 4, because in Japan the number four is not a lucky number. I thought this was just an old custom. On my last night, I could not sleep, so I walked down the long, quiet hallway. Between room 3 and room 5, I saw a small door with a sign: ""Staff only."" A young worker came out with a tray of cookies. ""Can't you sleep?"" she asked with a smile. ""Have one. They are still warm."" It was the best cookie of my trip.
 
-What did the writer see between rooms 3 and 5?",A door marked with the number 4.,A door marked with the number 4.,An open window.,Another guest.,A broken light.,そのホテルには4号室がなかった。日本では「4」が「死」を意味することがあるからだ。私はこれをただの古い習慣だと思っていた。最後の夜、眠れなかったので、長く静かな廊下を歩いた。3号室と5号室の間、何もないはずの場所に、色あせた「4」と記されたドアを見た。その下から冷たい空気が流れ、誰かがゆっくり数を数えるのが聞こえた。私は急いで部屋に戻り、朝を待った。見たものを誰にも話さずに。
-levels.Lv4,"My little sister often talked to someone she called ""the lady in the garden."" Our parents thought it was just an imaginary friend, common for young children. We had no garden, only a small yard of stones. One evening, my sister drew a picture of the lady and gave it to me. The woman in the drawing wore old-fashioned clothes and stood beside a tree full of white flowers. The next week, while digging in the yard, my father found the roots of a tree that had died there a hundred years ago.
+What did the writer find between rooms 3 and 5?",A staff room and a kind worker with cookies.,A staff room and a kind worker with cookies.,An open window.,Another guest.,A broken light.,そのホテルには4号室がなかった。日本では「4」は縁起のよくない数字だからだ。私はこれをただの古い習慣だと思っていた。最後の夜、眠れなかったので、長く静かな廊下を歩いた。3号室と5号室の間に、「スタッフ専用」と書かれた小さなドアを見つけた。若い従業員がクッキーのトレイを持って出てきた。「眠れないんですか？」と彼女はほほえんで言った。「一つどうぞ。まだあたたかいですよ。」旅行で一番おいしいクッキーだった。,false
+levels.Lv3,"My little sister often talked to someone she called ""the lady in the garden."" Our parents thought it was just an imaginary friend. We had no garden, only a small yard of stones. One evening, my sister drew a picture of the lady and gave it to me. The woman in the drawing stood beside a tree full of white flowers. The next spring, my father planted a cherry tree in the yard. When it bloomed, my sister said, ""Now the lady is happy."" So were we.
 
-What did the father discover in the yard?",The roots of a tree that died a century ago.,The roots of a tree that died a century ago.,A box of old letters.,A garden of white flowers.,A hidden room.,妹はよく「庭の女の人」と呼ぶ誰かに話しかけていた。両親は、幼い子によくある空想の友達だと思っていた。我が家には庭はなく、石だらけの小さな庭先があるだけだった。ある夕方、妹はその女の人の絵を描いて私にくれた。絵の女性は古風な服を着て、白い花でいっぱいの木のそばに立っていた。翌週、庭先を掘っていた父は、百年前にそこで枯れた木の根を見つけた。
-levels.Lv4,"When they were children, Sho and Yui planted a small tree together in the schoolyard and promised to meet under it as adults. Years passed, and life took them to different cities. Sho almost forgot the promise. But on the day of their school reunion, something made him walk to the old tree, now tall and full of leaves. Yui was already there, looking up at the branches. ""I come here every year,"" she said quietly. ""I always hoped that one year, you would remember too."" Sho realized that some promises, even quiet ones, are never truly broken.
+What did the father do in the spring?",He planted a cherry tree in the yard.,He planted a cherry tree in the yard.,He built a new house.,He found old letters.,He bought white flowers.,妹はよく「庭の女の人」と呼ぶ誰かに話しかけていた。両親は、ただの空想の友達だと思っていた。我が家には庭はなく、石だらけの小さな庭先があるだけだった。ある夕方、妹はその女の人の絵を描いて私にくれた。絵の女性は白い花でいっぱいの木のそばに立っていた。次の春、父は庭先に桜の木を植えた。花が咲くと、妹は「これで女の人はうれしいね」と言った。私たちもうれしかった。,false
+levels.Lv3,"When they were children, Sho and Yui planted a small tree together in the schoolyard and promised to meet under it as adults. Years passed, and life took them to different cities. Sho almost forgot the promise. But on the day of their school reunion, something made him walk to the old tree, now tall and full of leaves. Yui was already there, looking up at the branches. ""I come here every year,"" she said quietly. ""I always hoped that one year, you would remember too."" Sho realized that some promises, even quiet ones, are never truly broken.
 
-Why did Yui visit the tree every year?",She hoped Sho would remember their promise.,She hoped Sho would remember their promise.,She liked the shade.,She lived nearby.,She studied the tree.,子どもの頃、ショウとユイは校庭に小さな木を一緒に植え、大人になったらその下で会おうと約束した。年月が過ぎ、人生は二人を別々の街へ連れて行った。ショウは約束をほとんど忘れていた。でも同窓会の日、何かに導かれて、今は高く葉の茂ったあの木へ歩いた。ユイはすでにそこにいて、枝を見上げていた。「毎年ここに来るの」と彼女は静かに言った。「いつかあなたも思い出してくれるって、ずっと願ってた。」ショウは、静かな約束でさえ、決して本当には消えないのだと気づいた。
-levels.Lv4,"Nana worked at a small bakery near the station. A tired businessman came in every evening and always bought the last melon bread. They rarely spoke more than a few words. One day, Nana noticed he looked very sad, so she added a small cookie shaped like a smile to his bag without saying anything. The next evening, he returned and finally spoke: ""That cookie was the first time I smiled in months. May I know your name?"" Sometimes the smallest kindness opens the biggest door.
+Why did Yui visit the tree every year?",She hoped Sho would remember their promise.,She hoped Sho would remember their promise.,She liked the shade.,She lived nearby.,She studied the tree.,子どもの頃、ショウとユイは校庭に小さな木を一緒に植え、大人になったらその下で会おうと約束した。年月が過ぎ、人生は二人を別々の街へ連れて行った。ショウは約束をほとんど忘れていた。でも同窓会の日、何かに導かれて、今は高く葉の茂ったあの木へ歩いた。ユイはすでにそこにいて、枝を見上げていた。「毎年ここに来るの」と彼女は静かに言った。「いつかあなたも思い出してくれるって、ずっと願ってた。」ショウは、静かな約束でさえ、決して本当には消えないのだと気づいた。,false
+levels.Lv3,"Nana worked at a small bakery near the station. A tired businessman came in every evening and always bought the last melon bread. They rarely spoke more than a few words. One day, Nana noticed he looked very sad, so she added a small cookie shaped like a smile to his bag without saying anything. The next evening, he returned and finally spoke: ""That cookie was the first time I smiled in months. May I know your name?"" Sometimes the smallest kindness opens the biggest door.
 
-What did Nana add to the man's bag?",A cookie shaped like a smile.,A cookie shaped like a smile.,An extra melon bread.,A letter.,A free coffee.,ナナは駅の近くの小さなパン屋で働いていた。疲れた会社員が毎晩来て、いつも最後のメロンパンを買った。二人はほとんど言葉を交わさなかった。ある日、ナナは彼がとても悲しそうなのに気づき、何も言わずに笑顔の形のクッキーを袋に一つ加えた。翌晩、彼は戻ってきて、ついに口を開いた。「あのクッキーで、何ヶ月ぶりかに笑えました。お名前を伺っても?」時に、ほんの小さな親切が、一番大きな扉を開ける。
-levels.Lv4,"In the library, Aoi always found helpful notes inside the books she borrowed for her exams. Someone had written tips in the margins, like ""Don't give up"" and ""You can do this."" The notes guided her through a hard year, and she passed her exams. Wanting to thank this stranger, she left her own note in the last book: ""Who are you?"" A week later, the reply came in the same handwriting: ""Just someone who sat behind you and admired how hard you tried.""
+What did Nana add to the man's bag?",A cookie shaped like a smile.,A cookie shaped like a smile.,An extra melon bread.,A letter.,A free coffee.,ナナは駅の近くの小さなパン屋で働いていた。疲れた会社員が毎晩来て、いつも最後のメロンパンを買った。二人はほとんど言葉を交わさなかった。ある日、ナナは彼がとても悲しそうなのに気づき、何も言わずに笑顔の形のクッキーを袋に一つ加えた。翌晩、彼は戻ってきて、ついに口を開いた。「あのクッキーで、何ヶ月ぶりかに笑えました。お名前を伺っても?」時に、ほんの小さな親切が、一番大きな扉を開ける。,false
+levels.Lv3,"In the library, Aoi always found helpful notes inside the books she borrowed for her exams. Someone had written tips in the margins, like ""Don't give up"" and ""You can do this."" The notes guided her through a hard year, and she passed her exams. Wanting to thank this stranger, she left her own note in the last book: ""Who are you?"" A week later, the reply came in the same handwriting: ""Just someone who sat behind you and admired how hard you tried.""
 
-Who had been writing the notes?",Someone who sat behind Aoi and admired her effort.,Someone who sat behind Aoi and admired her effort.,Her teacher.,The librarian.,Her sister.,図書館で、アオイは試験のために借りた本の中に、いつも役立つメモを見つけた。誰かが余白に「あきらめないで」「君ならできる」といった助言を書いていた。そのメモは厳しい一年を通して彼女を導き、彼女は試験に合格した。この見知らぬ人に感謝したくて、彼女は最後の本に自分のメモを残した。「あなたは誰?」一週間後、同じ筆跡で返事が来た。「君の後ろに座って、君が必死に頑張る姿に感心していた、ただの一人だよ。」
-levels.Lv4,"Kenta and Yuki dated for three years before he had to study abroad. They agreed to write one real paper letter each month, instead of using their phones. At first it felt slow and old-fashioned, but soon they loved it. Each letter carried more feeling than a hundred quick messages. When Kenta finally came home two years later, Yuki was waiting at the airport, holding every single letter he had sent, tied with a blue ribbon.
+Who had been writing the notes?",Someone who sat behind Aoi and admired her effort.,Someone who sat behind Aoi and admired her effort.,Her teacher.,The librarian.,Her sister.,図書館で、アオイは試験のために借りた本の中に、いつも役立つメモを見つけた。誰かが余白に「あきらめないで」「君ならできる」といった助言を書いていた。そのメモは厳しい一年を通して彼女を導き、彼女は試験に合格した。この見知らぬ人に感謝したくて、彼女は最後の本に自分のメモを残した。「あなたは誰?」一週間後、同じ筆跡で返事が来た。「君の後ろに座って、君が必死に頑張る姿に感心していた、ただの一人だよ。」,false
+levels.Lv3,"Kenta and Yuki dated for three years before he had to study abroad. They agreed to write one real paper letter each month, instead of using their phones. At first it felt slow and old-fashioned, but soon they loved it. Each letter carried more feeling than a hundred quick messages. When Kenta finally came home two years later, Yuki was waiting at the airport, holding every single letter he had sent, tied with a blue ribbon.
 
-What was Yuki holding at the airport?","Every letter Kenta had sent, tied with a ribbon.","Every letter Kenta had sent, tied with a ribbon.",A new phone.,A welcome sign.,A bunch of flowers.,ケンタとユキは、彼が留学する前に3年間付き合っていた。二人はスマホを使う代わりに、毎月一通ずつ本物の紙の手紙を書くと約束した。最初は遅くて古風に感じたが、すぐに大好きになった。一通一通が、百の素早いメッセージより多くの気持ちを運んだ。2年後、ケンタがついに帰国したとき、ユキは空港で待っていた。彼が送ったすべての手紙を、青いリボンで束ねて抱えて。
-levels.Lv4,"An old man visited the same coffee shop every morning and always ordered two cups. He drank one and left the other untouched across the table. The young waitress was curious but never asked. After he stopped coming one winter, she found a note he had left for her: ""For sixty years, I shared morning coffee with my wife here. After she passed, I kept ordering two, so she would never feel alone. Thank you for never moving her cup."" The waitress cried, and from then on, she always set two cups at that table.
+What was Yuki holding at the airport?","Every letter Kenta had sent, tied with a ribbon.","Every letter Kenta had sent, tied with a ribbon.",A new phone.,A welcome sign.,A bunch of flowers.,ケンタとユキは、彼が留学する前に3年間付き合っていた。二人はスマホを使う代わりに、毎月一通ずつ本物の紙の手紙を書くと約束した。最初は遅くて古風に感じたが、すぐに大好きになった。一通一通が、百の素早いメッセージより多くの気持ちを運んだ。2年後、ケンタがついに帰国したとき、ユキは空港で待っていた。彼が送ったすべての手紙を、青いリボンで束ねて抱えて。,false
+levels.Lv3,"An old man visited the same coffee shop every morning and always ordered two cups. He drank one and left the other untouched across the table. The young waitress was curious but never asked. After he stopped coming one winter, she found a note he had left for her: ""For sixty years, I shared morning coffee with my wife here. After she passed, I kept ordering two, so she would never feel alone. Thank you for never moving her cup."" The waitress cried, and from then on, she always set two cups at that table.
 
-Why did the old man order two cups?",To feel that his late wife was still with him.,To feel that his late wife was still with him.,He was very thirsty.,He met a friend there.,He liked cold coffee.,老人は毎朝同じ喫茶店を訪れ、いつもコーヒーを2杯注文した。1杯を飲み、もう1杯はテーブルの向かいに手をつけずに置いた。若いウェイトレスは気になったが、決して尋ねなかった。ある冬、彼が来なくなった後、彼女は彼が残したメモを見つけた。「60年間、私はここで妻と朝のコーヒーを分かち合った。妻が亡くなった後も2杯頼み続けた。妻が決して寂しく感じないように。彼女のカップを動かさずにいてくれて、ありがとう。」ウェイトレスは泣き、それからずっと、そのテーブルにいつも2つのカップを置いた。
-levels.Lv4,"For thirty years, a quiet old woman cleaned the train station every night after the last train left. Few people ever noticed her or said thank you. When she finally retired, the station looked the same as always, and she expected no goodbye. But on her last night, hundreds of people who had taken those trains over the years were waiting on the platform with flowers and letters. ""We saw you,"" they said. ""We always saw you."" She had thought her work was invisible, but kindness, even silent kindness, is never truly unseen.
+Why did the old man order two cups?",To feel that his late wife was still with him.,To feel that his late wife was still with him.,He was very thirsty.,He met a friend there.,He liked cold coffee.,老人は毎朝同じ喫茶店を訪れ、いつもコーヒーを2杯注文した。1杯を飲み、もう1杯はテーブルの向かいに手をつけずに置いた。若いウェイトレスは気になったが、決して尋ねなかった。ある冬、彼が来なくなった後、彼女は彼が残したメモを見つけた。「60年間、私はここで妻と朝のコーヒーを分かち合った。妻が亡くなった後も2杯頼み続けた。妻が決して寂しく感じないように。彼女のカップを動かさずにいてくれて、ありがとう。」ウェイトレスは泣き、それからずっと、そのテーブルにいつも2つのカップを置いた。,false
+levels.Lv3,"For thirty years, a quiet old woman cleaned the train station every night after the last train left. Few people ever noticed her or said thank you. When she finally retired, the station looked the same as always, and she expected no goodbye. But on her last night, hundreds of people who had taken those trains over the years were waiting on the platform with flowers and letters. ""We saw you,"" they said. ""We always saw you."" She had thought her work was invisible, but kindness, even silent kindness, is never truly unseen.
 
-What surprised the old woman on her last night?",Hundreds of people came to thank her.,Hundreds of people came to thank her.,The station was dirty.,She missed the last train.,She lost her job suddenly.,30年間、物静かな老婦人が、終電が出た後に毎晩駅を掃除していた。彼女に気づいたり、ありがとうと言ったりする人はほとんどいなかった。ついに引退するとき、駅はいつもと変わらず見え、彼女は別れの言葉も期待していなかった。でも最後の夜、長年その電車に乗ってきた何百人もの人々が、花や手紙を持ってホームで待っていた。「私たちは見ていました」と彼らは言った。「ずっと見ていました。」彼女は自分の仕事が誰の目にも入らないと思っていたが、親切は、静かな親切でさえ、決して本当に見られていないわけではない。
-levels.Lv4,"A famous violinist lost the use of his right hand in an accident and could no longer play. Everyone thought his career was over. Instead, he spent the next ten years teaching poor children who could never afford lessons. One of those children grew up to become a world-class musician. At her first great concert, she walked onto the stage, pointed to her old teacher in the front row, and said, ""He cannot play anymore, but his music lives in everything I do.""
+What surprised the old woman on her last night?",Hundreds of people came to thank her.,Hundreds of people came to thank her.,The station was dirty.,She missed the last train.,She lost her job suddenly.,30年間、物静かな老婦人が、終電が出た後に毎晩駅を掃除していた。彼女に気づいたり、ありがとうと言ったりする人はほとんどいなかった。ついに引退するとき、駅はいつもと変わらず見え、彼女は別れの言葉も期待していなかった。でも最後の夜、長年その電車に乗ってきた何百人もの人々が、花や手紙を持ってホームで待っていた。「私たちは見ていました」と彼らは言った。「ずっと見ていました。」彼女は自分の仕事が誰の目にも入らないと思っていたが、親切は、静かな親切でさえ、決して本当に見られていないわけではない。,false
+levels.Lv3,"A famous violinist lost the use of his right hand in an accident and could no longer play. Everyone thought his career was over. Instead, he spent the next ten years teaching poor children who could never afford lessons. One of those children grew up to become a world-class musician. At her first great concert, she walked onto the stage, pointed to her old teacher in the front row, and said, ""He cannot play anymore, but his music lives in everything I do.""
 
-How did the violinist's music continue?",Through the students he taught.,Through the students he taught.,He learned to play again.,He wrote new songs.,He built a music school alone.,有名なバイオリニストが事故で右手の自由を失い、もう演奏できなくなった。誰もが彼のキャリアは終わったと思った。代わりに、彼はその後10年を、レッスンを受ける余裕のない貧しい子どもたちに教えて過ごした。その子どもの一人が成長して世界的な音楽家になった。彼女の初めての大きなコンサートで、彼女は舞台に歩み出て、最前列の昔の先生を指さして言った。「先生はもう演奏できません。でも先生の音楽は、私のするすべての中に生きています。」
-levels.Lv4,"A little girl with a serious illness spent most of her days in a hospital bed by the window. To cheer her up, she began drawing pictures and taping them to the glass so people outside could see. Soon, strangers walking past started leaving drawings and kind messages on the other side of the window. A silent friendship grew between the sick girl and a whole town she had never met. On the day she finally went home, healthy again, hundreds of drawings covered her window like a wall of love.
+How did the violinist's music continue?",Through the students he taught.,Through the students he taught.,He learned to play again.,He wrote new songs.,He built a music school alone.,有名なバイオリニストが事故で右手の自由を失い、もう演奏できなくなった。誰もが彼のキャリアは終わったと思った。代わりに、彼はその後10年を、レッスンを受ける余裕のない貧しい子どもたちに教えて過ごした。その子どもの一人が成長して世界的な音楽家になった。彼女の初めての大きなコンサートで、彼女は舞台に歩み出て、最前列の昔の先生を指さして言った。「先生はもう演奏できません。でも先生の音楽は、私のするすべての中に生きています。」,false
+levels.Lv3,"A little girl with a serious illness spent most of her days in a hospital bed by the window. To cheer her up, she began drawing pictures and taping them to the glass so people outside could see. Soon, strangers walking past started leaving drawings and kind messages on the other side of the window. A silent friendship grew between the sick girl and a whole town she had never met. On the day she finally went home, healthy again, hundreds of drawings covered her window like a wall of love.
 
-How did the town become friends with the girl?",They exchanged drawings through her window.,They exchanged drawings through her window.,They visited her room daily.,They sent her letters by mail.,They called her every night.,重い病気の小さな女の子が、ほとんどの日々を窓際の病院のベッドで過ごしていた。元気を出すために、彼女は絵を描いてガラスに貼り、外の人々に見えるようにし始めた。やがて、通りかかる見知らぬ人々が、窓の反対側に絵や優しいメッセージを残し始めた。病気の女の子と、会ったこともない町全体との間に、静かな友情が育った。ついに元気になって家に帰る日、何百もの絵が、愛の壁のように彼女の窓を覆っていた。
-levels.Lv4,"During the war, a soldier carried a small, worn photograph of his family everywhere he went. It gave him the strength to survive each hard day. Years after the war ended, he returned to his hometown, which had changed so much that he barely recognized it. He showed the old photo to a young woman selling flowers. She stared at it, then began to cry. ""This is my grandmother,"" she said softly. ""She told me a kind soldier once promised to come back. We never stopped hoping you would.""
+How did the town become friends with the girl?",They exchanged drawings through her window.,They exchanged drawings through her window.,They visited her room daily.,They sent her letters by mail.,They called her every night.,重い病気の小さな女の子が、ほとんどの日々を窓際の病院のベッドで過ごしていた。元気を出すために、彼女は絵を描いてガラスに貼り、外の人々に見えるようにし始めた。やがて、通りかかる見知らぬ人々が、窓の反対側に絵や優しいメッセージを残し始めた。病気の女の子と、会ったこともない町全体との間に、静かな友情が育った。ついに元気になって家に帰る日、何百もの絵が、愛の壁のように彼女の窓を覆っていた。,false
+levels.Lv3,"During the war, a soldier carried a small, worn photograph of his family everywhere he went. It gave him the strength to survive each hard day. Years after the war ended, he returned to his hometown, which looked so different that he barely recognized it. He showed the old photo to a young woman selling flowers. She stared at it, then began to cry. ""This is my grandmother,"" she said softly. ""She told me a kind soldier once promised to come back. We never stopped hoping you would.""
 
-Why did the young woman cry?",The soldier in the photo had promised to return to her family.,The soldier in the photo had promised to return to her family.,She lost her flowers.,She did not know the man.,The photo was damaged.,戦争中、一人の兵士はどこへ行くにも、家族の小さくすり切れた写真を持ち歩いた。それが、つらい日々を生き延びる力をくれた。戦争が終わって何年も後、彼は故郷に戻ったが、あまりに変わっていて、ほとんど見分けがつかなかった。彼は花を売る若い女性に古い写真を見せた。彼女はそれをじっと見つめ、泣き始めた。「これは私の祖母です」と彼女は静かに言った。「祖母は、優しい兵士がいつか戻ると約束したと話していました。私たちは、あなたが戻ることをずっと願い続けていました。」
-levels.Lv4,"An old fisherman found a young whale trapped in a net near the shore. For hours, he worked alone in the cold water, slowly cutting the ropes until the whale was free. The huge animal did not swim away at once. Instead, it stayed near his boat for a moment, looking at him with one large eye, as if to say thank you. Every year after that, on the same day, a whale appeared in the same bay. The fisherman believed it was the same one, returning to remember a moment of kindness between two very different lives.
+Why did the young woman cry?",The soldier in the photo promised to return to her family.,The soldier in the photo promised to return to her family.,She lost her flowers.,She did not know the man.,The photo was damaged.,戦争中、一人の兵士はどこへ行くにも、家族の小さくすり切れた写真を持ち歩いた。それが、つらい日々を生き延びる力をくれた。戦争が終わって何年も後、彼は故郷に戻ったが、あまりに変わっていて、ほとんど見分けがつかなかった。彼は花を売る若い女性に古い写真を見せた。彼女はそれをじっと見つめ、泣き始めた。「これは私の祖母です」と彼女は静かに言った。「祖母は、優しい兵士がいつか戻ると約束したと話していました。私たちは、あなたが戻ることをずっと願い続けていました。」,false
+levels.Lv3,"An old fisherman found a young whale trapped in a net near the shore. For hours, he worked alone in the cold water, slowly cutting the ropes until the whale was free. The huge animal did not swim away at once. Instead, it stayed near his boat for a moment, looking at him with one large eye, as if to say thank you. Every year after that, on the same day, a whale appeared in the same bay. The fisherman believed it was the same one, returning to remember a moment of kindness between two very different lives.
 
-Why did the fisherman think the whale returned each year?",To remember the kindness he had shown it.,To remember the kindness he had shown it.,To find more food.,To bring him gifts.,To escape other whales.,年老いた漁師が、岸の近くで網にかかった若いクジラを見つけた。何時間も、彼は冷たい水の中で一人で働き、ロープをゆっくり切って、ついにクジラを自由にした。その巨大な動物はすぐには泳ぎ去らなかった。代わりに、少しの間彼の船のそばにとどまり、一つの大きな目で彼を見た。まるでありがとうと言うように。それから毎年、同じ日に、同じ入り江にクジラが現れた。漁師は、それが同じクジラで、二つのまったく異なる命の間の親切の瞬間を覚えていて戻ってくるのだと信じていた。
+Why did the fisherman think the whale returned each year?",To remember the kindness he had shown it.,To remember the kindness he had shown it.,To find more food.,To bring him gifts.,To escape other whales.,年老いた漁師が、岸の近くで網にかかった若いクジラを見つけた。何時間も、彼は冷たい水の中で一人で働き、ロープをゆっくり切って、ついにクジラを自由にした。その巨大な動物はすぐには泳ぎ去らなかった。代わりに、少しの間彼の船のそばにとどまり、一つの大きな目で彼を見た。まるでありがとうと言うように。それから毎年、同じ日に、同じ入り江にクジラが現れた。漁師は、それが同じクジラで、二つのまったく異なる命の間の親切の瞬間を覚えていて戻ってくるのだと信じていた。,false
+levels.Lv3,"Mr. Ito wanted to lose weight. He decided to walk to work instead of taking the bus. But every morning, he stopped at a bakery on the way and bought two sweet buns. After a month, he was heavier than before. 
+Q: Why did Mr. Ito get heavier?",He ate sweet buns every morning.,He ate sweet buns every morning.,He took the bus.,He stopped walking.,He skipped breakfast.,やせたい伊藤さんは歩いて通勤したが、毎朝パン屋で菓子パンを2個買った。1か月後、前より重くなった。→毎朝菓子パンを食べたから。,false
+levels.Lv3,"Mrs. Lee bought a robot to clean her house. The robot moved around all day but only pushed the dust from one corner to another. In the end, Mrs. Lee cleaned the floor herself. 
+Q: Was the robot helpful?","No, it did not really clean.","No, it did not really clean.","Yes, it cleaned perfectly.",It cooked dinner.,It broke the floor.,掃除ロボはほこりを隅から隅へ動かすだけで、結局リー夫人が掃除。→役に立たなかった。,false
+levels.Lv3,"Ken studied hard for the math test and felt sure he would pass. On the test day, he opened the paper and saw it was the science test. He had studied the wrong subject. 
+Q: Why was Ken in trouble?",He studied the wrong subject.,He studied the wrong subject.,He was sick.,He lost his pencil.,The test was easy.,数学を勉強したケンだが当日は理科。→違う教科を勉強していた。,false
+levels.Lv3,"Grandma got her first smartphone. Her grandson showed her how to send a message. Later, the family got twenty short messages from her, and she said she was practicing. 
+Q: Why did the family get so many messages?",Grandma was practicing.,Grandma was practicing.,The phone was broken.,A stranger sent them.,She was angry.,祖母が初スマホで練習し短い文を20通送った。→練習していたから。,false
+levels.Lv3,"Tom told everyone he woke up early to study. But every morning his mother found him asleep on his books with the lamp still on. He fell asleep as soon as he sat down. 
+Q: What really happened each morning?",Tom fell asleep instead of studying.,Tom fell asleep instead of studying.,Tom studied all night.,Tom went jogging.,Tom cooked breakfast.,早起き勉強と言うトムは毎朝本の上で寝ていた。→寝ていた。,false
+levels.Lv3,"Lisa wanted to surprise her mother with breakfast in bed. She carried the tray upstairs but tripped, and the eggs landed on the cat. The cat was not happy, but her mother laughed and hugged her. 
+Q: How did the mother feel in the end?","Happy, even though it was messy.","Happy, even though it was messy.",Very angry at Lisa.,Sad and crying.,Afraid of the cat.,卵が猫に落ちたが母は笑って抱きしめた。→散らかったが喜んだ。,false
+levels.Lv3,"The new student was very quiet, and some children thought he was unfriendly. But when a small boy dropped his lunch, the new student shared his own food at once. After that, everyone wanted to be his friend. 
+Q: What was the new student really like?",Kind.,Kind.,Unfriendly.,Selfish.,Lazy.,無口で不愛想と思われた転校生は弁当を落とした子に分けた。→本当は親切。,false
+levels.Lv3,"Mr. Tanaka was proud of his loud alarm clock. Every morning it rang, but he turned it off and slept again. His dog learned to pull his blanket instead, and that finally woke him up. 
+Q: What really woke Mr. Tanaka up?",His dog pulling the blanket.,His dog pulling the blanket.,The loud alarm clock.,The sunlight.,His neighbor.,目覚ましを止め二度寝する田中さんを毛布を引く犬が起こした。→犬。,false
+levels.Lv3,"Yumi wanted a new bike, so she started saving money. She stopped buying juice every day and drank water instead. After half a year, she had enough money, and she also felt healthier. 
+Q: What did Yumi get besides the bike?",Better health.,Better health.,A new phone.,More juice.,A part-time job.,自転車のためにユミは毎日のジュースをやめて貯金。半年後、お金もたまり、体も前より健康に。→健康。,false
+levels.Lv3,"Aki practiced her English speech for two weeks. On the day of the contest, she was so nervous that she forgot her first line. She took a deep breath, smiled, and started again. She won second prize. 
+Q: What did Aki do when she forgot her line?",She took a deep breath and started again.,She took a deep breath and started again.,She left the stage.,She asked her teacher.,She read her notes.,スピーチ大会で緊張して最初の一文を忘れたアキは、深呼吸して笑顔でやり直し、2位になった。→深呼吸してやり直した。,false

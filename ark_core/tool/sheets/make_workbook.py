@@ -54,6 +54,8 @@ COLUMN_HELP = [
     (r'^a$', '正解'),
     (r'^choices\.(\d+)$', '選択肢 {n}（正解も入れる）'),
     (r'^e$', '解説'),
+    (r'^free$', '無料で遊べる（true / false）'),
+    (r'^scene$', '場面'),
     (r'^ja\.(\d+)\.t$', '日本語のかたまり {n}'),
     (r'^ja\.(\d+)\.pick$', 'かたまり {n} に色（true / false）'),
     (r'^answer\.(\d+)\.w$', '英語 {n}（正しい順）'),
@@ -168,7 +170,7 @@ def main():
         a = app.lower()
         pricing_rows += [
             [a, 'enabled', 'false', '課金を有効にする（true / false）。false のあいだは全部無料'],
-            [a, 'defaultFreeCount', '1', 'ゲーム（ステージ）ごとに無料で遊べるモード（レベル）の数。0 = 全部有料'],
+            [a, 'defaultFreeCount', '1' if a == 'teen' else '', 'TEEN：ステージごとに無料のレベル数（1 = Lv1）。KIDS：通常は空欄（モードは全部開放し、問題ごとの free 列で制御）'],
             [a, 'freeCounts.<pack>', '', '特定タブだけ別の数にしたいとき（例：item を freeCounts.vocab、value を 2）'],
             [a, 'freePacks', '', '全部無料にするタブ名（カンマ区切り）'],
             [a, 'lockedPacks', '', '全部有料にするタブ名（カンマ区切り）'],

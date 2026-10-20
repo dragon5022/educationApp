@@ -1,596 +1,1824 @@
 {
- "version": 1,
- "id": "e-goi",
- "subject": "english",
- "title": "語彙の兵器庫",
- "label": "語",
- "timeLimitMs": 5000,
- "maxQuestions": 15,
- "images": {
-  "art": "e-goi",
-  "boss": "e-boss",
-  "chara": "uta",
-  "win": "win",
-  "lose": "lose2"
- },
- "levels": {
-  "Lv1": [
-   {
-    "q": "「彼の犬」を表すのは？ ( ) dog",
-    "a": "his",
-    "choices": [
-     "his",
-     "him",
-     "他",
-     "he"
+  "version": 2,
+  "id": "e-goi",
+  "subject": "english",
+  "title": "語彙の兵器庫",
+  "label": "語",
+  "timeLimitMs": 5000,
+  "maxQuestions": 15,
+  "images": {
+    "art": "e-goi",
+    "boss": "e-boss",
+    "chara": "uta",
+    "win": "win",
+    "lose": "lose2"
+  },
+  "levels": {
+    "Lv1": [
+      {
+        "q": "「彼の犬」を表すのは？ ( ) dog",
+        "a": "his",
+        "choices": [
+          "his",
+          "him",
+          "he's",
+          "he"
+        ],
+        "e": "「彼の〜」は所有格 his。",
+        "free": true
+      },
+      {
+        "q": "「私の本」を表すのは？ ( ) book",
+        "a": "my",
+        "choices": [
+          "I",
+          "mine",
+          "me",
+          "my"
+        ],
+        "e": "「私の〜」は所有格 my。",
+        "free": true
+      },
+      {
+        "q": "「彼女のかばん」を表すのは？ ( ) bag",
+        "a": "her",
+        "choices": [
+          "hers",
+          "she",
+          "him",
+          "her"
+        ],
+        "e": "「彼女の〜」は所有格 her。",
+        "free": true
+      },
+      {
+        "q": "「私たちの学校」を表すのは？ ( ) school",
+        "a": "our",
+        "choices": [
+          "us",
+          "our",
+          "we",
+          "ours"
+        ],
+        "e": "「私たちの〜」は our。",
+        "free": true
+      },
+      {
+        "q": "「月曜日に」は？ ( ) Monday",
+        "a": "on",
+        "choices": [
+          "at",
+          "in",
+          "on",
+          "to"
+        ],
+        "e": "曜日→on。",
+        "free": true
+      },
+      {
+        "q": "「7時に」は？ ( ) seven",
+        "a": "at",
+        "choices": [
+          "to",
+          "in",
+          "on",
+          "at"
+        ],
+        "e": "時刻→at。",
+        "free": true
+      },
+      {
+        "q": "「夏に」は？ ( ) summer",
+        "a": "in",
+        "choices": [
+          "to",
+          "in",
+          "at",
+          "on"
+        ],
+        "e": "季節→in。",
+        "free": true
+      },
+      {
+        "q": "go の過去形は？",
+        "a": "went",
+        "choices": [
+          "going",
+          "gone",
+          "went",
+          "goed"
+        ],
+        "e": "go-went-gone（不規則）。",
+        "free": true
+      },
+      {
+        "q": "come の過去形は？",
+        "a": "came",
+        "choices": [
+          "comed",
+          "came",
+          "come",
+          "coming"
+        ],
+        "e": "come-came-come。",
+        "free": true
+      },
+      {
+        "q": "see の過去形は？",
+        "a": "saw",
+        "choices": [
+          "seen",
+          "seeing",
+          "saw",
+          "seed"
+        ],
+        "e": "see-saw-seen。",
+        "free": true
+      },
+      {
+        "q": "eat の過去形は？",
+        "a": "ate",
+        "choices": [
+          "ate",
+          "eaten",
+          "eated",
+          "eating"
+        ],
+        "e": "eat-ate-eaten。",
+        "free": true
+      },
+      {
+        "q": "take の過去形は？",
+        "a": "took",
+        "choices": [
+          "took",
+          "taking",
+          "taken",
+          "taked"
+        ],
+        "e": "take-took-taken。",
+        "free": true
+      },
+      {
+        "q": "run のing形は？",
+        "a": "running",
+        "choices": [
+          "runned",
+          "runing",
+          "running",
+          "ran"
+        ],
+        "e": "語尾を重ねてrunning。",
+        "free": true
+      },
+      {
+        "q": "swim のing形は？",
+        "a": "swimming",
+        "choices": [
+          "swimming",
+          "swum",
+          "swam",
+          "swiming"
+        ],
+        "e": "mを重ねてswimming。",
+        "free": true
+      },
+      {
+        "q": "make のing形は？",
+        "a": "making",
+        "choices": [
+          "makeing",
+          "made",
+          "making",
+          "maked"
+        ],
+        "e": "eをとってmaking。",
+        "free": true
+      },
+      {
+        "q": "write のing形は？",
+        "a": "writing",
+        "choices": [
+          "writeing",
+          "wrote",
+          "written",
+          "writing"
+        ],
+        "e": "eをとってwriting。",
+        "free": true
+      },
+      {
+        "q": "study の三単現は？",
+        "a": "studies",
+        "choices": [
+          "studyes",
+          "studys",
+          "studied",
+          "studies"
+        ],
+        "e": "y→iesでstudies。",
+        "free": true
+      },
+      {
+        "q": "go の三単現は？",
+        "a": "goes",
+        "choices": [
+          "goes",
+          "goees",
+          "going",
+          "gos"
+        ],
+        "e": "go→goes。",
+        "free": true
+      },
+      {
+        "q": "have の三単現は？",
+        "a": "has",
+        "choices": [
+          "haves",
+          "having",
+          "have",
+          "has"
+        ],
+        "e": "have→has（不規則）。",
+        "free": true
+      },
+      {
+        "q": "watch の三単現は？",
+        "a": "watches",
+        "choices": [
+          "watchs",
+          "watches",
+          "watch",
+          "watched"
+        ],
+        "e": "ch→＋esでwatches。",
+        "free": true
+      },
+      {
+        "q": "book の複数形は？",
+        "a": "books",
+        "choices": [
+          "book's",
+          "bookes",
+          "book",
+          "books"
+        ],
+        "e": "規則：＋s。",
+        "free": true
+      },
+      {
+        "q": "box の複数形は？",
+        "a": "boxes",
+        "choices": [
+          "boxies",
+          "boxes",
+          "boxs",
+          "box"
+        ],
+        "e": "x→＋esでboxes。",
+        "free": true
+      },
+      {
+        "q": "city の複数形は？",
+        "a": "cities",
+        "choices": [
+          "citys",
+          "cities",
+          "cityies",
+          "cityes"
+        ],
+        "e": "子音＋y→iesでcities。",
+        "free": true
+      },
+      {
+        "q": "「彼らのroom」→ ( ) room",
+        "a": "their",
+        "choices": [
+          "they",
+          "them",
+          "theirs",
+          "their"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      },
+      {
+        "q": "「彼のpen」→ ( ) pen",
+        "a": "his",
+        "choices": [
+          "him",
+          "he's",
+          "his",
+          "he"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「彼女のbook」→ ( ) book",
+        "a": "her",
+        "choices": [
+          "she's",
+          "her",
+          "she",
+          "hers"
+        ],
+        "e": "所有格→her。",
+        "free": true
+      },
+      {
+        "q": "「私たちのball」→ ( ) ball",
+        "a": "our",
+        "choices": [
+          "ours",
+          "we",
+          "us",
+          "our"
+        ],
+        "e": "所有格→our。",
+        "free": true
+      },
+      {
+        "q": "「彼女のbike」→ ( ) bike",
+        "a": "her",
+        "choices": [
+          "her",
+          "hers",
+          "she's",
+          "she"
+        ],
+        "e": "所有格→her。",
+        "free": true
+      },
+      {
+        "q": "「彼らのschool」→ ( ) school",
+        "a": "their",
+        "choices": [
+          "them",
+          "they",
+          "theirs",
+          "their"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      },
+      {
+        "q": "「私のbike」→ ( ) bike",
+        "a": "my",
+        "choices": [
+          "mine",
+          "I",
+          "my",
+          "me"
+        ],
+        "e": "所有格→my。",
+        "free": true
+      },
+      {
+        "q": "「彼らのname」→ ( ) name",
+        "a": "their",
+        "choices": [
+          "they",
+          "them",
+          "their",
+          "theirs"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      },
+      {
+        "q": "「彼女のfriend」→ ( ) friend",
+        "a": "her",
+        "choices": [
+          "she's",
+          "her",
+          "she",
+          "hers"
+        ],
+        "e": "所有格→her。",
+        "free": true
+      },
+      {
+        "q": "「彼のfriend」→ ( ) friend",
+        "a": "his",
+        "choices": [
+          "he",
+          "his",
+          "he's",
+          "him"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「彼のbike」→ ( ) bike",
+        "a": "his",
+        "choices": [
+          "him",
+          "his",
+          "he",
+          "he's"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「私たちのname」→ ( ) name",
+        "a": "our",
+        "choices": [
+          "us",
+          "we",
+          "ours",
+          "our"
+        ],
+        "e": "所有格→our。",
+        "free": true
+      },
+      {
+        "q": "「彼のdesk」→ ( ) desk",
+        "a": "his",
+        "choices": [
+          "his",
+          "he's",
+          "he",
+          "him"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「彼らのcar」→ ( ) car",
+        "a": "their",
+        "choices": [
+          "they",
+          "their",
+          "theirs",
+          "them"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      },
+      {
+        "q": "「彼のroom」→ ( ) room",
+        "a": "his",
+        "choices": [
+          "he's",
+          "his",
+          "him",
+          "he"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「私のhat」→ ( ) hat",
+        "a": "my",
+        "choices": [
+          "mine",
+          "I",
+          "my",
+          "me"
+        ],
+        "e": "所有格→my。",
+        "free": true
+      },
+      {
+        "q": "「それのしっぽ」→ ( ) tail",
+        "a": "its",
+        "choices": [
+          "it",
+          "its",
+          "it's",
+          "itself"
+        ],
+        "e": "所有格→its。",
+        "free": true
+      },
+      {
+        "q": "「あなたのdog」→ ( ) dog",
+        "a": "your",
+        "choices": [
+          "yours",
+          "your",
+          "you're",
+          "you"
+        ],
+        "e": "所有格→your。",
+        "free": true
+      },
+      {
+        "q": "「それのname」→ ( ) name",
+        "a": "its",
+        "choices": [
+          "its",
+          "it's",
+          "itself",
+          "it"
+        ],
+        "e": "所有格→its。",
+        "free": true
+      },
+      {
+        "q": "「私たちのdog」→ ( ) dog",
+        "a": "our",
+        "choices": [
+          "ours",
+          "our",
+          "us",
+          "we"
+        ],
+        "e": "所有格→our。",
+        "free": true
+      },
+      {
+        "q": "「それの目」→ ( ) eyes",
+        "a": "its",
+        "choices": [
+          "its",
+          "it's",
+          "itself",
+          "it"
+        ],
+        "e": "所有格→its。",
+        "free": true
+      },
+      {
+        "q": "「私たちのroom」→ ( ) room",
+        "a": "our",
+        "choices": [
+          "ours",
+          "our",
+          "we",
+          "us"
+        ],
+        "e": "所有格→our。",
+        "free": true
+      },
+      {
+        "q": "「あなたのball」→ ( ) ball",
+        "a": "your",
+        "choices": [
+          "you",
+          "you're",
+          "yours",
+          "your"
+        ],
+        "e": "所有格→your。",
+        "free": true
+      },
+      {
+        "q": "「彼らのhouse」→ ( ) house",
+        "a": "their",
+        "choices": [
+          "their",
+          "they",
+          "theirs",
+          "them"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      },
+      {
+        "q": "「彼のdog」→ ( ) dog",
+        "a": "his",
+        "choices": [
+          "him",
+          "he",
+          "his",
+          "he's"
+        ],
+        "e": "所有格→his。",
+        "free": true
+      },
+      {
+        "q": "「それの色」→ ( ) color",
+        "a": "its",
+        "choices": [
+          "its",
+          "it",
+          "it's",
+          "itself"
+        ],
+        "e": "所有格→its。",
+        "free": true
+      },
+      {
+        "q": "「彼らのball」→ ( ) ball",
+        "a": "their",
+        "choices": [
+          "them",
+          "theirs",
+          "they",
+          "their"
+        ],
+        "e": "所有格→their。",
+        "free": true
+      }
     ],
-    "e": "「彼の〜」は所有格 his。"
-   },
-   {
-    "q": "「私の本」を表すのは？ ( ) book",
-    "a": "my",
-    "choices": [
-     "I",
-     "mine",
-     "me",
-     "my"
+    "Lv2": [
+      {
+        "q": "I know ( ).「私は彼を知っている」",
+        "a": "him",
+        "choices": [
+          "his",
+          "him",
+          "he",
+          "himself"
+        ],
+        "e": "動詞の後ろは目的格 him。",
+        "free": false
+      },
+      {
+        "q": "She likes ( ).「彼女は私が好き」",
+        "a": "me",
+        "choices": [
+          "me",
+          "my",
+          "mine",
+          "I"
+        ],
+        "e": "動詞の後ろは目的格 me。",
+        "free": false
+      },
+      {
+        "q": "This book is ( ).「これは私のもの」",
+        "a": "mine",
+        "choices": [
+          "my",
+          "me",
+          "mine",
+          "I"
+        ],
+        "e": "「私のもの」は所有代名詞 mine。",
+        "free": false
+      },
+      {
+        "q": "That bag is ( ).「あれは彼女のもの」",
+        "a": "hers",
+        "choices": [
+          "she",
+          "her",
+          "hers",
+          "hers'"
+        ],
+        "e": "「彼女のもの」は hers。",
+        "free": false
+      },
+      {
+        "q": "Look at ( ).「彼らを見て」",
+        "a": "them",
+        "choices": [
+          "they",
+          "them",
+          "theirs",
+          "their"
+        ],
+        "e": "目的格 them。",
+        "free": false
+      },
+      {
+        "q": "( ) is my friend.「彼は私の友達」",
+        "a": "He",
+        "choices": [
+          "Himself",
+          "He",
+          "Him",
+          "His"
+        ],
+        "e": "主語は主格 He。",
+        "free": false
+      },
+      {
+        "q": "「〜の前に」は？",
+        "a": "before",
+        "choices": [
+          "after",
+          "under",
+          "over",
+          "before"
+        ],
+        "e": "before＝前に。",
+        "free": false
+      },
+      {
+        "q": "look ( ) 〜「〜を探す」",
+        "a": "for",
+        "choices": [
+          "up",
+          "after",
+          "at",
+          "for"
+        ],
+        "e": "look for＝探す。",
+        "free": false
+      },
+      {
+        "q": "look ( ) 〜「〜を見る」",
+        "a": "at",
+        "choices": [
+          "up",
+          "after",
+          "at",
+          "for"
+        ],
+        "e": "look at＝見る。",
+        "free": false
+      },
+      {
+        "q": "get ( )「起きる」",
+        "a": "up",
+        "choices": [
+          "off",
+          "up",
+          "in",
+          "on"
+        ],
+        "e": "get up＝起きる。",
+        "free": false
+      },
+      {
+        "q": "「〜のおかげで」 thanks ( )",
+        "a": "to",
+        "choices": [
+          "for",
+          "at",
+          "to",
+          "of"
+        ],
+        "e": "thanks to＝おかげで。",
+        "free": false
+      },
+      {
+        "q": "be interested ( ) 〜「興味がある」",
+        "a": "in",
+        "choices": [
+          "to",
+          "in",
+          "on",
+          "at"
+        ],
+        "e": "be interested in。",
+        "free": false
+      },
+      {
+        "q": "listen ( ) music「音楽を聞く」",
+        "a": "to",
+        "choices": [
+          "to",
+          "for",
+          "at",
+          "on"
+        ],
+        "e": "listen to＝聞く。",
+        "free": false
+      },
+      {
+        "q": "run の過去形は？",
+        "a": "ran",
+        "choices": [
+          "ran",
+          "running",
+          "run",
+          "runned"
+        ],
+        "e": "run-ran-run。",
+        "free": false
+      },
+      {
+        "q": "write の過去分詞は？",
+        "a": "written",
+        "choices": [
+          "written",
+          "wrote",
+          "writing",
+          "writed"
+        ],
+        "e": "write-wrote-written。",
+        "free": false
+      },
+      {
+        "q": "speak の過去分詞は？",
+        "a": "spoken",
+        "choices": [
+          "speaked",
+          "speaking",
+          "spoken",
+          "spoke"
+        ],
+        "e": "speak-spoke-spoken。",
+        "free": false
+      },
+      {
+        "q": "give の過去分詞は？",
+        "a": "given",
+        "choices": [
+          "giving",
+          "given",
+          "gave",
+          "gived"
+        ],
+        "e": "give-gave-given。",
+        "free": false
+      },
+      {
+        "q": "take の過去分詞は？",
+        "a": "taken",
+        "choices": [
+          "taken",
+          "taking",
+          "taked",
+          "took"
+        ],
+        "e": "take-took-taken。",
+        "free": false
+      },
+      {
+        "q": "sit のing形は？",
+        "a": "sitting",
+        "choices": [
+          "sitting",
+          "sit",
+          "sat",
+          "siting"
+        ],
+        "e": "tを重ねてsitting。",
+        "free": false
+      },
+      {
+        "q": "buy の過去形は？",
+        "a": "bought",
+        "choices": [
+          "buying",
+          "bought",
+          "buys",
+          "buyed"
+        ],
+        "e": "buy-bought-bought。",
+        "free": false
+      },
+      {
+        "q": "child の複数形は？",
+        "a": "children",
+        "choices": [
+          "childrens",
+          "childes",
+          "childs",
+          "children"
+        ],
+        "e": "不規則：child-children。",
+        "free": false
+      },
+      {
+        "q": "man の複数形は？",
+        "a": "men",
+        "choices": [
+          "mans",
+          "mens",
+          "men",
+          "manes"
+        ],
+        "e": "不規則：man-men。",
+        "free": false
+      },
+      {
+        "q": "woman の複数形は？",
+        "a": "women",
+        "choices": [
+          "womans",
+          "women",
+          "womens",
+          "womanes"
+        ],
+        "e": "不規則：woman-women。",
+        "free": false
+      },
+      {
+        "q": "foot の複数形は？",
+        "a": "feet",
+        "choices": [
+          "feet",
+          "feets",
+          "footes",
+          "foots"
+        ],
+        "e": "不規則：foot-feet。",
+        "free": false
+      },
+      {
+        "q": "tooth の複数形は？",
+        "a": "teeth",
+        "choices": [
+          "tooths",
+          "teeth",
+          "teeths",
+          "tooth"
+        ],
+        "e": "不規則：tooth-teeth。",
+        "free": false
+      },
+      {
+        "q": "sheep の複数形は？",
+        "a": "sheep",
+        "choices": [
+          "sheepes",
+          "sheep",
+          "shoop",
+          "sheeps"
+        ],
+        "e": "単複同形：sheep-sheep。",
+        "free": false
+      },
+      {
+        "q": "leaf の複数形は？",
+        "a": "leaves",
+        "choices": [
+          "leafes",
+          "leafs",
+          "leaves",
+          "leave"
+        ],
+        "e": "f→vesでleaves。",
+        "free": false
+      },
+      {
+        "q": "They need ( ).（私たちを）",
+        "a": "us",
+        "choices": [
+          "our",
+          "us",
+          "we",
+          "ours"
+        ],
+        "e": "動詞の後ろは目的格→us。",
+        "free": false
+      },
+      {
+        "q": "I need ( ).（それを）",
+        "a": "it",
+        "choices": [
+          "it's",
+          "itself",
+          "it",
+          "its"
+        ],
+        "e": "動詞の後ろは目的格→it。",
+        "free": false
+      },
+      {
+        "q": "I like ( ).（彼らを）",
+        "a": "them",
+        "choices": [
+          "them",
+          "theirs",
+          "their",
+          "they"
+        ],
+        "e": "動詞の後ろは目的格→them。",
+        "free": false
+      },
+      {
+        "q": "I see ( ).（彼らを）",
+        "a": "them",
+        "choices": [
+          "them",
+          "their",
+          "they",
+          "theirs"
+        ],
+        "e": "動詞の後ろは目的格→them。",
+        "free": false
+      },
+      {
+        "q": "Our parents love ( ).（私たちを）",
+        "a": "us",
+        "choices": [
+          "us",
+          "our",
+          "we",
+          "ours"
+        ],
+        "e": "動詞の後ろは目的格→us。",
+        "free": false
+      },
+      {
+        "q": "They need ( ).（私を）",
+        "a": "me",
+        "choices": [
+          "I",
+          "me",
+          "my",
+          "mine"
+        ],
+        "e": "動詞の後ろは目的格→me。",
+        "free": false
+      },
+      {
+        "q": "This bag is ( ).（彼のもの）",
+        "a": "his",
+        "choices": [
+          "him",
+          "himself",
+          "his",
+          "he"
+        ],
+        "e": "所有代名詞→his。",
+        "free": false
+      },
+      {
+        "q": "This pen is ( ).（私たちのもの）",
+        "a": "ours",
+        "choices": [
+          "us",
+          "ours",
+          "our",
+          "we"
+        ],
+        "e": "所有代名詞→ours。",
+        "free": false
+      },
+      {
+        "q": "I miss ( ).（それを）",
+        "a": "it",
+        "choices": [
+          "it's",
+          "its",
+          "it",
+          "itself"
+        ],
+        "e": "動詞の後ろは目的格→it。",
+        "free": false
+      },
+      {
+        "q": "This car is ( ).（彼らのもの）",
+        "a": "theirs",
+        "choices": [
+          "they",
+          "their",
+          "theirs",
+          "them"
+        ],
+        "e": "所有代名詞→theirs。",
+        "free": false
+      },
+      {
+        "q": "Please help ( ).（私を）",
+        "a": "me",
+        "choices": [
+          "I",
+          "mine",
+          "my",
+          "me"
+        ],
+        "e": "動詞の後ろは目的格→me。",
+        "free": false
+      },
+      {
+        "q": "This book is ( ).（彼女のもの）",
+        "a": "hers",
+        "choices": [
+          "hers",
+          "she",
+          "her",
+          "herself"
+        ],
+        "e": "所有代名詞→hers。",
+        "free": false
+      },
+      {
+        "q": "I love ( ).（彼らを）",
+        "a": "them",
+        "choices": [
+          "they",
+          "their",
+          "theirs",
+          "them"
+        ],
+        "e": "動詞の後ろは目的格→them。",
+        "free": false
+      },
+      {
+        "q": "This pen is ( ).（彼のもの）",
+        "a": "his",
+        "choices": [
+          "him",
+          "his",
+          "he",
+          "himself"
+        ],
+        "e": "所有代名詞→his。",
+        "free": false
+      },
+      {
+        "q": "I love ( ).（それを）",
+        "a": "it",
+        "choices": [
+          "it's",
+          "it",
+          "its",
+          "itself"
+        ],
+        "e": "動詞の後ろは目的格→it。",
+        "free": false
+      },
+      {
+        "q": "This pen is ( ).（あなたのもの）",
+        "a": "yours",
+        "choices": [
+          "yourself",
+          "yours",
+          "you",
+          "your"
+        ],
+        "e": "所有代名詞→yours。",
+        "free": false
+      },
+      {
+        "q": "I like ( ).（彼女を）",
+        "a": "her",
+        "choices": [
+          "hers",
+          "she",
+          "her",
+          "herself"
+        ],
+        "e": "動詞の後ろは目的格→her。",
+        "free": false
+      },
+      {
+        "q": "I know ( ).（彼らを）",
+        "a": "them",
+        "choices": [
+          "they",
+          "theirs",
+          "them",
+          "their"
+        ],
+        "e": "動詞の後ろは目的格→them。",
+        "free": false
+      },
+      {
+        "q": "I like ( ).（彼を）",
+        "a": "him",
+        "choices": [
+          "his",
+          "himself",
+          "he",
+          "him"
+        ],
+        "e": "動詞の後ろは目的格→him。",
+        "free": false
+      },
+      {
+        "q": "I meet ( ).（あなたを）",
+        "a": "you",
+        "choices": [
+          "your",
+          "you",
+          "yourself",
+          "yours"
+        ],
+        "e": "動詞の後ろは目的格→you。",
+        "free": false
+      },
+      {
+        "q": "I help ( ).（彼を）",
+        "a": "him",
+        "choices": [
+          "himself",
+          "he",
+          "his",
+          "him"
+        ],
+        "e": "動詞の後ろは目的格→him。",
+        "free": false
+      },
+      {
+        "q": "I teach ( ).（彼を）",
+        "a": "him",
+        "choices": [
+          "he",
+          "him",
+          "his",
+          "himself"
+        ],
+        "e": "動詞の後ろは目的格→him。",
+        "free": false
+      },
+      {
+        "q": "My mother loves ( ).（私を）",
+        "a": "me",
+        "choices": [
+          "me",
+          "I",
+          "my",
+          "mine"
+        ],
+        "e": "動詞の後ろは目的格→me。",
+        "free": false
+      }
     ],
-    "e": "「私の〜」は所有格 my。"
-   },
-   {
-    "q": "「彼女のかばん」を表すのは？ ( ) bag",
-    "a": "her",
-    "choices": [
-     "hers",
-     "she",
-     "him",
-     "her"
-    ],
-    "e": "「彼女の〜」は所有格 her。"
-   },
-   {
-    "q": "「私たちの学校」を表すのは？ ( ) school",
-    "a": "our",
-    "choices": [
-     "us",
-     "our",
-     "we",
-     "ours"
-    ],
-    "e": "「私たちの〜」は our。"
-   },
-   {
-    "q": "「月曜日に」は？ ( ) Monday",
-    "a": "on",
-    "choices": [
-     "at",
-     "in",
-     "on",
-     "to"
-    ],
-    "e": "曜日→on。"
-   },
-   {
-    "q": "「7時に」は？ ( ) seven",
-    "a": "at",
-    "choices": [
-     "to",
-     "in",
-     "on",
-     "at"
-    ],
-    "e": "時刻→at。"
-   },
-   {
-    "q": "「夏に」は？ ( ) summer",
-    "a": "in",
-    "choices": [
-     "to",
-     "in",
-     "at",
-     "on"
-    ],
-    "e": "季節→in。"
-   },
-   {
-    "q": "go の過去形は？",
-    "a": "went",
-    "choices": [
-     "going",
-     "gone",
-     "went",
-     "goed"
-    ],
-    "e": "go-went-gone（不規則）。"
-   },
-   {
-    "q": "come の過去形は？",
-    "a": "came",
-    "choices": [
-     "comed",
-     "came",
-     "come",
-     "coming"
-    ],
-    "e": "come-came-come。"
-   },
-   {
-    "q": "see の過去形は？",
-    "a": "saw",
-    "choices": [
-     "seen",
-     "seeing",
-     "saw",
-     "seed"
-    ],
-    "e": "see-saw-seen。"
-   },
-   {
-    "q": "eat の過去形は？",
-    "a": "ate",
-    "choices": [
-     "ate",
-     "eaten",
-     "eated",
-     "eating"
-    ],
-    "e": "eat-ate-eaten。"
-   },
-   {
-    "q": "take の過去形は？",
-    "a": "took",
-    "choices": [
-     "took",
-     "taking",
-     "taken",
-     "taked"
-    ],
-    "e": "take-took-taken。"
-   },
-   {
-    "q": "run のing形は？",
-    "a": "running",
-    "choices": [
-     "runned",
-     "runing",
-     "running",
-     "ran"
-    ],
-    "e": "語尾を重ねてrunning。"
-   },
-   {
-    "q": "swim のing形は？",
-    "a": "swimming",
-    "choices": [
-     "swimming",
-     "swum",
-     "swam",
-     "swiming"
-    ],
-    "e": "mを重ねてswimming。"
-   },
-   {
-    "q": "make のing形は？",
-    "a": "making",
-    "choices": [
-     "makeing",
-     "made",
-     "making",
-     "maked"
-    ],
-    "e": "eをとってmaking。"
-   },
-   {
-    "q": "write のing形は？",
-    "a": "writing",
-    "choices": [
-     "writeing",
-     "wrote",
-     "written",
-     "writing"
-    ],
-    "e": "eをとってwriting。"
-   },
-   {
-    "q": "study の三単現は？",
-    "a": "studies",
-    "choices": [
-     "studyes",
-     "studys",
-     "studied",
-     "studies"
-    ],
-    "e": "y→iesでstudies。"
-   },
-   {
-    "q": "go の三単現は？",
-    "a": "goes",
-    "choices": [
-     "goes",
-     "goees",
-     "going",
-     "gos"
-    ],
-    "e": "go→goes。"
-   },
-   {
-    "q": "have の三単現は？",
-    "a": "has",
-    "choices": [
-     "haves",
-     "having",
-     "have",
-     "has"
-    ],
-    "e": "have→has（不規則）。"
-   },
-   {
-    "q": "watch の三単現は？",
-    "a": "watches",
-    "choices": [
-     "watchs",
-     "watches",
-     "watch",
-     "watched"
-    ],
-    "e": "ch→＋esでwatches。"
-   },
-   {
-    "q": "book の複数形は？",
-    "a": "books",
-    "choices": [
-     "books'",
-     "bookes",
-     "book",
-     "books"
-    ],
-    "e": "規則：＋s。"
-   },
-   {
-    "q": "box の複数形は？",
-    "a": "boxes",
-    "choices": [
-     "boxies",
-     "boxes",
-     "boxs",
-     "box"
-    ],
-    "e": "x→＋esでboxes。"
-   },
-   {
-    "q": "city の複数形は？",
-    "a": "cities",
-    "choices": [
-     "citys",
-     "cities",
-     "cityies",
-     "cityes"
-    ],
-    "e": "子音＋y→iesでcities。"
-   }
-  ],
-  "Lv2": [
-   {
-    "q": "I know ( ).「私は彼を知っている」",
-    "a": "him",
-    "choices": [
-     "his",
-     "him",
-     "he",
-     "himself"
-    ],
-    "e": "動詞の後ろは目的格 him。"
-   },
-   {
-    "q": "She likes ( ).「彼女は私が好き」",
-    "a": "me",
-    "choices": [
-     "me",
-     "my",
-     "mine",
-     "I"
-    ],
-    "e": "動詞の後ろは目的格 me。"
-   },
-   {
-    "q": "This book is ( ).「これは私のもの」",
-    "a": "mine",
-    "choices": [
-     "my",
-     "me",
-     "mine",
-     "I"
-    ],
-    "e": "「私のもの」は所有代名詞 mine。"
-   },
-   {
-    "q": "That bag is ( ).「あれは彼女のもの」",
-    "a": "hers",
-    "choices": [
-     "she",
-     "her",
-     "hers",
-     "hers'"
-    ],
-    "e": "「彼女のもの」は hers。"
-   },
-   {
-    "q": "Look at ( ).「彼らを見て」",
-    "a": "them",
-    "choices": [
-     "they",
-     "them",
-     "theirs",
-     "their"
-    ],
-    "e": "目的格 them。"
-   },
-   {
-    "q": "( ) is my friend.「彼は私の友達」",
-    "a": "He",
-    "choices": [
-     "Himself",
-     "He",
-     "Him",
-     "His"
-    ],
-    "e": "主語は主格 He。"
-   },
-   {
-    "q": "「〜の前に」は？",
-    "a": "before",
-    "choices": [
-     "after",
-     "under",
-     "over",
-     "before"
-    ],
-    "e": "before＝前に。"
-   },
-   {
-    "q": "look ( ) 〜「〜を探す」",
-    "a": "for",
-    "choices": [
-     "up",
-     "after",
-     "at",
-     "for"
-    ],
-    "e": "look for＝探す。"
-   },
-   {
-    "q": "look ( ) 〜「〜を見る」",
-    "a": "at",
-    "choices": [
-     "up",
-     "after",
-     "at",
-     "for"
-    ],
-    "e": "look at＝見る。"
-   },
-   {
-    "q": "get ( )「起きる」",
-    "a": "up",
-    "choices": [
-     "off",
-     "up",
-     "in",
-     "on"
-    ],
-    "e": "get up＝起きる。"
-   },
-   {
-    "q": "「〜のおかげで」 thanks ( )",
-    "a": "to",
-    "choices": [
-     "for",
-     "at",
-     "to",
-     "of"
-    ],
-    "e": "thanks to＝おかげで。"
-   },
-   {
-    "q": "be interested ( ) 〜「興味がある」",
-    "a": "in",
-    "choices": [
-     "to",
-     "in",
-     "on",
-     "at"
-    ],
-    "e": "be interested in。"
-   },
-   {
-    "q": "listen ( ) music「音楽を聞く」",
-    "a": "to",
-    "choices": [
-     "to",
-     "for",
-     "at",
-     "on"
-    ],
-    "e": "listen to＝聞く。"
-   },
-   {
-    "q": "run の過去形は？",
-    "a": "ran",
-    "choices": [
-     "ran",
-     "running",
-     "run",
-     "runned"
-    ],
-    "e": "run-ran-run。"
-   },
-   {
-    "q": "write の過去分詞は？",
-    "a": "written",
-    "choices": [
-     "written",
-     "wrote",
-     "writing",
-     "writed"
-    ],
-    "e": "write-wrote-written。"
-   },
-   {
-    "q": "speak の過去分詞は？",
-    "a": "spoken",
-    "choices": [
-     "speaked",
-     "speaking",
-     "spoken",
-     "spoke"
-    ],
-    "e": "speak-spoke-spoken。"
-   },
-   {
-    "q": "give の過去分詞は？",
-    "a": "given",
-    "choices": [
-     "giving",
-     "given",
-     "gave",
-     "gived"
-    ],
-    "e": "give-gave-given。"
-   },
-   {
-    "q": "take の過去分詞は？",
-    "a": "taken",
-    "choices": [
-     "taken",
-     "taking",
-     "taked",
-     "took"
-    ],
-    "e": "take-took-taken。"
-   },
-   {
-    "q": "sit のing形は？",
-    "a": "sitting",
-    "choices": [
-     "sitting",
-     "sit",
-     "sat",
-     "siting"
-    ],
-    "e": "tを重ねてsitting。"
-   },
-   {
-    "q": "buy の過去形は？",
-    "a": "bought",
-    "choices": [
-     "buying",
-     "bought",
-     "buys",
-     "buyed"
-    ],
-    "e": "buy-bought-bought。"
-   },
-   {
-    "q": "child の複数形は？",
-    "a": "children",
-    "choices": [
-     "childrens",
-     "childes",
-     "childs",
-     "children"
-    ],
-    "e": "不規則：child-children。"
-   },
-   {
-    "q": "man の複数形は？",
-    "a": "men",
-    "choices": [
-     "mans",
-     "mens",
-     "men",
-     "manes"
-    ],
-    "e": "不規則：man-men。"
-   },
-   {
-    "q": "woman の複数形は？",
-    "a": "women",
-    "choices": [
-     "womans",
-     "women",
-     "womens",
-     "womanes"
-    ],
-    "e": "不規則：woman-women。"
-   },
-   {
-    "q": "foot の複数形は？",
-    "a": "feet",
-    "choices": [
-     "feet",
-     "feets",
-     "footes",
-     "foots"
-    ],
-    "e": "不規則：foot-feet。"
-   },
-   {
-    "q": "tooth の複数形は？",
-    "a": "teeth",
-    "choices": [
-     "tooths",
-     "teeth",
-     "teeths",
-     "tooth"
-    ],
-    "e": "不規則：tooth-teeth。"
-   },
-   {
-    "q": "sheep の複数形は？",
-    "a": "sheep",
-    "choices": [
-     "sheepes",
-     "sheep",
-     "shoop",
-     "sheeps"
-    ],
-    "e": "単複同形：sheep-sheep。"
-   },
-   {
-    "q": "leaf の複数形は？",
-    "a": "leaves",
-    "choices": [
-     "leafes",
-     "leafs",
-     "leaves",
-     "leave"
-    ],
-    "e": "f→vesでleaves。"
-   }
-  ],
-  "Lv3": [
-   {
-    "q": "He hurt ( ).「彼は自分を傷つけた」",
-    "a": "himself",
-    "choices": [
-     "him",
-     "his",
-     "he",
-     "himself"
-    ],
-    "e": "主語と同じ→再帰代名詞 himself。"
-   },
-   {
-    "q": "( ) car is new.「あなたの車」",
-    "a": "Your",
-    "choices": [
-     "Yourself",
-     "Your",
-     "Yours",
-     "You"
-    ],
-    "e": "所有格 Your。"
-   }
-  ]
- }
+    "Lv3": [
+      {
+        "q": "He hurt ( ).「彼は自分を傷つけた」",
+        "a": "himself",
+        "choices": [
+          "him",
+          "his",
+          "he",
+          "himself"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "( ) car is new, but ours is old.「あなたの」",
+        "a": "Your",
+        "choices": [
+          "Yourself",
+          "Your",
+          "Yours",
+          "You"
+        ],
+        "e": "所有格 Your（oursは「私たちのもの」）。",
+        "free": false
+      },
+      {
+        "q": "You hurt ( ) yesterday.（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "your",
+          "yours",
+          "you",
+          "yourself"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "We introduced ( ) to everyone.（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "we",
+          "our",
+          "us",
+          "ourselves"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "We hurt ( ) yesterday.（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "us",
+          "ourselves",
+          "our",
+          "we"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "They said to ( ), \"Well done!\"（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "they",
+          "their",
+          "them",
+          "themselves"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "She enjoyed ( ) at the party.（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "hers",
+          "her",
+          "she",
+          "herself"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "She taught ( ) English.（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "she",
+          "herself",
+          "her",
+          "hers"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "I enjoyed ( ) at the party.（私自身）",
+        "a": "myself",
+        "choices": [
+          "myself",
+          "my",
+          "me",
+          "I"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "The dog hurt ( ) while playing.（それ自身）",
+        "a": "itself",
+        "choices": [
+          "that",
+          "itself",
+          "it",
+          "its"
+        ],
+        "e": "主語と同じ→再帰代名詞 itself。",
+        "free": false
+      },
+      {
+        "q": "She hurt ( ) yesterday.（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "she",
+          "herself",
+          "her",
+          "hers"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "He taught ( ) English.（彼自身）",
+        "a": "himself",
+        "choices": [
+          "his",
+          "himself",
+          "him",
+          "he"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "They introduced ( ) to everyone.（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "them",
+          "they",
+          "themselves",
+          "their"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "The robot cleans ( ).（それ自身）",
+        "a": "itself",
+        "choices": [
+          "that",
+          "its",
+          "it",
+          "itself"
+        ],
+        "e": "主語と同じ→再帰代名詞 itself。",
+        "free": false
+      },
+      {
+        "q": "You looked at ( ) in the mirror.（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "you",
+          "your",
+          "yourself",
+          "yours"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "He made a promise to ( ).（彼自身）",
+        "a": "himself",
+        "choices": [
+          "him",
+          "his",
+          "himself",
+          "he"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "The door closed by ( ).（それ自身）",
+        "a": "itself",
+        "choices": [
+          "that",
+          "its",
+          "it",
+          "itself"
+        ],
+        "e": "主語と同じ→再帰代名詞 itself。",
+        "free": false
+      },
+      {
+        "q": "I looked at ( ) in the mirror.（私自身）",
+        "a": "myself",
+        "choices": [
+          "my",
+          "myself",
+          "me",
+          "I"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "I hurt ( ) yesterday.（私自身）",
+        "a": "myself",
+        "choices": [
+          "myself",
+          "me",
+          "I",
+          "my"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "He looked at ( ) in the mirror.（彼自身）",
+        "a": "himself",
+        "choices": [
+          "himself",
+          "he",
+          "his",
+          "him"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "They made a promise to ( ).（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "their",
+          "themselves",
+          "they",
+          "them"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "You believed in ( ).（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "you",
+          "your",
+          "yourself",
+          "yours"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "You enjoyed ( ) at the party.（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "your",
+          "yours",
+          "you",
+          "yourself"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "We taught ( ) English.（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "our",
+          "ourselves",
+          "we",
+          "us"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "You introduced ( ) to everyone.（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "you",
+          "your",
+          "yourself",
+          "yours"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "You should be proud of ( ).（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "yourself",
+          "yours",
+          "you",
+          "your"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "They hurt ( ) yesterday.（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "they",
+          "their",
+          "themselves",
+          "them"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "You taught ( ) English.（あなた自身）",
+        "a": "yourself",
+        "choices": [
+          "yours",
+          "yourself",
+          "your",
+          "you"
+        ],
+        "e": "主語と同じ→再帰代名詞 yourself。",
+        "free": false
+      },
+      {
+        "q": "We made a promise to ( ).（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "we",
+          "our",
+          "us",
+          "ourselves"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "She believed in ( ).（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "hers",
+          "her",
+          "she",
+          "herself"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "I believed in ( ).（私自身）",
+        "a": "myself",
+        "choices": [
+          "myself",
+          "I",
+          "my",
+          "me"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "He hurt ( ) yesterday.（彼自身）",
+        "a": "himself",
+        "choices": [
+          "him",
+          "his",
+          "he",
+          "himself"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "He said to ( ), \"Well done!\"（彼自身）",
+        "a": "himself",
+        "choices": [
+          "his",
+          "himself",
+          "him",
+          "he"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "The cat washed ( ).（それ自身）",
+        "a": "itself",
+        "choices": [
+          "that",
+          "it",
+          "itself",
+          "its"
+        ],
+        "e": "主語と同じ→再帰代名詞 itself。",
+        "free": false
+      },
+      {
+        "q": "I introduced ( ) to everyone.（私自身）",
+        "a": "myself",
+        "choices": [
+          "I",
+          "myself",
+          "me",
+          "my"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "We believed in ( ).（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "ourselves",
+          "we",
+          "us",
+          "our"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "I taught ( ) English.（私自身）",
+        "a": "myself",
+        "choices": [
+          "me",
+          "I",
+          "myself",
+          "my"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "We looked at ( ) in the mirror.（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "us",
+          "our",
+          "we",
+          "ourselves"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "He believed in ( ).（彼自身）",
+        "a": "himself",
+        "choices": [
+          "he",
+          "him",
+          "his",
+          "himself"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "She looked at ( ) in the mirror.（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "she",
+          "hers",
+          "herself",
+          "her"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "She introduced ( ) to everyone.（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "herself",
+          "hers",
+          "she",
+          "her"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "She should be proud of ( ).（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "her",
+          "herself",
+          "hers",
+          "she"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "They should be proud of ( ).（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "they",
+          "themselves",
+          "them",
+          "their"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "We enjoyed ( ) at the party.（私たち自身）",
+        "a": "ourselves",
+        "choices": [
+          "ourselves",
+          "us",
+          "we",
+          "our"
+        ],
+        "e": "主語と同じ→再帰代名詞 ourselves。",
+        "free": false
+      },
+      {
+        "q": "They looked at ( ) in the mirror.（彼ら自身）",
+        "a": "themselves",
+        "choices": [
+          "their",
+          "they",
+          "themselves",
+          "them"
+        ],
+        "e": "主語と同じ→再帰代名詞 themselves。",
+        "free": false
+      },
+      {
+        "q": "She made a promise to ( ).（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "hers",
+          "herself",
+          "her",
+          "she"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "He enjoyed ( ) at the party.（彼自身）",
+        "a": "himself",
+        "choices": [
+          "he",
+          "himself",
+          "his",
+          "him"
+        ],
+        "e": "主語と同じ→再帰代名詞 himself。",
+        "free": false
+      },
+      {
+        "q": "I said to ( ), \"Well done!\"（私自身）",
+        "a": "myself",
+        "choices": [
+          "myself",
+          "my",
+          "me",
+          "I"
+        ],
+        "e": "主語と同じ→再帰代名詞 myself。",
+        "free": false
+      },
+      {
+        "q": "She said to ( ), \"Well done!\"（彼女自身）",
+        "a": "herself",
+        "choices": [
+          "hers",
+          "she",
+          "her",
+          "herself"
+        ],
+        "e": "主語と同じ→再帰代名詞 herself。",
+        "free": false
+      },
+      {
+        "q": "The machine turned ( ) off.（それ自身）",
+        "a": "itself",
+        "choices": [
+          "itself",
+          "that",
+          "it",
+          "its"
+        ],
+        "e": "主語と同じ→再帰代名詞 itself。",
+        "free": false
+      }
+    ]
+  }
 }

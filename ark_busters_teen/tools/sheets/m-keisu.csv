@@ -1,21 +1,151 @@
-﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e
-levels.Lv1,x=3 のとき 2x は？,6,6,5,8,23,2×3=6。
-levels.Lv1,x=4 のとき x+5 は？,9,45,20,9,1,4+5=9。
-levels.Lv1,a×a を式で表すと？,a²,a2,a²,aa,2a,同じ文字の積→a²。
-levels.Lv1,3×x を式で表すと？,3x,x3,x³,3+x,3x,数を前に：3x。
-levels.Lv1,x+5=8 のとき x は？,3,13,3,2,40,x=8-5=3。
-levels.Lv1,x-4=6 のとき x は？,10,-2,24,10,2,x=6+4=10。
-levels.Lv2,2x+3x は？,5x,6x,5x²,6,5x,同類項：5x。
-levels.Lv2,5x-2x は？,3x,10x,3,7x,3x,同類項：3x。
-levels.Lv2,2(x+3) を展開すると？,2x+6,2x+6,2x+5,x+6,2x+3,分配法則。
-levels.Lv2,3(2x-1) を展開すると？,6x-3,5x-3,6x-3,6x-1,6x+3,分配法則。
-levels.Lv2,2x=10 のとき x は？,5,12,20,8,5,x=10÷2=5。
-levels.Lv2,3x=12 のとき x は？,4,9,15,4,36,x=12÷3=4。
-levels.Lv2,2x+1=7 のとき x は？,3,3,4,6,8,2x=6→x=3。
-levels.Lv2,3x-2=10 のとき x は？,4,4,36,12,3,3x=12→x=4。
-levels.Lv2,x/2=4 のとき x は？,8,2,16,8,6,x=4×2=8。
-levels.Lv2,-x=5 のとき x は？,-5,10,-5,0,5,両辺に-1→x=-5。
-levels.Lv3,2x+3=x+7 のとき x は？,4,2,4,5,10,x=4。
-levels.Lv3,5x-4=2x+5 のとき x は？,3,1,-3,3,9,3x=9→x=3。
-levels.Lv3,4(x-1)=8 のとき x は？,3,2,3,4,1,x-1=2→x=3。
-levels.Lv3,2(x+1)=x+5 のとき x は？,3,2,6,3,4,2x+2=x+5→x=3。
+﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e,free
+levels.Lv1,x=3 のとき 2x は？,6,6,5,8,23,2×3=6。,true
+levels.Lv1,x=4 のとき x+5 は？,9,45,20,9,1,4+5=9。,true
+levels.Lv1,a×a を式で表すと？,a²,a2,a²,aa,2a,同じ文字の積→a²。,true
+levels.Lv1,3×x を式で表すと？,3x,x3,x³,3+x,3x,数を前に：3x。,true
+levels.Lv1,x+5=8 のとき x は？,3,13,3,2,40,x=8-5=3。,true
+levels.Lv1,x-4=6 のとき x は？,10,-2,24,10,2,x=6+4=10。,true
+levels.Lv1,x=8 のとき 6x+1 は？,49,-49,50,48,49,6×8+1=49,true
+levels.Lv1,x=3 のとき 2x+2 は？,8,9,4,10,8,2×3+2=8,true
+levels.Lv1,x=2 のとき 2x+6 は？,10,15,10,13,11,2×2+6=10,true
+levels.Lv1,x=3 のとき 2x+3 は？,9,9,13,8,12,2×3+3=9,true
+levels.Lv1,x=8 のとき 5x+1 は？,41,45,41,46,37,5×8+1=41,true
+levels.Lv1,x=3 のとき 2x+4 は？,10,10,13,-10,9,2×3+4=10,true
+levels.Lv1,x=3 のとき x-5 は？,-2,-6,3,-2,1,3-5=-2,true
+levels.Lv1,x=2 のとき 3x は？,6,7,6,5,10,3×2=6,true
+levels.Lv1,x=6 のとき x-4 は？,2,6,2,5,3,6-4=2,true
+levels.Lv1,x=2 のとき 3x+1 は？,7,8,7,4,12,3×2+1=7,true
+levels.Lv1,x=8 のとき 7x は？,56,56,61,57,60,7×8=56,true
+levels.Lv1,x=2 のとき 4x+1 は？,9,5,-9,9,10,4×2+1=9,true
+levels.Lv1,x=6 のとき 7x は？,42,42,-42,40,38,7×6=42,true
+levels.Lv1,x=5 のとき x+2 は？,7,2,6,9,7,5+2=7,true
+levels.Lv1,x=2 のとき x-6 は？,-4,-5,-4,-7,-3,2-6=-4,true
+levels.Lv1,x=5 のとき x+6 は？,11,12,-11,10,11,5+6=11,true
+levels.Lv1,x=7 のとき x+5 は？,12,17,12,10,13,7+5=12,true
+levels.Lv1,x=8 のとき x-5 は？,3,7,-2,3,10,8-5=3,true
+levels.Lv1,x=8 のとき x+7 は？,15,16,15,13,18,8+7=15,true
+levels.Lv1,x=5 のとき 5x+1 は？,26,21,-10,26,27,5×5+1=26,true
+levels.Lv1,x=2 のとき 5x+1 は？,11,7,-11,13,11,5×2+1=11,true
+levels.Lv1,x=6 のとき 2x は？,12,17,12,7,10,2×6=12,true
+levels.Lv1,x=4 のとき x+7 は？,11,10,9,11,12,4+7=11,true
+levels.Lv1,x=5 のとき x-6 は？,-1,-1,2,4,0,5-6=-1,true
+levels.Lv1,x=2 のとき x-4 は？,-2,-3,-5,0,-2,2-4=-2,true
+levels.Lv1,x=7 のとき x-5 は？,2,2,6,-1,4,7-5=2,true
+levels.Lv1,x=5 のとき 2x+2 は？,12,12,11,14,13,2×5+2=12,true
+levels.Lv1,x=7 のとき 2x+6 は？,20,20,21,23,-20,2×7+6=20,true
+levels.Lv1,x=6 のとき 4x は？,24,24,26,10,27,4×6=24,true
+levels.Lv1,x=2 のとき 6x+1 は？,13,14,11,13,10,6×2+1=13,true
+levels.Lv1,x=8 のとき 2x は？,16,16,17,21,-16,2×8=16,true
+levels.Lv1,x=8 のとき x-6 は？,2,2,0,3,1,8-6=2,true
+levels.Lv1,x=7 のとき x-4 は？,3,7,3,-2,6,7-4=3,true
+levels.Lv1,x=6 のとき 2x+3 は？,15,-15,10,15,13,2×6+3=15,true
+levels.Lv1,x=8 のとき 5x は？,40,45,40,41,43,5×8=40,true
+levels.Lv1,x=2 のとき 2x は？,4,9,4,2,0,2×2=4,true
+levels.Lv1,x=4 のとき 5x は？,20,15,-10,20,19,5×4=20,true
+levels.Lv1,x=5 のとき 2x+6 は？,16,17,-10,13,16,2×5+6=16,true
+levels.Lv1,x=5 のとき 6x は？,30,29,31,35,30,6×5=30,true
+levels.Lv1,x=4 のとき 2x+1 は？,9,10,7,9,8,2×4+1=9,true
+levels.Lv1,x=7 のとき x+6 は？,13,13,15,10,16,7+6=13,true
+levels.Lv1,x=4 のとき 7x は？,28,28,31,32,24,7×4=28,true
+levels.Lv1,x=2 のとき 2x+2 は？,6,6,-6,10,7,2×2+2=6,true
+levels.Lv1,x=2 のとき x+2 は？,4,4,1,2,5,2+2=4,true
+levels.Lv2,2x+3x は？,5x,6x,5x²,6,5x,同類項：5x。,false
+levels.Lv2,5x-2x は？,3x,10x,3,7x,3x,同類項：3x。,false
+levels.Lv2,2(x+3) を展開すると？,2x+6,2x+6,2x+5,x+6,2x+3,分配法則。,false
+levels.Lv2,3(2x-1) を展開すると？,6x-3,5x-3,6x-3,6x-1,6x+3,分配法則。,false
+levels.Lv2,2x=10 のとき x は？,5,12,20,8,5,x=10÷2=5。,false
+levels.Lv2,3x=12 のとき x は？,4,9,15,4,36,x=12÷3=4。,false
+levels.Lv2,2x+1=7 のとき x は？,3,3,4,6,8,2x=6→x=3。,false
+levels.Lv2,3x-2=10 のとき x は？,4,4,36,12,3,3x=12→x=4。,false
+levels.Lv2,x/2=4 のとき x は？,8,2,16,8,6,x=4×2=8。,false
+levels.Lv2,-x=5 のとき x は？,-5,10,-5,0,5,両辺に-1→x=-5。,false
+levels.Lv2,4(x+6) を展開すると？,4x+24,4x+6,x+24,4x+10,4x+24,分配法則。,false
+levels.Lv2,3(x+1) を展開すると？,3x+3,3x+4,x+3,3x+1,3x+3,分配法則。,false
+levels.Lv2,5(x+4) を展開すると？,5x+20,5x+4,5x+9,x+20,5x+20,分配法則。,false
+levels.Lv2,4x+4x は？,8x,16x,8x²,8,8x,同類項は係数をたす。,false
+levels.Lv2,6(x+4) を展開すると？,6x+24,6x+10,6x+24,x+24,6x+4,分配法則。,false
+levels.Lv2,5x-3x は？,2x,2x,2,15x,2x²,同類項は係数をひく。,false
+levels.Lv2,6x-3x は？,3x,18x,3,3x²,3x,同類項は係数をひく。,false
+levels.Lv2,7(x+2) を展開すると？,7x+14,x+14,7x+9,7x+14,7x+2,分配法則。,false
+levels.Lv2,7x-2x は？,5x,5x²,5x,5,14x,同類項は係数をひく。,false
+levels.Lv2,2(x+1) を展開すると？,2x+2,2x+1,2x+3,2x+2,x+2,分配法則。,false
+levels.Lv2,6x+5x は？,11x,11x²,11x,30x,11,同類項は係数をたす。,false
+levels.Lv2,5x+4x は？,9x,9,9x,20x,9x²,同類項は係数をたす。,false
+levels.Lv2,7(x+6) を展開すると？,7x+42,x+42,7x+13,7x+6,7x+42,分配法則。,false
+levels.Lv2,5x+x は？,6x,5x,6,6x²,6x,同類項は係数をたす。,false
+levels.Lv2,5x-x は？,4x,4x²,4,4x,5x,同類項は係数をひく。,false
+levels.Lv2,6x-5x は？,x,1,x²,30x,x,同類項は係数をひく。,false
+levels.Lv2,3x+2x は？,5x,6x,5x,5x²,5,同類項は係数をたす。,false
+levels.Lv2,3x+3x は？,6x,6x,6x²,6,9x,同類項は係数をたす。,false
+levels.Lv2,7(x+5) を展開すると？,7x+35,7x+35,7x+12,x+35,7x+5,分配法則。,false
+levels.Lv2,3x-x は？,2x,2x²,3x,2,2x,同類項は係数をひく。,false
+levels.Lv2,5(x+1) を展開すると？,5x+5,5x+1,x+5,5x+6,5x+5,分配法則。,false
+levels.Lv2,6x-4x は？,2x,2,2x²,24x,2x,同類項は係数をひく。,false
+levels.Lv2,3x+6x は？,9x,18x,9x²,9,9x,同類項は係数をたす。,false
+levels.Lv2,6x+x は？,7x,6x,7x,7,7x²,同類項は係数をたす。,false
+levels.Lv2,2(x+6) を展開すると？,2x+12,x+12,2x+12,2x+8,2x+6,分配法則。,false
+levels.Lv2,2x+4x は？,6x,6x²,8x,6x,6,同類項は係数をたす。,false
+levels.Lv2,2x+6x は？,8x,8x²,8,8x,12x,同類項は係数をたす。,false
+levels.Lv2,6x-x は？,5x,5x²,5x,6x,5,同類項は係数をひく。,false
+levels.Lv2,7x+3x は？,10x,10,10x,21x,10x²,同類項は係数をたす。,false
+levels.Lv2,5(x+2) を展開すると？,5x+10,5x+7,5x+10,5x+2,x+10,分配法則。,false
+levels.Lv2,5x+3x は？,8x,8x,8x²,8,15x,同類項は係数をたす。,false
+levels.Lv2,2x+x は？,3x,3x²,3x,2x,3,同類項は係数をたす。,false
+levels.Lv2,4x-2x は？,2x,2x²,2,8x,2x,同類項は係数をひく。,false
+levels.Lv2,3(x+6) を展開すると？,3x+18,x+18,3x+9,3x+6,3x+18,分配法則。,false
+levels.Lv2,4(x+4) を展開すると？,4x+16,x+16,4x+4,4x+16,4x+8,分配法則。,false
+levels.Lv2,6x+4x は？,10x,10,10x²,24x,10x,同類項は係数をたす。,false
+levels.Lv2,7(x+1) を展開すると？,7x+7,x+7,7x+1,7x+7,7x+8,分配法則。,false
+levels.Lv2,7(x+3) を展開すると？,7x+21,7x+10,x+21,7x+21,7x+3,分配法則。,false
+levels.Lv2,3(x+2) を展開すると？,3x+6,3x+6,3x+5,x+6,3x+2,分配法則。,false
+levels.Lv2,3x+5x は？,8x,8,8x²,15x,8x,同類項は係数をたす。,false
+levels.Lv3,2x+3=x+7 のとき x は？,4,2,4,5,10,x=4。,false
+levels.Lv3,5x-4=2x+5 のとき x は？,3,1,-3,3,9,3x=9→x=3。,false
+levels.Lv3,4(x-1)=8 のとき x は？,3,2,3,4,1,x-1=2→x=3。,false
+levels.Lv3,2(x+1)=x+5 のとき x は？,3,2,6,3,4,2x+2=x+5→x=3。,false
+levels.Lv3,3(x-1)=12 のとき x は？,5,10,5,4,0,x-1=4→x=5。,false
+levels.Lv3,4x+5=2x+13 のとき x は？,4,9,4,8,6,2x=8→x=4。,false
+levels.Lv3,5x+4=2x+16 のとき x は？,4,3,-1,4,5,3x=12→x=4。,false
+levels.Lv3,3x+3=x+9 のとき x は？,3,1,3,6,4,2x=6→x=3。,false
+levels.Lv3,4(x-1)=12 のとき x は？,4,9,4,10,8,x-1=3→x=4。,false
+levels.Lv3,5x+6=4x+14 のとき x は？,8,12,8,-8,7,x=8→x=8。,false
+levels.Lv3,5x+6=2x+27 のとき x は？,7,12,5,8,7,3x=21→x=7。,false
+levels.Lv3,5x+4=x+12 のとき x は？,2,-3,-10,-1,2,4x=8→x=2。,false
+levels.Lv3,5(x-1)=25 のとき x は？,6,4,3,1,6,x-1=5→x=6。,false
+levels.Lv3,6x+1=2x+9 のとき x は？,2,2,3,6,-2,4x=8→x=2。,false
+levels.Lv3,3x+4=2x+6 のとき x は？,2,3,6,-3,2,x=2→x=2。,false
+levels.Lv3,4x+1=x+7 のとき x は？,2,2,3,0,7,3x=6→x=2。,false
+levels.Lv3,5x+1=x+17 のとき x は？,4,0,1,4,10,4x=16→x=4。,false
+levels.Lv3,2x+1=x+4 のとき x は？,3,7,-2,3,8,x=3→x=3。,false
+levels.Lv3,6x+1=4x+7 のとき x は？,3,3,10,1,8,2x=6→x=3。,false
+levels.Lv3,5x+4=3x+12 のとき x は？,4,0,5,4,9,2x=8→x=4。,false
+levels.Lv3,4(x-1)=20 のとき x は？,6,7,4,5,6,x-1=5→x=6。,false
+levels.Lv3,2x+2=x+10 のとき x は？,8,5,10,8,3,x=8→x=8。,false
+levels.Lv3,5(x-1)=20 のとき x は？,5,5,8,4,7,x-1=4→x=5。,false
+levels.Lv3,4x+2=3x+9 のとき x は？,7,8,9,7,11,x=7→x=7。,false
+levels.Lv3,3x+5=2x+11 のとき x は？,6,8,3,-6,6,x=6→x=6。,false
+levels.Lv3,5x+6=3x+16 のとき x は？,5,5,9,-10,6,2x=10→x=5。,false
+levels.Lv3,4x+6=x+24 のとき x は？,6,6,11,1,-6,3x=18→x=6。,false
+levels.Lv3,6x+6=3x+24 のとき x は？,6,5,6,10,7,3x=18→x=6。,false
+levels.Lv3,5x+1=2x+25 のとき x は？,8,5,8,6,7,3x=24→x=8。,false
+levels.Lv3,5(x-1)=15 のとき x は？,4,4,0,-1,6,x-1=3→x=4。,false
+levels.Lv3,6x+5=4x+19 のとき x は？,7,8,10,-10,7,2x=14→x=7。,false
+levels.Lv3,6x+1=5x+9 のとき x は？,8,5,9,8,4,x=8→x=8。,false
+levels.Lv3,6x+4=2x+20 のとき x は？,4,0,2,4,9,4x=16→x=4。,false
+levels.Lv3,6x+6=5x+12 のとき x は？,6,7,4,6,10,x=6→x=6。,false
+levels.Lv3,6x+6=x+41 のとき x は？,7,10,7,6,11,5x=35→x=7。,false
+levels.Lv3,5x+6=4x+13 のとき x は？,7,11,10,3,7,x=7→x=7。,false
+levels.Lv3,5x+6=2x+15 のとき x は？,3,5,3,1,-1,3x=9→x=3。,false
+levels.Lv3,4x+6=2x+20 のとき x は？,7,8,7,10,-10,2x=14→x=7。,false
+levels.Lv3,6x+2=x+12 のとき x は？,2,2,-10,0,10,5x=10→x=2。,false
+levels.Lv3,4x+3=x+27 のとき x は？,8,6,8,10,5,3x=24→x=8。,false
+levels.Lv3,2(x-1)=12 のとき x は？,7,8,10,3,7,x-1=6→x=7。,false
+levels.Lv3,6x+2=2x+22 のとき x は？,5,0,1,5,6,4x=20→x=5。,false
+levels.Lv3,5x+5=3x+17 のとき x は？,6,10,7,6,-6,2x=12→x=6。,false
+levels.Lv3,6x+4=5x+11 のとき x は？,7,12,-7,5,7,x=7→x=7。,false
+levels.Lv3,2x+1=x+7 のとき x は？,6,6,-6,5,2,x=6→x=6。,false
+levels.Lv3,4x+1=3x+5 のとき x は？,4,8,2,4,5,x=4→x=4。,false
+levels.Lv3,6x+6=5x+9 のとき x は？,3,6,7,8,3,x=3→x=3。,false
+levels.Lv3,6x+5=2x+29 のとき x は？,6,-10,10,11,6,4x=24→x=6。,false
+levels.Lv3,3(x-1)=9 のとき x は？,4,4,3,0,7,x-1=3→x=4。,false
+levels.Lv3,4(x-1)=4 のとき x は？,2,-2,3,2,0,x-1=1→x=2。,false

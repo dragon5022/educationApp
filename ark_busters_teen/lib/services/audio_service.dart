@@ -22,6 +22,10 @@ class AudioService {
   final AudioPlayer _bgm = AudioPlayer();
   final Map<String, AudioPlayer> _sfx = {};
 
+  /// 詩・奏 character lines (assets/audio/charvoice); own player so a line
+  /// never cuts an effect and a new line replaces the previous one.
+  final AudioPlayer _char = AudioPlayer();
+
   /// Speaker button state (web `__bgmOn`, default on).
   final ValueNotifier<bool> bgmOn = ValueNotifier(true);
 
@@ -95,6 +99,20 @@ class AudioService {
       _effect(go ? 'audio/sfx/beep1200.wav' : 'audio/sfx/beep800.wav');
   Future<void> playBoom() => _effect('audio/sfx/boom.wav');
   Future<void> playVictory() => _effect('audio/sfx/victory.wav');
+
+  /// Plays `audio/charvoice/<chara>_<line>.mp3` after [delay] (so it follows
+  /// the effect it reacts to). Lines per character: see the README; a
+  /// missing clip is skipped silently.
+  Future<void> playCharVoice(String chara, String line, {Duration delay = Duration.zero}) async {
+    await init();
+    if (delay > Duration.zero) await Future<void>.delayed(delay);
+    try {
+      await _char.stop();
+      await _char.play(AssetSource('audio/charvoice/${chara}_$line.mp3'), volume: 1);
+    } catch (e) {
+      debugPrint('charvoice ${chara}_$line failed: $e');
+    }
+  }
 
   Future<void> _effect(String asset) async {
     await init();

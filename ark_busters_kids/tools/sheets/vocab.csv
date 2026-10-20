@@ -1,211 +1,1401 @@
-﻿_path,id,w,ja,lv,img,voice
-items,1,cafe,きっさてん,4,images/vocab/001.webp,audio/voice/voca/1.mp3
-items,2,cake,ケーキ,5,images/vocab/002.webp,audio/voice/voca/2.mp3
-items,3,dress,ワンピース,4,images/vocab/003.webp,audio/voice/voca/3.mp3
-items,4,two,2,5,images/vocab/004.webp,audio/voice/voca/4.mp3
-items,5,probably,たぶん,3,,audio/voice/voca/5.mp3
-items,6,library,としょしつ,4,images/vocab/006.webp,audio/voice/voca/6.mp3
-items,7,pilot,そうじゅうし,4,images/vocab/007.webp,audio/voice/voca/7.mp3
-items,8,finish,終える,4,images/vocab/008.webp,audio/voice/voca/8.mp3
-items,9,mask,マスク,4,images/vocab/009.webp,audio/voice/voca/9.mp3
-items,10,thirteen,13,5,images/vocab/010.webp,audio/voice/voca/10.mp3
-items,11,backpack,ランドセル,5,images/vocab/011.webp,audio/voice/voca/11.mp3
-items,12,second,2nd,4,images/vocab/012.webp,audio/voice/voca/12.mp3
-items,13,since,〜以来,3,,audio/voice/voca/13.mp3
-items,14,possible,可能な,3,,audio/voice/voca/14.mp3
-items,15,boat,ボート,5,images/vocab/015.webp,audio/voice/voca/15.mp3
-items,16,watch out,気をつけて,4,images/vocab/016.webp,audio/voice/voca/16.mp3
-items,17,run,走る,5,images/vocab/017.webp,audio/voice/voca/17.mp3
-items,18,chance,機会,3,,audio/voice/voca/18.mp3
-items,19,call back,電話をかけなおす,3,images/vocab/019.webp,audio/voice/voca/19.mp3
-items,20,arm,うで,5,images/vocab/020.webp,audio/voice/voca/20.mp3
-items,21,modern,現代の,3,,audio/voice/voca/21.mp3
-items,22,neck,くび,4,images/vocab/022.webp,audio/voice/voca/22.mp3
-items,23,teeth,は,5,images/vocab/023.webp,audio/voice/voca/23.mp3
-items,24,twelve,12,5,images/vocab/024.webp,audio/voice/voca/24.mp3
-items,25,uncle,おじさん,4,images/vocab/025.webp,audio/voice/voca/25.mp3
-items,26,shop,お店,5,images/vocab/026.webp,audio/voice/voca/26.mp3
-items,27,cross,渡る,4,images/vocab/027.webp,audio/voice/voca/27.mp3
-items,28,short,背が低い,5,images/vocab/028.webp,audio/voice/voca/28.mp3
-items,29,popular,にんきもの,4,images/vocab/029.webp,audio/voice/voca/29.mp3
-items,30,convenience store,コンビニ,4,images/vocab/030.webp,audio/voice/voca/30.mp3
-items,31,protect,守る,3,,audio/voice/voca/31.mp3
-items,32,succeed,成功する,3,,audio/voice/voca/32.mp3
-items,33,city hall,しゃくしょ,3,images/vocab/033.webp,audio/voice/voca/33.mp3
-items,34,hope,望む,3,,audio/voice/voca/34.mp3
-items,35,crunchy,カリカリ,3,images/vocab/035.webp,audio/voice/voca/35.mp3
-items,36,important,重要な,3,,audio/voice/voca/36.mp3
-items,37,repair,修理する,3,,audio/voice/voca/37.mp3
-items,38,calendar,カレンダー,4,images/vocab/038.webp,audio/voice/voca/38.mp3
-items,39,dentist,はいしゃ,3,images/vocab/039.webp,audio/voice/voca/39.mp3
-items,40,nature,自然,3,,audio/voice/voca/40.mp3
-items,41,disappear,消える,3,,audio/voice/voca/41.mp3
-items,42,monorail,モノレール,3,images/vocab/042.webp,audio/voice/voca/42.mp3
-items,43,slim,ほそい,4,images/vocab/043.webp,audio/voice/voca/43.mp3
-items,44,first,1st,4,images/vocab/044.webp,audio/voice/voca/44.mp3
-items,45,teacher,せんせい,5,images/vocab/045.webp,audio/voice/voca/45.mp3
-items,46,study,勉強する,5,images/vocab/046.webp,audio/voice/voca/46.mp3
-items,47,jeans,ジーンズ,5,images/vocab/047.webp,audio/voice/voca/47.mp3
-items,48,suddenly,突然,3,,audio/voice/voca/48.mp3
-items,49,biology,せいぶつ,3,images/vocab/049.webp,audio/voice/voca/49.mp3
-items,50,give up,あきらめる,3,images/vocab/050.webp,audio/voice/voca/50.mp3
-items,51,custom,習慣,3,,audio/voice/voca/51.mp3
-items,52,marker,マーカー,4,images/vocab/052.webp,audio/voice/voca/52.mp3
-items,53,March,3月,5,images/vocab/053.webp,audio/voice/voca/53.mp3
-items,54,reason,理由,3,,audio/voice/voca/54.mp3
-items,55,expensive,高価な,4,images/vocab/055.webp,audio/voice/voca/55.mp3
-items,56,November,11月,5,images/vocab/056.webp,audio/voice/voca/56.mp3
-items,57,towel,てぬぐい,4,images/vocab/057.webp,audio/voice/voca/57.mp3
-items,58,hear about,～のうわさを聞く,3,images/vocab/058.webp,audio/voice/voca/58.mp3
-items,59,ship,ふね,5,images/vocab/059.webp,audio/voice/voca/59.mp3
-items,60,old,年をとった,5,images/vocab/060.webp,audio/voice/voca/60.mp3
-items,61,by bus,バスで,4,images/vocab/061.webp,audio/voice/voca/61.mp3
-items,62,a glass of,1杯の,4,images/vocab/062.webp,audio/voice/voca/62.mp3
-items,63,make friends,友達になる,4,images/vocab/063.webp,audio/voice/voca/63.mp3
-items,64,temple,お寺,4,images/vocab/064.webp,audio/voice/voca/64.mp3
-items,65,Saturday,土曜日,5,images/vocab/065.webp,audio/voice/voca/65.mp3
-items,66,imagine,想像する,3,,audio/voice/voca/66.mp3
-items,67,remember,覚えている,3,images/vocab/067.webp,audio/voice/voca/67.mp3
-items,68,sixteen,16,5,images/vocab/068.webp,audio/voice/voca/68.mp3
-items,69,geography,ちり,4,images/vocab/069.webp,audio/voice/voca/69.mp3
-items,70,eighth,8th,4,images/vocab/070.webp,audio/voice/voca/70.mp3
-items,71,improve,改善する,3,,audio/voice/voca/71.mp3
-items,72,fat,ふとい,4,images/vocab/072.webp,audio/voice/voca/72.mp3
-items,73,three,3,5,images/vocab/073.webp,audio/voice/voca/73.mp3
-items,74,all day,一日中,3,images/vocab/074.webp,audio/voice/voca/74.mp3
-items,75,reduce,減らす,3,,audio/voice/voca/75.mp3
-items,76,heavy,重い,4,images/vocab/076.webp,audio/voice/voca/76.mp3
-items,77,dirty,きたない,4,images/vocab/077.webp,audio/voice/voca/77.mp3
-items,78,ninety,90,5,images/vocab/078.webp,audio/voice/voca/78.mp3
-items,79,lonely,さびしい,4,images/vocab/079.webp,audio/voice/voca/79.mp3
-items,80,ten,10,5,images/vocab/080.webp,audio/voice/voca/80.mp3
-items,81,new,新しい,5,images/vocab/081.webp,audio/voice/voca/81.mp3
-items,82,in the park,公園で,4,images/vocab/082.webp,audio/voice/voca/82.mp3
-items,83,loud,うるさい,4,images/vocab/083.webp,audio/voice/voca/83.mp3
-items,84,pull,引く,4,images/vocab/084.webp,audio/voice/voca/84.mp3
-items,85,Monday,月曜日,5,images/vocab/085.webp,audio/voice/voca/85.mp3
-items,86,pizza,ピザ,5,images/vocab/086.webp,audio/voice/voca/86.mp3
-items,87,stadium,競技場,3,images/vocab/087.webp,audio/voice/voca/87.mp3
-items,88,angry,怒っている,4,images/vocab/088.webp,audio/voice/voca/88.mp3
-items,89,speak,話す,5,images/vocab/089.webp,audio/voice/voca/89.mp3
-items,90,clock,とけい,5,images/vocab/090.webp,audio/voice/voca/90.mp3
-items,91,talk to,話しかける,3,images/vocab/091.webp,audio/voice/voca/91.mp3
-items,92,agree,賛成する,3,,audio/voice/voca/92.mp3
-items,93,hamburger,ハンバーガー,5,images/vocab/093.webp,audio/voice/voca/93.mp3
-items,94,bank,ぎんこう,4,images/vocab/094.webp,audio/voice/voca/94.mp3
-items,95,seventeen,17,5,images/vocab/095.webp,audio/voice/voca/95.mp3
-items,96,lamp,でんきスタンド,4,images/vocab/096.webp,audio/voice/voca/96.mp3
-items,97,painter,えかき,4,images/vocab/097.webp,audio/voice/voca/97.mp3
-items,98,ruler,ものさし,5,images/vocab/098.webp,audio/voice/voca/98.mp3
-items,99,February,2月,5,images/vocab/099.webp,audio/voice/voca/99.mp3
-items,100,difficult,むずかしい,5,images/vocab/100.webp,audio/voice/voca/100.mp3
-items,101,artist,げいじゅつか,3,images/vocab/101.webp,audio/voice/voca/101.mp3
-items,102,scarf,マフラー,4,images/vocab/102.webp,audio/voice/voca/102.mp3
-items,103,chair,いす,5,images/vocab/103.webp,audio/voice/voca/103.mp3
-items,104,energy,エネルギー,3,,audio/voice/voca/104.mp3
-items,105,surprised,おどろいた,3,,audio/voice/voca/105.mp3
-items,106,what kind of,どんな種類の～,3,images/vocab/106.webp,audio/voice/voca/106.mp3
-items,107,thirty,30,5,images/vocab/107.webp,audio/voice/voca/107.mp3
-items,108,mirror,かがみ,4,images/vocab/108.webp,audio/voice/voca/108.mp3
-items,109,brain,のうみそ,3,images/vocab/109.webp,audio/voice/voca/109.mp3
-items,110,kick,蹴る,4,images/vocab/110.webp,audio/voice/voca/110.mp3
-items,111,friend,ともだち,5,images/vocab/111.webp,audio/voice/voca/111.mp3
-items,112,accept,受け入れる,3,,audio/voice/voca/112.mp3
-items,113,writer,さっか,4,images/vocab/113.webp,audio/voice/voca/113.mp3
-items,114,hot,あつい,5,images/vocab/114.webp,audio/voice/voca/114.mp3
-items,115,fog,きり,3,images/vocab/115.webp,audio/voice/voca/115.mp3
-items,116,Sunday,日曜日,5,images/vocab/116.webp,audio/voice/voca/116.mp3
-items,117,cheek,ほほ,4,images/vocab/117.webp,audio/voice/voca/117.mp3
-items,118,decision,決定,3,,audio/voice/voca/118.mp3
-items,119,cup,コップ,5,images/vocab/119.webp,audio/voice/voca/119.mp3
-items,120,April,4月,5,images/vocab/120.webp,audio/voice/voca/120.mp3
-items,121,cap,キャップ,5,images/vocab/121.webp,audio/voice/voca/121.mp3
-items,122,sea,うみ,5,images/vocab/122.webp,audio/voice/voca/122.mp3
-items,123,sleep,眠る,5,images/vocab/123.webp,audio/voice/voca/123.mp3
-items,124,habit,くせ,3,,audio/voice/voca/124.mp3
-items,125,young,若い,5,images/vocab/125.webp,audio/voice/voca/125.mp3
-items,126,beach,すなはま,4,images/vocab/126.webp,audio/voice/voca/126.mp3
-items,127,rich,お金もち,4,images/vocab/127.webp,audio/voice/voca/127.mp3
-items,128,clock,とけい,5,images/vocab/128.webp,audio/voice/voca/128.mp3
-items,129,sleepy,ねむい,4,images/vocab/129.webp,audio/voice/voca/129.mp3
-items,130,pen,ペン,5,images/vocab/130.webp,audio/voice/voca/130.mp3
-items,131,knowledge,知識,3,,audio/voice/voca/131.mp3
-items,132,seed,たね,3,images/vocab/132.webp,audio/voice/voca/132.mp3
-items,133,wall,かべ,4,images/vocab/133.webp,audio/voice/voca/133.mp3
-items,134,fifteen,15,5,images/vocab/134.webp,audio/voice/voca/134.mp3
-items,135,ugly,みにくい,3,images/vocab/135.webp,audio/voice/voca/135.mp3
-items,136,moral,どうとく,4,images/vocab/136.webp,audio/voice/voca/136.mp3
-items,137,tram,ろめんでんしゃ,3,images/vocab/137.webp,audio/voice/voca/137.mp3
-items,138,make a cake,ケーキを作る,4,images/vocab/138.webp,audio/voice/voca/138.mp3
-items,139,communicate,伝え合う,3,,audio/voice/voca/139.mp3
-items,140,awake,目がさえてる,4,images/vocab/140.webp,audio/voice/voca/140.mp3
-items,141,recently,最近,3,,audio/voice/voca/141.mp3
-items,142,prefer,より好む,3,,audio/voice/voca/142.mp3
-items,143,swim,泳ぐ,5,images/vocab/143.webp,audio/voice/voca/143.mp3
-items,144,eighty,80,5,images/vocab/144.webp,audio/voice/voca/144.mp3
-items,145,take a test,テストを受ける,4,images/vocab/145.webp,audio/voice/voca/145.mp3
-items,146,natural,自然の,3,,audio/voice/voca/146.mp3
-items,147,experience,経験,3,,audio/voice/voca/147.mp3
-items,148,talk about,～について話す,3,images/vocab/148.webp,audio/voice/voca/148.mp3
-items,149,bullet train,しんかんせん,4,images/vocab/149.webp,audio/voice/voca/149.mp3
-items,150,warm,あたたかい,5,images/vocab/150.webp,audio/voice/voca/150.mp3
-items,151,perhaps,もしかすると,3,,audio/voice/voca/151.mp3
-items,152,prepare,準備する,3,,audio/voice/voca/152.mp3
-items,153,teacher,せんせい,5,images/vocab/153.webp,audio/voice/voca/153.mp3
-items,154,watch,うでどけい,4,images/vocab/154.webp,audio/voice/voca/154.mp3
-items,155,serious,真剣な,3,,audio/voice/voca/155.mp3
-items,156,father,おとうさん,5,images/vocab/156.webp,audio/voice/voca/156.mp3
-items,157,love,大好き,5,images/vocab/157.webp,audio/voice/voca/157.mp3
-items,158,comfortable,快適な,3,,audio/voice/voca/158.mp3
-items,159,at home,家で,4,images/vocab/159.webp,audio/voice/voca/159.mp3
-items,160,look forward to,～を楽しみにする,3,images/vocab/160.webp,audio/voice/voca/160.mp3
-items,161,rice,ごはん,5,images/vocab/161.webp,audio/voice/voca/161.mp3
-items,162,chair,いす,5,images/vocab/162.webp,audio/voice/voca/162.mp3
-items,163,bookstore,本や,4,images/vocab/163.webp,audio/voice/voca/163.mp3
-items,164,write about,～について書く,4,images/vocab/164.webp,audio/voice/voca/164.mp3
-items,165,a few,少しの,3,images/vocab/165.webp,audio/voice/voca/165.mp3
-items,166,look around,見まわす,3,images/vocab/166.webp,audio/voice/voca/166.mp3
-items,167,one,1,5,images/vocab/167.webp,audio/voice/voca/167.mp3
-items,168,public,公の,3,,audio/voice/voca/168.mp3
-items,169,tell the truth,本当のことを言う,3,images/vocab/169.webp,audio/voice/voca/169.mp3
-items,170,juice,ジュース,5,images/vocab/170.webp,audio/voice/voca/170.mp3
-items,171,get on,乗る,4,images/vocab/171.webp,audio/voice/voca/171.mp3
-items,172,nineteen,19,5,images/vocab/172.webp,audio/voice/voca/172.mp3
-items,173,in the morning,午前中に,4,images/vocab/173.webp,audio/voice/voca/173.mp3
-items,174,mother,おかあさん,5,images/vocab/174.webp,audio/voice/voca/174.mp3
-items,175,ethics,りんり,3,images/vocab/175.webp,audio/voice/voca/175.mp3
-items,176,forty,40,5,images/vocab/176.webp,audio/voice/voca/176.mp3
-items,177,writing,かき,4,images/vocab/177.webp,audio/voice/voca/177.mp3
-items,178,nurse,かんごし,4,images/vocab/178.webp,audio/voice/voca/178.mp3
-items,179,summer,なつ,5,images/vocab/179.webp,audio/voice/voca/179.mp3
-items,180,shoes,くつ,5,images/vocab/180.webp,audio/voice/voca/180.mp3
-items,181,forest,もり,4,images/vocab/181.webp,audio/voice/voca/181.mp3
-items,182,danger,危険,3,,audio/voice/voca/182.mp3
-items,183,July,7月,5,images/vocab/183.webp,audio/voice/voca/183.mp3
-items,184,zoo,動物園,4,images/vocab/184.webp,audio/voice/voca/184.mp3
-items,185,nail,つめ,4,images/vocab/185.webp,audio/voice/voca/185.mp3
-items,186,socks,くつした,5,images/vocab/186.webp,audio/voice/voca/186.mp3
-items,187,submarine,せんすいかん,4,images/vocab/187.webp,audio/voice/voca/187.mp3
-items,188,hear from,～な連絡がある,3,images/vocab/188.webp,audio/voice/voca/188.mp3
-items,189,crayon,クレヨン,4,images/vocab/189.webp,audio/voice/voca/189.mp3
-items,190,man,おとこのひと,5,images/vocab/190.webp,audio/voice/voca/190.mp3
-items,191,receive,受け取る,3,images/vocab/191.webp,audio/voice/voca/191.mp3
-items,192,bread,パン,5,images/vocab/192.webp,audio/voice/voca/192.mp3
-items,193,future,未来,3,,audio/voice/voca/193.mp3
-items,194,sister,しまい,5,images/vocab/194.webp,audio/voice/voca/194.mp3
-items,195,May,5月,5,images/vocab/195.webp,audio/voice/voca/195.mp3
-items,196,desk,つくえ,5,images/vocab/196.webp,audio/voice/voca/196.mp3
-items,197,shampoo,シャンプー,4,images/vocab/197.webp,audio/voice/voca/197.mp3
-items,198,share,分け合う,3,images/vocab/198.webp,audio/voice/voca/198.mp3
-items,199,pass,通り過ぎる,3,images/vocab/199.webp,audio/voice/voca/199.mp3
-items,200,physics,ぶつり,3,images/vocab/200.webp,audio/voice/voca/200.mp3
-items,201,reading,よみ,4,images/vocab/201.webp,audio/voice/voca/201.mp3
-items,202,almost,ほとんど,3,,audio/voice/voca/202.mp3
-items,203,milk,ぎゅうにゅう,5,images/vocab/203.webp,audio/voice/voca/203.mp3
-items,204,believe,信じる,3,,audio/voice/voca/204.mp3
-items,205,teach,教える,4,images/vocab/205.webp,audio/voice/voca/205.mp3
-items,206,put on,身につける,4,images/vocab/206.webp,audio/voice/voca/206.mp3
-items,207,square,四角い,4,images/vocab/207.webp,audio/voice/voca/207.mp3
-items,208,brush,磨く,4,images/vocab/208.webp,audio/voice/voca/208.mp3
-items,209,a cup of,コップ1杯の,4,images/vocab/209.webp,audio/voice/voca/209.mp3
-items,210,depend,たよる,3,,audio/voice/voca/210.mp3
+﻿_path,id,w,ja,lv,img,voice,free
+items,1,cake,ケーキ,5,images/vocab/002.webp,audio/voice/voca/KIDS_V_0001.mp3,true
+items,2,two,2,5,images/vocab/004.webp,audio/voice/voca/KIDS_V_0002.mp3,true
+items,3,thirteen,13,5,images/vocab/010.webp,audio/voice/voca/KIDS_V_0003.mp3,true
+items,4,camera,カメラ,5,,audio/voice/voca/KIDS_V_0004.mp3,true
+items,5,boat,ボート,5,images/vocab/015.webp,audio/voice/voca/KIDS_V_0005.mp3,true
+items,6,run,走る,5,images/vocab/017.webp,audio/voice/voca/KIDS_V_0006.mp3,true
+items,7,arm,うで,5,images/vocab/020.webp,audio/voice/voca/KIDS_V_0007.mp3,true
+items,8,teeth,は（歯）,5,images/vocab/023.webp,audio/voice/voca/KIDS_V_0008.mp3,true
+items,9,twelve,12,5,images/vocab/024.webp,audio/voice/voca/KIDS_V_0009.mp3,true
+items,10,shop,お店,5,images/vocab/026.webp,audio/voice/voca/KIDS_V_0010.mp3,true
+items,11,short,背が低い,5,images/vocab/028.webp,audio/voice/voca/KIDS_V_0011.mp3,true
+items,12,teacher,せんせい,5,images/vocab/153.webp,audio/voice/voca/KIDS_V_0012.mp3,true
+items,13,study,勉強する,5,images/vocab/046.webp,audio/voice/voca/KIDS_V_0013.mp3,true
+items,14,jeans,ジーンズ,5,images/vocab/047.webp,audio/voice/voca/KIDS_V_0014.mp3,true
+items,15,March,3月,5,images/vocab/053.webp,audio/voice/voca/KIDS_V_0015.mp3,true
+items,16,November,11月,5,images/vocab/056.webp,audio/voice/voca/KIDS_V_0016.mp3,true
+items,17,ship,ふね,5,images/vocab/059.webp,audio/voice/voca/KIDS_V_0017.mp3,true
+items,18,old,年をとった,5,images/vocab/060.webp,audio/voice/voca/KIDS_V_0018.mp3,true
+items,19,Saturday,土曜日,5,images/vocab/065.webp,audio/voice/voca/KIDS_V_0019.mp3,true
+items,20,sixteen,16,5,images/vocab/068.webp,audio/voice/voca/KIDS_V_0020.mp3,true
+items,21,three,3,5,images/vocab/073.webp,audio/voice/voca/KIDS_V_0021.mp3,true
+items,22,ninety,90,5,images/vocab/078.webp,audio/voice/voca/KIDS_V_0022.mp3,true
+items,23,ten,10,5,images/vocab/080.webp,audio/voice/voca/KIDS_V_0023.mp3,true
+items,24,new,新しい,5,images/vocab/081.webp,audio/voice/voca/KIDS_V_0024.mp3,true
+items,25,Monday,月曜日,5,images/vocab/085.webp,audio/voice/voca/KIDS_V_0025.mp3,true
+items,26,pizza,ピザ,5,images/vocab/086.webp,audio/voice/voca/KIDS_V_0026.mp3,true
+items,27,speak,話す,5,images/vocab/089.webp,audio/voice/voca/KIDS_V_0027.mp3,true
+items,28,clock,とけい,5,images/vocab/128.webp,audio/voice/voca/KIDS_V_0028.mp3,true
+items,29,hamburger,ハンバーガー,5,images/vocab/093.webp,audio/voice/voca/KIDS_V_0029.mp3,true
+items,30,seventeen,17,5,images/vocab/095.webp,audio/voice/voca/KIDS_V_0030.mp3,true
+items,31,ruler,ものさし,5,images/vocab/098.webp,audio/voice/voca/KIDS_V_0031.mp3,true
+items,32,February,2月,5,images/vocab/099.webp,audio/voice/voca/KIDS_V_0032.mp3,true
+items,33,difficult,むずかしい,5,images/vocab/100.webp,audio/voice/voca/KIDS_V_0033.mp3,true
+items,34,chair,いす,5,images/vocab/162.webp,audio/voice/voca/KIDS_V_0034.mp3,true
+items,35,thirty,30,5,images/vocab/107.webp,audio/voice/voca/KIDS_V_0035.mp3,true
+items,36,friend,ともだち,5,images/vocab/111.webp,audio/voice/voca/KIDS_V_0036.mp3,true
+items,37,hot,あつい,5,images/vocab/114.webp,audio/voice/voca/KIDS_V_0037.mp3,true
+items,38,Sunday,日曜日,5,images/vocab/116.webp,audio/voice/voca/KIDS_V_0038.mp3,true
+items,39,cup,コップ,5,images/vocab/119.webp,audio/voice/voca/KIDS_V_0039.mp3,true
+items,40,April,4月,5,images/vocab/120.webp,audio/voice/voca/KIDS_V_0040.mp3,true
+items,41,cap,キャップ,5,images/vocab/121.webp,audio/voice/voca/KIDS_V_0041.mp3,true
+items,42,sea,うみ,5,images/vocab/122.webp,audio/voice/voca/KIDS_V_0042.mp3,true
+items,43,sleep,眠る,5,images/vocab/123.webp,audio/voice/voca/KIDS_V_0043.mp3,true
+items,44,young,若い,5,images/vocab/125.webp,audio/voice/voca/KIDS_V_0044.mp3,true
+items,45,pen,ペン,5,images/vocab/130.webp,audio/voice/voca/KIDS_V_0045.mp3,true
+items,46,fifteen,15,5,images/vocab/134.webp,audio/voice/voca/KIDS_V_0046.mp3,true
+items,47,swim,泳ぐ,5,images/vocab/143.webp,audio/voice/voca/KIDS_V_0047.mp3,true
+items,48,eighty,80,5,images/vocab/144.webp,audio/voice/voca/KIDS_V_0048.mp3,true
+items,49,warm,あたたかい,5,images/vocab/150.webp,audio/voice/voca/KIDS_V_0049.mp3,true
+items,50,father,おとうさん,5,images/vocab/156.webp,audio/voice/voca/KIDS_V_0050.mp3,true
+items,51,love,大好き,5,images/vocab/157.webp,audio/voice/voca/KIDS_V_0051.mp3,true
+items,52,rice,ごはん,5,images/vocab/161.webp,audio/voice/voca/KIDS_V_0052.mp3,true
+items,53,one,1,5,images/vocab/167.webp,audio/voice/voca/KIDS_V_0053.mp3,true
+items,54,juice,ジュース,5,images/vocab/170.webp,audio/voice/voca/KIDS_V_0054.mp3,true
+items,55,nineteen,19,5,images/vocab/172.webp,audio/voice/voca/KIDS_V_0055.mp3,true
+items,56,mother,おかあさん,5,images/vocab/174.webp,audio/voice/voca/KIDS_V_0056.mp3,true
+items,57,forty,40,5,images/vocab/176.webp,audio/voice/voca/KIDS_V_0057.mp3,true
+items,58,summer,なつ,5,images/vocab/179.webp,audio/voice/voca/KIDS_V_0058.mp3,true
+items,59,shoes,くつ,5,images/vocab/180.webp,audio/voice/voca/KIDS_V_0059.mp3,true
+items,60,July,7月,5,images/vocab/183.webp,audio/voice/voca/KIDS_V_0060.mp3,true
+items,61,socks,くつした,5,images/vocab/186.webp,audio/voice/voca/KIDS_V_0061.mp3,true
+items,62,man,おとこのひと,5,images/vocab/190.webp,audio/voice/voca/KIDS_V_0062.mp3,true
+items,63,bread,パン,5,images/vocab/192.webp,audio/voice/voca/KIDS_V_0063.mp3,true
+items,64,sister,あね・いもうと,5,images/vocab/194.webp,audio/voice/voca/KIDS_V_0064.mp3,true
+items,65,May,5月,5,images/vocab/195.webp,audio/voice/voca/KIDS_V_0065.mp3,true
+items,66,desk,つくえ,5,images/vocab/196.webp,audio/voice/voca/KIDS_V_0066.mp3,true
+items,67,milk,ぎゅうにゅう,5,images/vocab/203.webp,audio/voice/voca/KIDS_V_0067.mp3,true
+items,68,cafe,きっさてん,4,images/vocab/001.webp,audio/voice/voca/KIDS_V_0068.mp3,true
+items,69,dress,ワンピース,4,images/vocab/003.webp,audio/voice/voca/KIDS_V_0069.mp3,true
+items,70,library,としょしつ,4,images/vocab/006.webp,audio/voice/voca/KIDS_V_0070.mp3,true
+items,71,pilot,そうじゅうし,4,images/vocab/007.webp,audio/voice/voca/KIDS_V_0071.mp3,true
+items,72,finish,終える,4,images/vocab/008.webp,audio/voice/voca/KIDS_V_0072.mp3,true
+items,73,mask,マスク,4,images/vocab/009.webp,audio/voice/voca/KIDS_V_0073.mp3,true
+items,74,second,2nd,4,images/vocab/012.webp,audio/voice/voca/KIDS_V_0074.mp3,true
+items,75,watch out,気をつけて,4,images/vocab/016.webp,audio/voice/voca/KIDS_V_0075.mp3,true
+items,76,neck,くび,4,images/vocab/022.webp,audio/voice/voca/KIDS_V_0076.mp3,true
+items,77,uncle,おじさん,4,images/vocab/025.webp,audio/voice/voca/KIDS_V_0077.mp3,true
+items,78,cross,渡る,4,images/vocab/027.webp,audio/voice/voca/KIDS_V_0078.mp3,true
+items,79,popular,人気のある,4,images/vocab/029.webp,audio/voice/voca/KIDS_V_0079.mp3,true
+items,80,convenience store,コンビニ,4,images/vocab/030.webp,audio/voice/voca/KIDS_V_0080.mp3,true
+items,81,calendar,カレンダー,4,images/vocab/038.webp,audio/voice/voca/KIDS_V_0081.mp3,true
+items,82,slim,スリムな,4,images/vocab/043.webp,audio/voice/voca/KIDS_V_0082.mp3,true
+items,83,first,1st,4,images/vocab/044.webp,audio/voice/voca/KIDS_V_0083.mp3,true
+items,84,marker,マーカー,4,images/vocab/052.webp,audio/voice/voca/KIDS_V_0084.mp3,true
+items,85,expensive,高価な,4,images/vocab/055.webp,audio/voice/voca/KIDS_V_0085.mp3,true
+items,86,towel,タオル,4,images/vocab/057.webp,audio/voice/voca/KIDS_V_0086.mp3,true
+items,87,by bus,バスで,4,images/vocab/061.webp,audio/voice/voca/KIDS_V_0087.mp3,true
+items,88,a glass of,1杯の,4,images/vocab/062.webp,audio/voice/voca/KIDS_V_0088.mp3,true
+items,89,make friends,友達になる,4,images/vocab/063.webp,audio/voice/voca/KIDS_V_0089.mp3,true
+items,90,temple,お寺,4,images/vocab/064.webp,audio/voice/voca/KIDS_V_0090.mp3,true
+items,91,geography,ちり,4,images/vocab/069.webp,audio/voice/voca/KIDS_V_0091.mp3,true
+items,92,eighth,8th,4,images/vocab/070.webp,audio/voice/voca/KIDS_V_0092.mp3,true
+items,93,fat,ふとい,4,images/vocab/072.webp,audio/voice/voca/KIDS_V_0093.mp3,true
+items,94,heavy,重い,4,images/vocab/076.webp,audio/voice/voca/KIDS_V_0094.mp3,true
+items,95,dirty,きたない,4,images/vocab/077.webp,audio/voice/voca/KIDS_V_0095.mp3,true
+items,96,lonely,さびしい,4,images/vocab/079.webp,audio/voice/voca/KIDS_V_0096.mp3,true
+items,97,in the park,公園で,4,images/vocab/082.webp,audio/voice/voca/KIDS_V_0097.mp3,true
+items,98,loud,うるさい,4,images/vocab/083.webp,audio/voice/voca/KIDS_V_0098.mp3,true
+items,99,pull,引く,4,images/vocab/084.webp,audio/voice/voca/KIDS_V_0099.mp3,true
+items,100,angry,怒っている,4,images/vocab/088.webp,audio/voice/voca/KIDS_V_0100.mp3,true
+items,101,bank,ぎんこう,4,images/vocab/094.webp,audio/voice/voca/KIDS_V_0101.mp3,true
+items,102,lamp,でんきスタンド,4,images/vocab/096.webp,audio/voice/voca/KIDS_V_0102.mp3,true
+items,103,painter,えかき,4,images/vocab/097.webp,audio/voice/voca/KIDS_V_0103.mp3,true
+items,104,scarf,マフラー,4,images/vocab/102.webp,audio/voice/voca/KIDS_V_0104.mp3,true
+items,105,mirror,かがみ,4,images/vocab/108.webp,audio/voice/voca/KIDS_V_0105.mp3,true
+items,106,kick,蹴る,4,images/vocab/110.webp,audio/voice/voca/KIDS_V_0106.mp3,true
+items,107,writer,さっか,4,images/vocab/113.webp,audio/voice/voca/KIDS_V_0107.mp3,true
+items,108,cheek,ほほ,4,images/vocab/117.webp,audio/voice/voca/KIDS_V_0108.mp3,true
+items,109,beach,すなはま,4,images/vocab/126.webp,audio/voice/voca/KIDS_V_0109.mp3,true
+items,110,rich,お金もち,4,images/vocab/127.webp,audio/voice/voca/KIDS_V_0110.mp3,true
+items,111,sleepy,ねむい,4,images/vocab/129.webp,audio/voice/voca/KIDS_V_0111.mp3,true
+items,112,wall,かべ,4,images/vocab/133.webp,audio/voice/voca/KIDS_V_0112.mp3,true
+items,113,lesson,じゅぎょう,4,,audio/voice/voca/KIDS_V_0113.mp3,true
+items,114,make a cake,ケーキを作る,4,images/vocab/138.webp,audio/voice/voca/KIDS_V_0114.mp3,true
+items,115,awake,おきている,4,images/vocab/140.webp,audio/voice/voca/KIDS_V_0115.mp3,true
+items,116,take a test,テストを受ける,4,images/vocab/145.webp,audio/voice/voca/KIDS_V_0116.mp3,true
+items,117,bullet train,しんかんせん,4,images/vocab/149.webp,audio/voice/voca/KIDS_V_0117.mp3,true
+items,118,watch,うでどけい,4,images/vocab/154.webp,audio/voice/voca/KIDS_V_0118.mp3,true
+items,119,at home,家で,4,images/vocab/159.webp,audio/voice/voca/KIDS_V_0119.mp3,true
+items,120,bookstore,本や,4,images/vocab/163.webp,audio/voice/voca/KIDS_V_0120.mp3,true
+items,121,write about,～について書く,4,images/vocab/164.webp,audio/voice/voca/KIDS_V_0121.mp3,true
+items,122,get on,（バスに）乗る,4,images/vocab/171.webp,audio/voice/voca/KIDS_V_0122.mp3,true
+items,123,in the morning,午前中に,4,images/vocab/173.webp,audio/voice/voca/KIDS_V_0123.mp3,true
+items,124,writing,かくこと,4,images/vocab/177.webp,audio/voice/voca/KIDS_V_0124.mp3,true
+items,125,nurse,かんごし,4,images/vocab/178.webp,audio/voice/voca/KIDS_V_0125.mp3,true
+items,126,forest,もり,4,images/vocab/181.webp,audio/voice/voca/KIDS_V_0126.mp3,true
+items,127,zoo,動物園,4,images/vocab/184.webp,audio/voice/voca/KIDS_V_0127.mp3,true
+items,128,nail,つめ,4,images/vocab/185.webp,audio/voice/voca/KIDS_V_0128.mp3,true
+items,129,jet,ジェットき,4,,audio/voice/voca/KIDS_V_0129.mp3,true
+items,130,crayon,クレヨン,4,images/vocab/189.webp,audio/voice/voca/KIDS_V_0130.mp3,true
+items,131,shampoo,シャンプー,4,images/vocab/197.webp,audio/voice/voca/KIDS_V_0131.mp3,true
+items,132,reading,よむこと,4,images/vocab/201.webp,audio/voice/voca/KIDS_V_0132.mp3,true
+items,133,teach,教える,4,images/vocab/205.webp,audio/voice/voca/KIDS_V_0133.mp3,true
+items,134,put on,身につける,4,images/vocab/206.webp,audio/voice/voca/KIDS_V_0134.mp3,true
+items,135,square,四角い,4,images/vocab/207.webp,audio/voice/voca/KIDS_V_0135.mp3,true
+items,136,brush,磨く,4,images/vocab/208.webp,audio/voice/voca/KIDS_V_0136.mp3,true
+items,137,a cup of,コップ1杯の,4,images/vocab/209.webp,audio/voice/voca/KIDS_V_0137.mp3,true
+items,138,succeed,成功する,3,,audio/voice/voca/KIDS_V_0138.mp3,true
+items,139,city hall,しやくしょ,3,images/vocab/033.webp,audio/voice/voca/KIDS_V_0139.mp3,true
+items,140,hope,望む,3,,audio/voice/voca/KIDS_V_0140.mp3,true
+items,141,oil,油,3,,audio/voice/voca/KIDS_V_0141.mp3,true
+items,142,important,重要な,3,,audio/voice/voca/KIDS_V_0142.mp3,true
+items,143,repair,修理する,3,,audio/voice/voca/KIDS_V_0143.mp3,true
+items,144,dentist,はいしゃ,3,images/vocab/039.webp,audio/voice/voca/KIDS_V_0144.mp3,true
+items,145,nature,自然,3,,audio/voice/voca/KIDS_V_0145.mp3,true
+items,146,disappear,消える,3,,audio/voice/voca/KIDS_V_0146.mp3,true
+items,147,railroad,鉄道,3,,audio/voice/voca/KIDS_V_0147.mp3,true
+items,148,suddenly,突然,3,,audio/voice/voca/KIDS_V_0148.mp3,true
+items,149,review,復習する,3,,audio/voice/voca/KIDS_V_0149.mp3,true
+items,150,give up,あきらめる,3,images/vocab/050.webp,audio/voice/voca/KIDS_V_0150.mp3,true
+items,151,custom,習慣,3,,audio/voice/voca/KIDS_V_0151.mp3,true
+items,152,reason,理由,3,,audio/voice/voca/KIDS_V_0152.mp3,true
+items,153,hear about,～について聞く,3,images/vocab/058.webp,audio/voice/voca/KIDS_V_0153.mp3,true
+items,154,imagine,想像する,3,,audio/voice/voca/KIDS_V_0154.mp3,true
+items,155,remember,覚えている,3,images/vocab/067.webp,audio/voice/voca/KIDS_V_0155.mp3,true
+items,156,improve,改善する,3,,audio/voice/voca/KIDS_V_0156.mp3,true
+items,157,all day,一日中,3,images/vocab/074.webp,audio/voice/voca/KIDS_V_0157.mp3,true
+items,158,reduce,減らす,3,,audio/voice/voca/KIDS_V_0158.mp3,true
+items,159,stadium,競技場,3,images/vocab/087.webp,audio/voice/voca/KIDS_V_0159.mp3,true
+items,160,talk to,話しかける,3,images/vocab/091.webp,audio/voice/voca/KIDS_V_0160.mp3,true
+items,161,agree,賛成する,3,,audio/voice/voca/KIDS_V_0161.mp3,true
+items,162,artist,げいじゅつか,3,images/vocab/101.webp,audio/voice/voca/KIDS_V_0162.mp3,true
+items,163,energy,エネルギー,3,,audio/voice/voca/KIDS_V_0163.mp3,true
+items,164,surprised,おどろいた,3,,audio/voice/voca/KIDS_V_0164.mp3,true
+items,165,what kind of,どんな種類の～,3,images/vocab/106.webp,audio/voice/voca/KIDS_V_0165.mp3,true
+items,166,brain,脳,3,images/vocab/109.webp,audio/voice/voca/KIDS_V_0166.mp3,true
+items,167,accept,受け入れる,3,,audio/voice/voca/KIDS_V_0167.mp3,true
+items,168,fog,きり,3,images/vocab/115.webp,audio/voice/voca/KIDS_V_0168.mp3,true
+items,169,decision,決定,3,,audio/voice/voca/KIDS_V_0169.mp3,true
+items,170,habit,くせ,3,,audio/voice/voca/KIDS_V_0170.mp3,true
+items,171,knowledge,知識,3,,audio/voice/voca/KIDS_V_0171.mp3,true
+items,172,seed,たね,3,images/vocab/132.webp,audio/voice/voca/KIDS_V_0172.mp3,true
+items,173,ugly,みにくい,3,images/vocab/135.webp,audio/voice/voca/KIDS_V_0173.mp3,true
+items,174,race,競走,3,,audio/voice/voca/KIDS_V_0174.mp3,true
+items,175,communicate,伝え合う,3,,audio/voice/voca/KIDS_V_0175.mp3,true
+items,176,recently,最近,3,,audio/voice/voca/KIDS_V_0176.mp3,true
+items,177,prefer,より好む,3,,audio/voice/voca/KIDS_V_0177.mp3,true
+items,178,natural,自然の,3,,audio/voice/voca/KIDS_V_0178.mp3,true
+items,179,experience,経験,3,,audio/voice/voca/KIDS_V_0179.mp3,true
+items,180,talk about,～について話す,3,images/vocab/148.webp,audio/voice/voca/KIDS_V_0180.mp3,true
+items,181,perhaps,ひょっとしたら,3,,audio/voice/voca/KIDS_V_0181.mp3,true
+items,182,prepare,準備する,3,,audio/voice/voca/KIDS_V_0182.mp3,true
+items,183,serious,真剣な,3,,audio/voice/voca/KIDS_V_0183.mp3,true
+items,184,comfortable,快適な,3,,audio/voice/voca/KIDS_V_0184.mp3,true
+items,185,look forward to,～を楽しみにする,3,images/vocab/160.webp,audio/voice/voca/KIDS_V_0185.mp3,true
+items,186,quarter,4分の1,3,,audio/voice/voca/KIDS_V_0186.mp3,true
+items,187,look around,見まわす,3,images/vocab/166.webp,audio/voice/voca/KIDS_V_0187.mp3,true
+items,188,public,公の,3,,audio/voice/voca/KIDS_V_0188.mp3,true
+items,189,tell the truth,本当のことを言う,3,images/vocab/169.webp,audio/voice/voca/KIDS_V_0189.mp3,true
+items,190,manner,作法,3,,audio/voice/voca/KIDS_V_0190.mp3,true
+items,191,danger,危険,3,,audio/voice/voca/KIDS_V_0191.mp3,true
+items,192,hear from,～から連絡がある,3,images/vocab/188.webp,audio/voice/voca/KIDS_V_0192.mp3,true
+items,193,receive,受け取る,3,images/vocab/191.webp,audio/voice/voca/KIDS_V_0193.mp3,true
+items,194,future,未来,3,,audio/voice/voca/KIDS_V_0194.mp3,true
+items,195,share,分け合う,3,images/vocab/198.webp,audio/voice/voca/KIDS_V_0195.mp3,true
+items,196,pass,通り過ぎる,3,images/vocab/199.webp,audio/voice/voca/KIDS_V_0196.mp3,true
+items,197,measure,測る,3,,audio/voice/voca/KIDS_V_0197.mp3,true
+items,198,almost,ほとんど,3,,audio/voice/voca/KIDS_V_0198.mp3,true
+items,199,believe,信じる,3,,audio/voice/voca/KIDS_V_0199.mp3,true
+items,200,depend,たよる,3,,audio/voice/voca/KIDS_V_0200.mp3,true
+items,201,head,あたま,5,,audio/voice/voca/KIDS_V_0201.mp3,false
+items,202,face,かお,5,,audio/voice/voca/KIDS_V_0202.mp3,false
+items,203,eye,め,5,,audio/voice/voca/KIDS_V_0203.mp3,false
+items,204,nose,はな（鼻）,5,,audio/voice/voca/KIDS_V_0204.mp3,false
+items,205,mouth,くち,5,,audio/voice/voca/KIDS_V_0205.mp3,false
+items,206,ear,みみ,5,,audio/voice/voca/KIDS_V_0206.mp3,false
+items,207,hair,かみのけ,5,,audio/voice/voca/KIDS_V_0207.mp3,false
+items,208,hand,て,5,,audio/voice/voca/KIDS_V_0208.mp3,false
+items,209,leg,あし,5,,audio/voice/voca/KIDS_V_0209.mp3,false
+items,210,foot,あし(足の先),5,,audio/voice/voca/KIDS_V_0210.mp3,false
+items,211,back,せなか,5,,audio/voice/voca/KIDS_V_0211.mp3,false
+items,212,car,くるま,5,,audio/voice/voca/KIDS_V_0212.mp3,false
+items,213,taxi,タクシー,5,,audio/voice/voca/KIDS_V_0213.mp3,false
+items,214,bus,バス,5,,audio/voice/voca/KIDS_V_0214.mp3,false
+items,215,truck,トラック,5,,audio/voice/voca/KIDS_V_0215.mp3,false
+items,216,bicycle,じてんしゃ,5,,audio/voice/voca/KIDS_V_0216.mp3,false
+items,217,train,でんしゃ,5,,audio/voice/voca/KIDS_V_0217.mp3,false
+items,218,airplane,ひこうき,5,,audio/voice/voca/KIDS_V_0218.mp3,false
+items,219,apple,りんご,5,,audio/voice/voca/KIDS_V_0219.mp3,false
+items,220,banana,バナナ,5,,audio/voice/voca/KIDS_V_0220.mp3,false
+items,221,orange,オレンジ,5,,audio/voice/voca/KIDS_V_0221.mp3,false
+items,222,grape,ぶどう,5,,audio/voice/voca/KIDS_V_0222.mp3,false
+items,223,carrot,にんじん,5,,audio/voice/voca/KIDS_V_0223.mp3,false
+items,224,tomato,トマト,5,,audio/voice/voca/KIDS_V_0224.mp3,false
+items,225,egg,たまご,5,,audio/voice/voca/KIDS_V_0225.mp3,false
+items,226,water,みず,5,,audio/voice/voca/KIDS_V_0226.mp3,false
+items,227,tea,おちゃ,5,,audio/voice/voca/KIDS_V_0227.mp3,false
+items,228,shirt,シャツ,5,,audio/voice/voca/KIDS_V_0228.mp3,false
+items,229,T-shirt,Tシャツ,5,,audio/voice/voca/KIDS_V_0229.mp3,false
+items,230,pants,ズボン,5,,audio/voice/voca/KIDS_V_0230.mp3,false
+items,231,skirt,スカート,5,,audio/voice/voca/KIDS_V_0231.mp3,false
+items,232,shorts,はんズボン,5,,audio/voice/voca/KIDS_V_0232.mp3,false
+items,233,hat,ぼうし,5,,audio/voice/voca/KIDS_V_0233.mp3,false
+items,234,bag,かばん,5,,audio/voice/voca/KIDS_V_0234.mp3,false
+items,235,umbrella,かさ,5,,audio/voice/voca/KIDS_V_0235.mp3,false
+items,236,bed,ベッド,5,,audio/voice/voca/KIDS_V_0236.mp3,false
+items,237,table,テーブル,5,,audio/voice/voca/KIDS_V_0237.mp3,false
+items,238,TV,テレビ,5,,audio/voice/voca/KIDS_V_0238.mp3,false
+items,239,fork,フォーク,5,,audio/voice/voca/KIDS_V_0239.mp3,false
+items,240,spoon,スプーン,5,,audio/voice/voca/KIDS_V_0240.mp3,false
+items,241,door,ドア,5,,audio/voice/voca/KIDS_V_0241.mp3,false
+items,242,window,まど,5,,audio/voice/voca/KIDS_V_0242.mp3,false
+items,243,pencil,えんぴつ,5,,audio/voice/voca/KIDS_V_0243.mp3,false
+items,244,eraser,けしゴム,5,,audio/voice/voca/KIDS_V_0244.mp3,false
+items,245,notebook,ノート,5,,audio/voice/voca/KIDS_V_0245.mp3,false
+items,246,student,せいと,5,,audio/voice/voca/KIDS_V_0246.mp3,false
+items,247,school,学校,5,,audio/voice/voca/KIDS_V_0247.mp3,false
+items,248,station,えき,5,,audio/voice/voca/KIDS_V_0248.mp3,false
+items,249,park,こうえん,5,,audio/voice/voca/KIDS_V_0249.mp3,false
+items,250,restaurant,レストラン,5,,audio/voice/voca/KIDS_V_0250.mp3,false
+items,251,brother,きょうだい,5,,audio/voice/voca/KIDS_V_0251.mp3,false
+items,252,baby,あかちゃん,5,,audio/voice/voca/KIDS_V_0252.mp3,false
+items,253,boy,おとこのこ,5,,audio/voice/voca/KIDS_V_0253.mp3,false
+items,254,girl,おんなのこ,5,,audio/voice/voca/KIDS_V_0254.mp3,false
+items,255,woman,おんなのひと,5,,audio/voice/voca/KIDS_V_0255.mp3,false
+items,256,child,こども,5,,audio/voice/voca/KIDS_V_0256.mp3,false
+items,257,January,1月,5,,audio/voice/voca/KIDS_V_0257.mp3,false
+items,258,June,6月,5,,audio/voice/voca/KIDS_V_0258.mp3,false
+items,259,August,8月,5,,audio/voice/voca/KIDS_V_0259.mp3,false
+items,260,September,9月,5,,audio/voice/voca/KIDS_V_0260.mp3,false
+items,261,October,10月,5,,audio/voice/voca/KIDS_V_0261.mp3,false
+items,262,December,12月,5,,audio/voice/voca/KIDS_V_0262.mp3,false
+items,263,big,大きい,5,,audio/voice/voca/KIDS_V_0263.mp3,false
+items,264,small,小さい,5,,audio/voice/voca/KIDS_V_0264.mp3,false
+items,265,tall,背が高い,5,,audio/voice/voca/KIDS_V_0265.mp3,false
+items,266,cold,つめたい,5,,audio/voice/voca/KIDS_V_0266.mp3,false
+items,267,easy,かんたん,5,,audio/voice/voca/KIDS_V_0267.mp3,false
+items,268,good,よい,5,,audio/voice/voca/KIDS_V_0268.mp3,false
+items,269,bad,わるい,5,,audio/voice/voca/KIDS_V_0269.mp3,false
+items,270,right,ただしい,5,,audio/voice/voca/KIDS_V_0270.mp3,false
+items,271,wrong,まちがい,5,,audio/voice/voca/KIDS_V_0271.mp3,false
+items,272,happy,しあわせな,5,,audio/voice/voca/KIDS_V_0272.mp3,false
+items,273,sad,かなしい,5,,audio/voice/voca/KIDS_V_0273.mp3,false
+items,274,hungry,おなかがすいた,5,,audio/voice/voca/KIDS_V_0274.mp3,false
+items,275,English,えいご,5,,audio/voice/voca/KIDS_V_0275.mp3,false
+items,276,sit down,座る,5,,audio/voice/voca/KIDS_V_0276.mp3,false
+items,277,walk,歩く,5,,audio/voice/voca/KIDS_V_0277.mp3,false
+items,278,jump,跳ぶ,5,,audio/voice/voca/KIDS_V_0278.mp3,false
+items,279,go,行く,5,,audio/voice/voca/KIDS_V_0279.mp3,false
+items,280,come,来る,5,,audio/voice/voca/KIDS_V_0280.mp3,false
+items,281,get up,起きる,5,,audio/voice/voca/KIDS_V_0281.mp3,false
+items,282,wash,洗う,5,,audio/voice/voca/KIDS_V_0282.mp3,false
+items,283,open,開ける,5,,audio/voice/voca/KIDS_V_0283.mp3,false
+items,284,sing,歌う,5,,audio/voice/voca/KIDS_V_0284.mp3,false
+items,285,dance,踊る,5,,audio/voice/voca/KIDS_V_0285.mp3,false
+items,286,eat,食べる,5,,audio/voice/voca/KIDS_V_0286.mp3,false
+items,287,drink,飲む,5,,audio/voice/voca/KIDS_V_0287.mp3,false
+items,288,read,読む,5,,audio/voice/voca/KIDS_V_0288.mp3,false
+items,289,write,書く,5,,audio/voice/voca/KIDS_V_0289.mp3,false
+items,290,listen,聞く,5,,audio/voice/voca/KIDS_V_0290.mp3,false
+items,291,play,遊ぶ,5,,audio/voice/voca/KIDS_V_0291.mp3,false
+items,292,make,作る,5,,audio/voice/voca/KIDS_V_0292.mp3,false
+items,293,sun,たいよう,5,,audio/voice/voca/KIDS_V_0293.mp3,false
+items,294,rain,雨,5,,audio/voice/voca/KIDS_V_0294.mp3,false
+items,295,snow,ゆき,5,,audio/voice/voca/KIDS_V_0295.mp3,false
+items,296,sky,そら,5,,audio/voice/voca/KIDS_V_0296.mp3,false
+items,297,star,ほし,5,,audio/voice/voca/KIDS_V_0297.mp3,false
+items,298,moon,つき,5,,audio/voice/voca/KIDS_V_0298.mp3,false
+items,299,mountain,やま,5,,audio/voice/voca/KIDS_V_0299.mp3,false
+items,300,river,かわ,5,,audio/voice/voca/KIDS_V_0300.mp3,false
+items,301,tree,き,5,,audio/voice/voca/KIDS_V_0301.mp3,false
+items,302,flower,はな（花）,5,,audio/voice/voca/KIDS_V_0302.mp3,false
+items,303,spring,はる,5,,audio/voice/voca/KIDS_V_0303.mp3,false
+items,304,autumn,あき,5,,audio/voice/voca/KIDS_V_0304.mp3,false
+items,305,winter,ふゆ,5,,audio/voice/voca/KIDS_V_0305.mp3,false
+items,306,Tuesday,火曜日,5,,audio/voice/voca/KIDS_V_0306.mp3,false
+items,307,Wednesday,水曜日,5,,audio/voice/voca/KIDS_V_0307.mp3,false
+items,308,Thursday,木曜日,5,,audio/voice/voca/KIDS_V_0308.mp3,false
+items,309,Friday,金曜日,5,,audio/voice/voca/KIDS_V_0309.mp3,false
+items,310,four,4,5,,audio/voice/voca/KIDS_V_0310.mp3,false
+items,311,five,5,5,,audio/voice/voca/KIDS_V_0311.mp3,false
+items,312,six,6,5,,audio/voice/voca/KIDS_V_0312.mp3,false
+items,313,seven,7,5,,audio/voice/voca/KIDS_V_0313.mp3,false
+items,314,eight,8,5,,audio/voice/voca/KIDS_V_0314.mp3,false
+items,315,nine,9,5,,audio/voice/voca/KIDS_V_0315.mp3,false
+items,316,eleven,11,5,,audio/voice/voca/KIDS_V_0316.mp3,false
+items,317,fourteen,14,5,,audio/voice/voca/KIDS_V_0317.mp3,false
+items,318,eighteen,18,5,,audio/voice/voca/KIDS_V_0318.mp3,false
+items,319,twenty,20,5,,audio/voice/voca/KIDS_V_0319.mp3,false
+items,320,fifty,50,5,,audio/voice/voca/KIDS_V_0320.mp3,false
+items,321,sixty,60,5,,audio/voice/voca/KIDS_V_0321.mp3,false
+items,322,seventy,70,5,,audio/voice/voca/KIDS_V_0322.mp3,false
+items,323,one hundred,100,5,,audio/voice/voca/KIDS_V_0323.mp3,false
+items,324,like,好き,5,,audio/voice/voca/KIDS_V_0324.mp3,false
+items,325,I'm sorry,ごめんなさい,5,,audio/voice/voca/KIDS_V_0325.mp3,false
+items,326,dog,いぬ,5,,audio/voice/voca/KIDS_V_0326.mp3,false
+items,327,cat,ねこ,5,,audio/voice/voca/KIDS_V_0327.mp3,false
+items,328,bird,とり,5,,audio/voice/voca/KIDS_V_0328.mp3,false
+items,329,fish,さかな,5,,audio/voice/voca/KIDS_V_0329.mp3,false
+items,330,rabbit,うさぎ,5,,audio/voice/voca/KIDS_V_0330.mp3,false
+items,331,horse,うま,5,,audio/voice/voca/KIDS_V_0331.mp3,false
+items,332,elephant,ぞう,5,,audio/voice/voca/KIDS_V_0332.mp3,false
+items,333,monkey,さる,5,,audio/voice/voca/KIDS_V_0333.mp3,false
+items,334,lion,ライオン,5,,audio/voice/voca/KIDS_V_0334.mp3,false
+items,335,bear,くま,5,,audio/voice/voca/KIDS_V_0335.mp3,false
+items,336,red,あか,5,,audio/voice/voca/KIDS_V_0336.mp3,false
+items,337,blue,あお,5,,audio/voice/voca/KIDS_V_0337.mp3,false
+items,338,green,みどり,5,,audio/voice/voca/KIDS_V_0338.mp3,false
+items,339,yellow,きいろ,5,,audio/voice/voca/KIDS_V_0339.mp3,false
+items,340,white,しろ,5,,audio/voice/voca/KIDS_V_0340.mp3,false
+items,341,black,くろ,5,,audio/voice/voca/KIDS_V_0341.mp3,false
+items,342,pink,ピンク,5,,audio/voice/voca/KIDS_V_0342.mp3,false
+items,343,purple,むらさき,5,,audio/voice/voca/KIDS_V_0343.mp3,false
+items,344,soccer,サッカー,5,,audio/voice/voca/KIDS_V_0344.mp3,false
+items,345,baseball,やきゅう,5,,audio/voice/voca/KIDS_V_0345.mp3,false
+items,346,tennis,テニス,5,,audio/voice/voca/KIDS_V_0346.mp3,false
+items,347,basketball,バスケットボール,5,,audio/voice/voca/KIDS_V_0347.mp3,false
+items,348,piano,ピアノ,5,,audio/voice/voca/KIDS_V_0348.mp3,false
+items,349,guitar,ギター,5,,audio/voice/voca/KIDS_V_0349.mp3,false
+items,350,book,ほん,5,,audio/voice/voca/KIDS_V_0350.mp3,false
+items,351,ball,ボール,5,,audio/voice/voca/KIDS_V_0351.mp3,false
+items,352,box,はこ,5,,audio/voice/voca/KIDS_V_0352.mp3,false
+items,353,house,いえ,5,,audio/voice/voca/KIDS_V_0353.mp3,false
+items,354,room,へや,5,,audio/voice/voca/KIDS_V_0354.mp3,false
+items,355,kitchen,だいどころ,5,,audio/voice/voca/KIDS_V_0355.mp3,false
+items,356,morning,あさ,5,,audio/voice/voca/KIDS_V_0356.mp3,false
+items,357,night,よる,5,,audio/voice/voca/KIDS_V_0357.mp3,false
+items,358,today,きょう,5,,audio/voice/voca/KIDS_V_0358.mp3,false
+items,359,week,1週間,5,,audio/voice/voca/KIDS_V_0359.mp3,false
+items,360,cute,かわいい,5,,audio/voice/voca/KIDS_V_0360.mp3,false
+items,361,long,ながい,5,,audio/voice/voca/KIDS_V_0361.mp3,false
+items,362,fast,はやい,5,,audio/voice/voca/KIDS_V_0362.mp3,false
+items,363,watch TV,テレビを見る,5,,audio/voice/voca/KIDS_V_0363.mp3,false
+items,364,ice cream,アイスクリーム,5,,audio/voice/voca/KIDS_V_0364.mp3,false
+items,365,sing a song,うたをうたう,5,,audio/voice/voca/KIDS_V_0365.mp3,false
+items,366,cookie,クッキー,5,,audio/voice/voca/KIDS_V_0366.mp3,false
+items,367,candy,あめ,5,,audio/voice/voca/KIDS_V_0367.mp3,false
+items,368,chocolate,チョコレート,5,,audio/voice/voca/KIDS_V_0368.mp3,false
+items,369,cheese,チーズ,5,,audio/voice/voca/KIDS_V_0369.mp3,false
+items,370,lunch,ひるごはん,5,,audio/voice/voca/KIDS_V_0370.mp3,false
+items,371,breakfast,あさごはん,5,,audio/voice/voca/KIDS_V_0371.mp3,false
+items,372,dinner,ばんごはん,5,,audio/voice/voca/KIDS_V_0372.mp3,false
+items,373,melon,メロン,5,,audio/voice/voca/KIDS_V_0373.mp3,false
+items,374,pumpkin,かぼちゃ,5,,audio/voice/voca/KIDS_V_0374.mp3,false
+items,375,chicken,とりにく,5,,audio/voice/voca/KIDS_V_0375.mp3,false
+items,376,coffee,コーヒー,5,,audio/voice/voca/KIDS_V_0376.mp3,false
+items,377,pig,ぶた,5,,audio/voice/voca/KIDS_V_0377.mp3,false
+items,378,cow,うし,5,,audio/voice/voca/KIDS_V_0378.mp3,false
+items,379,sheep,ひつじ,5,,audio/voice/voca/KIDS_V_0379.mp3,false
+items,380,mouse,ねずみ,5,,audio/voice/voca/KIDS_V_0380.mp3,false
+items,381,tiger,とら,5,,audio/voice/voca/KIDS_V_0381.mp3,false
+items,382,panda,パンダ,5,,audio/voice/voca/KIDS_V_0382.mp3,false
+items,383,frog,かえる,5,,audio/voice/voca/KIDS_V_0383.mp3,false
+items,384,duck,あひる,5,,audio/voice/voca/KIDS_V_0384.mp3,false
+items,385,penguin,ペンギン,5,,audio/voice/voca/KIDS_V_0385.mp3,false
+items,386,volleyball,バレーボール,5,,audio/voice/voca/KIDS_V_0386.mp3,false
+items,387,badminton,バドミントン,5,,audio/voice/voca/KIDS_V_0387.mp3,false
+items,388,violin,バイオリン,5,,audio/voice/voca/KIDS_V_0388.mp3,false
+items,389,drum,たいこ,5,,audio/voice/voca/KIDS_V_0389.mp3,false
+items,390,garden,にわ,5,,audio/voice/voca/KIDS_V_0390.mp3,false
+items,391,bench,ベンチ,5,,audio/voice/voca/KIDS_V_0391.mp3,false
+items,392,city,まち（とし）,5,,audio/voice/voca/KIDS_V_0392.mp3,false
+items,393,family,かぞく,5,,audio/voice/voca/KIDS_V_0393.mp3,false
+items,394,parent,おや,5,,audio/voice/voca/KIDS_V_0394.mp3,false
+items,395,son,むすこ,5,,audio/voice/voca/KIDS_V_0395.mp3,false
+items,396,daughter,むすめ,5,,audio/voice/voca/KIDS_V_0396.mp3,false
+items,397,year,1年,5,,audio/voice/voca/KIDS_V_0397.mp3,false
+items,398,tomorrow,あした,5,,audio/voice/voca/KIDS_V_0398.mp3,false
+items,399,birthday,たんじょうび,5,,audio/voice/voca/KIDS_V_0399.mp3,false
+items,400,party,パーティー,5,,audio/voice/voca/KIDS_V_0400.mp3,false
+items,401,homework,しゅくだい,5,,audio/voice/voca/KIDS_V_0401.mp3,false
+items,402,toy,おもちゃ,5,,audio/voice/voca/KIDS_V_0402.mp3,false
+items,403,phone,でんわ,5,,audio/voice/voca/KIDS_V_0403.mp3,false
+items,404,song,うた,5,,audio/voice/voca/KIDS_V_0404.mp3,false
+items,405,movie,えいが,5,,audio/voice/voca/KIDS_V_0405.mp3,false
+items,406,see,見る,5,,audio/voice/voca/KIDS_V_0406.mp3,false
+items,407,look,見る（目をむける）,5,,audio/voice/voca/KIDS_V_0407.mp3,false
+items,408,have,持っている,5,,audio/voice/voca/KIDS_V_0408.mp3,false
+items,409,buy,買う,5,,audio/voice/voca/KIDS_V_0409.mp3,false
+items,410,count,数える,5,,audio/voice/voca/KIDS_V_0410.mp3,false
+items,411,draw,（絵を）かく,5,,audio/voice/voca/KIDS_V_0411.mp3,false
+items,412,paint,（絵の具で）ぬる,5,,audio/voice/voca/KIDS_V_0412.mp3,false
+items,413,take,取る,5,,audio/voice/voca/KIDS_V_0413.mp3,false
+items,414,put,置く,5,,audio/voice/voca/KIDS_V_0414.mp3,false
+items,415,live,住む,5,,audio/voice/voca/KIDS_V_0415.mp3,false
+items,416,work,はたらく,5,,audio/voice/voca/KIDS_V_0416.mp3,false
+items,417,practice,れんしゅうする,5,,audio/voice/voca/KIDS_V_0417.mp3,false
+items,418,talk,おしゃべりをする,5,,audio/voice/voca/KIDS_V_0418.mp3,false
+items,419,think,考える,5,,audio/voice/voca/KIDS_V_0419.mp3,false
+items,420,cut,切る,5,,audio/voice/voca/KIDS_V_0420.mp3,false
+items,421,drive,うんてんする,5,,audio/voice/voca/KIDS_V_0421.mp3,false
+items,422,pretty,きれいな,5,,audio/voice/voca/KIDS_V_0422.mp3,false
+items,423,nice,すてきな,5,,audio/voice/voca/KIDS_V_0423.mp3,false
+items,424,great,すごい,5,,audio/voice/voca/KIDS_V_0424.mp3,false
+items,425,fine,元気な,5,,audio/voice/voca/KIDS_V_0425.mp3,false
+items,426,sunny,はれの,5,,audio/voice/voca/KIDS_V_0426.mp3,false
+items,427,rainy,雨の,5,,audio/voice/voca/KIDS_V_0427.mp3,false
+items,428,cloudy,くもりの,5,,audio/voice/voca/KIDS_V_0428.mp3,false
+items,429,high,高い,5,,audio/voice/voca/KIDS_V_0429.mp3,false
+items,430,low,ひくい,5,,audio/voice/voca/KIDS_V_0430.mp3,false
+items,431,slow,おそい（スピード）,5,,audio/voice/voca/KIDS_V_0431.mp3,false
+items,432,late,おそい（時間）,5,,audio/voice/voca/KIDS_V_0432.mp3,false
+items,433,early,早い（時間）,5,,audio/voice/voca/KIDS_V_0433.mp3,false
+items,434,favorite,大好きな,5,,audio/voice/voca/KIDS_V_0434.mp3,false
+items,435,fun,たのしい,5,,audio/voice/voca/KIDS_V_0435.mp3,false
+items,436,here,ここに,5,,audio/voice/voca/KIDS_V_0436.mp3,false
+items,437,there,そこに,5,,audio/voice/voca/KIDS_V_0437.mp3,false
+items,438,very,とても,5,,audio/voice/voca/KIDS_V_0438.mp3,false
+items,439,too,～も,5,,audio/voice/voca/KIDS_V_0439.mp3,false
+items,440,now,いま,5,,audio/voice/voca/KIDS_V_0440.mp3,false
+items,441,often,よく,5,,audio/voice/voca/KIDS_V_0441.mp3,false
+items,442,always,いつも,5,,audio/voice/voca/KIDS_V_0442.mp3,false
+items,443,go to school,学校に行く,5,,audio/voice/voca/KIDS_V_0443.mp3,false
+items,444,go home,家に帰る,5,,audio/voice/voca/KIDS_V_0444.mp3,false
+items,445,play tennis,テニスをする,5,,audio/voice/voca/KIDS_V_0445.mp3,false
+items,446,play the piano,ピアノをひく,5,,audio/voice/voca/KIDS_V_0446.mp3,false
+items,447,come in,入ってくる,5,,audio/voice/voca/KIDS_V_0447.mp3,false
+items,448,good morning,おはよう,5,,audio/voice/voca/KIDS_V_0448.mp3,false
+items,449,good night,おやすみ,5,,audio/voice/voca/KIDS_V_0449.mp3,false
+items,450,after school,ほうかご,5,,audio/voice/voca/KIDS_V_0450.mp3,false
+items,451,shoulder,かた,4,,audio/voice/voca/KIDS_V_0451.mp3,false
+items,452,finger,ゆび,4,,audio/voice/voca/KIDS_V_0452.mp3,false
+items,453,chest,むね,4,,audio/voice/voca/KIDS_V_0453.mp3,false
+items,454,knee,ひざ,4,,audio/voice/voca/KIDS_V_0454.mp3,false
+items,455,toe,あしのゆび,4,,audio/voice/voca/KIDS_V_0455.mp3,false
+items,456,hip,おしり,4,,audio/voice/voca/KIDS_V_0456.mp3,false
+items,457,heart,しんぞう,4,,audio/voice/voca/KIDS_V_0457.mp3,false
+items,458,stomach,おなか,4,,audio/voice/voca/KIDS_V_0458.mp3,false
+items,459,bone,ほね,4,,audio/voice/voca/KIDS_V_0459.mp3,false
+items,460,skin,はだ,4,,audio/voice/voca/KIDS_V_0460.mp3,false
+items,461,lip,くちびる,4,,audio/voice/voca/KIDS_V_0461.mp3,false
+items,462,tongue,した,4,,audio/voice/voca/KIDS_V_0462.mp3,false
+items,463,school bus,つうがくバス,4,,audio/voice/voca/KIDS_V_0463.mp3,false
+items,464,police car,パトカー,4,,audio/voice/voca/KIDS_V_0464.mp3,false
+items,465,fire truck,しょうぼうしゃ,4,,audio/voice/voca/KIDS_V_0465.mp3,false
+items,466,ambulance,きゅうきゅうしゃ,4,,audio/voice/voca/KIDS_V_0466.mp3,false
+items,467,motorcycle,バイク,4,,audio/voice/voca/KIDS_V_0467.mp3,false
+items,468,subway,ちかてつ,4,,audio/voice/voca/KIDS_V_0468.mp3,false
+items,469,yacht,ヨット,4,,audio/voice/voca/KIDS_V_0469.mp3,false
+items,470,ferry,フェリー,4,,audio/voice/voca/KIDS_V_0470.mp3,false
+items,471,helicopter,ヘリコプター,4,,audio/voice/voca/KIDS_V_0471.mp3,false
+items,472,rocket,ロケット,4,,audio/voice/voca/KIDS_V_0472.mp3,false
+items,473,drone,ドローン,4,,audio/voice/voca/KIDS_V_0473.mp3,false
+items,474,skateboard,スケートボード,4,,audio/voice/voca/KIDS_V_0474.mp3,false
+items,475,scooter,キックスクーター,4,,audio/voice/voca/KIDS_V_0475.mp3,false
+items,476,wagon,ワゴン,4,,audio/voice/voca/KIDS_V_0476.mp3,false
+items,477,strawberry,いちご,4,,audio/voice/voca/KIDS_V_0477.mp3,false
+items,478,lemon,レモン,4,,audio/voice/voca/KIDS_V_0478.mp3,false
+items,479,peach,もも,4,,audio/voice/voca/KIDS_V_0479.mp3,false
+items,480,watermelon,すいか,4,,audio/voice/voca/KIDS_V_0480.mp3,false
+items,481,potato,じゃがいも,4,,audio/voice/voca/KIDS_V_0481.mp3,false
+items,482,onion,たまねぎ,4,,audio/voice/voca/KIDS_V_0482.mp3,false
+items,483,corn,とうもろこし,4,,audio/voice/voca/KIDS_V_0483.mp3,false
+items,484,cabbage,キャベツ,4,,audio/voice/voca/KIDS_V_0484.mp3,false
+items,485,noodle,めん,4,,audio/voice/voca/KIDS_V_0485.mp3,false
+items,486,curry,カレー,4,,audio/voice/voca/KIDS_V_0486.mp3,false
+items,487,soup,スープ,4,,audio/voice/voca/KIDS_V_0487.mp3,false
+items,488,salad,サラダ,4,,audio/voice/voca/KIDS_V_0488.mp3,false
+items,489,sandwich,サンドイッチ,4,,audio/voice/voca/KIDS_V_0489.mp3,false
+items,490,curry and rice,カレーライス,4,,audio/voice/voca/KIDS_V_0490.mp3,false
+items,491,sweater,セーター,4,,audio/voice/voca/KIDS_V_0491.mp3,false
+items,492,jacket,ジャケット,4,,audio/voice/voca/KIDS_V_0492.mp3,false
+items,493,coat,コート,4,,audio/voice/voca/KIDS_V_0493.mp3,false
+items,494,uniform,せいふく,4,,audio/voice/voca/KIDS_V_0494.mp3,false
+items,495,suit,スーツ,4,,audio/voice/voca/KIDS_V_0495.mp3,false
+items,496,pajamas,パジャマ,4,,audio/voice/voca/KIDS_V_0496.mp3,false
+items,497,boots,ブーツ,4,,audio/voice/voca/KIDS_V_0497.mp3,false
+items,498,sneakers,スニーカー,4,,audio/voice/voca/KIDS_V_0498.mp3,false
+items,499,glasses,めがね,4,,audio/voice/voca/KIDS_V_0499.mp3,false
+items,500,ring,ゆびわ,4,,audio/voice/voca/KIDS_V_0500.mp3,false
+items,501,belt,ベルト,4,,audio/voice/voca/KIDS_V_0501.mp3,false
+items,502,gloves,てぶくろ,4,,audio/voice/voca/KIDS_V_0502.mp3,false
+items,503,swimsuit,みずぎ,4,,audio/voice/voca/KIDS_V_0503.mp3,false
+items,504,sofa,ソファ,4,,audio/voice/voca/KIDS_V_0504.mp3,false
+items,505,shelf,たな,4,,audio/voice/voca/KIDS_V_0505.mp3,false
+items,506,computer,パソコン,4,,audio/voice/voca/KIDS_V_0506.mp3,false
+items,507,refrigerator,れいぞうこ,4,,audio/voice/voca/KIDS_V_0507.mp3,false
+items,508,microwave,でんしレンジ,4,,audio/voice/voca/KIDS_V_0508.mp3,false
+items,509,air conditioner,エアコン,4,,audio/voice/voca/KIDS_V_0509.mp3,false
+items,510,fan,せんぷうき,4,,audio/voice/voca/KIDS_V_0510.mp3,false
+items,511,plate,さら,4,,audio/voice/voca/KIDS_V_0511.mp3,false
+items,512,knife,ほうちょう,4,,audio/voice/voca/KIDS_V_0512.mp3,false
+items,513,toothbrush,はブラシ,4,,audio/voice/voca/KIDS_V_0513.mp3,false
+items,514,soap,せっけん,4,,audio/voice/voca/KIDS_V_0514.mp3,false
+items,515,floor,ゆか,4,,audio/voice/voca/KIDS_V_0515.mp3,false
+items,516,curtain,カーテン,4,,audio/voice/voca/KIDS_V_0516.mp3,false
+items,517,stairs,かいだん,4,,audio/voice/voca/KIDS_V_0517.mp3,false
+items,518,scissors,はさみ,4,,audio/voice/voca/KIDS_V_0518.mp3,false
+items,519,glue,のり,4,,audio/voice/voca/KIDS_V_0519.mp3,false
+items,520,stapler,ホチキス,4,,audio/voice/voca/KIDS_V_0520.mp3,false
+items,521,pencil case,ふでばこ,4,,audio/voice/voca/KIDS_V_0521.mp3,false
+items,522,textbook,きょうかしょ,4,,audio/voice/voca/KIDS_V_0522.mp3,false
+items,523,dictionary,じしょ,4,,audio/voice/voca/KIDS_V_0523.mp3,false
+items,524,blackboard,こくばん,4,,audio/voice/voca/KIDS_V_0524.mp3,false
+items,525,whiteboard,ホワイトボード,4,,audio/voice/voca/KIDS_V_0525.mp3,false
+items,526,chalk,チョーク,4,,audio/voice/voca/KIDS_V_0526.mp3,false
+items,527,map,ちず,4,,audio/voice/voca/KIDS_V_0527.mp3,false
+items,528,classroom,きょうしつ,4,,audio/voice/voca/KIDS_V_0528.mp3,false
+items,529,gym,たいいくかん,4,,audio/voice/voca/KIDS_V_0529.mp3,false
+items,530,test,テスト,4,,audio/voice/voca/KIDS_V_0530.mp3,false
+items,531,hospital,病院,4,,audio/voice/voca/KIDS_V_0531.mp3,false
+items,532,police station,けいさつしょ,4,,audio/voice/voca/KIDS_V_0532.mp3,false
+items,533,fire station,しょうぼうしょ,4,,audio/voice/voca/KIDS_V_0533.mp3,false
+items,534,post office,ゆうびんきょく,4,,audio/voice/voca/KIDS_V_0534.mp3,false
+items,535,museum,はくぶつかん,4,,audio/voice/voca/KIDS_V_0535.mp3,false
+items,536,supermarket,スーパー,4,,audio/voice/voca/KIDS_V_0536.mp3,false
+items,537,bakery,パンや,4,,audio/voice/voca/KIDS_V_0537.mp3,false
+items,538,flower shop,花や,4,,audio/voice/voca/KIDS_V_0538.mp3,false
+items,539,aquarium,水族館,4,,audio/voice/voca/KIDS_V_0539.mp3,false
+items,540,movie theater,えいがかん,4,,audio/voice/voca/KIDS_V_0540.mp3,false
+items,541,shrine,じんじゃ,4,,audio/voice/voca/KIDS_V_0541.mp3,false
+items,542,church,きょうかい,4,,audio/voice/voca/KIDS_V_0542.mp3,false
+items,543,bridge,はし,4,,audio/voice/voca/KIDS_V_0543.mp3,false
+items,544,tower,タワー,4,,audio/voice/voca/KIDS_V_0544.mp3,false
+items,545,hotel,ホテル,4,,audio/voice/voca/KIDS_V_0545.mp3,false
+items,546,grandfather,おじいさん,4,,audio/voice/voca/KIDS_V_0546.mp3,false
+items,547,grandmother,おばあさん,4,,audio/voice/voca/KIDS_V_0547.mp3,false
+items,548,aunt,おばさん,4,,audio/voice/voca/KIDS_V_0548.mp3,false
+items,549,doctor,おいしゃさん,4,,audio/voice/voca/KIDS_V_0549.mp3,false
+items,550,police officer,けいさつかん,4,,audio/voice/voca/KIDS_V_0550.mp3,false
+items,551,firefighter,しょうぼうし,4,,audio/voice/voca/KIDS_V_0551.mp3,false
+items,552,cook,りょうりにん,4,,audio/voice/voca/KIDS_V_0552.mp3,false
+items,553,singer,かしゅ,4,,audio/voice/voca/KIDS_V_0553.mp3,false
+items,554,farmer,のうか,4,,audio/voice/voca/KIDS_V_0554.mp3,false
+items,555,classmate,どうきゅうせい,4,,audio/voice/voca/KIDS_V_0555.mp3,false
+items,556,people,人々,4,,audio/voice/voca/KIDS_V_0556.mp3,false
+items,557,someone,だれか,4,,audio/voice/voca/KIDS_V_0557.mp3,false
+items,558,light,軽い,4,,audio/voice/voca/KIDS_V_0558.mp3,false
+items,559,thick,ぶあつい,4,,audio/voice/voca/KIDS_V_0559.mp3,false
+items,560,thin,うすい,4,,audio/voice/voca/KIDS_V_0560.mp3,false
+items,561,used,中古の,4,,audio/voice/voca/KIDS_V_0561.mp3,false
+items,562,clean,きれい,4,,audio/voice/voca/KIDS_V_0562.mp3,false
+items,563,beautiful,美しい,4,,audio/voice/voca/KIDS_V_0563.mp3,false
+items,564,strong,つよい,4,,audio/voice/voca/KIDS_V_0564.mp3,false
+items,565,weak,よわい,4,,audio/voice/voca/KIDS_V_0565.mp3,false
+items,566,wide,広い,4,,audio/voice/voca/KIDS_V_0566.mp3,false
+items,567,deep,深い,4,,audio/voice/voca/KIDS_V_0567.mp3,false
+items,568,cheap,安い,4,,audio/voice/voca/KIDS_V_0568.mp3,false
+items,569,round,まるい,4,,audio/voice/voca/KIDS_V_0569.mp3,false
+items,570,poor,まずしい,4,,audio/voice/voca/KIDS_V_0570.mp3,false
+items,571,cool,すずしい,4,,audio/voice/voca/KIDS_V_0571.mp3,false
+items,572,sweet,あまい,4,,audio/voice/voca/KIDS_V_0572.mp3,false
+items,573,sour,すっぱい,4,,audio/voice/voca/KIDS_V_0573.mp3,false
+items,574,soft,やわらかい,4,,audio/voice/voca/KIDS_V_0574.mp3,false
+items,575,hard,かたい,4,,audio/voice/voca/KIDS_V_0575.mp3,false
+items,576,wet,ぬれた,4,,audio/voice/voca/KIDS_V_0576.mp3,false
+items,577,dry,かわいた,4,,audio/voice/voca/KIDS_V_0577.mp3,false
+items,578,quiet,しずか,4,,audio/voice/voca/KIDS_V_0578.mp3,false
+items,579,bright,明るい,4,,audio/voice/voca/KIDS_V_0579.mp3,false
+items,580,dark,暗い,4,,audio/voice/voca/KIDS_V_0580.mp3,false
+items,581,same,同じ,4,,audio/voice/voca/KIDS_V_0581.mp3,false
+items,582,different,ちがう,4,,audio/voice/voca/KIDS_V_0582.mp3,false
+items,583,delicious,とてもおいしい,4,,audio/voice/voca/KIDS_V_0583.mp3,false
+items,584,safe,安全な,4,,audio/voice/voca/KIDS_V_0584.mp3,false
+items,585,dangerous,危険な,4,,audio/voice/voca/KIDS_V_0585.mp3,false
+items,586,calm,おだやか,4,,audio/voice/voca/KIDS_V_0586.mp3,false
+items,587,tired,つかれた,4,,audio/voice/voca/KIDS_V_0587.mp3,false
+items,588,energetic,元気,4,,audio/voice/voca/KIDS_V_0588.mp3,false
+items,589,full,おなかいっぱい,4,,audio/voice/voca/KIDS_V_0589.mp3,false
+items,590,scared,こわい,4,,audio/voice/voca/KIDS_V_0590.mp3,false
+items,591,brave,勇かん,4,,audio/voice/voca/KIDS_V_0591.mp3,false
+items,592,kind,やさしい,4,,audio/voice/voca/KIDS_V_0592.mp3,false
+items,593,mean,いじわる,4,,audio/voice/voca/KIDS_V_0593.mp3,false
+items,594,shy,はずかしがり,4,,audio/voice/voca/KIDS_V_0594.mp3,false
+items,595,excited,わくわく,4,,audio/voice/voca/KIDS_V_0595.mp3,false
+items,596,bored,たいくつ,4,,audio/voice/voca/KIDS_V_0596.mp3,false
+items,597,sick,びょうき,4,,audio/voice/voca/KIDS_V_0597.mp3,false
+items,598,healthy,けんこう,4,,audio/voice/voca/KIDS_V_0598.mp3,false
+items,599,busy,いそがしい,4,,audio/voice/voca/KIDS_V_0599.mp3,false
+items,600,free,ひま,4,,audio/voice/voca/KIDS_V_0600.mp3,false
+items,601,worried,しんぱい,4,,audio/voice/voca/KIDS_V_0601.mp3,false
+items,602,Japanese,こくご,4,,audio/voice/voca/KIDS_V_0602.mp3,false
+items,603,math,さんすう,4,,audio/voice/voca/KIDS_V_0603.mp3,false
+items,604,science,りか,4,,audio/voice/voca/KIDS_V_0604.mp3,false
+items,605,social studies,しゃかい,4,,audio/voice/voca/KIDS_V_0605.mp3,false
+items,606,art,ずこう,4,,audio/voice/voca/KIDS_V_0606.mp3,false
+items,607,music,おんがく,4,,audio/voice/voca/KIDS_V_0607.mp3,false
+items,608,PE,たいいく,4,,audio/voice/voca/KIDS_V_0608.mp3,false
+items,609,history,れきし,4,,audio/voice/voca/KIDS_V_0609.mp3,false
+items,610,home economics,かていか,4,,audio/voice/voca/KIDS_V_0610.mp3,false
+items,611,technology,ぎじゅつ,4,,audio/voice/voca/KIDS_V_0611.mp3,false
+items,612,group,グループ,4,,audio/voice/voca/KIDS_V_0612.mp3,false
+items,613,IT,IT,4,,audio/voice/voca/KIDS_V_0613.mp3,false
+items,614,programming,プログラミング,4,,audio/voice/voca/KIDS_V_0614.mp3,false
+items,615,cooking,りょうり,4,,audio/voice/voca/KIDS_V_0615.mp3,false
+items,616,lunch box,べんとう,4,,audio/voice/voca/KIDS_V_0616.mp3,false
+items,617,subject,きょうか,4,,audio/voice/voca/KIDS_V_0617.mp3,false
+items,618,baker,パンやさん,4,,audio/voice/voca/KIDS_V_0618.mp3,false
+items,619,driver,うんてんしゅ,4,,audio/voice/voca/KIDS_V_0619.mp3,false
+items,620,soccer player,サッカーせんしゅ,4,,audio/voice/voca/KIDS_V_0620.mp3,false
+items,621,baseball player,やきゅうせんしゅ,4,,audio/voice/voca/KIDS_V_0621.mp3,false
+items,622,salesperson,てんいん,4,,audio/voice/voca/KIDS_V_0622.mp3,false
+items,623,programmer,プログラマー,4,,audio/voice/voca/KIDS_V_0623.mp3,false
+items,624,designer,デザイナー,4,,audio/voice/voca/KIDS_V_0624.mp3,false
+items,625,office worker,かいしゃいん,4,,audio/voice/voca/KIDS_V_0625.mp3,false
+items,626,band,バンド,4,,audio/voice/voca/KIDS_V_0626.mp3,false
+items,627,stand up,立ち上がる,4,,audio/voice/voca/KIDS_V_0627.mp3,false
+items,628,fly,飛ぶ,4,,audio/voice/voca/KIDS_V_0628.mp3,false
+items,629,climb,登る,4,,audio/voice/voca/KIDS_V_0629.mp3,false
+items,630,fall,倒れる,4,,audio/voice/voca/KIDS_V_0630.mp3,false
+items,631,push,押す,4,,audio/voice/voca/KIDS_V_0631.mp3,false
+items,632,throw,投げる,4,,audio/voice/voca/KIDS_V_0632.mp3,false
+items,633,catch,つかまえる,4,,audio/voice/voca/KIDS_V_0633.mp3,false
+items,634,hit,打つ,4,,audio/voice/voca/KIDS_V_0634.mp3,false
+items,635,stop,止まる,4,,audio/voice/voca/KIDS_V_0635.mp3,false
+items,636,move,動く,4,,audio/voice/voca/KIDS_V_0636.mp3,false
+items,637,enter,入る,4,,audio/voice/voca/KIDS_V_0637.mp3,false
+items,638,go out,出る,4,,audio/voice/voca/KIDS_V_0638.mp3,false
+items,639,turn,曲がる,4,,audio/voice/voca/KIDS_V_0639.mp3,false
+items,640,wait,待つ,4,,audio/voice/voca/KIDS_V_0640.mp3,false
+items,641,ride,（自転車に）乗る,4,,audio/voice/voca/KIDS_V_0641.mp3,false
+items,642,return,戻る,4,,audio/voice/voca/KIDS_V_0642.mp3,false
+items,643,rest,休む,4,,audio/voice/voca/KIDS_V_0643.mp3,false
+items,644,wake up,目が覚める,4,,audio/voice/voca/KIDS_V_0644.mp3,false
+items,645,use,使う,4,,audio/voice/voca/KIDS_V_0645.mp3,false
+items,646,carry,運ぶ,4,,audio/voice/voca/KIDS_V_0646.mp3,false
+items,647,start,始める,4,,audio/voice/voca/KIDS_V_0647.mp3,false
+items,648,enjoy,楽しむ,4,,audio/voice/voca/KIDS_V_0648.mp3,false
+items,649,close,閉める,4,,audio/voice/voca/KIDS_V_0649.mp3,false
+items,650,take off,脱ぐ,4,,audio/voice/voca/KIDS_V_0650.mp3,false
+items,651,take a bath,お風呂に入る,4,,audio/voice/voca/KIDS_V_0651.mp3,false
+items,652,help,手伝う,4,,audio/voice/voca/KIDS_V_0652.mp3,false
+items,653,go to bed,ベッドに入る,4,,audio/voice/voca/KIDS_V_0653.mp3,false
+items,654,take a picture,写真を撮る,4,,audio/voice/voca/KIDS_V_0654.mp3,false
+items,655,take a walk,散歩する,4,,audio/voice/voca/KIDS_V_0655.mp3,false
+items,656,take a break,休憩する,4,,audio/voice/voca/KIDS_V_0656.mp3,false
+items,657,get off,降りる,4,,audio/voice/voca/KIDS_V_0657.mp3,false
+items,658,get to,～に着く,4,,audio/voice/voca/KIDS_V_0658.mp3,false
+items,659,get home,家に帰り着く,4,,audio/voice/voca/KIDS_V_0659.mp3,false
+items,660,get dressed,服を着る,4,,audio/voice/voca/KIDS_V_0660.mp3,false
+items,661,have breakfast,朝食を食べる,4,,audio/voice/voca/KIDS_V_0661.mp3,false
+items,662,have lunch,昼食を食べる,4,,audio/voice/voca/KIDS_V_0662.mp3,false
+items,663,have dinner,夕食を食べる,4,,audio/voice/voca/KIDS_V_0663.mp3,false
+items,664,have fun,楽しい時をすごす,4,,audio/voice/voca/KIDS_V_0664.mp3,false
+items,665,have a cold,かぜをひいている,4,,audio/voice/voca/KIDS_V_0665.mp3,false
+items,666,have a headache,頭がいたい,4,,audio/voice/voca/KIDS_V_0666.mp3,false
+items,667,do one's homework,宿題をする,4,,audio/voice/voca/KIDS_V_0667.mp3,false
+items,668,wind,風,4,,audio/voice/voca/KIDS_V_0668.mp3,false
+items,669,cloud,くも,4,,audio/voice/voca/KIDS_V_0669.mp3,false
+items,670,rainbow,にじ,4,,audio/voice/voca/KIDS_V_0670.mp3,false
+items,671,lake,みずうみ,4,,audio/voice/voca/KIDS_V_0671.mp3,false
+items,672,island,しま,4,,audio/voice/voca/KIDS_V_0672.mp3,false
+items,673,grass,くさ,4,,audio/voice/voca/KIDS_V_0673.mp3,false
+items,674,leaf,はっぱ,4,,audio/voice/voca/KIDS_V_0674.mp3,false
+items,675,weekend,週末（土・日）,4,,audio/voice/voca/KIDS_V_0675.mp3,false
+items,676,third,3rd,4,,audio/voice/voca/KIDS_V_0676.mp3,false
+items,677,fourth,4th,4,,audio/voice/voca/KIDS_V_0677.mp3,false
+items,678,fifth,5th,4,,audio/voice/voca/KIDS_V_0678.mp3,false
+items,679,sixth,6th,4,,audio/voice/voca/KIDS_V_0679.mp3,false
+items,680,seventh,7th,4,,audio/voice/voca/KIDS_V_0680.mp3,false
+items,681,ninth,9th,4,,audio/voice/voca/KIDS_V_0681.mp3,false
+items,682,tenth,10th,4,,audio/voice/voca/KIDS_V_0682.mp3,false
+items,683,give,あげる,4,,audio/voice/voca/KIDS_V_0683.mp3,false
+items,684,get,もらう,4,,audio/voice/voca/KIDS_V_0684.mp3,false
+items,685,bring,持ってくる,4,,audio/voice/voca/KIDS_V_0685.mp3,false
+items,686,send,送る,4,,audio/voice/voca/KIDS_V_0686.mp3,false
+items,687,show,見せる,4,,audio/voice/voca/KIDS_V_0687.mp3,false
+items,688,tell,伝える,4,,audio/voice/voca/KIDS_V_0688.mp3,false
+items,689,say,言う,4,,audio/voice/voca/KIDS_V_0689.mp3,false
+items,690,ask,質問する,4,,audio/voice/voca/KIDS_V_0690.mp3,false
+items,691,answer,答える,4,,audio/voice/voca/KIDS_V_0691.mp3,false
+items,692,call,電話する,4,,audio/voice/voca/KIDS_V_0692.mp3,false
+items,693,learn,学ぶ,4,,audio/voice/voca/KIDS_V_0693.mp3,false
+items,694,thank,お礼を言う,4,,audio/voice/voca/KIDS_V_0694.mp3,false
+items,695,meet,会う,4,,audio/voice/voca/KIDS_V_0695.mp3,false
+items,696,visit,訪ねる,4,,audio/voice/voca/KIDS_V_0696.mp3,false
+items,697,want,欲しい,4,,audio/voice/voca/KIDS_V_0697.mp3,false
+items,698,need,必要,4,,audio/voice/voca/KIDS_V_0698.mp3,false
+items,699,know,知っている,4,,audio/voice/voca/KIDS_V_0699.mp3,false
+items,700,forget,忘れる,4,,audio/voice/voca/KIDS_V_0700.mp3,false
+items,701,look at,～を見る,4,,audio/voice/voca/KIDS_V_0701.mp3,false
+items,702,look for,～をさがす,4,,audio/voice/voca/KIDS_V_0702.mp3,false
+items,703,listen to,～を聞く,4,,audio/voice/voca/KIDS_V_0703.mp3,false
+items,704,wait for,～を待つ,4,,audio/voice/voca/KIDS_V_0704.mp3,false
+items,705,wait a minute,ちょっと待って,4,,audio/voice/voca/KIDS_V_0705.mp3,false
+items,706,speak English,英語を話す,4,,audio/voice/voca/KIDS_V_0706.mp3,false
+items,707,say hello to,～にあいさつする,4,,audio/voice/voca/KIDS_V_0707.mp3,false
+items,708,say goodbye to,さようならを言う,4,,audio/voice/voca/KIDS_V_0708.mp3,false
+items,709,see you later,またあとでね,4,,audio/voice/voca/KIDS_V_0709.mp3,false
+items,710,write to,～に手紙を書く,4,,audio/voice/voca/KIDS_V_0710.mp3,false
+items,711,let's go,さあ行こう,4,,audio/voice/voca/KIDS_V_0711.mp3,false
+items,712,thank you for,～をありがとう,4,,audio/voice/voca/KIDS_V_0712.mp3,false
+items,713,nice to meet you,はじめまして,4,,audio/voice/voca/KIDS_V_0713.mp3,false
+items,714,excuse me,すみません,4,,audio/voice/voca/KIDS_V_0714.mp3,false
+items,715,a lot of,たくさんの,4,,audio/voice/voca/KIDS_V_0715.mp3,false
+items,716,at school,学校で,4,,audio/voice/voca/KIDS_V_0716.mp3,false
+items,717,in the afternoon,午後に,4,,audio/voice/voca/KIDS_V_0717.mp3,false
+items,718,in the evening,夕方に,4,,audio/voice/voca/KIDS_V_0718.mp3,false
+items,719,on Sunday,日曜日に,4,,audio/voice/voca/KIDS_V_0719.mp3,false
+items,720,by train,電車で,4,,audio/voice/voca/KIDS_V_0720.mp3,false
+items,721,right now,今すぐ,4,,audio/voice/voca/KIDS_V_0721.mp3,false
+items,722,every day,毎日,4,,audio/voice/voca/KIDS_V_0722.mp3,false
+items,723,giraffe,きりん,4,,audio/voice/voca/KIDS_V_0723.mp3,false
+items,724,zebra,しまうま,4,,audio/voice/voca/KIDS_V_0724.mp3,false
+items,725,dolphin,いるか,4,,audio/voice/voca/KIDS_V_0725.mp3,false
+items,726,whale,くじら,4,,audio/voice/voca/KIDS_V_0726.mp3,false
+items,727,shark,さめ,4,,audio/voice/voca/KIDS_V_0727.mp3,false
+items,728,butterfly,ちょう,4,,audio/voice/voca/KIDS_V_0728.mp3,false
+items,729,mushroom,きのこ,4,,audio/voice/voca/KIDS_V_0729.mp3,false
+items,730,cucumber,きゅうり,4,,audio/voice/voca/KIDS_V_0730.mp3,false
+items,731,pineapple,パイナップル,4,,audio/voice/voca/KIDS_V_0731.mp3,false
+items,732,donut,ドーナツ,4,,audio/voice/voca/KIDS_V_0732.mp3,false
+items,733,steak,ステーキ,4,,audio/voice/voca/KIDS_V_0733.mp3,false
+items,734,dessert,デザート,4,,audio/voice/voca/KIDS_V_0734.mp3,false
+items,735,vegetable,野菜,4,,audio/voice/voca/KIDS_V_0735.mp3,false
+items,736,fruit,くだもの,4,,audio/voice/voca/KIDS_V_0736.mp3,false
+items,737,meal,食事,4,,audio/voice/voca/KIDS_V_0737.mp3,false
+items,738,menu,メニュー,4,,audio/voice/voca/KIDS_V_0738.mp3,false
+items,739,living room,いま（リビング）,4,,audio/voice/voca/KIDS_V_0739.mp3,false
+items,740,elevator,エレベーター,4,,audio/voice/voca/KIDS_V_0740.mp3,false
+items,741,department store,デパート,4,,audio/voice/voca/KIDS_V_0741.mp3,false
+items,742,village,村,4,,audio/voice/voca/KIDS_V_0742.mp3,false
+items,743,town,小さな町,4,,audio/voice/voca/KIDS_V_0743.mp3,false
+items,744,world,世界,4,,audio/voice/voca/KIDS_V_0744.mp3,false
+items,745,street,通り,4,,audio/voice/voca/KIDS_V_0745.mp3,false
+items,746,corner,かど,4,,audio/voice/voca/KIDS_V_0746.mp3,false
+items,747,ticket,きっぷ,4,,audio/voice/voca/KIDS_V_0747.mp3,false
+items,748,passport,パスポート,4,,audio/voice/voca/KIDS_V_0748.mp3,false
+items,749,wallet,さいふ,4,,audio/voice/voca/KIDS_V_0749.mp3,false
+items,750,letter,手紙,4,,audio/voice/voca/KIDS_V_0750.mp3,false
+items,751,postcard,はがき,4,,audio/voice/voca/KIDS_V_0751.mp3,false
+items,752,stamp,切手,4,,audio/voice/voca/KIDS_V_0752.mp3,false
+items,753,newspaper,新聞,4,,audio/voice/voca/KIDS_V_0753.mp3,false
+items,754,magazine,ざっし,4,,audio/voice/voca/KIDS_V_0754.mp3,false
+items,755,concert,コンサート,4,,audio/voice/voca/KIDS_V_0755.mp3,false
+items,756,trip,旅行,4,,audio/voice/voca/KIDS_V_0756.mp3,false
+items,757,vacation,休み（休暇）,4,,audio/voice/voca/KIDS_V_0757.mp3,false
+items,758,picnic,ピクニック,4,,audio/voice/voca/KIDS_V_0758.mp3,false
+items,759,weather,天気,4,,audio/voice/voca/KIDS_V_0759.mp3,false
+items,760,season,季節,4,,audio/voice/voca/KIDS_V_0760.mp3,false
+items,761,noon,正午,4,,audio/voice/voca/KIDS_V_0761.mp3,false
+items,762,evening,夕方,4,,audio/voice/voca/KIDS_V_0762.mp3,false
+items,763,afternoon,午後,4,,audio/voice/voca/KIDS_V_0763.mp3,false
+items,764,hour,1時間,4,,audio/voice/voca/KIDS_V_0764.mp3,false
+items,765,minute,1分,4,,audio/voice/voca/KIDS_V_0765.mp3,false
+items,766,job,仕事,4,,audio/voice/voca/KIDS_V_0766.mp3,false
+items,767,office,事務所,4,,audio/voice/voca/KIDS_V_0767.mp3,false
+items,768,idea,アイデア・考え,4,,audio/voice/voca/KIDS_V_0768.mp3,false
+items,769,plan,計画,4,,audio/voice/voca/KIDS_V_0769.mp3,false
+items,770,question,しつもん,4,,audio/voice/voca/KIDS_V_0770.mp3,false
+items,771,story,物語,4,,audio/voice/voca/KIDS_V_0771.mp3,false
+items,772,news,ニュース,4,,audio/voice/voca/KIDS_V_0772.mp3,false
+items,773,astronaut,うちゅうひこうし,4,,audio/voice/voca/KIDS_V_0773.mp3,false
+items,774,scientist,科学者,4,,audio/voice/voca/KIDS_V_0774.mp3,false
+items,775,robot,ロボット,4,,audio/voice/voca/KIDS_V_0775.mp3,false
+items,776,begin,始まる,4,,audio/voice/voca/KIDS_V_0776.mp3,false
+items,777,build,建てる,4,,audio/voice/voca/KIDS_V_0777.mp3,false
+items,778,break,こわす,4,,audio/voice/voca/KIDS_V_0778.mp3,false
+items,779,change,変える,4,,audio/voice/voca/KIDS_V_0779.mp3,false
+items,780,check,たしかめる,4,,audio/voice/voca/KIDS_V_0780.mp3,false
+items,781,cry,泣く,4,,audio/voice/voca/KIDS_V_0781.mp3,false
+items,782,feel,感じる,4,,audio/voice/voca/KIDS_V_0782.mp3,false
+items,783,find,見つける,4,,audio/voice/voca/KIDS_V_0783.mp3,false
+items,784,fix,直す,4,,audio/voice/voca/KIDS_V_0784.mp3,false
+items,785,follow,ついていく,4,,audio/voice/voca/KIDS_V_0785.mp3,false
+items,786,grow,育つ,4,,audio/voice/voca/KIDS_V_0786.mp3,false
+items,787,happen,起こる,4,,audio/voice/voca/KIDS_V_0787.mp3,false
+items,788,keep,とっておく,4,,audio/voice/voca/KIDS_V_0788.mp3,false
+items,789,laugh,笑う,4,,audio/voice/voca/KIDS_V_0789.mp3,false
+items,790,leave,出発する,4,,audio/voice/voca/KIDS_V_0790.mp3,false
+items,791,lose,なくす,4,,audio/voice/voca/KIDS_V_0791.mp3,false
+items,792,miss,のがす,4,,audio/voice/voca/KIDS_V_0792.mp3,false
+items,793,pay,はらう,4,,audio/voice/voca/KIDS_V_0793.mp3,false
+items,794,smile,ほほえむ,4,,audio/voice/voca/KIDS_V_0794.mp3,false
+items,795,travel,旅行する,4,,audio/voice/voca/KIDS_V_0795.mp3,false
+items,796,try,やってみる,4,,audio/voice/voca/KIDS_V_0796.mp3,false
+items,797,wear,着ている,4,,audio/voice/voca/KIDS_V_0797.mp3,false
+items,798,touch,さわる,4,,audio/voice/voca/KIDS_V_0798.mp3,false
+items,799,crowded,こんでいる,4,,audio/voice/voca/KIDS_V_0799.mp3,false
+items,800,friendly,親しみやすい,4,,audio/voice/voca/KIDS_V_0800.mp3,false
+items,801,funny,おもしろい（笑える）,4,,audio/voice/voca/KIDS_V_0801.mp3,false
+items,802,glad,うれしい,4,,audio/voice/voca/KIDS_V_0802.mp3,false
+items,803,interesting,おもしろい（興味深い）,4,,audio/voice/voca/KIDS_V_0803.mp3,false
+items,804,lucky,運がいい,4,,audio/voice/voca/KIDS_V_0804.mp3,false
+items,805,noisy,さわがしい,4,,audio/voice/voca/KIDS_V_0805.mp3,false
+items,806,ready,準備ができた,4,,audio/voice/voca/KIDS_V_0806.mp3,false
+items,807,special,特別な,4,,audio/voice/voca/KIDS_V_0807.mp3,false
+items,808,strange,変な,4,,audio/voice/voca/KIDS_V_0808.mp3,false
+items,809,sure,確かな・もちろん,4,,audio/voice/voca/KIDS_V_0809.mp3,false
+items,810,terrible,ひどい,4,,audio/voice/voca/KIDS_V_0810.mp3,false
+items,811,thirsty,のどがかわいた,4,,audio/voice/voca/KIDS_V_0811.mp3,false
+items,812,useful,役に立つ,4,,audio/voice/voca/KIDS_V_0812.mp3,false
+items,813,wonderful,すばらしい,4,,audio/voice/voca/KIDS_V_0813.mp3,false
+items,814,fresh,新せんな,4,,audio/voice/voca/KIDS_V_0814.mp3,false
+items,815,spicy,からい,4,,audio/voice/voca/KIDS_V_0815.mp3,false
+items,816,exciting,わくわくさせる,4,,audio/voice/voca/KIDS_V_0816.mp3,false
+items,817,usually,ふだんは,4,,audio/voice/voca/KIDS_V_0817.mp3,false
+items,818,sometimes,ときどき,4,,audio/voice/voca/KIDS_V_0818.mp3,false
+items,819,never,一度も～ない,4,,audio/voice/voca/KIDS_V_0819.mp3,false
+items,820,soon,まもなく,4,,audio/voice/voca/KIDS_V_0820.mp3,false
+items,821,again,ふたたび,4,,audio/voice/voca/KIDS_V_0821.mp3,false
+items,822,together,いっしょに,4,,audio/voice/voca/KIDS_V_0822.mp3,false
+items,823,outside,外で,4,,audio/voice/voca/KIDS_V_0823.mp3,false
+items,824,tonight,今夜,4,,audio/voice/voca/KIDS_V_0824.mp3,false
+items,825,really,本当に,4,,audio/voice/voca/KIDS_V_0825.mp3,false
+items,826,maybe,もしかすると,4,,audio/voice/voca/KIDS_V_0826.mp3,false
+items,827,go shopping,買い物に行く,4,,audio/voice/voca/KIDS_V_0827.mp3,false
+items,828,go fishing,つりに行く,4,,audio/voice/voca/KIDS_V_0828.mp3,false
+items,829,go camping,キャンプに行く,4,,audio/voice/voca/KIDS_V_0829.mp3,false
+items,830,come back,帰ってくる,4,,audio/voice/voca/KIDS_V_0830.mp3,false
+items,831,come from,～出身である,4,,audio/voice/voca/KIDS_V_0831.mp3,false
+items,832,get well,元気になる,4,,audio/voice/voca/KIDS_V_0832.mp3,false
+items,833,be good at,～が得意だ,4,,audio/voice/voca/KIDS_V_0833.mp3,false
+items,834,be late for,～におくれる,4,,audio/voice/voca/KIDS_V_0834.mp3,false
+items,835,in front of,～の前に,4,,audio/voice/voca/KIDS_V_0835.mp3,false
+items,836,next to,～のとなりに,4,,audio/voice/voca/KIDS_V_0836.mp3,false
+items,837,a piece of,1切れの,4,,audio/voice/voca/KIDS_V_0837.mp3,false
+items,838,a pair of,1組の,4,,audio/voice/voca/KIDS_V_0838.mp3,false
+items,839,at night,夜に,4,,audio/voice/voca/KIDS_V_0839.mp3,false
+items,840,on foot,歩いて,4,,audio/voice/voca/KIDS_V_0840.mp3,false
+items,841,on time,時間どおりに,4,,audio/voice/voca/KIDS_V_0841.mp3,false
+items,842,for the first time,初めて,4,,audio/voice/voca/KIDS_V_0842.mp3,false
+items,843,last week,先週,4,,audio/voice/voca/KIDS_V_0843.mp3,false
+items,844,this morning,今朝,4,,audio/voice/voca/KIDS_V_0844.mp3,false
+items,845,turn on,（スイッチを）つける,4,,audio/voice/voca/KIDS_V_0845.mp3,false
+items,846,turn off,（スイッチを）切る,4,,audio/voice/voca/KIDS_V_0846.mp3,false
+items,847,pick up,拾う,4,,audio/voice/voca/KIDS_V_0847.mp3,false
+items,848,try on,試着する,4,,audio/voice/voca/KIDS_V_0848.mp3,false
+items,849,clean up,かたづける,4,,audio/voice/voca/KIDS_V_0849.mp3,false
+items,850,take a shower,シャワーをあびる,4,,audio/voice/voca/KIDS_V_0850.mp3,false
+items,851,probably,たぶん,3,,audio/voice/voca/KIDS_V_0851.mp3,false
+items,852,since,〜以来,3,,audio/voice/voca/KIDS_V_0852.mp3,false
+items,853,possible,可能な,3,,audio/voice/voca/KIDS_V_0853.mp3,false
+items,854,chance,機会,3,,audio/voice/voca/KIDS_V_0854.mp3,false
+items,855,call back,電話をかけなおす,3,images/vocab/019.webp,audio/voice/voca/KIDS_V_0855.mp3,false
+items,856,modern,現代の,3,,audio/voice/voca/KIDS_V_0856.mp3,false
+items,857,protect,守る,3,,audio/voice/voca/KIDS_V_0857.mp3,false
+items,858,power,力,3,,audio/voice/voca/KIDS_V_0858.mp3,false
+items,859,record,記録,3,,audio/voice/voca/KIDS_V_0859.mp3,false
+items,860,marathon,マラソン,3,,audio/voice/voca/KIDS_V_0860.mp3,false
+items,861,package,包み,3,,audio/voice/voca/KIDS_V_0861.mp3,false
+items,862,amusement park,ゆうえんち,3,,audio/voice/voca/KIDS_V_0862.mp3,false
+items,863,partner,仲間,3,,audio/voice/voca/KIDS_V_0863.mp3,false
+items,864,neighbor,となりのひと,3,,audio/voice/voca/KIDS_V_0864.mp3,false
+items,865,narrow,せまい,3,,audio/voice/voca/KIDS_V_0865.mp3,false
+items,866,shallow,浅い,3,,audio/voice/voca/KIDS_V_0866.mp3,false
+items,867,powder,こな,3,,audio/voice/voca/KIDS_V_0867.mp3,false
+items,868,opposite,反対の,3,,audio/voice/voca/KIDS_V_0868.mp3,false
+items,869,smooth,なめらか,3,,audio/voice/voca/KIDS_V_0869.mp3,false
+items,870,rough,ざらざら,3,,audio/voice/voca/KIDS_V_0870.mp3,false
+items,871,confident,じしんまんまん,3,,audio/voice/voca/KIDS_V_0871.mp3,false
+items,872,proud,ほこらしい,3,,audio/voice/voca/KIDS_V_0872.mp3,false
+items,873,embarrassed,はずかしい,3,,audio/voice/voca/KIDS_V_0873.mp3,false
+items,874,nervous,きんちょう,3,,audio/voice/voca/KIDS_V_0874.mp3,false
+items,875,relaxed,リラックス,3,,audio/voice/voca/KIDS_V_0875.mp3,false
+items,876,hopeful,きたい,3,,audio/voice/voca/KIDS_V_0876.mp3,false
+items,877,communication,コミュニケーション,3,,audio/voice/voca/KIDS_V_0877.mp3,false
+items,878,poem,詩,3,,audio/voice/voca/KIDS_V_0878.mp3,false
+items,879,vet,じゅうい,3,,audio/voice/voca/KIDS_V_0879.mp3,false
+items,880,actor,はいゆう,3,,audio/voice/voca/KIDS_V_0880.mp3,false
+items,881,flight attendant,きゃくしつじょうむいん,3,,audio/voice/voca/KIDS_V_0881.mp3,false
+items,882,engineer,ぎじゅつしゃ,3,,audio/voice/voca/KIDS_V_0882.mp3,false
+items,883,musician,おんがくか,3,,audio/voice/voca/KIDS_V_0883.mp3,false
+items,884,arrive,到着する,3,,audio/voice/voca/KIDS_V_0884.mp3,false
+items,885,hurry,急ぐ,3,,audio/voice/voca/KIDS_V_0885.mp3,false
+items,886,go on a trip,旅行に行く,3,,audio/voice/voca/KIDS_V_0886.mp3,false
+items,887,take care of,世話をする,3,,audio/voice/voca/KIDS_V_0887.mp3,false
+items,888,get together,集まる,3,,audio/voice/voca/KIDS_V_0888.mp3,false
+items,889,have a good time,楽しい時間をすごす,3,,audio/voice/voca/KIDS_V_0889.mp3,false
+items,890,make a mistake,まちがえる,3,,audio/voice/voca/KIDS_V_0890.mp3,false
+items,891,make noise,騒ぐ,3,,audio/voice/voca/KIDS_V_0891.mp3,false
+items,892,make a wish,願いごとをする,3,,audio/voice/voca/KIDS_V_0892.mp3,false
+items,893,make a sound,音を立てる,3,,audio/voice/voca/KIDS_V_0893.mp3,false
+items,894,do one's best,ベストをつくす,3,,audio/voice/voca/KIDS_V_0894.mp3,false
+items,895,give a hand,手を貸す,3,,audio/voice/voca/KIDS_V_0895.mp3,false
+items,896,storm,あらし,3,,audio/voice/voca/KIDS_V_0896.mp3,false
+items,897,planet,わくせい,3,,audio/voice/voca/KIDS_V_0897.mp3,false
+items,898,space,うちゅう,3,,audio/voice/voca/KIDS_V_0898.mp3,false
+items,899,chat,おしゃべりする,3,,audio/voice/voca/KIDS_V_0899.mp3,false
+items,900,invite,招く,3,,audio/voice/voca/KIDS_V_0900.mp3,false
+items,901,introduce,紹介する,3,,audio/voice/voca/KIDS_V_0901.mp3,false
+items,902,join,参加する,3,,audio/voice/voca/KIDS_V_0902.mp3,false
+items,903,understand,理解する,3,,audio/voice/voca/KIDS_V_0903.mp3,false
+items,904,look like,～に似ている,3,,audio/voice/voca/KIDS_V_0904.mp3,false
+items,905,look up,（辞書で）調べる,3,,audio/voice/voca/KIDS_V_0905.mp3,false
+items,906,look after,面どうを見る,3,,audio/voice/voca/KIDS_V_0906.mp3,false
+items,907,talk with,～と話し合う,3,,audio/voice/voca/KIDS_V_0907.mp3,false
+items,908,ask for,～を求める,3,,audio/voice/voca/KIDS_V_0908.mp3,false
+items,909,ask about,～について尋ねる,3,,audio/voice/voca/KIDS_V_0909.mp3,false
+items,910,tell a story,物語を話す,3,,audio/voice/voca/KIDS_V_0910.mp3,false
+items,911,read aloud,音読する,3,,audio/voice/voca/KIDS_V_0911.mp3,false
+items,912,read about,～について読む,3,,audio/voice/voca/KIDS_V_0912.mp3,false
+items,913,nod,うなずく,3,,audio/voice/voca/KIDS_V_0913.mp3,false
+items,914,once more,もう一度,3,,audio/voice/voca/KIDS_V_0914.mp3,false
+items,915,a couple of,2、3の,3,,audio/voice/voca/KIDS_V_0915.mp3,false
+items,916,a plate of,1皿の～,3,,audio/voice/voca/KIDS_V_0916.mp3,false
+items,917,up to,～まで,3,,audio/voice/voca/KIDS_V_0917.mp3,false
+items,918,not at all,どういたしまして,3,,audio/voice/voca/KIDS_V_0918.mp3,false
+items,919,for example,たとえば,3,,audio/voice/voca/KIDS_V_0919.mp3,false
+items,920,and so on,～など,3,,audio/voice/voca/KIDS_V_0920.mp3,false
+items,921,decide,決める,3,,audio/voice/voca/KIDS_V_0921.mp3,false
+items,922,choose,選ぶ,3,,audio/voice/voca/KIDS_V_0922.mp3,false
+items,923,realize,気づく,3,,audio/voice/voca/KIDS_V_0923.mp3,false
+items,924,explain,説明する,3,,audio/voice/voca/KIDS_V_0924.mp3,false
+items,925,describe,描写する,3,,audio/voice/voca/KIDS_V_0925.mp3,false
+items,926,continue,続ける,3,,audio/voice/voca/KIDS_V_0926.mp3,false
+items,927,suggest,提案する,3,,audio/voice/voca/KIDS_V_0927.mp3,false
+items,928,expect,予期する,3,,audio/voice/voca/KIDS_V_0928.mp3,false
+items,929,recommend,すすめる,3,,audio/voice/voca/KIDS_V_0929.mp3,false
+items,930,fail,失敗する,3,,audio/voice/voca/KIDS_V_0930.mp3,false
+items,931,refuse,断る,3,,audio/voice/voca/KIDS_V_0931.mp3,false
+items,932,express,表現する,3,,audio/voice/voca/KIDS_V_0932.mp3,false
+items,933,increase,増やす,3,,audio/voice/voca/KIDS_V_0933.mp3,false
+items,934,allow,許す（してよいと言う）,3,,audio/voice/voca/KIDS_V_0934.mp3,false
+items,935,prevent,防ぐ,3,,audio/voice/voca/KIDS_V_0935.mp3,false
+items,936,encourage,はげます,3,,audio/voice/voca/KIDS_V_0936.mp3,false
+items,937,complain,不平を言う,3,,audio/voice/voca/KIDS_V_0937.mp3,false
+items,938,apologize,あやまる,3,,audio/voice/voca/KIDS_V_0938.mp3,false
+items,939,celebrate,祝う,3,,audio/voice/voca/KIDS_V_0939.mp3,false
+items,940,concentrate,集中する,3,,audio/voice/voca/KIDS_V_0940.mp3,false
+items,941,discover,発見する,3,,audio/voice/voca/KIDS_V_0941.mp3,false
+items,942,develop,発展させる,3,,audio/voice/voca/KIDS_V_0942.mp3,false
+items,943,examine,くわしく調べる,3,,audio/voice/voca/KIDS_V_0943.mp3,false
+items,944,mention,言及する,3,,audio/voice/voca/KIDS_V_0944.mp3,false
+items,945,solve,解決する,3,,audio/voice/voca/KIDS_V_0945.mp3,false
+items,946,careful,注意深い,3,,audio/voice/voca/KIDS_V_0946.mp3,false
+items,947,similar,似ている,3,,audio/voice/voca/KIDS_V_0947.mp3,false
+items,948,impossible,不可能な,3,,audio/voice/voca/KIDS_V_0948.mp3,false
+items,949,necessary,必要な,3,,audio/voice/voca/KIDS_V_0949.mp3,false
+items,950,convenient,便利な,3,,audio/voice/voca/KIDS_V_0950.mp3,false
+items,951,foreign,外国の,3,,audio/voice/voca/KIDS_V_0951.mp3,false
+items,952,local,地元の,3,,audio/voice/voca/KIDS_V_0952.mp3,false
+items,953,common,共通の,3,,audio/voice/voca/KIDS_V_0953.mp3,false
+items,954,certain,確かな,3,,audio/voice/voca/KIDS_V_0954.mp3,false
+items,955,polite,れいぎ正しい,3,,audio/voice/voca/KIDS_V_0955.mp3,false
+items,956,honest,正直な,3,,audio/voice/voca/KIDS_V_0956.mp3,false
+items,957,afraid,こわがって,3,,audio/voice/voca/KIDS_V_0957.mp3,false
+items,958,problem,問題,3,,audio/voice/voca/KIDS_V_0958.mp3,false
+items,959,result,結果,3,,audio/voice/voca/KIDS_V_0959.mp3,false
+items,960,opinion,意見,3,,audio/voice/voca/KIDS_V_0960.mp3,false
+items,961,environment,環境,3,,audio/voice/voca/KIDS_V_0961.mp3,false
+items,962,culture,文化,3,,audio/voice/voca/KIDS_V_0962.mp3,false
+items,963,society,社会,3,,audio/voice/voca/KIDS_V_0963.mp3,false
+items,964,language,言語,3,,audio/voice/voca/KIDS_V_0964.mp3,false
+items,965,information,情報,3,,audio/voice/voca/KIDS_V_0965.mp3,false
+items,966,message,伝言,3,,audio/voice/voca/KIDS_V_0966.mp3,false
+items,967,advice,助言,3,,audio/voice/voca/KIDS_V_0967.mp3,false
+items,968,difference,ちがい,3,,audio/voice/voca/KIDS_V_0968.mp3,false
+items,969,distance,きょり,3,,audio/voice/voca/KIDS_V_0969.mp3,false
+items,970,century,世紀,3,,audio/voice/voca/KIDS_V_0970.mp3,false
+items,971,health,健康,3,,audio/voice/voca/KIDS_V_0971.mp3,false
+items,972,peace,平和,3,,audio/voice/voca/KIDS_V_0972.mp3,false
+items,973,accident,事故,3,,audio/voice/voca/KIDS_V_0973.mp3,false
+items,974,goal,目標,3,,audio/voice/voca/KIDS_V_0974.mp3,false
+items,975,memory,記憶,3,,audio/voice/voca/KIDS_V_0975.mp3,false
+items,976,dream,夢,3,,audio/voice/voca/KIDS_V_0976.mp3,false
+items,977,however,しかし,3,,audio/voice/voca/KIDS_V_0977.mp3,false
+items,978,finally,ついに,3,,audio/voice/voca/KIDS_V_0978.mp3,false
+items,979,especially,特に,3,,audio/voice/voca/KIDS_V_0979.mp3,false
+items,980,actually,実は,3,,audio/voice/voca/KIDS_V_0980.mp3,false
+items,981,instead,その代わり,3,,audio/voice/voca/KIDS_V_0981.mp3,false
+items,982,although,〜だけれど,3,,audio/voice/voca/KIDS_V_0982.mp3,false
+items,983,while,〜の間,3,,audio/voice/voca/KIDS_V_0983.mp3,false
+items,984,until,〜まで,3,,audio/voice/voca/KIDS_V_0984.mp3,false
+items,985,enough,じゅうぶん,3,,audio/voice/voca/KIDS_V_0985.mp3,false
+items,986,borrow,借りる,3,,audio/voice/voca/KIDS_V_0986.mp3,false
+items,987,lend,貸す,3,,audio/voice/voca/KIDS_V_0987.mp3,false
+items,988,spend,（時間を）過ごす,3,,audio/voice/voca/KIDS_V_0988.mp3,false
+items,989,save,救う・貯める,3,,audio/voice/voca/KIDS_V_0989.mp3,false
+items,990,support,支える,3,,audio/voice/voca/KIDS_V_0990.mp3,false
+items,991,collect,集める,3,,audio/voice/voca/KIDS_V_0991.mp3,false
+items,992,belong to,～に所属する,3,,audio/voice/voca/KIDS_V_0992.mp3,false
+items,993,be famous for,～で有名だ,3,,audio/voice/voca/KIDS_V_0993.mp3,false
+items,994,be interested in,～に興味がある,3,,audio/voice/voca/KIDS_V_0994.mp3,false
+items,995,grow up,成長する,3,,audio/voice/voca/KIDS_V_0995.mp3,false
+items,996,be able to,～できる,3,,audio/voice/voca/KIDS_V_0996.mp3,false
+items,997,because of,～のせいで,3,,audio/voice/voca/KIDS_V_0997.mp3,false
+items,998,at first,最初は,3,,audio/voice/voca/KIDS_V_0998.mp3,false
+items,999,in the future,将来,3,,audio/voice/voca/KIDS_V_0999.mp3,false
+items,1000,traditional,伝統的な,3,,audio/voice/voca/KIDS_V_1000.mp3,false
+items,1001,international,国際的な,3,,audio/voice/voca/KIDS_V_1001.mp3,false
+items,1002,volunteer,ボランティア,3,,audio/voice/voca/KIDS_V_1002.mp3,false
+items,1003,contest,コンテスト,3,,audio/voice/voca/KIDS_V_1003.mp3,false
+items,1004,festival,祭り,3,,audio/voice/voca/KIDS_V_1004.mp3,false
+items,1005,event,行事,3,,audio/voice/voca/KIDS_V_1005.mp3,false
+items,1006,price,ねだん,3,,audio/voice/voca/KIDS_V_1006.mp3,false
+items,1007,tourist,観光客,3,,audio/voice/voca/KIDS_V_1007.mp3,false
+items,1008,passenger,乗客,3,,audio/voice/voca/KIDS_V_1008.mp3,false
+items,1009,audience,観客,3,,audio/voice/voca/KIDS_V_1009.mp3,false
+items,1010,graduate,卒業する,3,,audio/voice/voca/KIDS_V_1010.mp3,false
+items,1011,hold,（会を）開く,3,,audio/voice/voca/KIDS_V_1011.mp3,false
+items,1012,worry about,～を心配する,3,,audio/voice/voca/KIDS_V_1012.mp3,false
+items,1013,take part in,～に参加する,3,,audio/voice/voca/KIDS_V_1013.mp3,false
+items,1014,ability,能力,3,,audio/voice/voca/KIDS_V_1014.mp3,false
+items,1015,abroad,外国に,3,,audio/voice/voca/KIDS_V_1015.mp3,false
+items,1016,achieve,達成する,3,,audio/voice/voca/KIDS_V_1016.mp3,false
+items,1017,active,活発な,3,,audio/voice/voca/KIDS_V_1017.mp3,false
+items,1018,activity,活動,3,,audio/voice/voca/KIDS_V_1018.mp3,false
+items,1019,adult,大人,3,,audio/voice/voca/KIDS_V_1019.mp3,false
+items,1020,advantage,有利な点,3,,audio/voice/voca/KIDS_V_1020.mp3,false
+items,1021,adventure,冒険,3,,audio/voice/voca/KIDS_V_1021.mp3,false
+items,1022,against,～に反対して,3,,audio/voice/voca/KIDS_V_1022.mp3,false
+items,1023,alone,ひとりで,3,,audio/voice/voca/KIDS_V_1023.mp3,false
+items,1024,already,すでに,3,,audio/voice/voca/KIDS_V_1024.mp3,false
+items,1025,amazing,おどろくほどすごい,3,,audio/voice/voca/KIDS_V_1025.mp3,false
+items,1026,amount,量,3,,audio/voice/voca/KIDS_V_1026.mp3,false
+items,1027,ancient,古代の,3,,audio/voice/voca/KIDS_V_1027.mp3,false
+items,1028,announce,発表する,3,,audio/voice/voca/KIDS_V_1028.mp3,false
+items,1029,anyway,とにかく,3,,audio/voice/voca/KIDS_V_1029.mp3,false
+items,1030,appear,現れる,3,,audio/voice/voca/KIDS_V_1030.mp3,false
+items,1031,area,地域,3,,audio/voice/voca/KIDS_V_1031.mp3,false
+items,1032,argue,言い争う,3,,audio/voice/voca/KIDS_V_1032.mp3,false
+items,1033,as soon as,～するとすぐに,3,,audio/voice/voca/KIDS_V_1033.mp3,false
+items,1034,at last,やっと,3,,audio/voice/voca/KIDS_V_1034.mp3,false
+items,1035,at least,少なくとも,3,,audio/voice/voca/KIDS_V_1035.mp3,false
+items,1036,attend,出席する,3,,audio/voice/voca/KIDS_V_1036.mp3,false
+items,1037,attention,注意,3,,audio/voice/voca/KIDS_V_1037.mp3,false
+items,1038,attract,引きつける,3,,audio/voice/voca/KIDS_V_1038.mp3,false
+items,1039,author,著者,3,,audio/voice/voca/KIDS_V_1039.mp3,false
+items,1040,average,平均の,3,,audio/voice/voca/KIDS_V_1040.mp3,false
+items,1041,avoid,避ける,3,,audio/voice/voca/KIDS_V_1041.mp3,false
+items,1042,basic,基本の,3,,audio/voice/voca/KIDS_V_1042.mp3,false
+items,1043,be born,生まれる,3,,audio/voice/voca/KIDS_V_1043.mp3,false
+items,1044,be filled with,～で満たされている,3,,audio/voice/voca/KIDS_V_1044.mp3,false
+items,1045,be made of,～でできている,3,,audio/voice/voca/KIDS_V_1045.mp3,false
+items,1046,be proud of,～をほこりに思う,3,,audio/voice/voca/KIDS_V_1046.mp3,false
+items,1047,be surprised at,～におどろく,3,,audio/voice/voca/KIDS_V_1047.mp3,false
+items,1048,be worried about,～が気がかりだ,3,,audio/voice/voca/KIDS_V_1048.mp3,false
+items,1049,behave,ふるまう,3,,audio/voice/voca/KIDS_V_1049.mp3,false
+items,1050,bite,かむ,3,,audio/voice/voca/KIDS_V_1050.mp3,false
+items,1051,bitter,にがい,3,,audio/voice/voca/KIDS_V_1051.mp3,false
+items,1052,blanket,毛布,3,,audio/voice/voca/KIDS_V_1052.mp3,false
+items,1053,blood,血,3,,audio/voice/voca/KIDS_V_1053.mp3,false
+items,1054,boil,ゆでる,3,,audio/voice/voca/KIDS_V_1054.mp3,false
+items,1055,boring,退屈な,3,,audio/voice/voca/KIDS_V_1055.mp3,false
+items,1056,bottom,底,3,,audio/voice/voca/KIDS_V_1056.mp3,false
+items,1057,burn,燃える,3,,audio/voice/voca/KIDS_V_1057.mp3,false
+items,1058,business,仕事・商売,3,,audio/voice/voca/KIDS_V_1058.mp3,false
+items,1059,by the way,ところで,3,,audio/voice/voca/KIDS_V_1059.mp3,false
+items,1060,cancel,取り消す,3,,audio/voice/voca/KIDS_V_1060.mp3,false
+items,1061,careless,不注意な,3,,audio/voice/voca/KIDS_V_1061.mp3,false
+items,1062,cause,原因,3,,audio/voice/voca/KIDS_V_1062.mp3,false
+items,1063,challenge,挑戦,3,,audio/voice/voca/KIDS_V_1063.mp3,false
+items,1064,cheer,応援する,3,,audio/voice/voca/KIDS_V_1064.mp3,false
+items,1065,chef,シェフ・料理人,3,,audio/voice/voca/KIDS_V_1065.mp3,false
+items,1066,childhood,子ども時代,3,,audio/voice/voca/KIDS_V_1066.mp3,false
+items,1067,choice,選択,3,,audio/voice/voca/KIDS_V_1067.mp3,false
+items,1068,citizen,市民,3,,audio/voice/voca/KIDS_V_1068.mp3,false
+items,1069,clever,機転がきく,3,,audio/voice/voca/KIDS_V_1069.mp3,false
+items,1070,climate,気候,3,,audio/voice/voca/KIDS_V_1070.mp3,false
+items,1071,clothes,衣服,3,,audio/voice/voca/KIDS_V_1071.mp3,false
+items,1072,come true,実現する,3,,audio/voice/voca/KIDS_V_1072.mp3,false
+items,1073,company,会社,3,,audio/voice/voca/KIDS_V_1073.mp3,false
+items,1074,compare,比べる,3,,audio/voice/voca/KIDS_V_1074.mp3,false
+items,1075,complete,完成させる,3,,audio/voice/voca/KIDS_V_1075.mp3,false
+items,1076,contact,連絡する,3,,audio/voice/voca/KIDS_V_1076.mp3,false
+items,1077,correct,正しい,3,,audio/voice/voca/KIDS_V_1077.mp3,false
+items,1078,cost,費用がかかる,3,,audio/voice/voca/KIDS_V_1078.mp3,false
+items,1079,countryside,いなか,3,,audio/voice/voca/KIDS_V_1079.mp3,false
+items,1080,courage,勇気,3,,audio/voice/voca/KIDS_V_1080.mp3,false
+items,1081,cover,おおう,3,,audio/voice/voca/KIDS_V_1081.mp3,false
+items,1082,create,作り出す,3,,audio/voice/voca/KIDS_V_1082.mp3,false
+items,1083,curious,知りたがりの,3,,audio/voice/voca/KIDS_V_1083.mp3,false
+items,1084,customer,（店の）客,3,,audio/voice/voca/KIDS_V_1084.mp3,false
+items,1085,daily,毎日の,3,,audio/voice/voca/KIDS_V_1085.mp3,false
+items,1086,damage,損害,3,,audio/voice/voca/KIDS_V_1086.mp3,false
+items,1087,deal with,～に対処する,3,,audio/voice/voca/KIDS_V_1087.mp3,false
+items,1088,deliver,配達する,3,,audio/voice/voca/KIDS_V_1088.mp3,false
+items,1089,design,設計する,3,,audio/voice/voca/KIDS_V_1089.mp3,false
+items,1090,destroy,破壊する,3,,audio/voice/voca/KIDS_V_1090.mp3,false
+items,1091,die,死ぬ,3,,audio/voice/voca/KIDS_V_1091.mp3,false
+items,1092,disagree,反対する,3,,audio/voice/voca/KIDS_V_1092.mp3,false
+items,1093,disappointed,がっかりした,3,,audio/voice/voca/KIDS_V_1093.mp3,false
+items,1094,disaster,災害,3,,audio/voice/voca/KIDS_V_1094.mp3,false
+items,1095,discount,割引,3,,audio/voice/voca/KIDS_V_1095.mp3,false
+items,1096,discuss,（議題を）話し合う,3,,audio/voice/voca/KIDS_V_1096.mp3,false
+items,1097,disease,病気,3,,audio/voice/voca/KIDS_V_1097.mp3,false
+items,1098,divide,分ける,3,,audio/voice/voca/KIDS_V_1098.mp3,false
+items,1099,doubt,疑う,3,,audio/voice/voca/KIDS_V_1099.mp3,false
+items,1100,drop,落とす,3,,audio/voice/voca/KIDS_V_1100.mp3,false
+items,1101,during,～の期間中に,3,,audio/voice/voca/KIDS_V_1101.mp3,false
+items,1102,earn,かせぐ,3,,audio/voice/voca/KIDS_V_1102.mp3,false
+items,1103,earth,地球,3,,audio/voice/voca/KIDS_V_1103.mp3,false
+items,1104,earthquake,地震,3,,audio/voice/voca/KIDS_V_1104.mp3,false
+items,1105,education,教育,3,,audio/voice/voca/KIDS_V_1105.mp3,false
+items,1106,effort,努力,3,,audio/voice/voca/KIDS_V_1106.mp3,false
+items,1107,wooden,木製の,3,,audio/voice/voca/KIDS_V_1107.mp3,false
+items,1108,electricity,電気,3,,audio/voice/voca/KIDS_V_1108.mp3,false
+items,1109,elementary school,小学校,3,,audio/voice/voca/KIDS_V_1109.mp3,false
+items,1110,emergency,緊急事態,3,,audio/voice/voca/KIDS_V_1110.mp3,false
+items,1111,empty,空っぽの,3,,audio/voice/voca/KIDS_V_1111.mp3,false
+items,1112,enemy,敵,3,,audio/voice/voca/KIDS_V_1112.mp3,false
+items,1113,entrance,入り口,3,,audio/voice/voca/KIDS_V_1113.mp3,false
+items,1114,escape,にげる,3,,audio/voice/voca/KIDS_V_1114.mp3,false
+items,1115,exactly,正確に,3,,audio/voice/voca/KIDS_V_1115.mp3,false
+items,1116,exam,試験,3,,audio/voice/voca/KIDS_V_1116.mp3,false
+items,1117,excellent,とてもすぐれた,3,,audio/voice/voca/KIDS_V_1117.mp3,false
+items,1118,exchange,交換する,3,,audio/voice/voca/KIDS_V_1118.mp3,false
+items,1119,exercise,運動,3,,audio/voice/voca/KIDS_V_1119.mp3,false
+items,1120,experiment,実験,3,,audio/voice/voca/KIDS_V_1120.mp3,false
+items,1121,expert,専門家,3,,audio/voice/voca/KIDS_V_1121.mp3,false
+items,1122,fact,事実,3,,audio/voice/voca/KIDS_V_1122.mp3,false
+items,1123,factory,工場,3,,audio/voice/voca/KIDS_V_1123.mp3,false
+items,1124,smoke,煙,3,,audio/voice/voca/KIDS_V_1124.mp3,false
+items,1125,fashion,流行,3,,audio/voice/voca/KIDS_V_1125.mp3,false
+items,1126,fear,おそれ,3,,audio/voice/voca/KIDS_V_1126.mp3,false
+items,1127,feed,えさをやる,3,,audio/voice/voca/KIDS_V_1127.mp3,false
+items,1128,fever,熱,3,,audio/voice/voca/KIDS_V_1128.mp3,false
+items,1129,fight,戦う,3,,audio/voice/voca/KIDS_V_1129.mp3,false
+items,1130,find out,見つけ出す,3,,audio/voice/voca/KIDS_V_1130.mp3,false
+items,1131,for a while,しばらくの間,3,,audio/voice/voca/KIDS_V_1131.mp3,false
+items,1132,forever,永遠に,3,,audio/voice/voca/KIDS_V_1132.mp3,false
+items,1133,garbage,ごみ,3,,audio/voice/voca/KIDS_V_1133.mp3,false
+items,1134,gather,寄せ集める,3,,audio/voice/voca/KIDS_V_1134.mp3,false
+items,1135,generation,世代,3,,audio/voice/voca/KIDS_V_1135.mp3,false
+items,1136,gentle,やさしい・おだやかな,3,,audio/voice/voca/KIDS_V_1136.mp3,false
+items,1137,get along with,～と仲よくやる,3,,audio/voice/voca/KIDS_V_1137.mp3,false
+items,1138,get lost,道に迷う,3,,audio/voice/voca/KIDS_V_1138.mp3,false
+items,1139,get married,結婚する,3,,audio/voice/voca/KIDS_V_1139.mp3,false
+items,1140,get ready,したくをする,3,,audio/voice/voca/KIDS_V_1140.mp3,false
+items,1141,gift,贈り物,3,,audio/voice/voca/KIDS_V_1141.mp3,false
+items,1142,go abroad,外国へ行く,3,,audio/voice/voca/KIDS_V_1142.mp3,false
+items,1143,government,政府,3,,audio/voice/voca/KIDS_V_1143.mp3,false
+items,1144,greet,あいさつする,3,,audio/voice/voca/KIDS_V_1144.mp3,false
+items,1145,guess,推測する,3,,audio/voice/voca/KIDS_V_1145.mp3,false
+items,1146,guest,招待客・泊まり客,3,,audio/voice/voca/KIDS_V_1146.mp3,false
+items,1147,guide,案内する,3,,audio/voice/voca/KIDS_V_1147.mp3,false
+items,1148,harvest,収穫,3,,audio/voice/voca/KIDS_V_1148.mp3,false
+items,1149,hate,ひどくきらう,3,,audio/voice/voca/KIDS_V_1149.mp3,false
+items,1150,helpful,助けになる,3,,audio/voice/voca/KIDS_V_1150.mp3,false
+items,1151,hero,英雄,3,,audio/voice/voca/KIDS_V_1151.mp3,false
+items,1152,hide,かくす,3,,audio/voice/voca/KIDS_V_1152.mp3,false
+items,1153,hometown,ふるさと,3,,audio/voice/voca/KIDS_V_1153.mp3,false
+items,1154,huge,巨大な,3,,audio/voice/voca/KIDS_V_1154.mp3,false
+items,1155,human,人間,3,,audio/voice/voca/KIDS_V_1155.mp3,false
+items,1156,hurt,傷つける・痛む,3,,audio/voice/voca/KIDS_V_1156.mp3,false
+items,1157,immediately,すぐに,3,,audio/voice/voca/KIDS_V_1157.mp3,false
+items,1158,in fact,じっさいには,3,,audio/voice/voca/KIDS_V_1158.mp3,false
+items,1159,include,ふくむ,3,,audio/voice/voca/KIDS_V_1159.mp3,false
+items,1160,injure,けがをさせる,3,,audio/voice/voca/KIDS_V_1160.mp3,false
+items,1161,insect,虫,3,,audio/voice/voca/KIDS_V_1161.mp3,false
+items,1162,instrument,楽器,3,,audio/voice/voca/KIDS_V_1162.mp3,false
+items,1163,interview,面接,3,,audio/voice/voca/KIDS_V_1163.mp3,false
+items,1164,invent,発明する,3,,audio/voice/voca/KIDS_V_1164.mp3,false
+items,1165,tear,涙,3,,audio/voice/voca/KIDS_V_1165.mp3,false
+items,1166,journey,旅,3,,audio/voice/voca/KIDS_V_1166.mp3,false
+items,1167,judge,判断する,3,,audio/voice/voca/KIDS_V_1167.mp3,false
+items,1168,jungle,ジャングル,3,,audio/voice/voca/KIDS_V_1168.mp3,false
+items,1169,keep in touch,連絡を取り合う,3,,audio/voice/voca/KIDS_V_1169.mp3,false
+items,1170,kindness,親切,3,,audio/voice/voca/KIDS_V_1170.mp3,false
+items,1171,knock,ノックする,3,,audio/voice/voca/KIDS_V_1171.mp3,false
+items,1172,step,一歩・段,3,,audio/voice/voca/KIDS_V_1172.mp3,false
+items,1173,land,着陸する,3,,audio/voice/voca/KIDS_V_1173.mp3,false
+items,1174,last,続く,3,,audio/voice/voca/KIDS_V_1174.mp3,false
+items,1175,lately,このごろ,3,,audio/voice/voca/KIDS_V_1175.mp3,false
+items,1176,law,法律,3,,audio/voice/voca/KIDS_V_1176.mp3,false
+items,1177,lazy,なまけものの,3,,audio/voice/voca/KIDS_V_1177.mp3,false
+items,1178,lead,導く,3,,audio/voice/voca/KIDS_V_1178.mp3,false
+items,1179,leader,指導者,3,,audio/voice/voca/KIDS_V_1179.mp3,false
+items,1180,let,～させる,3,,audio/voice/voca/KIDS_V_1180.mp3,false
+items,1181,level,水準,3,,audio/voice/voca/KIDS_V_1181.mp3,false
+items,1182,lie,うそをつく,3,,audio/voice/voca/KIDS_V_1182.mp3,false
+items,1183,lift,持ち上げる,3,,audio/voice/voca/KIDS_V_1183.mp3,false
+items,1184,lock,かぎをかける,3,,audio/voice/voca/KIDS_V_1184.mp3,false
+items,1185,machine,機械,3,,audio/voice/voca/KIDS_V_1185.mp3,false
+items,1186,manager,店長,3,,audio/voice/voca/KIDS_V_1186.mp3,false
+items,1187,market,市場,3,,audio/voice/voca/KIDS_V_1187.mp3,false
+items,1188,marry,～と結婚する,3,,audio/voice/voca/KIDS_V_1188.mp3,false
+items,1189,match,試合,3,,audio/voice/voca/KIDS_V_1189.mp3,false
+items,1190,matter,問題・事がら,3,,audio/voice/voca/KIDS_V_1190.mp3,false
+items,1191,medicine,薬,3,,audio/voice/voca/KIDS_V_1191.mp3,false
+items,1192,melt,とける,3,,audio/voice/voca/KIDS_V_1192.mp3,false
+items,1193,safety,安全,3,,audio/voice/voca/KIDS_V_1193.mp3,false
+items,1194,mind,心,3,,audio/voice/voca/KIDS_V_1194.mp3,false
+items,1195,thought,思いついたこと,3,,audio/voice/voca/KIDS_V_1195.mp3,false
+items,1196,mix,混ぜる,3,,audio/voice/voca/KIDS_V_1196.mp3,false
+items,1197,movement,動き,3,,audio/voice/voca/KIDS_V_1197.mp3,false
+items,1198,mystery,なぞ,3,,audio/voice/voca/KIDS_V_1198.mp3,false
+items,1199,million,100万,3,,audio/voice/voca/KIDS_V_1199.mp3,false
+items,1200,make sure,確かめる,3,,audio/voice/voca/KIDS_V_1200.mp3,false
+items,1201,make money,お金をかせぐ,3,,audio/voice/voca/KIDS_V_1201.mp3,false
+items,1202,more than,～より多く,3,,audio/voice/voca/KIDS_V_1202.mp3,false
+items,1203,moment,瞬間,3,,audio/voice/voca/KIDS_V_1203.mp3,false
+items,1204,nation,国家,3,,audio/voice/voca/KIDS_V_1204.mp3,false
+items,1205,national,国の,3,,audio/voice/voca/KIDS_V_1205.mp3,false
+items,1206,nearly,もう少しで,3,,audio/voice/voca/KIDS_V_1206.mp3,false
+items,1207,neither,どちらも～ない,3,,audio/voice/voca/KIDS_V_1207.mp3,false
+items,1208,noise,騒音,3,,audio/voice/voca/KIDS_V_1208.mp3,false
+items,1209,normal,ふつうの,3,,audio/voice/voca/KIDS_V_1209.mp3,false
+items,1210,note,メモ,3,,audio/voice/voca/KIDS_V_1210.mp3,false
+items,1211,notice,見て気づく,3,,audio/voice/voca/KIDS_V_1211.mp3,false
+items,1212,novel,小説,3,,audio/voice/voca/KIDS_V_1212.mp3,false
+items,1213,someday,いつか,3,,audio/voice/voca/KIDS_V_1213.mp3,false
+items,1214,speed,速さ,3,,audio/voice/voca/KIDS_V_1214.mp3,false
+items,1215,object,物,3,,audio/voice/voca/KIDS_V_1215.mp3,false
+items,1216,offer,申し出る,3,,audio/voice/voca/KIDS_V_1216.mp3,false
+items,1217,once,一度,3,,audio/voice/voca/KIDS_V_1217.mp3,false
+items,1218,teamwork,チームワーク,3,,audio/voice/voca/KIDS_V_1218.mp3,false
+items,1219,order,注文する,3,,audio/voice/voca/KIDS_V_1219.mp3,false
+items,1220,tiny,ごく小さな,3,,audio/voice/voca/KIDS_V_1220.mp3,false
+items,1221,overseas,海外へ,3,,audio/voice/voca/KIDS_V_1221.mp3,false
+items,1222,own,自分の,3,,audio/voice/voca/KIDS_V_1222.mp3,false
+items,1223,owner,持ち主,3,,audio/voice/voca/KIDS_V_1223.mp3,false
+items,1224,out of,～の外へ,3,,audio/voice/voca/KIDS_V_1224.mp3,false
+items,1225,on the other hand,一方で,3,,audio/voice/voca/KIDS_V_1225.mp3,false
+items,1226,pain,痛み,3,,audio/voice/voca/KIDS_V_1226.mp3,false
+items,1227,patient,患者,3,,audio/voice/voca/KIDS_V_1227.mp3,false
+items,1228,perfect,完ぺきな,3,,audio/voice/voca/KIDS_V_1228.mp3,false
+items,1229,performance,演技,3,,audio/voice/voca/KIDS_V_1229.mp3,false
+items,1230,period,期間,3,,audio/voice/voca/KIDS_V_1230.mp3,false
+items,1231,stage,舞台,3,,audio/voice/voca/KIDS_V_1231.mp3,false
+items,1232,pleasure,喜び,3,,audio/voice/voca/KIDS_V_1232.mp3,false
+items,1233,pollution,汚染,3,,audio/voice/voca/KIDS_V_1233.mp3,false
+items,1234,population,人口,3,,audio/voice/voca/KIDS_V_1234.mp3,false
+items,1235,position,位置,3,,audio/voice/voca/KIDS_V_1235.mp3,false
+items,1236,poster,ポスター,3,,audio/voice/voca/KIDS_V_1236.mp3,false
+items,1237,wedding,結婚式,3,,audio/voice/voca/KIDS_V_1237.mp3,false
+items,1238,president,大統領,3,,audio/voice/voca/KIDS_V_1238.mp3,false
+items,1239,produce,生産する,3,,audio/voice/voca/KIDS_V_1239.mp3,false
+items,1240,product,製品,3,,audio/voice/voca/KIDS_V_1240.mp3,false
+items,1241,professional,プロの,3,,audio/voice/voca/KIDS_V_1241.mp3,false
+items,1242,promise,約束する,3,,audio/voice/voca/KIDS_V_1242.mp3,false
+items,1243,pronounce,発音する,3,,audio/voice/voca/KIDS_V_1243.mp3,false
+items,1244,purpose,目的,3,,audio/voice/voca/KIDS_V_1244.mp3,false
+items,1245,put off,延期する,3,,audio/voice/voca/KIDS_V_1245.mp3,false
+items,1246,pay attention to,～に注意をはらう,3,,audio/voice/voca/KIDS_V_1246.mp3,false
+items,1247,title,題名,3,,audio/voice/voca/KIDS_V_1247.mp3,false
+items,1248,quality,質,3,,audio/voice/voca/KIDS_V_1248.mp3,false
+items,1249,quickly,すばやく,3,,audio/voice/voca/KIDS_V_1249.mp3,false
+items,1250,quite,かなり,3,,audio/voice/voca/KIDS_V_1250.mp3,false
+items,1251,raise,上げる,3,,audio/voice/voca/KIDS_V_1251.mp3,false
+items,1252,upstairs,上の階へ,3,,audio/voice/voca/KIDS_V_1252.mp3,false
+items,1253,size,大きさ,3,,audio/voice/voca/KIDS_V_1253.mp3,false
+items,1254,reach,着く,3,,audio/voice/voca/KIDS_V_1254.mp3,false
+items,1255,recipe,レシピ,3,,audio/voice/voca/KIDS_V_1255.mp3,false
+items,1256,recycle,リサイクルする,3,,audio/voice/voca/KIDS_V_1256.mp3,false
+items,1257,regular,定期的な,3,,audio/voice/voca/KIDS_V_1257.mp3,false
+items,1258,relative,親せき,3,,audio/voice/voca/KIDS_V_1258.mp3,false
+items,1259,relax,くつろぐ,3,,audio/voice/voca/KIDS_V_1259.mp3,false
+items,1260,reply,返事をする,3,,audio/voice/voca/KIDS_V_1260.mp3,false
+items,1261,report,報告,3,,audio/voice/voca/KIDS_V_1261.mp3,false
+items,1262,respect,尊敬する,3,,audio/voice/voca/KIDS_V_1262.mp3,false
+items,1263,teenager,10代の若者,3,,audio/voice/voca/KIDS_V_1263.mp3,false
+items,1264,sightseeing,観光,3,,audio/voice/voca/KIDS_V_1264.mp3,false
+items,1265,run away,にげ出す,3,,audio/voice/voca/KIDS_V_1265.mp3,false
+items,1266,right away,今すぐに,3,,audio/voice/voca/KIDS_V_1266.mp3,false
+items,1267,recover,回復する,3,,audio/voice/voca/KIDS_V_1267.mp3,false
+items,1268,remind,思い出させる,3,,audio/voice/voca/KIDS_V_1268.mp3,false
+items,1269,research,研究,3,,audio/voice/voca/KIDS_V_1269.mp3,false
+items,1270,role,役割,3,,audio/voice/voca/KIDS_V_1270.mp3,false
+items,1271,rescue,救助する,3,,audio/voice/voca/KIDS_V_1271.mp3,false
+items,1272,resource,資源,3,,audio/voice/voca/KIDS_V_1272.mp3,false
+items,1273,run out of,～を使い切る,3,,audio/voice/voca/KIDS_V_1273.mp3,false
+items,1274,sale,特売,3,,audio/voice/voca/KIDS_V_1274.mp3,false
+items,1275,satisfied,満足した,3,,audio/voice/voca/KIDS_V_1275.mp3,false
+items,1276,scene,場面,3,,audio/voice/voca/KIDS_V_1276.mp3,false
+items,1277,schedule,予定,3,,audio/voice/voca/KIDS_V_1277.mp3,false
+items,1278,victory,勝利,3,,audio/voice/voca/KIDS_V_1278.mp3,false
+items,1279,search,さがす,3,,audio/voice/voca/KIDS_V_1279.mp3,false
+items,1280,secret,秘密,3,,audio/voice/voca/KIDS_V_1280.mp3,false
+items,1281,select,選び出す,3,,audio/voice/voca/KIDS_V_1281.mp3,false
+items,1282,sense,感覚,3,,audio/voice/voca/KIDS_V_1282.mp3,false
+items,1283,separate,別々にする,3,,audio/voice/voca/KIDS_V_1283.mp3,false
+items,1284,service,サービス,3,,audio/voice/voca/KIDS_V_1284.mp3,false
+items,1285,several,いくつかの,3,,audio/voice/voca/KIDS_V_1285.mp3,false
+items,1286,shape,形,3,,audio/voice/voca/KIDS_V_1286.mp3,false
+items,1287,sign,看板,3,,audio/voice/voca/KIDS_V_1287.mp3,false
+items,1288,silent,静かな,3,,audio/voice/voca/KIDS_V_1288.mp3,false
+items,1289,strict,厳しい,3,,audio/voice/voca/KIDS_V_1289.mp3,false
+items,1290,situation,状況,3,,audio/voice/voca/KIDS_V_1290.mp3,false
+items,1291,skill,技能,3,,audio/voice/voca/KIDS_V_1291.mp3,false
+items,1292,smart,かしこい,3,,audio/voice/voca/KIDS_V_1292.mp3,false
+items,1293,smell,におい,3,,audio/voice/voca/KIDS_V_1293.mp3,false
+items,1294,social,社会の,3,,audio/voice/voca/KIDS_V_1294.mp3,false
+items,1295,solution,解決策,3,,audio/voice/voca/KIDS_V_1295.mp3,false
+items,1296,somewhere,どこかに,3,,audio/voice/voca/KIDS_V_1296.mp3,false
+items,1297,speech,スピーチ,3,,audio/voice/voca/KIDS_V_1297.mp3,false
+items,1298,spread,広がる,3,,audio/voice/voca/KIDS_V_1298.mp3,false
+items,1299,staff,職員,3,,audio/voice/voca/KIDS_V_1299.mp3,false
+items,1300,steal,ぬすむ,3,,audio/voice/voca/KIDS_V_1300.mp3,false
+items,1301,stranger,見知らぬ人,3,,audio/voice/voca/KIDS_V_1301.mp3,false
+items,1302,success,成功,3,,audio/voice/voca/KIDS_V_1302.mp3,false
+items,1303,top,頂上,3,,audio/voice/voca/KIDS_V_1303.mp3,false
+items,1304,survey,調査,3,,audio/voice/voca/KIDS_V_1304.mp3,false
+items,1305,system,しくみ,3,,audio/voice/voca/KIDS_V_1305.mp3,false
+items,1306,set up,設置する,3,,audio/voice/voca/KIDS_V_1306.mp3,false
+items,1307,so far,今までのところ,3,,audio/voice/voca/KIDS_V_1307.mp3,false
+items,1308,such as,～のような,3,,audio/voice/voca/KIDS_V_1308.mp3,false
+items,1309,stay up late,夜ふかしする,3,,audio/voice/voca/KIDS_V_1309.mp3,false
+items,1310,shout,さけぶ,3,,audio/voice/voca/KIDS_V_1310.mp3,false
+items,1311,talent,才能,3,,audio/voice/voca/KIDS_V_1311.mp3,false
+items,1312,typhoon,台風,3,,audio/voice/voca/KIDS_V_1312.mp3,false
+items,1313,training,訓練,3,,audio/voice/voca/KIDS_V_1313.mp3,false
+items,1314,temperature,気温,3,,audio/voice/voca/KIDS_V_1314.mp3,false
+items,1315,term,学期,3,,audio/voice/voca/KIDS_V_1315.mp3,false
+items,1316,theater,劇場,3,,audio/voice/voca/KIDS_V_1316.mp3,false
+items,1317,though,～なのに,3,,audio/voice/voca/KIDS_V_1317.mp3,false
+items,1318,through,～を通って,3,,audio/voice/voca/KIDS_V_1318.mp3,false
+items,1319,tool,道具,3,,audio/voice/voca/KIDS_V_1319.mp3,false
+items,1320,total,合計,3,,audio/voice/voca/KIDS_V_1320.mp3,false
+items,1321,tour,ツアー,3,,audio/voice/voca/KIDS_V_1321.mp3,false
+items,1322,trade,貿易,3,,audio/voice/voca/KIDS_V_1322.mp3,false
+items,1323,traffic,交通,3,,audio/voice/voca/KIDS_V_1323.mp3,false
+items,1324,translate,翻訳する,3,,audio/voice/voca/KIDS_V_1324.mp3,false
+items,1325,treat,扱う,3,,audio/voice/voca/KIDS_V_1325.mp3,false
+items,1326,trouble,困ったこと,3,,audio/voice/voca/KIDS_V_1326.mp3,false
+items,1327,trust,信頼する,3,,audio/voice/voca/KIDS_V_1327.mp3,false
+items,1328,truth,真実,3,,audio/voice/voca/KIDS_V_1328.mp3,false
+items,1329,type,種類,3,,audio/voice/voca/KIDS_V_1329.mp3,false
+items,1330,tasty,おいしい,3,,audio/voice/voca/KIDS_V_1330.mp3,false
+items,1331,thanks to,～のおかげで,3,,audio/voice/voca/KIDS_V_1331.mp3,false
+items,1332,take place,行われる,3,,audio/voice/voca/KIDS_V_1332.mp3,false
+items,1333,throw away,捨てる,3,,audio/voice/voca/KIDS_V_1333.mp3,false
+items,1334,think of,～を思いつく,3,,audio/voice/voca/KIDS_V_1334.mp3,false
+items,1335,unique,独特の,3,,audio/voice/voca/KIDS_V_1335.mp3,false
+items,1336,visitor,訪問者,3,,audio/voice/voca/KIDS_V_1336.mp3,false
+items,1337,the other day,先日,3,,audio/voice/voca/KIDS_V_1337.mp3,false
+items,1338,unusual,めずらしい,3,,audio/voice/voca/KIDS_V_1338.mp3,false
+items,1339,upset,動揺した,3,,audio/voice/voca/KIDS_V_1339.mp3,false
+items,1340,valuable,価値のある,3,,audio/voice/voca/KIDS_V_1340.mp3,false
+items,1341,value,価値,3,,audio/voice/voca/KIDS_V_1341.mp3,false
+items,1342,variety,多様性,3,,audio/voice/voca/KIDS_V_1342.mp3,false
+items,1343,various,さまざまな,3,,audio/voice/voca/KIDS_V_1343.mp3,false
+items,1344,view,ながめ,3,,audio/voice/voca/KIDS_V_1344.mp3,false
+items,1345,wing,翼,3,,audio/voice/voca/KIDS_V_1345.mp3,false
+items,1346,war,戦争,3,,audio/voice/voca/KIDS_V_1346.mp3,false
+items,1347,waste,むだにする,3,,audio/voice/voca/KIDS_V_1347.mp3,false
+items,1348,silver,銀,3,,audio/voice/voca/KIDS_V_1348.mp3,false
+items,1349,weigh,重さをはかる,3,,audio/voice/voca/KIDS_V_1349.mp3,false
+items,1350,weight,体重,3,,audio/voice/voca/KIDS_V_1350.mp3,false
+items,1351,whether,～かどうか,3,,audio/voice/voca/KIDS_V_1351.mp3,false
+items,1352,whole,全体の,3,,audio/voice/voca/KIDS_V_1352.mp3,false
+items,1353,wild,野生の,3,,audio/voice/voca/KIDS_V_1353.mp3,false
+items,1354,topic,話題,3,,audio/voice/voca/KIDS_V_1354.mp3,false
+items,1355,wonder,～かなと思う,3,,audio/voice/voca/KIDS_V_1355.mp3,false
+items,1356,wave,波・手をふる,3,,audio/voice/voca/KIDS_V_1356.mp3,false
+items,1357,write down,書き留める,3,,audio/voice/voca/KIDS_V_1357.mp3,false
+items,1358,work on,～に取り組む,3,,audio/voice/voca/KIDS_V_1358.mp3,false
+items,1359,wish,願う,3,,audio/voice/voca/KIDS_V_1359.mp3,false
+items,1360,yet,まだ,3,,audio/voice/voca/KIDS_V_1360.mp3,false
+items,1361,capital,首都,3,,audio/voice/voca/KIDS_V_1361.mp3,false
+items,1362,ceremony,式・儀式,3,,audio/voice/voca/KIDS_V_1362.mp3,false
+items,1363,character,登場人物・性格,3,,audio/voice/voca/KIDS_V_1363.mp3,false
+items,1364,direction,方向,3,,audio/voice/voca/KIDS_V_1364.mp3,false
+items,1365,furniture,家具,3,,audio/voice/voca/KIDS_V_1365.mp3,false
+items,1366,invitation,招待,3,,audio/voice/voca/KIDS_V_1366.mp3,false
+items,1367,neighborhood,近所,3,,audio/voice/voca/KIDS_V_1367.mp3,false
+items,1368,yard,庭,3,,audio/voice/voca/KIDS_V_1368.mp3,false
+items,1369,prize,賞,3,,audio/voice/voca/KIDS_V_1369.mp3,false
+items,1370,souvenir,おみやげ,3,,audio/voice/voca/KIDS_V_1370.mp3,false
+items,1371,tradition,伝統,3,,audio/voice/voca/KIDS_V_1371.mp3,false
+items,1372,treasure,宝物,3,,audio/voice/voca/KIDS_V_1372.mp3,false
+items,1373,connect,つなぐ,3,,audio/voice/voca/KIDS_V_1373.mp3,false
+items,1374,forgive,許す（あやまちを）,3,,audio/voice/voca/KIDS_V_1374.mp3,false
+items,1375,repeat,くり返す,3,,audio/voice/voca/KIDS_V_1375.mp3,false
+items,1376,seem,～のように見える,3,,audio/voice/voca/KIDS_V_1376.mp3,false
+items,1377,serve,（食事を）出す・仕える,3,,audio/voice/voca/KIDS_V_1377.mp3,false
+items,1378,shake,ふる・ゆれる,3,,audio/voice/voca/KIDS_V_1378.mp3,false
+items,1379,shine,かがやく,3,,audio/voice/voca/KIDS_V_1379.mp3,false
+items,1380,warn,警告する,3,,audio/voice/voca/KIDS_V_1380.mp3,false
+items,1381,cheerful,元気な・明るい,3,,audio/voice/voca/KIDS_V_1381.mp3,false
+items,1382,fantastic,とてもすてきな,3,,audio/voice/voca/KIDS_V_1382.mp3,false
+items,1383,nearby,近くの,3,,audio/voice/voca/KIDS_V_1383.mp3,false
+items,1384,pleasant,気持ちのよい,3,,audio/voice/voca/KIDS_V_1384.mp3,false
+items,1385,powerful,力強い,3,,audio/voice/voca/KIDS_V_1385.mp3,false
+items,1386,usual,いつもの,3,,audio/voice/voca/KIDS_V_1386.mp3,false
+items,1387,anywhere,どこにも（否定文で）,3,,audio/voice/voca/KIDS_V_1387.mp3,false
+items,1388,everywhere,どこでも・いたる所に,3,,audio/voice/voca/KIDS_V_1388.mp3,false
+items,1389,toward,～の方へ,3,,audio/voice/voca/KIDS_V_1389.mp3,false
+items,1390,straight,まっすぐに,3,,audio/voice/voca/KIDS_V_1390.mp3,false
+items,1391,at once,ただちに,3,,audio/voice/voca/KIDS_V_1391.mp3,false
+items,1392,each other,おたがい,3,,audio/voice/voca/KIDS_V_1392.mp3,false
+items,1393,in the end,結局,3,,audio/voice/voca/KIDS_V_1393.mp3,false
+items,1394,instead of,～の代わりに,3,,audio/voice/voca/KIDS_V_1394.mp3,false
+items,1395,on sale,セール中で,3,,audio/voice/voca/KIDS_V_1395.mp3,false
+items,1396,all over the world,世界中で,3,,audio/voice/voca/KIDS_V_1396.mp3,false
+items,1397,as usual,いつものように,3,,audio/voice/voca/KIDS_V_1397.mp3,false
+items,1398,be full of,～がたくさんある,3,,audio/voice/voca/KIDS_V_1398.mp3,false
+items,1399,be different from,～とちがう,3,,audio/voice/voca/KIDS_V_1399.mp3,false
+items,1400,be covered with,～でおおわれている,3,,audio/voice/voca/KIDS_V_1400.mp3,false

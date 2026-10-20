@@ -26,26 +26,32 @@ class TeenStore {
   static final ValueNotifier<bool> monetizationEnabled = ValueNotifier(false);
   static bool get showPurchaseUi => monetizationEnabled.value || kDebugMode;
 
-  /// What is free without buying, while the sheet has no `pricing` rows for
-  /// this app (and as the offline first-launch default).
-  // Lv1 of each stage is free.
+  /// Level locks while purchases are on and the sheet gives no level rules:
+  /// Lv1 of each stage free (the bank also marks each question `free`).
   static const defaultRules = ContentAccessRules(defaultFreeCount: 1);
 
   static final access = ContentAccess(rules: defaultRules);
 
+  /// Paid questions are hidden while purchases are on and not yet made.
+  static bool get paidQuestionsLocked =>
+      monetizationEnabled.value && !access.isUnlocked;
+
+  /// [items] without the paid ones when [paidQuestionsLocked].
+  static Iterable<T> allowed<T>(Iterable<T> items, bool Function(T) isFree) =>
+      paidQuestionsLocked ? items.where(isFree) : items;
+
   /// Applies the sheet's settings (see `ark_core` pricing_sheet.dart).
   static void _applyPricing() {
     final p = ArkContent.instance.pricing.value;
-    if (p == null) {
-      monetizationEnabled.value = false;
-      access.updateRules(defaultRules);
+    monetizationEnabled.value = p != null && p['enabled'] == true;
+    if (!monetizationEnabled.value) {
+      // Purchases off (or no pricing rows yet): everything stays playable.
+      access.updateRules(ContentAccessRules.allFree);
       return;
     }
-    monetizationEnabled.value = p['enabled'] == true;
-    // While purchases are off, everything stays playable.
-    access.updateRules(
-      monetizationEnabled.value ? ContentAccessRules.fromJson(p) : ContentAccessRules.allFree,
-    );
+    // Mode / level locks from the sheet; without such rows, the defaults.
+    final hasModeRules = p!.keys.any((k) => k != 'enabled');
+    access.updateRules(hasModeRules ? ContentAccessRules.fromJson(p) : defaultRules);
   }
 
   /// Legal pages on the school's site (drafts in docs/store/site; the client

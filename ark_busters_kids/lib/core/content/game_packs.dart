@@ -11,6 +11,7 @@ class ListeningItem {
     required this.opts,
     this.q,
     this.voice,
+    this.free = true,
   });
 
   final String id;
@@ -23,6 +24,9 @@ class ListeningItem {
   final String? q;
   final String? voice;
 
+  /// Playable without the purchase (sheet column `free`).
+  final bool free;
+
   factory ListeningItem.fromJson(Map<String, dynamic> j) => ListeningItem(
         id: j['id'] as String,
         t: j['t'] as String? ?? 'pic',
@@ -33,6 +37,7 @@ class ListeningItem {
         opts: (j['opts'] as List<dynamic>? ?? []).cast<String>(),
         q: j['q'] as String?,
         voice: j['voice'] as String?,
+        free: j['free'] != false,
       );
 }
 
@@ -91,6 +96,8 @@ class TalkItem {
     required this.ja,
     required this.en,
     this.voice,
+    this.scene,
+    this.free = true,
   });
 
   final String id;
@@ -98,11 +105,19 @@ class TalkItem {
   final String en;
   final String? voice;
 
+  /// Optional situation label (場面), e.g. 好み.
+  final String? scene;
+
+  /// Playable without the purchase (sheet column `free`).
+  final bool free;
+
   factory TalkItem.fromJson(Map<String, dynamic> j) => TalkItem(
         id: j['id'] as String,
         ja: j['ja'] as String? ?? '',
         en: j['en'] as String? ?? '',
         voice: j['voice'] as String?,
+        scene: j['scene'] as String?,
+        free: j['free'] != false,
       );
 }
 
@@ -168,6 +183,7 @@ class SentenceItem {
     required this.answer,
     required this.tip,
     this.voice,
+    this.free = true,
   });
 
   final String id;
@@ -175,6 +191,9 @@ class SentenceItem {
   final List<SentenceWord> answer;
   final String tip;
   final String? voice;
+
+  /// Playable without the purchase (sheet column `free`).
+  final bool free;
 
   factory SentenceItem.fromJson(Map<String, dynamic> j) => SentenceItem(
         id: j['id'] as String,
@@ -186,6 +205,7 @@ class SentenceItem {
             .toList(),
         tip: j['tip'] as String? ?? '',
         voice: j['voice'] as String?,
+        free: j['free'] != false,
       );
 }
 

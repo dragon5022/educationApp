@@ -21,6 +21,10 @@ class AudioService {
   final AudioPlayer _bgm = AudioPlayer();
   final AudioPlayer _voice = AudioPlayer();
 
+  /// 詩・奏 character lines (assets/audio/charvoice). Own player so a line
+  /// never cuts off an English clip and vice versa.
+  final AudioPlayer _char = AudioPlayer();
+
   /// One player per effect, like the web's `__sfx[name]` Audio cache, so a
   /// correct.mp3 and its synthesized chime can overlap.
   final Map<String, AudioPlayer> _sfx = {};
@@ -44,6 +48,7 @@ class AudioService {
     await _bgm.setReleaseMode(ReleaseMode.loop);
     await _bgm.setPlayerMode(PlayerMode.mediaPlayer);
     await _voice.setPlayerMode(PlayerMode.mediaPlayer);
+    await _char.setPlayerMode(PlayerMode.mediaPlayer);
     final prefs = await SharedPreferences.getInstance();
     _bgmOn = prefs.getString('ark_bgm') != '0';
     await _initTts();
@@ -228,7 +233,24 @@ class AudioService {
 
   Future<void> stopVoice() async {
     await _voice.stop();
+    await _char.stop();
     await _tts.stop();
+  }
+
+  /// Plays a character line `audio/charvoice/<name>.mp3` (詩 `uta_*`, 奏
+  /// `kanade_*`), after [delay] so it follows the jingle it reacts to.
+  /// Respects the SE setting; a missing clip is silently skipped.
+  Future<void> playCharVoice(String name, {Duration delay = Duration.zero}) async {
+    await init();
+    if (!await ProgressService.instance.isSeOn()) return;
+    if (delay > Duration.zero) await Future<void>.delayed(delay);
+    try {
+      await _char.stop();
+      await _char.setVolume(1);
+      await _char.play(AssetSource('audio/charvoice/$name.mp3'));
+    } catch (e) {
+      debugPrint('charvoice $name failed: $e');
+    }
   }
 
   /// Web `speak(t)`: en-US, rate .86, pitch 1.9, a female voice if available.

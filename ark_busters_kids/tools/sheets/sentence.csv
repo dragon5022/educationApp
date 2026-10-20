@@ -1,43 +1,401 @@
-﻿_path,id,ja.0.t,ja.0.pick,ja.1.t,ja.1.pick,ja.2.t,ja.2.pick,ja.3.t,ja.3.pick,ja.4.t,ja.4.pick,answer.0.w,answer.0.label,answer.0.c,answer.1.w,answer.1.label,answer.1.c,answer.2.w,answer.2.label,answer.2.c,answer.3.w,answer.3.label,answer.3.c,answer.4.w,answer.4.label,answer.4.c,tip,voice
-grades.g5,g5_0,私は,false,犬が,true,好きです,true,,,,,I,誰が,,like,どうする,,dogs,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/1.mp3
-grades.g5,g5_1,私は,false,猫が,true,好きです,true,,,,,I,誰が,,like,どうする,,cats,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/2.mp3
-grades.g5,g5_2,彼は,false,サッカーが,true,好きです,true,,,,,He,誰が,,likes,どうする,,soccer,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/3.mp3
-grades.g5,g5_3,彼女は,false,音楽が,true,好きです,true,,,,,She,誰が,,likes,どうする,,music,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/4.mp3
-grades.g5,g5_4,私たちは,false,野球が,true,好きです,true,,,,,We,誰が,,like,どうする,,baseball,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/5.mp3
-grades.g5,g5_5,私は,false,自転車を,true,持っています,true,,,,,I,誰が,,have,どうする,,a bike,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/6.mp3
-grades.g5,g5_6,彼は,false,犬を,true,飼っています,true,,,,,He,誰が,,has,どうする,,a dog,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/7.mp3
-grades.g5,g5_7,彼女は,false,ペンを,true,持っています,true,,,,,She,誰が,,has,どうする,,a pen,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/8.mp3
-grades.g5,g5_8,私は,false,本を,true,持っています,true,,,,,I,誰が,,have,どうする,,a book,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/9.mp3
-grades.g5,g5_9,私は,false,テニスを,true,する,true,,,,,I,誰が,,play,どうする,,tennis,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/10.mp3
-grades.g5,g5_10,彼は,false,ピアノを,true,弾く,true,,,,,He,誰が,,plays,どうする,,the piano,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/11.mp3
-grades.g5,g5_11,彼女は,false,ギターを,true,弾く,true,,,,,She,誰が,,plays,どうする,,the guitar,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/12.mp3
-grades.g5,g5_12,私は,false,りんごを,true,食べる,true,,,,,I,誰が,,eat,どうする,,an apple,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/13.mp3
-grades.g5,g5_13,彼は,false,パンを,true,食べる,true,,,,,He,誰が,,eats,どうする,,bread,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/14.mp3
-grades.g5,g5_14,私は,false,水を,true,飲む,true,,,,,I,誰が,,drink,どうする,,water,何を,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/15.mp3
-grades.g5,g5_15,彼女は,false,お茶を,true,飲む,true,,,,,She,誰が,,drinks,どうする,,tea,何を,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/16.mp3
-grades.g5,g5_16,私は,false,学校で,true,英語を,true,勉強する,true,,,I,誰が,,study,どうする,,English,何を,,at school,どこで,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/17.mp3
-grades.g5,g5_17,彼は,false,家で,true,本を,true,読む,true,,,He,誰が,,reads,どうする,,books,何を,,at home,どこで,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/18.mp3
-grades.g4,g4_0,私は,false,昨日,true,公園で,true,サッカーを,true,した,true,I,誰が,--c1,played,どうする,--c2,soccer,何を,--c3,in the park,どこで,--c4,yesterday,いつ,--c5,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/19.mp3
-grades.g4,g4_1,彼女は,false,日曜日に,true,レストランで,true,寿司を,true,食べる,true,She,誰が,--c1,eats,どうする,--c2,sushi,何を,--c3,at a restaurant,どこで,--c4,on Sundays,いつ,--c5,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/20.mp3
-grades.g4,g4_2,彼は,false,毎朝,true,6時に,true,起きる,true,,,He,誰が,--c1,gets up,どうする,--c2,at six,いつ①,--c4,every morning,いつ②,--c5,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/21.mp3
-grades.g4,g4_3,私たちは,false,先週,true,京都を,true,訪れた,true,,,We,誰が,--c1,visited,どうする,--c2,Kyoto,何を,--c3,last week,いつ,--c5,,,,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/22.mp3
-grades.g4,g4_4,私の母は,false,毎晩,true,台所で,true,夕食を,true,作る,true,My mother,誰が,--c1,cooks,どうする,--c2,dinner,何を,--c3,in the kitchen,どこで,--c4,every night,いつ,--c5,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/23.mp3
-grades.g4,g4_5,彼らは,false,夏に,true,海で,true,泳いだ,true,,,They,誰が,--c1,swam,どうする,--c2,in the sea,どこで,--c4,in summer,いつ,--c5,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/24.mp3
-grades.g4,g4_6,私は,false,放課後,true,図書館で,true,数学を,true,勉強する,true,I,誰が,--c1,study,どうする,--c2,math,何を,--c3,in the library,どこで,--c4,after school,いつ,--c5,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/25.mp3
-grades.g4,g4_7,私の父は,false,週末に,true,車を,true,洗う,true,,,My father,誰が,--c1,washes,どうする,--c2,the car,何を,--c3,on weekends,いつ,--c5,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/26.mp3
-grades.g4,g4_8,私たちは,false,昨夜,true,体育館で,true,バスケを,true,した,true,We,誰が,--c1,played,どうする,--c2,basketball,何を,--c3,in the gym,どこで,--c4,last night,いつ,--c5,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/27.mp3
-grades.g4,g4_9,彼女は,false,毎週,true,友達に,true,手紙を,true,書く,true,She,誰が,--c1,writes,どうする,--c2,a letter,何を,--c3,to her friend,だれに,--c4,every week,いつ,--c5,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/28.mp3
-grades.g4,g4_10,私は,false,今朝,true,駅まで,true,歩いた,true,,,I,誰が,--c1,walked,どうする,--c2,to the station,どこまで,--c4,this morning,いつ,--c5,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/29.mp3
-grades.g4,g4_11,彼らは,false,去年,true,その町に,true,住んでいた,true,,,They,誰が,--c1,lived,どうする,--c2,in the town,どこで,--c4,last year,いつ,--c5,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/30.mp3
-grades.g3,g3_0,私は,false,英語を,true,勉強したい,true,,,,,I,誰が,--c1,want to study,したい,--c2,English,何を,--c3,,,,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/31.mp3
-grades.g3,g3_1,彼は,false,今,true,公園で,true,走っている,true,,,He,誰が,--c1,is running,している,--c2,in the park,どこで,--c4,now,いつ,--c5,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/32.mp3
-grades.g3,g3_2,私は,false,サッカーは,true,野球より,true,好きだ,true,,,I,誰が,--c1,like soccer,好き,--c2,better than,より,--c3,baseball,何を,--c4,,,,比べる文。『〜より』は better than。①誰が→②好き→③より→④何を の順。,audio/voice/gram/33.mp3
-grades.g3,g3_3,私は,false,疲れていたので,true,早く,true,寝た,true,,,I,誰が,--c1,went to bed,どうする,--c2,early,どう,--c3,because I was tired,理由,--c5,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/34.mp3
-grades.g3,g3_4,彼女は,false,医者に,true,なるために,true,勉強する,true,,,She,誰が,--c1,studies,どうする,--c2,to be,ために,--c4,a doctor,何に,--c5,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/35.mp3
-grades.g3,g3_5,私は,false,友達と,true,映画を,true,見るつもりだ,true,,,I,誰が,--c1,will watch,つもり,--c2,a movie,何を,--c3,with my friends,だれと,--c5,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/36.mp3
-grades.g3,g3_6,この本は,false,あの本より,true,おもしろい,true,,,,,This book,何が,--c1,is more interesting,おもしろい,--c2,than that one,より,--c3,,,,,,,比べる文。『〜より』は better than。①誰が→②好き→③より→④何を の順。,audio/voice/gram/37.mp3
-grades.g3,g3_7,私は,false,彼に,true,手伝うように,true,頼んだ,true,,,I,誰が,--c1,asked,どうする,--c2,him,だれに,--c3,to help me,何を,--c4,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/38.mp3
-grades.g3,g3_8,私は,false,英語は,true,数学より,true,やさしいと思う,true,,,I think,誰が,,English is,何が,,easier than,より,,math,何,,,,,比較級 easier than＝〜よりやさしい。,audio/voice/gram/39.mp3
-grades.g3,g3_9,彼は,false,クラスで,true,一番背が高い,true,,,,,He is,誰が,,the tallest,一番〜,,in his class,どこで,,,,,,,,最上級 the tallest＝一番背が高い。,audio/voice/gram/40.mp3
-grades.g3,g3_10,私は,false,医者に,true,なりたい,true,,,,,I,誰が,,want to be,なりたい,,a doctor,何に,,,,,,,,want to be＝〜になりたい。to＋動詞。,audio/voice/gram/41.mp3
-grades.g3,g3_11,彼女は,false,3年間,true,英語を,true,勉強している,true,,,She has studied,誰が〜している,,English,何を,,for three years,どのくらい,,,,,,,,現在完了 have/has＋過去分詞。for＝〜間。,audio/voice/gram/42.mp3
+﻿_path,id,ja.0.t,ja.0.pick,answer.0.w,answer.1.w,answer.2.w,answer.3.w,answer.4.w,answer.5.w,answer.6.w,answer.7.w,answer.8.w,answer.9.w,answer.10.w,tip,voice,free
+grades.g5,g5_0,私は犬がとても好きです,false,I,like,dogs,very,much,,,,,,,①誰が→②どうする→③何を の順でならべよう。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0001.mp3,true
+grades.g5,g5_1,私は白い猫が好きです,false,I,like,white,cats,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0002.mp3,true
+grades.g5,g5_2,彼はサッカーがとても好きです,false,He,likes,soccer,very,much,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0003.mp3,true
+grades.g5,g5_3,彼女は音楽がとても好きです,false,She,likes,music,very,much,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0004.mp3,true
+grades.g5,g5_4,私たちは野球がとても好きです,false,We,like,baseball,very,much,,,,,,,①誰が→②どうする→③何を の順でならべよう。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0005.mp3,true
+grades.g5,g5_5,私は自転車を持っています,false,I,have,a,bike,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0006.mp3,true
+grades.g5,g5_6,彼は犬を飼っています,false,He,has,a,dog,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0007.mp3,true
+grades.g5,g5_7,彼女はペンを持っています,false,She,has,a,pen,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0008.mp3,true
+grades.g5,g5_8,私は本を持っています,false,I,have,a,book,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0009.mp3,true
+grades.g5,g5_9,私は毎日テニスをする,false,I,play,tennis,every,day,,,,,,,①誰が→②どうする→③何を の順でならべよう。every day は文のうしろに置くよ。,audio/voice/gram/KIDS_S_0010.mp3,true
+grades.g5,g5_10,彼はピアノを弾く,false,He,plays,the,piano,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0011.mp3,true
+grades.g5,g5_11,彼女はギターを弾く,false,She,plays,the,guitar,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0012.mp3,true
+grades.g5,g5_12,私はりんごを食べる,false,I,eat,an,apple,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0013.mp3,true
+grades.g5,g5_13,彼は毎朝パンを食べる,false,He,eats,bread,every,morning,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。every morning は文のうしろに置くよ。,audio/voice/gram/KIDS_S_0014.mp3,true
+grades.g5,g5_14,私は毎日水を飲む,false,I,drink,water,every,day,,,,,,,①誰が→②どうする→③何を の順でならべよう。every day は文のうしろに置くよ。,audio/voice/gram/KIDS_S_0015.mp3,true
+grades.g5,g5_15,彼女は毎朝お茶を飲む,false,She,drinks,tea,every,morning,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。every morning は文のうしろに置くよ。,audio/voice/gram/KIDS_S_0016.mp3,true
+grades.g5,g5_16,私は学校で英語を勉強する,false,I,study,English,at,school,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0017.mp3,true
+grades.g5,g5_17,彼は家で本を読む,false,He,reads,books,at,home,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0018.mp3,true
+grades.g5,g5_18,彼女は公園で走る,false,She,runs,in,the,park,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0019.mp3,true
+grades.g5,g5_19,私たちは体育館でバスケをする,false,We,play,basketball,in,the,gym,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0020.mp3,true
+grades.g5,g5_20,私は毎日英語を勉強する,false,I,study,English,every,day,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0021.mp3,true
+grades.g5,g5_21,彼は毎朝牛乳を飲む,false,He,drinks,milk,every,morning,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0022.mp3,true
+grades.g5,g5_22,私は日曜日にテレビを見る,false,I,watch,TV,on,Sundays,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0023.mp3,true
+grades.g5,g5_23,彼女は毎週ピアノを練習する,false,She,practices,the,piano,every,week,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0024.mp3,true
+grades.g5,g5_24,私は学校に行く,false,I,go,to,school,,,,,,,,「to＋場所」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0025.mp3,true
+grades.g5,g5_25,彼は公園に行く,false,He,goes,to,the,park,,,,,,,「to＋場所」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0026.mp3,true
+grades.g5,g5_26,彼女は図書館に行く,false,She,goes,to,the,library,,,,,,,「to＋場所」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0051.mp3,false
+grades.g5,g5_27,私は水がほしい,false,I,want,some,water,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0052.mp3,false
+grades.g5,g5_28,彼は新しい靴がほしい,false,He,wants,new,shoes,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0053.mp3,false
+grades.g5,g5_29,私は鳥を見る,false,I,see,a,bird,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0054.mp3,false
+grades.g5,g5_30,私は彼の名前を知っている,false,I,know,his,name,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0055.mp3,false
+grades.g5,g5_31,私は学生です,false,I,am,a,student,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0056.mp3,false
+grades.g5,g5_32,彼は先生です,false,He,is,a,teacher,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0057.mp3,false
+grades.g5,g5_33,彼女はとても親切です,false,She,is,very,kind,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0058.mp3,false
+grades.g5,g5_34,私たちは仲のよい友達です,false,We,are,good,friends,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0059.mp3,false
+grades.g5,g5_35,私は絵を描く,false,I,draw,a,picture,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0060.mp3,false
+grades.g5,g5_36,彼は歌を歌う,false,He,sings,a,song,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0061.mp3,false
+grades.g5,g5_37,彼女は手紙を書く,false,She,writes,a,letter,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0062.mp3,false
+grades.g5,g5_38,私は映画を見る,false,I,watch,a,movie,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0063.mp3,false
+grades.g5,g5_39,彼らは家で日本語を話す,false,They,speak,Japanese,at,home,,,,,,,①誰が→②どうする→③何を の順でならべよう。at home＝家で。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0064.mp3,false
+grades.g5,g5_40,私は毎朝走る,false,I,run,every,morning,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0065.mp3,false
+grades.g5,g5_41,彼は教室で勉強する,false,He,studies,in,the,classroom,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0066.mp3,false
+grades.g5,g5_42,私は母を手伝う,false,I,help,my,mother,,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0067.mp3,false
+grades.g5,g5_43,彼はパソコンを使う,false,He,uses,a,computer,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0068.mp3,false
+grades.g5,g5_44,彼女はケーキを作る,false,She,makes,a,cake,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0069.mp3,false
+grades.g5,g5_45,私は夏がとても好きです,false,I,like,summer,very,much,,,,,,,①誰が→②どうする→③何を の順でならべよう。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0070.mp3,false
+grades.g5,g5_46,彼は数学がとても好きです,false,He,likes,math,very,much,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0071.mp3,false
+grades.g5,g5_47,彼女は赤い花が好きです,false,She,likes,red,flowers,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0072.mp3,false
+grades.g5,g5_48,私たちは毎日日本語を話す,false,We,speak,Japanese,every,day,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0073.mp3,false
+grades.g5,g5_49,彼らは学校で昼食を食べる,false,They,eat,lunch,at,school,,,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0074.mp3,false
+grades.g5,g5_50,あなたはりんごを食べます,false,You,eat,an,apple,,,,,,,,①誰が→②どうする→③何を の順。,audio/voice/gram/KIDS_S_0075.mp3,false
+grades.g5,g5_51,あなたは日本の音楽が好きです,false,You,like,Japanese,music,,,,,,,,①誰が→②どうする→③何を の順。,audio/voice/gram/KIDS_S_0076.mp3,false
+grades.g5,g5_52,彼は赤いりんごが好きです,false,He,likes,red,apples,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0077.mp3,false
+grades.g5,g5_53,あなたは野球がとても好きです,false,You,like,baseball,very,much,,,,,,,①誰が→②どうする→③何を の順。very much は文のさいごに置くよ。,audio/voice/gram/KIDS_S_0078.mp3,false
+grades.g5,g5_54,私は新しい自転車がほしいです,false,I,want,a,new,bike,,,,,,,①誰が→②どうする→③何を の順。,audio/voice/gram/KIDS_S_0079.mp3,false
+grades.g5,g5_55,私たちはたまごを食べます,false,We,eat,an,egg,,,,,,,,①誰が→②どうする→③何を の順。,audio/voice/gram/KIDS_S_0080.mp3,false
+grades.g5,g5_56,私たちは放課後テニスをします,false,We,play,tennis,after,school,,,,,,,①誰が→②どうする→③何を の順。after school＝放課後。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0081.mp3,false
+grades.g5,g5_57,彼は自転車を持っています,false,He,has,a,bike,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0082.mp3,false
+grades.g5,g5_58,私はペンを持っています,false,I,have,a,pen,,,,,,,,①誰が→②どうする→③何を の順。,audio/voice/gram/KIDS_S_0083.mp3,false
+grades.g5,g5_59,彼女は自転車を持っています,false,She,has,a,bike,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0084.mp3,false
+grades.g5,g5_60,私の兄は電車が好きです,false,My,brother,likes,trains,,,,,,,,①誰が→②どうする→③何を の順。My brother は he と同じ。動詞に s がつくよ。,audio/voice/gram/KIDS_S_0085.mp3,false
+grades.g5,g5_61,私は友達とサッカーをします,false,I,play,soccer,with,my,friends,,,,,,①誰が→②どうする→③何を の順。with my friends＝友達と。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0086.mp3,false
+grades.g5,g5_62,彼女は猫を2匹飼っています,false,She,has,two,cats,,,,,,,,①誰が→②どうする→③何を の順。She は has。2匹だから cats と s がつくよ。,audio/voice/gram/KIDS_S_0087.mp3,false
+grades.g5,g5_63,私たちは教室をそうじします,false,We,clean,our,classroom,,,,,,,,①誰が→②どうする→③何を の順。our classroom＝私たちの教室。,audio/voice/gram/KIDS_S_0088.mp3,false
+grades.g5,g5_64,私は毎晩歯をみがきます,false,I,brush,my,teeth,every,night,,,,,,①誰が→②どうする→③何を の順。every night＝毎晩。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0089.mp3,false
+grades.g5,g5_65,彼はプールで泳ぎます,false,He,swims,in,the,pool,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。in the pool＝プールで。,audio/voice/gram/KIDS_S_0090.mp3,false
+grades.g5,g5_66,彼らは英語がとても好きです,false,They,like,English,very,much,,,,,,,①誰が→②どうする→③何を の順。very much＝とても。文のさいごに置くよ。,audio/voice/gram/KIDS_S_0091.mp3,false
+grades.g5,g5_67,私は日本出身です,false,I,am,from,Japan,,,,,,,,I am＝私は〜です。from Japan＝日本出身。,audio/voice/gram/KIDS_S_0092.mp3,false
+grades.g5,g5_68,彼女は私の姉です,false,She,is,my,sister,,,,,,,,She is＝彼女は〜です。my sister＝私の姉。,audio/voice/gram/KIDS_S_0093.mp3,false
+grades.g5,g5_69,彼は歌がじょうずです,false,He,is,a,good,singer,,,,,,,He is＝彼は〜です。a good singer＝じょうずな歌い手。,audio/voice/gram/KIDS_S_0094.mp3,false
+grades.g5,g5_70,私たちは教室にいます,false,We,are,in,the,classroom,,,,,,,We are＝私たちは〜にいる。in the classroom＝教室に。,audio/voice/gram/KIDS_S_0095.mp3,false
+grades.g5,g5_71,彼らは私の友達です,false,They,are,my,friends,,,,,,,,They are＝彼らは〜です。my friends＝私の友達。,audio/voice/gram/KIDS_S_0096.mp3,false
+grades.g5,g5_72,私の父は医者です,false,My,father,is,a,doctor,,,,,,,My father は he と同じで is。a doctor＝医者。,audio/voice/gram/KIDS_S_0097.mp3,false
+grades.g5,g5_73,これは私の新しいかばんです,false,This,is,my,new,bag,,,,,,,This is＝これは〜です。my new bag＝私の新しいかばん。,audio/voice/gram/KIDS_S_0098.mp3,false
+grades.g5,g5_74,あれは私たちの学校です,false,That,is,our,school,,,,,,,,That is＝あれは〜です。our school＝私たちの学校。,audio/voice/gram/KIDS_S_0099.mp3,false
+grades.g5,g5_75,あなたはよい生徒です,false,You,are,a,good,student,,,,,,,You are＝あなたは〜です。a good student＝よい生徒。,audio/voice/gram/KIDS_S_0100.mp3,false
+grades.g5,g5_76,私の猫はとてもかわいいです,false,My,cat,is,very,cute,,,,,,,My cat は it と同じで is。very cute＝とてもかわいい。,audio/voice/gram/KIDS_S_0101.mp3,false
+grades.g5,g5_77,それは大きな犬です,false,It,is,a,big,dog,,,,,,,It is＝それは〜です。a big dog＝大きな犬。,audio/voice/gram/KIDS_S_0102.mp3,false
+grades.g5,g5_78,私は今日うれしいです,false,I,am,happy,today,,,,,,,,I am＝私は〜です。today（今日）は文のうしろ。,audio/voice/gram/KIDS_S_0103.mp3,false
+grades.g5,g5_79,その犬は机の下にいます,false,The,dog,is,under,the,desk,,,,,,The dog is＝その犬は〜にいる。under the desk＝机の下に。,audio/voice/gram/KIDS_S_0104.mp3,false
+grades.g5,g5_80,私のペンはテーブルの上にあります,false,My,pen,is,on,the,table,,,,,,My pen is＝私のペンは〜にある。on the table＝テーブルの上に。,audio/voice/gram/KIDS_S_0105.mp3,false
+grades.g5,g5_81,私は英語の歌が好きです,false,I,like,English,songs,,,,,,,,①誰が→②どうする→③何を の順。English songs＝英語の歌。,audio/voice/gram/KIDS_S_0106.mp3,false
+grades.g5,g5_82,私たちは歩いて学校に行きます,false,We,walk,to,school,,,,,,,,①誰が→②どうする→③何を の順。walk to＝〜へ歩いて行く。,audio/voice/gram/KIDS_S_0107.mp3,false
+grades.g5,g5_83,私は福山に住んでいます,false,I,live,in,Fukuyama,,,,,,,,①誰が→②どうする→③何を の順。live in＝〜に住んでいる。,audio/voice/gram/KIDS_S_0108.mp3,false
+grades.g5,g5_84,彼らは放課後サッカーをします,false,They,play,soccer,after,school,,,,,,,①誰が→②どうする→③何を の順。after school＝放課後。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0109.mp3,false
+grades.g5,g5_85,私は毎晩本を読みます,false,I,read,a,book,every,night,,,,,,①誰が→②どうする→③何を の順。every night＝毎晩。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0110.mp3,false
+grades.g5,g5_86,私たちは7時に夕食を食べます,false,We,eat,dinner,at,seven,,,,,,,①誰が→②どうする→③何を の順。at seven＝7時に。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0111.mp3,false
+grades.g5,g5_87,私は手を洗います,false,I,wash,my,hands,,,,,,,,①誰が→②どうする→③何を の順。my hands＝私の手。,audio/voice/gram/KIDS_S_0112.mp3,false
+grades.g5,g5_88,私は窓を開けます,false,I,open,the,window,,,,,,,,①誰が→②どうする→③何を の順。the window＝その窓。,audio/voice/gram/KIDS_S_0113.mp3,false
+grades.g5,g5_89,彼らはいっしょに歌を歌います,false,They,sing,a,song,together,,,,,,,①誰が→②どうする→③何を の順。together＝いっしょに。文のさいごに置くよ。,audio/voice/gram/KIDS_S_0114.mp3,false
+grades.g5,g5_90,私は毎日おふろに入ります,false,I,take,a,bath,every,day,,,,,,①誰が→②どうする→③何を の順。take a bath＝おふろに入る。every day は後ろ。,audio/voice/gram/KIDS_S_0115.mp3,false
+grades.g5,g5_91,私たちは月曜日に英語があります,false,We,have,English,on,Mondays,,,,,,,①誰が→②どうする→③何を の順。on Mondays＝月曜日に。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0116.mp3,false
+grades.g5,g5_92,私は音楽を聞きます,false,I,listen,to,music,,,,,,,,①誰が→②どうする→③何を の順。listen to＝〜を聞く。,audio/voice/gram/KIDS_S_0117.mp3,false
+grades.g5,g5_93,私は6時に起きます,false,I,get,up,at,six,,,,,,,①誰が→②どうする→③何を の順。get up＝起きる。at six＝6時に。,audio/voice/gram/KIDS_S_0118.mp3,false
+grades.g5,g5_94,私たちは海で泳ぎます,false,We,swim,in,the,sea,,,,,,,①誰が→②どうする→③何を の順。in the sea＝海で。文のうしろに置くよ。,audio/voice/gram/KIDS_S_0119.mp3,false
+grades.g5,g5_95,彼女はじょうずに英語を話します,false,She,speaks,English,well,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。well（じょうずに）は文のさいご。,audio/voice/gram/KIDS_S_0120.mp3,false
+grades.g5,g5_96,私の母は昼食を作ります,false,My,mother,makes,lunch,,,,,,,,①誰が→②どうする→③何を の順。My mother は she と同じ。動詞に s がつくよ。,audio/voice/gram/KIDS_S_0121.mp3,false
+grades.g5,g5_97,彼はお皿を洗います,false,He,washes,the,dishes,,,,,,,,①誰が→②どうする→③何を の順。He は washes（es がつく）。,audio/voice/gram/KIDS_S_0122.mp3,false
+grades.g5,g5_98,彼女は学校で数学を教えます,false,She,teaches,math,at,school,,,,,,,①誰が→②どうする→③何を の順。She は teaches（es がつく）。at school は後ろ。,audio/voice/gram/KIDS_S_0123.mp3,false
+grades.g5,g5_99,私の姉は毎日テレビを見ます,false,My,sister,watches,TV,every,day,,,,,,①誰が→②どうする→③何を の順。My sister は she と同じで watches。every day は後ろ。,audio/voice/gram/KIDS_S_0124.mp3,false
+grades.g5,g5_100,彼は土曜日に野球をします,false,He,plays,baseball,on,Saturdays,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。on Saturdays＝土曜日に。,audio/voice/gram/KIDS_S_0125.mp3,false
+grades.g5,g5_101,私の弟は早く寝ます,false,My,brother,goes,to,bed,early,,,,,,①誰が→②どうする→③何を の順。My brother は he と同じで goes。go to bed＝寝る。,audio/voice/gram/KIDS_S_0126.mp3,false
+grades.g5,g5_102,彼女は赤いかさを持っています,false,She,has,a,red,umbrella,,,,,,,①誰が→②どうする→③何を の順。She は has。a red umbrella＝赤いかさ。,audio/voice/gram/KIDS_S_0127.mp3,false
+grades.g5,g5_103,トムは東京に住んでいます,false,Tom,lives,in,Tokyo,,,,,,,,①誰が→②どうする→③何を の順。Tom は he と同じ。動詞に s がつくよ。,audio/voice/gram/KIDS_S_0128.mp3,false
+grades.g5,g5_104,彼は駅まで歩きます,false,He,walks,to,the,station,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。walk to＝〜へ歩いて行く。,audio/voice/gram/KIDS_S_0129.mp3,false
+grades.g5,g5_105,彼女は新しい靴が気に入っています,false,She,likes,her,new,shoes,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。her new shoes＝彼女の新しい靴。,audio/voice/gram/KIDS_S_0130.mp3,false
+grades.g5,g5_106,ケンは毎日夕食を作ります,false,Ken,cooks,dinner,every,day,,,,,,,①誰が→②どうする→③何を の順。Ken は he と同じで cooks。every day は後ろ。,audio/voice/gram/KIDS_S_0131.mp3,false
+grades.g5,g5_107,私の犬はとても速く走ります,false,My,dog,runs,very,fast,,,,,,,①誰が→②どうする→③何を の順。My dog は it と同じで runs。very fast＝とても速く。,audio/voice/gram/KIDS_S_0132.mp3,false
+grades.g5,g5_108,彼女は自分の部屋をそうじします,false,She,cleans,her,room,,,,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。her room＝彼女の部屋。,audio/voice/gram/KIDS_S_0133.mp3,false
+grades.g5,g5_109,私は速く泳げます,false,I,can,swim,fast,,,,,,,,can＋動詞のもとの形＝〜できる。fast（速く）は後ろ。,audio/voice/gram/KIDS_S_0134.mp3,false
+grades.g5,g5_110,彼女はピアノをひけます,false,She,can,play,the,piano,,,,,,,can＋動詞のもとの形＝〜できる。can のあとは s がつかないよ。,audio/voice/gram/KIDS_S_0135.mp3,false
+grades.g5,g5_111,彼は中国語を話せます,false,He,can,speak,Chinese,,,,,,,,can＋動詞のもとの形＝〜できる。can のあとは s がつかないよ。,audio/voice/gram/KIDS_S_0136.mp3,false
+grades.g5,g5_112,私たちは海が見えます,false,We,can,see,the,sea,,,,,,,can＋動詞のもとの形＝〜できる。see the sea＝海が見える。,audio/voice/gram/KIDS_S_0137.mp3,false
+grades.g5,g5_113,私の兄はじょうずに料理ができます,false,My,brother,can,cook,well,,,,,,,can＋動詞のもとの形＝〜できる。well は文のさいご。,audio/voice/gram/KIDS_S_0138.mp3,false
+grades.g5,g5_114,私は自転車に乗れます,false,I,can,ride,a,bike,,,,,,,can＋動詞のもとの形＝〜できる。ride a bike＝自転車に乗る。,audio/voice/gram/KIDS_S_0139.mp3,false
+grades.g5,g5_115,あなたは私のペンを使っていいよ,false,You,can,use,my,pen,,,,,,,can＝〜してもいい。use my pen＝私のペンを使う。,audio/voice/gram/KIDS_S_0140.mp3,false
+grades.g5,g5_116,彼らはとてもじょうずにおどれます,false,They,can,dance,very,well,,,,,,,can＋動詞のもとの形＝〜できる。very well は後ろ。,audio/voice/gram/KIDS_S_0141.mp3,false
+grades.g5,g5_117,ドアを開けてください,false,Please,open,the,door,,,,,,,,Please＋動詞で始める命令文。open the door＝ドアを開ける。,audio/voice/gram/KIDS_S_0142.mp3,false
+grades.g5,g5_118,手を洗ってください,false,Please,wash,your,hands,,,,,,,,Please＋動詞で始める命令文。your hands＝あなたの手。,audio/voice/gram/KIDS_S_0143.mp3,false
+grades.g5,g5_119,窓を閉めてください,false,Please,close,the,window,,,,,,,,Please＋動詞で始める命令文。close the window＝窓を閉める。,audio/voice/gram/KIDS_S_0144.mp3,false
+grades.g5,g5_120,私の家に来てね,false,Come,to,my,house,,,,,,,,動詞で始める命令文。come to＝〜に来る。,audio/voice/gram/KIDS_S_0145.mp3,false
+grades.g5,g5_121,この絵を見て,false,Look,at,this,picture,,,,,,,,動詞で始める命令文。look at＝〜を見る。,audio/voice/gram/KIDS_S_0146.mp3,false
+grades.g5,g5_122,いっしょにサッカーをしよう,false,Let's,play,soccer,together,,,,,,,,Let's＋動詞＝〜しよう。together は文のさいご。,audio/voice/gram/KIDS_S_0147.mp3,false
+grades.g5,g5_123,公園に行こう,false,Let's,go,to,the,park,,,,,,,Let's＋動詞＝〜しよう。go to the park＝公園に行く。,audio/voice/gram/KIDS_S_0148.mp3,false
+grades.g5,g5_124,ろうかで走ってはいけません,false,Don't,run,in,the,hall,,,,,,,Don't＋動詞＝〜してはいけない。場所は後ろ。,audio/voice/gram/KIDS_S_0149.mp3,false
+grades.g5,g5_125,友達に親切にしなさい,false,Be,kind,to,your,friends,,,,,,,Be＋形容詞で始める命令文。be kind to＝〜に親切にする。,audio/voice/gram/KIDS_S_0150.mp3,false
+grades.g4,g4_0,私は昨日公園でサッカーをした,false,I,played,soccer,in,the,park,yesterday,,,,,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/KIDS_S_0027.mp3,true
+grades.g4,g4_1,彼女は日曜日にレストランで寿司を食べる,false,She,eats,sushi,at,a,restaurant,on,Sundays,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0028.mp3,true
+grades.g4,g4_2,彼は毎朝6時に起きる,false,He,gets,up,at,six,every,morning,,,,,①誰が→②どうする→③何を の順。He/She は動詞に s がつくよ。,audio/voice/gram/KIDS_S_0029.mp3,true
+grades.g4,g4_3,私たちは先週京都のお寺を訪れた,false,We,visited,a,temple,in,Kyoto,last,week,,,,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/KIDS_S_0030.mp3,true
+grades.g4,g4_4,私の母は毎晩台所で夕食を作る,false,My,mother,cooks,dinner,in,the,kitchen,every,night,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0031.mp3,true
+grades.g4,g4_5,彼らは去年の夏海で泳いだ,false,They,swam,in,the,sea,last,summer,,,,,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/KIDS_S_0032.mp3,true
+grades.g4,g4_6,私は放課後図書館で数学を勉強する,false,I,study,math,in,the,library,after,school,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0033.mp3,true
+grades.g4,g4_7,私の父は週末に車を洗う,false,My,father,washes,the,car,on,weekends,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0034.mp3,true
+grades.g4,g4_8,私たちは昨夜体育館でバスケをした,false,We,played,basketball,in,the,gym,last,night,,,,過去の文。動詞は過去形。『どこで・いつ』は文のうしろ。,audio/voice/gram/KIDS_S_0035.mp3,true
+grades.g4,g4_9,彼女は毎週友達に手紙を書く,false,She,writes,a,letter,to,her,friend,every,week,,,「to＋人」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0036.mp3,true
+grades.g4,g4_10,私は今朝駅まで歩いた,false,I,walked,to,the,station,this,morning,,,,,「to＋場所」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0037.mp3,true
+grades.g4,g4_11,彼らは去年その町に住んでいた,false,They,lived,in,the,town,last,year,,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0038.mp3,true
+grades.g4,g4_12,私は昨日サッカーの試合を見た,false,I,watched,a,soccer,game,yesterday,,,,,,過去の文。watch→watched。『いつ』は文のうしろ。,audio/voice/gram/KIDS_S_0151.mp3,false
+grades.g4,g4_13,彼女は先週動物園に行った,false,She,went,to,the,zoo,last,week,,,,,go の過去は went。『どこへ・いつ』は後ろ。,audio/voice/gram/KIDS_S_0152.mp3,false
+grades.g4,g4_14,私は毎朝7時に起きる,false,I,get,up,at,seven,every,morning,,,,,時を表す語は文のうしろ。at seven＝7時に。,audio/voice/gram/KIDS_S_0153.mp3,false
+grades.g4,g4_15,彼は毎日英語を一生けんめい勉強する,false,He,studies,English,hard,every,day,,,,,,He は studies。hard＝一生けんめい。every day は後ろ。,audio/voice/gram/KIDS_S_0154.mp3,false
+grades.g4,g4_16,私たちは公園で野球をした,false,We,played,baseball,in,the,park,,,,,,過去の文。場所は文のうしろ in the park。,audio/voice/gram/KIDS_S_0155.mp3,false
+grades.g4,g4_17,私はバスで学校に行く,false,I,go,to,school,by,bus,,,,,,by bus＝バスで。手段は後ろ。,audio/voice/gram/KIDS_S_0156.mp3,false
+grades.g4,g4_18,彼女は夕食後に宿題をする,false,She,does,her,homework,after,dinner,,,,,,She は does。after dinner＝夕食後。,audio/voice/gram/KIDS_S_0157.mp3,false
+grades.g4,g4_19,私は夜に音楽を聞くのが好きだ,false,I,like,listening,to,music,at,night,,,,,like ～ing＝〜するのが好き。at night は後ろ。,audio/voice/gram/KIDS_S_0158.mp3,false
+grades.g4,g4_20,彼らは昨日家で映画を見た,false,They,watched,a,movie,at,home,yesterday,,,,,過去の文。watched。場所→時の順で後ろ。,audio/voice/gram/KIDS_S_0159.mp3,false
+grades.g4,g4_21,私の母は料理がじょうずだ,false,My,mother,is,good,at,cooking,,,,,,be good at ～ing＝〜が得意。,audio/voice/gram/KIDS_S_0160.mp3,false
+grades.g4,g4_22,私は先週おばに会った,false,I,met,my,aunt,last,week,,,,,,meet の過去は met。,audio/voice/gram/KIDS_S_0161.mp3,false
+grades.g4,g4_23,彼は毎日犬を散歩させる,false,He,walks,his,dog,every,day,,,,,,He は walks。every day は後ろ。,audio/voice/gram/KIDS_S_0162.mp3,false
+grades.g4,g4_24,私は図書館で本を読んだ,false,I,read,a,book,in,the,library,,,,,read は過去も同じつづり（読み方はレッド）。,audio/voice/gram/KIDS_S_0163.mp3,false
+grades.g4,g4_25,私たちは来週京都を訪れる,false,We,will,visit,Kyoto,next,week,,,,,,will＋動詞＝未来。next week は後ろ。,audio/voice/gram/KIDS_S_0164.mp3,false
+grades.g4,g4_26,彼女はとてもじょうずにピアノをひく,false,She,plays,the,piano,very,well,,,,,,She は plays。very well は文のさいご。,audio/voice/gram/KIDS_S_0165.mp3,false
+grades.g4,g4_27,私はいつも朝食にパンを食べる,false,I,always,eat,bread,for,breakfast,,,,,,always（いつも）は動詞の前。for breakfast＝朝食に。,audio/voice/gram/KIDS_S_0166.mp3,false
+grades.g4,g4_28,彼は自転車で公園に行った,false,He,went,to,the,park,by,bike,,,,,went＝行った。by bike＝自転車で。,audio/voice/gram/KIDS_S_0167.mp3,false
+grades.g4,g4_29,私は友達とテニスをするのが好きだ,false,I,like,playing,tennis,with,my,friends,,,,,like ～ing＝〜するのが好き。with my friends は後ろ。,audio/voice/gram/KIDS_S_0168.mp3,false
+grades.g4,g4_30,私はサッカーの試合のあと疲れていた,false,I,was,tired,after,the,soccer,game,,,,,過去の文。am の過去は was。after〜＝〜のあと。,audio/voice/gram/KIDS_S_0169.mp3,false
+grades.g4,g4_31,彼女は明日おばあちゃんを訪ねる予定だ,false,She,is,going,to,visit,her,grandmother,tomorrow,,,,be going to＋動詞＝〜する予定。tomorrow は後ろ。,audio/voice/gram/KIDS_S_0170.mp3,false
+grades.g4,g4_32,私たちは今夜パーティーをする予定だ,false,We,are,going,to,have,a,party,tonight,,,,be going to＋動詞＝〜する予定。tonight は後ろ。,audio/voice/gram/KIDS_S_0171.mp3,false
+grades.g4,g4_33,公園に大きな木が1本ある,false,There,is,a,big,tree,in,the,park,,,,There is＋1つのもの＝〜がある。場所は後ろ。,audio/voice/gram/KIDS_S_0172.mp3,false
+grades.g4,g4_34,机の上にたくさんの本がある,false,There,are,many,books,on,the,desk,,,,,There are＋2つ以上＝〜がある。on the desk＝机の上に。,audio/voice/gram/KIDS_S_0173.mp3,false
+grades.g4,g4_35,私の姉はとてもじょうずに英語を話せる,false,My,sister,can,speak,English,very,well,,,,,can＋動詞のもとの形＝〜できる。very well は後ろ。,audio/voice/gram/KIDS_S_0174.mp3,false
+grades.g4,g4_36,あなたは今日部屋をそうじしなければならない,false,You,must,clean,your,room,today,,,,,,must＋動詞＝〜しなければならない。today は後ろ。,audio/voice/gram/KIDS_S_0175.mp3,false
+grades.g4,g4_37,私は今夜宿題を終わらせなければならない,false,I,have,to,finish,my,homework,tonight,,,,,have to＋動詞＝〜しなければならない。,audio/voice/gram/KIDS_S_0176.mp3,false
+grades.g4,g4_38,彼はリビングでテレビを見ていた,false,He,was,watching,TV,in,the,living,room,,,,過去進行形 was＋〜ing＝〜していた。場所は後ろ。,audio/voice/gram/KIDS_S_0177.mp3,false
+grades.g4,g4_39,私は自分の部屋で本を読んでいた,false,I,was,reading,a,book,in,my,room,,,,過去進行形 was＋〜ing＝〜していた。場所は後ろ。,audio/voice/gram/KIDS_S_0178.mp3,false
+grades.g4,g4_40,私の父は先月新しい車を買った,false,My,father,bought,a,new,car,last,month,,,,buy の過去は bought。last month は後ろ。,audio/voice/gram/KIDS_S_0179.mp3,false
+grades.g4,g4_41,私たちは海辺で楽しい時を過ごした,false,We,had,a,good,time,at,the,beach,,,,have a good time＝楽しく過ごす。have の過去は had。,audio/voice/gram/KIDS_S_0180.mp3,false
+grades.g4,g4_42,彼女は5時に家に帰ってきた,false,She,came,home,at,five,o'clock,,,,,,come の過去は came。at five o'clock＝5時に。,audio/voice/gram/KIDS_S_0181.mp3,false
+grades.g4,g4_43,私は奈良でたくさん写真をとった,false,I,took,a,lot,of,pictures,in,Nara,,,,take の過去は took。a lot of＝たくさんの。,audio/voice/gram/KIDS_S_0182.mp3,false
+grades.g4,g4_44,彼はたいてい10時に寝る,false,He,usually,goes,to,bed,at,ten,,,,,usually（たいてい）は動詞の前。He は goes。,audio/voice/gram/KIDS_S_0183.mp3,false
+grades.g4,g4_45,私はときどき庭で父を手伝う,false,I,sometimes,help,my,father,in,the,garden,,,,sometimes（ときどき）は動詞の前。場所は後ろ。,audio/voice/gram/KIDS_S_0184.mp3,false
+grades.g4,g4_46,私の弟はいつも早く起きる,false,My,brother,always,gets,up,early,,,,,,always（いつも）は動詞の前。get up＝起きる。,audio/voice/gram/KIDS_S_0185.mp3,false
+grades.g4,g4_47,トムは彼の兄より背が高い,false,Tom,is,taller,than,his,brother,,,,,,比べる文。taller than＝〜より背が高い。,audio/voice/gram/KIDS_S_0186.mp3,false
+grades.g4,g4_48,私は昼食にピザを食べたい,false,I,want,to,eat,pizza,for,lunch,,,,,want to＋動詞＝〜したい。for lunch＝昼食に。,audio/voice/gram/KIDS_S_0187.mp3,false
+grades.g4,g4_49,昨日東京は雨だった,false,It,was,rainy,in,Tokyo,yesterday,,,,,,天気は It で始める。is の過去は was。,audio/voice/gram/KIDS_S_0188.mp3,false
+grades.g4,g4_50,明日の午後は晴れるでしょう,false,It,will,be,sunny,tomorrow,afternoon,,,,,,天気は It。will be＝〜になるでしょう。,audio/voice/gram/KIDS_S_0189.mp3,false
+grades.g4,g4_51,図書館では静かにしてください,false,Please,be,quiet,in,the,library,,,,,,Please＋動詞で始める命令文。be quiet＝静かにする。,audio/voice/gram/KIDS_S_0190.mp3,false
+grades.g4,g4_52,教室でサッカーをしてはいけません,false,Don't,play,soccer,in,the,classroom,,,,,,Don't＋動詞＝〜してはいけない。場所は後ろ。,audio/voice/gram/KIDS_S_0191.mp3,false
+grades.g4,g4_53,明日ショッピングモールに買い物に行こう,false,Let's,go,shopping,at,the,mall,tomorrow,,,,,Let's＋動詞＝〜しよう。go shopping＝買い物に行く。,audio/voice/gram/KIDS_S_0192.mp3,false
+grades.g4,g4_54,私は去年の夏海で泳ぐのを楽しんだ,false,I,enjoyed,swimming,in,the,sea,last,summer,,,,enjoy ～ing＝〜するのを楽しむ。過去は enjoyed。,audio/voice/gram/KIDS_S_0193.mp3,false
+grades.g4,g4_55,彼女は昼食前に部屋のそうじを終えた,false,She,finished,cleaning,her,room,before,lunch,,,,,finish ～ing＝〜し終える。before lunch＝昼食前に。,audio/voice/gram/KIDS_S_0194.mp3,false
+grades.g4,g4_56,私の祖母は小さな家に住んでいる,false,My,grandmother,lives,in,a,small,house,,,,,My grandmother は she と同じで lives。場所は後ろ。,audio/voice/gram/KIDS_S_0195.mp3,false
+grades.g4,g4_57,私はたいてい7時半に朝食を食べる,false,I,usually,eat,breakfast,at,seven,thirty,,,,,usually は動詞の前。at seven thirty＝7時半に。,audio/voice/gram/KIDS_S_0196.mp3,false
+grades.g4,g4_58,彼は昨日学校にかさを忘れた,false,He,forgot,his,umbrella,at,school,yesterday,,,,,forget の過去は forgot。場所→時の順で後ろ。,audio/voice/gram/KIDS_S_0197.mp3,false
+grades.g4,g4_59,私たちは駅の近くのホテルに泊まった,false,We,stayed,at,a,hotel,near,the,station,,,,過去の文。stay at＝〜に泊まる。near＝〜の近くの。,audio/voice/gram/KIDS_S_0198.mp3,false
+grades.g4,g4_60,私はお母さんにプレゼントを買うつもりだ,false,I,am,going,to,buy,a,present,for,Mom,,,be going to＋動詞＝〜するつもり。for＝〜のために。,audio/voice/gram/KIDS_S_0199.mp3,false
+grades.g4,g4_61,彼女は先週末とても忙しかった,false,She,was,very,busy,last,weekend,,,,,,過去の文。is の過去は was。last weekend は後ろ。,audio/voice/gram/KIDS_S_0200.mp3,false
+grades.g4,g4_62,子どもたちは今公園で遊んでいる,false,The,children,are,playing,in,the,park,now,,,,現在進行形 are＋〜ing＝〜している。now は後ろ。,audio/voice/gram/KIDS_S_0201.mp3,false
+grades.g4,g4_63,私の母は台所で昼食を作っている,false,My,mother,is,making,lunch,in,the,kitchen,,,,現在進行形 is＋〜ing＝〜している。場所は後ろ。,audio/voice/gram/KIDS_S_0202.mp3,false
+grades.g4,g4_64,夕食のあとであなたに電話します,false,I,will,call,you,after,dinner,,,,,,will＋動詞＝〜します（未来）。after dinner＝夕食後。,audio/voice/gram/KIDS_S_0203.mp3,false
+grades.g4,g4_65,私の犬はとても高くジャンプできる,false,My,dog,can,jump,very,high,,,,,,can＋動詞＝〜できる。very high＝とても高く。,audio/voice/gram/KIDS_S_0204.mp3,false
+grades.g4,g4_66,毎年たくさんの人がこのお寺を訪れる,false,Many,people,visit,this,temple,every,year,,,,,Many people（たくさんの人）が主語。every year は後ろ。,audio/voice/gram/KIDS_S_0205.mp3,false
+grades.g4,g4_67,私は昨夜カレーライスを食べた,false,I,ate,curry,and,rice,last,night,,,,,eat の過去は ate。curry and rice＝カレーライス。last night は後ろ。,audio/voice/gram/KIDS_S_0206.mp3,false
+grades.g4,g4_68,彼女は母のためにケーキを作った,false,She,made,a,cake,for,her,mother,,,,,make の過去は made。for〜＝〜のために。,audio/voice/gram/KIDS_S_0207.mp3,false
+grades.g4,g4_69,私たちは昨日きれいなにじを見た,false,We,saw,a,beautiful,rainbow,yesterday,,,,,,see の過去は saw。yesterday は後ろ。,audio/voice/gram/KIDS_S_0208.mp3,false
+grades.g4,g4_70,彼はおじいさんに手紙を書いた,false,He,wrote,a,letter,to,his,grandfather,,,,,write の過去は wrote。to〜＝〜に。,audio/voice/gram/KIDS_S_0209.mp3,false
+grades.g4,g4_71,私の姉は今朝台所をそうじした,false,My,sister,cleaned,the,kitchen,this,morning,,,,,過去の文。clean→cleaned。this morning は後ろ。,audio/voice/gram/KIDS_S_0210.mp3,false
+grades.g4,g4_72,彼らはバス停まで走った,false,They,ran,to,the,bus,stop,,,,,,run の過去は ran。to the bus stop＝バス停まで。,audio/voice/gram/KIDS_S_0211.mp3,false
+grades.g4,g4_73,私は公園でかぎをなくした,false,I,lost,my,key,at,the,park,,,,,lose の過去は lost。場所は後ろ。,audio/voice/gram/KIDS_S_0212.mp3,false
+grades.g4,g4_74,私たちは昼食に大きなピザを食べた,false,We,had,a,big,pizza,for,lunch,,,,,have の過去は had。for lunch＝昼食に。,audio/voice/gram/KIDS_S_0213.mp3,false
+grades.g4,g4_75,私の祖父は有名な歌手だった,false,My,grandfather,was,a,famous,singer,,,,,,過去の文。is の過去は was。a famous singer＝有名な歌手。,audio/voice/gram/KIDS_S_0214.mp3,false
+grades.g4,g4_76,数学のテストはとてもむずかしかった,false,The,math,test,was,very,difficult,,,,,,過去の文。is の過去は was。very difficult＝とてもむずかしい。,audio/voice/gram/KIDS_S_0215.mp3,false
+grades.g4,g4_77,私は今朝朝食を食べなかった,false,I,didn't,eat,breakfast,this,morning,,,,,,didn't＋動詞のもとの形＝〜しなかった。this morning は後ろ。,audio/voice/gram/KIDS_S_0216.mp3,false
+grades.g4,g4_78,彼は昨日学校に来なかった,false,He,did,not,come,to,school,yesterday,,,,,did not＋動詞のもとの形＝〜しなかった。yesterday は後ろ。,audio/voice/gram/KIDS_S_0217.mp3,false
+grades.g4,g4_79,私たちは昼食後体育館にいた,false,We,were,in,the,gym,after,lunch,,,,,are の過去は were。場所→時の順で後ろ。,audio/voice/gram/KIDS_S_0218.mp3,false
+grades.g4,g4_80,彼女は昨夜日本の歴史を勉強した,false,She,studied,Japanese,history,last,night,,,,,,過去の文。study→studied。last night は後ろ。,audio/voice/gram/KIDS_S_0219.mp3,false
+grades.g4,g4_81,私はテストのために一生けんめい勉強します,false,I,will,study,hard,for,the,test,,,,,will＋動詞＝未来。hard＝一生けんめい。for the test＝テストのために。,audio/voice/gram/KIDS_S_0220.mp3,false
+grades.g4,g4_82,私たちは来月キャンプに行きます,false,We,will,go,camping,next,month,,,,,,will＋動詞＝未来。go camping＝キャンプに行く。next month は後ろ。,audio/voice/gram/KIDS_S_0221.mp3,false
+grades.g4,g4_83,彼女はよい看護師になるでしょう,false,She,will,be,a,good,nurse,,,,,,will be＝〜になるでしょう。a good nurse＝よい看護師。,audio/voice/gram/KIDS_S_0222.mp3,false
+grades.g4,g4_84,今夜北海道では雪がふるでしょう,false,It,will,snow,in,Hokkaido,tonight,,,,,,天気は It。will snow＝雪がふるでしょう。場所→時の順。,audio/voice/gram/KIDS_S_0223.mp3,false
+grades.g4,g4_85,私はケンとテニスをするつもりだ,false,I,am,going,to,play,tennis,with,Ken,,,,be going to＋動詞＝〜するつもり。with Ken＝ケンと。,audio/voice/gram/KIDS_S_0224.mp3,false
+grades.g4,g4_86,彼らは大阪に引っこす予定だ,false,They,are,going,to,move,to,Osaka,,,,,be going to＋動詞＝〜する予定。move to＝〜に引っこす。,audio/voice/gram/KIDS_S_0225.mp3,false
+grades.g4,g4_87,私のおじは明日来る予定だ,false,My,uncle,is,going,to,come,tomorrow,,,,,be going to＋動詞＝〜する予定。tomorrow は後ろ。,audio/voice/gram/KIDS_S_0226.mp3,false
+grades.g4,g4_88,私たちはサッカーの試合を見る予定だ,false,We,are,going,to,watch,a,soccer,game,,,,be going to＋動詞＝〜する予定。a soccer game＝サッカーの試合。,audio/voice/gram/KIDS_S_0227.mp3,false
+grades.g4,g4_89,彼はソファーで眠っている,false,He,is,sleeping,on,the,sofa,,,,,,現在進行形 is＋〜ing＝〜している。場所は後ろ。,audio/voice/gram/KIDS_S_0228.mp3,false
+grades.g4,g4_90,私はおばに手紙を書いている,false,I,am,writing,a,letter,to,my,aunt,,,,現在進行形 am＋〜ing＝〜している。to my aunt＝おばに。,audio/voice/gram/KIDS_S_0229.mp3,false
+grades.g4,g4_91,彼らは今プールで泳いでいる,false,They,are,swimming,in,the,pool,now,,,,,現在進行形 are＋〜ing。場所→now の順で後ろ。,audio/voice/gram/KIDS_S_0230.mp3,false
+grades.g4,g4_92,私の母は電話で話している,false,My,mother,is,talking,on,the,phone,,,,,現在進行形 is＋〜ing。on the phone＝電話で。,audio/voice/gram/KIDS_S_0231.mp3,false
+grades.g4,g4_93,私たちはバスを待っている,false,We,are,waiting,for,the,bus,,,,,,現在進行形 are＋〜ing。wait for＝〜を待つ。,audio/voice/gram/KIDS_S_0232.mp3,false
+grades.g4,g4_94,彼女は自分の部屋で音楽を聞いていた,false,She,was,listening,to,music,in,her,room,,,,過去進行形 was＋〜ing＝〜していた。場所は後ろ。,audio/voice/gram/KIDS_S_0233.mp3,false
+grades.g4,g4_95,生徒たちは図書館で勉強していた,false,The,students,were,studying,in,the,library,,,,,過去進行形 were＋〜ing＝〜していた。場所は後ろ。,audio/voice/gram/KIDS_S_0234.mp3,false
+grades.g4,g4_96,私はそのときおふろに入っていた,false,I,was,taking,a,bath,at,that,time,,,,過去進行形 was＋〜ing。at that time＝そのとき。,audio/voice/gram/KIDS_S_0235.mp3,false
+grades.g4,g4_97,テーブルの下に猫が1匹いる,false,There,is,a,cat,under,the,table,,,,,There is＋1つのもの＝〜がいる。under the table＝テーブルの下に。,audio/voice/gram/KIDS_S_0236.mp3,false
+grades.g4,g4_98,箱の中にりんごが3つある,false,There,are,three,apples,in,the,box,,,,,There are＋2つ以上＝〜がある。in the box＝箱の中に。,audio/voice/gram/KIDS_S_0237.mp3,false
+grades.g4,g4_99,私の家の近くに新しいレストランがある,false,There,is,a,new,restaurant,near,my,house,,,,There is＋1つのもの＝〜がある。near my house＝私の家の近くに。,audio/voice/gram/KIDS_S_0238.mp3,false
+grades.g4,g4_100,今夜は空にたくさんの星がある,false,There,are,many,stars,in,the,sky,tonight,,,,There are＋2つ以上＝〜がある。場所→時の順で後ろ。,audio/voice/gram/KIDS_S_0239.mp3,false
+grades.g4,g4_101,昨日学校で大きなパーティーがあった,false,There,was,a,big,party,at,school,yesterday,,,,There was＝〜があった（過去）。場所→時の順で後ろ。,audio/voice/gram/KIDS_S_0240.mp3,false
+grades.g4,g4_102,私はフランス語をあまりじょうずに話せない,false,I,can't,speak,French,very,well,,,,,,can't＋動詞＝〜できない。very well は後ろ。,audio/voice/gram/KIDS_S_0241.mp3,false
+grades.g4,g4_103,あなたは早く寝るべきだ,false,You,should,go,to,bed,early,,,,,,should＋動詞＝〜するべきだ。go to bed＝寝る。,audio/voice/gram/KIDS_S_0242.mp3,false
+grades.g4,g4_104,私たちは図書館では静かにしなければならない,false,We,must,be,quiet,in,the,library,,,,,must＋動詞＝〜しなければならない。be quiet＝静かにする。,audio/voice/gram/KIDS_S_0243.mp3,false
+grades.g4,g4_105,彼女はとてもじょうずに馬に乗れる,false,She,can,ride,a,horse,very,well,,,,,can＋動詞のもとの形＝〜できる。very well は後ろ。,audio/voice/gram/KIDS_S_0244.mp3,false
+grades.g4,g4_106,あなたは今日私の辞書を使ってもいい,false,You,may,use,my,dictionary,today,,,,,,may＋動詞＝〜してもよい。today は後ろ。,audio/voice/gram/KIDS_S_0245.mp3,false
+grades.g4,g4_107,彼は明日早く起きなければならない,false,He,has,to,get,up,early,tomorrow,,,,,has to＋動詞＝〜しなければならない。tomorrow は後ろ。,audio/voice/gram/KIDS_S_0246.mp3,false
+grades.g4,g4_108,私たちは今日学校に行く必要はない,false,We,don't,have,to,go,to,school,today,,,,don't have to＋動詞＝〜する必要はない。today は後ろ。,audio/voice/gram/KIDS_S_0247.mp3,false
+grades.g4,g4_109,私の兄は車を運転できる,false,My,brother,can,drive,a,car,,,,,,can＋動詞のもとの形＝〜できる。drive a car＝車を運転する。,audio/voice/gram/KIDS_S_0248.mp3,false
+grades.g4,g4_110,彼女は夕食後お皿を洗わなければならない,false,She,must,wash,the,dishes,after,dinner,,,,,must＋動詞＝〜しなければならない。after dinner＝夕食後。,audio/voice/gram/KIDS_S_0249.mp3,false
+grades.g4,g4_111,私はサッカー選手になりたい,false,I,want,to,be,a,soccer,player,,,,,want to be＝〜になりたい。a soccer player＝サッカー選手。,audio/voice/gram/KIDS_S_0250.mp3,false
+grades.g4,g4_112,彼女はいつかロンドンを訪れたい,false,She,wants,to,visit,London,someday,,,,,,want to＋動詞＝〜したい。She は wants。someday は後ろ。,audio/voice/gram/KIDS_S_0251.mp3,false
+grades.g4,g4_113,私は牛乳を買うために店へ行った,false,I,went,to,the,store,to,buy,milk,,,,to＋動詞＝〜するために（目的）。文のうしろに置く。,audio/voice/gram/KIDS_S_0252.mp3,false
+grades.g4,g4_114,彼は電車に間に合うように早く起きた,false,He,got,up,early,to,catch,the,train,,,,to＋動詞＝〜するために（目的）。catch the train＝電車に間に合う。,audio/voice/gram/KIDS_S_0253.mp3,false
+grades.g4,g4_115,私たちは今日することがたくさんある,false,We,have,many,things,to,do,today,,,,,名詞＋to＋動詞＝〜するべき…。today は後ろ。,audio/voice/gram/KIDS_S_0254.mp3,false
+grades.g4,g4_116,私は新しいノートを買う必要がある,false,I,need,to,buy,a,new,notebook,,,,,need to＋動詞＝〜する必要がある。,audio/voice/gram/KIDS_S_0255.mp3,false
+grades.g4,g4_117,彼らはその新しい映画を見たがっている,false,They,want,to,see,the,new,movie,,,,,want to＋動詞＝〜したい。the new movie＝その新しい映画。,audio/voice/gram/KIDS_S_0256.mp3,false
+grades.g4,g4_118,私は古い友達に会えてうれしかった,false,I,was,happy,to,see,my,old,friend,,,,be happy to＋動詞＝〜してうれしい。,audio/voice/gram/KIDS_S_0257.mp3,false
+grades.g4,g4_119,私は海で泳ぐのが好きだ,false,I,like,swimming,in,the,sea,,,,,,like ～ing＝〜するのが好き。in the sea＝海で。,audio/voice/gram/KIDS_S_0258.mp3,false
+grades.g4,g4_120,彼は夜にまんがを読むのを楽しむ,false,He,enjoys,reading,comic,books,at,night,,,,,enjoy ～ing＝〜するのを楽しむ。He は enjoys。at night は後ろ。,audio/voice/gram/KIDS_S_0259.mp3,false
+grades.g4,g4_121,彼女はギターをひくのがじょうずだ,false,She,is,good,at,playing,the,guitar,,,,,be good at ～ing＝〜が得意。,audio/voice/gram/KIDS_S_0260.mp3,false
+grades.g4,g4_122,私たちは8時に夕食を食べ終えた,false,We,finished,eating,dinner,at,eight,,,,,,finish ～ing＝〜し終える。at eight＝8時に。,audio/voice/gram/KIDS_S_0261.mp3,false
+grades.g4,g4_123,朝に走ることは楽しい,false,Running,in,the,morning,is,fun,,,,,,動名詞〜ing が主語。〜することは。,audio/voice/gram/KIDS_S_0262.mp3,false
+grades.g4,g4_124,私の趣味は花の写真をとることだ,false,My,hobby,is,taking,pictures,of,flowers,,,,,My hobby is ～ing＝趣味は〜すること。of flowers＝花の。,audio/voice/gram/KIDS_S_0263.mp3,false
+grades.g4,g4_125,私のパーティーに来てくれてありがとう,false,Thank,you,for,coming,to,my,party,,,,,Thank you for ～ing＝〜してくれてありがとう。,audio/voice/gram/KIDS_S_0264.mp3,false
+grades.g4,g4_126,私のかばんはあなたのより大きい,false,My,bag,is,bigger,than,yours,,,,,,比べる文。bigger than＝〜より大きい。yours＝あなたの。,audio/voice/gram/KIDS_S_0265.mp3,false
+grades.g4,g4_127,この問題はあの問題よりやさしい,false,This,question,is,easier,than,that,one,,,,,比べる文。easier than＝〜よりやさしい。that one＝あの問題。,audio/voice/gram/KIDS_S_0266.mp3,false
+grades.g4,g4_128,彼は私の兄より速く走る,false,He,runs,faster,than,my,brother,,,,,,比べる文。faster than＝〜より速く。,audio/voice/gram/KIDS_S_0267.mp3,false
+grades.g4,g4_129,東京は日本で一番大きな都市だ,false,Tokyo,is,the,biggest,city,in,Japan,,,,,最上級 the biggest＝一番大きい。in＋場所。,audio/voice/gram/KIDS_S_0268.mp3,false
+grades.g4,g4_130,これは京都で一番古いお寺だ,false,This,is,the,oldest,temple,in,Kyoto,,,,,最上級 the oldest＝一番古い。in＋場所。,audio/voice/gram/KIDS_S_0269.mp3,false
+grades.g4,g4_131,夏は1年で一番暑い季節だ,false,Summer,is,the,hottest,season,of,the,year,,,,最上級 the hottest＝一番暑い。of the year＝1年の中で。,audio/voice/gram/KIDS_S_0270.mp3,false
+grades.g3,g3_0,私は妹に私と英語を勉強してほしい,false,I,want,my,sister,to,study,English,with,me,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0039.mp3,true
+grades.g3,g3_1,彼は学校で足の速い走者として知られている,false,He,is,known,as,a,fast,runner,in,our,school,,受け身 is known as＝〜として知られている。①誰が→②どうされる→③どこで の順。,audio/voice/gram/KIDS_S_0040.mp3,true
+grades.g3,g3_2,私は他のどのスポーツよりサッカーが好きだ,false,I,like,soccer,better,than,any,other,sport,,,,比べる文。『〜より』は better than。①誰が→②好き→③より→④何を の順。,audio/voice/gram/KIDS_S_0041.mp3,true
+grades.g3,g3_3,私は疲れていたので早く寝た,false,I,went,to,bed,early,because,I,was,tired,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0042.mp3,true
+grades.g3,g3_4,彼女は医者になるためにとても熱心に勉強する,false,She,studies,very,hard,to,be,a,doctor,,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0043.mp3,true
+grades.g3,g3_5,私は友達と映画を見るつもりだ,false,I,will,watch,a,movie,with,my,friends,,,,①誰が→②どうする→③何を の順でならべよう。,audio/voice/gram/KIDS_S_0044.mp3,true
+grades.g3,g3_6,この本はあの本よりおもしろい,false,This,book,is,more,interesting,than,that,one,,,,比べる文。『〜より』は better than。①誰が→②好き→③より→④何を の順。,audio/voice/gram/KIDS_S_0045.mp3,true
+grades.g3,g3_7,私は彼に宿題を手伝ってくれるように頼んだ,false,I,asked,him,to,help,me,with,my,homework,,,「to＋動詞」のかたまりに注意。語順は①誰が→②どうする→…。,audio/voice/gram/KIDS_S_0046.mp3,true
+grades.g3,g3_8,私は英語は数学よりやさしいと思う,false,I,think,English,is,easier,than,math,,,,,比較級 easier than＝〜よりやさしい。,audio/voice/gram/KIDS_S_0047.mp3,true
+grades.g3,g3_9,彼はクラスで一番背が高い,false,He,is,the,tallest,in,his,class,,,,,最上級 the tallest＝一番背が高い。,audio/voice/gram/KIDS_S_0048.mp3,true
+grades.g3,g3_10,私は子どもを助ける医者になりたい,false,I,want,to,be,a,doctor,who,helps,children,,,want to be＝〜になりたい。who は「〜する人」をつなぐ。,audio/voice/gram/KIDS_S_0049.mp3,true
+grades.g3,g3_11,彼女は3年間英語を勉強している,false,She,has,studied,English,for,three,years,,,,,現在完了 have/has＋過去分詞。for＝〜間。,audio/voice/gram/KIDS_S_0050.mp3,true
+grades.g3,g3_12,私は夕食のあとピアノをひくのが好きだ,false,I,like,to,play,the,piano,after,dinner,,,,like to＋動詞＝〜するのが好き。,audio/voice/gram/KIDS_S_0271.mp3,false
+grades.g3,g3_13,彼は祖母を訪ねるために京都へ行った,false,He,went,to,Kyoto,to,visit,his,grandmother,,,,go の過去 went。「〜するために」は to＋動詞。,audio/voice/gram/KIDS_S_0272.mp3,false
+grades.g3,g3_14,私は家族と沖縄に行ったことがある,false,I,have,been,to,Okinawa,with,my,family,,,,have been to＝行ったことがある（経験）。,audio/voice/gram/KIDS_S_0273.mp3,false
+grades.g3,g3_15,英語を勉強することは私たちの将来にとって大切だ,false,Studying,English,is,important,for,our,future,,,,,動名詞〜ing が主語。〜することは。,audio/voice/gram/KIDS_S_0274.mp3,false
+grades.g3,g3_16,彼女は将来先生になりたい,false,She,wants,to,be,a,teacher,in,the,future,,,want to be＝〜になりたい。She は wants。,audio/voice/gram/KIDS_S_0275.mp3,false
+grades.g3,g3_17,この映画は一番おもしろい,false,This,movie,is,the,most,interesting,of,all,,,,長い語の最上級は the most＋形容詞。,audio/voice/gram/KIDS_S_0276.mp3,false
+grades.g3,g3_18,私はもう数学の宿題を終えた,false,I,have,already,finished,my,math,homework,,,,,現在完了 have already＋過去分詞＝もう〜した。,audio/voice/gram/KIDS_S_0277.mp3,false
+grades.g3,g3_19,彼はテニスをするのがとてもじょうずだ,false,He,is,very,good,at,playing,tennis,,,,,be good at ～ing＝〜が得意。,audio/voice/gram/KIDS_S_0278.mp3,false
+grades.g3,g3_20,私の姉は私より速く走る,false,My,older,sister,runs,faster,than,me,,,,,faster than＝〜より速く（比較）。,audio/voice/gram/KIDS_S_0279.mp3,false
+grades.g3,g3_21,私はいつも音楽を聞きながら勉強する,false,I,always,study,while,I,listen,to,music,,,,while＋文＝〜しながら。①誰が→②どうする→③while＋文 の順。,audio/voice/gram/KIDS_S_0280.mp3,false
+grades.g3,g3_22,私は10年間福山に住んでいる,false,I,have,lived,in,Fukuyama,for,ten,years,,,,現在完了 have＋過去分詞。for＝〜の間（ずっと）。,audio/voice/gram/KIDS_S_0281.mp3,false
+grades.g3,g3_23,彼女は今までに一度も納豆を食べたことがない,false,She,has,never,eaten,natto,in,her,life,,,,現在完了 has never＋過去分詞＝一度も〜したことがない。,audio/voice/gram/KIDS_S_0282.mp3,false
+grades.g3,g3_24,私の兄はオーストラリアに3回行ったことがある,false,My,brother,has,been,to,Australia,three,times,,,,has been to＝行ったことがある。three times＝3回。,audio/voice/gram/KIDS_S_0283.mp3,false
+grades.g3,g3_25,私たちは子どものころからおたがいを知っている,false,We,have,known,each,other,since,we,were,children,,,現在完了 have＋過去分詞。since＝〜から（ずっと）。,audio/voice/gram/KIDS_S_0284.mp3,false
+grades.g3,g3_26,電車はちょうど駅を出たところだ,false,The,train,has,just,left,the,station,,,,,現在完了 has just＋過去分詞＝ちょうど〜したところ。,audio/voice/gram/KIDS_S_0285.mp3,false
+grades.g3,g3_27,このお寺は約500年前に建てられた,false,This,temple,was,built,about,five,hundred,years,ago,,,受け身 was＋過去分詞＝〜された。ago は後ろ。,audio/voice/gram/KIDS_S_0286.mp3,false
+grades.g3,g3_28,英語は世界中の多くの国で話されている,false,English,is,spoken,in,many,countries,around,the,world,,,受け身 is＋過去分詞＝〜されている。,audio/voice/gram/KIDS_S_0287.mp3,false
+grades.g3,g3_29,この絵は有名な画家によってかかれた,false,This,picture,was,painted,by,a,famous,artist,,,,受け身 was＋過去分詞。by〜＝〜によって。,audio/voice/gram/KIDS_S_0288.mp3,false
+grades.g3,g3_30,これらのクッキーは私の姉によって作られた,false,These,cookies,were,made,by,my,sister,,,,,受け身 were＋過去分詞。by〜＝〜によって。,audio/voice/gram/KIDS_S_0289.mp3,false
+grades.g3,g3_31,毎日勉強することは私たちにとって大切だ,false,It,is,important,for,us,to,study,every,day,,,It is〜for 人 to＋動詞＝人が…することは〜だ。,audio/voice/gram/KIDS_S_0290.mp3,false
+grades.g3,g3_32,このパソコンを使うのは私にとってかんたんだ,false,It,is,easy,for,me,to,use,this,computer,,,It is〜for 人 to＋動詞＝人が…することは〜だ。,audio/voice/gram/KIDS_S_0291.mp3,false
+grades.g3,g3_33,私はこの機械の使い方がわからない,false,I,don't,know,how,to,use,this,machine,,,,how to＋動詞＝〜のしかた。,audio/voice/gram/KIDS_S_0292.mp3,false
+grades.g3,g3_34,駅への行き方を教えてください,false,Please,tell,me,how,to,get,to,the,station,,,tell 人 how to〜＝人に〜のしかたを教える。,audio/voice/gram/KIDS_S_0293.mp3,false
+grades.g3,g3_35,私は本を借りるために図書館へ行った,false,I,went,to,the,library,to,borrow,some,books,,,to＋動詞＝〜するために（目的）。,audio/voice/gram/KIDS_S_0294.mp3,false
+grades.g3,g3_36,私はその知らせを聞いておどろいた,false,I,was,surprised,to,hear,the,news,,,,,be surprised to＋動詞＝〜しておどろく。,audio/voice/gram/KIDS_S_0295.mp3,false
+grades.g3,g3_37,私は今日するべき宿題がたくさんある,false,I,have,a,lot,of,homework,to,do,today,,,名詞＋to＋動詞＝〜するべき…。,audio/voice/gram/KIDS_S_0296.mp3,false
+grades.g3,g3_38,私は試合のあと何か冷たい飲み物がほしい,false,I,want,something,cold,to,drink,after,the,game,,,something＋形容詞＋to＋動詞＝何か〜な…するもの。,audio/voice/gram/KIDS_S_0297.mp3,false
+grades.g3,g3_39,私の父は2年前にたばこをやめた,false,My,father,stopped,smoking,two,years,ago,,,,,stop ～ing＝〜するのをやめる。,audio/voice/gram/KIDS_S_0298.mp3,false
+grades.g3,g3_40,私はまたあなたに会えるのを楽しみにしている,false,I,am,looking,forward,to,seeing,you,again,,,,look forward to ～ing＝〜するのを楽しみに待つ。,audio/voice/gram/KIDS_S_0299.mp3,false
+grades.g3,g3_41,宿題を手伝ってくれてありがとう,false,Thank,you,for,helping,me,with,my,homework,,,,Thank you for ～ing＝〜してくれてありがとう。,audio/voice/gram/KIDS_S_0300.mp3,false
+grades.g3,g3_42,もし明日雨がふったら私は家にいます,false,I,will,stay,home,if,it,rains,tomorrow,,,,if＝もし〜なら。if の文は未来でも rains（現在形）。,audio/voice/gram/KIDS_S_0301.mp3,false
+grades.g3,g3_43,私が家に帰ったとき母は料理をしていた,false,My,mother,was,cooking,when,I,got,home,,,,when＝〜するとき。was cooking＝料理していた。,audio/voice/gram/KIDS_S_0302.mp3,false
+grades.g3,g3_44,私は彼がその試合に勝つと思う,false,I,think,that,he,will,win,the,game,,,,I think that〜＝〜だと思う。that のあとは文。,audio/voice/gram/KIDS_S_0303.mp3,false
+grades.g3,g3_45,私は彼女が猫が大好きだと知っている,false,I,know,that,she,likes,cats,very,much,,,,I know that〜＝〜だと知っている。,audio/voice/gram/KIDS_S_0304.mp3,false
+grades.g3,g3_46,私はかぜをひいていたので学校に行かなかった,false,I,did,not,go,to,school,because,I,had,a,cold,because＝〜なので（理由）。理由は後ろ。,audio/voice/gram/KIDS_S_0305.mp3,false
+grades.g3,g3_47,彼は私に家族の写真を何枚か見せてくれた,false,He,showed,me,some,pictures,of,his,family,,,,show 人 もの＝人にものを見せる。,audio/voice/gram/KIDS_S_0306.mp3,false
+grades.g3,g3_48,おじは私の誕生日にすてきな時計をくれた,false,My,uncle,gave,me,a,nice,watch,for,my,birthday,,give 人 もの＝人にものをあげる。give の過去 gave。,audio/voice/gram/KIDS_S_0307.mp3,false
+grades.g3,g3_49,そのよい知らせはクラスのみんなを幸せにした,false,The,good,news,made,everyone,in,the,class,happy,,,make 人 気持ち＝人を〜にする。,audio/voice/gram/KIDS_S_0308.mp3,false
+grades.g3,g3_50,私たちはうちの小さな白い犬をシロとよぶ,false,We,call,our,little,white,dog,Shiro,,,,,call A B＝A を B とよぶ。,audio/voice/gram/KIDS_S_0309.mp3,false
+grades.g3,g3_51,私にはカナダに住んでいる友達がいる,false,I,have,a,friend,who,lives,in,Canada,,,,関係代名詞 who＝人をうしろから説明する。,audio/voice/gram/KIDS_S_0310.mp3,false
+grades.g3,g3_52,これは私が昨日買った本だ,false,This,is,the,book,which,I,bought,yesterday,,,,関係代名詞 which＝ものをうしろから説明する。,audio/voice/gram/KIDS_S_0311.mp3,false
+grades.g3,g3_53,向こうで走っている男の子は私の弟だ,false,The,boy,who,is,running,over,there,is,my,brother,,The boy who〜＝〜している男の子。そのあと is。,audio/voice/gram/KIDS_S_0312.mp3,false
+grades.g3,g3_54,ピアノをひいている女の子は私の妹だ,false,The,girl,playing,the,piano,is,my,sister,,,,名詞＋〜ing＝〜している…（うしろから説明）。,audio/voice/gram/KIDS_S_0313.mp3,false
+grades.g3,g3_55,これは日本で作られた車だ,false,This,is,a,car,made,in,Japan,,,,,名詞＋過去分詞＝〜された…（うしろから説明）。,audio/voice/gram/KIDS_S_0314.mp3,false
+grades.g3,g3_56,母は私に部屋をそうじするように言った,false,My,mother,told,me,to,clean,my,room,,,,tell 人 to＋動詞＝人に〜するように言う。,audio/voice/gram/KIDS_S_0315.mp3,false
+grades.g3,g3_57,私はあなたに私のパーティーに来てほしい,false,I,want,you,to,come,to,my,party,,,,want 人 to＋動詞＝人に〜してほしい。,audio/voice/gram/KIDS_S_0316.mp3,false
+grades.g3,g3_58,この橋は私たちの町で一番長い,false,This,bridge,is,the,longest,in,our,city,,,,最上級 the longest＝一番長い。in＋場所。,audio/voice/gram/KIDS_S_0317.mp3,false
+grades.g3,g3_59,サッカーは私のクラスで一番人気のあるスポーツだ,false,Soccer,is,the,most,popular,sport,in,my,class,,,長い語の最上級は the most＋形容詞。,audio/voice/gram/KIDS_S_0318.mp3,false
+grades.g3,g3_60,私のかばんはあなたのほど大きくない,false,My,bag,is,not,as,big,as,yours,,,,not as〜as…＝…ほど〜ではない。,audio/voice/gram/KIDS_S_0319.mp3,false
+grades.g3,g3_61,私はすべての季節の中で冬が一番好きだ,false,I,like,winter,the,best,of,all,seasons,,,,like〜the best＝〜が一番好き。of all〜＝全部の中で。,audio/voice/gram/KIDS_S_0320.mp3,false
+grades.g3,g3_62,長い時間テレビゲームをするのはよくない,false,Playing,video,games,for,a,long,time,is,not,good,,動名詞〜ing が主語。〜することは。,audio/voice/gram/KIDS_S_0321.mp3,false
+grades.g3,g3_63,私の夢は世界中を旅することだ,false,My,dream,is,to,travel,around,the,world,,,,to＋動詞＝〜すること。My dream is to〜＝夢は〜すること。,audio/voice/gram/KIDS_S_0322.mp3,false
+grades.g3,g3_64,ケンもマイクもサッカー部に入っている,false,Both,Ken,and,Mike,are,on,the,soccer,team,,,Both A and B＝A も B も。2人なので are。Ken → Mike の順。,audio/voice/gram/KIDS_S_0323.mp3,false
+grades.g3,g3_65,あなたは明日お弁当を持ってくる必要はない,false,You,don't,have,to,bring,your,lunch,tomorrow,,,,don't have to＝〜する必要はない。,audio/voice/gram/KIDS_S_0324.mp3,false
+grades.g3,g3_66,私はちょうどこの本を読み終えたところだ,false,I,have,just,finished,reading,this,book,,,,,現在完了 have just＋過去分詞＝ちょうど〜したところ。finish ～ing。,audio/voice/gram/KIDS_S_0325.mp3,false
+grades.g3,g3_67,彼女は去年から広島に住んでいる,false,She,has,lived,in,Hiroshima,since,last,year,,,,現在完了 has＋過去分詞。since＝〜から（ずっと）。,audio/voice/gram/KIDS_S_0326.mp3,false
+grades.g3,g3_68,私たちはこんなに美しい夕日を見たことがない,false,We,have,never,seen,such,a,beautiful,sunset,,,,現在完了 have never＋過去分詞＝一度も〜したことがない。,audio/voice/gram/KIDS_S_0327.mp3,false
+grades.g3,g3_69,彼はもう空港へ出発した,false,He,has,already,left,for,the,airport,,,,,現在完了 has already＋過去分詞＝もう〜した。leave for＝〜へ出発する。,audio/voice/gram/KIDS_S_0328.mp3,false
+grades.g3,g3_70,私は長い間ずっとこの時計がほしいと思っている,false,I,have,wanted,this,watch,for,a,long,time,,,現在完了 have＋過去分詞。for a long time＝長い間。,audio/voice/gram/KIDS_S_0329.mp3,false
+grades.g3,g3_71,私の父は20年間その病院で働いている,false,My,father,has,worked,at,the,hospital,for,twenty,years,,現在完了 has＋過去分詞。場所→for〜の順で後ろ。,audio/voice/gram/KIDS_S_0330.mp3,false
+grades.g3,g3_72,彼らは今朝からずっと忙しい,false,They,have,been,busy,since,this,morning,,,,,現在完了 have been＝ずっと〜だ。since＝〜から。,audio/voice/gram/KIDS_S_0331.mp3,false
+grades.g3,g3_73,私は去年の夏から彼に会っていない,false,I,have,not,seen,him,since,last,summer,,,,現在完了 have not＋過去分詞＝〜していない。since＝〜から。,audio/voice/gram/KIDS_S_0332.mp3,false
+grades.g3,g3_74,彼女はその古いお寺を何度も訪れたことがある,false,She,has,visited,the,old,temple,many,times,,,,現在完了 has＋過去分詞（経験）。many times＝何度も。,audio/voice/gram/KIDS_S_0333.mp3,false
+grades.g3,g3_75,私たちは10年間友達だ,false,We,have,been,friends,for,ten,years,,,,,現在完了 have been＝ずっと〜だ。for＝〜の間。,audio/voice/gram/KIDS_S_0334.mp3,false
+grades.g3,g3_76,私はこの本を3回読んだことがある,false,I,have,read,this,book,three,times,,,,,現在完了 have＋過去分詞（経験）。three times＝3回。,audio/voice/gram/KIDS_S_0335.mp3,false
+grades.g3,g3_77,私の弟はまだ昼食を食べていない,false,My,brother,has,not,eaten,lunch,yet,,,,,現在完了 has not＋過去分詞＋yet＝まだ〜していない。,audio/voice/gram/KIDS_S_0336.mp3,false
+grades.g3,g3_78,この大きな教室は毎朝そうじされる,false,This,big,classroom,is,cleaned,every,morning,,,,,受け身 is＋過去分詞＝〜される。every morning は後ろ。,audio/voice/gram/KIDS_S_0337.mp3,false
+grades.g3,g3_79,その手紙はやさしい英語で書かれていた,false,The,letter,was,written,in,easy,English,,,,,受け身 was＋過去分詞＝〜された。in easy English＝やさしい英語で。,audio/voice/gram/KIDS_S_0338.mp3,false
+grades.g3,g3_80,このすてきな靴はイタリアで作られた,false,These,nice,shoes,were,made,in,Italy,,,,,受け身 were＋過去分詞＝〜された。in Italy＝イタリアで。,audio/voice/gram/KIDS_S_0339.mp3,false
+grades.g3,g3_81,その窓は強い風でこわされた,false,The,window,was,broken,by,the,strong,wind,,,,受け身 was＋過去分詞。by〜＝〜によって。,audio/voice/gram/KIDS_S_0340.mp3,false
+grades.g3,g3_82,この歌は多くの若い人に愛されている,false,This,song,is,loved,by,many,young,people,,,,受け身 is＋過去分詞＝〜されている。by〜＝〜に。,audio/voice/gram/KIDS_S_0341.mp3,false
+grades.g3,g3_83,そのパーティーは昨夜ホテルで開かれた,false,The,party,was,held,at,the,hotel,last,night,,,受け身 was＋過去分詞。hold の過去分詞 held。場所→時の順。,audio/voice/gram/KIDS_S_0342.mp3,false
+grades.g3,g3_84,この国では多くの言語が話されている,false,Many,languages,are,spoken,in,this,country,,,,,受け身 are＋過去分詞＝〜されている。場所は後ろ。,audio/voice/gram/KIDS_S_0343.mp3,false
+grades.g3,g3_85,その古い城は多くの観光客に訪問されている,false,The,old,castle,is,visited,by,many,tourists,,,,受け身 is＋過去分詞。by〜＝〜によって。,audio/voice/gram/KIDS_S_0344.mp3,false
+grades.g3,g3_86,このケーキは私の祖母によって作られた,false,This,cake,was,made,by,my,grandmother,,,,,受け身 was＋過去分詞。by〜＝〜によって。,audio/voice/gram/KIDS_S_0345.mp3,false
+grades.g3,g3_87,その試合は雨のために中止された,false,The,game,was,canceled,because,of,the,rain,,,,受け身 was＋過去分詞。because of〜＝〜のために（理由）。,audio/voice/gram/KIDS_S_0346.mp3,false
+grades.g3,g3_88,早く起きることは私にはむずかしい,false,It,is,difficult,for,me,to,get,up,early,,,It is〜for 人 to＋動詞＝人が…することは〜だ。,audio/voice/gram/KIDS_S_0347.mp3,false
+grades.g3,g3_89,友達とサッカーをするのは楽しい,false,It,is,fun,to,play,soccer,with,my,friends,,,It is〜to＋動詞＝…することは〜だ。with my friends は後ろ。,audio/voice/gram/KIDS_S_0348.mp3,false
+grades.g3,g3_90,私は彼女に何と言えばいいかわからない,false,I,don't,know,what,to,say,to,her,,,,what to＋動詞＝何を〜すればよいか。to her＝彼女に。,audio/voice/gram/KIDS_S_0349.mp3,false
+grades.g3,g3_91,彼女は私にどこでチケットを買えばいいか教えてくれた,false,She,told,me,where,to,buy,the,tickets,,,,tell 人 where to〜＝人にどこで〜すればよいか教える。,audio/voice/gram/KIDS_S_0350.mp3,false
+grades.g3,g3_92,母は私にお皿を洗うように頼んだ,false,My,mother,asked,me,to,wash,the,dishes,,,,ask 人 to＋動詞＝人に〜するように頼む。,audio/voice/gram/KIDS_S_0351.mp3,false
+grades.g3,g3_93,私は彼に私たちのチームに入ってほしい,false,I,want,him,to,join,our,team,,,,,want 人 to＋動詞＝人に〜してほしい。,audio/voice/gram/KIDS_S_0352.mp3,false
+grades.g3,g3_94,先生は私たちに静かにするように言った,false,The,teacher,told,us,to,be,quiet,,,,,tell 人 to＋動詞＝人に〜するように言う。,audio/voice/gram/KIDS_S_0353.mp3,false
+grades.g3,g3_95,私は今日テレビを見る時間がない,false,I,have,no,time,to,watch,TV,today,,,,名詞＋to＋動詞＝〜する…。no time to〜＝〜する時間がない。,audio/voice/gram/KIDS_S_0354.mp3,false
+grades.g3,g3_96,彼は彼女から手紙をもらってうれしかった,false,He,was,glad,to,get,a,letter,from,her,,,be glad to＋動詞＝〜してうれしい。from her＝彼女から。,audio/voice/gram/KIDS_S_0355.mp3,false
+grades.g3,g3_97,私は夕食に何を作ればいいかわからない,false,I,don't,know,what,to,cook,for,dinner,,,,what to＋動詞＝何を〜すればよいか。for dinner＝夕食に。,audio/voice/gram/KIDS_S_0356.mp3,false
+grades.g3,g3_98,電話が鳴ったとき私はシャワーを浴びていた,false,I,was,taking,a,shower,when,the,phone,rang,,,when＝〜するとき。was taking＝浴びていた。ring の過去 rang。,audio/voice/gram/KIDS_S_0357.mp3,false
+grades.g3,g3_99,もしあなたが忙しいなら私が手伝います,false,I,will,help,you,if,you,are,busy,,,,if＝もし〜なら。if の文は後ろに置く。,audio/voice/gram/KIDS_S_0358.mp3,false
+grades.g3,g3_100,彼女はとても疲れていたので早く寝た,false,She,was,so,tired,that,she,went,to,bed,early,,so〜that…＝とても〜なので…。,audio/voice/gram/KIDS_S_0359.mp3,false
+grades.g3,g3_101,雨が強くふっていたので私は家にいた,false,I,stayed,home,because,it,was,raining,hard,,,,because＝〜なので（理由）。理由は後ろ。,audio/voice/gram/KIDS_S_0360.mp3,false
+grades.g3,g3_102,私はこの映画はとてもわくわくすると思う,false,I,think,that,this,movie,is,very,exciting,,,,I think that〜＝〜だと思う。that のあとは文。,audio/voice/gram/KIDS_S_0361.mp3,false
+grades.g3,g3_103,私たちは彼が親切な人だと知っている,false,We,know,that,he,is,a,kind,person,,,,know that〜＝〜だと知っている。that のあとは文。,audio/voice/gram/KIDS_S_0362.mp3,false
+grades.g3,g3_104,彼は宿題を終えたあと出かけた,false,He,went,out,after,he,finished,his,homework,,,,after＝〜したあとで。after のあとは文。,audio/voice/gram/KIDS_S_0363.mp3,false
+grades.g3,g3_105,あなたが戻るまで私はここで待ちます,false,I,will,wait,here,until,you,come,back,,,,until＝〜するまで。until のあとは文。,audio/voice/gram/KIDS_S_0364.mp3,false
+grades.g3,g3_106,おばは私にすてきなプレゼントを送ってくれた,false,My,aunt,sent,me,a,nice,present,,,,,send 人 もの＝人にものを送る。send の過去 sent。,audio/voice/gram/KIDS_S_0365.mp3,false
+grades.g3,g3_107,彼は私たちに日本についてのおもしろい話をしてくれた,false,He,told,us,an,interesting,story,about,Japan,,,,tell 人 もの＝人にものを話す。about〜＝〜について。,audio/voice/gram/KIDS_S_0366.mp3,false
+grades.g3,g3_108,彼女は息子に新しい自転車を買ってあげた,false,She,bought,her,son,a,new,bike,,,,,buy 人 もの＝人にものを買う。buy の過去 bought。,audio/voice/gram/KIDS_S_0367.mp3,false
+grades.g3,g3_109,私はあなたにお気に入りの写真を見せます,false,I,will,show,you,my,favorite,picture,,,,,show 人 もの＝人にものを見せる。will＋動詞。,audio/voice/gram/KIDS_S_0368.mp3,false
+grades.g3,g3_110,先生は私たちにたくさんの宿題を出した,false,The,teacher,gave,us,a,lot,of,homework,,,,give 人 もの＝人にものをあたえる。give の過去 gave。,audio/voice/gram/KIDS_S_0369.mp3,false
+grades.g3,g3_111,父は私に木のいすを作ってくれた,false,My,father,made,me,a,wooden,chair,,,,,make 人 もの＝人にものを作る。make の過去 made。,audio/voice/gram/KIDS_S_0370.mp3,false
+grades.g3,g3_112,その知らせは母をとても幸せにした,false,The,news,made,my,mother,very,happy,,,,,make 人 気持ち＝人を〜にする。,audio/voice/gram/KIDS_S_0371.mp3,false
+grades.g3,g3_113,私たちはこの花を日本語でさくらとよぶ,false,We,call,this,flower,sakura,in,Japanese,,,,,call A B＝A を B とよぶ。in Japanese＝日本語で。,audio/voice/gram/KIDS_S_0372.mp3,false
+grades.g3,g3_114,彼女のあたたかい笑顔はいつもみんなを幸せにする,false,Her,warm,smile,always,makes,everyone,happy,,,,,make 人 気持ち＝人を〜にする。always は動詞の前。,audio/voice/gram/KIDS_S_0373.mp3,false
+grades.g3,g3_115,カナダの友達は私をケニーとよぶ,false,My,friends,in,Canada,call,me,Kenny,,,,,call A B＝A を B とよぶ。in Canada は主語をうしろから説明。,audio/voice/gram/KIDS_S_0374.mp3,false
+grades.g3,g3_116,その歌は彼を世界中で有名にした,false,The,song,made,him,famous,all,over,the,world,,,make 人 状態＝人を〜にする。all over the world＝世界中で。,audio/voice/gram/KIDS_S_0375.mp3,false
+grades.g3,g3_117,あなたはいつも部屋をきれいにしておくべきだ,false,You,should,always,keep,your,room,clean,,,,,keep A B＝A を B にしておく。always は動詞の前。,audio/voice/gram/KIDS_S_0376.mp3,false
+grades.g3,g3_118,私にはハワイに住んでいるおじがいる,false,I,have,an,uncle,who,lives,in,Hawaii,,,,関係代名詞 who＝人をうしろから説明する。,audio/voice/gram/KIDS_S_0377.mp3,false
+grades.g3,g3_119,これは母が作ったケーキだ,false,This,is,the,cake,that,my,mother,made,,,,関係代名詞 that＝うしろから説明。that のあとは「誰が→どうする」。,audio/voice/gram/KIDS_S_0378.mp3,false
+grades.g3,g3_120,ケンと話している男の人は私たちの先生だ,false,The,man,who,is,talking,with,Ken,is,our,teacher,,The man who〜＝〜している男の人。そのあと is。,audio/voice/gram/KIDS_S_0379.mp3,false
+grades.g3,g3_121,彼女は日本で人気のある歌手だ,false,She,is,a,singer,who,is,popular,in,Japan,,,関係代名詞 who＝人をうしろから説明する。,audio/voice/gram/KIDS_S_0380.mp3,false
+grades.g3,g3_122,私は3つの言語を話せる女の子を知っている,false,I,know,a,girl,who,can,speak,three,languages,,,関係代名詞 who＝人をうしろから説明する。,audio/voice/gram/KIDS_S_0381.mp3,false
+grades.g3,g3_123,私が先週読んだ本はおもしろかった,false,The,book,which,I,read,last,week,was,interesting,,,The book which〜＝私が〜した本。そのあと was。,audio/voice/gram/KIDS_S_0382.mp3,false
+grades.g3,g3_124,これは私がパリで買ったかばんだ,false,This,is,the,bag,that,I,bought,in,Paris,,,関係代名詞 that＝うしろから説明。in Paris は後ろ。,audio/voice/gram/KIDS_S_0383.mp3,false
+grades.g3,g3_125,そのレースに勝った男の子は私のいとこだ,false,The,boy,who,won,the,race,is,my,cousin,,,The boy who〜＝〜した男の子。そのあと is。,audio/voice/gram/KIDS_S_0384.mp3,false
+grades.g3,g3_126,私たちはずっと昔に建てられた博物館を訪れた,false,We,visited,a,museum,which,was,built,long,ago,,,関係代名詞 which＝ものをうしろから説明する。was built＝建てられた。,audio/voice/gram/KIDS_S_0385.mp3,false
+grades.g3,g3_127,あそこで眠っている犬は私のだ,false,The,dog,which,is,sleeping,there,is,mine,,,,The dog which〜＝〜している犬。そのあと is。mine＝私のもの。,audio/voice/gram/KIDS_S_0386.mp3,false
+grades.g3,g3_128,本を読んでいる女の子は私の友達だ,false,The,girl,reading,a,book,is,my,friend,,,,名詞＋〜ing＝〜している…（うしろから説明）。,audio/voice/gram/KIDS_S_0387.mp3,false
+grades.g3,g3_129,赤いぼうしをかぶっている男の人は私の父だ,false,The,man,wearing,a,red,cap,is,my,father,,,名詞＋〜ing＝〜している…（うしろから説明）。,audio/voice/gram/KIDS_S_0388.mp3,false
+grades.g3,g3_130,これは兄がとった写真だ,false,This,is,a,picture,taken,by,my,brother,,,,名詞＋過去分詞＝〜された…（うしろから説明）。,audio/voice/gram/KIDS_S_0389.mp3,false
+grades.g3,g3_131,私にはオーストラリアに住んでいる友達がいる,false,I,have,a,friend,living,in,Australia,,,,,名詞＋〜ing＝〜している…（うしろから説明）。,audio/voice/gram/KIDS_S_0390.mp3,false
+grades.g3,g3_132,ブラジルで話されている言語はポルトガル語だ,false,The,language,spoken,in,Brazil,is,Portuguese,,,,,名詞＋過去分詞＝〜された…（うしろから説明）。そのあと is。,audio/voice/gram/KIDS_S_0391.mp3,false
+grades.g3,g3_133,ケンのとなりにすわっている男の子は私の弟だ,false,The,boy,sitting,next,to,Ken,is,my,brother,,,名詞＋〜ing＝〜している…。next to＝〜のとなりに。,audio/voice/gram/KIDS_S_0392.mp3,false
+grades.g3,g3_134,おばが作ったクッキーはおいしかった,false,The,cookies,made,by,my,aunt,were,delicious,,,,名詞＋過去分詞＝〜された…。by〜のあとに were。,audio/voice/gram/KIDS_S_0393.mp3,false
+grades.g3,g3_135,公園で遊んでいる子どもたちを見て,false,Look,at,the,children,playing,in,the,park,,,,名詞＋〜ing＝〜している…（うしろから説明）。,audio/voice/gram/KIDS_S_0394.mp3,false
+grades.g3,g3_136,私は兄がどこに住んでいるか知らない,false,I,don't,know,where,my,brother,lives,,,,,間接疑問。know のあとは「where＋誰が→どうする」の順。,audio/voice/gram/KIDS_S_0395.mp3,false
+grades.g3,g3_137,その店が何時に開くか教えてください,false,Please,tell,me,what,time,the,store,opens,,,,間接疑問。what time のあとは「誰が→どうする」の順。,audio/voice/gram/KIDS_S_0396.mp3,false
+grades.g3,g3_138,私はなぜ彼女が泣いていたのか知りたい,false,I,want,to,know,why,she,was,crying,,,,間接疑問。why のあとは「誰が→どうする」の順。,audio/voice/gram/KIDS_S_0397.mp3,false
+grades.g3,g3_139,私はその電車がいつ出発するか知らない,false,I,don't,know,when,the,train,will,leave,,,,間接疑問。when のあとは「誰が→どうする」の順。,audio/voice/gram/KIDS_S_0398.mp3,false
+grades.g3,g3_140,彼女は私にどこの出身かたずねた,false,She,asked,me,where,I,was,from,,,,,間接疑問。where のあとは「誰が→どうする」の順。,audio/voice/gram/KIDS_S_0399.mp3,false
+grades.g3,g3_141,あの背の高い男の人は誰なのだろう,false,I,wonder,who,that,tall,man,is,,,,,間接疑問。I wonder＝〜かなと思う。who のあとは「誰が→is」。,audio/voice/gram/KIDS_S_0400.mp3,false

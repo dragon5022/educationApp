@@ -36,10 +36,25 @@
 
 | タブ | 主な列 |
 |---|---|
-| `vocab`（ボキャブラリー） | `w` 英単語 / `ja` 日本語 / `lv` 級（5・4・3） / `img` 絵 / `voice` 音声 |
-| `listening`（リスニング） | `t` 種類 / `en` 読み上げる英文 / `ja` 日本語 / `q` しつもん（レベル3） / `ans` 正解 / `opts.0`・`opts.1` ほかの選択肢 / `tip` ポイント / `voice` 音声 |
-| `talk`（トーク） | `ja` 日本語 / `en` 言う英語 / `voice` 音声 |
-| `sentence`（センテンス） | `ja.0.t`… 日本語のかたまり（`pick` = 色をつけるか） / `answer.0.w`… 正しい順の英語（`label` = 誰が・どうする…） / `tip` ポイント / `voice` 音声 |
+| `vocab`（ボキャブラリー） | `id` 通しNo. / `w` 英単語 / `ja` 日本語 / `lv` 級（5・4・3） / `img` 絵 / `voice` 音声 / `free` 無料か |
+| `listening`（リスニング） | `t` 種類（`pic` = 絵文字で答える / `text`） / `en` 読み上げる英文 / `ja` 日本語 / `ans` 正解 / `opts.0`… ほかの選択肢 / `tip` ポイント / `voice` 音声 / `free` 無料か |
+| `talk`（トーク） | `ja` 日本語 / `en` 言う英語 / `scene` 場面（任意） / `voice` 音声 / `free` 無料か |
+| `sentence`（センテンス） | `ja.0.t`… 日本語のかたまり（`pick` = 色をつけるか） / `answer.0.w`… 正しい順の英語 / `tip` ポイント / `voice` 音声 / `free` 無料か |
+
+- `free`：`true` = 無料、`false` = 有料（`pricing` タブで課金をオンにしたあと、購入前は出題されません）。空欄は無料です。
+- `voice`：音声ファイルの場所。先生の音声データの名前のまま（例 `audio/voice/voca/KIDS_V_0001.mp3`、`audio/voice/lis/KIDS_L_0001.mp3`、
+  `audio/voice/gram/KIDS_S_0001.mp3`、`audio/voice/talk/KIDS_T_0001.mp3`）。無料の問題の音声はアプリに入っています。
+  有料の問題の音声は Firebase Storage の `media/audio/voice/…` に置き、購入後にアプリがダウンロードします（`MEDIA.md`）。
+
+### TEEN の列の意味
+
+| 列 | 意味 |
+|---|---|
+| `_path` | `levels.1` / `levels.2` / `levels.3` = レベル |
+| `q` / `a` | 問題文 / 正解 |
+| `choices.0`…`choices.3` | 選択肢（正解も含める） |
+| `e` | 解説（任意） |
+| `free` | `true` = 無料、`false` = 有料 |
 
 ---
 
@@ -51,7 +66,7 @@
 ## 開発者向け：最初の1回だけの準備
 
 KIDS と TEEN は **1つのスプレッドシート** を共有します（各アプリは自分のタブだけ読みます）。
-現在のシート：`https://docs.google.com/spreadsheets/d/1OC1COiGu30Au26VWBFMJIOra_XtqE_MzJifFjKOaA6E/edit`
+現在のシート：`https://docs.google.com/spreadsheets/d/1hgSc4wg00QQhS-qJt7qhRSU5kuShRwj9UZXt9vjFyOE/edit`
 
 1. **ブックを作る**（アプリに入っている問題をそのまま書き出し、1つの .xlsx にまとめます）
 
@@ -76,6 +91,21 @@ KIDS と TEEN は **1つのスプレッドシート** を共有します（各�
 5. 各アプリの `assets/data/content_source.json` には `spreadsheetId` が入っています。タブは**名前**で探すので gid の入力は不要です
    （`tabs` / `manifestGid` に gid を入れると少し速く・確実になります。`manifest` の `gid` 列でも指定可）。
    この設定でアプリを1回リリースすれば、以後の問題更新にアプリの更新は不要です。
+
+### 学院の問題バンク（xlsx）から取り込む
+
+先生の `ARK_BUSTERS_実装用データ.xlsx`（KIDS 3,000 問 + TEEN 3,000 問、音声 3,000 本）が元データです。
+作り直すときは、バンクと音声フォルダから各パックを生成してから、上の 1〜4 でシートを置き換えます。
+
+```
+cd ark_core
+python tool/sheets/import_bank.py <bank.xlsx> <音声フォルダ> ../ark_busters_kids ../ark_busters_teen
+```
+
+- 無料の問題の音声 → `ark_busters_kids/assets/audio/voice/…`（アプリに同梱、約 18 MB）
+- 有料の問題の音声 → `content/kids_voice/paid/audio/voice/…`（約 86 MB）。`node tool/media/upload_media.mjs content/kids_voice/paid --key …`
+  で Storage の `media/audio/voice/…` に上げます（`MEDIA.md`）。
+- ボキャブラリーの絵は英単語で照合して引き継ぎます。TEEN は各パックの設定（制限時間・出題数・画像）を残して問題だけ入れ替えます。
 
 ## How it works (developers)
 

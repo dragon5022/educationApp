@@ -8,6 +8,8 @@ import '../../core/content/game_packs.dart';
 import '../../core/theme/app_colors.dart';
 import '../../game_kit/game_kit.dart';
 import '../../services/audio_service.dart';
+import '../../services/char_voice.dart';
+import '../../services/kids_store.dart';
 import '../../services/progress_service.dart';
 import '../../widgets/deco_stars.dart';
 import '../../widgets/web_sparkle_background.dart';
@@ -139,7 +141,11 @@ class _SentenceBattleScreenState extends State<SentenceBattleScreen> {
   void _beginCourse() {
     _gen++;
     AudioService.instance.playSfx('start');
-    final all = widget.pack.grades[widget.grade] ?? const <SentenceItem>[];
+    CharVoice.start();
+    final all = KidsStore.allowed<SentenceItem>(
+      widget.pack.grades[widget.grade] ?? const [],
+      (i) => i.free,
+    ).toList();
     if (!_endless) {
       _questions = _shuffle(all).take(widget.pack.qn).toList();
       _maxLives = 3;
@@ -276,7 +282,9 @@ class _SentenceBattleScreenState extends State<SentenceBattleScreen> {
       _qIndex++;
       if (_endless) {
         if (_qIndex >= _questions.length) {
-          _questions = _shuffle(widget.pack.grades[widget.grade] ?? const []);
+          _questions = _shuffle(
+            KidsStore.allowed<SentenceItem>(widget.pack.grades[widget.grade] ?? const [], (i) => i.free).toList(),
+          );
           _qIndex = 0;
         }
         _hudCleared = _cleared; // updateLives()
@@ -403,6 +411,7 @@ class _SentenceBattleScreenState extends State<SentenceBattleScreen> {
     } else {
       AudioService.instance.playSfx('gameover'); // sndGameOver()
     }
+    CharVoice.result(win);
 
     final g = _gen;
     final score = _score;
@@ -513,6 +522,7 @@ class _SentenceBattleScreenState extends State<SentenceBattleScreen> {
   Future<void> _retrySame() async {
     if (_retrying) return;
     _retrying = true;
+    CharVoice.retry();
     setState(() {
       _end = null;
       _started = false;

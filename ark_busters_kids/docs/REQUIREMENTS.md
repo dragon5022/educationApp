@@ -332,16 +332,18 @@ Detailed TEEN requirements should be a separate appendix after KIDS hub+modes ar
 
 ---
 
-## 13. Implementation status (as of 2026-10-03)
+## 13. Implementation status (as of 2026-10-20)
 
 | Area | Status |
 |---|---|
 | Flutter project `ark_busters_kids` | Done (Android + iOS); pushed to `dragon5022/ark_busters_kids` |
 | Hub, story 1 / 2, collection / profile / settings panels | Done — ported from live site, phone layout fixes, animations |
 | Vocabulary / Listening / Sentence / Talk | Done — full port of the **live** site (newer than the web pack), incl. encounter intro, review/explain panels, ranks, befriend, weighted card draw |
-| Question data | Verified against live web: vocab 210, listening 200, sentence 42, talk 36 |
+| Question data | **School's question bank imported (2026-10-20)**: vocab 1,400 / listening 900 / sentence 400 / talk 300 (3,000), each flagged free or paid (`free`); TEEN 3,000 across 21 stages. Importer: `ark_core/tool/sheets/import_bank.py`. The Google Sheet must be re-imported from the regenerated workbook |
 | Progress (web key names) | Done — local `shared_preferences` |
 | Audio | Done — BGM + ducking, SFX, pre-rendered web tones, voice clips, TTS (`flutter_tts`) |
+| Voice clips (school recordings) | **Done** — 3,000 KIDS clips (`KIDS_V/L/S/T_NNNN.mp3`): 500 free-question clips bundled (18 MB), 2,500 paid-question clips staged in `content/kids_voice/paid` for Firebase Storage (downloaded after purchase; read-aloud until then) |
+| Character voices (詩 / 奏) | **Done** — KIDS: greeting on the hub, start / win / lose / retry per game (random character per game); TEEN: the stage's character says start / hurry / miss / praise・combo / clear・win・S-rank / lose (`assets/audio/charvoice`) |
 | Speech recognition (Talk STEP2) | Done (`speech_to_text`, permissions) — **not yet tested on a real device** |
 | Fonts | Bundled (M PLUS Rounded 1c, Mochiy Pop One, Fredoka, Zen Maru Gothic, Bungee, DotGothic16) |
 | Image lightweighting | Done — WebP q90; AI upscale (Real-ESRGAN) 199 / 466 images, rest pending |
@@ -350,7 +352,7 @@ Detailed TEEN requirements should be a separate appendix after KIDS hub+modes ar
 | Light login (progress sync, device change) | **Built** (`ark_core` auth module: Firebase, school-issued IDs, merge-safe sync, admin CSV tool). Hidden until the school's Firebase project exists (`flutterfire configure`) |
 | App icon, splash, app name, bundle id | **Done (provisional art)** — `top.arkacademy.kids` / `top.arkacademy.teen` on both platforms, names ARKキッズ / ARKティーン, generated icons + splash (`assets/icon`), legal page drafts and store notes in `docs/store/` |
 | Real-device QA (sound, mic, performance) | **Not started** — no emulator on the dev VM |
-| TEEN Flutter app | **Done** — 21 stages / 1,210 questions (live site), same Sheet updater, purchase and login modules (`ark_busters_teen`) |
+| TEEN Flutter app | **Done** — 21 stages / 3,000 questions (school bank; Lv1 mostly free), same Sheet updater, purchase and login modules (`ark_busters_teen`) |
 
 ## 14. Delivery phases (recommended)
 

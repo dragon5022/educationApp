@@ -7,6 +7,8 @@ import '../../core/content/game_packs.dart';
 import '../../core/progress/progress_keys.dart';
 import '../../game_kit/game_kit.dart';
 import '../../services/audio_service.dart';
+import '../../services/char_voice.dart';
+import '../../services/kids_store.dart';
 import '../../services/content_repository.dart';
 import '../../services/progress_service.dart';
 import '../../widgets/page_background.dart';
@@ -167,8 +169,9 @@ class _TalkHomeScreenState extends State<TalkHomeScreen> {
     _rgLock = false;
     if (!mounted) return;
     AudioService.instance.playSfx('start');
+    CharVoice.start();
     _mode = m;
-    final pool = _pack!.grades[_grade] ?? const <TalkItem>[];
+    final pool = KidsStore.allowed<TalkItem>(_pack!.grades[_grade] ?? const [], (i) => i.free).toList();
     if (pool.length < 4) {
       await showArkNotice(context, 'この級はまだじゅんびちゅうだよ');
       return;
@@ -198,7 +201,9 @@ class _TalkHomeScreenState extends State<TalkHomeScreen> {
       _micnote = '';
       if (_mode == 1) {
         final others =
-            (_pack!.grades[_grade]!.where((x) => x.en != q.en).toList()
+            (KidsStore.allowed<TalkItem>(_pack!.grades[_grade]!, (i) => i.free)
+                    .where((x) => x.en != q.en)
+                    .toList()
                   ..shuffle(_rng))
                 .take(3)
                 .map((x) => x.en);
@@ -330,6 +335,7 @@ class _TalkHomeScreenState extends State<TalkHomeScreen> {
     win
         ? AudioService.instance.playSfx('clear')
         : AudioService.instance.playSfx('gameover');
+    CharVoice.result(win);
     final p = ProgressService.instance;
     if (rank == 'S') await p.addSRank('talkmon');
     if (win) await p.befriend('talkmon');
@@ -412,7 +418,10 @@ class _TalkHomeScreenState extends State<TalkHomeScreen> {
           key: ValueKey(_end),
           data: _end!,
           onHome: _home,
-          onRetry: () => _startMode(_mode),
+          onRetry: () {
+            CharVoice.retry();
+            _startMode(_mode);
+          },
           onReselect: _backToSelect,
         );
     }

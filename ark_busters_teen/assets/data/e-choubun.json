@@ -1,906 +1,1812 @@
 {
- "version": 1,
- "id": "e-choubun",
- "subject": "english",
- "title": "長文の戦場",
- "label": "長",
- "timeLimitMs": 5000,
- "maxQuestions": 15,
- "images": {
-  "art": "e-choubun",
-  "boss": "e-boss",
-  "chara": "uta",
-  "win": "win",
-  "lose": "lose2"
- },
- "levels": {
-  "Lv1": [
-   {
-    "q": "Tom has a cat. The cat is on his book. \"Look! My cat is on my book!\" Tom is happy. The cat is happy, too.\n\nWhere is the cat?",
-    "a": "On the book.",
-    "choices": [
-     "On the book.",
-     "On the bed.",
-     "On the chair.",
-     "On the box."
-    ],
-    "e": "トムはネコをかっている。ネコが本の上にいる。「見て！ネコが本の上にいる！」トムはうれしい。ネコもうれしい。"
-   },
-   {
-    "q": "A dog can run. A dog can jump. But this dog can dance! The dog dances and dances. We all clap. What a funny dog!\n\nWhat can this dog do?",
-    "a": "Dance.",
-    "choices": [
-     "Dance.",
-     "Cook.",
-     "Read.",
-     "Sing."
-    ],
-    "e": "イヌは走れる。イヌはとべる。でもこのイヌはおどれる！イヌはおどっておどる。みんなでてをたたく。なんておもしろいイヌ！"
-   },
-   {
-    "q": "Ben puts on his hat. The hat is too big. The hat goes down. Ben can not see! \"Where am I?\" Ben says. Mom laughs.\n\nWhy can't Ben see?",
-    "a": "The hat is too big.",
-    "choices": [
-     "The hat is too big.",
-     "It is dark.",
-     "He is sleepy.",
-     "His eyes hurt."
-    ],
-    "e": "ベンはぼうしをかぶる。ぼうしが大きすぎる。ぼうしが下がる。ベンは見えない！「ぼく、どこ？」とベンが言う。ママがわらう。"
-   },
-   {
-    "q": "It is lunch time. Sam wants cake. He opens his box. No cake! Just one green bean. Sam looks sad. Then his dog eats the bean. Now they both laugh.\n\nWhat is in Sam's box?",
-    "a": "One green bean.",
-    "choices": [
-     "One green bean.",
-     "A big cake.",
-     "Two apples.",
-     "Some milk."
-    ],
-    "e": "おひるの時間。サムはケーキがほしい。はこをあける。ケーキがない！みどりのまめが一つだけ。サムはかなしそう。それからイヌがまめを食べる。二人ともわらう。"
-   },
-   {
-    "q": "The baby has a spoon. The baby eats. One, two, three! Food is on his face. Food is on his hair. Food is everywhere! But the baby is so happy.\n\nWhere is the food?",
-    "a": "Everywhere.",
-    "choices": [
-     "Everywhere.",
-     "In the box.",
-     "On the plate.",
-     "In the bag."
-    ],
-    "e": "あかちゃんがスプーンをもつ。あかちゃんが食べる。1、2、3！食べものがかおにつく。かみにつく。どこにでもある！でもあかちゃんはとてもうれしい。"
-   },
-   {
-    "q": "It is night. The room is dark. Yuki hears a sound. Tap, tap, tap. What is it? She looks. It is just the rain. Yuki smiles and goes to bed.\n\nWhat is the sound?",
-    "a": "The rain.",
-    "choices": [
-     "The rain.",
-     "A cat.",
-     "A ghost.",
-     "Her mom."
-    ],
-    "e": "夜だ。へやがくらい。ユキは音を聞く。トン、トン、トン。なに？見る。ただの雨だ。ユキはわらってねる。"
-   },
-   {
-    "q": "Ben sees a big box. The box moves! Ben is scared. The box moves again. Ben opens it. It is his cat! \"Oh, it is you!\" Ben is happy now.\n\nWhat is in the box?",
-    "a": "His cat.",
-    "choices": [
-     "His cat.",
-     "A ghost.",
-     "A dog.",
-     "A toy."
-    ],
-    "e": "ベンは大きなはこを見る。はこがうごく！ベンはこわい。はこがまたうごく。ベンがあける。ネコだ！「なんだ、きみか！」ベンは今うれしい。"
-   },
-   {
-    "q": "The house is dark. Mika walks. She sees two eyes! The eyes are big. The eyes shine. Mika runs! But it is her cat. \"Meow,\" says the cat.\n\nWhat has the two shining eyes?",
-    "a": "Her cat.",
-    "choices": [
-     "Her cat.",
-     "A monster.",
-     "A dog.",
-     "A bird."
-    ],
-    "e": "いえがくらい。ミカがあるく。目が二つ見える！目が大きい。目が光る。ミカは走る！でもそれはネコ。「ニャー」とネコが言う。"
-   },
-   {
-    "q": "Tom is in bed. He hears feet. Step, step, step. Someone is here! Tom hides. The door opens. It is Dad. \"Time for bed!\" Dad says. Tom laughs.\n\nWho comes into the room?",
-    "a": "Dad.",
-    "choices": [
-     "Dad.",
-     "A ghost.",
-     "His friend.",
-     "A cat."
-    ],
-    "e": "トムはベッドにいる。足音が聞こえる。トン、トン、トン。だれかいる！トムはかくれる。ドアがあく。パパだ。「ねる時間だよ！」とパパが言う。トムはわらう。"
-   },
-   {
-    "q": "The moon is big. Sara looks out. She sees a white thing. It moves. It is so white! Is it a ghost? No! It is just a cat on the wall.\n\nWhat is the white thing?",
-    "a": "A cat.",
-    "choices": [
-     "A cat.",
-     "A ghost.",
-     "Snow.",
-     "A flag."
-    ],
-    "e": "つきが大きい。サラが外を見る。白いものが見える。うごく。とても白い！おばけ？ちがう！へいの上のネコだ。"
-   },
-   {
-    "q": "Aya likes a boy. The boy gives her a flower. The flower is red. Aya is happy. She gives him a flower, too. Now they are friends.\n\nWhat does the boy give Aya?",
-    "a": "A flower.",
-    "choices": [
-     "A flower.",
-     "A book.",
-     "A cat.",
-     "A cake."
-    ],
-    "e": "アヤは男の子がすき。男の子が花をくれる。花はあかい。アヤはうれしい。アヤも花をあげる。二人はともだちになる。"
-   },
-   {
-    "q": "It rains. Mina has no umbrella. A boy comes. \"Let's share!\" he says. They walk together. They are happy. The rain is nice today.\n\nWhat do they share?",
-    "a": "An umbrella.",
-    "choices": [
-     "An umbrella.",
-     "A book.",
-     "A cake.",
-     "A bag."
-    ],
-    "e": "雨がふる。ミナはかさがない。男の子が来る。「いっしょに入ろう！」と言う。二人であるく。うれしい。今日は雨がいい。"
-   },
-   {
-    "q": "Sora gives Hana a blue ribbon. \"It is like the sky,\" he says. Hana likes it. She puts it on. She looks at the sky and smiles.\n\nWhat color is the ribbon?",
-    "a": "Blue.",
-    "choices": [
-     "Blue.",
-     "Red.",
-     "Green.",
-     "Pink."
-    ],
-    "e": "ソラがハナにあおいリボンをあげる。「そらみたいだね」と言う。ハナはきにいる。つける。そらを見てわらう。"
-   },
-   {
-    "q": "Ken sits next to Mai. He is shy. He can not talk. So he draws a cat. He gives it to Mai. Mai smiles big. Now they talk every day.\n\nWhat does Ken draw?",
-    "a": "A cat.",
-    "choices": [
-     "A cat.",
-     "A dog.",
-     "A car.",
-     "A house."
-    ],
-    "e": "ケンはマイのとなりにすわる。はずかしい。話せない。だからネコをかく。マイにあげる。マイは大きくわらう。二人はまいにち話す。"
-   },
-   {
-    "q": "Tomo waits for Saki. He waits and waits. Then Saki comes. She has two ice creams. \"One for you!\" she says. They eat together. Yum!\n\nWhat does Saki bring?",
-    "a": "Two ice creams.",
-    "choices": [
-     "Two ice creams.",
-     "Two books.",
-     "Two flowers.",
-     "Two hats."
-    ],
-    "e": "トモはサキをまつ。まってまつ。サキが来る。アイスを二つもっている。「一つはあなたに！」と言う。いっしょに食べる。おいしい！"
-   },
-   {
-    "q": "A boy finds money. It is not his. He looks for the owner. He finds her. He gives it back. \"Thank you!\" she says. The boy feels good.\n\nWhat does the boy do with the money?",
-    "a": "He gives it back.",
-    "choices": [
-     "He gives it back.",
-     "He keeps it.",
-     "He buys toys.",
-     "He hides it."
-    ],
-    "e": "男の子がお金を見つける。じぶんのじゃない。もちぬしをさがす。見つける。かえす。「ありがとう！」と言われる。男の子はいいきもち。"
-   },
-   {
-    "q": "A dog waits at the door. He waits all day. His friend comes home. The dog runs to him. They are so happy. A dog is a good friend.\n\nWhat does the dog do all day?",
-    "a": "He waits.",
-    "choices": [
-     "He waits.",
-     "He sleeps.",
-     "He eats.",
-     "He runs away."
-    ],
-    "e": "イヌがドアでまつ。一日じゅうまつ。ともだちが帰る。イヌがかけよる。とてもうれしい。イヌはいいともだち。"
-   },
-   {
-    "q": "Mika has no money. So she makes a card. She writes, \"I love you, Mom.\" Mom reads it. Mom cries. \"This is the best gift,\" Mom says.\n\nWhat does Mika make?",
-    "a": "A card.",
-    "choices": [
-     "A card.",
-     "A cake.",
-     "A hat.",
-     "A toy."
-    ],
-    "e": "ミカはお金がない。だからカードをつくる。「ママ、だいすき」とかく。ママが読む。ママがなく。「いちばんのプレゼント」とママが言う。"
-   },
-   {
-    "q": "A baby cries. A little girl has ice cream. She gives it to the baby. The baby smiles. The girl has no ice cream now. But she is happy.\n\nWhat does the girl give the baby?",
-    "a": "Her ice cream.",
-    "choices": [
-     "Her ice cream.",
-     "A toy.",
-     "A book.",
-     "A hat."
-    ],
-    "e": "あかちゃんがなく。小さな女の子がアイスをもつ。あかちゃんにあげる。あかちゃんがわらう。女の子はアイスがない。でもうれしい。"
-   },
-   {
-    "q": "It is cold. A man sees a small cat. The cat is cold. The man gives it food. He gives it a warm box. The cat is happy. The man is happy, too.\n\nWhat does the man give the cat?",
-    "a": "Food and a warm box.",
-    "choices": [
-     "Food and a warm box.",
-     "A toy.",
-     "A ball.",
-     "A hat."
-    ],
-    "e": "さむい。男の人が小さなネコを見る。ネコはさむい。男の人が食べものをあげる。あたたかいはこもあげる。ネコはうれしい。男の人もうれしい。"
-   }
-  ],
-  "Lv2": [
-   {
-    "q": "Tom has a cat. The cat likes to sleep on Tom's homework. Every morning, Tom says, \"My cat ate my homework!\" His teacher just smiles. She has a cat, too.\n\nWhy does Tom's teacher smile?",
-    "a": "She also has a cat.",
-    "choices": [
-     "She also has a cat.",
-     "She is angry.",
-     "She hates cats.",
-     "She lost her homework."
-    ],
-    "e": "トムはネコを飼っている。そのネコはトムの宿題の上で寝るのが好きだ。毎朝トムは「ネコが宿題を食べた！」と言う。先生はただ笑う。先生もネコを飼っているのだ。"
-   },
-   {
-    "q": "Ken wanted to be tall. Every night he ate a lot of vegetables. One day his little brother said, \"Ken, you are not taller. You are just rounder!\" Ken stopped eating so much.\n\nWhat happened to Ken?",
-    "a": "He became rounder, not taller.",
-    "choices": [
-     "He became rounder, not taller.",
-     "He became taller.",
-     "He became thinner.",
-     "He stopped eating vegetables forever."
-    ],
-    "e": "ケンは背が高くなりたかった。毎晩たくさん野菜を食べた。ある日、弟が言った。「ケン、背は高くなってないよ。ただ丸くなっただけ！」ケンは食べ過ぎるのをやめた。"
-   },
-   {
-    "q": "A dog walked into a shop. It looked at the toys. It picked up a small ball and put it on the table. The shopkeeper was surprised. Then the dog's owner came in and paid for it.\n\nWhat did the dog choose?",
-    "a": "A small ball.",
-    "choices": [
-     "A small ball.",
-     "A big bone.",
-     "A toy car.",
-     "Some food."
-    ],
-    "e": "一匹の犬が店に入ってきた。おもちゃを見て、小さなボールをくわえてテーブルに置いた。店員は驚いた。それから犬の飼い主が入ってきて、お金を払った。"
-   },
-   {
-    "q": "Mary cooked dinner for her family. The soup looked strange and green. Everyone was afraid to try it. Her dad ate it first and said, \"It's delicious!\" Then he quietly drank a lot of water.\n\nWhat did Mary's dad do after eating?",
-    "a": "He quietly drank a lot of water.",
-    "choices": [
-     "He quietly drank a lot of water.",
-     "He cooked again.",
-     "He left the house.",
-     "He ate more soup."
-    ],
-    "e": "メアリーは家族に夕食を作った。スープは変な緑色をしていた。みんな食べるのをこわがった。父が最初に食べて「おいしい！」と言った。それからこっそり水をたくさん飲んだ。"
-   },
-   {
-    "q": "Sam was very sleepy in class. He closed his eyes for just one minute. When he opened them, the room was empty and dark. He had slept until evening! No one woke him up.\n\nWhy was the room empty?",
-    "a": "Sam slept until evening.",
-    "choices": [
-     "Sam slept until evening.",
-     "Sam went home early.",
-     "The class moved to another room.",
-     "It was a holiday."
-    ],
-    "e": "サムは授業中とても眠かった。ほんの1分だけ目を閉じた。目を開けると、部屋は空っぽで暗かった。夕方まで寝てしまったのだ！誰も起こしてくれなかった。"
-   },
-   {
-    "q": "It was midnight. Yuki heard a soft knock on her window. She lived on the third floor. Slowly, she pulled back the curtain. There was nothing there. But on the glass, she saw the print of a small wet hand.\n\nWhat did Yuki find on the window?",
-    "a": "A small wet handprint.",
-    "choices": [
-     "A small wet handprint.",
-     "A bird.",
-     "A letter.",
-     "Her own face."
-    ],
-    "e": "真夜中だった。ユキは窓を軽くたたく音を聞いた。彼女は3階に住んでいた。ゆっくりカーテンを開けた。そこには何もなかった。でもガラスには、小さな濡れた手の跡があった。"
-   },
-   {
-    "q": "Ben found an old doll in the attic. He put it on a chair and went to sleep. In the morning, the doll was on his bed, next to his pillow. He never touched it again.\n\nWhere was the doll in the morning?",
-    "a": "On his bed, next to his pillow.",
-    "choices": [
-     "On his bed, next to his pillow.",
-     "On the chair.",
-     "In the attic.",
-     "On the floor."
-    ],
-    "e": "ベンは屋根裏で古い人形を見つけた。椅子に置いて寝た。朝、人形は彼のベッドの上、枕のそばにあった。彼は二度とそれに触れなかった。"
-   },
-   {
-    "q": "Every night at three, the old clock in the hall rang four times. But the clock was broken. It had no hands and no battery. The family stopped going downstairs at night.\n\nWhy is the clock strange?",
-    "a": "It rings even though it is broken.",
-    "choices": [
-     "It rings even though it is broken.",
-     "It is too loud.",
-     "It is very old.",
-     "It shows the wrong time."
-    ],
-    "e": "毎晩3時に、廊下の古い時計が4回鳴った。でもその時計は壊れていた。針もなく電池もなかった。家族は夜に下へ行くのをやめた。"
-   },
-   {
-    "q": "Mika took a photo of her empty room. When she looked at the picture, she saw a face in the mirror behind her. But she was alone in the house. She deleted the photo at once.\n\nWhat did Mika see in the photo?",
-    "a": "A face in the mirror.",
-    "choices": [
-     "A face in the mirror.",
-     "A cat.",
-     "Her friend.",
-     "A shadow on the floor."
-    ],
-    "e": "ミカは誰もいない自分の部屋の写真を撮った。写真を見ると、後ろの鏡に顔が映っていた。でも家には彼女ひとりだった。彼女はすぐに写真を消した。"
-   },
-   {
-    "q": "A boy walked home in the dark. He heard footsteps behind him. He walked faster. The footsteps walked faster, too. He stopped. The footsteps stopped. He was too afraid to look back.\n\nWhat happened when the boy stopped?",
-    "a": "The footsteps also stopped.",
-    "choices": [
-     "The footsteps also stopped.",
-     "The footsteps ran away.",
-     "He saw a dog.",
-     "The footsteps got louder."
-    ],
-    "e": "少年は暗闇の中を歩いて帰った。後ろから足音が聞こえた。彼は速く歩いた。足音も速くなった。彼は止まった。足音も止まった。こわくて振り返れなかった。"
-   },
-   {
-    "q": "Aya sat next to a quiet boy on the bus every day. They never spoke. One morning, he gave her a small paper flower. She kept it in her bag. The next day, she gave him one, too.\n\nWhat did the boy give Aya?",
-    "a": "A small paper flower.",
-    "choices": [
-     "A small paper flower.",
-     "A book.",
-     "His phone number.",
-     "A candy."
-    ],
-    "e": "アヤは毎日バスで静かな男の子の隣に座った。二人は話さなかった。ある朝、彼は彼女に小さな紙の花をくれた。彼女はそれをかばんに入れておいた。翌日、彼女も彼に一つあげた。"
-   },
-   {
-    "q": "Ryo liked a girl in his class. He was too shy to talk to her. So he drew a picture of her smile and left it on her desk. He did not write his name. But she knew it was him.\n\nWhy did Ryo leave a picture?",
-    "a": "He was too shy to talk to her.",
-    "choices": [
-     "He was too shy to talk to her.",
-     "He wanted to win a prize.",
-     "His teacher told him to.",
-     "He needed money."
-    ],
-    "e": "リョウはクラスの女の子が好きだった。恥ずかしくて話しかけられなかった。だから彼女の笑顔の絵を描いて、机に置いた。名前は書かなかった。でも彼女は彼だと分かった。"
-   },
-   {
-    "q": "It started to rain. Mina had no umbrella. A boy she liked ran to her and held his umbrella over her head. \"Let's share,\" he said. They walked home slowly, even though the rain soon stopped.\n\nWhy did they walk slowly?",
-    "a": "They wanted to stay together longer.",
-    "choices": [
-     "They wanted to stay together longer.",
-     "They were tired.",
-     "The road was wet.",
-     "They were lost."
-    ],
-    "e": "雨が降り始めた。ミナは傘を持っていなかった。好きな男の子が走ってきて、彼女の頭の上に傘をさしかけた。「一緒に入ろう」と彼は言った。雨はすぐにやんだのに、二人はゆっくり歩いて帰った。"
-   },
-   {
-    "q": "Sora and Hana were good friends. On her birthday, Sora gave Hana a blue ribbon. \"It's the color of the sky,\" he said. \"So you can think of me when you look up.\" Hana wore it every day after that.\n\nWhy did Sora choose a blue ribbon?",
-    "a": "So Hana would think of him when looking at the sky.",
-    "choices": [
-     "So Hana would think of him when looking at the sky.",
-     "Blue was on sale.",
-     "It was Hana's old ribbon.",
-     "The teacher chose it."
-    ],
-    "e": "ソラとハナは仲のよい友達だった。誕生日に、ソラはハナに青いリボンをあげた。「空の色だよ」と彼は言った。「見上げたとき、僕のことを思い出せるように。」それからハナは毎日それをつけた。"
-   },
-   {
-    "q": "Every day after school, Tomo waited at the gate for Saki. One day Saki was sick and did not come. Tomo waited for two hours in the cold. The next day, Saki cried and said, \"Don't wait so long again.\"\n\nWhy did Saki cry?",
-    "a": "Tomo waited so long in the cold for her.",
-    "choices": [
-     "Tomo waited so long in the cold for her.",
-     "She lost her bag.",
-     "She failed a test.",
-     "Tomo was angry."
-    ],
-    "e": "放課後、トモは毎日門でサキを待った。ある日サキは病気で来なかった。トモは寒い中2時間待った。翌日、サキは泣いて言った。「もうそんなに長く待たないで。」"
-   },
-   {
-    "q": "A poor boy found a wallet full of money. He looked for the owner for two hours. Finally, he gave it back. The owner was so happy that she gave him a small reward and a big smile.\n\nWhat did the boy do with the wallet?",
-    "a": "He gave it back to the owner.",
-    "choices": [
-     "He gave it back to the owner.",
-     "He kept the money.",
-     "He threw it away.",
-     "He bought toys."
-    ],
-    "e": "貧しい少年がお金でいっぱいの財布を見つけた。2時間、持ち主を探した。ついに返した。持ち主はとても喜び、彼に小さなお礼と大きな笑顔をくれた。"
-   },
-   {
-    "q": "An old dog waited at the station every day. His owner had died, but the dog did not know. People in the town took care of him. They all loved the faithful dog who never stopped waiting.\n\nWhy did the dog wait at the station?",
-    "a": "He was waiting for his owner.",
-    "choices": [
-     "He was waiting for his owner.",
-     "He wanted food.",
-     "He was lost.",
-     "He liked trains."
-    ],
-    "e": "年老いた犬が毎日駅で待っていた。飼い主は亡くなっていたが、犬はそれを知らなかった。町の人々が犬の世話をした。みんな、待つことをやめない忠実な犬を愛した。"
-   },
-   {
-    "q": "Mika had no money for her mother's birthday. So she made a card by hand and wrote, \"Thank you for everything.\" Her mother cried and said it was the best present she had ever received.\n\nWhy did the mother cry?",
-    "a": "She was moved by the handmade card.",
-    "choices": [
-     "She was moved by the handmade card.",
-     "She was sad.",
-     "She lost her present.",
-     "She was sick."
-    ],
-    "e": "ミカは母の誕生日にあげるお金がなかった。だから手作りのカードを作り、「いつもありがとう」と書いた。母は泣いて、今までもらった中で一番のプレゼントだと言った。"
-   },
-   {
-    "q": "A small girl gave her ice cream to a crying baby. Her own ice cream fell on the ground a moment later. She did not cry. \"The baby's smile is sweeter than ice cream,\" she said.\n\nWhy didn't the girl cry?",
-    "a": "The baby's smile made her happy.",
-    "choices": [
-     "The baby's smile made her happy.",
-     "She had more ice cream.",
-     "She did not like ice cream.",
-     "Her mother helped her."
-    ],
-    "e": "小さな女の子が、泣いている赤ちゃんに自分のアイスをあげた。その直後、彼女のアイスは地面に落ちた。彼女は泣かなかった。「赤ちゃんの笑顔の方がアイスより甘いもん」と言った。"
-   },
-   {
-    "q": "Every winter, a man left warm food outside for the street cats. He was not rich, but he shared what he had. One cold morning, the cats came to his door and sat with him, keeping him warm too.\n\nWhat did the cats do one cold morning?",
-    "a": "They sat with the man and kept him warm.",
-    "choices": [
-     "They sat with the man and kept him warm.",
-     "They ran away.",
-     "They brought him food.",
-     "They woke him up."
-    ],
-    "e": "毎年冬、ある男が野良猫のために温かい食べ物を外に置いた。彼は裕福ではなかったが、持っているものを分け合った。ある寒い朝、猫たちが彼のドアに来て一緒に座り、彼も温めてくれた。"
-   }
-  ],
-  "Lv3": [
-   {
-    "q": "Mr. Brown was proud of his new smart speaker. \"Turn off the lights,\" he said, and the lights went off. His grandmother watched quietly. Later, she walked to the wall, pushed the switch, and said, \"My speaker is faster than yours.\" Everyone laughed because she was right.\n\nWhy did everyone laugh?",
-    "a": "The grandmother's switch was faster than the speaker.",
-    "choices": [
-     "The grandmother's switch was faster than the speaker.",
-     "The speaker was broken.",
-     "Mr. Brown fell down.",
-     "The lights never turned off."
-    ],
-    "e": "ブラウンさんは新しいスマートスピーカーを自慢していた。「ライトを消して」と言うと、明かりが消えた。祖母は静かに見ていた。後で彼女は壁まで歩き、スイッチを押して言った。「私のスピーカーの方が速いわ。」彼女が正しかったので、みんな笑った。"
-   },
-   {
-    "q": "Lisa decided to surprise her friends by baking a cake. She followed the recipe carefully, but she used salt instead of sugar. When her friends tried it, their faces changed completely. Lisa took one bite and shouted, \"Who made this terrible cake?\" Then she remembered that she did.\n\nWhy did the cake taste bad?",
-    "a": "Lisa used salt instead of sugar.",
-    "choices": [
-     "Lisa used salt instead of sugar.",
-     "Lisa burned the cake.",
-     "The oven was broken.",
-     "Lisa forgot the eggs."
-    ],
-    "e": "リサは友達を驚かせようとケーキを焼くことにした。レシピを丁寧に守ったが、砂糖の代わりに塩を使った。友達が食べると、顔つきがすっかり変わった。リサも一口食べて叫んだ。「誰がこんなひどいケーキ作ったの？」そして、自分だったと思い出した。"
-   },
-   {
-    "q": "During the test, Jack's stomach made a very loud noise. The whole class went quiet and looked at him. Jack pointed at the boy next to him and frowned. But the boy next to him was eating a sandwich and just smiled. Everyone knew the truth.\n\nWhat did Jack try to do?",
-    "a": "Blame the boy next to him.",
-    "choices": [
-     "Blame the boy next to him.",
-     "Share his lunch.",
-     "Leave the classroom.",
-     "Finish the test first."
-    ],
-    "e": "テスト中、ジャックのお腹がとても大きな音を立てた。クラス全体が静かになり、彼を見た。ジャックは隣の男の子を指さして、しかめ面をした。でも隣の子はサンドイッチを食べていて、ただ笑っていた。みんな本当のことを知っていた。"
-   },
-   {
-    "q": "Emma's parents told her not to feed the dog from the table. So Emma was very careful. She never gave food to the dog from the table. Instead, she dropped it on the floor first, then the dog ate it. \"I followed the rule,\" she said with a big smile.\n\nHow did Emma follow the rule?",
-    "a": "She dropped food on the floor instead of giving it from the table.",
-    "choices": [
-     "She dropped food on the floor instead of giving it from the table.",
-     "She stopped feeding the dog.",
-     "She fed the dog outside.",
-     "She asked her parents first."
-    ],
-    "e": "エマの両親は、テーブルから犬に食べ物をあげないように言った。だからエマはとても気をつけた。テーブルから犬に食べ物を与えることは決してしなかった。代わりに、まず床に落として、それを犬が食べた。「ルールは守ったよ」と彼女は満面の笑みで言った。"
-   },
-   {
-    "q": "A man bought a parrot that could say only one sentence: \"Who is there?\" One night, someone knocked on his door. The parrot shouted, \"Who is there?\" The visitor answered, but no one opened the door. He waited for an hour, knocking and answering the bird again and again.\n\nWhy did the visitor wait so long?",
-    "a": "He thought a person was asking who he was.",
-    "choices": [
-     "He thought a person was asking who he was.",
-     "The man was sleeping.",
-     "The door was locked.",
-     "The parrot opened the door."
-    ],
-    "e": "ある男がたった一文だけ言えるオウムを買った。「誰だ？」だ。ある夜、誰かがドアをノックした。オウムが「誰だ？」と叫んだ。客は答えたが、誰もドアを開けなかった。彼は1時間待ち、鳥に何度も答え続けた。"
-   },
-   {
-    "q": "Sara moved into a new apartment. On the first night, she found a note under the door. It said, \"Welcome. Please don't use the bathroom after midnight.\" She laughed and forgot about it. But at 1 a.m., when she turned on the bathroom light, she finally understood why someone had warned her.\n\nWhat did the note tell Sara not to do?",
-    "a": "Use the bathroom after midnight.",
-    "choices": [
-     "Use the bathroom after midnight.",
-     "Open the windows.",
-     "Talk to the neighbors.",
-     "Turn on the lights."
-    ],
-    "e": "サラは新しいアパートに引っ越した。最初の夜、ドアの下にメモを見つけた。「ようこそ。真夜中以降はお風呂を使わないで」と書いてあった。彼女は笑って忘れた。でも午前1時、バスルームの電気をつけたとき、なぜ誰かが警告したのか、ついに理解した。"
-   },
-   {
-    "q": "The teacher counted the students before the trip. \"One, two, three... thirty-one.\" But only thirty students had come that day. She counted again. Thirty-one. She looked at each face carefully. Every face smiled back at her. One of them smiled a little too widely.\n\nWhat was strange about the count?",
-    "a": "There was one more student than expected.",
-    "choices": [
-     "There was one more student than expected.",
-     "One student was missing.",
-     "The students were too quiet.",
-     "The teacher forgot the number."
-    ],
-    "e": "先生は遠足の前に生徒を数えた。「1、2、3…31人。」でもその日来ていたのは30人だけだった。もう一度数えた。31人。一人ひとりの顔をよく見た。どの顔も彼女に笑い返した。そのうちの一つが、少し大きすぎる笑みを浮かべていた。"
-   },
-   {
-    "q": "Kenji liked to play a game alone. He would ask a question out loud and wait for an answer in the silence. For weeks, nothing happened. Then one rainy night, after he asked, \"Is anyone there?\", a quiet voice answered, \"I have been waiting for you to ask again.\"\n\nWhat happened on the rainy night?",
-    "a": "A voice answered his question.",
-    "choices": [
-     "A voice answered his question.",
-     "The game stopped working.",
-     "His friend came over.",
-     "The lights went out."
-    ],
-    "e": "ケンジはひとりで遊ぶゲームが好きだった。声に出して質問をして、静けさの中で答えを待つのだ。何週間も何も起きなかった。そしてある雨の夜、「誰かいる？」と尋ねた後、静かな声が答えた。「君がまた聞いてくれるのを、ずっと待っていたよ。」"
-   },
-   {
-    "q": "My grandmother's house had thirteen rooms. As a child, I played in all of them except one. The door of that room was always locked. \"It keeps something safe inside,\" Grandmother said. After she died, we opened it. The room was empty, but the lock was on the inside of the door.\n\nWhy was the empty room frightening?",
-    "a": "The lock was on the inside of the door.",
-    "choices": [
-     "The lock was on the inside of the door.",
-     "It was full of dolls.",
-     "It had no windows.",
-     "The walls were black."
-    ],
-    "e": "祖母の家には13の部屋があった。子どもの頃、私は一つを除いて全部の部屋で遊んだ。その部屋のドアはいつも鍵がかかっていた。「中の何かを守っているのよ」と祖母は言った。祖母が亡くなった後、私たちはその部屋を開けた。部屋は空っぽだったが、鍵はドアの内側についていた。"
-   },
-   {
-    "q": "During the storm, the power went out. Lily lit a single candle and sat alone. To feel less afraid, she whispered, \"It's okay, I'm not scared.\" From the dark corner of the room, a soft voice repeated her exact words: \"It's okay, I'm not scared.\" The voice was not hers.\n\nWhat was frightening in the dark room?",
-    "a": "A voice repeated her words.",
-    "choices": [
-     "A voice repeated her words.",
-     "The candle went out.",
-     "The storm broke the window.",
-     "Someone knocked on the door."
-    ],
-    "e": "嵐の間、停電した。リリーはろうそくを一本つけて、ひとりで座った。こわさを減らそうと、彼女は「大丈夫、こわくない」とささやいた。部屋の暗い隅から、柔らかい声が彼女とまったく同じ言葉をくり返した。「大丈夫、こわくない。」その声は彼女のものではなかった。"
-   },
-   {
-    "q": "Yuna and Kai promised to watch the fireworks together every summer. After high school, Kai moved to a city far away. The first summer apart, Yuna went to the festival alone, feeling sad. Then her phone rang. It was a video call from Kai, showing the same fireworks in his new city. \"We are still watching together,\" he said softly.\n\nHow did Kai keep their promise?",
-    "a": "He showed Yuna the same fireworks on a video call.",
-    "choices": [
-     "He showed Yuna the same fireworks on a video call.",
-     "He came back to the festival.",
-     "He sent her a photo.",
-     "He bought new fireworks."
-    ],
-    "e": "ユナとカイは毎年夏、一緒に花火を見ると約束した。高校卒業後、カイは遠い街へ引っ越した。離れて初めての夏、ユナは寂しい気持ちで一人お祭りに行った。すると電話が鳴った。カイからのビデオ通話で、彼の新しい街の同じ花火が映っていた。「僕たちはまだ一緒に見てるよ」と彼は優しく言った。"
-   },
-   {
-    "q": "Haru lent his favorite book to Nao. Inside, he had secretly underlined the words \"I like you\" on different pages. He hoped she would notice. A week later, Nao returned the book. She had underlined the words \"me too\" in the same way. Neither of them said anything out loud, but both were smiling.\n\nWhat did Nao do with the book?",
-    "a": "She underlined the words 'me too'.",
-    "choices": [
-     "She underlined the words 'me too'.",
-     "She lost the book.",
-     "She wrote a long letter.",
-     "She kept it forever."
-    ],
-    "e": "ハルはお気に入りの本をナオに貸した。中で、彼はこっそりいろんなページの「君が好き」という言葉に下線を引いていた。気づいてほしかった。一週間後、ナオは本を返した。彼女は同じやり方で「私も」という言葉に下線を引いていた。二人とも声には出さなかったが、どちらもほほえんでいた。"
-   },
-   {
-    "q": "Emi was new and could not speak the language well. During lunch, she always sat alone. One boy, Ken, started leaving small notes on her desk with one easy word and its picture each day. \"Apple.\" \"Smile.\" \"Friend.\" By winter, Emi could speak much better, and the first full sentence she said to Ken was, \"Thank you for everything.\"\n\nHow did Ken help Emi?",
-    "a": "He left notes to teach her words.",
-    "choices": [
-     "He left notes to teach her words.",
-     "He did her homework.",
-     "He spoke her language.",
-     "He gave her money."
-    ],
-    "e": "エミは転校生で、言葉がうまく話せなかった。昼食のとき、いつも一人で座っていた。ケンという男の子が、毎日机に簡単な単語一つとその絵を描いた小さなメモを置き始めた。「りんご」「笑顔」「友達」。冬までに、エミはずっと上手に話せるようになり、ケンに言った最初の完全な文は「いろいろありがとう」だった。"
-   },
-   {
-    "q": "Mai always ran in the same park in the morning. She often saw a boy running the other way. They never spoke, but they always nodded and smiled. One rainy day, he was not there, and Mai realized how much she looked forward to that small moment. The next morning, she brought two umbrellas, just in case.\n\nWhy did Mai bring two umbrellas?",
-    "a": "She hoped to share one with the boy.",
-    "choices": [
-     "She hoped to share one with the boy.",
-     "It was very cold.",
-     "She lost one before.",
-     "Her friend asked for one."
-    ],
-    "e": "マイは毎朝同じ公園で走っていた。よく反対方向に走る男の子を見かけた。話したことはなかったが、いつもうなずいてほほえみ合った。ある雨の日、彼はいなくて、マイはその小さな瞬間をどれだけ楽しみにしていたか気づいた。翌朝、彼女は念のため傘を二本持ってきた。"
-   },
-   {
-    "q": "Taku was going to move away in spring. He wanted to tell Rin how he felt, but he was afraid. On the last day of school, he finally gave her a letter and ran away, too nervous to see her face. The letter said, \"I will come back in five years. Please wait for me if you can.\" Rin read it and quietly promised that she would.\n\nWhat did Taku ask Rin in the letter?",
-    "a": "To wait five years for him.",
-    "choices": [
-     "To wait five years for him.",
-     "To move with him.",
-     "To forget him.",
-     "To write back soon."
-    ],
-    "e": "タクは春に引っ越す予定だった。リンに気持ちを伝えたかったが、こわかった。学校最後の日、ついに手紙を渡して走り去った。彼女の顔を見るのが怖すぎたのだ。手紙にはこう書いてあった。「5年後に戻ってくる。もしできるなら、待っていてほしい。」リンはそれを読み、静かに待つと心に誓った。"
-   },
-   {
-    "q": "Every day, an old man planted trees on an empty hill, even though he was already eighty. People asked why he worked so hard for trees he would never see grow tall. He smiled and answered, \"I will not sit in their shade, but children I will never meet will. That is enough for me.\" Years later, the hill became a beautiful forest.\n\nWhy did the old man plant trees?",
-    "a": "So future children could enjoy the shade.",
-    "choices": [
-     "So future children could enjoy the shade.",
-     "To sell the wood.",
-     "To become famous.",
-     "To make money quickly."
-    ],
-    "e": "毎日、年老いた男が空き地の丘に木を植えていた。彼はもう80歳だった。人々は、自分が大きく育つのを決して見られない木のために、なぜそんなに頑張るのか尋ねた。彼はほほえんで答えた。「私はその木陰に座ることはない。でも、会うことのない子どもたちが座るだろう。それで十分だ。」何年も後、その丘は美しい森になった。"
-   },
-   {
-    "q": "Maya practiced the piano for years but always lost in competitions. She felt like giving up. Then a blind boy in the audience asked to touch her hands after a concert. \"Your music helped me see colors,\" he said. \"Please never stop.\" Maya never won first prize, but she kept playing for the rest of her life, knowing her music truly mattered.\n\nWhy did Maya keep playing the piano?",
-    "a": "A blind boy told her that her music mattered.",
-    "choices": [
-     "A blind boy told her that her music mattered.",
-     "She finally won first prize.",
-     "Her parents forced her.",
-     "She wanted to be famous."
-    ],
-    "e": "マヤは何年もピアノを練習したが、コンクールではいつも負けた。あきらめたい気持ちだった。すると、コンサートの後、客席の目の見えない少年が彼女の手に触れたいと頼んだ。「あなたの音楽で、僕は色が見えたんだ」と彼は言った。「どうかやめないで。」マヤは一度も一位にならなかったが、自分の音楽が本当に意味を持つと知り、生涯ずっと弾き続けた。"
-   },
-   {
-    "q": "After the earthquake, a young boy stood in a long line for food. When he finally reached the front, he was given one rice ball. Instead of eating it, he walked over and placed it in the box for people who had even less than he did. A reporter watched, deeply moved, and quietly added his own food to the box too.\n\nWhat did the boy do with his rice ball?",
-    "a": "He gave it to people who had less.",
-    "choices": [
-     "He gave it to people who had less.",
-     "He ate it quickly.",
-     "He sold it.",
-     "He saved it for later."
-    ],
-    "e": "地震の後、幼い少年が食べ物をもらう長い列に並んでいた。やっと先頭に着くと、おにぎりを一つもらった。彼はそれを食べる代わりに、歩いて行って、自分よりもっと持たない人々のための箱に入れた。記者がそれを見て深く心を動かされ、静かに自分の食べ物も箱に加えた。"
-   },
-   {
-    "q": "A teacher noticed that one student never ate lunch. Quietly, without telling anyone, she began making an extra lunch box every morning and leaving it on his desk. She never asked for thanks. Twenty years later, that student, now a successful doctor, returned to the school and gave the teacher a lunch box, saying, \"Now it is my turn to take care of you.\"\n\nWhy did the doctor give the teacher a lunch box?",
-    "a": "To return the kindness she had shown him.",
-    "choices": [
-     "To return the kindness she had shown him.",
-     "To sell her food.",
-     "To teach her cooking.",
-     "To say goodbye."
-    ],
-    "e": "先生は、一人の生徒が決して昼食を食べないことに気づいた。誰にも言わず、彼女は毎朝もう一つ弁当を作り、彼の机に置き始めた。お礼を求めることはなかった。20年後、今は立派な医者になったその生徒が学校に戻り、先生に弁当を渡して言った。「今度は僕があなたの世話をする番です。」"
-   },
-   {
-    "q": "A runner was leading the race when the boy behind him fell and got hurt. Instead of winning, he stopped, helped the boy up, and walked with him to the finish line together. They came in last, but the whole crowd stood up and cheered louder than they had for the winner. Some things are bigger than winning.\n\nWhy did the crowd cheer so loudly?",
-    "a": "The runner helped the hurt boy instead of winning.",
-    "choices": [
-     "The runner helped the hurt boy instead of winning.",
-     "The runner broke a record.",
-     "The race was very fast.",
-     "The boy won the race."
-    ],
-    "e": "あるランナーがレースで先頭を走っていたとき、後ろの少年が転んでけがをした。彼は勝つ代わりに立ち止まり、少年を助け起こし、一緒にゴールまで歩いた。二人は最下位だったが、観衆全員が立ち上がり、優勝者のときより大きな声で声援を送った。勝つことより大きなものがある。"
-   }
-  ],
-  "Lv4": [
-   {
-    "q": "Daniel always said he was the best cook in his family. One weekend, his parents went away, so he promised to make a special dinner for his little sister. He spent three hours in the kitchen, making strange sounds and big clouds of smoke. Finally, he proudly carried out two plates. His sister looked at the black, burned food and said nothing. Then she quietly took out her phone and ordered pizza. When the pizza arrived, Daniel ate more than anyone. \"Cooking makes me hungry,\" he explained, and his sister laughed so hard that she almost fell off her chair.\n\nWhat did Daniel's sister do about the dinner?",
-    "a": "She ordered pizza instead of eating his food.",
-    "choices": [
-     "She ordered pizza instead of eating his food.",
-     "She cooked her own dinner.",
-     "She ate all the burned food.",
-     "She called their parents."
-    ],
-    "e": "ダニエルはいつも、自分が家族で一番料理がうまいと言っていた。ある週末、両親が出かけたので、彼は妹に特別な夕食を作ると約束した。3時間キッチンにこもり、変な音と大きな煙の雲を立てた。ついに彼は得意げに2皿を運んできた。妹は黒こげの料理を見て、何も言わなかった。それからこっそりスマホを取り出してピザを注文した。ピザが届くと、ダニエルは誰より多く食べた。「料理するとお腹がすくんだ」と彼は説明し、妹は椅子から落ちそうになるほど笑った。"
-   },
-   {
-    "q": "Grandpa decided to learn how to use the Internet. His grandson taught him slowly and carefully. After a week, Grandpa felt like an expert. One day, the family received a strange email saying they had won a million dollars. Everyone was excited except Grandpa. \"It's a trick,\" he said calmly. \"Nobody gives money for free.\" The family was surprised that the oldest person understood the danger best. Later, Grandpa smiled and said, \"I may be old, but I am not easy to fool. Life taught me that lesson long ago.\"\n\nWhy was the family surprised?",
-    "a": "The oldest person understood the danger best.",
-    "choices": [
-     "The oldest person understood the danger best.",
-     "Grandpa won real money.",
-     "The email was true.",
-     "Grandpa could not use the Internet."
-    ],
-    "e": "おじいちゃんはインターネットの使い方を学ぶことにした。孫がゆっくり丁寧に教えた。1週間後、おじいちゃんは達人になった気分だった。ある日、家族は「100万ドル当選」という変なメールを受け取った。おじいちゃん以外みんな興奮した。「これは詐欺だ」と彼は落ち着いて言った。「タダで金をくれる者などいない。」一番年上の人が危険を一番よく理解していたので、家族は驚いた。後でおじいちゃんは笑って言った。「年はとっても、簡単にはだまされんよ。人生がずっと前にその教訓を教えてくれたんだ。」"
-   },
-   {
-    "q": "Nina hated cleaning her messy room. One day her mother said, \"If you clean your room, I will give you a surprise.\" Nina worked hard all afternoon. She threw away old papers, organized her books, and even washed the windows. When she finished, the room looked perfect. Excited, she ran to her mother and asked about the surprise. Her mother smiled and said, \"The surprise is how nice your clean room feels.\" Nina was a little angry at first, but that night, lying in her tidy room, she had to admit her mother was right.\n\nWhat was the 'surprise' her mother meant?",
-    "a": "The good feeling of having a clean room.",
-    "choices": [
-     "The good feeling of having a clean room.",
-     "A new video game.",
-     "Money for cleaning.",
-     "A trip to the zoo."
-    ],
-    "e": "ニーナは散らかった部屋を片付けるのが大嫌いだった。ある日母が言った。「部屋を片付けたら、サプライズをあげる。」ニーナは午後ずっと頑張った。古い紙を捨て、本を整理し、窓まで洗った。終わると部屋は完璧に見えた。わくわくして母のところへ走り、サプライズについて尋ねた。母はほほえんで言った。「サプライズは、きれいな部屋がどれだけ気持ちいいか、ということよ。」ニーナは最初少し怒ったが、その夜、片付いた部屋で横になり、母が正しかったと認めざるを得なかった。"
-   },
-   {
-    "q": "At the zoo, a little boy stood in front of the monkey cage for a long time. He copied everything the monkey did. When the monkey jumped, the boy jumped. When the monkey scratched its head, the boy scratched his head. A crowd gathered to watch this funny game. Suddenly, the monkey sat down and pointed at the boy, as if saying, \"Now you are the strange animal.\" Everyone laughed, and the boy's face turned red. He learned that copying others can sometimes make you the joke.\n\nWhat did the monkey do at the end?",
-    "a": "It pointed at the boy as if he were the strange one.",
-    "choices": [
-     "It pointed at the boy as if he were the strange one.",
-     "It ran away.",
-     "It copied the boy.",
-     "It went to sleep."
-    ],
-    "e": "動物園で、小さな男の子がサルのおりの前に長い間立っていた。彼はサルのすることを全部まねした。サルが跳ねれば男の子も跳ね、サルが頭をかけば男の子も頭をかいた。この面白い遊びを見ようと人だかりができた。突然、サルは座って男の子を指さした。まるで「今度は君が変な動物だ」と言うように。みんな笑い、男の子の顔は赤くなった。彼は、人のまねは時に自分を笑いものにすると学んだ。"
-   },
-   {
-    "q": "Mr. Sato was famous for falling asleep anywhere. He slept on trains, in meetings, and once even while standing in line. His friends made a funny plan. While he was sleeping on a park bench, they quietly placed a small sign next to him that said, \"Do not wake. World champion of sleeping.\" When Mr. Sato woke up, many people were taking photos of him. He read the sign, laughed loudly, and said, \"Well, at least I'm the best at something!\" From that day, he was proud of his special talent.\n\nHow did Mr. Sato react to the sign?",
-    "a": "He laughed and felt proud of his talent.",
-    "choices": [
-     "He laughed and felt proud of his talent.",
-     "He got very angry.",
-     "He ran away from the park.",
-     "He took the sign home."
-    ],
-    "e": "佐藤さんはどこでも寝てしまうことで有名だった。電車でも、会議でも、一度は立って並んでいる時にさえ寝た。友達は面白い計画を立てた。彼が公園のベンチで寝ている間、そっと隣に小さな札を置いた。「起こすな。睡眠の世界チャンピオン」と書いてあった。佐藤さんが目を覚ますと、大勢が彼の写真を撮っていた。札を読んで大声で笑い、「まあ、少なくとも何かで一番だ！」と言った。その日から、彼は自分の特別な才能を誇りに思った。"
-   },
-   {
-    "q": "Every summer, my family stayed at a small house by the sea. There was an old rule written on the kitchen wall: \"When the tide is high, do not answer the door.\" As a child, I thought it was just a silly game. But one stormy night, when the water was high and dark, someone knocked gently. My little brother, too young to read, walked toward the door. I grabbed his hand just in time. Through the window, I saw wet footprints leading away, though no one was there. We never broke that rule again, and we never asked who had written it.\n\nWhy did the writer grab his brother's hand?",
-    "a": "To stop him from answering the door during high tide.",
-    "choices": [
-     "To stop him from answering the door during high tide.",
-     "To take him to bed.",
-     "To pull him from the water.",
-     "To show him the footprints."
-    ],
-    "e": "毎年夏、私の家族は海辺の小さな家に泊まった。台所の壁に古い決まりが書いてあった。「満潮のときはドアを開けるな。」子どもの頃、私はただのくだらない遊びだと思っていた。でもある嵐の夜、水位が高く暗いとき、誰かがそっとノックした。まだ字が読めない弟がドアへ歩いていった。私はぎりぎりで手をつかんだ。窓越しに、誰もいないのに濡れた足跡が遠ざかっていくのが見えた。私たちは二度とその決まりを破らなかったし、誰が書いたのかも尋ねなかった。"
-   },
-   {
-    "q": "The new student never spoke. She sat at the back of the class and stared at the empty seat beside her. Our teacher said the seat had belonged to a girl who had moved away years ago. One day, I asked the new student why she always looked at that chair. She finally smiled and whispered, \"Because my friend is sitting there, and she says you can see her too, if you look long enough.\" I did not look. I changed schools the next month.\n\nWhy did the writer change schools?",
-    "a": "The new student's words frightened him.",
-    "choices": [
-     "The new student's words frightened him.",
-     "The school was too far.",
-     "He failed his tests.",
-     "The teacher was unkind."
-    ],
-    "e": "その転校生は決して話さなかった。彼女はクラスの後ろに座り、隣の空いた席をじっと見つめていた。先生は、その席は何年も前に引っ越した女の子のものだったと言った。ある日、私は転校生になぜいつもその椅子を見るのか尋ねた。彼女はついにほほえんでささやいた。「だって私の友達がそこに座っているの。十分長く見れば、あなたにも見えるって言ってるわ。」私は見なかった。翌月、転校した。"
-   },
-   {
-    "q": "My phone started sending messages to my mother that I never wrote. They were short and kind: \"Good night,\" \"I love you,\" \"Be careful tomorrow.\" My mother thought I was being sweet, so I said nothing. But the strange part came later. After I lost my phone in the river during the trip, the messages did not stop. My mother still receives one every night, always at the same time, always in my words. She finds it comforting. I find it impossible.\n\nWhy does the writer find the messages 'impossible'?",
-    "a": "They keep coming after the phone was lost in the river.",
-    "choices": [
-     "They keep coming after the phone was lost in the river.",
-     "They are written in another language.",
-     "His mother never reads them.",
-     "He sends them himself."
-    ],
-    "e": "私のスマホが、私が書いてもいないメッセージを母に送り始めた。短くて優しい内容だった。「おやすみ」「愛してる」「明日気をつけて」。母は私が優しくしていると思ったので、私は何も言わなかった。でも奇妙なのはその後だ。旅行中に川でスマホをなくした後も、メッセージは止まらなかった。母は今も毎晩、いつも同じ時刻に、いつも私の言葉で一通受け取る。母はそれを心地よく思っている。私には、あり得ないことだ。"
-   },
-   {
-    "q": "The hotel had no room number 4, because in Japan the number four can mean death. I thought this was just an old custom. On my last night, I could not sleep, so I walked down the long, quiet hallway. Between room 3 and room 5, where nothing should be, I saw a door marked with a faded number 4. Cold air came from under it, and I heard someone slowly counting. I walked back to my room quickly and waited for morning, never telling anyone what I had seen.\n\nWhat did the writer see between rooms 3 and 5?",
-    "a": "A door marked with the number 4.",
-    "choices": [
-     "A door marked with the number 4.",
-     "An open window.",
-     "Another guest.",
-     "A broken light."
-    ],
-    "e": "そのホテルには4号室がなかった。日本では「4」が「死」を意味することがあるからだ。私はこれをただの古い習慣だと思っていた。最後の夜、眠れなかったので、長く静かな廊下を歩いた。3号室と5号室の間、何もないはずの場所に、色あせた「4」と記されたドアを見た。その下から冷たい空気が流れ、誰かがゆっくり数を数えるのが聞こえた。私は急いで部屋に戻り、朝を待った。見たものを誰にも話さずに。"
-   },
-   {
-    "q": "My little sister often talked to someone she called \"the lady in the garden.\" Our parents thought it was just an imaginary friend, common for young children. We had no garden, only a small yard of stones. One evening, my sister drew a picture of the lady and gave it to me. The woman in the drawing wore old-fashioned clothes and stood beside a tree full of white flowers. The next week, while digging in the yard, my father found the roots of a tree that had died there a hundred years ago.\n\nWhat did the father discover in the yard?",
-    "a": "The roots of a tree that died a century ago.",
-    "choices": [
-     "The roots of a tree that died a century ago.",
-     "A box of old letters.",
-     "A garden of white flowers.",
-     "A hidden room."
-    ],
-    "e": "妹はよく「庭の女の人」と呼ぶ誰かに話しかけていた。両親は、幼い子によくある空想の友達だと思っていた。我が家には庭はなく、石だらけの小さな庭先があるだけだった。ある夕方、妹はその女の人の絵を描いて私にくれた。絵の女性は古風な服を着て、白い花でいっぱいの木のそばに立っていた。翌週、庭先を掘っていた父は、百年前にそこで枯れた木の根を見つけた。"
-   },
-   {
-    "q": "When they were children, Sho and Yui planted a small tree together in the schoolyard and promised to meet under it as adults. Years passed, and life took them to different cities. Sho almost forgot the promise. But on the day of their school reunion, something made him walk to the old tree, now tall and full of leaves. Yui was already there, looking up at the branches. \"I come here every year,\" she said quietly. \"I always hoped that one year, you would remember too.\" Sho realized that some promises, even quiet ones, are never truly broken.\n\nWhy did Yui visit the tree every year?",
-    "a": "She hoped Sho would remember their promise.",
-    "choices": [
-     "She hoped Sho would remember their promise.",
-     "She liked the shade.",
-     "She lived nearby.",
-     "She studied the tree."
-    ],
-    "e": "子どもの頃、ショウとユイは校庭に小さな木を一緒に植え、大人になったらその下で会おうと約束した。年月が過ぎ、人生は二人を別々の街へ連れて行った。ショウは約束をほとんど忘れていた。でも同窓会の日、何かに導かれて、今は高く葉の茂ったあの木へ歩いた。ユイはすでにそこにいて、枝を見上げていた。「毎年ここに来るの」と彼女は静かに言った。「いつかあなたも思い出してくれるって、ずっと願ってた。」ショウは、静かな約束でさえ、決して本当には消えないのだと気づいた。"
-   },
-   {
-    "q": "Nana worked at a small bakery near the station. A tired businessman came in every evening and always bought the last melon bread. They rarely spoke more than a few words. One day, Nana noticed he looked very sad, so she added a small cookie shaped like a smile to his bag without saying anything. The next evening, he returned and finally spoke: \"That cookie was the first time I smiled in months. May I know your name?\" Sometimes the smallest kindness opens the biggest door.\n\nWhat did Nana add to the man's bag?",
-    "a": "A cookie shaped like a smile.",
-    "choices": [
-     "A cookie shaped like a smile.",
-     "An extra melon bread.",
-     "A letter.",
-     "A free coffee."
-    ],
-    "e": "ナナは駅の近くの小さなパン屋で働いていた。疲れた会社員が毎晩来て、いつも最後のメロンパンを買った。二人はほとんど言葉を交わさなかった。ある日、ナナは彼がとても悲しそうなのに気づき、何も言わずに笑顔の形のクッキーを袋に一つ加えた。翌晩、彼は戻ってきて、ついに口を開いた。「あのクッキーで、何ヶ月ぶりかに笑えました。お名前を伺っても?」時に、ほんの小さな親切が、一番大きな扉を開ける。"
-   },
-   {
-    "q": "In the library, Aoi always found helpful notes inside the books she borrowed for her exams. Someone had written tips in the margins, like \"Don't give up\" and \"You can do this.\" The notes guided her through a hard year, and she passed her exams. Wanting to thank this stranger, she left her own note in the last book: \"Who are you?\" A week later, the reply came in the same handwriting: \"Just someone who sat behind you and admired how hard you tried.\"\n\nWho had been writing the notes?",
-    "a": "Someone who sat behind Aoi and admired her effort.",
-    "choices": [
-     "Someone who sat behind Aoi and admired her effort.",
-     "Her teacher.",
-     "The librarian.",
-     "Her sister."
-    ],
-    "e": "図書館で、アオイは試験のために借りた本の中に、いつも役立つメモを見つけた。誰かが余白に「あきらめないで」「君ならできる」といった助言を書いていた。そのメモは厳しい一年を通して彼女を導き、彼女は試験に合格した。この見知らぬ人に感謝したくて、彼女は最後の本に自分のメモを残した。「あなたは誰?」一週間後、同じ筆跡で返事が来た。「君の後ろに座って、君が必死に頑張る姿に感心していた、ただの一人だよ。」"
-   },
-   {
-    "q": "Kenta and Yuki dated for three years before he had to study abroad. They agreed to write one real paper letter each month, instead of using their phones. At first it felt slow and old-fashioned, but soon they loved it. Each letter carried more feeling than a hundred quick messages. When Kenta finally came home two years later, Yuki was waiting at the airport, holding every single letter he had sent, tied with a blue ribbon.\n\nWhat was Yuki holding at the airport?",
-    "a": "Every letter Kenta had sent, tied with a ribbon.",
-    "choices": [
-     "Every letter Kenta had sent, tied with a ribbon.",
-     "A new phone.",
-     "A welcome sign.",
-     "A bunch of flowers."
-    ],
-    "e": "ケンタとユキは、彼が留学する前に3年間付き合っていた。二人はスマホを使う代わりに、毎月一通ずつ本物の紙の手紙を書くと約束した。最初は遅くて古風に感じたが、すぐに大好きになった。一通一通が、百の素早いメッセージより多くの気持ちを運んだ。2年後、ケンタがついに帰国したとき、ユキは空港で待っていた。彼が送ったすべての手紙を、青いリボンで束ねて抱えて。"
-   },
-   {
-    "q": "An old man visited the same coffee shop every morning and always ordered two cups. He drank one and left the other untouched across the table. The young waitress was curious but never asked. After he stopped coming one winter, she found a note he had left for her: \"For sixty years, I shared morning coffee with my wife here. After she passed, I kept ordering two, so she would never feel alone. Thank you for never moving her cup.\" The waitress cried, and from then on, she always set two cups at that table.\n\nWhy did the old man order two cups?",
-    "a": "To feel that his late wife was still with him.",
-    "choices": [
-     "To feel that his late wife was still with him.",
-     "He was very thirsty.",
-     "He met a friend there.",
-     "He liked cold coffee."
-    ],
-    "e": "老人は毎朝同じ喫茶店を訪れ、いつもコーヒーを2杯注文した。1杯を飲み、もう1杯はテーブルの向かいに手をつけずに置いた。若いウェイトレスは気になったが、決して尋ねなかった。ある冬、彼が来なくなった後、彼女は彼が残したメモを見つけた。「60年間、私はここで妻と朝のコーヒーを分かち合った。妻が亡くなった後も2杯頼み続けた。妻が決して寂しく感じないように。彼女のカップを動かさずにいてくれて、ありがとう。」ウェイトレスは泣き、それからずっと、そのテーブルにいつも2つのカップを置いた。"
-   },
-   {
-    "q": "For thirty years, a quiet old woman cleaned the train station every night after the last train left. Few people ever noticed her or said thank you. When she finally retired, the station looked the same as always, and she expected no goodbye. But on her last night, hundreds of people who had taken those trains over the years were waiting on the platform with flowers and letters. \"We saw you,\" they said. \"We always saw you.\" She had thought her work was invisible, but kindness, even silent kindness, is never truly unseen.\n\nWhat surprised the old woman on her last night?",
-    "a": "Hundreds of people came to thank her.",
-    "choices": [
-     "Hundreds of people came to thank her.",
-     "The station was dirty.",
-     "She missed the last train.",
-     "She lost her job suddenly."
-    ],
-    "e": "30年間、物静かな老婦人が、終電が出た後に毎晩駅を掃除していた。彼女に気づいたり、ありがとうと言ったりする人はほとんどいなかった。ついに引退するとき、駅はいつもと変わらず見え、彼女は別れの言葉も期待していなかった。でも最後の夜、長年その電車に乗ってきた何百人もの人々が、花や手紙を持ってホームで待っていた。「私たちは見ていました」と彼らは言った。「ずっと見ていました。」彼女は自分の仕事が誰の目にも入らないと思っていたが、親切は、静かな親切でさえ、決して本当に見られていないわけではない。"
-   },
-   {
-    "q": "A famous violinist lost the use of his right hand in an accident and could no longer play. Everyone thought his career was over. Instead, he spent the next ten years teaching poor children who could never afford lessons. One of those children grew up to become a world-class musician. At her first great concert, she walked onto the stage, pointed to her old teacher in the front row, and said, \"He cannot play anymore, but his music lives in everything I do.\"\n\nHow did the violinist's music continue?",
-    "a": "Through the students he taught.",
-    "choices": [
-     "Through the students he taught.",
-     "He learned to play again.",
-     "He wrote new songs.",
-     "He built a music school alone."
-    ],
-    "e": "有名なバイオリニストが事故で右手の自由を失い、もう演奏できなくなった。誰もが彼のキャリアは終わったと思った。代わりに、彼はその後10年を、レッスンを受ける余裕のない貧しい子どもたちに教えて過ごした。その子どもの一人が成長して世界的な音楽家になった。彼女の初めての大きなコンサートで、彼女は舞台に歩み出て、最前列の昔の先生を指さして言った。「先生はもう演奏できません。でも先生の音楽は、私のするすべての中に生きています。」"
-   },
-   {
-    "q": "A little girl with a serious illness spent most of her days in a hospital bed by the window. To cheer her up, she began drawing pictures and taping them to the glass so people outside could see. Soon, strangers walking past started leaving drawings and kind messages on the other side of the window. A silent friendship grew between the sick girl and a whole town she had never met. On the day she finally went home, healthy again, hundreds of drawings covered her window like a wall of love.\n\nHow did the town become friends with the girl?",
-    "a": "They exchanged drawings through her window.",
-    "choices": [
-     "They exchanged drawings through her window.",
-     "They visited her room daily.",
-     "They sent her letters by mail.",
-     "They called her every night."
-    ],
-    "e": "重い病気の小さな女の子が、ほとんどの日々を窓際の病院のベッドで過ごしていた。元気を出すために、彼女は絵を描いてガラスに貼り、外の人々に見えるようにし始めた。やがて、通りかかる見知らぬ人々が、窓の反対側に絵や優しいメッセージを残し始めた。病気の女の子と、会ったこともない町全体との間に、静かな友情が育った。ついに元気になって家に帰る日、何百もの絵が、愛の壁のように彼女の窓を覆っていた。"
-   },
-   {
-    "q": "During the war, a soldier carried a small, worn photograph of his family everywhere he went. It gave him the strength to survive each hard day. Years after the war ended, he returned to his hometown, which had changed so much that he barely recognized it. He showed the old photo to a young woman selling flowers. She stared at it, then began to cry. \"This is my grandmother,\" she said softly. \"She told me a kind soldier once promised to come back. We never stopped hoping you would.\"\n\nWhy did the young woman cry?",
-    "a": "The soldier in the photo had promised to return to her family.",
-    "choices": [
-     "The soldier in the photo had promised to return to her family.",
-     "She lost her flowers.",
-     "She did not know the man.",
-     "The photo was damaged."
-    ],
-    "e": "戦争中、一人の兵士はどこへ行くにも、家族の小さくすり切れた写真を持ち歩いた。それが、つらい日々を生き延びる力をくれた。戦争が終わって何年も後、彼は故郷に戻ったが、あまりに変わっていて、ほとんど見分けがつかなかった。彼は花を売る若い女性に古い写真を見せた。彼女はそれをじっと見つめ、泣き始めた。「これは私の祖母です」と彼女は静かに言った。「祖母は、優しい兵士がいつか戻ると約束したと話していました。私たちは、あなたが戻ることをずっと願い続けていました。」"
-   },
-   {
-    "q": "An old fisherman found a young whale trapped in a net near the shore. For hours, he worked alone in the cold water, slowly cutting the ropes until the whale was free. The huge animal did not swim away at once. Instead, it stayed near his boat for a moment, looking at him with one large eye, as if to say thank you. Every year after that, on the same day, a whale appeared in the same bay. The fisherman believed it was the same one, returning to remember a moment of kindness between two very different lives.\n\nWhy did the fisherman think the whale returned each year?",
-    "a": "To remember the kindness he had shown it.",
-    "choices": [
-     "To remember the kindness he had shown it.",
-     "To find more food.",
-     "To bring him gifts.",
-     "To escape other whales."
-    ],
-    "e": "年老いた漁師が、岸の近くで網にかかった若いクジラを見つけた。何時間も、彼は冷たい水の中で一人で働き、ロープをゆっくり切って、ついにクジラを自由にした。その巨大な動物はすぐには泳ぎ去らなかった。代わりに、少しの間彼の船のそばにとどまり、一つの大きな目で彼を見た。まるでありがとうと言うように。それから毎年、同じ日に、同じ入り江にクジラが現れた。漁師は、それが同じクジラで、二つのまったく異なる命の間の親切の瞬間を覚えていて戻ってくるのだと信じていた。"
-   }
-  ]
- }
+  "version": 2,
+  "id": "e-choubun",
+  "subject": "english",
+  "title": "長文の戦場",
+  "label": "長",
+  "timeLimitMs": 5000,
+  "maxQuestions": 15,
+  "images": {
+    "art": "e-choubun",
+    "boss": "e-boss",
+    "chara": "uta",
+    "win": "win",
+    "lose": "lose2"
+  },
+  "levels": {
+    "Lv1": [
+      {
+        "q": "Tom has a cat. The cat is on his book. \"Look! My cat is on my book!\" Tom is happy. The cat is happy, too.\n\nWhere is the cat?",
+        "a": "On the book.",
+        "choices": [
+          "On the book.",
+          "On the bed.",
+          "On the chair.",
+          "On the box."
+        ],
+        "e": "トムはネコをかっている。ネコが本の上にいる。「見て！ネコが本の上にいる！」トムはうれしい。ネコもうれしい。",
+        "free": true
+      },
+      {
+        "q": "A dog can run. A dog can jump. But this dog can dance! The dog dances and dances. We all clap. What a funny dog!\n\nWhat can this dog do?",
+        "a": "Dance.",
+        "choices": [
+          "Dance.",
+          "Cook.",
+          "Read.",
+          "Sing."
+        ],
+        "e": "イヌは走れる。イヌはとべる。でもこのイヌはおどれる！イヌはおどっておどる。みんなでてをたたく。なんておもしろいイヌ！",
+        "free": true
+      },
+      {
+        "q": "Ben puts on his hat. The hat is too big. The hat goes down. Ben can't see! \"Where am I?\" Ben says. Mom laughs.\n\nWhy can't Ben see?",
+        "a": "The hat is too big.",
+        "choices": [
+          "The hat is too big.",
+          "It is dark.",
+          "He is sleepy.",
+          "His eyes hurt."
+        ],
+        "e": "ベンはぼうしをかぶる。ぼうしが大きすぎる。ぼうしが下がる。ベンは見えない！「ぼく、どこ？」とベンが言う。ママがわらう。",
+        "free": true
+      },
+      {
+        "q": "It is lunch time. Sam wants cake. He opens his box. No cake! Just one green bean. Sam looks sad. Then his dog eats the bean. Now they both laugh.\n\nWhat is in Sam's box?",
+        "a": "One green bean.",
+        "choices": [
+          "One green bean.",
+          "A big cake.",
+          "Two apples.",
+          "Some milk."
+        ],
+        "e": "おひるの時間。サムはケーキがほしい。はこをあける。ケーキがない！みどりのまめが一つだけ。サムはかなしそう。それからイヌがまめを食べる。二人ともわらう。",
+        "free": true
+      },
+      {
+        "q": "The baby has a spoon. The baby eats. One, two, three! Food is on his face. Food is on his hair. Food is everywhere! But the baby is so happy.\n\nWhere is the food?",
+        "a": "Everywhere.",
+        "choices": [
+          "Everywhere.",
+          "In the box.",
+          "On the plate.",
+          "In the bag."
+        ],
+        "e": "あかちゃんがスプーンをもつ。あかちゃんが食べる。1、2、3！食べものがかおにつく。かみにつく。どこにでもある！でもあかちゃんはとてもうれしい。",
+        "free": true
+      },
+      {
+        "q": "It is night. The room is dark. Yuki hears a sound. Tap, tap, tap. What is it? She looks. It is just the rain. Yuki smiles and goes to bed.\n\nWhat is the sound?",
+        "a": "The rain.",
+        "choices": [
+          "The rain.",
+          "A cat.",
+          "A bird.",
+          "Her mom."
+        ],
+        "e": "夜だ。へやがくらい。ユキは音を聞く。トン、トン、トン。なに？見る。ただの雨だ。ユキはわらってねる。",
+        "free": true
+      },
+      {
+        "q": "Ben sees a big box. The box moves! Ben is surprised. The box moves again. Ben opens it. It is his cat! \"Oh, it is you!\" Ben is happy now.\n\nWhat is in the box?",
+        "a": "His cat.",
+        "choices": [
+          "His cat.",
+          "A ball.",
+          "A dog.",
+          "A toy."
+        ],
+        "e": "ベンは大きなはこを見る。はこがうごく！ベンはびっくり。はこがまたうごく。ベンがあける。ネコだ！「なんだ、きみか！」ベンは今うれしい。",
+        "free": true
+      },
+      {
+        "q": "Mika is in the garden. She sees two small eyes. The eyes are big. The eyes shine. It is a baby bird! Mika gives it some water. \"Chirp,\" says the bird. Mika smiles.\n\nWhat has the two shining eyes?",
+        "a": "A baby bird.",
+        "choices": [
+          "A baby bird.",
+          "A cat.",
+          "A dog.",
+          "A fish."
+        ],
+        "e": "ミカはにわにいる。小さな目が二つ見える。目が大きい。目が光る。ひなだ！ミカは水をあげる。「ピヨ」と鳥が言う。ミカはわらう。",
+        "free": true
+      },
+      {
+        "q": "Tom is in bed. He hears feet. Step, step, step. The door opens. It is Dad. He has a big cake! \"Happy birthday, Tom!\" Dad says. Tom laughs.\n\nWho comes into the room?",
+        "a": "Dad.",
+        "choices": [
+          "Dad.",
+          "Mom.",
+          "His friend.",
+          "A cat."
+        ],
+        "e": "トムはベッドにいる。足音が聞こえる。トン、トン、トン。ドアがあく。パパだ。大きなケーキをもっている！「たんじょうびおめでとう、トム！」とパパが言う。トムはわらう。",
+        "free": true
+      },
+      {
+        "q": "The moon is big. Sara looks out. She sees a white thing. It moves. It is so white! What is it? It is a cat on the wall. The cat looks at the moon, too.\n\nWhat is the white thing?",
+        "a": "A cat.",
+        "choices": [
+          "A cat.",
+          "A bird.",
+          "Snow.",
+          "A flag."
+        ],
+        "e": "つきが大きい。サラが外を見る。白いものが見える。うごく。とても白い！なに？へいの上のネコだ。ネコもつきを見ている。",
+        "free": true
+      },
+      {
+        "q": "Aya likes a boy. The boy gives her a flower. The flower is red. Aya is happy. She gives him a flower, too. Now they are friends.\n\nWhat does the boy give Aya?",
+        "a": "A flower.",
+        "choices": [
+          "A flower.",
+          "A book.",
+          "A cat.",
+          "A cake."
+        ],
+        "e": "アヤは男の子がすき。男の子が花をくれる。花はあかい。アヤはうれしい。アヤも花をあげる。二人はともだちになる。",
+        "free": true
+      },
+      {
+        "q": "It rains. Mina has no umbrella. A boy comes. \"Let's share!\" he says. They walk together. They are happy. The rain is nice today.\n\nWhat do they share?",
+        "a": "An umbrella.",
+        "choices": [
+          "An umbrella.",
+          "A book.",
+          "A cake.",
+          "A bag."
+        ],
+        "e": "雨がふる。ミナはかさがない。男の子が来る。「いっしょに入ろう！」と言う。二人であるく。うれしい。今日は雨がいい。",
+        "free": true
+      },
+      {
+        "q": "Sora gives Hana a blue ribbon. \"It is like the sky,\" he says. Hana likes it. She puts it on. She looks at the sky and smiles.\n\nWhat color is the ribbon?",
+        "a": "Blue.",
+        "choices": [
+          "Blue.",
+          "Red.",
+          "Green.",
+          "Pink."
+        ],
+        "e": "ソラがハナにあおいリボンをあげる。「そらみたいだね」と言う。ハナはきにいる。つける。そらを見てわらう。",
+        "free": true
+      },
+      {
+        "q": "Ken sits next to Mai. He is shy. He can't talk. So he draws a cat. He gives it to Mai. Mai smiles big. Now they talk every day.\n\nWhat does Ken draw?",
+        "a": "A cat.",
+        "choices": [
+          "A cat.",
+          "A dog.",
+          "A car.",
+          "A house."
+        ],
+        "e": "ケンはマイのとなりにすわる。はずかしい。話せない。だからネコをかく。マイにあげる。マイは大きくわらう。二人はまいにち話す。",
+        "free": true
+      },
+      {
+        "q": "Tomo waits for Saki. He waits and waits. Then Saki comes. She has two ice creams. \"One for you!\" she says. They eat together. Yum!\n\nWhat does Saki bring?",
+        "a": "Two ice creams.",
+        "choices": [
+          "Two ice creams.",
+          "Two books.",
+          "Two flowers.",
+          "Two hats."
+        ],
+        "e": "トモはサキをまつ。まってまつ。サキが来る。アイスを二つもっている。「一つはあなたに！」と言う。いっしょに食べる。おいしい！",
+        "free": true
+      },
+      {
+        "q": "A boy finds money. It is not his. He looks for the owner. He finds her. He gives it back. \"Thank you!\" she says. The boy feels good.\n\nWhat does the boy do with the money?",
+        "a": "He gives it back.",
+        "choices": [
+          "He gives it back.",
+          "He keeps it.",
+          "He buys toys.",
+          "He hides it."
+        ],
+        "e": "男の子がお金を見つける。じぶんのじゃない。もちぬしをさがす。見つける。かえす。「ありがとう！」と言われる。男の子はいいきもち。",
+        "free": true
+      },
+      {
+        "q": "A dog waits at the door. He waits all day. His friend comes home. The dog runs to him. They are so happy. A dog is a good friend.\n\nWhat does the dog do all day?",
+        "a": "He waits.",
+        "choices": [
+          "He waits.",
+          "He sleeps.",
+          "He eats.",
+          "He runs away."
+        ],
+        "e": "イヌがドアでまつ。一日じゅうまつ。ともだちが帰る。イヌがかけよる。とてもうれしい。イヌはいいともだち。",
+        "free": true
+      },
+      {
+        "q": "Mika has no money. So she makes a card. She writes, \"I love you, Mom.\" Mom reads it. Mom cries. \"This is the best gift,\" Mom says.\n\nWhat does Mika make?",
+        "a": "A card.",
+        "choices": [
+          "A card.",
+          "A cake.",
+          "A hat.",
+          "A toy."
+        ],
+        "e": "ミカはお金がない。だからカードをつくる。「ママ、だいすき」とかく。ママが読む。ママがなく。「いちばんのプレゼント」とママが言う。",
+        "free": true
+      },
+      {
+        "q": "A baby cries. A little girl has ice cream. She gives it to the baby. The baby smiles. The girl has no ice cream now. But she is happy.\n\nWhat does the girl give the baby?",
+        "a": "Her ice cream.",
+        "choices": [
+          "Her ice cream.",
+          "A toy.",
+          "A book.",
+          "A hat."
+        ],
+        "e": "あかちゃんがなく。小さな女の子がアイスをもつ。あかちゃんにあげる。あかちゃんがわらう。女の子はアイスがない。でもうれしい。",
+        "free": true
+      },
+      {
+        "q": "It is cold. A man sees a small cat. The cat is cold. The man gives it food. He gives it a warm box. The cat is happy. The man is happy, too.\n\nWhat does the man give the cat?",
+        "a": "Food and a warm box.",
+        "choices": [
+          "Food and a warm box.",
+          "A toy.",
+          "A ball.",
+          "A hat."
+        ],
+        "e": "さむい。男の人が小さなネコを見る。ネコはさむい。男の人が食べものをあげる。あたたかいはこもあげる。ネコはうれしい。男の人もうれしい。",
+        "free": true
+      },
+      {
+        "q": "Mika has a red bag. Her pencils and her lunch are in the bag. There is no book in it. \nQ: What is NOT in Mika's bag?",
+        "a": "A book.",
+        "choices": [
+          "A book.",
+          "Her pencils.",
+          "Her lunch.",
+          "An eraser."
+        ],
+        "e": "ミカは赤いかばんを持っている。えんぴつとお弁当が入っている。本は入っていない。→入っていないのは本。",
+        "free": true
+      },
+      {
+        "q": "Sam likes milk. Every morning he drinks two cups of milk. He does not like juice. \nQ: What does Sam drink every morning?",
+        "a": "Milk.",
+        "choices": [
+          "Milk.",
+          "Juice.",
+          "Tea.",
+          "Water."
+        ],
+        "e": "サムは牛乳が好きで毎朝2杯飲む。ジュースは好きでない。→牛乳。",
+        "free": true
+      },
+      {
+        "q": "There are three cats in the box. One is black. Two are white. \nQ: How many white cats are there?",
+        "a": "Two.",
+        "choices": [
+          "Two.",
+          "One.",
+          "Three.",
+          "Four."
+        ],
+        "e": "箱に3匹のネコ。1匹は黒、2匹は白。→白は2匹。",
+        "free": true
+      },
+      {
+        "q": "Ken plays soccer on Sunday. On Monday he plays the piano. Today is Sunday. \nQ: What does Ken do today?",
+        "a": "Plays soccer.",
+        "choices": [
+          "Plays soccer.",
+          "Plays the piano.",
+          "Reads a book.",
+          "Sleeps."
+        ],
+        "e": "ケンは日曜サッカー、月曜ピアノ。今日は日曜。→サッカー。",
+        "free": true
+      },
+      {
+        "q": "The dog is under the table. The ball is on the table. The cat is on the chair. \nQ: Where is the dog?",
+        "a": "Under the table.",
+        "choices": [
+          "Under the table.",
+          "On the table.",
+          "On the chair.",
+          "In the box."
+        ],
+        "e": "犬はテーブルの下、ボールは上、ネコはいすの上。→犬は下。",
+        "free": true
+      },
+      {
+        "q": "Emi wants an apple. But there are only bananas in the kitchen. So she eats a banana. \nQ: What does Emi eat?",
+        "a": "A banana.",
+        "choices": [
+          "A banana.",
+          "An apple.",
+          "An orange.",
+          "Bread."
+        ],
+        "e": "エミはりんごが欲しいがバナナしかない。→バナナを食べる。",
+        "free": true
+      },
+      {
+        "q": "It is raining today. Tom takes his umbrella to school. He does not take his cap. \nQ: What does Tom take to school?",
+        "a": "His umbrella.",
+        "choices": [
+          "His umbrella.",
+          "His cap.",
+          "His ball.",
+          "His dog."
+        ],
+        "e": "雨なのでトムはかさを持っていく。ぼうしは持たない。→かさ。",
+        "free": true
+      },
+      {
+        "q": "Yuki has two brothers and one sister. She has no dog. \nQ: How many sisters does Yuki have?",
+        "a": "One.",
+        "choices": [
+          "One.",
+          "Two.",
+          "Three.",
+          "Zero."
+        ],
+        "e": "ユキは兄弟が2人、姉妹が1人。→姉妹は1人。",
+        "free": true
+      },
+      {
+        "q": "The shop opens at nine. It is eight now. The shop is not open. \nQ: Is the shop open now?",
+        "a": "No, it is not.",
+        "choices": [
+          "No, it is not.",
+          "Yes, it is.",
+          "It opens at eight.",
+          "It is always open."
+        ],
+        "e": "店は9時開店。今8時なのでまだ開いていない。→開いていない。",
+        "free": true
+      },
+      {
+        "q": "Ben is happy. Today is his birthday. He is seven years old. \nQ: Why is Ben happy?",
+        "a": "It is his birthday.",
+        "choices": [
+          "It is his birthday.",
+          "It is raining.",
+          "He is sleepy.",
+          "He lost his cake."
+        ],
+        "e": "ベンは今日誕生日で7歳。→誕生日だからうれしい。",
+        "free": true
+      },
+      {
+        "q": "Nana likes red. Her bike is red. Her hat is red, too. But her shoes are blue. \nQ: What color are Nana's shoes?",
+        "a": "Blue.",
+        "choices": [
+          "Blue.",
+          "Red.",
+          "Green.",
+          "Yellow."
+        ],
+        "e": "ナナは赤が好き。自転車も帽子も赤。でもくつは青。→くつは青。",
+        "free": true
+      },
+      {
+        "q": "The bird is in the tree. It sings a song. A boy listens to the bird. \nQ: What does the bird do?",
+        "a": "It sings.",
+        "choices": [
+          "It sings.",
+          "It swims.",
+          "It sleeps.",
+          "It runs."
+        ],
+        "e": "鳥が木で歌う。少年が聞く。→鳥は歌う。",
+        "free": true
+      },
+      {
+        "q": "Mom makes cookies. There are ten cookies. Ken eats three. \nQ: How many cookies are left?",
+        "a": "Seven.",
+        "choices": [
+          "Seven.",
+          "Three.",
+          "Ten.",
+          "Five."
+        ],
+        "e": "クッキー10個。ケンが3個食べる。→残り7個。",
+        "free": true
+      },
+      {
+        "q": "Lisa goes to the park by bike. Her brother goes by bus. \nQ: How does Lisa go to the park?",
+        "a": "By bike.",
+        "choices": [
+          "By bike.",
+          "By bus.",
+          "By car.",
+          "On foot."
+        ],
+        "e": "リサは自転車、兄弟はバスで公園へ。→リサは自転車。",
+        "free": true
+      },
+      {
+        "q": "The soup is hot. Dad waits. Then he drinks it slowly. \nQ: Why does Dad wait?",
+        "a": "The soup is hot.",
+        "choices": [
+          "The soup is hot.",
+          "The soup is cold.",
+          "He is full.",
+          "He hates soup."
+        ],
+        "e": "スープが熱い。パパは待ってからゆっくり飲む。→熱いから。",
+        "free": true
+      },
+      {
+        "q": "There are five apples on the tree. Two apples fall down. \nQ: How many apples are on the tree now?",
+        "a": "Three.",
+        "choices": [
+          "Three.",
+          "Five.",
+          "Two.",
+          "Seven."
+        ],
+        "e": "木にりんご5個。2個落ちる。→木には3個。",
+        "free": true
+      },
+      {
+        "q": "Kenta is tall. His sister is short. His dog is very small. \nQ: Who is tall?",
+        "a": "Kenta.",
+        "choices": [
+          "Kenta.",
+          "His sister.",
+          "His dog.",
+          "His cat."
+        ],
+        "e": "ケンタは背が高い。姉妹は低い。犬は小さい。→背が高いのはケンタ。",
+        "free": true
+      },
+      {
+        "q": "Aya reads a book every night. Tonight she reads a book about the sea. \nQ: What is tonight's book about?",
+        "a": "The sea.",
+        "choices": [
+          "The sea.",
+          "The sky.",
+          "Cars.",
+          "Dogs."
+        ],
+        "e": "アヤは毎晩読書。今夜は海の本。→海について。",
+        "free": true
+      },
+      {
+        "q": "The cake is for Grandma. It has ten candles. Grandma is happy. \nQ: Who is the cake for?",
+        "a": "Grandma.",
+        "choices": [
+          "Grandma.",
+          "The dog.",
+          "The teacher.",
+          "Ken."
+        ],
+        "e": "ケーキはおばあちゃんのため。→おばあちゃん。",
+        "free": true
+      },
+      {
+        "q": "Taro can swim. He can run fast. But he can't fly. \nQ: What can Taro NOT do?",
+        "a": "Fly.",
+        "choices": [
+          "Fly.",
+          "Swim.",
+          "Run.",
+          "Walk."
+        ],
+        "e": "タロウは泳げる、速く走れる。でも飛べない。→飛べない。",
+        "free": true
+      },
+      {
+        "q": "The train comes at ten. Mari is at the station at nine fifty. She waits ten minutes. \nQ: What time does the train come?",
+        "a": "At ten.",
+        "choices": [
+          "At ten.",
+          "At nine.",
+          "At eleven.",
+          "At nine fifty."
+        ],
+        "e": "電車は10時。マリは9時50分に着き10分待つ。→10時。",
+        "free": true
+      },
+      {
+        "q": "Our class has twenty students. Ten are boys. \nQ: How many girls are in the class?",
+        "a": "Ten.",
+        "choices": [
+          "Ten.",
+          "Twenty.",
+          "Five.",
+          "Fifteen."
+        ],
+        "e": "クラスは20人、男子10人。→女子は10人。",
+        "free": true
+      },
+      {
+        "q": "Jim likes summer. He can swim in the sea. He does not like winter. \nQ: Why does Jim like summer?",
+        "a": "He can swim in the sea.",
+        "choices": [
+          "He can swim in the sea.",
+          "He can ski.",
+          "It is cold.",
+          "He likes snow."
+        ],
+        "e": "ジムは夏が好き。海で泳げるから。→海で泳げるから。",
+        "free": true
+      },
+      {
+        "q": "The pen is on the desk. The eraser is in the pencil case. The ruler is in the bag. \nQ: Where is the pen?",
+        "a": "On the desk.",
+        "choices": [
+          "On the desk.",
+          "In the bag.",
+          "In the pencil case.",
+          "On the chair."
+        ],
+        "e": "ペンは机の上。→机の上。",
+        "free": true
+      },
+      {
+        "q": "Mika waters the flowers every day. Today she is sick, so her mother waters them. \nQ: Who waters the flowers today?",
+        "a": "Her mother.",
+        "choices": [
+          "Her mother.",
+          "Mika.",
+          "Her father.",
+          "The teacher."
+        ],
+        "e": "いつもはミカが水やり。今日は病気で母がやる。→母。",
+        "free": true
+      },
+      {
+        "q": "There are four seasons. Now it is cold and there is snow. \nQ: What season is it now?",
+        "a": "Winter.",
+        "choices": [
+          "Winter.",
+          "Summer.",
+          "Spring.",
+          "Fall."
+        ],
+        "e": "寒くて雪→今は冬。",
+        "free": true
+      },
+      {
+        "q": "Ken has 100 yen. A candy is 30 yen. He buys one candy. \nQ: How much money does Ken have now?",
+        "a": "70 yen.",
+        "choices": [
+          "70 yen.",
+          "30 yen.",
+          "100 yen.",
+          "130 yen."
+        ],
+        "e": "100円からあめ30円を買う。→残り70円。",
+        "free": true
+      },
+      {
+        "q": "The library is quiet. People read books there. They do not talk loudly. \nQ: What do people do in the library?",
+        "a": "Read books.",
+        "choices": [
+          "Read books.",
+          "Sing songs.",
+          "Play soccer.",
+          "Cook food."
+        ],
+        "e": "図書館は静か。本を読む。→本を読む。",
+        "free": true
+      },
+      {
+        "q": "Sara has a cat and a bird. The cat is white. The bird is yellow. \nQ: What color is the bird?",
+        "a": "Yellow.",
+        "choices": [
+          "Yellow.",
+          "White.",
+          "Black.",
+          "Brown."
+        ],
+        "e": "サラのネコは白、鳥は黄色。→鳥は黄色。",
+        "free": true
+      },
+      {
+        "q": "Today Ken feels cold. He puts on a coat. Then he feels warm. \nQ: Why does Ken put on a coat?",
+        "a": "He feels cold.",
+        "choices": [
+          "He feels cold.",
+          "He feels hot.",
+          "He is sleepy.",
+          "He is hungry."
+        ],
+        "e": "ケンは寒いのでコートを着る。→寒いから。",
+        "free": true
+      }
+    ],
+    "Lv2": [
+      {
+        "q": "Tom has a cat. The cat likes to sleep on Tom's homework. Every morning, Tom says, \"My cat ate my homework!\" His teacher just smiles. She has a cat, too.\n\nWhy does Tom's teacher smile?",
+        "a": "She also has a cat.",
+        "choices": [
+          "She also has a cat.",
+          "She is angry.",
+          "She hates cats.",
+          "She lost her homework."
+        ],
+        "e": "トムはネコを飼っている。そのネコはトムの宿題の上で寝るのが好きだ。毎朝トムは「ネコが宿題を食べた！」と言う。先生はただ笑う。先生もネコを飼っているのだ。",
+        "free": false
+      },
+      {
+        "q": "Ken wanted to be tall. Every night he ate a lot of vegetables. One day his little brother said, \"Ken, you are not taller. You are just rounder!\" Ken stopped eating so much.\n\nWhat happened to Ken?",
+        "a": "He became rounder, not taller.",
+        "choices": [
+          "He became rounder, not taller.",
+          "He became taller.",
+          "He became thinner.",
+          "He stopped eating vegetables forever."
+        ],
+        "e": "ケンは背が高くなりたかった。毎晩たくさん野菜を食べた。ある日、弟が言った。「ケン、背は高くなってないよ。ただ丸くなっただけ！」ケンは食べ過ぎるのをやめた。",
+        "free": false
+      },
+      {
+        "q": "A dog walked into a shop. It looked at the toys. It picked up a small ball and put it on the table. The shopkeeper was surprised. Then the dog's owner came in and paid for it.\n\nWhat did the dog choose?",
+        "a": "A small ball.",
+        "choices": [
+          "A small ball.",
+          "A big bone.",
+          "A toy car.",
+          "Some food."
+        ],
+        "e": "一匹の犬が店に入ってきた。おもちゃを見て、小さなボールをくわえてテーブルに置いた。店員は驚いた。それから犬の飼い主が入ってきて、お金を払った。",
+        "free": false
+      },
+      {
+        "q": "Mary cooked dinner for her family. The soup looked strange and green. Everyone was afraid to try it. Her dad ate it first and said, \"It's delicious!\" Then he quietly drank a lot of water.\n\nWhat did Mary's dad do after eating?",
+        "a": "He quietly drank a lot of water.",
+        "choices": [
+          "He quietly drank a lot of water.",
+          "He cooked again.",
+          "He left the house.",
+          "He ate more soup."
+        ],
+        "e": "メアリーは家族に夕食を作った。スープは変な緑色をしていた。みんな食べるのをこわがった。父が最初に食べて「おいしい！」と言った。それからこっそり水をたくさん飲んだ。",
+        "free": false
+      },
+      {
+        "q": "Sam was very sleepy in class. He closed his eyes for just one minute. When he opened them, everyone was looking at him and smiling. The teacher said, \"Good morning, Sam. Did you have a nice dream?\" Everyone laughed, and Sam laughed, too.\n\nWhat did the teacher say to Sam?",
+        "a": "Did you have a nice dream?",
+        "choices": [
+          "Did you have a nice dream?",
+          "Go home now.",
+          "Open your book.",
+          "You are late."
+        ],
+        "e": "サムは授業中とても眠かった。ほんの1分だけ目を閉じた。目を開けると、みんなが彼を見てほほえんでいた。先生は「おはよう、サム。いい夢を見た？」と言った。みんな笑い、サムも笑った。",
+        "free": false
+      },
+      {
+        "q": "It was midnight. Yuki heard a soft sound at her window. She lived on the third floor. Slowly, she pulled back the curtain. A small bird was sitting there in the rain. Yuki opened the window a little and gave it a warm place to stay.\n\nWhat did Yuki find at the window?",
+        "a": "A small bird.",
+        "choices": [
+          "A small bird.",
+          "A cat.",
+          "A letter.",
+          "Her friend."
+        ],
+        "e": "真夜中だった。ユキは窓で小さな音を聞いた。彼女は3階に住んでいた。ゆっくりカーテンを開けた。小さな鳥が雨の中でそこに座っていた。ユキは窓を少し開けて、あたたかい場所をあげた。",
+        "free": false
+      },
+      {
+        "q": "Ben found an old doll in the attic. It was his grandmother's doll. He cleaned it and put it on a chair. In the morning, he gave it to his grandmother. She smiled and said, \"I played with this doll when I was a girl!\"\n\nWhat did Ben do with the doll?",
+        "a": "He gave it to his grandmother.",
+        "choices": [
+          "He gave it to his grandmother.",
+          "He sold it.",
+          "He left it in the attic.",
+          "He gave it to his sister."
+        ],
+        "e": "ベンは屋根裏で古い人形を見つけた。それは祖母の人形だった。きれいにして椅子に置いた。朝、祖母にそれをあげた。祖母はほほえんで言った。「女の子のころ、この人形で遊んだのよ！」",
+        "free": false
+      },
+      {
+        "q": "Every morning at seven, the old clock in the hall rang. It was very old, but it was never wrong. Grandpa cleaned it every Sunday. \"This clock is older than me,\" he said, \"but it still works hard. So do I!\"\n\nWhy did Grandpa like the clock?",
+        "a": "It was old but still worked well.",
+        "choices": [
+          "It was old but still worked well.",
+          "It was new.",
+          "It was very quiet.",
+          "It was a gift from Ben."
+        ],
+        "e": "毎朝7時に、廊下の古い時計が鳴った。とても古かったが、決して狂わなかった。おじいちゃんは毎週日曜日にそれを手入れした。「この時計は私より年上だ」と彼は言った。「でもまだよく働く。私もだ！」",
+        "free": false
+      },
+      {
+        "q": "Mika took a photo of her room. When she looked at the picture, she saw a face in the mirror behind her. It was her little brother! He was hiding there and making a funny face. Mika laughed and kept the photo.\n\nWhose face did Mika see in the photo?",
+        "a": "Her little brother's.",
+        "choices": [
+          "Her little brother's.",
+          "Her mother's.",
+          "Her own.",
+          "Her teacher's."
+        ],
+        "e": "ミカは自分の部屋の写真を撮った。写真を見ると、後ろの鏡に顔が映っていた。弟だった！彼はそこに隠れて、変な顔をしていた。ミカは笑って、その写真をとっておいた。",
+        "free": false
+      },
+      {
+        "q": "A boy walked home in the evening. He heard footsteps behind him. He walked faster. The footsteps walked faster, too. He stopped and looked back. It was his dog! The dog followed him all the way from the park.\n\nWhat was behind the boy?",
+        "a": "His dog.",
+        "choices": [
+          "His dog.",
+          "His friend.",
+          "A cat.",
+          "His father."
+        ],
+        "e": "少年は夕方、歩いて帰った。後ろから足音が聞こえた。彼は速く歩いた。足音も速くなった。彼は止まって振り返った。彼の犬だった！犬は公園からずっと彼についてきたのだ。",
+        "free": false
+      },
+      {
+        "q": "Aya sat next to a quiet boy on the bus every day. They never spoke. One morning, he gave her a small paper flower. She kept it in her bag. The next day, she gave him one, too.\n\nWhat did the boy give Aya?",
+        "a": "A small paper flower.",
+        "choices": [
+          "A small paper flower.",
+          "A book.",
+          "His phone number.",
+          "A candy."
+        ],
+        "e": "アヤは毎日バスで静かな男の子の隣に座った。二人は話さなかった。ある朝、彼は彼女に小さな紙の花をくれた。彼女はそれをかばんに入れておいた。翌日、彼女も彼に一つあげた。",
+        "free": false
+      },
+      {
+        "q": "Ryo liked a girl in his class. He was too shy to talk to her. So he drew a picture of her smile and left it on her desk. He did not write his name. But she knew it was him.\n\nWhy did Ryo leave a picture?",
+        "a": "He was too shy to talk to her.",
+        "choices": [
+          "He was too shy to talk to her.",
+          "He wanted to win a prize.",
+          "His teacher told him to.",
+          "He needed money."
+        ],
+        "e": "リョウはクラスの女の子が好きだった。恥ずかしくて話しかけられなかった。だから彼女の笑顔の絵を描いて、机に置いた。名前は書かなかった。でも彼女は彼だと分かった。",
+        "free": false
+      },
+      {
+        "q": "It started to rain. Mina had no umbrella. A boy she liked ran to her and held his umbrella over her head. \"Let's share,\" he said. They walked home slowly, even though the rain soon stopped.\n\nWhy did they walk slowly?",
+        "a": "They wanted to stay together longer.",
+        "choices": [
+          "They wanted to stay together longer.",
+          "They were tired.",
+          "The road was wet.",
+          "They were lost."
+        ],
+        "e": "雨が降り始めた。ミナは傘を持っていなかった。好きな男の子が走ってきて、彼女の頭の上に傘をさしかけた。「一緒に入ろう」と彼は言った。雨はすぐにやんだのに、二人はゆっくり歩いて帰った。",
+        "free": false
+      },
+      {
+        "q": "Sora and Hana were good friends. On her birthday, Sora gave Hana a blue ribbon. \"It's the color of the sky,\" he said. \"So you can think of me when you look up.\" Hana wore it every day after that.\n\nWhy did Sora choose a blue ribbon?",
+        "a": "So Hana would think of him when looking at the sky.",
+        "choices": [
+          "So Hana would think of him when looking at the sky.",
+          "Blue was on sale.",
+          "It was Hana's old ribbon.",
+          "The teacher chose it."
+        ],
+        "e": "ソラとハナは仲のよい友達だった。誕生日に、ソラはハナに青いリボンをあげた。「空の色だよ」と彼は言った。「見上げたとき、僕のことを思い出せるように。」それからハナは毎日それをつけた。",
+        "free": false
+      },
+      {
+        "q": "Every day after school, Tomo waited at the gate for Saki. One day Saki was sick and did not come. Tomo waited for two hours in the cold. The next day, Saki cried and said, \"Don't wait so long again.\"\n\nWhy did Saki cry?",
+        "a": "Tomo waited so long in the cold for her.",
+        "choices": [
+          "Tomo waited so long in the cold for her.",
+          "She lost her bag.",
+          "She failed a test.",
+          "Tomo was angry."
+        ],
+        "e": "放課後、トモは毎日門でサキを待った。ある日サキは病気で来なかった。トモは寒い中2時間待った。翌日、サキは泣いて言った。「もうそんなに長く待たないで。」",
+        "free": false
+      },
+      {
+        "q": "A poor boy found a wallet full of money. He looked for the owner for two hours. Finally, he gave it back. The owner was so happy that she gave him a small reward and a big smile.\n\nWhat did the boy do with the wallet?",
+        "a": "He gave it back to the owner.",
+        "choices": [
+          "He gave it back to the owner.",
+          "He kept the money.",
+          "He threw it away.",
+          "He bought toys."
+        ],
+        "e": "貧しい少年がお金でいっぱいの財布を見つけた。2時間、持ち主を探した。ついに返した。持ち主はとても喜び、彼に小さなお礼と大きな笑顔をくれた。",
+        "free": false
+      },
+      {
+        "q": "An old dog waited at the station every evening. His owner came home by train at six. The dog always knew the time. People in the town loved him and often gave him snacks. When the train arrived, the dog's tail never stopped moving.\n\nWhy did the dog wait at the station?",
+        "a": "He was waiting for his owner.",
+        "choices": [
+          "He was waiting for his owner.",
+          "He wanted food.",
+          "He was lost.",
+          "He liked trains."
+        ],
+        "e": "年老いた犬が毎晩駅で待っていた。飼い主は6時の電車で帰ってきた。犬はいつも時間を知っていた。町の人々は犬を愛し、よくおやつをあげた。電車が着くと、犬のしっぽは止まらなかった。",
+        "free": false
+      },
+      {
+        "q": "Mika had no money for her mother's birthday. So she made a card by hand and wrote, \"Thank you for everything.\" Her mother cried and said it was the best present in her life.\n\nWhy did the mother cry?",
+        "a": "She was moved by the handmade card.",
+        "choices": [
+          "She was moved by the handmade card.",
+          "She was sad.",
+          "She lost her present.",
+          "She was sick."
+        ],
+        "e": "ミカは母の誕生日にあげるお金がなかった。だから手作りのカードを作り、「いつもありがとう」と書いた。母は泣いて、今までもらった中で一番のプレゼントだと言った。",
+        "free": false
+      },
+      {
+        "q": "A small girl gave her ice cream to a crying baby. Her own ice cream fell on the ground a moment later. She did not cry. \"The baby's smile is sweeter than ice cream,\" she said.\n\nWhy didn't the girl cry?",
+        "a": "The baby's smile made her happy.",
+        "choices": [
+          "The baby's smile made her happy.",
+          "She had more ice cream.",
+          "She did not like ice cream.",
+          "Her mother helped her."
+        ],
+        "e": "小さな女の子が、泣いている赤ちゃんに自分のアイスをあげた。その直後、彼女のアイスは地面に落ちた。彼女は泣かなかった。「赤ちゃんの笑顔の方がアイスより甘いもん」と言った。",
+        "free": false
+      },
+      {
+        "q": "Every winter, a man left warm food outside for the street cats. He was not rich, but he shared what he had. One cold morning, the cats came to his door and sat with him. They kept him warm, too.\n\nWhat did the cats do one cold morning?",
+        "a": "They sat with the man and kept him warm.",
+        "choices": [
+          "They sat with the man and kept him warm.",
+          "They ran away.",
+          "They brought him food.",
+          "They woke him up."
+        ],
+        "e": "毎年冬、ある男が野良猫のために温かい食べ物を外に置いた。彼は裕福ではなかったが、持っているものを分け合った。ある寒い朝、猫たちが彼のドアに来て一緒に座り、彼も温めてくれた。",
+        "free": false
+      },
+      {
+        "q": "Ken wanted a dog. His mother said, \"First, take care of this plant for one month.\" Ken watered it every day, and it grew well. The next month, he got a puppy. \nQ: Why did Ken get a puppy?",
+        "a": "He took care of the plant well.",
+        "choices": [
+          "He took care of the plant well.",
+          "He bought it himself.",
+          "He cried a lot.",
+          "The plant died."
+        ],
+        "e": "犬が欲しいケンは、母に「まず1か月植物の世話を」と言われ毎日世話をした。翌月子犬をもらえた。→世話をきちんとしたから。",
+        "free": false
+      },
+      {
+        "q": "Mari lost her key in the park. She looked everywhere. Finally, she found it in her own pocket. \nQ: Where was the key?",
+        "a": "In her pocket.",
+        "choices": [
+          "In her pocket.",
+          "Under a tree.",
+          "In the pond.",
+          "At school."
+        ],
+        "e": "マリは公園でカギをなくし探したが、自分のポケットにあった。→ポケットの中。",
+        "free": false
+      },
+      {
+        "q": "Tom said he was not afraid of anything. But when a small spider walked on his desk, he jumped and shouted. \nQ: What do we learn about Tom?",
+        "a": "He was afraid of the spider.",
+        "choices": [
+          "He was afraid of the spider.",
+          "He liked spiders.",
+          "He was very brave.",
+          "He caught the spider."
+        ],
+        "e": "トムは何も怖くないと言ったが、小さなクモに飛び上がって叫んだ。→本当はクモが怖い。",
+        "free": false
+      },
+      {
+        "q": "It was Aya's turn to clean the board. She was busy talking, so her friend Yuki cleaned it for her. Aya said thank you. \nQ: Who cleaned the board?",
+        "a": "Yuki.",
+        "choices": [
+          "Yuki.",
+          "Aya.",
+          "The teacher.",
+          "No one."
+        ],
+        "e": "黒板そうじはアヤの番だが、話に夢中でユキが代わりにやった。→ユキ。",
+        "free": false
+      },
+      {
+        "q": "Grandpa put on his glasses to read the news. He looked and looked but could not find them. They were already on his face. \nQ: Where were the glasses?",
+        "a": "On his face.",
+        "choices": [
+          "On his face.",
+          "On the table.",
+          "In the box.",
+          "Under the bed."
+        ],
+        "e": "おじいちゃんはメガネを探したが、すでに顔にかけていた。→顔の上。",
+        "free": false
+      },
+      {
+        "q": "Sara baked bread for the first time. It was very hard, like a rock. Her family smiled and ate it anyway. \nQ: How was the bread?",
+        "a": "Very hard.",
+        "choices": [
+          "Very hard.",
+          "Very soft.",
+          "Too sweet.",
+          "Cold."
+        ],
+        "e": "サラが初めて焼いたパンは石のように固かった。家族は笑って食べた。→とても固い。",
+        "free": false
+      },
+      {
+        "q": "Ken's team was losing 3 to 0. In the last minute, Ken scored one goal. His team was happy, but they still lost. \nQ: Did Ken's team win?",
+        "a": "No, they lost.",
+        "choices": [
+          "No, they lost.",
+          "Yes, they won.",
+          "The game stopped.",
+          "They scored three."
+        ],
+        "e": "3対0で負けていたが、最後にケンが1点。それでも負けた。→負けた。",
+        "free": false
+      },
+      {
+        "q": "Mom told Ben not to eat the cake before dinner. Ben did not eat it. Instead, he ate all the cookies. \nQ: What did Ben eat?",
+        "a": "All the cookies.",
+        "choices": [
+          "All the cookies.",
+          "The cake.",
+          "Nothing.",
+          "The dinner."
+        ],
+        "e": "ベンはケーキは食べなかったが、クッキーを全部食べた。→クッキー。",
+        "free": false
+      },
+      {
+        "q": "Lisa practiced the song for a week. On the day of the show, she forgot the words, but she smiled and hummed. Everyone clapped. \nQ: What happened on the show day?",
+        "a": "She forgot the words.",
+        "choices": [
+          "She forgot the words.",
+          "She did not come.",
+          "She sang perfectly.",
+          "She cried and left."
+        ],
+        "e": "リサは1週間練習したが本番で歌詞を忘れ、笑って口ずさんだ。→歌詞を忘れた。",
+        "free": false
+      },
+      {
+        "q": "The weather report said it would be sunny. So Jim left his umbrella at home. In the afternoon, it rained hard. \nQ: Why did Jim get wet?",
+        "a": "He left his umbrella at home.",
+        "choices": [
+          "He left his umbrella at home.",
+          "He forgot his shoes.",
+          "He swam in the sea.",
+          "He washed the car."
+        ],
+        "e": "晴れ予報でかさを置いてきたが午後大雨。→かさを置いてきたから。",
+        "free": false
+      },
+      {
+        "q": "Nana wanted the big cake, but only a small piece was left. Her brother gave her his piece. Nana was very happy. \nQ: Why was Nana happy?",
+        "a": "Her brother gave her his piece.",
+        "choices": [
+          "Her brother gave her his piece.",
+          "She ate the whole cake.",
+          "She baked a new cake.",
+          "She got money."
+        ],
+        "e": "大きいケーキは残りわずか。兄が自分の分をくれた。→兄が分けてくれたから。",
+        "free": false
+      },
+      {
+        "q": "The cat sat on Ken's homework every morning. Ken could not write. One day he put a warm blanket on the sofa, and the cat moved there. \nQ: How did Ken solve the problem?",
+        "a": "He put a warm blanket on the sofa.",
+        "choices": [
+          "He put a warm blanket on the sofa.",
+          "He threw the cat outside.",
+          "He stopped doing homework.",
+          "He bought a new cat."
+        ],
+        "e": "ネコが宿題の上に座る。暖かい毛布をソファに置くとネコは移動。→毛布を置いた。",
+        "free": false
+      },
+      {
+        "q": "Taro planted tomato seeds in May. He watered them all summer. In August, he picked ten red tomatoes. \nQ: When did Taro pick the tomatoes?",
+        "a": "In August.",
+        "choices": [
+          "In August.",
+          "In May.",
+          "In winter.",
+          "He picked none."
+        ],
+        "e": "5月に種、夏中水やり、8月に赤いトマト10個収穫。→8月。",
+        "free": false
+      },
+      {
+        "q": "Emi drew a picture of a horse. Her little brother said it looked like a dog. Emi laughed and added a long tail. \nQ: What did Emi's brother think of the picture?",
+        "a": "It looked like a dog.",
+        "choices": [
+          "It looked like a dog.",
+          "It looked like a horse.",
+          "It was too dark.",
+          "It was beautiful."
+        ],
+        "e": "エミの馬の絵を弟は犬みたいと言った。→犬に見えた。",
+        "free": false
+      },
+      {
+        "q": "The bus was full, so an old man had no seat. A young girl stood up and gave him her seat. He said thank you. \nQ: Why did the man say thank you?",
+        "a": "The girl gave him her seat.",
+        "choices": [
+          "The girl gave him her seat.",
+          "The bus was empty.",
+          "He found money.",
+          "The girl sang."
+        ],
+        "e": "満員バスで席のない老人に少女が席をゆずった。→席をゆずったから。",
+        "free": false
+      },
+      {
+        "q": "Ken saved 500 yen. He wanted a 700-yen toy. He waited and saved more. After two weeks, he bought it. \nQ: Why did Ken wait two weeks?",
+        "a": "He needed more money.",
+        "choices": [
+          "He needed more money.",
+          "The shop was closed.",
+          "He lost the toy.",
+          "He hated the toy."
+        ],
+        "e": "500円貯めたが700円のおもちゃに足りず、貯めて2週間後に買えた。→お金が足りなかったから。",
+        "free": false
+      },
+      {
+        "q": "Mari's room was messy. Her mother said, \"Clean it and I will be happy.\" Mari cleaned it, and she felt good, too. \nQ: How did Mari feel after cleaning?",
+        "a": "She felt good.",
+        "choices": [
+          "She felt good.",
+          "She felt angry.",
+          "She felt sick.",
+          "She felt sleepy."
+        ],
+        "e": "部屋を片付けたマリは自分も気持ちよくなった。→気分が良い。",
+        "free": false
+      },
+      {
+        "q": "Tom bought a plant to make his room green. He forgot to water it. After a month, the plant was brown. \nQ: Why did the plant turn brown?",
+        "a": "He forgot to water it.",
+        "choices": [
+          "He forgot to water it.",
+          "He gave it too much water.",
+          "It was winter.",
+          "He painted it."
+        ],
+        "e": "水やりを忘れて1か月で茶色に。→水やりを忘れたから。",
+        "free": false
+      },
+      {
+        "q": "The teacher asked a hard question. No one raised a hand. Then quiet Aya answered, and she was right. \nQ: Who answered the question?",
+        "a": "Aya.",
+        "choices": [
+          "Aya.",
+          "The teacher.",
+          "Tom.",
+          "No one."
+        ],
+        "e": "難問に誰も手を挙げず、静かなアヤが正解した。→アヤ。",
+        "free": false
+      },
+      {
+        "q": "Ben and his sister found 100 yen on the road. They gave it to a police officer. The officer said, \"Good children.\" \nQ: What did Ben and his sister do with the money?",
+        "a": "They gave it to a police officer.",
+        "choices": [
+          "They gave it to a police officer.",
+          "They kept it.",
+          "They bought candy.",
+          "They lost it."
+        ],
+        "e": "拾った100円を警察に届けた。→警察に渡した。",
+        "free": false
+      },
+      {
+        "q": "Yuki wanted to run fast. She practiced every morning before school. On sports day, she came in first. \nQ: Why did Yuki come in first?",
+        "a": "She practiced every morning.",
+        "choices": [
+          "She practiced every morning.",
+          "She was lucky.",
+          "The others were slow.",
+          "She took a bus."
+        ],
+        "e": "毎朝練習して運動会で1位。→毎朝練習したから。",
+        "free": false
+      },
+      {
+        "q": "Dad tried to fix the chair. After one hour, the chair had three legs, not four. So he bought a new one. \nQ: What did Dad do in the end?",
+        "a": "He bought a new chair.",
+        "choices": [
+          "He bought a new chair.",
+          "He fixed the chair.",
+          "He sat on the floor.",
+          "He sold the chair."
+        ],
+        "e": "パパは修理を失敗し新しいいすを買った。→新しいのを買った。",
+        "free": false
+      },
+      {
+        "q": "The class went to the zoo. It started to rain, so they saw only the lions. The children still had fun. \nQ: Which animal did the children see?",
+        "a": "The lions.",
+        "choices": [
+          "The lions.",
+          "The pandas.",
+          "The birds.",
+          "No animals."
+        ],
+        "e": "雨でライオンだけ見た。→ライオン。",
+        "free": false
+      },
+      {
+        "q": "Sara's phone battery was low. She wanted to play a game, but she called her grandmother instead. Grandma was very happy. \nQ: What did Sara do?",
+        "a": "She called her grandmother.",
+        "choices": [
+          "She called her grandmother.",
+          "She played a game.",
+          "She turned off the phone.",
+          "She bought a new phone."
+        ],
+        "e": "電池が少なく、ゲームでなく祖母に電話した。→祖母に電話した。",
+        "free": false
+      },
+      {
+        "q": "Ken forgot his lunch. His friend shared half of his own lunch with him. Ken said he would do the same one day. \nQ: What did Ken's friend do?",
+        "a": "He shared his lunch.",
+        "choices": [
+          "He shared his lunch.",
+          "He ate all his lunch.",
+          "He went home.",
+          "He bought new lunch."
+        ],
+        "e": "弁当を忘れたケンに友達が半分分けた。→弁当を分けた。",
+        "free": false
+      },
+      {
+        "q": "The store had a sale. A 1000-yen shirt was 800 yen. Mari bought it and saved 200 yen. \nQ: How much did Mari save?",
+        "a": "200 yen.",
+        "choices": [
+          "200 yen.",
+          "800 yen.",
+          "1000 yen.",
+          "100 yen."
+        ],
+        "e": "1000円が800円。→200円得した。",
+        "free": false
+      },
+      {
+        "q": "Taro was scared of the dark. His father gave him a small light for his room. After that, Taro slept well. \nQ: How did Taro sleep after getting the light?",
+        "a": "He slept well.",
+        "choices": [
+          "He slept well.",
+          "He could not sleep.",
+          "He cried all night.",
+          "He read all night."
+        ],
+        "e": "暗闇が怖いタロウは小さな明かりでよく眠れた。→よく眠れた。",
+        "free": false
+      },
+      {
+        "q": "Aya wrote a letter to her old friend. She waited many days. At last, a long reply came, and Aya smiled. \nQ: Why did Aya smile?",
+        "a": "A reply came from her friend.",
+        "choices": [
+          "A reply came from her friend.",
+          "She lost the letter.",
+          "No one wrote back.",
+          "She moved away."
+        ],
+        "e": "手紙を書いて待つと長い返事が来た。→返事が来たから。",
+        "free": false
+      },
+      {
+        "q": "The soccer ball went over the wall. Ken could not reach it. A tall man walked by and got it for him. \nQ: Who got the ball for Ken?",
+        "a": "A tall man.",
+        "choices": [
+          "A tall man.",
+          "Ken's mother.",
+          "A small child.",
+          "No one."
+        ],
+        "e": "壁を越えたボールを背の高い男性が取ってくれた。→背の高い男性。",
+        "free": false
+      },
+      {
+        "q": "Mari promised to feed the fish while her friend was away. She was busy and forgot for three days. When her friend came back, the fish looked very thin and stared at Mari angrily. \nQ: Why did the fish look thin?",
+        "a": "Mari forgot to feed it.",
+        "choices": [
+          "Mari forgot to feed it.",
+          "The fish ate too much.",
+          "The water was cold.",
+          "The friend fed it."
+        ],
+        "e": "マリは魚のエサやりを約束したが3日忘れ、魚はやせて怒った目でにらんだ。→エサをあげ忘れたから。",
+        "free": false
+      }
+    ],
+    "Lv3": [
+      {
+        "q": "Mr. Brown was proud of his new smart speaker. \"Turn off the lights,\" he said, and the lights went off. His grandmother watched quietly. Later, she walked to the wall, pushed the switch, and said, \"My speaker is faster than yours.\" Everyone laughed because she was right.\n\nWhy did everyone laugh?",
+        "a": "The grandmother's switch was faster than the speaker.",
+        "choices": [
+          "The grandmother's switch was faster than the speaker.",
+          "The speaker was broken.",
+          "Mr. Brown fell down.",
+          "The lights never turned off."
+        ],
+        "e": "ブラウンさんは新しいスマートスピーカーを自慢していた。「ライトを消して」と言うと、明かりが消えた。祖母は静かに見ていた。後で彼女は壁まで歩き、スイッチを押して言った。「私のスピーカーの方が速いわ。」彼女が正しかったので、みんな笑った。",
+        "free": false
+      },
+      {
+        "q": "Lisa decided to surprise her friends by baking a cake. She followed the recipe carefully, but she used salt instead of sugar. When her friends tried it, their faces changed completely. Lisa took one bite and shouted, \"Who made this terrible cake?\" Then she remembered that she did.\n\nWhy did the cake taste bad?",
+        "a": "Lisa used salt instead of sugar.",
+        "choices": [
+          "Lisa used salt instead of sugar.",
+          "Lisa burned the cake.",
+          "The oven was broken.",
+          "Lisa forgot the eggs."
+        ],
+        "e": "リサは友達を驚かせようとケーキを焼くことにした。レシピを丁寧に守ったが、砂糖の代わりに塩を使った。友達が食べると、顔つきがすっかり変わった。リサも一口食べて叫んだ。「誰がこんなひどいケーキ作ったの？」そして、自分だったと思い出した。",
+        "free": false
+      },
+      {
+        "q": "During the test, Jack's stomach made a very loud noise. The whole class went quiet and looked at him. Jack pointed at the boy next to him and frowned. But the boy next to him was eating a sandwich and just smiled. Everyone knew the truth.\n\nWhat did Jack try to do?",
+        "a": "Blame the boy next to him.",
+        "choices": [
+          "Blame the boy next to him.",
+          "Share his lunch.",
+          "Leave the classroom.",
+          "Finish the test first."
+        ],
+        "e": "テスト中、ジャックのお腹がとても大きな音を立てた。クラス全体が静かになり、彼を見た。ジャックは隣の男の子を指さして、しかめ面をした。でも隣の子はサンドイッチを食べていて、ただ笑っていた。みんな本当のことを知っていた。",
+        "free": false
+      },
+      {
+        "q": "Emma's parents told her not to feed the dog from the table. So Emma was very careful. She never gave food to the dog from the table. Instead, she dropped it on the floor first, then the dog ate it. \"I followed the rule,\" she said with a big smile.\n\nHow did Emma follow the rule?",
+        "a": "She dropped food on the floor instead of giving it from the table.",
+        "choices": [
+          "She dropped food on the floor instead of giving it from the table.",
+          "She stopped feeding the dog.",
+          "She fed the dog outside.",
+          "She asked her parents first."
+        ],
+        "e": "エマの両親は、テーブルから犬に食べ物をあげないように言った。だからエマはとても気をつけた。テーブルから犬に食べ物を与えることは決してしなかった。代わりに、まず床に落として、それを犬が食べた。「ルールは守ったよ」と彼女は満面の笑みで言った。",
+        "free": false
+      },
+      {
+        "q": "A man bought a parrot that could say only one sentence: \"Who is there?\" One night, someone knocked on his door. The parrot shouted, \"Who is there?\" The visitor answered, but no one opened the door. He waited for an hour, knocking and answering the bird again and again.\n\nWhy did the visitor wait so long?",
+        "a": "He thought a person was asking who he was.",
+        "choices": [
+          "He thought a person was asking who he was.",
+          "The man was sleeping.",
+          "The door was locked.",
+          "The parrot opened the door."
+        ],
+        "e": "ある男がたった一文だけ言えるオウムを買った。「誰だ？」だ。ある夜、誰かがドアをノックした。オウムが「誰だ？」と叫んだ。客は答えたが、誰もドアを開けなかった。彼は1時間待ち、鳥に何度も答え続けた。",
+        "free": false
+      },
+      {
+        "q": "Sara moved into a new apartment. On the first night, she found a note under the door. It said, \"Welcome! Please look out of the window at 6 a.m.\" She laughed and almost forgot about it. But the next morning, when she opened the curtain, she finally understood. The sun was rising over the sea, and it was the most beautiful view in her life.\n\nWhat did the note tell Sara to do?",
+        "a": "Look out of the window at 6 a.m.",
+        "choices": [
+          "Look out of the window at 6 a.m.",
+          "Open the door.",
+          "Talk to the neighbors.",
+          "Turn off the lights."
+        ],
+        "e": "サラは新しいアパートに引っ越した。最初の夜、ドアの下にメモを見つけた。「ようこそ！朝6時に窓の外を見てください」と書いてあった。彼女は笑って、ほとんど忘れかけた。でも翌朝、カーテンを開けたとき、ついに理解した。海の上に太陽が昇っていて、それは人生で一番美しい景色だった。",
+        "free": false
+      },
+      {
+        "q": "The teacher counted the students before the trip. \"One, two, three... thirty-one.\" But her class had only thirty students. She counted again. Thirty-one. She looked at each face carefully. Then she found the answer. Ken's little brother was standing in the line with a big smile. He wanted to go on the trip, too!\n\nWhat was strange about the count?",
+        "a": "There was one more student than expected.",
+        "choices": [
+          "There was one more student than expected.",
+          "One student was missing.",
+          "The students were too quiet.",
+          "The teacher forgot the number."
+        ],
+        "e": "先生は遠足の前に生徒を数えた。「1、2、3…31人。」でも彼女のクラスは30人しかいなかった。もう一度数えた。31人。一人ひとりの顔をよく見た。そして答えが分かった。ケンの弟が満面の笑みで列に立っていたのだ。彼も遠足に行きたかった！",
+        "free": false
+      },
+      {
+        "q": "Kenji liked to play a game alone. He would ask a question out loud and wait for an answer. Of course, nothing happened. Then one rainy night, after he asked, \"Is anyone there?\", a quiet voice answered, \"Yes, I am.\" It was his grandmother. She was standing at the door with hot cocoa. \"I thought you might be lonely,\" she said.\n\nWho answered Kenji's question?",
+        "a": "His grandmother.",
+        "choices": [
+          "His grandmother.",
+          "His friend.",
+          "A radio.",
+          "His dog."
+        ],
+        "e": "ケンジはひとりで遊ぶゲームが好きだった。声に出して質問をして、答えを待つのだ。もちろん何も起きなかった。そしてある雨の夜、「誰かいる？」と尋ねた後、静かな声が答えた。「うん、いるよ。」祖母だった。彼女はホットココアを持ってドアに立っていた。「さびしいかと思って」と彼女は言った。",
+        "free": false
+      },
+      {
+        "q": "During the storm, the power went out. Lily lit a candle and sat alone. To feel less afraid, she whispered, \"It's okay, I'm not scared.\" From the next room, a voice said the same words: \"It's okay, I'm not scared.\" It was her little brother, holding his teddy bear. Lily laughed, and they sat together until the lights came back.\n\nWho said the same words as Lily?",
+        "a": "Her little brother.",
+        "choices": [
+          "Her little brother.",
+          "Her mother.",
+          "The radio.",
+          "Her friend."
+        ],
+        "e": "嵐の間、停電した。リリーはろうそくをつけて、ひとりで座った。こわさを減らそうと、「大丈夫、こわくない」とささやいた。隣の部屋から、声が同じ言葉を言った。「大丈夫、こわくない。」テディベアを抱えた弟だった。リリーは笑い、二人は明かりが戻るまで一緒に座っていた。",
+        "free": false
+      },
+      {
+        "q": "Yuna and Kai promised to watch the fireworks together every summer. After high school, Kai moved to a city far away. The first summer apart, Yuna went to the festival alone, feeling sad. Then her phone rang. It was a video call from Kai, showing the same fireworks in his new city. \"We are still watching together,\" he said softly.\n\nHow did Kai keep their promise?",
+        "a": "He showed Yuna the same fireworks on a video call.",
+        "choices": [
+          "He showed Yuna the same fireworks on a video call.",
+          "He came back to the festival.",
+          "He sent her a photo.",
+          "He bought new fireworks."
+        ],
+        "e": "ユナとカイは毎年夏、一緒に花火を見ると約束した。高校卒業後、カイは遠い街へ引っ越した。離れて初めての夏、ユナは寂しい気持ちで一人お祭りに行った。すると電話が鳴った。カイからのビデオ通話で、彼の新しい街の同じ花火が映っていた。「僕たちはまだ一緒に見てるよ」と彼は優しく言った。",
+        "free": false
+      },
+      {
+        "q": "Haru lent his favorite book to Nao. Inside, he had secretly underlined the words \"I like you\" on different pages. He hoped she would notice. A week later, Nao returned the book. She had underlined the words \"me too\" in the same way. Neither of them said anything out loud, but both were smiling.\n\nWhat did Nao do with the book?",
+        "a": "She underlined the words 'me too'.",
+        "choices": [
+          "She underlined the words 'me too'.",
+          "She lost the book.",
+          "She wrote a long letter.",
+          "She kept it forever."
+        ],
+        "e": "ハルはお気に入りの本をナオに貸した。中で、彼はこっそりいろんなページの「君が好き」という言葉に下線を引いていた。気づいてほしかった。一週間後、ナオは本を返した。彼女は同じやり方で「私も」という言葉に下線を引いていた。二人とも声には出さなかったが、どちらもほほえんでいた。",
+        "free": false
+      },
+      {
+        "q": "Emi was new and could not speak the language well. During lunch, she always sat alone. One boy, Ken, started leaving small notes on her desk with one easy word and its picture each day. \"Apple.\" \"Smile.\" \"Friend.\" By winter, Emi could speak much better, and the first full sentence she said to Ken was, \"Thank you for everything.\"\n\nHow did Ken help Emi?",
+        "a": "He left notes to teach her words.",
+        "choices": [
+          "He left notes to teach her words.",
+          "He did her homework.",
+          "He spoke her language.",
+          "He gave her money."
+        ],
+        "e": "エミは転校生で、言葉がうまく話せなかった。昼食のとき、いつも一人で座っていた。ケンという男の子が、毎日机に簡単な単語一つとその絵を描いた小さなメモを置き始めた。「りんご」「笑顔」「友達」。冬までに、エミはずっと上手に話せるようになり、ケンに言った最初の完全な文は「いろいろありがとう」だった。",
+        "free": false
+      },
+      {
+        "q": "Mai always ran in the same park in the morning. She often saw a boy running the other way. They never spoke, but they always nodded and smiled. One rainy day, he was not there, and Mai realized how much she looked forward to that small moment. The next morning, she brought two umbrellas, just in case.\n\nWhy did Mai bring two umbrellas?",
+        "a": "She hoped to share one with the boy.",
+        "choices": [
+          "She hoped to share one with the boy.",
+          "It was very cold.",
+          "She lost one before.",
+          "Her friend asked for one."
+        ],
+        "e": "マイは毎朝同じ公園で走っていた。よく反対方向に走る男の子を見かけた。話したことはなかったが、いつもうなずいてほほえみ合った。ある雨の日、彼はいなくて、マイはその小さな瞬間をどれだけ楽しみにしていたか気づいた。翌朝、彼女は念のため傘を二本持ってきた。",
+        "free": false
+      },
+      {
+        "q": "Taku was going to move away in spring. He wanted to tell Rin how he felt, but he was afraid. On the last day of school, he finally gave her a letter and ran away, too nervous to see her face. The letter said, \"I will come back in five years. Please wait for me if you can.\" Rin read it and quietly promised that she would.\n\nWhat did Taku ask Rin in the letter?",
+        "a": "To wait five years for him.",
+        "choices": [
+          "To wait five years for him.",
+          "To move with him.",
+          "To forget him.",
+          "To write back soon."
+        ],
+        "e": "タクは春に引っ越す予定だった。リンに気持ちを伝えたかったが、こわかった。学校最後の日、ついに手紙を渡して走り去った。彼女の顔を見るのが怖すぎたのだ。手紙にはこう書いてあった。「5年後に戻ってくる。もしできるなら、待っていてほしい。」リンはそれを読み、静かに待つと心に誓った。",
+        "free": false
+      },
+      {
+        "q": "Every day, an old man planted trees on an empty hill, even though he was already eighty. People asked why he worked so hard for trees he would never see grow tall. He smiled and answered, \"I will not sit in their shade, but children I will never meet will. That is enough for me.\" Years later, the hill became a beautiful forest.\n\nWhy did the old man plant trees?",
+        "a": "So future children could enjoy the shade.",
+        "choices": [
+          "So future children could enjoy the shade.",
+          "To sell the wood.",
+          "To become famous.",
+          "To make money quickly."
+        ],
+        "e": "毎日、年老いた男が空き地の丘に木を植えていた。彼はもう80歳だった。人々は、自分が大きく育つのを決して見られない木のために、なぜそんなに頑張るのか尋ねた。彼はほほえんで答えた。「私はその木陰に座ることはない。でも、会うことのない子どもたちが座るだろう。それで十分だ。」何年も後、その丘は美しい森になった。",
+        "free": false
+      },
+      {
+        "q": "Maya practiced the piano for years but always lost in competitions. She felt like giving up. Then a blind boy in the audience asked to touch her hands after a concert. \"Your music helped me see colors,\" he said. \"Please never stop.\" Maya never won first prize, but she kept playing for the rest of her life, knowing her music truly mattered.\n\nWhy did Maya keep playing the piano?",
+        "a": "A blind boy told her that her music mattered.",
+        "choices": [
+          "A blind boy told her that her music mattered.",
+          "She finally won first prize.",
+          "Her parents forced her.",
+          "She wanted to be famous."
+        ],
+        "e": "マヤは何年もピアノを練習したが、コンクールではいつも負けた。あきらめたい気持ちだった。すると、コンサートの後、客席の目の見えない少年が彼女の手に触れたいと頼んだ。「あなたの音楽で、僕は色が見えたんだ」と彼は言った。「どうかやめないで。」マヤは一度も一位にならなかったが、自分の音楽が本当に意味を持つと知り、生涯ずっと弾き続けた。",
+        "free": false
+      },
+      {
+        "q": "After the earthquake, a young boy stood in a long line for food. When he finally reached the front, he was given one rice ball. Instead of eating it, he walked over and placed it in the box for people who had even less than he did. A reporter watched, deeply moved, and quietly added his own food to the box too.\n\nWhat did the boy do with his rice ball?",
+        "a": "He gave it to people who had less.",
+        "choices": [
+          "He gave it to people who had less.",
+          "He ate it quickly.",
+          "He sold it.",
+          "He saved it for later."
+        ],
+        "e": "地震の後、幼い少年が食べ物をもらう長い列に並んでいた。やっと先頭に着くと、おにぎりを一つもらった。彼はそれを食べる代わりに、歩いて行って、自分よりもっと持たない人々のための箱に入れた。記者がそれを見て深く心を動かされ、静かに自分の食べ物も箱に加えた。",
+        "free": false
+      },
+      {
+        "q": "A teacher noticed that one student never ate lunch. Quietly, without telling anyone, she began making an extra lunch box every morning and leaving it on his desk. She never asked for thanks. Twenty years later, that student, now a successful doctor, returned to the school and gave the teacher a lunch box, saying, \"Now it is my turn to take care of you.\"\n\nWhy did the doctor give the teacher a lunch box?",
+        "a": "To return the kindness she had shown him.",
+        "choices": [
+          "To return the kindness she had shown him.",
+          "To sell her food.",
+          "To teach her cooking.",
+          "To say goodbye."
+        ],
+        "e": "先生は、一人の生徒が決して昼食を食べないことに気づいた。誰にも言わず、彼女は毎朝もう一つ弁当を作り、彼の机に置き始めた。お礼を求めることはなかった。20年後、今は立派な医者になったその生徒が学校に戻り、先生に弁当を渡して言った。「今度は僕があなたの世話をする番です。」",
+        "free": false
+      },
+      {
+        "q": "A runner was leading the race when the boy behind him fell and got hurt. Instead of winning, he stopped, helped the boy up, and walked with him to the finish line together. They came in last, but the whole crowd stood up and cheered louder than they had for the winner. Some things are bigger than winning.\n\nWhy did the crowd cheer so loudly?",
+        "a": "The runner helped the hurt boy instead of winning.",
+        "choices": [
+          "The runner helped the hurt boy instead of winning.",
+          "The runner broke a record.",
+          "The race was very fast.",
+          "The boy won the race."
+        ],
+        "e": "あるランナーがレースで先頭を走っていたとき、後ろの少年が転んでけがをした。彼は勝つ代わりに立ち止まり、少年を助け起こし、一緒にゴールまで歩いた。二人は最下位だったが、観衆全員が立ち上がり、優勝者のときより大きな声で声援を送った。勝つことより大きなものがある。",
+        "free": false
+      },
+      {
+        "q": "Daniel always said he was the best cook in his family. One weekend, his parents went away, so he promised to make a special dinner for his little sister. He spent three hours in the kitchen, making strange sounds and big clouds of smoke. Finally, he proudly carried out two plates. His sister looked at the black, burned food and said nothing. Then she quietly took out her phone and ordered pizza. When the pizza arrived, Daniel ate more than anyone. \"Cooking makes me hungry,\" he explained, and his sister laughed so hard that she almost fell off her chair.\n\nWhat did Daniel's sister do about the dinner?",
+        "a": "She ordered pizza instead of eating his food.",
+        "choices": [
+          "She ordered pizza instead of eating his food.",
+          "She cooked her own dinner.",
+          "She ate all the burned food.",
+          "She called their parents."
+        ],
+        "e": "ダニエルはいつも、自分が家族で一番料理がうまいと言っていた。ある週末、両親が出かけたので、彼は妹に特別な夕食を作ると約束した。3時間キッチンにこもり、変な音と大きな煙の雲を立てた。ついに彼は得意げに2皿を運んできた。妹は黒こげの料理を見て、何も言わなかった。それからこっそりスマホを取り出してピザを注文した。ピザが届くと、ダニエルは誰より多く食べた。「料理するとお腹がすくんだ」と彼は説明し、妹は椅子から落ちそうになるほど笑った。",
+        "free": false
+      },
+      {
+        "q": "Grandpa decided to learn how to use the Internet. His grandson taught him slowly and carefully. After a week, Grandpa felt like an expert. One day, the family received a strange email saying they had won a million dollars. Everyone was excited except Grandpa. \"It's a trick,\" he said calmly. \"Nobody gives money for free.\" The family was surprised that the oldest person understood the danger best. Later, Grandpa smiled and said, \"I may be old, but I am not easy to fool. Life taught me that lesson long ago.\"\n\nWhy was the family surprised?",
+        "a": "The oldest person understood the danger best.",
+        "choices": [
+          "The oldest person understood the danger best.",
+          "Grandpa won real money.",
+          "The email was true.",
+          "Grandpa could not use the Internet."
+        ],
+        "e": "おじいちゃんはインターネットの使い方を学ぶことにした。孫がゆっくり丁寧に教えた。1週間後、おじいちゃんは達人になった気分だった。ある日、家族は「100万ドル当選」という変なメールを受け取った。おじいちゃん以外みんな興奮した。「これは詐欺だ」と彼は落ち着いて言った。「タダで金をくれる者などいない。」一番年上の人が危険を一番よく理解していたので、家族は驚いた。後でおじいちゃんは笑って言った。「年はとっても、簡単にはだまされんよ。人生がずっと前にその教訓を教えてくれたんだ。」",
+        "free": false
+      },
+      {
+        "q": "Nina hated cleaning her messy room. One day her mother said, \"If you clean your room, I will give you a surprise.\" Nina worked hard all afternoon. She threw away old papers, organized her books, and even washed the windows. When she finished, the room looked perfect. Excited, she ran to her mother and asked about the surprise. Her mother smiled and said, \"The surprise is how nice your clean room feels.\" Nina was a little angry at first, but that night, lying in her tidy room, she had to admit her mother was right.\n\nWhat was the 'surprise' her mother meant?",
+        "a": "The good feeling of having a clean room.",
+        "choices": [
+          "The good feeling of having a clean room.",
+          "A new video game.",
+          "Money for cleaning.",
+          "A trip to the zoo."
+        ],
+        "e": "ニーナは散らかった部屋を片付けるのが大嫌いだった。ある日母が言った。「部屋を片付けたら、サプライズをあげる。」ニーナは午後ずっと頑張った。古い紙を捨て、本を整理し、窓まで洗った。終わると部屋は完璧に見えた。わくわくして母のところへ走り、サプライズについて尋ねた。母はほほえんで言った。「サプライズは、きれいな部屋がどれだけ気持ちいいか、ということよ。」ニーナは最初少し怒ったが、その夜、片付いた部屋で横になり、母が正しかったと認めざるを得なかった。",
+        "free": false
+      },
+      {
+        "q": "At the zoo, a little boy stood in front of the monkey cage for a long time. He copied everything the monkey did. When the monkey jumped, the boy jumped. When the monkey scratched its head, the boy scratched his head. A crowd gathered to watch this funny game. Suddenly, the monkey sat down and pointed at the boy, as if saying, \"Now you are the strange animal.\" Everyone laughed, and the boy's face turned red. He learned that copying others can sometimes make you the joke.\n\nWhat did the monkey do at the end?",
+        "a": "It pointed at the boy as if he were the strange one.",
+        "choices": [
+          "It pointed at the boy as if he were the strange one.",
+          "It ran away.",
+          "It copied the boy.",
+          "It went to sleep."
+        ],
+        "e": "動物園で、小さな男の子がサルのおりの前に長い間立っていた。彼はサルのすることを全部まねした。サルが跳ねれば男の子も跳ね、サルが頭をかけば男の子も頭をかいた。この面白い遊びを見ようと人だかりができた。突然、サルは座って男の子を指さした。まるで「今度は君が変な動物だ」と言うように。みんな笑い、男の子の顔は赤くなった。彼は、人のまねは時に自分を笑いものにすると学んだ。",
+        "free": false
+      },
+      {
+        "q": "Mr. Sato was famous for falling asleep anywhere. He slept on trains, in meetings, and once even while standing in line. His friends made a funny plan. While he was sleeping on a park bench, they quietly placed a small sign next to him that said, \"Do not wake. World champion of sleeping.\" When Mr. Sato woke up, many people were taking photos of him. He read the sign, laughed loudly, and said, \"Well, at least I'm the best at something!\" From that day, he was proud of his special talent.\n\nHow did Mr. Sato react to the sign?",
+        "a": "He laughed and felt proud of his talent.",
+        "choices": [
+          "He laughed and felt proud of his talent.",
+          "He got very angry.",
+          "He ran away from the park.",
+          "He took the sign home."
+        ],
+        "e": "佐藤さんはどこでも寝てしまうことで有名だった。電車でも、会議でも、一度は立って並んでいる時にさえ寝た。友達は面白い計画を立てた。彼が公園のベンチで寝ている間、そっと隣に小さな札を置いた。「起こすな。睡眠の世界チャンピオン」と書いてあった。佐藤さんが目を覚ますと、大勢が彼の写真を撮っていた。札を読んで大声で笑い、「まあ、少なくとも何かで一番だ！」と言った。その日から、彼は自分の特別な才能を誇りに思った。",
+        "free": false
+      },
+      {
+        "q": "Every summer, my family stayed at a small house by the sea. There was an old rule written on the kitchen wall: \"When the tide is low, go to the beach.\" As a child, I thought it was just a silly game. But one morning, when the water was very low, my grandfather took me to the beach. There were small crabs and shells everywhere. We filled a bucket together, and I finally understood the rule.\n\nWhy did the writer finally understand the rule?",
+        "a": "At low tide, the beach was full of crabs and shells.",
+        "choices": [
+          "At low tide, the beach was full of crabs and shells.",
+          "The sea was dangerous.",
+          "The house was old.",
+          "His grandfather was tired."
+        ],
+        "e": "毎年夏、私の家族は海辺の小さな家に泊まった。台所の壁に古い決まりが書いてあった。「干潮のときは浜へ行け。」子どもの頃、私はただのくだらない遊びだと思っていた。でもある朝、水がとても引いたとき、祖父が私を浜へ連れて行った。小さなカニや貝がそこらじゅうにいた。一緒にバケツをいっぱいにして、私はついにその決まりを理解した。",
+        "free": false
+      },
+      {
+        "q": "The new student never spoke. She sat at the back of the class and looked at the empty seat beside her. One day, I asked her why she always looked at that chair. She finally smiled and whispered, \"My best friend is moving to this town next month. I hope she can sit there.\" The next month, her friend joined our class, and the two of them laughed every day. Soon they became my friends, too.\n\nWhy did the new student look at the empty seat?",
+        "a": "She hoped her best friend would sit there.",
+        "choices": [
+          "She hoped her best friend would sit there.",
+          "She wanted to move there.",
+          "She lost something under it.",
+          "The teacher told her to."
+        ],
+        "e": "その転校生は決して話さなかった。彼女はクラスの後ろに座り、隣の空いた席を見ていた。ある日、私はなぜいつもその椅子を見るのか尋ねた。彼女はついにほほえんでささやいた。「親友が来月この町に引っ越してくるの。そこに座れたらいいな。」翌月、その友達が私たちのクラスに加わり、二人は毎日笑っていた。やがて二人は私の友達にもなった。",
+        "free": false
+      },
+      {
+        "q": "My phone started sending messages to my mother that I never wrote. They were short and kind: \"Good night,\" \"I love you,\" \"Be careful tomorrow.\" My mother thought I was being sweet, so I said nothing. But I wanted to know the truth. One night, I found the answer. My little sister was using my phone while I was in the bath. \"You never say nice things to Mom,\" she said. \"So I do it for you.\" Now I write the messages myself.\n\nWho was sending the messages?",
+        "a": "The writer's little sister.",
+        "choices": [
+          "The writer's little sister.",
+          "The writer's mother.",
+          "A stranger.",
+          "The phone company."
+        ],
+        "e": "私のスマホが、私が書いてもいないメッセージを母に送り始めた。短くて優しい内容だった。「おやすみ」「大好き」「明日気をつけて」。母は私が優しくしていると思ったので、私は何も言わなかった。でも本当のことが知りたかった。ある夜、答えが分かった。私がお風呂に入っている間、妹が私のスマホを使っていたのだ。「お兄ちゃんはお母さんに優しいこと言わないから」と彼女は言った。「だから代わりにやってるの。」今は自分でメッセージを書いている。",
+        "free": false
+      },
+      {
+        "q": "The hotel had no room number 4, because in Japan the number four is not a lucky number. I thought this was just an old custom. On my last night, I could not sleep, so I walked down the long, quiet hallway. Between room 3 and room 5, I saw a small door with a sign: \"Staff only.\" A young worker came out with a tray of cookies. \"Can't you sleep?\" she asked with a smile. \"Have one. They are still warm.\" It was the best cookie of my trip.\n\nWhat did the writer find between rooms 3 and 5?",
+        "a": "A staff room and a kind worker with cookies.",
+        "choices": [
+          "A staff room and a kind worker with cookies.",
+          "An open window.",
+          "Another guest.",
+          "A broken light."
+        ],
+        "e": "そのホテルには4号室がなかった。日本では「4」は縁起のよくない数字だからだ。私はこれをただの古い習慣だと思っていた。最後の夜、眠れなかったので、長く静かな廊下を歩いた。3号室と5号室の間に、「スタッフ専用」と書かれた小さなドアを見つけた。若い従業員がクッキーのトレイを持って出てきた。「眠れないんですか？」と彼女はほほえんで言った。「一つどうぞ。まだあたたかいですよ。」旅行で一番おいしいクッキーだった。",
+        "free": false
+      },
+      {
+        "q": "My little sister often talked to someone she called \"the lady in the garden.\" Our parents thought it was just an imaginary friend. We had no garden, only a small yard of stones. One evening, my sister drew a picture of the lady and gave it to me. The woman in the drawing stood beside a tree full of white flowers. The next spring, my father planted a cherry tree in the yard. When it bloomed, my sister said, \"Now the lady is happy.\" So were we.\n\nWhat did the father do in the spring?",
+        "a": "He planted a cherry tree in the yard.",
+        "choices": [
+          "He planted a cherry tree in the yard.",
+          "He built a new house.",
+          "He found old letters.",
+          "He bought white flowers."
+        ],
+        "e": "妹はよく「庭の女の人」と呼ぶ誰かに話しかけていた。両親は、ただの空想の友達だと思っていた。我が家には庭はなく、石だらけの小さな庭先があるだけだった。ある夕方、妹はその女の人の絵を描いて私にくれた。絵の女性は白い花でいっぱいの木のそばに立っていた。次の春、父は庭先に桜の木を植えた。花が咲くと、妹は「これで女の人はうれしいね」と言った。私たちもうれしかった。",
+        "free": false
+      },
+      {
+        "q": "When they were children, Sho and Yui planted a small tree together in the schoolyard and promised to meet under it as adults. Years passed, and life took them to different cities. Sho almost forgot the promise. But on the day of their school reunion, something made him walk to the old tree, now tall and full of leaves. Yui was already there, looking up at the branches. \"I come here every year,\" she said quietly. \"I always hoped that one year, you would remember too.\" Sho realized that some promises, even quiet ones, are never truly broken.\n\nWhy did Yui visit the tree every year?",
+        "a": "She hoped Sho would remember their promise.",
+        "choices": [
+          "She hoped Sho would remember their promise.",
+          "She liked the shade.",
+          "She lived nearby.",
+          "She studied the tree."
+        ],
+        "e": "子どもの頃、ショウとユイは校庭に小さな木を一緒に植え、大人になったらその下で会おうと約束した。年月が過ぎ、人生は二人を別々の街へ連れて行った。ショウは約束をほとんど忘れていた。でも同窓会の日、何かに導かれて、今は高く葉の茂ったあの木へ歩いた。ユイはすでにそこにいて、枝を見上げていた。「毎年ここに来るの」と彼女は静かに言った。「いつかあなたも思い出してくれるって、ずっと願ってた。」ショウは、静かな約束でさえ、決して本当には消えないのだと気づいた。",
+        "free": false
+      },
+      {
+        "q": "Nana worked at a small bakery near the station. A tired businessman came in every evening and always bought the last melon bread. They rarely spoke more than a few words. One day, Nana noticed he looked very sad, so she added a small cookie shaped like a smile to his bag without saying anything. The next evening, he returned and finally spoke: \"That cookie was the first time I smiled in months. May I know your name?\" Sometimes the smallest kindness opens the biggest door.\n\nWhat did Nana add to the man's bag?",
+        "a": "A cookie shaped like a smile.",
+        "choices": [
+          "A cookie shaped like a smile.",
+          "An extra melon bread.",
+          "A letter.",
+          "A free coffee."
+        ],
+        "e": "ナナは駅の近くの小さなパン屋で働いていた。疲れた会社員が毎晩来て、いつも最後のメロンパンを買った。二人はほとんど言葉を交わさなかった。ある日、ナナは彼がとても悲しそうなのに気づき、何も言わずに笑顔の形のクッキーを袋に一つ加えた。翌晩、彼は戻ってきて、ついに口を開いた。「あのクッキーで、何ヶ月ぶりかに笑えました。お名前を伺っても?」時に、ほんの小さな親切が、一番大きな扉を開ける。",
+        "free": false
+      },
+      {
+        "q": "In the library, Aoi always found helpful notes inside the books she borrowed for her exams. Someone had written tips in the margins, like \"Don't give up\" and \"You can do this.\" The notes guided her through a hard year, and she passed her exams. Wanting to thank this stranger, she left her own note in the last book: \"Who are you?\" A week later, the reply came in the same handwriting: \"Just someone who sat behind you and admired how hard you tried.\"\n\nWho had been writing the notes?",
+        "a": "Someone who sat behind Aoi and admired her effort.",
+        "choices": [
+          "Someone who sat behind Aoi and admired her effort.",
+          "Her teacher.",
+          "The librarian.",
+          "Her sister."
+        ],
+        "e": "図書館で、アオイは試験のために借りた本の中に、いつも役立つメモを見つけた。誰かが余白に「あきらめないで」「君ならできる」といった助言を書いていた。そのメモは厳しい一年を通して彼女を導き、彼女は試験に合格した。この見知らぬ人に感謝したくて、彼女は最後の本に自分のメモを残した。「あなたは誰?」一週間後、同じ筆跡で返事が来た。「君の後ろに座って、君が必死に頑張る姿に感心していた、ただの一人だよ。」",
+        "free": false
+      },
+      {
+        "q": "Kenta and Yuki dated for three years before he had to study abroad. They agreed to write one real paper letter each month, instead of using their phones. At first it felt slow and old-fashioned, but soon they loved it. Each letter carried more feeling than a hundred quick messages. When Kenta finally came home two years later, Yuki was waiting at the airport, holding every single letter he had sent, tied with a blue ribbon.\n\nWhat was Yuki holding at the airport?",
+        "a": "Every letter Kenta had sent, tied with a ribbon.",
+        "choices": [
+          "Every letter Kenta had sent, tied with a ribbon.",
+          "A new phone.",
+          "A welcome sign.",
+          "A bunch of flowers."
+        ],
+        "e": "ケンタとユキは、彼が留学する前に3年間付き合っていた。二人はスマホを使う代わりに、毎月一通ずつ本物の紙の手紙を書くと約束した。最初は遅くて古風に感じたが、すぐに大好きになった。一通一通が、百の素早いメッセージより多くの気持ちを運んだ。2年後、ケンタがついに帰国したとき、ユキは空港で待っていた。彼が送ったすべての手紙を、青いリボンで束ねて抱えて。",
+        "free": false
+      },
+      {
+        "q": "An old man visited the same coffee shop every morning and always ordered two cups. He drank one and left the other untouched across the table. The young waitress was curious but never asked. After he stopped coming one winter, she found a note he had left for her: \"For sixty years, I shared morning coffee with my wife here. After she passed, I kept ordering two, so she would never feel alone. Thank you for never moving her cup.\" The waitress cried, and from then on, she always set two cups at that table.\n\nWhy did the old man order two cups?",
+        "a": "To feel that his late wife was still with him.",
+        "choices": [
+          "To feel that his late wife was still with him.",
+          "He was very thirsty.",
+          "He met a friend there.",
+          "He liked cold coffee."
+        ],
+        "e": "老人は毎朝同じ喫茶店を訪れ、いつもコーヒーを2杯注文した。1杯を飲み、もう1杯はテーブルの向かいに手をつけずに置いた。若いウェイトレスは気になったが、決して尋ねなかった。ある冬、彼が来なくなった後、彼女は彼が残したメモを見つけた。「60年間、私はここで妻と朝のコーヒーを分かち合った。妻が亡くなった後も2杯頼み続けた。妻が決して寂しく感じないように。彼女のカップを動かさずにいてくれて、ありがとう。」ウェイトレスは泣き、それからずっと、そのテーブルにいつも2つのカップを置いた。",
+        "free": false
+      },
+      {
+        "q": "For thirty years, a quiet old woman cleaned the train station every night after the last train left. Few people ever noticed her or said thank you. When she finally retired, the station looked the same as always, and she expected no goodbye. But on her last night, hundreds of people who had taken those trains over the years were waiting on the platform with flowers and letters. \"We saw you,\" they said. \"We always saw you.\" She had thought her work was invisible, but kindness, even silent kindness, is never truly unseen.\n\nWhat surprised the old woman on her last night?",
+        "a": "Hundreds of people came to thank her.",
+        "choices": [
+          "Hundreds of people came to thank her.",
+          "The station was dirty.",
+          "She missed the last train.",
+          "She lost her job suddenly."
+        ],
+        "e": "30年間、物静かな老婦人が、終電が出た後に毎晩駅を掃除していた。彼女に気づいたり、ありがとうと言ったりする人はほとんどいなかった。ついに引退するとき、駅はいつもと変わらず見え、彼女は別れの言葉も期待していなかった。でも最後の夜、長年その電車に乗ってきた何百人もの人々が、花や手紙を持ってホームで待っていた。「私たちは見ていました」と彼らは言った。「ずっと見ていました。」彼女は自分の仕事が誰の目にも入らないと思っていたが、親切は、静かな親切でさえ、決して本当に見られていないわけではない。",
+        "free": false
+      },
+      {
+        "q": "A famous violinist lost the use of his right hand in an accident and could no longer play. Everyone thought his career was over. Instead, he spent the next ten years teaching poor children who could never afford lessons. One of those children grew up to become a world-class musician. At her first great concert, she walked onto the stage, pointed to her old teacher in the front row, and said, \"He cannot play anymore, but his music lives in everything I do.\"\n\nHow did the violinist's music continue?",
+        "a": "Through the students he taught.",
+        "choices": [
+          "Through the students he taught.",
+          "He learned to play again.",
+          "He wrote new songs.",
+          "He built a music school alone."
+        ],
+        "e": "有名なバイオリニストが事故で右手の自由を失い、もう演奏できなくなった。誰もが彼のキャリアは終わったと思った。代わりに、彼はその後10年を、レッスンを受ける余裕のない貧しい子どもたちに教えて過ごした。その子どもの一人が成長して世界的な音楽家になった。彼女の初めての大きなコンサートで、彼女は舞台に歩み出て、最前列の昔の先生を指さして言った。「先生はもう演奏できません。でも先生の音楽は、私のするすべての中に生きています。」",
+        "free": false
+      },
+      {
+        "q": "A little girl with a serious illness spent most of her days in a hospital bed by the window. To cheer her up, she began drawing pictures and taping them to the glass so people outside could see. Soon, strangers walking past started leaving drawings and kind messages on the other side of the window. A silent friendship grew between the sick girl and a whole town she had never met. On the day she finally went home, healthy again, hundreds of drawings covered her window like a wall of love.\n\nHow did the town become friends with the girl?",
+        "a": "They exchanged drawings through her window.",
+        "choices": [
+          "They exchanged drawings through her window.",
+          "They visited her room daily.",
+          "They sent her letters by mail.",
+          "They called her every night."
+        ],
+        "e": "重い病気の小さな女の子が、ほとんどの日々を窓際の病院のベッドで過ごしていた。元気を出すために、彼女は絵を描いてガラスに貼り、外の人々に見えるようにし始めた。やがて、通りかかる見知らぬ人々が、窓の反対側に絵や優しいメッセージを残し始めた。病気の女の子と、会ったこともない町全体との間に、静かな友情が育った。ついに元気になって家に帰る日、何百もの絵が、愛の壁のように彼女の窓を覆っていた。",
+        "free": false
+      },
+      {
+        "q": "During the war, a soldier carried a small, worn photograph of his family everywhere he went. It gave him the strength to survive each hard day. Years after the war ended, he returned to his hometown, which looked so different that he barely recognized it. He showed the old photo to a young woman selling flowers. She stared at it, then began to cry. \"This is my grandmother,\" she said softly. \"She told me a kind soldier once promised to come back. We never stopped hoping you would.\"\n\nWhy did the young woman cry?",
+        "a": "The soldier in the photo promised to return to her family.",
+        "choices": [
+          "The soldier in the photo promised to return to her family.",
+          "She lost her flowers.",
+          "She did not know the man.",
+          "The photo was damaged."
+        ],
+        "e": "戦争中、一人の兵士はどこへ行くにも、家族の小さくすり切れた写真を持ち歩いた。それが、つらい日々を生き延びる力をくれた。戦争が終わって何年も後、彼は故郷に戻ったが、あまりに変わっていて、ほとんど見分けがつかなかった。彼は花を売る若い女性に古い写真を見せた。彼女はそれをじっと見つめ、泣き始めた。「これは私の祖母です」と彼女は静かに言った。「祖母は、優しい兵士がいつか戻ると約束したと話していました。私たちは、あなたが戻ることをずっと願い続けていました。」",
+        "free": false
+      },
+      {
+        "q": "An old fisherman found a young whale trapped in a net near the shore. For hours, he worked alone in the cold water, slowly cutting the ropes until the whale was free. The huge animal did not swim away at once. Instead, it stayed near his boat for a moment, looking at him with one large eye, as if to say thank you. Every year after that, on the same day, a whale appeared in the same bay. The fisherman believed it was the same one, returning to remember a moment of kindness between two very different lives.\n\nWhy did the fisherman think the whale returned each year?",
+        "a": "To remember the kindness he had shown it.",
+        "choices": [
+          "To remember the kindness he had shown it.",
+          "To find more food.",
+          "To bring him gifts.",
+          "To escape other whales."
+        ],
+        "e": "年老いた漁師が、岸の近くで網にかかった若いクジラを見つけた。何時間も、彼は冷たい水の中で一人で働き、ロープをゆっくり切って、ついにクジラを自由にした。その巨大な動物はすぐには泳ぎ去らなかった。代わりに、少しの間彼の船のそばにとどまり、一つの大きな目で彼を見た。まるでありがとうと言うように。それから毎年、同じ日に、同じ入り江にクジラが現れた。漁師は、それが同じクジラで、二つのまったく異なる命の間の親切の瞬間を覚えていて戻ってくるのだと信じていた。",
+        "free": false
+      },
+      {
+        "q": "Mr. Ito wanted to lose weight. He decided to walk to work instead of taking the bus. But every morning, he stopped at a bakery on the way and bought two sweet buns. After a month, he was heavier than before. \nQ: Why did Mr. Ito get heavier?",
+        "a": "He ate sweet buns every morning.",
+        "choices": [
+          "He ate sweet buns every morning.",
+          "He took the bus.",
+          "He stopped walking.",
+          "He skipped breakfast."
+        ],
+        "e": "やせたい伊藤さんは歩いて通勤したが、毎朝パン屋で菓子パンを2個買った。1か月後、前より重くなった。→毎朝菓子パンを食べたから。",
+        "free": false
+      },
+      {
+        "q": "Mrs. Lee bought a robot to clean her house. The robot moved around all day but only pushed the dust from one corner to another. In the end, Mrs. Lee cleaned the floor herself. \nQ: Was the robot helpful?",
+        "a": "No, it did not really clean.",
+        "choices": [
+          "No, it did not really clean.",
+          "Yes, it cleaned perfectly.",
+          "It cooked dinner.",
+          "It broke the floor."
+        ],
+        "e": "掃除ロボはほこりを隅から隅へ動かすだけで、結局リー夫人が掃除。→役に立たなかった。",
+        "free": false
+      },
+      {
+        "q": "Ken studied hard for the math test and felt sure he would pass. On the test day, he opened the paper and saw it was the science test. He had studied the wrong subject. \nQ: Why was Ken in trouble?",
+        "a": "He studied the wrong subject.",
+        "choices": [
+          "He studied the wrong subject.",
+          "He was sick.",
+          "He lost his pencil.",
+          "The test was easy."
+        ],
+        "e": "数学を勉強したケンだが当日は理科。→違う教科を勉強していた。",
+        "free": false
+      },
+      {
+        "q": "Grandma got her first smartphone. Her grandson showed her how to send a message. Later, the family got twenty short messages from her, and she said she was practicing. \nQ: Why did the family get so many messages?",
+        "a": "Grandma was practicing.",
+        "choices": [
+          "Grandma was practicing.",
+          "The phone was broken.",
+          "A stranger sent them.",
+          "She was angry."
+        ],
+        "e": "祖母が初スマホで練習し短い文を20通送った。→練習していたから。",
+        "free": false
+      },
+      {
+        "q": "Tom told everyone he woke up early to study. But every morning his mother found him asleep on his books with the lamp still on. He fell asleep as soon as he sat down. \nQ: What really happened each morning?",
+        "a": "Tom fell asleep instead of studying.",
+        "choices": [
+          "Tom fell asleep instead of studying.",
+          "Tom studied all night.",
+          "Tom went jogging.",
+          "Tom cooked breakfast."
+        ],
+        "e": "早起き勉強と言うトムは毎朝本の上で寝ていた。→寝ていた。",
+        "free": false
+      },
+      {
+        "q": "Lisa wanted to surprise her mother with breakfast in bed. She carried the tray upstairs but tripped, and the eggs landed on the cat. The cat was not happy, but her mother laughed and hugged her. \nQ: How did the mother feel in the end?",
+        "a": "Happy, even though it was messy.",
+        "choices": [
+          "Happy, even though it was messy.",
+          "Very angry at Lisa.",
+          "Sad and crying.",
+          "Afraid of the cat."
+        ],
+        "e": "卵が猫に落ちたが母は笑って抱きしめた。→散らかったが喜んだ。",
+        "free": false
+      },
+      {
+        "q": "The new student was very quiet, and some children thought he was unfriendly. But when a small boy dropped his lunch, the new student shared his own food at once. After that, everyone wanted to be his friend. \nQ: What was the new student really like?",
+        "a": "Kind.",
+        "choices": [
+          "Kind.",
+          "Unfriendly.",
+          "Selfish.",
+          "Lazy."
+        ],
+        "e": "無口で不愛想と思われた転校生は弁当を落とした子に分けた。→本当は親切。",
+        "free": false
+      },
+      {
+        "q": "Mr. Tanaka was proud of his loud alarm clock. Every morning it rang, but he turned it off and slept again. His dog learned to pull his blanket instead, and that finally woke him up. \nQ: What really woke Mr. Tanaka up?",
+        "a": "His dog pulling the blanket.",
+        "choices": [
+          "His dog pulling the blanket.",
+          "The loud alarm clock.",
+          "The sunlight.",
+          "His neighbor."
+        ],
+        "e": "目覚ましを止め二度寝する田中さんを毛布を引く犬が起こした。→犬。",
+        "free": false
+      },
+      {
+        "q": "Yumi wanted a new bike, so she started saving money. She stopped buying juice every day and drank water instead. After half a year, she had enough money, and she also felt healthier. \nQ: What did Yumi get besides the bike?",
+        "a": "Better health.",
+        "choices": [
+          "Better health.",
+          "A new phone.",
+          "More juice.",
+          "A part-time job."
+        ],
+        "e": "自転車のためにユミは毎日のジュースをやめて貯金。半年後、お金もたまり、体も前より健康に。→健康。",
+        "free": false
+      },
+      {
+        "q": "Aki practiced her English speech for two weeks. On the day of the contest, she was so nervous that she forgot her first line. She took a deep breath, smiled, and started again. She won second prize. \nQ: What did Aki do when she forgot her line?",
+        "a": "She took a deep breath and started again.",
+        "choices": [
+          "She took a deep breath and started again.",
+          "She left the stage.",
+          "She asked her teacher.",
+          "She read her notes."
+        ],
+        "e": "スピーチ大会で緊張して最初の一文を忘れたアキは、深呼吸して笑顔でやり直し、2位になった。→深呼吸してやり直した。",
+        "free": false
+      }
+    ]
+  }
 }

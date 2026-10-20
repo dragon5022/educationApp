@@ -1,11 +1,151 @@
-﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e
-levels.Lv1,( ) you like dogs?,Do,Does,Do,Are,Is,一般動詞like→Do。
-levels.Lv1,( ) she a teacher?,Is,Do,Does,Is,Are,be動詞の文→Is。
-levels.Lv1,( ) he play tennis?,Does,Is,Do,Are,Does,三単現の一般動詞→Does。
-levels.Lv1,( ) they students?,Are,Are,Is,Does,Do,be動詞＋複数→Are。
-levels.Lv1,I ( ) not know.,do,are,do,am,is,一般動詞の否定→do not。
-levels.Lv1,She ( ) not happy.,is,do,does,is,are,be動詞の否定→is not。
-levels.Lv1,We ( ) baseball players.,are,does,do,is,are,be動詞→are。
-levels.Lv2,"( ) you a student? - Yes, I am.",Are,Is,Do,Are,Does,amで答える→Are you。
-levels.Lv2,"( ) he like it? - Yes, he does.",Does,Are,Do,Does,Is,doesで答える→Does he。
-levels.Lv2,( ) it rain a lot here?,Does,Are,Does,Is,Do,三単現it＋一般動詞→Does。
+﻿_path,q,a,choices.0,choices.1,choices.2,choices.3,e,free
+levels.Lv1,( ) you like dogs?,Do,Does,Do,Are,Is,一般動詞like→Do。,true
+levels.Lv1,( ) she a teacher?,Is,Do,Does,Is,Are,be動詞の文→Is。,true
+levels.Lv1,( ) he play tennis?,Does,Is,Do,Are,Does,三単現の一般動詞→Does。,true
+levels.Lv1,( ) they students?,Are,Are,Is,Does,Do,be動詞＋複数→Are。,true
+levels.Lv1,I ( ) not know.,do,are,do,am,is,一般動詞の否定→do not。,true
+levels.Lv1,She ( ) not happy.,is,do,does,is,are,be動詞の否定→is not。,true
+levels.Lv1,We ( ) baseball players.,are,does,do,is,are,be動詞→are。,true
+levels.Lv1,( ) your parents eat breakfast?,Do,Do,Is,Are,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) he study English?,Does,Are,Do,Is,Does,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your dog eat breakfast?,Does,Are,Does,Is,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you eat lunch at school?,Do,Does,Do,Are,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) Ken live here?,Does,Are,Is,Does,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) they speak English?,Do,Is,Do,Are,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) she eat breakfast?,Does,Are,Is,Do,Does,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you have a pen?,Do,Is,Are,Do,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your cat like milk?,Does,Does,Do,Is,Are,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your friends play tennis?,Do,Does,Are,Do,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) she live here?,Does,Does,Are,Is,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) they eat breakfast?,Do,Is,Does,Do,Are,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) he live here?,Does,Does,Is,Are,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your brother have a pen?,Does,Do,Are,Does,Is,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your friends want it?,Do,Do,Are,Is,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) you and Ken study English?,Do,Does,Is,Do,Are,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) Ken play tennis?,Does,Do,Are,Is,Does,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) Ken want it?,Does,Is,Do,Are,Does,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your parents like dogs?,Do,Is,Are,Do,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your grandparents live here?,Do,Do,Are,Does,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) they live here?,Do,Are,Does,Do,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) she know him?,Does,Does,Is,Do,Are,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you play tennis?,Do,Is,Do,Are,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) she want it?,Does,Do,Are,Does,Is,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) Ken have a pen?,Does,Are,Does,Is,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) he speak English?,Does,Do,Is,Are,Does,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) they know him?,Do,Are,Do,Does,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your cat like dogs?,Does,Does,Is,Are,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you know him?,Do,Is,Are,Does,Do,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) you read books?,Do,Is,Are,Do,Does,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) they study English?,Do,Are,Does,Is,Do,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) Ken read books?,Does,Are,Is,Does,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) Ken like dogs?,Does,Are,Does,Is,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) he read books?,Does,Are,Do,Does,Is,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) she have a pen?,Does,Are,Does,Is,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you speak English?,Do,Does,Do,Are,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) you want this book?,Do,Does,Do,Are,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your mother speak English?,Does,Does,Is,Are,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) your brothers read books?,Do,Are,Does,Do,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your parents speak English?,Do,Are,Does,Do,Is,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) your uncle live here?,Does,Are,Is,Does,Do,一般動詞の疑問文→Does。,true
+levels.Lv1,( ) you eat breakfast?,Do,Does,Is,Do,Are,一般動詞の疑問文→Do。,true
+levels.Lv1,( ) you live near here?,Do,Do,Are,Does,Is,一般動詞の疑問文→Do。,true
+levels.Lv2,"( ) you a student? - Yes, I am.",Are,Is,Do,Are,Does,amで答える→Are you。,false
+levels.Lv2,"( ) he like it? - Yes, he does.",Does,Are,Do,Does,Is,doesで答える→Does he。,false
+levels.Lv2,( ) it rain a lot here?,Does,Are,Does,Is,Do,三単現it＋一般動詞→Does。,false
+levels.Lv2,You ( ) live here.（否定）,don't,isn't,aren't,doesn't,don't,一般動詞の否定→don't。,false
+levels.Lv2,He ( ) study English.（否定）,doesn't,aren't,doesn't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,You ( ) like dogs.（否定）,don't,isn't,doesn't,aren't,don't,一般動詞の否定→don't。,false
+levels.Lv2,He ( ) know him.（否定）,doesn't,doesn't,aren't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,My dog ( ) play tennis.（否定）,doesn't,don't,isn't,doesn't,aren't,一般動詞の否定→doesn't。,false
+levels.Lv2,We ( ) have a pen.（否定）,don't,doesn't,aren't,don't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,I ( ) have a pen.（否定）,don't,don't,doesn't,aren't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,He ( ) speak English.（否定）,doesn't,don't,doesn't,aren't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,Ken ( ) study English.（否定）,doesn't,isn't,aren't,don't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,She ( ) want it.（否定）,doesn't,isn't,doesn't,don't,aren't,一般動詞の否定→doesn't。,false
+levels.Lv2,She ( ) study English.（否定）,doesn't,aren't,don't,isn't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,I ( ) play tennis.（否定）,don't,don't,doesn't,isn't,aren't,一般動詞の否定→don't。,false
+levels.Lv2,He ( ) play tennis.（否定）,doesn't,isn't,aren't,don't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,I ( ) read books.（否定）,don't,don't,aren't,isn't,doesn't,一般動詞の否定→don't。,false
+levels.Lv2,They ( ) read books.（否定）,don't,aren't,doesn't,don't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,She ( ) eat breakfast.（否定）,doesn't,doesn't,aren't,isn't,don't,一般動詞の否定→doesn't。,false
+levels.Lv2,My uncle ( ) live here.（否定）,doesn't,aren't,doesn't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,He ( ) like dogs.（否定）,doesn't,don't,isn't,aren't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,We ( ) play tennis.（否定）,don't,isn't,aren't,don't,doesn't,一般動詞の否定→don't。,false
+levels.Lv2,She ( ) know him.（否定）,doesn't,don't,aren't,isn't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,My cat ( ) want milk.（否定）,doesn't,don't,isn't,doesn't,aren't,一般動詞の否定→doesn't。,false
+levels.Lv2,We ( ) want it.（否定）,don't,don't,isn't,doesn't,aren't,一般動詞の否定→don't。,false
+levels.Lv2,He ( ) read books.（否定）,doesn't,aren't,doesn't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,I ( ) speak English.（否定）,don't,don't,isn't,aren't,doesn't,一般動詞の否定→don't。,false
+levels.Lv2,You ( ) have a pen.（否定）,don't,don't,aren't,isn't,doesn't,一般動詞の否定→don't。,false
+levels.Lv2,Ken ( ) have a pen.（否定）,doesn't,aren't,don't,doesn't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,Our dog ( ) eat breakfast.（否定）,doesn't,doesn't,don't,isn't,aren't,一般動詞の否定→doesn't。,false
+levels.Lv2,You ( ) study English.（否定）,don't,isn't,don't,doesn't,aren't,一般動詞の否定→don't。,false
+levels.Lv2,I ( ) know him.（否定）,don't,aren't,doesn't,don't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,They ( ) play tennis.（否定）,don't,doesn't,don't,isn't,aren't,一般動詞の否定→don't。,false
+levels.Lv2,You ( ) play tennis.（否定）,don't,aren't,doesn't,don't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,I ( ) like dogs.（否定）,don't,don't,doesn't,aren't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,My sister ( ) know him.（否定）,doesn't,don't,aren't,isn't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,She ( ) like dogs.（否定）,doesn't,isn't,doesn't,aren't,don't,一般動詞の否定→doesn't。,false
+levels.Lv2,They ( ) like dogs.（否定）,don't,doesn't,don't,aren't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,They ( ) eat breakfast.（否定）,don't,don't,aren't,isn't,doesn't,一般動詞の否定→don't。,false
+levels.Lv2,Ken ( ) live here.（否定）,doesn't,aren't,doesn't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,My father ( ) speak English.（否定）,doesn't,doesn't,aren't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,She ( ) play tennis.（否定）,doesn't,don't,isn't,aren't,doesn't,一般動詞の否定→doesn't。,false
+levels.Lv2,Ken ( ) like dogs.（否定）,doesn't,aren't,isn't,doesn't,don't,一般動詞の否定→doesn't。,false
+levels.Lv2,We ( ) read books.（否定）,don't,isn't,don't,doesn't,aren't,一般動詞の否定→don't。,false
+levels.Lv2,I ( ) study English.（否定）,don't,aren't,isn't,doesn't,don't,一般動詞の否定→don't。,false
+levels.Lv2,Ken ( ) eat breakfast.（否定）,doesn't,doesn't,aren't,don't,isn't,一般動詞の否定→doesn't。,false
+levels.Lv2,Ken ( ) play tennis.（否定）,doesn't,aren't,doesn't,isn't,don't,一般動詞の否定→doesn't。,false
+levels.Lv2,He ( ) live here.（否定）,doesn't,don't,doesn't,isn't,aren't,一般動詞の否定→doesn't。,false
+levels.Lv2,You ( ) speak English.（否定）,don't,don't,doesn't,aren't,isn't,一般動詞の否定→don't。,false
+levels.Lv2,We ( ) know him.（否定）,don't,doesn't,don't,isn't,aren't,一般動詞の否定→don't。,false
+levels.Lv3,A: ( ) do you go to school?  B: By bike.,How,How,What,Where,When,手段をたずねる→How。,false
+levels.Lv3,"A: ( ) is this cap?  B: It's 1,500 yen.",How much,How many,How much,How old,How long,値段→How much。,false
+levels.Lv3,A: ( ) can I get to the station?  B: Go straight and turn left at the bank.,How,What,Where,How,Which,行き方（方法）→How。,false
+levels.Lv3,A: ( ) do you have lunch?  B: At twelve thirty.,What time,How long,How many,What day,What time,時刻→What time。,false
+levels.Lv3,A: ( ) bag is this?  B: It's Ken's.,Whose,Whose,Who,Which,What,「誰の」→Whose。,false
+levels.Lv3,A: ( ) have you lived in Fukuyama?  B: For ten years.,How long,How often,How long,How many,How far,期間→How long。,false
+levels.Lv3,A: ( ) do you play tennis?  B: Twice a week.,How often,How long,How many,How often,How much,頻度→How often。,false
+levels.Lv3,A: ( ) is it from here to the park?  B: About two kilometers.,How far,How long,How many,How often,How far,距離→How far。,false
+levels.Lv3,"A: May I speak to Ken, please?  B: ( )",Speaking.,Speaking.,I'm fine.,"Yes, you are.",Here you are.,電話で「私です」→Speaking。,false
+levels.Lv3,A: Would you like some more tea?  B: ( ),"Yes, please.","Me, too.","Yes, please.",Here you are.,That's too bad.,"すすめに応じる→Yes, please。",false
+levels.Lv3,A: Thank you for your help.  B: ( ),You're welcome.,Here you are.,"Yes, please.",You're welcome.,That's right.,お礼への返事→You're welcome。,false
+levels.Lv3,A: I have a cold.  B: ( ),That's too bad.,That's great.,Good luck.,"Me, too.",That's too bad.,悪い知らせへの返事→That's too bad。,false
+levels.Lv3,A: Could you tell me the way to the library?  B: ( ),Sure. Go down this street.,Sure. Go down this street.,"No, thank you.","Yes, please.",You're welcome.,道案内の依頼に応じる→Sure。,false
+levels.Lv3,A: ( )  B: It's sunny.,How is the weather today?,What day is it today?,How is the weather today?,What time is it?,How are you?,天気をたずねる→How is the weather?,false
+levels.Lv3,A: Here you are.  B: ( ),Thank you.,You're welcome.,I'm sorry.,Thank you.,"Yes, please.",物を渡されたら→Thank you。,false
+levels.Lv3,A: Can I help you?  B: ( ),Yes. I'm looking for a T-shirt.,"No, I can't.","Yes, you can.",I'll take it.,Yes. I'm looking for a T-shirt.,店員の声かけへの返事→探している物を言う。,false
+levels.Lv3,A: How about going to the movies?  B: ( ),Sounds good.,Sounds good.,I'm sorry to hear that.,You're welcome.,Here you are.,提案に賛成→Sounds good。,false
+levels.Lv3,"A: ( )  B: I'm sorry, but I'm busy now.",Can you help me with my homework?,Thank you for helping me.,Can you help me with my homework?,You did a good job.,How are you?,依頼を断る返事→依頼の文が入る。,false
+levels.Lv3,A: I passed the exam!  B: ( ),Congratulations!,That's too bad.,Excuse me.,Congratulations!,Take care.,合格を祝う→Congratulations。,false
+levels.Lv3,A: What's wrong?  B: ( ),I have a headache.,I'm 14 years old.,I'm from Hiroshima.,I like soccer.,I have a headache.,What's wrong?＝どうしたの→具合を言う。,false
+levels.Lv3,A: Shall I open the window?  B: ( ),"Yes, please.","Yes, please.","Yes, let's.","No, I don't.","Yes, I shall.","Shall I 〜?（〜しましょうか）→Yes, please。",false
+levels.Lv3,A: Shall we go shopping tomorrow?  B: ( ),"Yes, let's.","Yes, please.","Yes, let's.","No, I'm not.",Here you are.,"Shall we 〜?（〜しませんか）→Yes, let's。",false
+levels.Lv3,A: Excuse me. Which bus goes to the city hall?  B: ( ),Take the No. 5 bus.,It's 200 yen.,It's near here.,Take the No. 5 bus.,At ten o'clock.,どのバスか→バスの番号を答える。,false
+levels.Lv3,A: How long does it take to get to the station?  B: ( ),About ten minutes.,About ten kilometers.,Twice a day.,It's ten o'clock.,About ten minutes.,How long does it take?→時間を答える。,false
+levels.Lv3,A: Would you like to come to my party?  B: ( ),I'd love to.,I'd love to.,You're welcome.,I'd like some.,Here you are.,招待に応じる→I'd love to。,false
+levels.Lv3,A: ( )  B: It's May 5th.,What's the date today?,What day is it today?,What's the date today?,What time is it now?,How is the weather?,日付をたずねる→What's the date?,false
+levels.Lv3,A: What day is it today?  B: ( ),It's Wednesday.,It's May 5th.,It's ten o'clock.,It's Wednesday.,It's cloudy.,What day＝曜日。,false
+levels.Lv3,A: Could you say that again?  B: ( ),Sure.,You're welcome.,"Me, too.",I hope so.,Sure.,依頼に応じる→Sure。,false
+levels.Lv3,A: Have a nice weekend!  B: ( ),"You, too.","You, too.","Me, too.","Yes, I do.",That's all.,"「あなたもね」→You, too。",false
+levels.Lv3,A: I'm sorry I'm late.  B: ( ),That's all right.,You're welcome.,That's all right.,That's right.,"Yes, you are.",謝罪への返事→That's all right。,false
+levels.Lv3,A: ( )  B: I'd like a hamburger and a cola.,May I take your order?,May I help you with your bag?,How much is it?,May I take your order?,What do you do?,注文を聞く→May I take your order?,false
+levels.Lv3,"A: Which do you like better, summer or winter?  B: ( )",I like summer better.,"Yes, I do.",I like both of you.,It's summer now.,I like summer better.,Which 〜 better?→〜 betterで答える。,false
+levels.Lv3,A: Why don't we play soccer after school?  B: ( ),Good idea.,Good idea.,Because I'm tired.,You're welcome.,Here you are.,Why don't we 〜?は提案→Good idea。,false
+levels.Lv3,A: Can I use your phone?  B: ( ),Sure. Here you are.,"Yes, you are.",Sure. Here you are.,"No, thank you.","I'm fine, thank you.",許可を求める文に応じる→Sure。,false
+levels.Lv3,A: Nice to meet you.  B: ( ),"Nice to meet you, too.","I'm fine, thank you.",See you later.,"Nice to meet you, too.",Thank you very much.,"初対面のあいさつ→, tooで返す。",false
+levels.Lv3,A: ( )  B: I'm from Canada.,Where are you from?,Where are you going?,When did you come?,How are you?,Where are you from?,出身をたずねる→Where are you from?,false
+levels.Lv3,A: What does your father do?  B: ( ),He is a doctor.,He is a doctor.,He is washing the car.,He is fine.,He is 45.,What do you do?＝職業をたずねる。,false
+levels.Lv3,A: What is your father doing now?  B: ( ),He is cooking dinner.,He is a cook.,He is cooking dinner.,He likes cooking.,He cooks every day.,進行形の疑問→進行形で答える。,false
+levels.Lv3,A: ( )  B: Three times.,How many times have you been to Tokyo?,How long have you been in Tokyo?,When did you go to Tokyo?,How many times have you been to Tokyo?,How far is Tokyo?,回数→How many times。,false
+levels.Lv3,A: How was your trip?  B: ( ),It was great.,It is two hours.,By train.,"Yes, it was.",It was great.,How was 〜?→感想を答える。,false
+levels.Lv3,A: Whose umbrella is this?  B: ( ),It's mine.,It's mine.,It's me.,It's my.,I'm mine.,Whose→所有代名詞mineで答える。,false
+levels.Lv3,A: ( )  B: Because it was raining.,Why did you stay home?,Where did you stay?,Why did you stay home?,When did you stay home?,How did you go home?,Becauseで答える→Why。,false
+levels.Lv3,A: What would you like to drink?  B: ( ),"Orange juice, please.",I'd like to drink.,"Yes, I would.","Orange juice, please.",It's delicious.,"飲み物をたずねる→〜, pleaseで答える。",false
+levels.Lv3,A: May I sit here?  B: ( ),Sure. Go ahead.,"Yes, I may.","No, you aren't.",Here you are.,Sure. Go ahead.,許可を求める→Sure. Go ahead。,false
+levels.Lv3,A: Let's take a break.  B: ( ),"OK, let's.","OK, let's.","Yes, I do.","No, I can't.",Thank you.,"Let's 〜への返事→OK, let's。",false
+levels.Lv3,A: I'm going to the hospital tomorrow.  B: ( ),Take care.,Good job.,Take care.,"Me, too.",Have fun.,体調を気づかう→Take care。,false
+levels.Lv3,"A: How do you say ""arigato"" in English?  B: ( )",Thank you.,You're welcome.,Excuse me.,Thank you.,I'm sorry.,arigato＝Thank you。,false
+levels.Lv3,A: What's the matter?  B: ( ),I lost my key.,It's a key.,Here it is.,That's right.,I lost my key.,What's the matter?＝どうしたの→困りごとを言う。,false
+levels.Lv3,A: Could you pass me the salt?  B: ( ),Here you are.,Here you are.,You're welcome.,"Yes, I could.",I'm sorry to hear that.,物を渡す→Here you are。,false
+levels.Lv3,A: See you tomorrow.  B: ( ),See you.,Nice to meet you.,See you.,You're welcome.,I'm fine.,別れのあいさつ→See you。,false

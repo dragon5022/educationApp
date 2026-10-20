@@ -1,132 +1,1824 @@
 {
- "version": 1,
- "id": "e-hyougen",
- "subject": "english",
- "title": "表現の司令室",
- "label": "表",
- "timeLimitMs": 5000,
- "maxQuestions": 15,
- "images": {
-  "art": "e-hyougen",
-  "boss": "e-boss",
-  "chara": "uta",
-  "win": "win",
-  "lose": "lose2"
- },
- "levels": {
-  "Lv1": [
-   {
-    "q": "( ) you like dogs?",
-    "a": "Do",
-    "choices": [
-     "Does",
-     "Do",
-     "Are",
-     "Is"
+  "version": 2,
+  "id": "e-hyougen",
+  "subject": "english",
+  "title": "表現の司令室",
+  "label": "表",
+  "timeLimitMs": 5000,
+  "maxQuestions": 15,
+  "images": {
+    "art": "e-hyougen",
+    "boss": "e-boss",
+    "chara": "uta",
+    "win": "win",
+    "lose": "lose2"
+  },
+  "levels": {
+    "Lv1": [
+      {
+        "q": "( ) you like dogs?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "e": "一般動詞like→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) she a teacher?",
+        "a": "Is",
+        "choices": [
+          "Do",
+          "Does",
+          "Is",
+          "Are"
+        ],
+        "e": "be動詞の文→Is。",
+        "free": true
+      },
+      {
+        "q": "( ) he play tennis?",
+        "a": "Does",
+        "choices": [
+          "Is",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "e": "三単現の一般動詞→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) they students?",
+        "a": "Are",
+        "choices": [
+          "Are",
+          "Is",
+          "Does",
+          "Do"
+        ],
+        "e": "be動詞＋複数→Are。",
+        "free": true
+      },
+      {
+        "q": "I ( ) not know.",
+        "a": "do",
+        "choices": [
+          "are",
+          "do",
+          "am",
+          "is"
+        ],
+        "e": "一般動詞の否定→do not。",
+        "free": true
+      },
+      {
+        "q": "She ( ) not happy.",
+        "a": "is",
+        "choices": [
+          "do",
+          "does",
+          "is",
+          "are"
+        ],
+        "e": "be動詞の否定→is not。",
+        "free": true
+      },
+      {
+        "q": "We ( ) baseball players.",
+        "a": "are",
+        "choices": [
+          "does",
+          "do",
+          "is",
+          "are"
+        ],
+        "e": "be動詞→are。",
+        "free": true
+      },
+      {
+        "q": "( ) your parents eat breakfast?",
+        "a": "Do",
+        "choices": [
+          "Do",
+          "Is",
+          "Are",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) he study English?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Do",
+          "Is",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your dog eat breakfast?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you eat lunch at school?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken live here?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Is",
+          "Does",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) they speak English?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) she eat breakfast?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Is",
+          "Do",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you have a pen?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your cat like milk?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Do",
+          "Is",
+          "Are"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your friends play tennis?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Are",
+          "Do",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) she live here?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Are",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) they eat breakfast?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Does",
+          "Do",
+          "Are"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) he live here?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your brother have a pen?",
+        "a": "Does",
+        "choices": [
+          "Do",
+          "Are",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your friends want it?",
+        "a": "Do",
+        "choices": [
+          "Do",
+          "Are",
+          "Is",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) you and Ken study English?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Is",
+          "Do",
+          "Are"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken play tennis?",
+        "a": "Does",
+        "choices": [
+          "Do",
+          "Are",
+          "Is",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken want it?",
+        "a": "Does",
+        "choices": [
+          "Is",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your parents like dogs?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your grandparents live here?",
+        "a": "Do",
+        "choices": [
+          "Do",
+          "Are",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) they live here?",
+        "a": "Do",
+        "choices": [
+          "Are",
+          "Does",
+          "Do",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) she know him?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Is",
+          "Do",
+          "Are"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you play tennis?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) she want it?",
+        "a": "Does",
+        "choices": [
+          "Do",
+          "Are",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken have a pen?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) he speak English?",
+        "a": "Does",
+        "choices": [
+          "Do",
+          "Is",
+          "Are",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) they know him?",
+        "a": "Do",
+        "choices": [
+          "Are",
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your cat like dogs?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you know him?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Are",
+          "Does",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) you read books?",
+        "a": "Do",
+        "choices": [
+          "Is",
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) they study English?",
+        "a": "Do",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken read books?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Is",
+          "Does",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) Ken like dogs?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) he read books?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) she have a pen?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you speak English?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) you want this book?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your mother speak English?",
+        "a": "Does",
+        "choices": [
+          "Does",
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) your brothers read books?",
+        "a": "Do",
+        "choices": [
+          "Are",
+          "Does",
+          "Do",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your parents speak English?",
+        "a": "Do",
+        "choices": [
+          "Are",
+          "Does",
+          "Do",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) your uncle live here?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Is",
+          "Does",
+          "Do"
+        ],
+        "e": "一般動詞の疑問文→Does。",
+        "free": true
+      },
+      {
+        "q": "( ) you eat breakfast?",
+        "a": "Do",
+        "choices": [
+          "Does",
+          "Is",
+          "Do",
+          "Are"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      },
+      {
+        "q": "( ) you live near here?",
+        "a": "Do",
+        "choices": [
+          "Do",
+          "Are",
+          "Does",
+          "Is"
+        ],
+        "e": "一般動詞の疑問文→Do。",
+        "free": true
+      }
     ],
-    "e": "一般動詞like→Do。"
-   },
-   {
-    "q": "( ) she a teacher?",
-    "a": "Is",
-    "choices": [
-     "Do",
-     "Does",
-     "Is",
-     "Are"
+    "Lv2": [
+      {
+        "q": "( ) you a student? - Yes, I am.",
+        "a": "Are",
+        "choices": [
+          "Is",
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "e": "amで答える→Are you。",
+        "free": false
+      },
+      {
+        "q": "( ) he like it? - Yes, he does.",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "e": "doesで答える→Does he。",
+        "free": false
+      },
+      {
+        "q": "( ) it rain a lot here?",
+        "a": "Does",
+        "choices": [
+          "Are",
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "e": "三単現it＋一般動詞→Does。",
+        "free": false
+      },
+      {
+        "q": "You ( ) live here.（否定）",
+        "a": "don't",
+        "choices": [
+          "isn't",
+          "aren't",
+          "doesn't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) study English.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "You ( ) like dogs.（否定）",
+        "a": "don't",
+        "choices": [
+          "isn't",
+          "doesn't",
+          "aren't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) know him.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "doesn't",
+          "aren't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "My dog ( ) play tennis.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "isn't",
+          "doesn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "We ( ) have a pen.（否定）",
+        "a": "don't",
+        "choices": [
+          "doesn't",
+          "aren't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) have a pen.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) speak English.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) study English.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "isn't",
+          "aren't",
+          "don't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) want it.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "isn't",
+          "doesn't",
+          "don't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) study English.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "don't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) play tennis.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "isn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) play tennis.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "isn't",
+          "aren't",
+          "don't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) read books.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "aren't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "They ( ) read books.（否定）",
+        "a": "don't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) eat breakfast.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "doesn't",
+          "aren't",
+          "isn't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "My uncle ( ) live here.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) like dogs.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "isn't",
+          "aren't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "We ( ) play tennis.（否定）",
+        "a": "don't",
+        "choices": [
+          "isn't",
+          "aren't",
+          "don't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) know him.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "aren't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "My cat ( ) want milk.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "isn't",
+          "doesn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "We ( ) want it.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "isn't",
+          "doesn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) read books.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) speak English.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "isn't",
+          "aren't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "You ( ) have a pen.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "aren't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) have a pen.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "don't",
+          "doesn't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "Our dog ( ) eat breakfast.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "doesn't",
+          "don't",
+          "isn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "You ( ) study English.（否定）",
+        "a": "don't",
+        "choices": [
+          "isn't",
+          "don't",
+          "doesn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) know him.（否定）",
+        "a": "don't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "They ( ) play tennis.（否定）",
+        "a": "don't",
+        "choices": [
+          "doesn't",
+          "don't",
+          "isn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "You ( ) play tennis.（否定）",
+        "a": "don't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) like dogs.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "My sister ( ) know him.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "aren't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) like dogs.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "isn't",
+          "doesn't",
+          "aren't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "They ( ) like dogs.（否定）",
+        "a": "don't",
+        "choices": [
+          "doesn't",
+          "don't",
+          "aren't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "They ( ) eat breakfast.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "aren't",
+          "isn't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) live here.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "My father ( ) speak English.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "doesn't",
+          "aren't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "She ( ) play tennis.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "isn't",
+          "aren't",
+          "doesn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) like dogs.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "isn't",
+          "doesn't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "We ( ) read books.（否定）",
+        "a": "don't",
+        "choices": [
+          "isn't",
+          "don't",
+          "doesn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "I ( ) study English.（否定）",
+        "a": "don't",
+        "choices": [
+          "aren't",
+          "isn't",
+          "doesn't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) eat breakfast.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "doesn't",
+          "aren't",
+          "don't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "Ken ( ) play tennis.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "aren't",
+          "doesn't",
+          "isn't",
+          "don't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "He ( ) live here.（否定）",
+        "a": "doesn't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "isn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→doesn't。",
+        "free": false
+      },
+      {
+        "q": "You ( ) speak English.（否定）",
+        "a": "don't",
+        "choices": [
+          "don't",
+          "doesn't",
+          "aren't",
+          "isn't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      },
+      {
+        "q": "We ( ) know him.（否定）",
+        "a": "don't",
+        "choices": [
+          "doesn't",
+          "don't",
+          "isn't",
+          "aren't"
+        ],
+        "e": "一般動詞の否定→don't。",
+        "free": false
+      }
     ],
-    "e": "be動詞の文→Is。"
-   },
-   {
-    "q": "( ) he play tennis?",
-    "a": "Does",
-    "choices": [
-     "Is",
-     "Do",
-     "Are",
-     "Does"
-    ],
-    "e": "三単現の一般動詞→Does。"
-   },
-   {
-    "q": "( ) they students?",
-    "a": "Are",
-    "choices": [
-     "Are",
-     "Is",
-     "Does",
-     "Do"
-    ],
-    "e": "be動詞＋複数→Are。"
-   },
-   {
-    "q": "I ( ) not know.",
-    "a": "do",
-    "choices": [
-     "are",
-     "do",
-     "am",
-     "is"
-    ],
-    "e": "一般動詞の否定→do not。"
-   },
-   {
-    "q": "She ( ) not happy.",
-    "a": "is",
-    "choices": [
-     "do",
-     "does",
-     "is",
-     "are"
-    ],
-    "e": "be動詞の否定→is not。"
-   },
-   {
-    "q": "We ( ) baseball players.",
-    "a": "are",
-    "choices": [
-     "does",
-     "do",
-     "is",
-     "are"
-    ],
-    "e": "be動詞→are。"
-   }
-  ],
-  "Lv2": [
-   {
-    "q": "( ) you a student? - Yes, I am.",
-    "a": "Are",
-    "choices": [
-     "Is",
-     "Do",
-     "Are",
-     "Does"
-    ],
-    "e": "amで答える→Are you。"
-   },
-   {
-    "q": "( ) he like it? - Yes, he does.",
-    "a": "Does",
-    "choices": [
-     "Are",
-     "Do",
-     "Does",
-     "Is"
-    ],
-    "e": "doesで答える→Does he。"
-   },
-   {
-    "q": "( ) it rain a lot here?",
-    "a": "Does",
-    "choices": [
-     "Are",
-     "Does",
-     "Is",
-     "Do"
-    ],
-    "e": "三単現it＋一般動詞→Does。"
-   }
-  ]
- }
+    "Lv3": [
+      {
+        "q": "A: ( ) do you go to school?  B: By bike.",
+        "a": "How",
+        "choices": [
+          "How",
+          "What",
+          "Where",
+          "When"
+        ],
+        "e": "手段をたずねる→How。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) is this cap?  B: It's 1,500 yen.",
+        "a": "How much",
+        "choices": [
+          "How many",
+          "How much",
+          "How old",
+          "How long"
+        ],
+        "e": "値段→How much。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) can I get to the station?  B: Go straight and turn left at the bank.",
+        "a": "How",
+        "choices": [
+          "What",
+          "Where",
+          "How",
+          "Which"
+        ],
+        "e": "行き方（方法）→How。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) do you have lunch?  B: At twelve thirty.",
+        "a": "What time",
+        "choices": [
+          "How long",
+          "How many",
+          "What day",
+          "What time"
+        ],
+        "e": "時刻→What time。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) bag is this?  B: It's Ken's.",
+        "a": "Whose",
+        "choices": [
+          "Whose",
+          "Who",
+          "Which",
+          "What"
+        ],
+        "e": "「誰の」→Whose。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) have you lived in Fukuyama?  B: For ten years.",
+        "a": "How long",
+        "choices": [
+          "How often",
+          "How long",
+          "How many",
+          "How far"
+        ],
+        "e": "期間→How long。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) do you play tennis?  B: Twice a week.",
+        "a": "How often",
+        "choices": [
+          "How long",
+          "How many",
+          "How often",
+          "How much"
+        ],
+        "e": "頻度→How often。",
+        "free": false
+      },
+      {
+        "q": "A: ( ) is it from here to the park?  B: About two kilometers.",
+        "a": "How far",
+        "choices": [
+          "How long",
+          "How many",
+          "How often",
+          "How far"
+        ],
+        "e": "距離→How far。",
+        "free": false
+      },
+      {
+        "q": "A: May I speak to Ken, please?  B: ( )",
+        "a": "Speaking.",
+        "choices": [
+          "Speaking.",
+          "I'm fine.",
+          "Yes, you are.",
+          "Here you are."
+        ],
+        "e": "電話で「私です」→Speaking。",
+        "free": false
+      },
+      {
+        "q": "A: Would you like some more tea?  B: ( )",
+        "a": "Yes, please.",
+        "choices": [
+          "Me, too.",
+          "Yes, please.",
+          "Here you are.",
+          "That's too bad."
+        ],
+        "e": "すすめに応じる→Yes, please。",
+        "free": false
+      },
+      {
+        "q": "A: Thank you for your help.  B: ( )",
+        "a": "You're welcome.",
+        "choices": [
+          "Here you are.",
+          "Yes, please.",
+          "You're welcome.",
+          "That's right."
+        ],
+        "e": "お礼への返事→You're welcome。",
+        "free": false
+      },
+      {
+        "q": "A: I have a cold.  B: ( )",
+        "a": "That's too bad.",
+        "choices": [
+          "That's great.",
+          "Good luck.",
+          "Me, too.",
+          "That's too bad."
+        ],
+        "e": "悪い知らせへの返事→That's too bad。",
+        "free": false
+      },
+      {
+        "q": "A: Could you tell me the way to the library?  B: ( )",
+        "a": "Sure. Go down this street.",
+        "choices": [
+          "Sure. Go down this street.",
+          "No, thank you.",
+          "Yes, please.",
+          "You're welcome."
+        ],
+        "e": "道案内の依頼に応じる→Sure。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: It's sunny.",
+        "a": "How is the weather today?",
+        "choices": [
+          "What day is it today?",
+          "How is the weather today?",
+          "What time is it?",
+          "How are you?"
+        ],
+        "e": "天気をたずねる→How is the weather?",
+        "free": false
+      },
+      {
+        "q": "A: Here you are.  B: ( )",
+        "a": "Thank you.",
+        "choices": [
+          "You're welcome.",
+          "I'm sorry.",
+          "Thank you.",
+          "Yes, please."
+        ],
+        "e": "物を渡されたら→Thank you。",
+        "free": false
+      },
+      {
+        "q": "A: Can I help you?  B: ( )",
+        "a": "Yes. I'm looking for a T-shirt.",
+        "choices": [
+          "No, I can't.",
+          "Yes, you can.",
+          "I'll take it.",
+          "Yes. I'm looking for a T-shirt."
+        ],
+        "e": "店員の声かけへの返事→探している物を言う。",
+        "free": false
+      },
+      {
+        "q": "A: How about going to the movies?  B: ( )",
+        "a": "Sounds good.",
+        "choices": [
+          "Sounds good.",
+          "I'm sorry to hear that.",
+          "You're welcome.",
+          "Here you are."
+        ],
+        "e": "提案に賛成→Sounds good。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: I'm sorry, but I'm busy now.",
+        "a": "Can you help me with my homework?",
+        "choices": [
+          "Thank you for helping me.",
+          "Can you help me with my homework?",
+          "You did a good job.",
+          "How are you?"
+        ],
+        "e": "依頼を断る返事→依頼の文が入る。",
+        "free": false
+      },
+      {
+        "q": "A: I passed the exam!  B: ( )",
+        "a": "Congratulations!",
+        "choices": [
+          "That's too bad.",
+          "Excuse me.",
+          "Congratulations!",
+          "Take care."
+        ],
+        "e": "合格を祝う→Congratulations。",
+        "free": false
+      },
+      {
+        "q": "A: What's wrong?  B: ( )",
+        "a": "I have a headache.",
+        "choices": [
+          "I'm 14 years old.",
+          "I'm from Hiroshima.",
+          "I like soccer.",
+          "I have a headache."
+        ],
+        "e": "What's wrong?＝どうしたの→具合を言う。",
+        "free": false
+      },
+      {
+        "q": "A: Shall I open the window?  B: ( )",
+        "a": "Yes, please.",
+        "choices": [
+          "Yes, please.",
+          "Yes, let's.",
+          "No, I don't.",
+          "Yes, I shall."
+        ],
+        "e": "Shall I 〜?（〜しましょうか）→Yes, please。",
+        "free": false
+      },
+      {
+        "q": "A: Shall we go shopping tomorrow?  B: ( )",
+        "a": "Yes, let's.",
+        "choices": [
+          "Yes, please.",
+          "Yes, let's.",
+          "No, I'm not.",
+          "Here you are."
+        ],
+        "e": "Shall we 〜?（〜しませんか）→Yes, let's。",
+        "free": false
+      },
+      {
+        "q": "A: Excuse me. Which bus goes to the city hall?  B: ( )",
+        "a": "Take the No. 5 bus.",
+        "choices": [
+          "It's 200 yen.",
+          "It's near here.",
+          "Take the No. 5 bus.",
+          "At ten o'clock."
+        ],
+        "e": "どのバスか→バスの番号を答える。",
+        "free": false
+      },
+      {
+        "q": "A: How long does it take to get to the station?  B: ( )",
+        "a": "About ten minutes.",
+        "choices": [
+          "About ten kilometers.",
+          "Twice a day.",
+          "It's ten o'clock.",
+          "About ten minutes."
+        ],
+        "e": "How long does it take?→時間を答える。",
+        "free": false
+      },
+      {
+        "q": "A: Would you like to come to my party?  B: ( )",
+        "a": "I'd love to.",
+        "choices": [
+          "I'd love to.",
+          "You're welcome.",
+          "I'd like some.",
+          "Here you are."
+        ],
+        "e": "招待に応じる→I'd love to。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: It's May 5th.",
+        "a": "What's the date today?",
+        "choices": [
+          "What day is it today?",
+          "What's the date today?",
+          "What time is it now?",
+          "How is the weather?"
+        ],
+        "e": "日付をたずねる→What's the date?",
+        "free": false
+      },
+      {
+        "q": "A: What day is it today?  B: ( )",
+        "a": "It's Wednesday.",
+        "choices": [
+          "It's May 5th.",
+          "It's ten o'clock.",
+          "It's Wednesday.",
+          "It's cloudy."
+        ],
+        "e": "What day＝曜日。",
+        "free": false
+      },
+      {
+        "q": "A: Could you say that again?  B: ( )",
+        "a": "Sure.",
+        "choices": [
+          "You're welcome.",
+          "Me, too.",
+          "I hope so.",
+          "Sure."
+        ],
+        "e": "依頼に応じる→Sure。",
+        "free": false
+      },
+      {
+        "q": "A: Have a nice weekend!  B: ( )",
+        "a": "You, too.",
+        "choices": [
+          "You, too.",
+          "Me, too.",
+          "Yes, I do.",
+          "That's all."
+        ],
+        "e": "「あなたもね」→You, too。",
+        "free": false
+      },
+      {
+        "q": "A: I'm sorry I'm late.  B: ( )",
+        "a": "That's all right.",
+        "choices": [
+          "You're welcome.",
+          "That's all right.",
+          "That's right.",
+          "Yes, you are."
+        ],
+        "e": "謝罪への返事→That's all right。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: I'd like a hamburger and a cola.",
+        "a": "May I take your order?",
+        "choices": [
+          "May I help you with your bag?",
+          "How much is it?",
+          "May I take your order?",
+          "What do you do?"
+        ],
+        "e": "注文を聞く→May I take your order?",
+        "free": false
+      },
+      {
+        "q": "A: Which do you like better, summer or winter?  B: ( )",
+        "a": "I like summer better.",
+        "choices": [
+          "Yes, I do.",
+          "I like both of you.",
+          "It's summer now.",
+          "I like summer better."
+        ],
+        "e": "Which 〜 better?→〜 betterで答える。",
+        "free": false
+      },
+      {
+        "q": "A: Why don't we play soccer after school?  B: ( )",
+        "a": "Good idea.",
+        "choices": [
+          "Good idea.",
+          "Because I'm tired.",
+          "You're welcome.",
+          "Here you are."
+        ],
+        "e": "Why don't we 〜?は提案→Good idea。",
+        "free": false
+      },
+      {
+        "q": "A: Can I use your phone?  B: ( )",
+        "a": "Sure. Here you are.",
+        "choices": [
+          "Yes, you are.",
+          "Sure. Here you are.",
+          "No, thank you.",
+          "I'm fine, thank you."
+        ],
+        "e": "許可を求める文に応じる→Sure。",
+        "free": false
+      },
+      {
+        "q": "A: Nice to meet you.  B: ( )",
+        "a": "Nice to meet you, too.",
+        "choices": [
+          "I'm fine, thank you.",
+          "See you later.",
+          "Nice to meet you, too.",
+          "Thank you very much."
+        ],
+        "e": "初対面のあいさつ→, tooで返す。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: I'm from Canada.",
+        "a": "Where are you from?",
+        "choices": [
+          "Where are you going?",
+          "When did you come?",
+          "How are you?",
+          "Where are you from?"
+        ],
+        "e": "出身をたずねる→Where are you from?",
+        "free": false
+      },
+      {
+        "q": "A: What does your father do?  B: ( )",
+        "a": "He is a doctor.",
+        "choices": [
+          "He is a doctor.",
+          "He is washing the car.",
+          "He is fine.",
+          "He is 45."
+        ],
+        "e": "What do you do?＝職業をたずねる。",
+        "free": false
+      },
+      {
+        "q": "A: What is your father doing now?  B: ( )",
+        "a": "He is cooking dinner.",
+        "choices": [
+          "He is a cook.",
+          "He is cooking dinner.",
+          "He likes cooking.",
+          "He cooks every day."
+        ],
+        "e": "進行形の疑問→進行形で答える。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: Three times.",
+        "a": "How many times have you been to Tokyo?",
+        "choices": [
+          "How long have you been in Tokyo?",
+          "When did you go to Tokyo?",
+          "How many times have you been to Tokyo?",
+          "How far is Tokyo?"
+        ],
+        "e": "回数→How many times。",
+        "free": false
+      },
+      {
+        "q": "A: How was your trip?  B: ( )",
+        "a": "It was great.",
+        "choices": [
+          "It is two hours.",
+          "By train.",
+          "Yes, it was.",
+          "It was great."
+        ],
+        "e": "How was 〜?→感想を答える。",
+        "free": false
+      },
+      {
+        "q": "A: Whose umbrella is this?  B: ( )",
+        "a": "It's mine.",
+        "choices": [
+          "It's mine.",
+          "It's me.",
+          "It's my.",
+          "I'm mine."
+        ],
+        "e": "Whose→所有代名詞mineで答える。",
+        "free": false
+      },
+      {
+        "q": "A: ( )  B: Because it was raining.",
+        "a": "Why did you stay home?",
+        "choices": [
+          "Where did you stay?",
+          "Why did you stay home?",
+          "When did you stay home?",
+          "How did you go home?"
+        ],
+        "e": "Becauseで答える→Why。",
+        "free": false
+      },
+      {
+        "q": "A: What would you like to drink?  B: ( )",
+        "a": "Orange juice, please.",
+        "choices": [
+          "I'd like to drink.",
+          "Yes, I would.",
+          "Orange juice, please.",
+          "It's delicious."
+        ],
+        "e": "飲み物をたずねる→〜, pleaseで答える。",
+        "free": false
+      },
+      {
+        "q": "A: May I sit here?  B: ( )",
+        "a": "Sure. Go ahead.",
+        "choices": [
+          "Yes, I may.",
+          "No, you aren't.",
+          "Here you are.",
+          "Sure. Go ahead."
+        ],
+        "e": "許可を求める→Sure. Go ahead。",
+        "free": false
+      },
+      {
+        "q": "A: Let's take a break.  B: ( )",
+        "a": "OK, let's.",
+        "choices": [
+          "OK, let's.",
+          "Yes, I do.",
+          "No, I can't.",
+          "Thank you."
+        ],
+        "e": "Let's 〜への返事→OK, let's。",
+        "free": false
+      },
+      {
+        "q": "A: I'm going to the hospital tomorrow.  B: ( )",
+        "a": "Take care.",
+        "choices": [
+          "Good job.",
+          "Take care.",
+          "Me, too.",
+          "Have fun."
+        ],
+        "e": "体調を気づかう→Take care。",
+        "free": false
+      },
+      {
+        "q": "A: How do you say \"arigato\" in English?  B: ( )",
+        "a": "Thank you.",
+        "choices": [
+          "You're welcome.",
+          "Excuse me.",
+          "Thank you.",
+          "I'm sorry."
+        ],
+        "e": "arigato＝Thank you。",
+        "free": false
+      },
+      {
+        "q": "A: What's the matter?  B: ( )",
+        "a": "I lost my key.",
+        "choices": [
+          "It's a key.",
+          "Here it is.",
+          "That's right.",
+          "I lost my key."
+        ],
+        "e": "What's the matter?＝どうしたの→困りごとを言う。",
+        "free": false
+      },
+      {
+        "q": "A: Could you pass me the salt?  B: ( )",
+        "a": "Here you are.",
+        "choices": [
+          "Here you are.",
+          "You're welcome.",
+          "Yes, I could.",
+          "I'm sorry to hear that."
+        ],
+        "e": "物を渡す→Here you are。",
+        "free": false
+      },
+      {
+        "q": "A: See you tomorrow.  B: ( )",
+        "a": "See you.",
+        "choices": [
+          "Nice to meet you.",
+          "See you.",
+          "You're welcome.",
+          "I'm fine."
+        ],
+        "e": "別れのあいさつ→See you。",
+        "free": false
+      }
+    ]
+  }
 }

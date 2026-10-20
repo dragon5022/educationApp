@@ -19,7 +19,7 @@ void main() {
       }
       total += pack.questionCount;
     }
-    expect(total, 1210); // live site, 2026-10
+    expect(total, 3000); // school question bank, 2026-10
   });
 
   test('rank table matches the web', () {
