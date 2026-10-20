@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../core/progress/progress_keys.dart';
+import '../firebase_options.dart';
 import 'progress_service.dart';
 
 /// Store-facing setup for KIDS: one-time unlock, parent gate, login and
@@ -77,10 +78,9 @@ class KidsStore {
         supportContact: 'contact@arkacademy.top',
         accountDeletionUrl: 'https://arkacademy.top/arkbusters/privacy.html#delete',
       ),
-      // TODO(client): DefaultFirebaseOptions.currentPlatform after running
-      // `flutterfire configure`. Until then login is hidden and the app
-      // plays fully offline.
-      firebaseOptions: null,
+      // lib/firebase_options.dart: a null stub until `flutterfire configure`
+      // writes the school's project into it (docs/store/SETUP_RUNBOOK.md).
+      firebaseOptions: DefaultFirebaseOptions.currentPlatform,
       sync: ProgressSyncSpec([
         const SyncKey(ProgressKeys.playerName, MergeRule.lastWriteWins),
         const SyncKey(ProgressKeys.friends, MergeRule.union),

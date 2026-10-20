@@ -3,6 +3,7 @@
 // media/, keeping the relative paths the question sheet refers to.
 //
 //   node upload_media.mjs <folder> --key service-account.json [--bucket <name>] [--dry-run]
+//   (--bucket: the name shown at the top of Firebase console → Storage, e.g. gs://<name>)
 //
 //   <folder>/audio/voice/lis/g5_0_17.mp3  →  media/audio/voice/lis/g5_0_17.mp3
 //
@@ -25,7 +26,8 @@ if (!folder || !keyPath) {
 }
 
 const key = JSON.parse(readFileSync(keyPath, 'utf8'));
-const bucketName = opt('--bucket') ?? `${key.project_id}.appspot.com`;
+// Projects created since late 2024 use <project>.firebasestorage.app; older ones .appspot.com.
+const bucketName = opt('--bucket') ?? `${key.project_id}.firebasestorage.app`;
 admin.initializeApp({ credential: admin.credential.cert(key), storageBucket: bucketName });
 const bucket = admin.storage().bucket();
 

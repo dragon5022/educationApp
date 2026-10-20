@@ -13,6 +13,7 @@ dependencies:
   # Shared series foundation (sibling folder in the educationApp repo).
   ark_core:
     path: ../ark_core
+  firebase_core: ^4.15.0
   audioplayers: ^6.5.0
   shared_preferences: ^2.5.3
   url_launcher: ^6.3.3

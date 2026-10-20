@@ -13,7 +13,7 @@ import 'sheet_codec.dart';
 ///
 /// `content_source.json`:
 /// ```json
-/// "firebaseBucket": "ark-busters.appspot.com", "mediaFolder": "media"
+/// "firebaseBucket": "ark-busters.firebasestorage.app", "mediaFolder": "media"
 /// ```
 /// or any plain file host: `"mediaBaseUrl": "https://example.com/media"`.
 ///
@@ -40,7 +40,8 @@ class MediaSource {
     return null;
   }
 
-  /// Firebase Storage bucket (`<project>.appspot.com`), or null for [url].
+  /// Firebase Storage bucket (`<project>.firebasestorage.app` or
+  /// `<project>.appspot.com`), or null for [url].
   final String? bucket;
   final String folder;
   final String? _base;

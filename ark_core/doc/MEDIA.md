@@ -51,7 +51,7 @@ Storage の `media/audio/voice/…` に置いておき、**購入後にアプリ
 2. ルールを配信：`npx firebase-tools deploy --only storage`（`storage.rules`：`media/` は誰でも読める、書き込みはコンソール／管理ツールのみ）。
 3. 各アプリの `assets/data/content_source.json` にバケット名を書きます：
    ```json
-   "firebaseBucket": "<project-id>.appspot.com",
+   "firebaseBucket": "<project-id>.firebasestorage.app",   ← Firebase コンソール → Storage の上部 gs://… の名前
    "mediaFolder": "media"
    ```
    （Firebase 以外の置き場所なら `"mediaBaseUrl": "https://…/media"` でも可）

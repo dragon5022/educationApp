@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../core/theme.dart';
+import '../firebase_options.dart';
 import 'progress_keys.dart';
 
 /// Store-facing setup for TEEN: one-time unlock, login and cloud progress
@@ -100,9 +101,9 @@ class TeenStore {
         supportContact: 'contact@arkacademy.top',
         accountDeletionUrl: 'https://arkacademy.top/arkbusters/privacy.html#delete',
       ),
-      // TODO(client): DefaultFirebaseOptions.currentPlatform after
-      // `flutterfire configure` (same Firebase project as KIDS).
-      firebaseOptions: null,
+      // lib/firebase_options.dart: a null stub until `flutterfire configure`
+      // writes the school's project into it (docs/store/SETUP_RUNBOOK.md).
+      firebaseOptions: DefaultFirebaseOptions.currentPlatform,
       sync: ProgressSyncSpec([
         SyncKey.prefix('${ProgressKeys.prefix}best_', MergeRule.max),
         SyncKey.prefix('${ProgressKeys.prefix}rank_', MergeRule.custom(_betterRank)),

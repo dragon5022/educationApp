@@ -60,7 +60,7 @@ Apple Developer Program は組織名義で申請済み（2026-10-14 時点で審
   Apple は 2 要素認証のため本人端末が必要。作業後はパスワード変更を依頼する。
 - Google Play Console：法人書類の審査待ち（審査完了後に開発者アカウント招待 → 商品 ID・プロモコード設定）
 
-## 残りの作業（クライアント側）
+## 残りの作業（開発者が代行：手順は `SETUP_RUNBOOK.md`。クライアントは 2 段階認証コードの転送と、有料 App 契約・マーチャント登録のみ）
 
 1. Apple の組織審査の完了 → `tiger5247` を App Manager で招待
 2. Google Play Console の作成（組織）→ 招待
