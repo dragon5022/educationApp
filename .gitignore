@@ -52,3 +52,6 @@ ARK_BUSTERS_questions.xlsx
 
 # Firebase CLI cache
 **/.firebase/
+
+# Built store bundles (kept locally)
+dist/
