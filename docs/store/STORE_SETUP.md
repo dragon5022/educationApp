@@ -60,6 +60,16 @@ Apple Developer Program は組織名義で申請済み（2026-10-14 時点で審
   Apple は 2 要素認証のため本人端末が必要。作業後はパスワード変更を依頼する。
 - Google Play Console：法人書類の審査待ち（審査完了後に開発者アカウント招待 → 商品 ID・プロモコード設定）
 
+## Apple 設定済み（2026-10-20、開発者が代行）
+
+- Team ID `9D22XAANK6`。Free Apps Agreement 有効。Paid Apps Agreement 同意済み → **銀行口座・税務情報待ち**（Pending User Info、クライアント本人の情報が必要）。
+- Bundle ID 登録済み: `top.arkacademy.kids` / `top.arkacademy.teen`。
+- App 作成済み: KIDS（Apple ID 6825211817）/ TEEN。App 内課金 `…full_unlock`（非消耗型、仮価格 ¥1,000、日本語ローカライズ済み）。
+- オファー「ARK塾生」（無料）両アプリに作成済み。カスタムコード（例 `ARKJUKU2026`）は**アプリ公開後**にしか作れない。
+  配布リンクの形: `https://apps.apple.com/redeem?ctx=offercodes&id=<AppのApple ID>&code=<コード>`
+- App Store Connect API キー（codemagic, App Manager）と Sandbox テスターを作成（鍵・ID はパスワードマネージャー）。
+- 法人名義ではなく個人名（Kazue Fujii）で表示される。変更が必要なら Apple サポートへ（クライアント本人）。
+
 ## 残りの作業（開発者が代行：手順は `SETUP_RUNBOOK.md`。クライアントは 2 段階認証コードの転送と、有料 App 契約・マーチャント登録のみ）
 
 1. Apple の組織審査の完了 → `tiger5247` を App Manager で招待
