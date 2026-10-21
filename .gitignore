@@ -49,3 +49,6 @@ Thumbs.db
 
 # Generated Google Sheet workbook (rebuild with ark_core/tool/sheets/make_workbook.py)
 ARK_BUSTERS_questions.xlsx
+
+# Firebase CLI cache
+**/.firebase/
