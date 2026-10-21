@@ -107,6 +107,20 @@ python tool/sheets/import_bank.py <bank.xlsx> <音声フォルダ> ../ark_buster
   で Storage の `media/audio/voice/…` に上げます（`MEDIA.md`）。
 - ボキャブラリーの絵は英単語で照合して引き継ぎます。TEEN は各パックの設定（制限時間・出題数・画像）を残して問題だけ入れ替えます。
 
+### ブラウザ自動操作でシートを書き換える（インポートが使えないとき）
+
+シートが「リンクを知っている全員が編集可」なら、ログイン無しでも headless Chrome からタブを丸ごと貼り替えられます
+（`tool/sheets/browser/`、puppeteer-core + ローカルの Chrome）。ブックの各タブを TSV に書き出してから：
+
+```
+node fill_sheet.mjs <tsvDir> listening sentence … manifest      # タブごとに 全列を書式なしテキスト → 消去 → 貼り付け
+python compare_sheet.py <tsvDir> listening sentence … manifest  # gviz で読み戻してセル単位で比較
+dart run tool/sheets/verify_sheet.dart …                        # アプリの読み方で最終確認
+```
+
+書式を「書式なしテキスト」にしないと `true/false` がブール、`3/4` が日付、`-3+5` が数式になるので注意。
+作業後はシートの共有を「閲覧者」に戻し、編集は特定アカウントだけにするのが安全です。
+
 ## How it works (developers)
 
 - `ArkContent` (`lib/src/content/ark_content.dart`): `loadPack(id)` returns the last downloaded pack that passes the app's validator, otherwise the bundled JSON — the app always works offline.
