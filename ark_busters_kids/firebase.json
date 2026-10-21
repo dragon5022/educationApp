@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"ark-busters","appId":"1:614636650151:android:8d45d5b8cb007bbd272582","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"ark-busters","configurations":{"android":"1:614636650151:android:8d45d5b8cb007bbd272582","ios":"1:614636650151:ios:e1d39ca5e873f183272582"}}}}}}

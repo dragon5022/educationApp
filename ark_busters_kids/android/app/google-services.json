@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614636650151",
+    "project_id": "ark-busters",
+    "storage_bucket": "ark-busters.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614636650151:android:8d45d5b8cb007bbd272582",
+        "android_client_info": {
+          "package_name": "top.arkacademy.kids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsZMhpJNwLbn2DK5u4aAMQjOPSLGhk6wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

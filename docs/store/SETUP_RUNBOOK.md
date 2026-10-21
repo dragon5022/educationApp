@@ -99,6 +99,19 @@ on the next build.
 
 ### 3.3 Rules, bucket, media
 
+**Done 2026-10-21:** project `ark-busters` (Spark plan), Email/Password auth, Firestore (asia-northeast1), both apps
+registered (Android + iOS), `firebase_options.dart` generated, Firestore rules deployed. Storage needs the Blaze plan,
+so the paid clips are served by **Firebase Hosting** instead (`https://ark-busters.web.app`, set as `mediaBaseUrl`
+in both apps). Deploy them with:
+
+```
+cd content/kids_voice
+firebase deploy --only hosting
+```
+
+The rest of this section applies only after an upgrade to Blaze.
+
+
 ```
 cd ark_core
 firebase use <project-id>

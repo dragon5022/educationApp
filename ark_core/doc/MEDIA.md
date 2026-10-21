@@ -36,6 +36,20 @@
   **直したいときは新しいファイル名にして、シートの値も変えてください。**
 - ファイルが多いときは、開発者がまとめてアップロードすることもできます（下記）。
 
+### 現在の置き場所：Firebase Hosting（2026-10-21）
+
+Firebase の無料プラン（Spark）では Storage が使えないため、有料問題の音声は同じプロジェクトの **Firebase Hosting**
+（`https://ark-busters.web.app/audio/voice/…`）から配信しています。アプリの `content_source.json` は
+`"mediaBaseUrl": "https://ark-busters.web.app"` です。更新は開発者が行います：
+
+```
+cd content/kids_voice
+firebase deploy --only hosting        # paid/ 以下をそのまま公開（約 86 MB）
+```
+
+無料枠は転送 360 MB/日（≒ 購入者 4 人分/日）。生徒が増えたら Blaze プランに上げると、URL を変えずに上限が外れます。
+先生がコンソールから音声を追加する運用（上の手順）は Storage が必要なので、Blaze にしてから `firebaseBucket` を設定してください。
+
 ### 有料の問題の音声（KIDS）
 
 アプリに入っているのは**無料の問題の音声（500 本）**だけです。有料の問題の音声（2,500 本、約 86 MB）は
